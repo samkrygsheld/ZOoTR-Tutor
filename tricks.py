@@ -25,10 +25,10 @@ class Trick():
 
 """ 'Official' tricks from ootrandomizer.com - In Logic """
 
-# Fewer Tunics
+# Fewer Tunic Requirements
 
 
-# Grottos
+# Hidden Grottos without Stone of Agony
 Trick("Kokiri Forest Storms Grotto Chest", 'Hidden Grottos without Stone of Agony', [{'agony':0}], 'easy', 'both', True, 'https://www.zeldadungeon.net/wiki/Ocarina_of_Time_Hidden_Grottos')
 ##Trick("Lost Woods Generic Grotto Chest", 'Hidden Grottos without Stone of Agony', [{'agony':0}], 'easy', 'both', True, 'https://www.zeldadungeon.net/wiki/Ocarina_of_Time_Hidden_Grottos')
 ##Trick("LW Grotto Deku Scrub Deku Nut Upgrade", 'Hidden Grottos without Stone of Agony', [{'agony':0}], 'easy', 'both', True, 'https://www.zeldadungeon.net/wiki/Ocarina_of_Time_Hidden_Grottos')
@@ -41,34 +41,244 @@ Trick("Redead Grotto Chest", 'Hidden Grottos without Stone of Agony', [{'agony':
 Trick("Mountain Storms Grotto Chest", 'Hidden Grottos without Stone of Agony', [{'agony':0}], 'easy', 'both', True, 'https://www.zeldadungeon.net/wiki/Ocarina_of_Time_Hidden_Grottos')
 ##Trick("Top of Crater Grotto Chest", 'Hidden Grottos without Stone of Agony', [{'agony':0}], 'easy', 'both', True, 'https://www.zeldadungeon.net/wiki/Ocarina_of_Time_Hidden_Grottos')
 
-# Adult Dodongo's no hovers
-
-# Hammer Rusted Switches
-
-# Other
-Trick("Man on Roof", 'Man on Roof without Hookshot', [{'hookshot':0}], 'easy', 'both', True, 'https://youtu.be/3-1BY24Fu-Y?t=59')
+# Child Deadhand without Kokiri Sword
 Trick("Bottom of the Well Defeat Boss", 'Child Deadhand without Kokiri Sword', [{'swordkokiri':0, 'dekusticks':1}], 'easy', 'child', True, 'https://www.youtube.com/watch?v=gROY5Y66xeA&list=PLqsXSioZwQyoa23_27l5NZq5IZdKRi5Sm&index=11')
+
+# Man on Roof without Hookshot
+Trick("Man on Roof", 'Man on Roof without Hookshot', True, 'easy', 'both', {'shot':0}, 'https://youtu.be/3-1BY24Fu-Y?t=59')
+
+# Dodongo's Cavern Spike Trap Room Jump without Hover Boots'
+
+
+# Hammer Rusted Switches Through Walls
+Trick("Fire Temple Highest Goron Chest", 'Hammer switch through Song of Time block', {'ocarina':0, 'time':0}, 'easy', 'adult', True)
+
+# Windmill PoH as Adult with Nothing
 Trick("Windmill Freestanding PoH", 'Windmill POH as Adult with Nothing', [{is_adult:1, 'time':0}], 'easy', 'adult', True, 'https://www.youtube.com/watch?v=vDl7lr4Ecv8&list=PLqsXSioZwQyoa23_27l5NZq5IZdKRi5Sm&index=13')
-Trick("DM Crater Volcano Freestanding PoH", "Crater's Bean PoH with Hover Boots", [{'bootshover':1}], 'easy', 'adult', True, 'https://www.youtube.com/watch?v=bTITu1HrNF0&list=PLqsXSioZwQyoa23_27l5NZq5IZdKRi5Sm&index=14')
-# Come back
+
+# Crater's Bean PoH with Hover Boots
+Trick("DM Crater Volcano Freestanding PoH", "Crater's Bean PoH with Hover Boots", {'ocarina':0, 'bolero':0, 'beans':0, 'bootshover':1}, 'easy', 'adult', True, 'https://www.youtube.com/watch?v=bTITu1HrNF0&list=PLqsXSioZwQyoa23_27l5NZq5IZdKRi5Sm&index=14')
+
+# Forest Temple East Courtyard Vines with Hookshot
+  # Come back
 Trick("", "Forest Temple East Courtyard Vines with Hookshot", [], 'easy', 'adult', True, 'https://www.youtube.com/watch?v=Lr3TpVdNg2k&list=PLqsXSioZwQyoa23_27l5NZq5IZdKRi5Sm&index=2')
+
+# Goron City Spinning Pot PoH with Strength
 Trick("Goron City Pot Freestanding PoH", "Goron City Spinning Pot PoH with Strength", [{'bombs':0, 'strength':1}], 'easy', 'child', True, 'https://www.youtube.com/watch?v=nf4z04ArLGs')
 
 
 """ 'Official' tricks from ootrandomizer.com - Out of Logic """
 
+# Pass Through Visible One-Way Collisions
+
+
+# Dodongo's Cavern Staircase with Bow
+
+
+# Gerudo Fortress "Kitchen" with No Additional Items
+
+
+# Deku Tree Basement Vines GS with Jump Slash
+
+
+# Bottom of the Well Basement Chest with Strength & Sticks
+
+
+# Spirit Temple Child Side Bridge with Bombchu
+
+
+# Zora's Domain Entry with Cucco
+"""This unlocks an area more than a specific check."""
+
+# Death Mountain Trail Bombable Chest with Strength
+Trick('Death Mountain Trail', 'DMT Bomb Chest with Strength', {is_child:{'strength':1}}, 'medium', 'child', False)
+
+# Water Temple Boss Key Chest with Iron Boots
+
+
+# Adult Kokiri Forest GS with Hover Boots
+
+
+# Spirit Temple Shifting Wall with No Additional Items
+
+
+# Spirit Temple Main Room GS with Boomerang
+
+
+# Bottom of the Well Cage GS without Boomerang
+
+
+# Fire Temple Flame Wall Maze Skip
+
+
+# Zora's River Lower Freestanding PoH as Adult with Nothing
+
+
+# Water Temple Cracked Wall with Hover Boots
+
+
+# Shadow Temple Freestanding Key with Bombchu
+
+
+# Backflip over Mido as Adult
+
+
+# Fire Temple Boss Door without Hover Boots or Pillar
+
+
+# Diving in the Lab without Gold Scale
+Trick('Diving in the Lab', 'Hylia Lab with Hookshot/Boots', {'shot':1, 'bootsiron':1}, 'easy', 'adult', False)
+
+# Deliver Eye Drops with Bolero of Fire
+
+
+# Wasteland Crossing without Hover Boots or Longshot
+
+
+# Desert Colossus Hill GS with Hookshot
+Trick("GS Desert Colossus Hill", "Desert Colossus Hill Skull with Hookshot", {can_access_desert_colossus:{'shot':1, 'beans':0}}, 'medium', 'adult', False, 'https://www.youtube.com/watch?v=DA5nR3rOSOU')
+
+
+# Dodongo's Cavern Scarecrow GS with Armos Statue
+Trick("GS Dodongo's Cavern Scarecrow", "Dodongo Scarecrow Skull with Armos", True, 'easy', 'adult', False)
+
+# Kakariko Tower GS with Jump Slash
+Trick("GS Kakariko Watchtower", "Watchtower Skull with Sword/Stick", [{'swordkokiri':1}, {'sticks':1}], 'medium', 'child', False, 'https://www.youtube.com/watch?v=7XDrhExj3M4')
+
+# Lake Hylia Lab Wall GS with Jump Slash
+
+
+# Spirit Temple Map Chest with Bow
+
+
+# Spirit Temple Sun Block Room Chest with Bow
+
+
+# Water Temple Boss Key Region with Hover Boots
+
+
+# Water Temple Falling Platform Room GS with Hookshot
+
+
+# Water Temple Serpent River GS without Iron Boots
+
+
+# Water Temple Entry without Iron Boots using Hookshot
+
+
+# Death Mountain Trail Upper Red Rock GS without Hammer
+
+
+# Death Mountain Trail Lower Red Rock GS with Hookshot
+
+
+# Death Mountain Trail Lower Red Rock GS with Magic Bean
+
+
+# Death Mountain Crater Upper to Lower with Hammer
+
+
+# Zora's Domain Entry with Hover Boots
+
+
+# Shadow Temple River Statue with Bombchu
+
+
+# Stop Link the Goron with Din's Fire
+Trick("Link the Goron", "Link the Goron with Din's", {'din':1}, 'medium', 'adult', False, 'https://www.youtube.com/watch?v=y6i0ziTsmCk')
+
+
+# Fire Temple Song of Time Room GS without Song of Time
+
+
+# Fire Temple Climb without Strength
+
+
+# Reverse Wasteland
+# navigate desert colossus without lens - this kind of opens up two full areas of checks
+Trick('Haunted Wasteland Structure Chest', 'Haunted Wasteland from Desert Colossus', {can_access_desert_colossus:True}, 'medium', 'both', False, 'https://www.youtube.com/watch?v=5hVeMg2U8sU')
+
+
+# Zora's River Upper Freestanding PoH as Adult with Nothing
+
+
+# Lost Woods Adult GS without Bean
+
+
+# Graveyard Freestanding PoH with Boomerang
+Trick("Graveyard Freestanding PoH", "Graveyard Heart Piece with Boomerang", {'boomerang':1}, 'hard', 'child', False, 'https://www.youtube.com/watch?v=A5cWkwRy928')
+
+
+# Death Mountain Trail Soil GS without Destroying Boulder
+
+
+# Gerudo Training Grounds Left Side Silver Rupees without Hookshot
+
+
+# Reach Gerudo Training Grounds Fake Wall Ledge with Hover Boots
+
+
+# Water Temple Cracked Wall with No Additional Items
+
+
+# Water Temple North Basement Ledge with Precise Jump
+
+
+# Water Temple Torch Longshot
+
+
+# Water Temple Boss Key Jump Dive
+
+
+# Water Temple Dragon Statue Jump Dive
+
+
+# Water Temple Dragon Statue with Bombchu
+
+
+# Goron City Leftmost Maze Chest with Hover Boots
+
+
+# Deku Tree Basement without Slingshot
+Trick("Queen Gohma Heart", "B1 Skip with Ground Jump", {'shieldkokiri':1, 'bombs':1}, 'medium', 'child', False)
+Trick("Queen Gohma Heart", "Optimal B1 Skip (Tsundere)", True, 'hard', 'child', False, 'https://www.youtube.com/watch?v=HvhGNCzhVpw&list=PLnQYLzPZ-JLXXkdsrN5Ff6SQiImnNVZ6f&index=2')
+
+# Spirit Temple Lower Adult Switch with Bombs
+
+
+# Forest Temple Outside Backdoor without Hover Boots
+
+
+# Forest Temple Scarecrow Route
+
+
+# Dodongo's Cavern Child Slingshot Skips
+
+
+# Rolling Goron (Hot Rodder Goron) as Child with Strength
+Trick('Rolling Goron as Child', 'Hot Rodder Goron with Strength', {'strength':1}, 'hard', 'child')
+
+# Goron City Spinning Pot PoH with Bombchu
+# to do: gather the torch-lighting requirements
+##Trick('Goron City Pot Freestanding PoH', 'Goron Spinning Pot with Bombchu', {'bombchu':1}, 'hard', 'child')
+
+# Gerudo Valley Crate PoH as Adult with Hover Boots
+
+
+# Spirit Trial without Hookshot
+# to do: does this help you get the second chest, or just complete the trial?
+
+# Shadow Temple Stone Umbrella Skip
+
+
+# Water Temple Central Bow Target without Longshot or Hover Boots
+
+
+# Fire Temple East Tower without Scarecrow's Song
 
 
 """ Other tricks not listed on ootrandomizer.com """
-# navigate desert colossus without lens - this kind of opens up two full areas of checks
-Trick('Haunted Wasteland Structure Chest', 'Haunted Wasteland from Desert Colossus', {can_access_desert_colossus:True}, 'medium', 'both', False, 'https://www.youtube.com/watch?v=5hVeMg2U8sU')
-Trick("GS Desert Colossus Hill", "Desert Colossus Skull with Hookshot", {can_access_desert_colossus:{'shot':1, 'beans':0}}, 'medium', 'adult', False, 'https://www.youtube.com/watch?v=DA5nR3rOSOU')
-Trick("Queen Gohma Heart", "B1 Skip with Ground Jump", {'shieldkokiri':1, 'bombs':1}, 'medium', 'child', False, None)
-Trick("Queen Gohma Heart", "Optimal B1 Skip (Tsundere)", True, 'hard', 'child', False, 'https://www.youtube.com/watch?v=HvhGNCzhVpw&list=PLnQYLzPZ-JLXXkdsrN5Ff6SQiImnNVZ6f&index=2')
 Trick("Graveyard Freestanding PoH", "Check Graveyard Heart Piece", True, 'easy', 'child', False, 'https://youtu.be/2Eu5AnwbJqE?t=372')
-Trick("Graveyard Freestanding PoH", "Graveyard Heart Piece with Boomerang", {'boomerang':1}, 'hard', 'child', False, 'https://www.youtube.com/watch?v=A5cWkwRy928')
-Trick("Link the Goron", "Link the Goron with Din's", {'din':1}, 'medium', 'adult', False, 'https://www.youtube.com/watch?v=y6i0ziTsmCk')
-Trick("GS Kakariko Watchtower", "Watchtower Skull with Sword/Stick", [{'swordkokiri':1}, {'sticks':1}], 'medium', 'child', False, 'https://www.youtube.com/watch?v=7XDrhExj3M4')
 
 """ Optimizations """
 Trick("Zora's River", 'Use Cucco to Jump Past Bean Salesman Fence', True, 'medium', 'child', True, 'https://youtu.be/lCO9gA3_AwU?t=2703')
@@ -78,7 +288,7 @@ Trick("Zora's River", 'Jump to Bean Salesman from Domain Side', True, 'easy', 'b
 Trick("GS Kokiri Know It All House", "Optimal Know-it-all Skull With Boomerang", {'boomerang':1}, 'medium', 'child', True, 'https://www.youtube.com/watch?v=7mxEYn29suU')
 Trick("Goron City Left Maze Chest", "Optimal Bombing for Goron Maze Chests", {'bombs':1}, 'easy', 'both', True, 'https://youtu.be/UU9QaM5Jbi4?t=1857')
 Trick("Goron City Right Maze Chest", "Optimal Bombing for Goron Maze Chests", {'bombs':1}, 'easy', 'both', True, 'https://youtu.be/UU9QaM5Jbi4?t=1857')
-Trick("Goron City Leftmost Maze Chest", "Power Crouch Stabs In Goron Maze", {'hammer':1}, 'easy', 'adult', True, None)
+Trick("Goron City Leftmost Maze Chest", "Power Crouch Stabs In Goron Maze", {'hammer':1}, 'easy', 'adult', True)
 Trick("Ice Cavern", "Optimal Block Room with Sliding Jumps", True, 'hard', 'adult', False, 'https://www.youtube.com/watch?v=2y73CFcmHaM')
 Trick("Ice Cavern", "Block Room with Minimal Pushing", True, 'easy', 'adult', False, 'https://www.youtube.com/watch?v=sgCl4YvjRYY&list=PLnQYLzPZ-JLXXkdsrN5Ff6SQiImnNVZ6f&index=13&t=0s')
 Trick("Hyrule Field", "Schroedinger's Chain (enter Market right after daytime)", True, 'medium', 'child', True, 'https://www.youtube.com/watch?time_continue=44&v=tZpZBVS9Iig&feature=emb_logo')
