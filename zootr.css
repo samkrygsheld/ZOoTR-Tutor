@@ -3,6 +3,10 @@
   width: 40px;
 }
 
+.itemsEquipScreenRow {
+  display: inline-block;
+}
+
 #ageIndicator {
   height: 80px;
   width: 40px;
