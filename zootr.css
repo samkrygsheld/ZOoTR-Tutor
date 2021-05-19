@@ -1,13 +1,24 @@
+@font-face {
+  font-family: triforce;
+  src: url(Triforce-y07d.ttf);
+}
+
+h1 {
+  font-family: triforce;
+}
+
 .itemButton {
   height: 40px;
   width: 40px;
 }
 
-.itemsEquipScreenRow {
+.itemsEquipScreenSection {
+  float: left;
   display: inline-block;
 }
 
 #ageIndicator {
+  float: left;
   height: 80px;
   width: 40px;
 }
