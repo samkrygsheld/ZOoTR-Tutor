@@ -10,6 +10,19 @@ h1 {
 .itemButton {
   height: 40px;
   width: 40px;
+  object-fit: contain;
+  margin: 0px;
+  padding: 0px;
+}
+
+.itemButtonEquipCol {
+  width: auto;
+  height: 25%;
+}
+
+.itemButtonEquipRow {
+  width: 33%;
+  height: auto;
 }
 
 .itemsEquipScreenSection {
@@ -17,8 +30,24 @@ h1 {
   display: inline-block;
 }
 
+.itemsEquipScreenColumn {
+  height: 160px;
+  width: 40px;
+}
+
+.itemsEquipScreenRow {
+  height: 40px;
+  width: 120px;
+  white-space: nowrap;
+}
+
+.itemsEquipScreenShortRow {
+  width: 80px;
+}
+
 #ageIndicator {
   float: left;
   height: 80px;
-  width: 40px;
+  width: 50px;
+  object-fit: cover;
 }
