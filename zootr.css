@@ -3,8 +3,50 @@
   src: url(Triforce-y07d.ttf);
 }
 
+body {
+  margin: 0;
+}
+
 h1 {
   font-family: triforce;
+}
+
+#itemsMainScreen {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 equally-sized columns */
+  grid-template-rows: repeat(4, 40px);    /* 3 equally-sized rows */
+  justify-content: center;
+  gap: 5px;
+  width: 270px;
+}
+
+#itemsEquipScreen {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 40px);
+  gap: 5px;
+  width: 270px;
+}
+
+#itemsEquipScreen section {
+	justify-content: center;
+}
+
+#ageIndicator {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#magicMeter {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 5;
+  grid-column-end: 7;
 }
 
 .itemButton {
@@ -13,41 +55,5 @@ h1 {
   object-fit: contain;
   margin: 0px;
   padding: 0px;
-}
-
-.itemButtonEquipCol {
-  width: auto;
-  height: 25%;
-}
-
-.itemButtonEquipRow {
-  width: 33%;
-  height: auto;
-}
-
-.itemsEquipScreenSection {
-  float: left;
-  display: inline-block;
-}
-
-.itemsEquipScreenColumn {
-  height: 160px;
-  width: 40px;
-}
-
-.itemsEquipScreenRow {
-  height: 40px;
-  width: 120px;
-  white-space: nowrap;
-}
-
-.itemsEquipScreenShortRow {
-  width: 80px;
-}
-
-#ageIndicator {
-  float: left;
-  height: 80px;
-  width: 50px;
-  object-fit: cover;
+  justify-self: center;
 }
