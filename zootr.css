@@ -5,22 +5,29 @@
 
 body {
   margin: 0;
+  height: 100vh;
+  width: 100%;
+  background-image:
+    linear-gradient(
+	  #ab8b63, #503512
+	);
 }
 
 h1 {
+  margin: 0;
   font-family: triforce;
 }
 
-#itemsMainScreen {
+#inventoryMainScreen {
   display: grid;
   grid-template-columns: repeat(6, 1fr); /* 6 equally-sized columns */
-  grid-template-rows: repeat(4, 40px);    /* 3 equally-sized rows */
+  grid-template-rows: repeat(3, 40px);
   justify-content: center;
   gap: 5px;
   width: 270px;
 }
 
-#itemsEquipScreen {
+#inventoryEquipScreen {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 40px);
@@ -28,8 +35,19 @@ h1 {
   width: 270px;
 }
 
-#itemsEquipScreen section {
-	justify-content: center;
+#inventoryQuestScreen {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr) 3fr;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 5px;
+}
+
+#songContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px;
+  width: 265px;
 }
 
 #ageIndicator {
@@ -49,7 +67,31 @@ h1 {
   grid-column-end: 7;
 }
 
+#skulltula {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#songStaff {
+  background-image: url("Images/Music/staff.png");
+  height: 40px;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
 .itemButton {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  margin: 0px;
+  padding: 0px;
+  justify-self: center;
+}
+
+.songButton {
   height: 40px;
   width: 40px;
   object-fit: contain;
