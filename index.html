@@ -1,91 +1,94 @@
 <!doctype html>
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <!-- CSS -->
-    <link href="zootr.css" rel="stylesheet" />
+    <link href='zootr.css' rel='stylesheet' />
 
     <title>ZOoTR Tutor</title>
   </head>
   <body>
-    <h1>ZOoTR Tutor</h1>
-
-    <div id="inventoryTracker">
-      <div id="inventoryMainScreen">
-        <!-- First Row -->
-        <img src="Images/Icons/stick0.png" data-maxiter=1 class="itemButton" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/nut0.png" data-maxiter=1 class="itemButton" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/bomb0.png" data-maxiter=1 class="itemButton" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/bow0.png" data-maxiter=1 class="itemButton" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/arrowsfire0.png" data-maxiter=1 class="itemButton" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/din0.png" data-maxiter=1 class="itemButton" onclick="incrementItem(this)" alt="">
-        <!-- Second Row -->
-        <img src="Images/Icons/slingshot0.png" data-maxiter=1 class="itemButton" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/ocarina0.png" data-maxiter=2 class="itemButton" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/bombchu0.png" data-maxiter=1 class="itemButton" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/shot0.png" data-maxiter=2 class="itemButton" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/arrowslight0.png" data-maxiter=1 class="itemButton" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/farore0.png" data-maxiter=1 class="itemButton" onclick="incrementItem(this)" alt="">
-        <!-- Third Row -->
-        <img src="Images/Icons/boomerang0.png" data-maxiter=1 class="itemButton" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/lens0.png" data-maxiter=1 class="itemButton" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/bean0.png" data-maxiter=1 class="itemButton" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/megaton0.png" data-maxiter=1 class="itemButton" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/magic0.png" data-maxiter=1 class="itemButton" id="magicMeter" onclick="incrementItem(this)" alt="">
-      </div>
-      <br>
-      <div id="inventoryEquipScreen">
-        <!-- First Row -->
-        <img src="Images/Icons/child0.png" data-maxiter=5 class="itemButton" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/swordkokiri0.png" data-maxiter=1 class="itemButton itemButtonEquipRow" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/swordmaster0.png" data-maxiter=1 class="itemButton itemButtonEquipRow" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/swordbiggoron0.png" data-maxiter=1 class="itemButton itemButtonEquipRow" onclick="incrementItem(this)" alt="">
-        <!-- Second Row -->
-        <img src="Images/Icons/adult0.png" data-maxiter=11 class="itemButton" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/shielddeku0.png" data-maxiter=1 class="itemButton itemButtonEquipRow" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/shieldhylian0.png" data-maxiter=1 class="itemButton itemButtonEquipRow" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/shieldmirror0.png" data-maxiter=1 class="itemButton itemButtonEquipRow" onclick="incrementItem(this)" alt="">
-        <!-- Third Row -->
-        <img src="Images/Icons/strength0.png" data-maxiter=3 class="itemButton" onclick="incrementItem(this)" alt="">
-        <img id="ageIndicator" src="Images/linkchild.png" onclick="toggleAge()" alt="">
-        <img src="Images/Icons/tunicgoron0.png" data-maxiter=1 class="itemButton itemButtonEquipShortRow" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/tuniczora0.png" data-maxiter=1 class="itemButton itemButtonEquipShortRow" onclick="incrementItem(this)" alt="">
-        <!-- Fourth Row -->
-        <img src="Images/Icons/scale0.png" data-maxiter=2 class="itemButton" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/bootsiron0.png" data-maxiter=1 class="itemButton itemButtonEquipShortRow" onclick="incrementItem(this)" alt="">
-        <img src="Images/Icons/bootshover0.png" data-maxiter=1 class="itemButton itemButtonEquipShortRow" onclick="incrementItem(this)" alt="">
-      </div>
-      <br>
-      <div id="songContainer">
-        <img src="Images/Icons/lullaby0.png" data-maxiter=1 data-notes="lurlur" class="songButton" onclick="incrementItem(this)" onmouseenter="showSong(this)" ontouchstart="showSong(this)" onmouseleave="hideSong()" alt="">
-        <img src="Images/Icons/epona0.png" data-maxiter=1 data-notes="ulrulr" class="songButton" onclick="incrementItem(this)" onmouseenter="showSong(this)" ontouchstart="showSong(this)" onmouseleave="hideSong()" alt="">
-        <img src="Images/Icons/saria0.png" data-maxiter=1 data-notes="drldrl" class="songButton" onclick="incrementItem(this)" onmouseenter="showSong(this)" ontouchstart="showSong(this)" onmouseleave="hideSong()" alt="">
-        <img src="Images/Icons/sun0.png" data-maxiter=1 data-notes="rdurdu" class="songButton" onclick="incrementItem(this)" onmouseenter="showSong(this)" ontouchstart="showSong(this)" onmouseleave="hideSong()" alt="">
-        <img src="Images/Icons/time0.png" data-maxiter=1 data-notes="radrad" class="songButton" onclick="incrementItem(this)" onmouseenter="showSong(this)" ontouchstart="showSong(this)" onmouseleave="hideSong()" alt="">
-        <img src="Images/Icons/storms0.png" data-maxiter=1 data-notes="aduadu" class="songButton" onclick="incrementItem(this)" onmouseenter="showSong(this)" ontouchstart="showSong(this)" onmouseleave="hideSong()" alt="">
-        <img src="Images/Icons/minuet0.png" data-maxiter=1 data-notes="aulrlr" class="songButton" onclick="incrementItem(this)" onmouseenter="showSong(this)" ontouchstart="showSong(this)" onmouseleave="hideSong()" alt="">
-        <img src="Images/Icons/bolero0.png" data-maxiter=1 data-notes="dadardrd" class="songButton" onclick="incrementItem(this)" onmouseenter="showSong(this)" ontouchstart="showSong(this)" onmouseleave="hideSong()" alt="">
-        <img src="Images/Icons/serenade0.png" data-maxiter=1 data-notes="adrrl" class="songButton" onclick="incrementItem(this)" onmouseenter="showSong(this)" ontouchstart="showSong(this)" onmouseleave="hideSong()" alt="">
-        <img src="Images/Icons/nocturne0.png" data-maxiter=1 data-notes="lrralrd" class="songButton" onclick="incrementItem(this)" onmouseenter="showSong(this)" ontouchstart="showSong(this)" onmouseleave="hideSong()" alt="">
-        <img src="Images/Icons/requiem0.png" data-maxiter=1 data-notes="adarda" class="songButton" onclick="incrementItem(this)" onmouseenter="showSong(this)" ontouchstart="showSong(this)" onmouseleave="hideSong()" alt="">
-        <img src="Images/Icons/prelude0.png" data-maxiter=1 data-notes="ururlu" class="songButton" onclick="incrementItem(this)" onmouseenter="showSong(this)" ontouchstart="showSong(this)" onmouseleave="hideSong()" alt="">
-        <div id="songStaff">
-          <img id="note0" class="note" src="" alt="">
-          <img id="note1" class="note" src="" alt="">
-          <img id="note2" class="note" src="" alt="">
-          <img id="note3" class="note" src="" alt="">
-          <img id="note4" class="note" src="" alt="">
-          <img id="note5" class="note" src="" alt="">
-          <img id="note6" class="note" src="" alt="">
-          <img id="note7" class="note" src="" alt="">
+    <div id='trackerWrapper'>
+      <h1>ZOoTR Tutor</h1>
+      <div id='inventoryTracker'>
+        <div id='inventoryMainScreen'>
+          <!-- First Row -->
+          <img src='Images/Icons/stick0.png' data-maxiter=1 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/nut0.png' data-maxiter=1 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/bomb0.png' data-maxiter=1 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/bow0.png' data-maxiter=1 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/arrowsfire0.png' data-maxiter=1 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/din0.png' data-maxiter=1 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <!-- Second Row -->
+          <img src='Images/Icons/slingshot0.png' data-maxiter=1 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/ocarina0.png' data-maxiter=2 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/bombchu0.png' data-maxiter=1 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/shot0.png' data-maxiter=2 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/arrowslight0.png' data-maxiter=1 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/farore0.png' data-maxiter=1 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <!-- Third Row -->
+          <img src='Images/Icons/boomerang0.png' data-maxiter=1 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/lens0.png' data-maxiter=1 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/bean0.png' data-maxiter=1 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/megaton0.png' data-maxiter=1 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/magic0.png' data-maxiter=1 class='itemButton' id='magicMeter' onclick='incrementItem(this)' alt=''>
+        </div>
+        <br>
+        <div id='inventoryEquipScreen'>
+          <!-- First Row -->
+          <img src='Images/Icons/child0.png' data-maxiter=5 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/swordkokiri0.png' data-maxiter=1 class='itemButton itemButtonEquipRow' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/swordmaster0.png' data-maxiter=1 class='itemButton itemButtonEquipRow' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/swordbiggoron0.png' data-maxiter=1 class='itemButton itemButtonEquipRow' onclick='incrementItem(this)' alt=''>
+          <!-- Second Row -->
+          <img src='Images/Icons/adult0.png' data-maxiter=11 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/shielddeku0.png' data-maxiter=1 class='itemButton itemButtonEquipRow' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/shieldhylian0.png' data-maxiter=1 class='itemButton itemButtonEquipRow' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/shieldmirror0.png' data-maxiter=1 class='itemButton itemButtonEquipRow' onclick='incrementItem(this)' alt=''>
+          <!-- Third Row -->
+          <img src='Images/Icons/strength0.png' data-maxiter=3 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <img id='ageIndicator' src='Images/age0.png' data-maxiter=1 onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/tunicgoron0.png' data-maxiter=1 class='itemButton itemButtonEquipShortRow' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/tuniczora0.png' data-maxiter=1 class='itemButton itemButtonEquipShortRow' onclick='incrementItem(this)' alt=''>
+          <!-- Fourth Row -->
+          <img src='Images/Icons/scale0.png' data-maxiter=2 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/bootsiron0.png' data-maxiter=1 class='itemButton itemButtonEquipShortRow' onclick='incrementItem(this)' alt=''>
+          <img src='Images/Icons/bootshover0.png' data-maxiter=1 class='itemButton itemButtonEquipShortRow' onclick='incrementItem(this)' alt=''>
+        </div>
+        <br>
+        <div id='songContainer'>
+          <img src='Images/Icons/lullaby0.png' data-maxiter=1 data-notes='lurlur' class='songButton' onclick='incrementItem(this)' onmouseenter='showSong(this)' ontouchstart='showSong(this)' onmouseleave='hideSong()' alt=''>
+          <img src='Images/Icons/epona0.png' data-maxiter=1 data-notes='ulrulr' class='songButton' onclick='incrementItem(this)' onmouseenter='showSong(this)' ontouchstart='showSong(this)' onmouseleave='hideSong()' alt=''>
+          <img src='Images/Icons/saria0.png' data-maxiter=1 data-notes='drldrl' class='songButton' onclick='incrementItem(this)' onmouseenter='showSong(this)' ontouchstart='showSong(this)' onmouseleave='hideSong()' alt=''>
+          <img src='Images/Icons/sun0.png' data-maxiter=1 data-notes='rdurdu' class='songButton' onclick='incrementItem(this)' onmouseenter='showSong(this)' ontouchstart='showSong(this)' onmouseleave='hideSong()' alt=''>
+          <img src='Images/Icons/time0.png' data-maxiter=1 data-notes='radrad' class='songButton' onclick='incrementItem(this)' onmouseenter='showSong(this)' ontouchstart='showSong(this)' onmouseleave='hideSong()' alt=''>
+          <img src='Images/Icons/storms0.png' data-maxiter=1 data-notes='aduadu' class='songButton' onclick='incrementItem(this)' onmouseenter='showSong(this)' ontouchstart='showSong(this)' onmouseleave='hideSong()' alt=''>
+          <img src='Images/Icons/minuet0.png' data-maxiter=1 data-notes='aulrlr' class='songButton' onclick='incrementItem(this)' onmouseenter='showSong(this)' ontouchstart='showSong(this)' onmouseleave='hideSong()' alt=''>
+          <img src='Images/Icons/bolero0.png' data-maxiter=1 data-notes='dadardrd' class='songButton' onclick='incrementItem(this)' onmouseenter='showSong(this)' ontouchstart='showSong(this)' onmouseleave='hideSong()' alt=''>
+          <img src='Images/Icons/serenade0.png' data-maxiter=1 data-notes='adrrl' class='songButton' onclick='incrementItem(this)' onmouseenter='showSong(this)' ontouchstart='showSong(this)' onmouseleave='hideSong()' alt=''>
+          <img src='Images/Icons/nocturne0.png' data-maxiter=1 data-notes='lrralrd' class='songButton' onclick='incrementItem(this)' onmouseenter='showSong(this)' ontouchstart='showSong(this)' onmouseleave='hideSong()' alt=''>
+          <img src='Images/Icons/requiem0.png' data-maxiter=1 data-notes='adarda' class='songButton' onclick='incrementItem(this)' onmouseenter='showSong(this)' ontouchstart='showSong(this)' onmouseleave='hideSong()' alt=''>
+          <img src='Images/Icons/prelude0.png' data-maxiter=1 data-notes='ururlu' class='songButton' onclick='incrementItem(this)' onmouseenter='showSong(this)' ontouchstart='showSong(this)' onmouseleave='hideSong()' alt=''>
+          <div id='songStaff'>
+            <div id='staffWrapper'>
+              <img id='note0' class='note' src='' alt=''>
+              <img id='note1' class='note' src='' alt=''>
+              <img id='note2' class='note' src='' alt=''>
+              <img id='note3' class='note' src='' alt=''>
+              <img id='note4' class='note' src='' alt=''>
+              <img id='note5' class='note' src='' alt=''>
+              <img id='note6' class='note' src='' alt=''>
+              <img id='note7' class='note' src='' alt=''>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     
     <!-- Javascript -->
-    <script src="zootr.js"></script>
+    <script src='zootr.js'></script>
     
    </body>
 </html>
