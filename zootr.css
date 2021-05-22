@@ -14,8 +14,22 @@ body {
 }
 
 h1 {
-  margin: 0;
   font-family: triforce;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  margin-bottom: 10px !important;
+}
+
+#trackerWrapper {
+  width: 100%;
+  padding-top: 10px;
+}
+#trackerWrapper > * {
+  width: 270px;
+  margin: 0 auto;
+  text-align: center;
+}
+#inventoryTracker img {
+  cursor: pointer;
 }
 
 #inventoryMainScreen {
@@ -47,7 +61,7 @@ h1 {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr 1fr 1fr;
   gap: 5px;
-  width: 265px;
+  width: 270px;
 }
 
 #ageIndicator {
@@ -80,6 +94,12 @@ h1 {
   width: 100%;
   grid-column-start: 1;
   grid-column-end: 7;
+}
+
+#staffWrapper {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
 }
 
 .itemButton {
