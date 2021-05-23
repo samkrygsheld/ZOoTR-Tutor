@@ -1,6 +1,6 @@
 @font-face {
   font-family: triforce;
-  src: url(Triforce-y07d.ttf);
+  src: url(/assets/fonts/Triforce-y07d.ttf);
 }
 
 body {
@@ -89,7 +89,7 @@ h1 {
 }
 
 #songStaff {
-  background-image: url("Images/Music/staff.png");
+  background-image: url("/assets/images/music/staff.png");
   height: 40px;
   width: 100%;
   grid-column-start: 1;

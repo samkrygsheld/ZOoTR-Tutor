@@ -55,7 +55,7 @@ function hideSong() {
 function showSong(obj) {
     const songNotes = obj.dataset.notes;
     for (let i = 0; i < songNotes.length; i++) {
-        document.getElementById(`note${i}`).src = `Images/Music/note-${songNotes[i]}.png`;
+        document.getElementById(`note${i}`).src = `assets/images/music/note-${songNotes[i]}.png`;
     }
 }
 
@@ -63,7 +63,16 @@ function test(obj) {
 	console.log(obj.alt);
 }
 
+function setUpServiceWorker() {
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('assets/js/sw.js').then(() => {
+            console.log('service worker registered');
+        });
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    setUpServiceWorker();
     loadState();
 
     $('.itemButton, .songButton').each((_, img) => {

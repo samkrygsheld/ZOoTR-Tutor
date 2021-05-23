@@ -58,8 +58,8 @@
      inkscape:current-layer="mapSvg"
      inkscape:document-rotation="0" />
   <image
-     sodipodi:absref="C:\dev\ZOoTR-Tutor\Images\map.png"
-     xlink:href="Images%5Cmap.png"
+     sodipodi:absref="C:\dev\ZOoTR-Tutor\assets\images\map.png"
+     xlink:href="assets%5Cimages%5Cmap.png"
      id="map_background" />
   <path
      id="gerudo_desert"
