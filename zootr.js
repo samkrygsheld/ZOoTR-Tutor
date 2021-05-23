@@ -59,10 +59,14 @@ function showSong(obj) {
     }
 }
 
+function test(obj) {
+	console.log(obj.alt);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     loadState();
 
-    const imgTags = document.getElementsByTagName('img');
+    const imgTags = document.getElementsByClassName('itemButton');
     for (let i = 0; i < imgTags.length; i++) {
         const img = imgTags[i];
         // Replace getting item source with id's that we set. Temporarily parsing from url

@@ -53,6 +53,7 @@
           <img src='Images/Icons/shieldmirror0.png' data-maxiter=1 class='itemButton itemButtonEquipRow' onclick='incrementItem(this)' alt=''>
           <!-- Third Row -->
           <img src='Images/Icons/strength0.png' data-maxiter=3 class='itemButton' onclick='incrementItem(this)' alt=''>
+          <!-- To do: obtain Master Sword when age becomes adult -->
           <img id='ageIndicator' src='Images/age0.png' data-maxiter=1 onclick='incrementItem(this)' alt=''>
           <img src='Images/Icons/tunicgoron0.png' data-maxiter=1 class='itemButton itemButtonEquipShortRow' onclick='incrementItem(this)' alt=''>
           <img src='Images/Icons/tuniczora0.png' data-maxiter=1 class='itemButton itemButtonEquipShortRow' onclick='incrementItem(this)' alt=''>
@@ -88,6 +89,15 @@
             </div>
           </div>
         </div>
+      </div>
+      <div id='mapWrapper'>
+      Click a region to show in console
+        <map name='mapAreas'>
+          <area shape='poly' coords='0,88,41,81,51,109,296,91,362,159,324,201,376,228,244,326,151,214,36,228,0,173' onclick='test(this)' href='javascript:void(0);' alt='Desert' />
+          <area shape='poly' coords='321,443,503,453,588,534,515,645,341,645,277,537' onclick='test(this)' href='javascript:void(0);' alt='Lake' />
+          <area shape='poly' coords='508,163,564,190,594,190,624,168,761,229,688,308,709,367,670,413,452,437,436,416,358,286,450,170' onclick='test(this)' href='javascript:void(0);' alt='Field' />
+        </map>
+        <img usemap='#mapAreas' src='Images/map.png' id='mapOfHyrule' alt=''>
       </div>
     </div>
     
