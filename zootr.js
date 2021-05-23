@@ -66,9 +66,7 @@ function test(obj) {
 document.addEventListener('DOMContentLoaded', () => {
     loadState();
 
-    const imgTags = document.getElementsByClassName('itemButton');
-    for (let i = 0; i < imgTags.length; i++) {
-        const img = imgTags[i];
+    $('.itemButton, .songButton').each((_, img) => {
         // Replace getting item source with id's that we set. Temporarily parsing from url
         let itemName = getItemName(img);
         setItemState(img, state[itemName] || 0);
@@ -76,5 +74,14 @@ document.addEventListener('DOMContentLoaded', () => {
             incrementItem(img, -1);
             e.preventDefault();
         });
-    }
+    });
+
+    $('#mapSvg > path').click((e) => {
+        $('#mapLocation').text(e.target.id.replaceAll('_', ' '));
+        // Zoom in if you can, else show checks
+        const $path = $(e.target);
+    }).contextmenu((e) => {
+        // Zoom out if you can
+        e.preventDefault();
+    });
 }, false);
