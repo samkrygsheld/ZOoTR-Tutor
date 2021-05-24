@@ -1,89 +1,65 @@
-let state = {};
+'use strict';
+
+import { Item, ItemState } from './models.js';
+
+let saveData = {};
 
 function loadState() {
-    state = JSON.parse(localStorage.getItem('state')) || {};
+    saveData = JSON.parse(localStorage.getItem('saveData')) || {};
 }
 
 function saveState() {
-    localStorage.setItem('state', JSON.stringify(state));
-}
-
-// Replace with img.id below
-function getItemName(img) {
-    const pathNoExtension = img.src.slice(0,-4);
-    const filename = pathNoExtension.substring(pathNoExtension.lastIndexOf('/') + 1)
-    const match = filename.match(/(.*?)\d+$/);
-    if (match) {
-        return match[1];
-    }
-    return filename;
-}
-
-function setItemState(obj, state) {
-    const pathNoExtension = obj.src.slice(0,-4);
-    const match = pathNoExtension.match(/(.*?)\d+$/);
-    if (!match) {
-        return;
-    }
-    const [_, path] = match;
-    obj.src = `${path}${state}.png`;
-}
-
-function incrementItem(obj, step = 1) {
-    // TODO: Make this DRY
-    const pathNoExtension = obj.src.slice(0,-4);
-    const [_, path, itemNumber] = pathNoExtension.match(/(.*?)(\d+)$/);
-    let newNumber = parseInt(itemNumber) + step;
-    if (newNumber > obj.dataset.maxiter) {
-        newNumber = obj.dataset.maxiter;
-    } else if (newNumber < 0) {
-        newNumber = 0;
-    }
-    obj.src = `${path}${newNumber}.png`;
-    const [_2, filename] = pathNoExtension.substring(pathNoExtension.lastIndexOf('/') + 1).match(/(.*?)\d+$/);
-    state[filename] = newNumber;
-    saveState();
-}
-
-function hideSong() {
-    const notes = document.querySelectorAll('.note');
-    for (let i = 0; i < notes.length; i++) {
-        notes[i].src = '';
-    }
-}
-
-function showSong(obj) {
-    const songNotes = obj.dataset.notes;
-    for (let i = 0; i < songNotes.length; i++) {
-        document.getElementById(`note${i}`).src = `assets/images/music/note-${songNotes[i]}.png`;
-    }
-}
-
-function test(obj) {
-	console.log(obj.alt);
+    localStorage.setItem('saveData', JSON.stringify(saveData));
 }
 
 function setUpServiceWorker() {
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('assets/js/sw.js').then(() => {
+        navigator.serviceWorker.register('sw.js').then(() => {
             console.log('service worker registered');
         });
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+const titleizeWord = (str) => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+function titleize(str) {
+    return str.split(' ').map((word) => titleizeWord(word)).join(' ');
+}
+
+$(() => {
     setUpServiceWorker();
     loadState();
 
-    $('.itemButton, .songButton').each((_, img) => {
-        // Replace getting item source with id's that we set. Temporarily parsing from url
-        let itemName = getItemName(img);
-        setItemState(img, state[itemName] || 0);
-        img.addEventListener('contextmenu', (e) => {
-            incrementItem(img, -1);
+    const itemStates = {};
+
+    $('.itemButton, .songButton, #age').each((_, img) => {
+        img.title = img.alt = img.id;
+        const $img = $(img);
+        const itemState = new ItemState(new Item(img.id, $img.data('maxiter')+1), img)
+        itemState.setState(saveData[img.id] || 0);
+        itemStates[img.id] = itemState;
+        $img.click(() => {
+            itemStates[img.id].incrementState();
+            saveData[img.id] = itemStates[img.id].state;
+            saveState();
+        }).contextmenu((e) => {
+            itemStates[img.id].incrementState(-1);
+            saveData[img.id] = itemStates[img.id].state;
+            saveState();
+
             e.preventDefault();
         });
     });
+
+    $('.songButton').bind('mouseenter touchstart', (e) => {
+        const songNotes = e.target.dataset.notes;
+        for (let i = 0; i < songNotes.length; i++) {
+            $(`#note${i}`).attr('src', `assets/images/music/note-${songNotes[i]}.png`);
+        }
+    }).bind('mouseleave contextmenu', (e) => {
+        $('.note').each((_, note) => {
+            note.src = '';
+        });
+    })
 
     $('#mapSvg > path').click((e) => {
         $('#mapLocation').text(e.target.id.replaceAll('_', ' '));
@@ -93,4 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Zoom out if you can
         e.preventDefault();
     });
-}, false);
+
+
+});
