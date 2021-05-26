@@ -1,0 +1,28 @@
+{
+  "name": "zootr-tutor",
+  "version": "1.0.0",
+  "description": "ZOoTR but with a Tutor",
+  "main": "index.html",
+  "scripts": {
+    "data": "python extract-data.py",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samkrygsheld/ZOoTR-Tutor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samkrygsheld/ZOoTR-Tutor/issues"
+  },
+  "homepage": "https://github.com/samkrygsheld/ZOoTR-Tutor#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/eslint-parser": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "eslint": "^7.27.0"
+  }
+}

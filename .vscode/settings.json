@@ -1,3 +1,9 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "ZOoTR-Tutor"
+    "liveServer.settings.multiRootWorkspaceName": "ZOoTR-Tutor",
+    "liveServer.settings.proxy": {
+        "enable": true,
+        "baseUri": "/ZOoTR-Tutor",
+        "proxyUri": "http://127.0.0.1:5500"
+    },
+    "liveServer.settings.port": 5500
 }

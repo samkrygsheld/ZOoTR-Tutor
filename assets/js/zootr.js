@@ -1,6 +1,9 @@
 'use strict';
 
 import { Item, ItemState } from './models.js';
+// import { parseSettingsString } from './util.js';
+// parseSettingsString('AJTWFCBSKJA9EFSDEAAJACBBMTDDAKAAJAEAC2AJSDGBLADLED7JKQUXEAN3BAJAAWKCLAC');
+// parseSettingsString('AJTWFCBSKJA9EFSDEAAJACBBMTDDAKAAJAESBSAGAC6SKSC2SC3JHLUVNFBAMQAACAAPUSCS');
 
 let saveData = {};
 
@@ -20,10 +23,10 @@ function setUpServiceWorker() {
     }
 }
 
-const titleizeWord = (str) => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
-function titleize(str) {
-    return str.split(' ').map((word) => titleizeWord(word)).join(' ');
-}
+// const titleizeWord = (str) => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+// function titleize(str) {
+//     return str.split(' ').map((word) => titleizeWord(word)).join(' ');
+// }
 
 $(() => {
     setUpServiceWorker();
@@ -34,7 +37,7 @@ $(() => {
     $('.itemButton, .songButton, #age').each((_, img) => {
         img.title = img.alt = img.id;
         const $img = $(img);
-        const itemState = new ItemState(new Item(img.id, $img.data('maxiter')+1), img)
+        const itemState = new ItemState(new Item(img.id, $img.data('maxiter')+1), img);
         itemState.setState(saveData[img.id] || 0);
         itemStates[img.id] = itemState;
         $img.click(() => {
@@ -42,7 +45,7 @@ $(() => {
             saveData[img.id] = itemStates[img.id].state;
             saveState();
         }).contextmenu((e) => {
-            itemStates[img.id].incrementState(-1);
+            itemStates[img.id].decrementState();
             saveData[img.id] = itemStates[img.id].state;
             saveState();
 
@@ -55,16 +58,16 @@ $(() => {
         for (let i = 0; i < songNotes.length; i++) {
             $(`#note${i}`).attr('src', `assets/images/music/note-${songNotes[i]}.png`);
         }
-    }).bind('mouseleave contextmenu', (e) => {
+    }).bind('mouseleave contextmenu', () => {
         $('.note').each((_, note) => {
             note.src = '';
         });
-    })
+    });
 
     $('#mapSvg > path').click((e) => {
         $('#mapLocation').text(e.target.id.replaceAll('_', ' '));
         // Zoom in if you can, else show checks
-        const $path = $(e.target);
+        // const $path = $(e.target);
     }).contextmenu((e) => {
         // Zoom out if you can
         e.preventDefault();

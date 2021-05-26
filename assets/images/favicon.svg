@@ -8,20 +8,20 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    sodipodi:docname="favicon.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
    id="svg8"
    version="1.1"
-   viewBox="0 0 25 20"
-   height="20mm"
-   width="25mm">
+   viewBox="0 0 270.93335 270.93333"
+   height="1024"
+   width="1024">
   <defs
      id="defs2" />
   <sodipodi:namedview
-     inkscape:window-maximized="1"
-     inkscape:window-y="-8"
-     inkscape:window-x="-8"
-     inkscape:window-height="1017"
-     inkscape:window-width="1920"
+     inkscape:window-maximized="0"
+     inkscape:window-y="276"
+     inkscape:window-x="666"
+     inkscape:window-height="954"
+     inkscape:window-width="1370"
      fit-margin-bottom="0"
      fit-margin-right="0"
      fit-margin-left="0"
@@ -30,15 +30,16 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="60.663309"
-     inkscape:cx="24.594724"
-     inkscape:zoom="2.8"
+     inkscape:cy="628.99911"
+     inkscape:cx="414.04477"
+     inkscape:zoom="0.42426407"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
      bordercolor="#666666"
      pagecolor="#ffffff"
-     id="base" />
+     id="base"
+     units="px" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -52,12 +53,12 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-97.013386,-38.557923)"
+     transform="translate(25.953316,64.438433)"
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
     <g
-       transform="translate(-0.32684413,0.09580119)"
+       transform="matrix(12.052904,0,0,12.052904,-1214.3804,-515.55138)"
        id="g893">
       <path
          sodipodi:nodetypes="ccc"
