@@ -1,0 +1,63 @@
+[
+{
+	"region": "Desert",
+	"subregions": {
+		"Gerudo Valley": ["False"],
+		"Gerudo Fortress": ["Gerudo Training Grounds"],
+		"Haunted Wasteland": ["False"],
+		"Desert Colossus": ["Spirit Temple"]
+	}
+},
+{
+	"region": "Lake",
+	"subregions": {
+		"Lake Hylia": ["Water Temple"]
+	}
+},
+{
+	"region": "Field",
+	"subregions": {
+		"Hyrule Field": ["False"],
+		"Lon Lon Ranch": ["False"]
+	}
+},
+{
+	"region": "Castle Town",
+	"subregions": {
+		"Market": ["False"],
+		"Castle": ["Ganon's Castle"],
+		"Temple of Time": ["False"]
+	}
+},
+{
+	"region": "Mountain",
+	"subregions": {
+		"Death Mountain Trail": ["Dodongo's Cavern"],
+		"Goron City": ["False"],
+		"Death Mountain Crater": ["Fire Temple"],
+	}
+},
+{
+	"region": "Kakariko",
+	"subregions": {
+		"Kakariko Village": ["Bottom of the Well"],
+		"Graveyard": ["Shadow Temple"]
+	}
+},
+{
+	"region": "River",
+	"subregions": {
+		"Zora's River": ["False"],
+		"Zora's Domain": ["Zora's Domain"],
+		"Zora's Fountain": ["Jabu Jabu's Belly", "Ice Cavern"]
+	}
+},
+{
+	"region": "Forest",
+	"subregions": {
+		"Kokiri Forest": ["Deku Tree"],
+		"Lost Woods": ["False"],
+		"Sacred Forest Meadow": ["Forest Temple"]
+	}
+}
+]
