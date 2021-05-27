@@ -15,6 +15,10 @@ body {
 	);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1 {
   margin-bottom: 10px !important;
 }
@@ -128,16 +132,29 @@ ul {
 
 #checksWrapper {
   width: 100%;
+  display: flex;
+
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 900px) {
+  #checksWrapper {
+    flex-direction: column-reverse;
+  }
 }
 
 #checks {
   background: rgba(0, 0, 0, 0.4);
-  padding: 5px 0;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 300px;
 }
 
 #checks ul {
-  height: 250px;
   overflow-y: auto;
+  flex: 1;
+  flex-basis: 0;
 }
 
 #checks li {
@@ -173,7 +190,7 @@ ul {
 }
 
 #mapSvg {
-  width: 100%;
+  /* flex: 1 1 0; */
 }
 
 #mapSvg > path {
