@@ -1,3 +1,4 @@
+[
 {
 	"region": "Desert",
 	"subregions": {
@@ -42,7 +43,7 @@
 		"Kakariko Village": ["Bottom of the Well"],
 		"Graveyard": ["Shadow Temple"]
 	}
-}
+},
 {
 	"region": "River",
 	"subregions": {
@@ -50,7 +51,7 @@
 		"Zora's Domain": ["Zora's Domain"],
 		"Zora's Fountain": ["Jabu Jabu's Belly", "Ice Cavern"]
 	}
-}
+},
 {
 	"region": "Forest",
 	"subregions": {
@@ -59,3 +60,4 @@
 		"Sacred Forest Meadow": ["Forest Temple"]
 	}
 }
+]
