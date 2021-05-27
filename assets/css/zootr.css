@@ -8,6 +8,7 @@ body {
   height: 100vh;
   width: 100%;
   font-family: triforce;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   background-image:
     linear-gradient(
 	  #ab8b63, #503512
@@ -15,8 +16,13 @@ body {
 }
 
 h1 {
-  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   margin-bottom: 10px !important;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #trackerWrapper {
@@ -118,6 +124,52 @@ h1 {
   margin: 0px;
   padding: 0px;
   justify-self: center;
+}
+
+#checksWrapper {
+  width: 100%;
+}
+
+#checks {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 5px 0;
+}
+
+#checks ul {
+  height: 250px;
+  overflow-y: auto;
+}
+
+#checks li {
+  text-align: left;
+  cursor: pointer;
+  padding: 10px 10px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.5em;
+}
+
+#checks li * {
+  flex: 1;
+}
+#checks li .check-name {
+  text-align: left;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+#checks li .check-icons {
+  text-align: right;
+  /* text-shadow: none; */
+}
+
+.check-checked {
+  color: green;
+}
+.check-unchecked {
+  color: red;
+}
+
+#checks li:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 #mapSvg {

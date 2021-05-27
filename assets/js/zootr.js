@@ -1,7 +1,8 @@
 'use strict';
 
 import { Item, ItemState } from './models.js';
-// import { parseSettingsString } from './util.js';
+import { fetchJson } from './utils.js';
+// import { parseSettingsString } from './utils.js';
 // parseSettingsString('AJTWFCBSKJA9EFSDEAAJACBBMTDDAKAAJAEAC2AJSDGBLADLED7JKQUXEAN3BAJAAWKCLAC');
 // parseSettingsString('AJTWFCBSKJA9EFSDEAAJACBBMTDDAKAAJAESBSAGAC6SKSC2SC3JHLUVNFBAMQAACAAPUSCS');
 
@@ -17,7 +18,7 @@ function saveState() {
 
 function setUpServiceWorker() {
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js').then(() => {
+        navigator.serviceWorker.register('service-worker.js').then(() => {
             console.log('service worker registered');
         });
     }
@@ -28,7 +29,7 @@ function setUpServiceWorker() {
 //     return str.split(' ').map((word) => titleizeWord(word)).join(' ');
 // }
 
-$(() => {
+$(async () => {
     setUpServiceWorker();
     loadState();
 
@@ -73,5 +74,14 @@ $(() => {
         e.preventDefault();
     });
 
+    const checks = await fetchJson('assets/js/checks.json');
+
+    for (const check of checks) {
+        const $clonedTemplate = $(document.getElementById('check-row-tmpl').content.firstElementChild).clone();
+        $clonedTemplate.children('.check-name').text(check.spoiler);
+        $clonedTemplate.children('.check-icons').text('‍🎶');
+        console.log($clonedTemplate);
+        $('#checks').children('ul').append($clonedTemplate);
+    }
 
 });

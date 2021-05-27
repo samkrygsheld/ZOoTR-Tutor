@@ -17,8 +17,12 @@ function text_to_bit_string(text) {
     return bits;
 }
 
+export async function fetchJson(url) {
+    return (await fetch(url)).json();
+}
+
 export async function parseSettingsString(text) {
-    const setting_infos = await (await fetch('assets/js/test.json')).json();
+    const setting_infos = await fetchJson('assets/js/test.json');
     let bits = text_to_bit_string(text);
 
     const settings = {};
