@@ -208,21 +208,260 @@
         "y-coord": 0
     },
     {
-        "spoiler": "KF GS Know It All House",
-        "description": "Know-It-All Night Skull",
-        "type": "skull",
+        "spoiler": "KF Midos Top Right Chest",
+        "description": "Mido's House ↖︎",
+        "type": "chest",
         "subregion": "Kokiri Forest",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "KF Midos Bottom Left Chest",
+        "description": "Mido's House ↙︎",
+        "type": "chest",
+        "subregion": "Kokiri Forest",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "KF Midos Bottom Right Chest",
+        "description": "Mido's House ↘︎",
+        "type": "chest",
+        "subregion": "Kokiri Forest",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "KF Storms Grotto Chest",
+        "description": "Storms Grotto by Lost Woods",
+        "type": "chest",
+        "subregion": "Kokiri Forest",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LW Gift from Saria",
+        "description": "Saria on the Bridge",
+        "type": "auto",
+        "subregion": "Lost Woods",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LW Ocarina Memory Game",
+        "description": "Ocarina Memory Game →",
+        "type": "interact",
+        "subregion": "Lost Woods",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LW Target in Woods",
+        "description": "Slingshot Target →",
+        "type": "interact",
+        "subregion": "Lost Woods",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LW Near Shortcuts Grotto Chest",
+        "description": "Bomb Grotto by Goron Shortcut →↑",
+        "type": "chest",
+        "subregion": "Lost Woods",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Deku Theater Skull Mask",
+        "description": "Show Scrubs Skull Mask →↑→↑←",
+        "type": "interact",
+        "subregion": "Lost Woods",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Deku Theater Mask of Truth",
+        "description": "Show Scrubs Mask of Truth →↑→↑←",
+        "type": "interact",
+        "subregion": "Lost Woods",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LW Skull Kid",
+        "description": "Saria's Song with Skull Kid ←",
+        "type": "interact",
+        "subregion": "Lost Woods",
         "age": "child",
         "x-coord": 0,
         "y-coord": 0
     },
     {
         "spoiler": "LW Deku Scrub Near Bridge",
-        "description": "Scrub Under Bridge",
+        "description": "Scrub Under Bridge ←↓",
         "type": "purchase",
         "subregion": "Lost Woods",
         "age": "child",
         "price": 40,
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LW Deku Scrub Grotto Front",
+        "description": "Left Scrub in Far Bomb Grotto →↑→↑↑←",
+        "type": "purchase",
+        "subregion": "Lost Woods",
+        "age": "both",
+        "price": 40,
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "SFM Wolfos Grotto Chest",
+        "description": "Hidden Grotto in front of Gate",
+        "type": "chest",
+        "subregion": "Sacred Forest Meadow",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "HF Ocarina of Time Item",
+        "description": "Ocarina of Time Item",
+        "type": "freestanding",
+        "subregion": "Hyrule Field",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": false
+    },
+    {
+        "spoiler": "HF Near Market Grotto Chest",
+        "description": "Bomb Grotto West of Drawbridge",
+        "type": "chest",
+        "subregion": "Hyrule Field",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "HF Tektite Grotto Freestanding PoH",
+        "description": "Deep Dive in Hidden Grotto",
+        "type": "freestanding",
+        "subregion": "Hyrule Field",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": true
+    },
+    {
+        "spoiler": "HF Southeast Grotto Chest",
+        "description": "Bomb Grotto South of Forest",
+        "type": "chest",
+        "subregion": "Hyrule Field",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "HF Open Grotto Chest",
+        "description": "Grotto Outside Lake Fences",
+        "type": "chest",
+        "subregion": "Hyrule Field",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "HF Deku Scrub Grotto",
+        "description": "Scrub in Hidden Grotto Between Fences",
+        "type": "purchase",
+        "subregion": "Hyrule Field",
+        "age": "both",
+        "price": 10,
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Market Shooting Gallery Reward",
+        "description": "Child Shooting Gallery",
+        "type": "minigame",
+        "time-sensitive": "day",
+        "subregion": "Market",
+        "age": "child",
+        "price": 20,
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Market Bombchu Bowling First Prize",
+        "description": "Bombchu Bowling First Prize",
+        "type": "minigame",
+        "time-sensitive": "day",
+        "subregion": "Market",
+        "age": "child",
+        "price": 30,
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Market Bombchu Bowling Second Prize",
+        "description": "Bombchu Bowling Second Prize",
+        "type": "minigame",
+        "time-sensitive": "day",
+        "subregion": "Market",
+        "age": "child",
+        "price": 30,
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Market Lost Dog",
+        "description": "Return the Lost Dog",
+        "type": "interact",
+        "time-sensitive": "night",
+        "subregion": "Market",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Market Treasure Chest Game Reward",
+        "description": "Treasure Chest Game",
+        "type": "minigame",
+        "time-sensitive": "night",
+        "subregion": "Market",
+        "price": 10,
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Market 10 Big Poes",
+        "description": "Big Poe Salesman",
+        "type": "interact",
+        "subregion": "Market",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "KF GS Know It All House",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "Kokiri Forest",
+        "age": "child",
         "x-coord": 0,
         "y-coord": 0
     },
