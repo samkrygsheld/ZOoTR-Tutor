@@ -29,7 +29,7 @@ export class ItemState {
         this.img.src = this.icon;
     }
 
-    incrementState(step = 1) {
+    changeState(step = 1) {
         this.state += step;
         if (this.state >= this.item.icons.length) {
             this.state = this.item.icons.length - 1;
@@ -41,18 +41,18 @@ export class ItemState {
 }
 
 export class Criteria {
-    requiredItems;
+    requiredItemStates;
     trickSkips;
-    constructor(requiredItems = [], trickSkips = []) {
-        this.requiredItems = requiredItems;
+    constructor(requiredItemStates, trickSkips = []) {
+        this.requiredItemStates = requiredItemStates;
         this.trickSkips = trickSkips;
     }
 }
 
 export class Check {
     location;
-    criteria;
-    isCompleteable;
+    criteria = [];
     isSkull;
+    get isCompletable() { return true; }
     constructor() {}
 }
