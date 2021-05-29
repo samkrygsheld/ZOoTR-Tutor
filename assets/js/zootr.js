@@ -1,7 +1,7 @@
 'use strict';
 
 import { Check, CheckState, Item, ItemState } from './models.js';
-import { fetchJson, titleize } from './utils.js';
+import { fetchJson, isMobile, titleize } from './utils.js';
 // import { parseSettingsString } from './utils.js';
 // parseSettingsString('AJTWFCBSKJA9EFSDEAAJACBBMTDDAKAAJAEAC2AJSDGBLADLED7JKQUXEAN3BAJAAWKCLAC');
 // parseSettingsString('AJTWFCBSKJA9EFSDEAAJACBBMTDDAKAAJAESBSAGAC6SKSC2SC3JHLUVNFBAMQAACAAPUSCS');
@@ -69,6 +69,7 @@ $(async () => {
     });
 
     $('#checks').resizable({
+        disabled: isMobile(),
         handles: 'e',
         minWidth: 180,
         maxWidth: 900,
@@ -115,5 +116,46 @@ $(async () => {
         });
         $('#checks').children('ul').append($clonedTemplate);
     }
+
+    if (isMobile()) {
+        $('#checksWrapper').addClass('hidden');
+    }
+    let showChecks = false;
+    $(window).resize(() => {
+        showChecks = false;
+        $('#inventoryTracker').removeClass('hidden');
+        $('#checksWrapper').removeClass('hidden');
+        if (isMobile()) {
+            $('#checksWrapper').addClass('hidden');
+        }
+        $('#checks').removeAttr('style').resizable({
+            disabled: isMobile(),
+        });
+    });
+    let lastScrollTop = 0;
+    $('#checks').children('ul').scroll((e) => {
+        if (!isMobile()) {
+            return;
+        }
+        const scrollTop = e.target.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            // Down
+            $('#toggleMap').fadeOut(250);
+        } else {
+            $('#toggleMap').fadeIn(250);
+        }
+        lastScrollTop = scrollTop;
+    });
+    $('#toggleMap').click(() => {
+        showChecks = !showChecks;
+        if (showChecks) {
+            $('#inventoryTracker').addClass('hidden');
+            $('#checksWrapper').removeClass('hidden');
+        } else {
+            $('#inventoryTracker').removeClass('hidden');
+            $('#checksWrapper').addClass('hidden');
+            $('#toggleMap').stop(true, true).show();
+        }
+    });
 
 });

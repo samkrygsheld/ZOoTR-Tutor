@@ -27,6 +27,9 @@ export function kebabToCamel(str) {
     return [words[0], ...words.slice(1).map(titleizeWord)].join('');
 }
 
+export function isMobile() {
+    return window.matchMedia('only screen and (max-width: 900px)').matches;
+}
 
 export async function fetchJson(url) {
     return (await fetch(url)).json();
