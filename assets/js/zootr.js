@@ -1,15 +1,20 @@
 'use strict';
 
-import { Item, ItemState } from './models.js';
-import { fetchJson } from './utils.js';
+import { Check, CheckState, Item, ItemState } from './models.js';
+import { fetchJson, titleize } from './utils.js';
 // import { parseSettingsString } from './utils.js';
 // parseSettingsString('AJTWFCBSKJA9EFSDEAAJACBBMTDDAKAAJAEAC2AJSDGBLADLED7JKQUXEAN3BAJAAWKCLAC');
 // parseSettingsString('AJTWFCBSKJA9EFSDEAAJACBBMTDDAKAAJAESBSAGAC6SKSC2SC3JHLUVNFBAMQAACAAPUSCS');
 
-let saveData = {};
+let saveData = {
+    inventory: {},
+    checks: {},
+};
 
 function loadState() {
-    saveData = JSON.parse(localStorage.getItem('saveData')) || {};
+    saveData = JSON.parse(localStorage.getItem('saveData')) || saveData;
+    saveData.inventory = saveData.inventory || {};
+    saveData.checks = saveData.checks || {};
 }
 
 function saveState() {
@@ -17,17 +22,14 @@ function saveState() {
 }
 
 function setUpServiceWorker() {
-    if ('serviceWorker' in navigator) {
+    // Disable service worker without causing linter errors :P
+    // Look into using Workbox eventually
+    if ('serviceWorker' in navigator && ''.length) {
         navigator.serviceWorker.register('service-worker.js').then(() => {
             console.log('service worker registered');
         });
     }
 }
-
-// const titleizeWord = (str) => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
-// function titleize(str) {
-//     return str.split(' ').map((word) => titleizeWord(word)).join(' ');
-// }
 
 $(async () => {
     setUpServiceWorker();
@@ -38,16 +40,17 @@ $(async () => {
     $('.itemButton, .songButton, #age').each((_, img) => {
         img.title = img.alt = img.id;
         const $img = $(img);
-        const itemState = new ItemState(new Item(img.id, $img.data('maxiter')+1), img);
-        itemState.setState(saveData[img.id] || 0);
+        const maxIter = $img.data('maxiter');
+        const itemState = new ItemState(new Item(img.id, maxIter + 1), img, maxIter === 1);
+        itemState.setState(saveData.inventory[img.id] || 0);
         itemStates[img.id] = itemState;
         $img.click(() => {
             itemStates[img.id].incrementState();
-            saveData[img.id] = itemStates[img.id].state;
+            saveData.inventory[img.id] = itemStates[img.id].state;
             saveState();
         }).contextmenu((e) => {
             itemStates[img.id].decrementState();
-            saveData[img.id] = itemStates[img.id].state;
+            saveData.inventory[img.id] = itemStates[img.id].state;
             saveState();
 
             e.preventDefault();
@@ -65,22 +68,51 @@ $(async () => {
         });
     });
 
-    $('#mapSvg > path').click((e) => {
-        $('#mapLocation').text(e.target.id.replaceAll('_', ' '));
+    $('#checks').resizable({
+        handles: 'e',
+        minWidth: 180,
+        maxWidth: 900,
+        resize: (event, ui) => {
+            ui.element.css({ 'flex-basis': ui.size.width + 10 });
+        }
+    });
+
+    $('#mapSvg > path').click(() => {
+        // $('#mapLocation').text(titleize(e.target.id.replaceAll('_', ' ')));
         // Zoom in if you can, else show checks
         // const $path = $(e.target);
     }).contextmenu((e) => {
         // Zoom out if you can
         e.preventDefault();
+    }).mouseenter((e) => {
+        const $tooltipTemplate = $(document.getElementById('map-tooltip-tmpl').content.firstElementChild).clone();
+        $(document.body).append($tooltipTemplate);
+        $tooltipTemplate.text(titleize(e.target.id.replaceAll('_', ' ')));
+        $tooltipTemplate.css({
+            transform: `translate(${e.pageX}px, ${e.pageY}px)`,
+            top: -$tooltipTemplate.outerHeight() - 5,
+        });
+    }).mousemove((e) => {
+        $('.map-tooltip').css({ transform: `translate(${e.pageX}px, ${e.pageY}px)` });
+    }).mouseleave(() => {
+        $('.map-tooltip').remove();
     });
 
     const checks = await fetchJson('assets/js/checks.json');
 
     for (const check of checks) {
+        const checkState = new CheckState(new Check(check), saveData.checks[check.spoiler]);
         const $clonedTemplate = $(document.getElementById('check-row-tmpl').content.firstElementChild).clone();
-        $clonedTemplate.children('.check-name').text(check.spoiler);
-        $clonedTemplate.children('.check-icons').text('‍🎶');
-        console.log($clonedTemplate);
+        $clonedTemplate.addClass(checkState.class);
+        $clonedTemplate.children('.check-name').text(check.description);
+        $clonedTemplate.children('.check-icons').text(checkState.check.icons);
+        $clonedTemplate.click(() => {
+            checkState.checked = !checkState.checked;
+            saveData.checks[checkState.check.spoiler] = checkState.checked;
+            saveState();
+            $clonedTemplate.removeClass();
+            $clonedTemplate.addClass(checkState.class);
+        });
         $('#checks').children('ul').append($clonedTemplate);
     }
 

@@ -9,10 +9,6 @@ body {
   width: 100%;
   font-family: triforce;
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-  background-image:
-    linear-gradient(
-	  #ab8b63, #503512
-	);
 }
 
 * {
@@ -29,14 +25,20 @@ ul {
   padding: 0;
 }
 
+:root {
+  --light-brown: #ab8b63;
+}
+
 #trackerWrapper {
   width: 100%;
-  padding-top: 10px;
 }
-#trackerWrapper > * {
-  width: 270px;
-  margin: 0 auto;
+#inventoryTracker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  background-image: linear-gradient(var(--light-brown), #503512);
+  padding-bottom: 10px;
 }
 #inventoryTracker img {
   cursor: pointer;
@@ -144,17 +146,19 @@ ul {
 }
 
 #checks {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 1);
   padding-top: 5px;
   display: flex;
   flex-direction: column;
-  flex: 0 0 300px;
+  flex: 0 0 350px;
+  padding-left: 10px;
 }
 
 #checks ul {
   overflow-y: auto;
   flex: 1;
   flex-basis: 0;
+  margin-left: -10px;
 }
 
 #checks li {
@@ -164,6 +168,11 @@ ul {
   display: flex;
   align-items: flex-end;
   font-size: 1.5em;
+  border-bottom: 1px var(--light-brown) solid;
+}
+
+#checks li:first-child {
+  border-top: 1px var(--light-brown) solid;
 }
 
 #checks li * {
@@ -177,20 +186,20 @@ ul {
   text-align: right;
   /* text-shadow: none; */
 }
-
-.check-checked {
+.check.check-checkable .check-name {
   color: green;
 }
-.check-unchecked {
+
+.check.check-unchecked .check-name {
   color: red;
+}
+
+.check.check-checked .check-name {
+  color: grey;
 }
 
 #checks li:hover {
   background: rgba(255, 255, 255, 0.2);
-}
-
-#mapSvg {
-  /* flex: 1 1 0; */
 }
 
 #mapSvg > path {
@@ -201,4 +210,20 @@ ul {
 }
 #mapSvg > path:hover {
   fill: rgba(255, 255, 255, 0.5);
+}
+
+.map-tooltip {
+  position: absolute;
+  text-align: center;
+  top: -10px;
+  left: -75px;
+  min-width: 150px;
+  /* height: 100px; */
+  padding: 5px 15px;
+  border: 3px var(--light-brown) solid;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  text-shadow: none;
+  /* opacity: 0.85; */
 }

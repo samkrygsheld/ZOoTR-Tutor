@@ -17,6 +17,17 @@ function text_to_bit_string(text) {
     return bits;
 }
 
+const titleizeWord = (str) => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+export function titleize(str) {
+    return str.split(' ').map(titleizeWord).join(' ');
+}
+
+export function kebabToCamel(str) {
+    const words = str.split('-');
+    return [words[0], ...words.slice(1).map(titleizeWord)].join('');
+}
+
+
 export async function fetchJson(url) {
     return (await fetch(url)).json();
 }
