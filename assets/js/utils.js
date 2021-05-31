@@ -17,8 +17,26 @@ function text_to_bit_string(text) {
     return bits;
 }
 
+const titleizeWord = (str) => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+export function titleize(str) {
+    return str.split(' ').map(titleizeWord).join(' ');
+}
+
+export function kebabToCamel(str) {
+    const words = str.split('-');
+    return [words[0], ...words.slice(1).map(titleizeWord)].join('');
+}
+
+export function isMobile() {
+    return window.matchMedia('only screen and (max-width: 900px)').matches;
+}
+
+export async function fetchJson(url) {
+    return (await fetch(url)).json();
+}
+
 export async function parseSettingsString(text) {
-    const setting_infos = await (await fetch('assets/js/test.json')).json();
+    const setting_infos = await fetchJson('assets/js/test.json');
     let bits = text_to_bit_string(text);
 
     const settings = {};

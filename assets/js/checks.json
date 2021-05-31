@@ -3,7 +3,7 @@
         "spoiler": "Links Pocket",
         "description": "Starting Medallion",
         "type": "dungeon",
-        "subregion": false,
+        "subregion": null,
         "age": "both",
         "x-coord": null,
         "y-coord": null,
