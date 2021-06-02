@@ -92,7 +92,7 @@
     },
     {
         "spoiler": "Song from Impa",
-        "description": "Zelda's Lullaby location",
+        "description": "Song at the castle",
         "type": "song",
         "subregion": "Castle",
         "age": "child",
@@ -101,7 +101,7 @@
     },
     {
         "spoiler": "Song from Malon",
-        "description": "Epona's Song location",
+        "description": "Song from Malon",
         "type": "song",
         "subregion": "Lon Lon Ranch",
         "age": "child",
@@ -110,7 +110,7 @@
     },
     {
         "spoiler": "Song from Saria",
-        "description": "Saria's Song location",
+        "description": "Song from Saria",
         "type": "song",
         "subregion": "Sacred Forest Meadow",
         "age": "child",
@@ -119,7 +119,7 @@
     },
     {
         "spoiler": "Song from Composers Grave",
-        "description": "Sun's Song location",
+        "description": "Song from the ",
         "type": "song",
         "subregion": "Graveyard",
         "age": "both",
@@ -128,7 +128,7 @@
     },
     {
         "spoiler": "Song from Ocarina of Time",
-        "description": "Song of Time location",
+        "description": "Song from the Ocarina",
         "type": "song",
         "subregion": "Hyrule Field",
         "age": "child",
@@ -384,7 +384,7 @@
     },
     {
         "spoiler": "HF Deku Scrub Grotto",
-        "description": "Scrub in Hidden Grotto Between Fences",
+        "description": "Hidden Grotto Scrub Between Fences",
         "type": "purchase",
         "subregion": "Hyrule Field",
         "age": "both",
@@ -405,7 +405,7 @@
     },
     {
         "spoiler": "Market Bombchu Bowling First Prize",
-        "description": "Bombchu Bowling First Prize",
+        "description": "Bombchu Bowling 1",
         "type": "minigame",
         "time-sensitive": "day",
         "subregion": "Market",
@@ -416,7 +416,7 @@
     },
     {
         "spoiler": "Market Bombchu Bowling Second Prize",
-        "description": "Bombchu Bowling Second Prize",
+        "description": "Bombchu Bowling 2",
         "type": "minigame",
         "time-sensitive": "day",
         "subregion": "Market",
@@ -456,11 +456,37 @@
         "y-coord": 0
     },
     {
-        "spoiler": "KF GS Know It All House",
-        "description": "Know-It-All Skull",
-        "type": "skull",
-        "time-sensitive": "night",
-        "subregion": "Kokiri Forest",
+        "spoiler": "ToT Light Arrows Cutscene",
+        "description": "Light Arrows",
+        "type": "auto",
+        "subregion": "Temple of Time",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "HC Malon Egg",
+        "description": "Malon at Castle",
+        "type": "interact",
+        "subregion": "Castle",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "HC Zeldas Letter",
+        "description": "Zelda in Castle",
+        "type": "auto",
+        "subregion": "Castle",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "HC Great Fairy Reward",
+        "description": "Great Fairy at Castle",
+        "type": "fairy",
+        "subregion": "Castle",
         "age": "child",
         "x-coord": 0,
         "y-coord": 0
@@ -472,6 +498,367 @@
         "subregion": "Lon Lon Ranch",
         "age": "child",
         "price": 10,
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LLR Freestanding PoH",
+        "description": "Far Corner Block Push",
+        "type": "freestanding",
+        "subregion": "Lon Lon Ranch",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": "time-only"
+    },
+    {
+        "spoiler": "Kak Anju as Child",
+        "description": "Collect Chickens",
+        "type": "interact",
+        "subregion": "Kakariko Village",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Kak Anju as Adult",
+        "description": "Talk to Anju",
+        "type": "interact",
+        "subregion": "Kakariko Village",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Kak Impas House Freestanding PoH",
+        "description": "Impa's Cow Secret Entrance",
+        "type": "freestanding",
+        "subregion": "Kakariko Village",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": true
+    },
+    {
+        "spoiler": "Kak Windmill Freestanding PoH",
+        "description": "Ledge in Windmill",
+        "type": "freestanding",
+        "subregion": "Kakariko Village",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": true
+    },
+    {
+        "spoiler": "Kak Man on Roof",
+        "description": "Man on Roof",
+        "type": "interact",
+        "subregion": "Kakariko Village",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Kak Open Grotto Chest",
+        "description": "Grotto Behind Fence",
+        "type": "chest",
+        "subregion": "Kakariko Village",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Kak Redead Grotto Chest",
+        "description": "Hidden Grotto Past Tree",
+        "type": "chest",
+        "subregion": "Kakariko Village",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Kak Shooting Gallery Reward",
+        "description": "Adult Shooting Gallery",
+        "type": "minigame",
+        "subregion": "Kakariko Village",
+        "age": "adult",
+        "price": 20,
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Kak 10 Gold Skulltula Reward",
+        "description": "10 Skulltulas",
+        "type": "interact",
+        "subregion": "Kakariko Village",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Kak 20 Gold Skulltula Reward",
+        "description": "20 Skulltulas",
+        "type": "interact",
+        "subregion": "Kakariko Village",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Kak 30 Gold Skulltula Reward",
+        "description": "30 Skulltulas",
+        "type": "interact",
+        "subregion": "Kakariko Village",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Kak 40 Gold Skulltula Reward",
+        "description": "40 Skulltulas",
+        "type": "interact",
+        "subregion": "Kakariko Village",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Kak 50 Gold Skulltula Reward",
+        "description": "50 Skulltulas",
+        "type": "interact",
+        "subregion": "Kakariko Village",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Graveyard Shield Grave Chest",
+        "description": "Front Grave 2nd from Left",
+        "type": "chest",
+        "subregion": "Graveyard",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Graveyard Heart Piece Grave Chest",
+        "description": "Back Grave 4th from Right",
+        "type": "chest",
+        "subregion": "Graveyard",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Graveyard Composers Grave Chest",
+        "description": "Torches in Composer Grave",
+        "type": "chest",
+        "subregion": "Graveyard",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Graveyard Freestanding PoH",
+        "description": "Crate Above Bean",
+        "type": "freestanding",
+        "subregion": "Graveyard",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": false
+    },
+    {
+        "spoiler": "Graveyard Dampe Gravedigging Tour",
+        "description": "Dampe Early Evening",
+        "type": "interactive",
+        "time-sensitive": "night",
+        "subregion": "Graveyard",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Graveyard Hookshot Chest",
+        "description": "Dampe Race",
+        "type": "chest",
+        "subregion": "Graveyard",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Graveyard Dampe Race Freestanding PoH",
+        "description": "Dampe Race Fast",
+        "type": "interactive",
+        "subregion": "Graveyard",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "DMT Freestanding PoH",
+        "description": "Above Dodongo's Cavern",
+        "type": "freestanding",
+        "subregion": "Death Mountain Trail",
+        "age": "?",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": "?",
+    },
+    {
+        "spoiler": "DMT Chest",
+        "description": "Bomb Wall Near City",
+        "type": "chest",
+        "subregion": "Death Mountain Trail",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "DMT Storms Grotto Chest",
+        "description": "Storms Grotto In Rock Ring",
+        "type": "chest",
+        "subregion": "Death Mountain Trail",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "DMT Great Fairy Reward",
+        "description": "Great Fairy at Summit",
+        "type": "fairy",
+        "subregion": "Death Mountain Trail",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "DMT Biggoron",
+        "description": "Biggoron",
+        "type": "interactive",
+        "subregion": "Death Mountain Trail",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GC Darunias Joy",
+        "description": "Saria's Song for Darunia",
+        "type": "interactive",
+        "subregion": "Goron City",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GC Pot Freestanding PoH",
+        "description": "Bomb Spinning Pot",
+        "type": "interactive",
+        "subregion": "Goron City",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GC Rolling Goron as Child",
+        "description": "Big Rolling Goron",
+        "type": "interactive",
+        "subregion": "Goron City",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GC Rolling Goron as Adult",
+        "description": "Small Rolling Goron",
+        "type": "interactive",
+        "subregion": "Goron City",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GC Medigoron",
+        "description": "Giant's Knife Goron",
+        "type": "interactive",
+        "subregion": "Goron City",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GC Maze Left Chest",
+        "description": "Maze Hammer/Gauntlet",
+        "type": "chest",
+        "subregion": "Goron City",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GC Maze Right Chest",
+        "description": "Maze Right Chest",
+        "type": "chest",
+        "subregion": "Goron City",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GC Maze Center Chest",
+        "description": "Maze Center Chest",
+        "type": "chest",
+        "subregion": "Goron City",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "DMC Volcano Freestanding PoH",
+        "description": "Top of Volcano",
+        "type": "freestanding",
+        "subregion": "Death Mountain Crater",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": true
+    },
+    {
+        "spoiler": "DMC Wall Freestanding PoH",
+        "description": "Climb Down Wall",
+        "type": "freestanding",
+        "subregion": "Death Mountain Crater",
+        "age": "?",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": "time-only"
+    },
+    {
+        "spoiler": "DMC Upper Grotto Chest",
+        "description": "Bomb Grotto Near Summit",
+        "type": "chest",
+        "subregion": "Death Mountain Crater",
+        "age": "?",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "DMC Great Fairy Reward",
+        "description": "Great Fairy Crater",
+        "type": "fairy",
+        "subregion": "Death Mountain Crater",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "KF GS Know It All House",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "Kokiri Forest",
+        "age": "child",
         "x-coord": 0,
         "y-coord": 0
     }
