@@ -2,7 +2,7 @@
     {
         "spoiler": "Links Pocket",
         "description": "Starting Medallion",
-        "type": "dungeon",
+        "type": "boss",
         "subregion": null,
         "age": "both",
         "x-coord": null,
@@ -20,8 +20,17 @@
     },
     {
         "spoiler": "Queen Gohma",
-        "description": "Queen Gohma",
-        "type": "dungeon",
+        "description": "Queen Gohma Medallion",
+        "type": "boss",
+        "subregion": "Deku Tree",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Deku Tree Queen Gohma Heart",
+        "description": "Queen Gohma Item",
+        "type": "boss",
         "subregion": "Deku Tree",
         "age": "child",
         "x-coord": 0,
@@ -29,17 +38,35 @@
     },
     {
         "spoiler": "King Dodongo",
-        "description": "King Dodongo",
-        "type": "dungeon",
+        "description": "King Dodongo Medallion",
+        "type": "boss",
         "subregion": "Dodongo's Cavern",
-        "age": "child",
+        "age": "?",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Dodongos Cavern King Dodongo Heart",
+        "description": "King Dodongo Item",
+        "type": "boss",
+        "subregion": "Dodongo's Cavern",
+        "age": "?",
         "x-coord": 0,
         "y-coord": 0
     },
     {
         "spoiler": "Barinade",
-        "description": "Barinade",
-        "type": "dungeon",
+        "description": "Barinade Medallion",
+        "type": "boss",
+        "subregion": "Jabu Jabu's Belly",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Jabu Jabus Belly Barinade Heart",
+        "description": "Barinade Item",
+        "type": "boss",
         "subregion": "Jabu Jabu's Belly",
         "age": "child",
         "x-coord": 0,
@@ -47,8 +74,17 @@
     },
     {
         "spoiler": "Phantom Ganon",
-        "description": "Phantom Ganon",
-        "type": "dungeon",
+        "description": "Phantom Ganon Medallion",
+        "type": "boss",
+        "subregion": "Forest Temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple Phantom Ganon Heart",
+        "description": "Phantom Ganon Item",
+        "type": "boss",
         "subregion": "Forest Temple",
         "age": "adult",
         "x-coord": 0,
@@ -56,8 +92,17 @@
     },
     {
         "spoiler": "Volvagia",
-        "description": "Volvagia",
-        "type": "dungeon",
+        "description": "Volvagia Medallion",
+        "type": "boss",
+        "subregion": "Fire Temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple Volvagia Heart",
+        "description": "Volvagia Item",
+        "type": "boss",
         "subregion": "Fire Temple",
         "age": "adult",
         "x-coord": 0,
@@ -65,8 +110,17 @@
     },
     {
         "spoiler": "Morpha",
-        "description": "Morpha",
-        "type": "dungeon",
+        "description": "Morpha Medallion",
+        "type": "boss",
+        "subregion": "Water Temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Water Temple Morpha Heart",
+        "description": "Morpha Item",
+        "type": "boss",
         "subregion": "Water Temple",
         "age": "adult",
         "x-coord": 0,
@@ -74,8 +128,17 @@
     },
     {
         "spoiler": "Bongo Bongo",
-        "description": "Bongo Bongo",
-        "type": "dungeon",
+        "description": "Bongo Bongo Medallion",
+        "type": "boss",
+        "subregion": "Shadow Temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple Bongo Bongo Heart",
+        "description": "Bongo Bongo Item",
+        "type": "boss",
         "subregion": "Shadow Temple",
         "age": "adult",
         "x-coord": 0,
@@ -83,8 +146,17 @@
     },
     {
         "spoiler": "Twinrova",
-        "description": "Twinrova",
-        "type": "dungeon",
+        "description": "Twinrova Medallion",
+        "type": "boss",
+        "subregion": "Spirit Temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple Twinrova Heart",
+        "description": "Twinrova Item",
+        "type": "boss",
         "subregion": "Spirit Temple",
         "age": "adult",
         "x-coord": 0,
@@ -492,6 +564,15 @@
         "y-coord": 0
     },
     {
+        "spoiler": "OGC Great Fairy Reward",
+        "description": "Great Fairy Ganon",
+        "type": "fairy",
+        "subregion": "Castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
         "spoiler": "LLR Talons Chickens",
         "description": "Talon's Chickens",
         "type": "minigame",
@@ -784,6 +865,7 @@
         "type": "interactive",
         "subregion": "Goron City",
         "age": "adult",
+        "price": "?",
         "x-coord": 0,
         "y-coord": 0
     },
@@ -849,6 +931,390 @@
         "type": "fairy",
         "subregion": "Death Mountain Crater",
         "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "ZR Magic Bean Salesman",
+        "description": "Bean Salesman",
+        "type": "purchase",
+        "subregion": "Zora's River",
+        "age": "child",
+        "price": 10,
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "ZR Open Grotto Chest",
+        "description": "Grotto Near Ladder",
+        "type": "chest",
+        "subregion": "Zora's River",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "ZR Frogs in the Rain",
+        "description": "Frogs Song of Storms",
+        "type": "interact",
+        "subregion": "Zora's River",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "ZR Frogs Ocarina Game",
+        "description": "Frogs All Songs",
+        "type": "interact",
+        "subregion": "Zora's River",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "ZR Near Open Grotto Freestanding PoH",
+        "description": "Pillar Near Frogs",
+        "type": "freestanding",
+        "subregion": "Zora's River",
+        "age": "?",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": true
+    },
+    {
+        "spoiler": "ZR Near Domain Freestanding PoH",
+        "description": "Ledge Near Waterfall",
+        "type": "freestanding",
+        "subregion": "Zora's River",
+        "age": "?",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": true
+    },
+    {
+        "spoiler": "ZD Diving Minigame",
+        "description": "Zora Diving Game",
+        "type": "interact",
+        "subregion": "Zora's Domain",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "ZD Chest",
+        "description": "Zora Torch Chest",
+        "type": "chest",
+        "subregion": "Zora's Domain",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "ZD King Zora Thawed",
+        "description": "Thaw King Zora",
+        "type": "interact",
+        "subregion": "Zora's Domain",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "ZF Great Fairy Reward",
+        "description": "Great Fairy Zora",
+        "type": "fairy",
+        "subregion": "Zora's Fountain",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "ZF Iceberg Freestanding PoH",
+        "description": "Iceberg Hopping",
+        "type": "freestanding",
+        "subregion": "Zora's Fountain",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": false
+    },
+    {
+        "spoiler": "ZF Bottom Freestanding PoH",
+        "description": "Sink with Iron Boots",
+        "type": "freestanding",
+        "subregion": "Zora's Fountain",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": "?"
+    },
+    {
+        "spoiler": "LH Underwater Item",
+        "description": "Underwater Near Shortcut",
+        "type": "freestanding",
+        "subregion": "Lake Hylia",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": true
+    },
+    {
+        "spoiler": "LH Child Fishing",
+        "description": "Child Fishing",
+        "type": "minigame",
+        "subregion": "Lake Hylia",
+        "age": "child",
+        "price": 20,
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LH Adult Fishing",
+        "description": "Adult Fishing",
+        "type": "minigame",
+        "subregion": "Lake Hylia",
+        "age": "adult",
+        "price": 20,
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LH Lab Dive",
+        "description": "Lab Pool",
+        "type": "interact",
+        "subregion": "Lake Hylia",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LH Freestanding PoH",
+        "description": "Top of Lab",
+        "type": "freestanding",
+        "subregion": "Lake Hylia",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": false
+    },
+    {
+        "spoiler": "LH Sun",
+        "description": "Shoot Morning Sun",
+        "type": "interact",
+        "subregion": "Lake Hylia",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GV Crate Freestanding PoH",
+        "description": "Crate in Canyon",
+        "type": "freestanding",
+        "subregion": "Gerudo Valley",
+        "age": "?",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": false
+    },
+    {
+        "spoiler": "GV Waterfall Freestanding PoH",
+        "description": "Inside Waterfall",
+        "type": "freestanding",
+        "subregion": "Gerudo Valley",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": false
+    },
+    {
+        "spoiler": "GV Chest",
+        "description": "Behind Hammer Rocks",
+        "type": "chest",
+        "subregion": "Gerudo Valley",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GF Gerudo Membership Card",
+        "description": "Save Carpenters",
+        "type": "interact",
+        "subregion": "Gerudo Fortress",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GF Chest",
+        "description": "Top of Fortress",
+        "type": "chest",
+        "subregion": "Gerudo Fortress",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GF HBA 1000 Points",
+        "description": "Horseback Archery 1000",
+        "type": "minigame",
+        "subregion": "Gerudo Fortress",
+        "age": "adult",
+        "price": 20,
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GF HBA 1500 Points",
+        "description": "Horseback Archery 1500",
+        "type": "minigame",
+        "subregion": "Gerudo Fortress",
+        "age": "adult",
+        "price": 20,
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Wasteland Bombchu Salesman",
+        "description": "Carpet Salesman",
+        "type": "purchase",
+        "subregion": "Haunted Wasteland",
+        "age": "adult",
+        "price": "?",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Wasteland Chest",
+        "description": "Torches in Shelter",
+        "type": "chest",
+        "subregion": "Haunted Wasteland",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Colossus Great Fairy Reward",
+        "description": "Great Fairy Desert",
+        "type": "fairy",
+        "subregion": "Desert Colossus",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Colossus Freestanding PoH",
+        "description": "Top of Arch",
+        "type": "freestanding",
+        "subregion": "Desert Colossus",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": true
+    },
+    {
+        "spoiler": "Deku Tree Map Chest",
+        "description": "Under Skullwalltulas",
+        "type": "chest",
+        "subregion": "Deku Tree",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Deku Tree Slingshot Room Side Chest",
+        "description": "Falling Platform Room Top",
+        "type": "chest",
+        "subregion": "Deku Tree",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Deku Tree Slingshot Chest",
+        "description": "Falling Platform Room",
+        "type": "chest",
+        "subregion": "Deku Tree",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Deku Tree Compass Chest",
+        "description": "Upstairs Room Far Side",
+        "type": "chest",
+        "subregion": "Deku Tree",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Deku Tree Compass Room Side Chest",
+        "description": "Upstairs Room Left",
+        "type": "chest",
+        "subregion": "Deku Tree",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Deku Tree Basement Chest",
+        "description": "Burn the Web",
+        "type": "chest",
+        "subregion": "Deku Tree",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Dodongos Cavern Map Chest",
+        "description": "Bomb Wall First Room",
+        "type": "chest",
+        "subregion": "Dodongo's Cavern",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Dodongos Cavern Compass Chest",
+        "description": "Across from Bomb Stairs",
+        "type": "chest",
+        "subregion": "Dodongo's Cavern",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Dodongos Cavern Bomb Flower Platform Chest",
+        "description": "Blade Room Pillar",
+        "type": "chest",
+        "subregion": "Dodongo's Cavern",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Dodongos Cavern Bomb Bag Chest",
+        "description": "Blade Room Corner Platform",
+        "type": "chest",
+        "subregion": "Dodongo's Cavern",
+        "age": "?",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Dodongos Cavern End of Bridge Chest",
+        "description": "Bomb Wall Bridge",
+        "type": "chest",
+        "subregion": "Dodongo's Cavern",
+        "age": "?",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Dodongos Cavern Boss Room Chest",
+        "description": "Above Boss Room",
+        "type": "chest",
+        "subregion": "Dodongo's Cavern",
+        "age": "?",
         "x-coord": 0,
         "y-coord": 0
     },
