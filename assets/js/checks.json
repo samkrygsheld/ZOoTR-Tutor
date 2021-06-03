@@ -1319,6 +1319,33 @@
         "y-coord": 0
     },
     {
+        "spoiler": "Jabu Jabus Belly Boomerang Chest",
+        "description": "Far Right Tail Room",
+        "type": "chest",
+        "subregion": "Jabu Jabu's Belly",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Jabu Jabus Belly Map Chest",
+        "description": "Far Left Tail Room",
+        "type": "chest",
+        "subregion": "Jabu Jabu's Belly",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Jabu Jabus Belly Compass Chest",
+        "description": "Second from Left Room",
+        "type": "chest",
+        "subregion": "Jabu Jabu's Belly",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
         "spoiler": "KF GS Know It All House",
         "description": "Know-It-All Skull",
         "type": "skull",
