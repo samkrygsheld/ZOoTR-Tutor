@@ -1338,10 +1338,146 @@
     },
     {
         "spoiler": "Jabu Jabus Belly Compass Chest",
-        "description": "Second from Left Room",
+        "description": "Second from Left Tail",
         "type": "chest",
         "subregion": "Jabu Jabu's Belly",
         "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Bottom of the Well Front Left Fake Wall Chest",
+        "description": "Fake Wall Front Left",
+        "type": "chest",
+        "subregion": "Bottom of the Well",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Bottom of the Well Right Bottom Fake Wall Chest",
+        "description": "Fake Wall Right Side",
+        "type": "chest",
+        "subregion": "Bottom of the Well",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Bottom of the Well Front Center Bombable Chest",
+        "description": "Bombable Rubble Front",
+        "type": "chest",
+        "subregion": "Bottom of the Well",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Bottom of the Well Back Left Bombable Chest",
+        "description": "Bombable Rubble Back Left",
+        "type": "chest",
+        "subregion": "Bottom of the Well",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Bottom of the Well Underwater Left Chest",
+        "description": "Underwater Left",
+        "type": "chest",
+        "subregion": "Bottom of the Well",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Bottom of the Well Freestanding Key",
+        "description": "Coffin Far Left",
+        "type": "freestanding",
+        "subregion": "Bottom of the Well",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": true
+    },
+    {
+        "spoiler": "Bottom of the Well Compass Chest",
+        "description": "Center Room Secret Entrance",
+        "type": "chest",
+        "subregion": "Bottom of the Well",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Bottom of the Well Center Skulltula Chest",
+        "description": "Center Room Bottom Right",
+        "type": "chest",
+        "subregion": "Bottom of the Well",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Bottom of the Well Fire Keese Chest",
+        "description": "Fire Keese Room",
+        "type": "chest",
+        "subregion": "Bottom of the Well",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Bottom of the Well Like Like Chest",
+        "description": "Like Like Room",
+        "type": "chest",
+        "subregion": "Bottom of the Well",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Bottom of the Well Map Chest",
+        "description": "Basement Thumb",
+        "type": "chest",
+        "subregion": "Bottom of the Well",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Bottom of the Well Underwater Front Chest",
+        "description": "Underwater Front",
+        "type": "chest",
+        "subregion": "Bottom of the Well",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Bottom of the Well Invisible Chest",
+        "description": "Invisible Behind Dead Hand",
+        "type": "chest",
+        "subregion": "Bottom of the Well",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Bottom of the Well Lens of Truth Chest",
+        "description": "Defeat Dead Hand",
+        "type": "chest",
+        "subregion": "Bottom of the Well",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple First Room Chest",
+        "description": "Wolfos Room",
+        "type": "chest",
+        "subregion": "Forest Temple",
+        "age": "adult",
         "x-coord": 0,
         "y-coord": 0
     },
