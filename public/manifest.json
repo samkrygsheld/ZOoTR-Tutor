@@ -1,0 +1,39 @@
+{
+  "name": "Zelda Ocarina of Time Randomizer Tutor",
+  "short_name": "ZOoTR-Tutor",
+  "theme_color": "#9C7D55",
+  "background_color": "#9C7D55",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/?source=pwa",
+  "icons": [
+    {
+      "src": "images/favicon.svg",
+      "sizes": "1024x1024",
+      "purpose": "any"
+    },
+    {
+      "src": "images/maskable_icon_x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/maskable_icon_x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Start New Run",
+      "short_name": "New Run",
+      "description": "Start a new randomizer run",
+      "url": "/?source=pwa&shortcut=new",
+      "icons": [{ "src": "images/favicon.svg", "sizes": "1024x1024" }]
+    }
+  ],
+  "description": "An OoT Randomizer tracker with the intent to teach."
+}
