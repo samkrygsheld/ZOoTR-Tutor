@@ -13,15 +13,6 @@
    version="1.1"
    sodipodi:docname="map.svg"
    inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
-  <style
-     id="style1090">
-    path, polygon {
-        fill-opacity: 0;
-        stroke: black;
-        stroke-width:2;
-        cursor: pointer;
-    }
-  </style>
   <metadata
      id="metadata969">
     <rdf:RDF>
@@ -58,8 +49,8 @@
      inkscape:current-layer="mapSvg"
      inkscape:document-rotation="0" />
   <image
-     sodipodi:absref="C:\dev\ZOoTR-Tutor\assets\images\map.png"
-     xlink:href="assets%5Cimages%5Cmap.png"
+     sodipodi:absref="C:\dev\ZOoTR-Tutor-Next\public\images\map.png"
+     xlink:href="images/map.png"
      id="map_background" />
   <path
      id="gerudo_desert"
