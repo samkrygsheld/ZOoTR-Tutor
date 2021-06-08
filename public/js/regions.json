@@ -1,63 +1,63 @@
 [
     {
-        "region": "Desert",
+        "region": "desert",
         "subregions": {
-            "Gerudo Valley": [],
-            "Gerudo Fortress": [ "Gerudo Training Grounds" ],
-            "Haunted Wasteland": [],
-            "Desert Colossus": [ "Spirit Temple" ]
+            "gerudo_valley": [],
+            "gerudo_fortress": [ "gerudo_training_grounds" ],
+            "haunted_wasteland": [],
+            "desert_colossus": [ "spirit_temple" ]
         }
     },
     {
-        "region": "Lake",
+        "region": "lake",
         "subregions": {
-            "Lake Hylia": [ "Water Temple" ]
+            "lake_hylia": [ "water_temple" ]
         }
     },
     {
-        "region": "Field",
+        "region": "field",
         "subregions": {
-            "Hyrule Field": [],
-            "Lon Lon Ranch": []
+            "hyrule_field": [],
+            "lon_lon_ranch": []
         }
     },
     {
-        "region": "Castle Town",
+        "region": "castle",
         "subregions": {
-            "Market": [],
-            "Castle": [ "Ganon's Castle" ],
-            "Temple of Time": []
+            "market": [],
+            "castle": [ "ganons_castle" ],
+            "temple_of_time": []
         }
     },
     {
-        "region": "Mountain",
+        "region": "mountain",
         "subregions": {
-            "Death Mountain Trail": [ "Dodongo's Cavern" ],
-            "Goron City": [],
-            "Death Mountain Crater": [ "Fire Temple" ]
+            "death_mountain_trail": [ "dodongos_cavern" ],
+            "goron_city": [],
+            "death_mountain_crater": [ "fire_temple" ]
         }
     },
     {
-        "region": "Kakariko",
+        "region": "kakariko",
         "subregions": {
-            "Kakariko Village": [ "Bottom of the Well" ],
-            "Graveyard": [ "Shadow Temple" ]
+            "kakariko_village": [ "bottom_of_the_well" ],
+            "graveyard": [ "shadow_temple" ]
         }
     },
     {
-        "region": "River",
+        "region": "river",
         "subregions": {
-            "Zora's River": [],
-            "Zora's Domain": [ "Zora's Domain" ],
-            "Zora's Fountain": [ "Jabu Jabu's Belly", "Ice Cavern" ]
+            "zoras_river": [],
+            "zoras_domain": [],
+            "zoras_fountain": [ "jabu_jabus_belly", "ice_cavern" ]
         }
     },
     {
-        "region": "Forest",
+        "region": "forest",
         "subregions": {
-            "Kokiri Forest": [ "Deku Tree" ],
-            "Lost Woods": [],
-            "Sacred Forest Meadow": [ "Forest Temple" ]
+            "kokiri_forest": [ "deku_tree" ],
+            "lost_woods": [],
+            "sacred_forest_meadow": [ "forest_temple" ]
         }
     }
 ]
