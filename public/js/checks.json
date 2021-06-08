@@ -1456,7 +1456,7 @@
     },
     {
         "spoiler": "Bottom of the Well Invisible Chest",
-        "description": "Invisible Behind Dead Hand",
+        "description": "Invisible by Dead Hand",
         "type": "chest",
         "subregion": "Bottom of the Well",
         "age": "child",
@@ -1474,6 +1474,114 @@
     },
     {
         "spoiler": "Forest Temple First Room Chest",
+        "description": "Wolfos Room",
+        "type": "chest",
+        "subregion": "Forest Temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple First Stalfos Chest",
+        "description": "Rear Stalfos Room",
+        "type": "chest",
+        "subregion": "Forest Temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple Raised Island Courtyard Chest",
+        "description": "Hookshot to Island",
+        "type": "chest",
+        "subregion": "Forest Temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple Map Chest",
+        "description": "Wolfos Room",
+        "type": "chest",
+        "subregion": "Forest Temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple Well Chest",
+        "description": "Wolfos Room",
+        "type": "chest",
+        "subregion": "Forest Temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple Eye Switch Chest",
+        "description": "Wolfos Room",
+        "type": "chest",
+        "subregion": "Forest Temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple Boss Key Chest",
+        "description": "Wolfos Room",
+        "type": "chest",
+        "subregion": "Forest Temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple Floormaster Chest",
+        "description": "Wolfos Room",
+        "type": "chest",
+        "subregion": "Forest Temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple Red Poe Chest",
+        "description": "Wolfos Room",
+        "type": "chest",
+        "subregion": "Forest Temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple Bow Chest",
+        "description": "Wolfos Room",
+        "type": "chest",
+        "subregion": "Forest Temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple Blue Poe Chest",
+        "description": "Wolfos Room",
+        "type": "chest",
+        "subregion": "Forest Temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple Falling Ceiling Room Chest",
+        "description": "Wolfos Room",
+        "type": "chest",
+        "subregion": "Forest Temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple Basement Chest",
         "description": "Wolfos Room",
         "type": "chest",
         "subregion": "Forest Temple",
