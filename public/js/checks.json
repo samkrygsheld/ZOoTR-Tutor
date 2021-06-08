@@ -1501,7 +1501,7 @@
     },
     {
         "spoiler": "Forest Temple Map Chest",
-        "description": "Wolfos Room",
+        "description": "Passage between Outside Rooms",
         "type": "chest",
         "subregion": "forest_temple",
         "age": "adult",
@@ -1510,7 +1510,7 @@
     },
     {
         "spoiler": "Forest Temple Well Chest",
-        "description": "Wolfos Room",
+        "description": "In Well",
         "type": "chest",
         "subregion": "forest_temple",
         "age": "adult",
@@ -1519,7 +1519,7 @@
     },
     {
         "spoiler": "Forest Temple Eye Switch Chest",
-        "description": "Wolfos Room",
+        "description": "Block Puzzle Eye Switch",
         "type": "chest",
         "subregion": "forest_temple",
         "age": "adult",
@@ -1528,7 +1528,7 @@
     },
     {
         "spoiler": "Forest Temple Boss Key Chest",
-        "description": "Wolfos Room",
+        "description": "Forest Boss Key Chest",
         "type": "chest",
         "subregion": "forest_temple",
         "age": "adult",
@@ -1537,7 +1537,7 @@
     },
     {
         "spoiler": "Forest Temple Floormaster Chest",
-        "description": "Wolfos Room",
+        "description": "Floormaster",
         "type": "chest",
         "subregion": "forest_temple",
         "age": "adult",
@@ -1546,7 +1546,7 @@
     },
     {
         "spoiler": "Forest Temple Red Poe Chest",
-        "description": "Wolfos Room",
+        "description": "Red Poe",
         "type": "chest",
         "subregion": "forest_temple",
         "age": "adult",
@@ -1555,7 +1555,7 @@
     },
     {
         "spoiler": "Forest Temple Bow Chest",
-        "description": "Wolfos Room",
+        "description": "Stalfos Donut Room",
         "type": "chest",
         "subregion": "forest_temple",
         "age": "adult",
@@ -1564,7 +1564,7 @@
     },
     {
         "spoiler": "Forest Temple Blue Poe Chest",
-        "description": "Wolfos Room",
+        "description": "Blue Poe",
         "type": "chest",
         "subregion": "forest_temple",
         "age": "adult",
@@ -1573,7 +1573,7 @@
     },
     {
         "spoiler": "Forest Temple Falling Ceiling Room Chest",
-        "description": "Wolfos Room",
+        "description": "Falling Ceiling",
         "type": "chest",
         "subregion": "forest_temple",
         "age": "adult",
@@ -1582,9 +1582,378 @@
     },
     {
         "spoiler": "Forest Temple Basement Chest",
-        "description": "Wolfos Room",
+        "description": "Rotating Basement",
         "type": "chest",
         "subregion": "forest_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple Near Boss Chest",
+        "description": "Goron by Boss Door",
+        "type": "chest",
+        "subregion": "fire_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple Flare Dancer Chest",
+        "description": "Flare Dancer after Totem",
+        "type": "chest",
+        "subregion": "fire_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple Boss Key Chest",
+        "description": "Fire Boss Key Chest",
+        "type": "chest",
+        "subregion": "fire_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple Big Lava Room Lower Open Door Chest",
+        "description": "Lava Room North Open Door",
+        "type": "chest",
+        "subregion": "fire_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple Big Lava Room Blocked Door Chest",
+        "description": "Lava Room South Bomb Door",
+        "type": "chest",
+        "subregion": "fire_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple Boulder Maze Lower Chest",
+        "description": "Boulder Maze 1F Southeast",
+        "type": "chest",
+        "subregion": "fire_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple Boulder Maze Side Room Chest",
+        "description": "Boulder Maze 1F North",
+        "type": "chest",
+        "subregion": "fire_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple Map Chest",
+        "description": "Cage After Eye Switch",
+        "type": "chest",
+        "subregion": "fire_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple Boulder Maze Shortcut Chest",
+        "description": "Boulder Maze 2F Cracked Tile",
+        "type": "chest",
+        "subregion": "fire_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple Boulder Maze Upper Chest",
+        "description": "Boulder Maze 2F Southwest",
+        "type": "chest",
+        "subregion": "fire_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple Scarecrow Chest",
+        "description": "Boulder Maze 2F Scarecrow Song",
+        "type": "chest",
+        "subregion": "fire_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple Compass Chest",
+        "description": "Fire Maze Northeast Side Room",
+        "type": "chest",
+        "subregion": "fire_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple Megaton Hammer Chest",
+        "description": "Spiral Staircase Race",
+        "type": "chest",
+        "subregion": "fire_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple Highest Goron Chest",
+        "description": "Fire Maze Center Goron",
+        "type": "chest",
+        "subregion": "fire_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Water Temple Compass Chest",
+        "description": "Turn Off Geyser (From 2F→)",
+        "type": "chest",
+        "subregion": "water_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Water Temple Map Chest",
+        "description": "Spike Balls (From 1F→)",
+        "type": "chest",
+        "subregion": "water_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Water Temple Cracked Wall Chest",
+        "description": "Cracked Wall (From 1F→)",
+        "type": "chest",
+        "subregion": "water_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Water Temple Torches Chest",
+        "description": "Light Torches (From 1F→)",
+        "type": "chest",
+        "subregion": "water_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Water Temple Boss Key Chest",
+        "description": "Boss Key (From 1F↑)",
+        "type": "chest",
+        "subregion": "water_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Water Temple Central Pillar Chest",
+        "description": "Under Central Pillar",
+        "type": "chest",
+        "subregion": "water_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Water Temple Central Bow Target Chest",
+        "description": "Behind Eye Switch Gate (From 2F↓)",
+        "type": "chest",
+        "subregion": "water_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Water Temple Longshot Chest",
+        "description": "Dark Link (From 3F←)",
+        "type": "chest",
+        "subregion": "water_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Water Temple River Chest",
+        "description": "End of River (From Dark Link)",
+        "type": "chest",
+        "subregion": "water_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Water Temple Dragon Chest",
+        "description": "Dragon (From Dark Link or 1F←)",
+        "type": "chest",
+        "subregion": "water_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple Map Chest",
+        "description": "Hidden Keese and Redead",
+        "type": "chest",
+        "subregion": "shadow_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple Hover Boots Chest",
+        "description": "Hidden Dead Hand",
+        "type": "chest",
+        "subregion": "shadow_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple Compass Chest",
+        "description": "Hidden Dead Hand",
+        "type": "chest",
+        "subregion": "shadow_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple Early Silver Rupee Chest",
+        "description": "Silver Rupees Near Beamos",
+        "type": "chest",
+        "subregion": "shadow_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple Invisible Blades Visible Chest",
+        "description": "Left After Guillotines Visible",
+        "type": "chest",
+        "subregion": "shadow_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple Invisible Blades Invisible Chest",
+        "description": "Left After Guillotines Invisible",
+        "type": "chest",
+        "subregion": "shadow_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple Falling Spikes Lower Chest",
+        "description": "Falling Spikes Cage",
+        "type": "chest",
+        "subregion": "shadow_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple Falling Spikes Upper Chest",
+        "description": "Falling Spikes Upper Far Side",
+        "type": "chest",
+        "subregion": "shadow_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple Falling Spikes Switch Chest",
+        "description": "Falling Spikes Upper Near Door",
+        "type": "chest",
+        "subregion": "shadow_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple Invisible Spikes Chest",
+        "description": "Invisible Spikes Kill Redeads",
+        "type": "chest",
+        "subregion": "shadow_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple Freestanding Key",
+        "description": "Inside Skull Pot",
+        "type": "interact",
+        "subregion": "shadow_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple Wind Hint Chest",
+        "description": "Invisible in Wind Hint Room",
+        "type": "chest",
+        "subregion": "shadow_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple After Wind Enemy Chest",
+        "description": "After Wind Kill Gibdos",
+        "type": "chest",
+        "subregion": "shadow_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple After Wind Hidden Chest",
+        "description": "After Wind Invisible in Rubble",
+        "type": "chest",
+        "subregion": "shadow_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple Spike Walls Left Chest",
+        "description": "Spike Walls Left",
+        "type": "chest",
+        "subregion": "shadow_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple Boss Key Chest",
+        "description": "Spike Walls Boss Key",
+        "type": "chest",
+        "subregion": "shadow_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple Invisible Floormaster Chest",
+        "description": "Invisible Floormaster Fight",
+        "type": "chest",
+        "subregion": "shadow_temple",
         "age": "adult",
         "x-coord": 0,
         "y-coord": 0
