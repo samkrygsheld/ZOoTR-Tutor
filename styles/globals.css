@@ -42,13 +42,13 @@ a {
   box-sizing: border-box;
 }
 
-#mapSvg > path {
+svg > path {
   cursor: pointer;
   fill: transparent;
   stroke:black;
   stroke-width:2;
 }
-#mapSvg > path:hover {
+svg > path:hover {
   fill: rgba(255, 255, 255, 0.5);
 }
 
@@ -297,23 +297,6 @@ ul {
 #mapSvg > path:hover {
   fill: rgba(255, 255, 255, 0.5);
 }
-
-.map-tooltip {
-  position: absolute;
-  text-align: center;
-  top: -10px;
-  left: -75px;
-  min-width: 150px;
-  /* height: 100px; */
-  padding: 5px 15px;
-  border: 3px var(--light-brown) solid;
-  border-radius: 5px;
-  background: black;
-  color: white;
-  text-shadow: none;
-  /* opacity: 0.85; */
-}
-
 
 @media only screen and (max-width: 900px) {
   #checksWrapper {

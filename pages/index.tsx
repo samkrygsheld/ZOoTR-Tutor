@@ -1,14 +1,45 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import MapSvg from '../map.svg';
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
+import MapSvg from '../maps/map.svg';
+import MapSvgDesert from '../maps/map-desert.svg';
 import { main } from '../shared/zootr';
-import { useEffect } from 'react';
+import { Dispatch, SetStateAction, SyntheticEvent, useEffect, useState } from 'react';
+import ToolTip from '../components/tooltip';
+import { titleize } from '../shared/utils';
 
-export default function Home() {
+type MapNames = 'main' | 'desert';
+let currentMap: MapNames = 'main';
+let tooltipTop = 0;
+let tooltipLeft = 0;
+let tooltipText = '';
+function UpdateTooltip(e: MouseEvent, setValue: Dispatch<SetStateAction<number>>) {
+  if ((e.target as HTMLElement).nodeName !== 'path') {
+    tooltipText = '';
+  } else {
+    tooltipLeft = e.pageX;
+    tooltipTop = e.pageY;
+    tooltipText = titleize((e.target as HTMLElement).id.replaceAll('_', ' '));
+  }
+  setValue(value => value + 1);
+}
+export default function Home(): JSX.Element {
   useEffect(() => {
     main();
-  });
+  }, [currentMap]);
+  const [value, setValue] = useState(0);
+  function switchMap(e: SyntheticEvent, name: MapNames) {
+    e.preventDefault();
+    currentMap = name;
+    const target = e.target as HTMLElement;
+    console.log(target, target.nodeName, target.id);
+    if (target.nodeName !== 'path') {
+      return;
+    }
+    console.log(e);
+    console.log('switching name to', target.id);
+    setValue(value => value + 1);
+  }
   return (
     <div id='trackerWrapper'>
       <Head>
@@ -102,15 +133,20 @@ export default function Home() {
           things
         </div>
       </template>
+      <ToolTip top={tooltipTop} left={tooltipLeft} text={tooltipText} />
       <div id='checksWrapper'>
         <div id='checks'>
           <h1>checks</h1>
           <ul>
           </ul>
         </div>
-        <MapSvg />
+        {
+          currentMap == 'main' ?
+            <MapSvg onClick={(e: any) => switchMap(e, 'desert')} onMouseMove={(e: MouseEvent) => UpdateTooltip(e, setValue)} /> :
+            <MapSvgDesert onContextMenu={(e: any) => switchMap(e, 'main')} onMouseMove={(e: MouseEvent) => UpdateTooltip(e, setValue)} />
+        }
       </div>
       <button id='toggleMap'>Toggle Map</button>
     </div>
-  )
+  );
 }
