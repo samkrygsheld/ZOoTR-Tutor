@@ -1959,6 +1959,177 @@
         "y-coord": 0
     },
     {
+        "spoiler": "Spirit Temple Child Bridge Chest",
+        "description": "Child Stalfos Bridge",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple Child Early Torches Chest",
+        "description": "Child Keese Torches",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple Child Climb North Chest",
+        "description": "Lizalfos Room Near Stairs",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple Child Climb East Chest",
+        "description": "Lizalfos Room Near Door",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple Map Chest",
+        "description": "Big Statue Torches",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple Sun Block Room Chest",
+        "description": "Sun Block Torches",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple Silver Gauntlets Chest",
+        "description": "Outside Right Hand",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "both",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple Compass Chest",
+        "description": "Wolfos Sand Pit",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple Early Adult Right Chest",
+        "description": "Rolling Boulders Silver Rupees",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple First Mirror Left Chest",
+        "description": "Mirror Sun Left",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple First Mirror Right Chest",
+        "description": "Mirror Sun Right",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple Statue Room Northeast Chest",
+        "description": "Big Statue Lullaby Ledge",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple Statue Room Hand Chest",
+        "description": "Big Statue Lullaby Hand",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple Near Four Armos Chest",
+        "description": "Four Armos Sun Switch",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple Hallway Right Invisible Chest",
+        "description": "After 4 Armos Invisible West",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple Hallway Left Invisible Chest",
+        "description": "After 4 Armos Invisible East",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple Mirror Shield Chest",
+        "description": "Outside Left Hand",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple Boss Key Chest",
+        "description": "Fire Slugs",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple Topmost Chest",
+        "description": "Mirror Puzzle Upstairs",
+        "type": "chest",
+        "subregion": "spirit_temple",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
         "spoiler": "KF GS Know It All House",
         "description": "Know-It-All Skull",
         "type": "skull",
