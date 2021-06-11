@@ -2130,6 +2130,386 @@
         "y-coord": 0
     },
     {
+        "spoiler": "Ice Cavern Map Chest",
+        "description": "Ice Platforms",
+        "type": "chest",
+        "subregion": "ice_cavern",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ice Cavern Compass Chest",
+        "description": "Double Melt Room Right",
+        "type": "chest",
+        "subregion": "ice_cavern",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ice Cavern Freestanding PoH",
+        "description": "Double Melt Room Left",
+        "type": "freestanding",
+        "subregion": "ice_cavern",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": true
+    },
+    {
+        "spoiler": "Ice Cavern Iron Boots Chest",
+        "description": "Wolfos After Block Puzzle",
+        "type": "chest",
+        "subregion": "ice_cavern",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Lobby Left Chest",
+        "description": "First Room West",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Lobby Right Chest",
+        "description": "First Room East",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Stalfos Chest",
+        "description": "Left Path 1: Stalfos",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Before Heavy Block Chest",
+        "description": "Left Path 3: Wolfos",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Heavy Block First Chest",
+        "description": "Like Likes Front Chest",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Heavy Block Second Chest",
+        "description": "Like Likes 2nd Chest",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Heavy Block Third Chest",
+        "description": "Like Likes 3rd Chest",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Heavy Block Fourth Chest",
+        "description": "Like Likes Back Chest",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Eye Statue Chest",
+        "description": "Eye Statue Island",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Near Scarecrow Chest",
+        "description": "Eye Statue Scarecrow Door",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Hammer Room Clear Chest",
+        "description": "Right Side 3: Keese + Slugs",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Hammer Room Switch Chest",
+        "description": "Right Side 3: Hammer Switch",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Freestanding Key",
+        "description": "Platforms in Lava Song of Time",
+        "type": "freestanding",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": true
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Maze Right Central Chest",
+        "description": "Reward Maze Right Side Open",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Maze Right Side Chest",
+        "description": "Reward Maze Right Side Dead End",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Underwater Silver Rupee Chest",
+        "description": "Right Side 2: Lava Rupees",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Beamos Chest",
+        "description": "Right Side 1: Dinolfos",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Hidden Ceiling Chest",
+        "description": "Reward Maze False Ceiling",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Maze Path First Chest",
+        "description": "Reward Maze Left 1",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Maze Path Second Chest",
+        "description": "Reward Maze Left 2",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Maze Path Third Chest",
+        "description": "Reward Maze Left 3",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Maze Path Final Chest",
+        "description": "Reward Maze Center",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Forest Trial Chest",
+        "description": "Forest Trial",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Water Trial Left Chest",
+        "description": "Water Trial Left",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Water Trial Right Chest",
+        "description": "Water Trial Right",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Shadow Trial Front Chest",
+        "description": "Shadow Trial Front",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Shadow Trial Golden Gauntlets Chest",
+        "description": "Shadow Trial Back",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Light Trial First Left Chest",
+        "description": "Light Trial Front Left",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Light Trial Second Left Chest",
+        "description": "Light Trial Middle Left",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Light Trial Third Left Chest",
+        "description": "Light Trial Back Left",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Light Trial First Right Chest",
+        "description": "Light Trial Front Right",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Light Trial Second Right Chest",
+        "description": "Light Trial Middle Right",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Light Trial Third Right Chest",
+        "description": "Light Trial Back Right",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Light Trial Invisible Enemies Chest",
+        "description": "Light Trial Defeat Enemies",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Light Trial Lullaby Chest",
+        "description": "Light Trial Zelda's Lullaby",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Spirit Trial Crystal Switch Chest",
+        "description": "Spirit Trial Crystal Switch",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Spirit Trial Invisible Chest",
+        "description": "Spirit Trial Invisible by Torches",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Tower Boss Key Chest",
+        "description": "Ganon's Boss Key Chest",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
         "spoiler": "KF GS Know It All House",
         "description": "Know-It-All Skull",
         "type": "skull",
