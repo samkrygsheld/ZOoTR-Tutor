@@ -22,7 +22,7 @@
         }
     },
     {
-        "region": "castle",
+        "region": "castle_town",
         "subregions": {
             "market": [],
             "castle": [ "ganons_castle" ],
