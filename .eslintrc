@@ -8,11 +8,13 @@
     },
     "parser": "@typescript-eslint/parser",
     "plugins": [
+        "@emotion",
         "@typescript-eslint"
     ],
     "extends": [
         "eslint:recommended",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react-hooks/recommended"
     ],
     "ignorePatterns": ["**/vendor/*.js"],
     "rules": {

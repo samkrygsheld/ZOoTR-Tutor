@@ -4,33 +4,44 @@ import styles from '../styles/Home.module.css';
 import MapSvg from '../maps/map.svg';
 import MapSvgDesert from '../maps/map-desert.svg';
 import { main } from '../shared/zootr';
-import { Dispatch, SetStateAction, SyntheticEvent, useEffect, useState } from 'react';
+import { RefObject, SyntheticEvent, useCallback, useEffect, useRef, useState } from 'react';
 import ToolTip from '../components/tooltip';
 import { titleize } from '../shared/utils';
 
 type MapNames = 'main' | 'desert';
-let currentMap: MapNames = 'main';
-let tooltipTop = 0;
-let tooltipLeft = 0;
-let tooltipText = '';
-function UpdateTooltip(e: MouseEvent, setValue: Dispatch<SetStateAction<number>>) {
-  if ((e.target as HTMLElement).nodeName !== 'path') {
-    tooltipText = '';
-  } else {
-    tooltipLeft = e.pageX;
-    tooltipTop = e.pageY;
-    tooltipText = titleize((e.target as HTMLElement).id.replaceAll('_', ' '));
-  }
-  setValue(value => value + 1);
-}
 export default function Home(): JSX.Element {
+  const [currentMap, setMap] = useState<MapNames>('main');
+  const tooltipRef = useRef<HTMLDivElement>(null);
+  const [tooltipText, setTooltipText] = useState<string>('');
+  const [tooltipShow, setTooltipShow] = useState<boolean>(false);
+  function updateTooltip(e: MouseEvent, tooltipRef: RefObject<HTMLDivElement>) {
+    if (!tooltipRef.current) {
+      return;
+    }
+    if ((e.target as HTMLElement).nodeName !== 'path') {
+      // tooltipText = '';
+      setTooltipText('');
+      setTooltipShow(false);
+    } else {
+      // tooltipLeft = e.pageX;
+      // tooltipTop = e.pageY;
+      const ele = tooltipRef.current;
+      setTooltipText(titleize((e.target as HTMLElement).id.replaceAll('_', ' ')));
+      // Timeout so that the element is resized to the text
+      setTimeout(() => {
+        setTooltipShow(true);
+        const rect = ele.getBoundingClientRect();
+        const x = e.pageX - rect.width / 2;
+        const y = e.pageY - rect.height - 10;
+        ele.style.transform = `translate(${x}px, ${y}px)`;
+      }, 0);
+    }
+  }
   useEffect(() => {
     main();
   }, [currentMap]);
-  const [value, setValue] = useState(0);
   function switchMap(e: SyntheticEvent, name: MapNames) {
     e.preventDefault();
-    currentMap = name;
     const target = e.target as HTMLElement;
     console.log(target, target.nodeName, target.id);
     if (target.nodeName !== 'path') {
@@ -38,7 +49,7 @@ export default function Home(): JSX.Element {
     }
     console.log(e);
     console.log('switching name to', target.id);
-    setValue(value => value + 1);
+    setMap(name);
   }
   return (
     <div id='trackerWrapper'>
@@ -128,12 +139,7 @@ export default function Home(): JSX.Element {
           <span className='check-icons'>🎶</span>
         </li>
       </template>
-      <template id='map-tooltip-tmpl'>
-        <div className='map-tooltip'>
-          things
-        </div>
-      </template>
-      <ToolTip top={tooltipTop} left={tooltipLeft} text={tooltipText} />
+      <ToolTip ref={tooltipRef} text={tooltipText} show={tooltipShow} />
       <div id='checksWrapper'>
         <div id='checks'>
           <h1>checks</h1>
@@ -142,8 +148,8 @@ export default function Home(): JSX.Element {
         </div>
         {
           currentMap == 'main' ?
-            <MapSvg onClick={(e: any) => switchMap(e, 'desert')} onMouseMove={(e: MouseEvent) => UpdateTooltip(e, setValue)} /> :
-            <MapSvgDesert onContextMenu={(e: any) => switchMap(e, 'main')} onMouseMove={(e: MouseEvent) => UpdateTooltip(e, setValue)} />
+            <MapSvg onClick={(e: any) => switchMap(e, 'desert')} onMouseMove={(e: MouseEvent) => updateTooltip(e, tooltipRef)} /> :
+            <MapSvgDesert onContextMenu={(e: any) => switchMap(e, 'main')} onMouseMove={(e: MouseEvent) => updateTooltip(e, tooltipRef)} />
         }
       </div>
       <button id='toggleMap'>Toggle Map</button>
