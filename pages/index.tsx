@@ -87,23 +87,23 @@ export default function Home(): JSX.Element {
   const [tooltipShow, setTooltipShow] = useState<boolean>(false);
   const [checks, setChecks] = useState<CheckState[]>([]);
   function updateTooltip(e: MouseEvent) {
-    if (e.type === 'mouseout') {
-      // setTooltipText('');
-      setTooltipShow(false);
-    } else if ((e.target as HTMLElement).nodeName === 'path') {
-      const ele = tooltipRef.current;
-      setTooltipText(
-        titleize((e.target as HTMLElement).id.replaceAll('_', ' '))
-      );
-      // Timeout so that the element is resized to the text
-      setTimeout(() => {
+    setTimeout(() => {
+      if (e.type === 'mouseout') {
+        // setTooltipText('');
+        setTooltipShow(false);
+      } else if ((e.target as HTMLElement).nodeName === 'path') {
+        const ele = tooltipRef.current;
+        setTooltipText(
+          titleize((e.target as HTMLElement).id.replaceAll('_', ' '))
+        );
+        // Timeout so that the element is resized to the text
         setTooltipShow(true);
         const rect = ele.getBoundingClientRect();
         const x = e.pageX - rect.width / 2;
         const y = e.pageY - rect.height - 10;
         ele.style.transform = `translate(${x}px, ${y}px)`;
-      }, 0);
-    }
+      }
+    }, 0);
   }
   useEffect(() => {
     async function doMain() {
@@ -121,7 +121,9 @@ export default function Home(): JSX.Element {
       if (regions.some((region) => region.region === currentMap)) {
         setMap('overworld');
       } else {
-        const parentRegion = regions.find((region) => Object.keys(region.subregions).some((k) => k === currentMap));
+        const parentRegion = regions.find((region) =>
+          Object.keys(region.subregions).some((k) => k === currentMap)
+        );
         if (parentRegion) {
           console.log('found parent:', parentRegion.region);
           setMap(parentRegion.region as any);
@@ -240,7 +242,7 @@ export default function Home(): JSX.Element {
             background-color: white;
           `}
         >
-          <span>{ currentMap }</span>
+          <span>{currentMap}</span>
           {currentMap == 'desert' ? (
             <MapSvgDesert
               onClick={switchMap}
@@ -255,7 +257,7 @@ export default function Home(): JSX.Element {
               onMouseMove={updateTooltip}
               onMouseOut={updateTooltip}
             />
-          ) }
+          )}
         </div>
       </div>
       <button id='toggleMap'>Toggle Map</button>
