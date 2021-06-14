@@ -2130,7 +2130,1367 @@
         "y-coord": 0
     },
     {
+        "spoiler": "Ice Cavern Map Chest",
+        "description": "Ice Platforms",
+        "type": "chest",
+        "subregion": "ice_cavern",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ice Cavern Compass Chest",
+        "description": "Double Melt Room Right",
+        "type": "chest",
+        "subregion": "ice_cavern",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ice Cavern Freestanding PoH",
+        "description": "Double Melt Room Left",
+        "type": "freestanding",
+        "subregion": "ice_cavern",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": true
+    },
+    {
+        "spoiler": "Ice Cavern Iron Boots Chest",
+        "description": "Wolfos After Block Puzzle",
+        "type": "chest",
+        "subregion": "ice_cavern",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Lobby Left Chest",
+        "description": "First Room West",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Lobby Right Chest",
+        "description": "First Room East",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Stalfos Chest",
+        "description": "Left Path 1: Stalfos",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Before Heavy Block Chest",
+        "description": "Left Path 3: Wolfos",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Heavy Block First Chest",
+        "description": "Like Likes Front Chest",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Heavy Block Second Chest",
+        "description": "Like Likes 2nd Chest",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Heavy Block Third Chest",
+        "description": "Like Likes 3rd Chest",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Heavy Block Fourth Chest",
+        "description": "Like Likes Back Chest",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Eye Statue Chest",
+        "description": "Eye Statue Island",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Near Scarecrow Chest",
+        "description": "Eye Statue Scarecrow Door",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Hammer Room Clear Chest",
+        "description": "Right Side 3: Keese + Slugs",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Hammer Room Switch Chest",
+        "description": "Right Side 3: Hammer Switch",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Freestanding Key",
+        "description": "Platforms in Lava Song of Time",
+        "type": "freestanding",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0,
+        "early-peek": true
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Maze Right Central Chest",
+        "description": "Reward Maze Right Side Open",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Maze Right Side Chest",
+        "description": "Reward Maze Right Side Dead End",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Underwater Silver Rupee Chest",
+        "description": "Right Side 2: Lava Rupees",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Beamos Chest",
+        "description": "Right Side 1: Dinolfos",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Hidden Ceiling Chest",
+        "description": "Reward Maze False Ceiling",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Maze Path First Chest",
+        "description": "Reward Maze Left 1",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Maze Path Second Chest",
+        "description": "Reward Maze Left 2",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Maze Path Third Chest",
+        "description": "Reward Maze Left 3",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Gerudo Training Grounds Maze Path Final Chest",
+        "description": "Reward Maze Center",
+        "type": "chest",
+        "subregion": "gerudo_training_grounds",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Forest Trial Chest",
+        "description": "Forest Trial",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Water Trial Left Chest",
+        "description": "Water Trial Left",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Water Trial Right Chest",
+        "description": "Water Trial Right",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Shadow Trial Front Chest",
+        "description": "Shadow Trial Front",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Shadow Trial Golden Gauntlets Chest",
+        "description": "Shadow Trial Back",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Light Trial First Left Chest",
+        "description": "Light Trial Front Left",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Light Trial Second Left Chest",
+        "description": "Light Trial Middle Left",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Light Trial Third Left Chest",
+        "description": "Light Trial Back Left",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Light Trial First Right Chest",
+        "description": "Light Trial Front Right",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Light Trial Second Right Chest",
+        "description": "Light Trial Middle Right",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Light Trial Third Right Chest",
+        "description": "Light Trial Back Right",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Light Trial Invisible Enemies Chest",
+        "description": "Light Trial Defeat Enemies",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Light Trial Lullaby Chest",
+        "description": "Light Trial Zelda's Lullaby",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Spirit Trial Crystal Switch Chest",
+        "description": "Spirit Trial Crystal Switch",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Castle Spirit Trial Invisible Chest",
+        "description": "Spirit Trial Invisible by Torches",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ganons Tower Boss Key Chest",
+        "description": "Ganon's Boss Key Chest",
+        "type": "chest",
+        "subregion": "ganons_castle",
+        "age": "adult",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
         "spoiler": "KF GS Know It All House",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "KF GS Bean Patch",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "KF GS House of Twins",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LW GS Bean Patch Near Bridge",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LW GS Bean Patch Near Theater",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LW GS Above Theater",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "SFM GS",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "HF GS Cow Grotto",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "HF GS Near Kak Grotto",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Market GS Guard House",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "HC GS Tree",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "HC GS Storms Grotto",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LLR GS House Window",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LLR GS Tree",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LLR GS Rain Shed",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LLR GS Back Wall",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Kak GS Tree",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Kak GS Guards House",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Kak GS Watchtower",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Kak GS Skulltula House",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Kak GS House Under Construction",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Kak GS Above Impas House",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Graveyard GS Bean Patch",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Graveyard GS Wall",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "DMT GS Near Kak",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "DMT GS Bean Patch",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "DMT GS Above Dodongos Cavern",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "DMT GS Falling Rocks Path",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GC GS Center Platform",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GC GS Boulder Maze",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "DMC GS Crate",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "DMC GS Bean Patch",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "ZR GS Tree",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "ZR GS Ladder",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "ZR GS Near Raised Grottos",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "ZR GS Above Bridge",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "ZD GS Frozen Waterfall",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "ZF GS Above the Log",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "ZF GS Tree",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "ZF GS Hidden Cave",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LH GS Bean Patch",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LH GS Lab Wall",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LH GS Small Island",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LH GS Lab Crate",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "LH GS Tree",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GV GS Small Bridge",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GV GS Bean Patch",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GV GS Behind Tent",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GV GS Pillar",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GF GS Top Floor",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "GF GS Archery Range",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Wasteland GS",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Colossus GS Bean Patch",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Colossus GS Tree",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Colossus GS Hill",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "OGC GS",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Deku Tree GS Compass Room",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Deku Tree GS Basement Vines",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Deku Tree GS Basement Gate",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Deku Tree GS Basement Back Room",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Dodongos Cavern GS Side Room Near Lower Lizalfos",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Dodongos Cavern GS Scarecrow",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Dodongos Cavern GS Alcove Above Stairs",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Dodongos Cavern GS Vines Above Stairs",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Dodongos Cavern GS Back Room",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Jabu Jabus Belly GS Water Switch Room",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Jabu Jabus Belly GS Lobby Basement Lower",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Jabu Jabus Belly GS Lobby Basement Upper",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Jabu Jabus Belly GS Near Boss",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Bottom of the Well GS West Inner Room",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Bottom of the Well GS East Inner Room",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Bottom of the Well GS Like Like Cage",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple GS First Room",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple GS Lobby",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple GS Raised Island Courtyard",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple GS Level Island Courtyard",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Forest Temple GS Basement",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple GS Boss Key Loop",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple GS Song of Time Room",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple GS Boulder Maze",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple GS Scarecrow Climb",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Fire Temple GS Scarecrow Top",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Water Temple GS Behind Gate",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Water Temple GS Near Boss Key Chest",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Water Temple GS Central Pillar",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Water Temple GS Falling Platform Room",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Water Temple GS River",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple GS Like Like Room",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple GS Falling Spikes Room",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple GS Single Giant Pot",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple GS Near Ship",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Shadow Temple GS Triple Giant Pot",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple GS Metal Fence",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple GS Sun on Floor Room",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple GS Hall After Sun Block Room",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Spirit Temple GS Lobby",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ice Cavern GS Spinning Scythe Room",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ice Cavern GS Heart Piece Room",
+        "description": "Know-It-All Skull",
+        "type": "skull",
+        "time-sensitive": "night",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    },
+    {
+        "spoiler": "Ice Cavern GS Push Block Room",
         "description": "Know-It-All Skull",
         "type": "skull",
         "time-sensitive": "night",
