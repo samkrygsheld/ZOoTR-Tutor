@@ -157,7 +157,7 @@ export default function Home(): JSX.Element {
         <br />
         <Grid columns={6} rows={2}>
           {songs.map((item) => (
-            <Item key={item.name} item={item} />
+            <Item key={item.name} item={item} data-notes={item.notes} />
           ))}
         </Grid>
         <div
