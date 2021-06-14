@@ -14,17 +14,24 @@ export class StorageService {
     inventory: {},
     checks: {},
   };
-  constructor() {
+  private static instance: StorageService;
+  public static get Instance(): StorageService {
+    if (!StorageService.instance) {
+      StorageService.instance = new StorageService();
+    }
+    return StorageService.instance;
+  }
+  private constructor() {
     this.loadState();
   }
 
-  public loadState() {
-    this.saveData = JSON.parse(localStorage.getItem('saveData')!) || this.saveData;
+  public loadState(): void {
+    this.saveData = JSON.parse(window.localStorage.getItem('saveData')!) || this.saveData;
     this.saveData.inventory = this.saveData.inventory || {};
     this.saveData.checks = this.saveData.checks || {};
   }
 
-  public saveState() {
+  public saveState(): void {
     localStorage.setItem('saveData', JSON.stringify(this.saveData));
   }
 }

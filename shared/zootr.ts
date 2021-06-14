@@ -1,14 +1,14 @@
 import { StorageService } from './storage.service';
 import { Check, CheckState, Item, ItemState } from './models';
-import { fetchJson, isMobile, titleize } from './utils';
+import { fetchJson, isMobile } from './utils';
 
-export async function main() {
-  const $storage = new StorageService();
+export async function main(): Promise<CheckState[]> {
+  const $storage = StorageService.Instance;
 
-  $<HTMLImageElement>('.itemButton, .songButton, #age').each((_, img) => {
+  $<HTMLImageElement>('.itemButton, #age').each((_, img) => {
     img.title = img.alt = img.id;
     const $img = $(img);
-    const maxIter = $img.data('maxiter');
+    const maxIter = $img.data('maxiter') || 1;
     const itemState = new ItemState(
       new Item(img.id, maxIter + 1),
       img,
@@ -30,7 +30,7 @@ export async function main() {
       });
   });
 
-  $('.songButton')
+  $('[data-notes]')
     .on('mouseenter touchstart', (e) => {
       const songNotes = e.target.dataset.notes;
       if (songNotes) {
@@ -40,7 +40,7 @@ export async function main() {
       }
     })
     .on('mouseleave contextmenu', () => {
-      $<HTMLImageElement>('.note').each((_, note) => {
+      $<HTMLImageElement>('[id^=note]').each((_, note) => {
         note.src = '';
       });
     });
@@ -55,32 +55,9 @@ export async function main() {
     },
   });
 
-  // $('svg > path')
-  //   .on('mouseenter', (e) => {
-  //     const $tooltipTemplate = $(
-  //       (document.getElementById('map-tooltip-tmpl') as HTMLTemplateElement)
-  //         .content.firstElementChild!
-  //     ).clone();
-  //     $(document.body).append($tooltipTemplate);
-  //     $tooltipTemplate.text(titleize(e.target.id.replaceAll('_', ' ')));
-  //     $tooltipTemplate.css({
-  //       transform: `translate(${e.pageX}px, ${e.pageY}px)`,
-  //       top: -$tooltipTemplate.outerHeight()! - 5,
-  //     });
-  //   })
-  //   .on('mousemove', (e) => {
-  //     $('.map-tooltip').css({
-  //       transform: `translate(${e.pageX}px, ${e.pageY}px)`,
-  //     });
-  //   })
-  //   .on('mouseleave', () => {
-  //     $('.map-tooltip').remove();
-  //   });
-
   const checks = await fetchJson('js/checks.json');
   const regions = await fetchJson('js/regions.json');
 
-  $('#checks > ul > li').remove();
   let subregion: any = $('svg').attr('id');
   console.log('SVG ID:', subregion);
   const region = regions.filter((r: any) => r.region === subregion)[0];
@@ -90,31 +67,6 @@ export async function main() {
     subs = region.subregions;
   } else {
     subregion = null;
-  }
-  for (const check of checks.filter(
-    (c: any) =>
-      c.subregion === subregion ||
-      Object.keys(subs).some((s) => c.subregion == s)
-  )) {
-    const checkState = new CheckState(
-      new Check(check),
-      $storage.saveData.checks[check.spoiler]
-    );
-    const $clonedTemplate = $(
-      (document.getElementById('check-row-tmpl') as HTMLTemplateElement).content
-        .firstElementChild!
-    ).clone();
-    $clonedTemplate.addClass(checkState.class);
-    $clonedTemplate.children('.check-name').text(check.description);
-    $clonedTemplate.children('.check-icons').text(checkState.check.icons);
-    $clonedTemplate.on('click', () => {
-      checkState.checked = !checkState.checked;
-      $storage.saveData.checks[checkState.check.spoiler] = checkState.checked;
-      $storage.saveState();
-      $clonedTemplate.removeClass();
-      $clonedTemplate.addClass(checkState.class);
-    });
-    $('#checks').children('ul').append($clonedTemplate);
   }
 
   if (isMobile()) {
@@ -159,4 +111,12 @@ export async function main() {
       $('#toggleMap').stop(true, true).show();
     }
   });
+  return checks.filter(
+    (c: any) =>
+      c.subregion === subregion ||
+      Object.keys(subs).some((s) => c.subregion == s)
+  ).map((check: any) => new CheckState(
+    new Check(check),
+    $storage.saveData.checks[check.spoiler]
+  ));
 }

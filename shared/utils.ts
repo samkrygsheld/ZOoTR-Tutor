@@ -22,7 +22,7 @@ function text_to_bit_string(text: string) {
 
 const titleizeWord = (str: string) =>
   str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
-export function titleize(str: string) {
+export function titleize(str: string): string {
   return str.split(' ').map(titleizeWord).join(' ');
 }
 
@@ -31,25 +31,25 @@ function delimToCamel(str: string, delim: string) {
   return [words[0], ...words.slice(1).map(titleizeWord)].join('');
 }
 
-export function snakeToCamel(str: string) {
+export function snakeToCamel(str: string): string {
   return delimToCamel(str, '_');
 }
 
-export function kebabToCamel(str: string) {
+export function kebabToCamel(str: string): string {
   return delimToCamel(str, '-');
 }
 
-export function isMobile() {
+export function isMobile(): boolean {
   return window.matchMedia('only screen and (max-width: 900px)').matches;
 }
 
-export async function fetchJson(url: string) {
+export async function fetchJson<T = any>(url: string): Promise<T> {
   return (await fetch(url)).json();
 }
 
 import randoData from '../public/js/randomizer-data.json';
 
-export function parseSettingsString(text: string) {
+export function parseSettingsString(text: string): void {
   let bits = text_to_bit_string(text);
 
   // let settings: Pick<typeof randoData[0], 'name'>;
@@ -82,7 +82,7 @@ export function parseSettingsString(text: string) {
       }
       case 'list': {
         value = [];
-        let maxIndex = (1 << setting.bitwidth) - 1;
+        const maxIndex = (1 << setting.bitwidth) - 1;
         for (;;) {
           let index = 0;
           for (let b = 0; b < setting.bitwidth; b++) {

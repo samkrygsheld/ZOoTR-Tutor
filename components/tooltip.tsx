@@ -1,13 +1,13 @@
 import { css } from '@emotion/react';
-import { forwardRef } from 'react';
+import { forwardRef, ReactNode } from 'react';
 
-const Tooltip = forwardRef<HTMLDivElement, { text: string, show: boolean }>((props, ref) => {
-
+const Tooltip = forwardRef<HTMLDivElement, { text: string, show: boolean, children?: ReactNode }>((props, ref) => {
   return (
     <>
       <div ref={ref}
         css={css`
           position: absolute;
+          z-index: 1;
           text-align: center;
           /* top: -45px;
           left: -50px; */
@@ -24,6 +24,7 @@ const Tooltip = forwardRef<HTMLDivElement, { text: string, show: boolean }>((pro
       >
         {props.text}
       </div>
+      { props.children }
     </>
   );
 
