@@ -4,23 +4,14 @@ import styles from '../styles/Home.module.css';
 import MapSvg from '../maps/map.svg';
 import MapSvgDesert from '../maps/map-desert.svg';
 import { main } from '../shared/zootr';
-import {
-  SyntheticEvent,
-  useEffect,
-  useRef,
-  useState,
-} from 'react';
+import { SyntheticEvent, useEffect, useRef, useState } from 'react';
 import ToolTip from '../components/tooltip';
 import { titleize } from '../shared/utils';
 import Grid from '../components/layout/grid';
 import { css } from '@emotion/react';
 import { Item } from '../components/item';
 import CheckRow from '../components/check-row';
-import {
-  CheckState,
-  Item as ItemModel,
-  Song,
-} from '../shared/models';
+import { CheckState, Item as ItemModel, Song } from '../shared/models';
 
 const noteStyle = css`
   display: inline-block;
@@ -94,13 +85,10 @@ export default function Home(): JSX.Element {
   const [tooltipShow, setTooltipShow] = useState<boolean>(false);
   const [checks, setChecks] = useState<CheckState[]>([]);
   function updateTooltip(e: MouseEvent) {
-    if (
-      e.type === 'mouseout' ||
-      (e.target as HTMLElement).nodeName !== 'path'
-    ) {
-      setTooltipText('');
+    if (e.type === 'mouseout') {
+      // setTooltipText('');
       setTooltipShow(false);
-    } else {
+    } else if ((e.target as HTMLElement).nodeName === 'path') {
       const ele = tooltipRef.current;
       setTooltipText(
         titleize((e.target as HTMLElement).id.replaceAll('_', ' '))
@@ -227,19 +215,26 @@ export default function Home(): JSX.Element {
             })}
           </ul>
         </div>
-        {currentMap == 'main' ? (
-          <MapSvg
-            onClick={(e: any) => switchMap(e, 'desert')}
-            onMouseMove={updateTooltip}
-            onMouseOut={updateTooltip}
-          />
-        ) : (
-          <MapSvgDesert
-            onContextMenu={(e: any) => switchMap(e, 'main')}
-            onMouseMove={updateTooltip}
-            onMouseOut={updateTooltip}
-          />
-        )}
+        <div
+          css={css`
+            flex: 1;
+            background-color: white;
+          `}
+        >
+          {currentMap == 'main' ? (
+            <MapSvg
+              onClick={(e: any) => switchMap(e, 'desert')}
+              onMouseMove={updateTooltip}
+              onMouseOut={updateTooltip}
+            />
+          ) : (
+            <MapSvgDesert
+              onContextMenu={(e: any) => switchMap(e, 'main')}
+              onMouseMove={updateTooltip}
+              onMouseOut={updateTooltip}
+            />
+          )}
+        </div>
       </div>
       <button id='toggleMap'>Toggle Map</button>
     </div>
