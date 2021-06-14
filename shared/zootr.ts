@@ -2,33 +2,8 @@ import { StorageService } from './storage.service';
 import { Check, CheckState, Item, ItemState } from './models';
 import { fetchJson, isMobile } from './utils';
 
-export async function main(): Promise<CheckState[]> {
+export async function main(currentMap: string): Promise<CheckState[]> {
   const $storage = StorageService.Instance;
-
-  $<HTMLImageElement>('.itemButton, #age').each((_, img) => {
-    img.title = img.alt = img.id;
-    const $img = $(img);
-    const maxIter = $img.data('maxiter') || 1;
-    const itemState = new ItemState(
-      new Item(img.id, maxIter + 1),
-      img,
-      maxIter === 1
-    );
-    itemState.setState($storage.saveData.inventory[img.id] || 0);
-    $img
-      .on('click', () => {
-        itemState.incrementState();
-        $storage.saveData.inventory[img.id] = itemState.state;
-        $storage.saveState();
-      })
-      .on('contextmenu', (e) => {
-        itemState.decrementState();
-        $storage.saveData.inventory[img.id] = itemState.state;
-        $storage.saveState();
-
-        e.preventDefault();
-      });
-  });
 
   $('[data-notes]')
     .on('mouseenter touchstart', (e) => {
@@ -54,20 +29,6 @@ export async function main(): Promise<CheckState[]> {
       ui.element.css({ 'flex-basis': ui.size.width + 10 });
     },
   });
-
-  const checks = await fetchJson('js/checks.json');
-  const regions = await fetchJson('js/regions.json');
-
-  let subregion: any = $('svg').attr('id');
-  console.log('SVG ID:', subregion);
-  const region = regions.filter((r: any) => r.region === subregion)[0];
-  let subs: any[] = [];
-  console.log(region);
-  if (region != null) {
-    subs = region.subregions;
-  } else {
-    subregion = null;
-  }
 
   if (isMobile()) {
     $('#checksWrapper').addClass('hidden');
@@ -111,6 +72,20 @@ export async function main(): Promise<CheckState[]> {
       $('#toggleMap').stop(true, true).show();
     }
   });
+
+  const checks = await fetchJson('js/checks.json');
+  const regions = await fetchJson('js/regions.json');
+
+  let subregion: string | null = currentMap;
+  console.log('SVG ID:', subregion);
+  const region = regions.filter((r: any) => r.region === subregion)[0];
+  let subs: any[] = [];
+  console.log(region);
+  if (region != null) {
+    subs = region.subregions;
+  } else {
+    subregion = null;
+  }
   return checks.filter(
     (c: any) =>
       c.subregion === subregion ||

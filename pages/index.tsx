@@ -105,7 +105,7 @@ export default function Home(): JSX.Element {
   }
   useEffect(() => {
     async function doMain() {
-      setChecks(await main());
+      setChecks(await main(currentMap));
     }
     doMain();
   }, [currentMap]);
