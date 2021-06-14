@@ -13,6 +13,8 @@ import { Item } from '../components/item';
 import CheckRow from '../components/check-row';
 import { CheckState, Item as ItemModel, Song } from '../shared/models';
 
+import regions from '../public/js/regions.json';
+
 const noteStyle = css`
   display: inline-block;
 `;
@@ -77,9 +79,9 @@ const songs: Song[] = [
   new Song('prelude', 'ururlu'),
 ];
 
-type MapNames = 'main' | 'desert';
+type MapNames = 'overworld' | 'desert';
 export default function Home(): JSX.Element {
-  const [currentMap, setMap] = useState<MapNames>('main');
+  const [currentMap, setMap] = useState<MapNames>('overworld');
   const tooltipRef = useRef<HTMLDivElement>(null!);
   const [tooltipText, setTooltipText] = useState<string>('');
   const [tooltipShow, setTooltipShow] = useState<boolean>(false);
@@ -109,16 +111,33 @@ export default function Home(): JSX.Element {
     }
     doMain();
   }, [currentMap]);
-  function switchMap(e: SyntheticEvent, name: MapNames) {
+  function switchMap(e: SyntheticEvent) {
     e.preventDefault();
+
+    if (e.type === 'contextmenu') {
+      if (currentMap === 'overworld') {
+        return;
+      }
+      if (regions.some((region) => region.region === currentMap)) {
+        setMap('overworld');
+      } else {
+        const parentRegion = regions.find((region) => Object.keys(region.subregions).some((k) => k === currentMap));
+        if (parentRegion) {
+          console.log('found parent:', parentRegion.region);
+          setMap(parentRegion.region as any);
+        }
+      }
+      return;
+    }
+
     const target = e.target as HTMLElement;
-    console.log(target, target.nodeName, target.id);
+    // console.log(target, target.nodeName, target.id);
     if (target.nodeName !== 'path') {
       return;
     }
-    console.log(e);
-    console.log('switching name to', target.id);
-    setMap(name);
+    // console.log(e);
+    // console.log('switching name to', target.id);
+    setMap(target.id as any);
   }
   return (
     <div id='trackerWrapper'>
@@ -221,19 +240,22 @@ export default function Home(): JSX.Element {
             background-color: white;
           `}
         >
-          {currentMap == 'main' ? (
-            <MapSvg
-              onClick={(e: any) => switchMap(e, 'desert')}
+          <span>{ currentMap }</span>
+          {currentMap == 'desert' ? (
+            <MapSvgDesert
+              onClick={switchMap}
+              onContextMenu={switchMap}
               onMouseMove={updateTooltip}
               onMouseOut={updateTooltip}
             />
           ) : (
-            <MapSvgDesert
-              onContextMenu={(e: any) => switchMap(e, 'main')}
+            <MapSvg
+              onClick={switchMap}
+              onContextMenu={switchMap}
               onMouseMove={updateTooltip}
               onMouseOut={updateTooltip}
             />
-          )}
+          ) }
         </div>
       </div>
       <button id='toggleMap'>Toggle Map</button>

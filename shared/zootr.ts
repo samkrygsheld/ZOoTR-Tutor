@@ -1,6 +1,8 @@
 import { StorageService } from './storage.service';
 import { Check, CheckState, Item, ItemState } from './models';
 import { fetchJson, isMobile } from './utils';
+import checks from '../public/js/checks.json';
+import regions from '../public/js/regions.json';
 
 export async function main(currentMap: string): Promise<CheckState[]> {
   const $storage = StorageService.Instance;
@@ -73,23 +75,16 @@ export async function main(currentMap: string): Promise<CheckState[]> {
     }
   });
 
-  const checks = await fetchJson('js/checks.json');
-  const regions = await fetchJson('js/regions.json');
-
-  let subregion: string | null = currentMap;
-  console.log('SVG ID:', subregion);
-  const region = regions.filter((r: any) => r.region === subregion)[0];
-  let subs: any[] = [];
-  console.log(region);
+  const subregion: string | null = currentMap;
+  const region = regions.find((r: any) => r.region === subregion);
+  let subs: string[] = [];
   if (region != null) {
-    subs = region.subregions;
-  } else {
-    subregion = null;
+    subs = Object.keys(region.subregions);
   }
   return checks.filter(
-    (c: any) =>
+    (c) =>
       c.subregion === subregion ||
-      Object.keys(subs).some((s) => c.subregion == s)
+      subs.some((s) => c.subregion == s)
   ).map((check: any) => new CheckState(
     new Check(check),
     $storage.saveData.checks[check.spoiler]
