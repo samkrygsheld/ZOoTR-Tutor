@@ -17,7 +17,7 @@ export class Item {
 export class Song extends Item {
   public notes: string;
   constructor(name: string, notes: string, display?: string) {
-    super(name, display, 2);
+    super(name, display, 1);
     this.notes = notes;
   }
 }
