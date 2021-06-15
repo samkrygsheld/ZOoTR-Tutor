@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css';
 import MapSvg from '../maps/map.svg';
 import MapSvgDesert from '../maps/map-desert.svg';
 import { main } from '../shared/zootr';
-import { SyntheticEvent, useEffect, useRef, useState } from 'react';
+import { SyntheticEvent, useEffect, useState } from 'react';
 import ToolTip from '../components/tooltip';
 import { titleize } from '../shared/utils';
 import Grid from '../components/layout/grid';
@@ -82,29 +82,7 @@ const songs: Song[] = [
 type MapNames = 'overworld' | 'desert';
 export default function Home(): JSX.Element {
   const [currentMap, setMap] = useState<MapNames>('overworld');
-  const tooltipRef = useRef<HTMLDivElement>(null!);
-  const [tooltipText, setTooltipText] = useState<string>('');
-  const [tooltipShow, setTooltipShow] = useState<boolean>(false);
   const [checks, setChecks] = useState<CheckState[]>([]);
-  function updateTooltip(e: MouseEvent) {
-    setTimeout(() => {
-      if (e.type === 'mouseout') {
-        // setTooltipText('');
-        setTooltipShow(false);
-      } else if ((e.target as HTMLElement).nodeName === 'path') {
-        const ele = tooltipRef.current;
-        setTooltipText(
-          titleize((e.target as HTMLElement).id.replaceAll('_', ' '))
-        );
-        // Timeout so that the element is resized to the text
-        setTooltipShow(true);
-        const rect = ele.getBoundingClientRect();
-        const x = e.pageX - rect.width / 2;
-        const y = e.pageY - rect.height - 10;
-        ele.style.transform = `translate(${x}px, ${y}px)`;
-      }
-    }, 0);
-  }
   useEffect(() => {
     async function doMain() {
       setChecks(await main(currentMap));
@@ -201,7 +179,6 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </div>
-      <ToolTip ref={tooltipRef} text={tooltipText} show={tooltipShow} />
       <div id='checksWrapper'>
         <div
           id='checks'
@@ -243,21 +220,22 @@ export default function Home(): JSX.Element {
           `}
         >
           <span>{currentMap}</span>
-          {currentMap == 'desert' ? (
-            <MapSvgDesert
-              onClick={switchMap}
-              onContextMenu={switchMap}
-              onMouseMove={updateTooltip}
-              onMouseOut={updateTooltip}
-            />
-          ) : (
-            <MapSvg
-              onClick={switchMap}
-              onContextMenu={switchMap}
-              onMouseMove={updateTooltip}
-              onMouseOut={updateTooltip}
-            />
-          )}
+          <ToolTip text={(e) => {
+            const ele = (e.target as HTMLElement);
+            return ele.nodeName === 'path' ? titleize(ele.id.replaceAll('_', ' ')) : '';
+          }}>
+            {currentMap == 'desert' ? (
+              <MapSvgDesert
+                onClick={switchMap}
+                onContextMenu={switchMap}
+              />
+            ) : (
+              <MapSvg
+                onClick={switchMap}
+                onContextMenu={switchMap}
+              />
+            )}
+          </ToolTip>
         </div>
       </div>
       <button id='toggleMap'>Toggle Map</button>

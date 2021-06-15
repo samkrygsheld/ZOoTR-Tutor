@@ -2,6 +2,7 @@ import { css } from '@emotion/react';
 import { useEffect, useMemo, useState } from 'react';
 import { Item as ItemModel, ItemState } from '../shared/models';
 import { StorageService } from '../shared/storage.service';
+import { titleize } from '../shared/utils';
 import Tooltip from './tooltip';
 
 export function Item({ item, ...props }: { item: ItemModel }): JSX.Element {
@@ -13,7 +14,7 @@ export function Item({ item, ...props }: { item: ItemModel }): JSX.Element {
   }, [item.name, itemState]);
   const [currentImage, setImage] = useState(itemState.icon);
   return (
-    <Tooltip text='test' show={false}>
+    <Tooltip text={titleize(item.name)}>
       <img
         id={item.name}
         { ...props }
