@@ -1,12 +1,14 @@
 import { StorageService } from './storage.service';
-import { kebabToCamel } from './utils';
+import { kebabToCamel, titleize } from './utils';
 
 export class Item {
   public name: string;
+  public display: string[] | string;
   public icons: string[] = [];
-  constructor(name: string, numberOfStates: number = 2) {
+  constructor(name: string, display?: string[] | string, numberOfStates: number = 1) {
     this.name = name;
-    for (let i = 0; i < numberOfStates; i++) {
+    this.display = display || titleize(name);
+    for (let i = 0; i < numberOfStates + 1; i++) {
       this.icons.push(`images/icons/${name}${i}.png`);
     }
   }
@@ -14,8 +16,8 @@ export class Item {
 
 export class Song extends Item {
   public notes: string;
-  constructor(name: string, notes: string) {
-    super(name, 2);
+  constructor(name: string, notes: string, display?: string) {
+    super(name, display, 2);
     this.notes = notes;
   }
 }

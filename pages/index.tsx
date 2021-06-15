@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+// import Image from 'next/image';
+// import styles from '../styles/Home.module.css';
 import MapSvg from '../maps/map.svg';
 import MapSvgDesert from '../maps/map-desert.svg';
 import { main } from '../shared/zootr';
@@ -26,57 +26,81 @@ const headerStyle = css`
 `;
 
 const items: ItemModel[] = [
-  new ItemModel('stick'),
-  new ItemModel('nut'),
+  new ItemModel('stick', 'Deku Stick'),
+  new ItemModel('nut', 'Deku Nut'),
   new ItemModel('bomb'),
-  new ItemModel('bow'),
-  new ItemModel('arrowsfire'),
-  new ItemModel('din'),
-  new ItemModel('slingshot'),
-  new ItemModel('ocarina', 3),
+  new ItemModel('bow', 'Fairy Bow'),
+  new ItemModel('arrowsfire', 'Fire Arrow'),
+  new ItemModel('din', "Din's Fire"),
+  new ItemModel('slingshot', 'Fairy Slingshot'),
+  new ItemModel('ocarina', 'Ocarina', 2),
   new ItemModel('bombchu'),
-  new ItemModel('shot', 3),
-  new ItemModel('arrowslight'),
-  new ItemModel('farore'),
+  new ItemModel('shot', ['Hookshot', 'Longshot'], 2),
+  new ItemModel('arrowslight', 'Light Arrow'),
+  new ItemModel('farore', "Farore's Wind"),
   new ItemModel('boomerang'),
-  new ItemModel('lens'),
-  new ItemModel('bean'),
-  new ItemModel('megaton'),
-  new ItemModel('magic'),
+  new ItemModel('lens', 'Lens of Truth'),
+  new ItemModel('bean', 'Magic Bean'),
+  new ItemModel('megaton', 'Megaton Hammer'),
+  new ItemModel('magic', 'Magic Meter'),
 ];
 
 const equipment: ItemModel[] = [
-  new ItemModel('child', 6),
-  new ItemModel('swordkokiri'),
-  new ItemModel('swordmaster'),
-  new ItemModel('swordbiggoron'),
-  new ItemModel('adult', 12),
-  new ItemModel('shielddeku'),
-  new ItemModel('shieldhylian'),
-  new ItemModel('shieldmirror'),
-  new ItemModel('strength', 4),
+  new ItemModel(
+    'child',
+    ['Weird Egg', 'Cucco', "Zelda's Letter", 'Keaton Mask', 'Skull Mask'],
+    5
+  ),
+  new ItemModel('swordkokiri', 'Kokiri Sword'),
+  new ItemModel('swordmaster', 'Master Sword'),
+  new ItemModel('swordbiggoron', "Biggoron's Sword"),
+  new ItemModel(
+    'adult',
+    [
+      'Pocket Egg',
+      'Pocket Cucco',
+      'Cojiro',
+      'Odd Mushroom',
+      'Odd Potion',
+      "Poacher's Saw",
+      "Broken Goron's Sword",
+      'Prescription',
+      'Eyeball Frog',
+      "World's Finest Eye Drops",
+      'Claim Check',
+    ],
+    11
+  ),
+  new ItemModel('shielddeku', 'Deku Shield'),
+  new ItemModel('shieldhylian', 'Hylian Shield'),
+  new ItemModel('shieldmirror', 'Mirror Shield'),
+  new ItemModel(
+    'strength',
+    ["Goron's Bracelet", 'Silver Gauntlets', 'Golden Gauntlets'],
+    3
+  ),
   /* <!-- To do: obtain Master Sword when age becomes adult --> */
   new ItemModel('age'),
-  new ItemModel('tunicgoron'),
-  new ItemModel('tuniczora'),
-  new ItemModel('scale', 3),
-  new ItemModel('bootsiron'),
-  new ItemModel('bootshover'),
+  new ItemModel('tunicgoron', 'Goron Tunic'),
+  new ItemModel('tuniczora', 'Zora Tunic'),
+  new ItemModel('scale', ['Silver Scale', 'Golden Scale'], 2),
+  new ItemModel('bootsiron', 'Iron Boots'),
+  new ItemModel('bootshover', 'Hover Boots'),
 ];
 
 const songs: Song[] = [
-  new Song('lullaby', 'lurlur'),
-  new Song('epona', 'ulrulr'),
-  new Song('saria', 'drldrl'),
-  new Song('sun', 'rdurdu'),
-  new Song('time', 'radrad'),
-  new Song('storms', 'aduadu'),
-  new Song('minuet', 'aulrlr'),
-  new Song('bolero', 'dadardrd'),
-  new Song('serenade', 'adrrl'),
-  new Song('nocturne', 'lrralrd'),
-  new Song('requiem', 'adarda'),
-  new Song('prelude', 'ururlu'),
+  new Song('lullaby', 'lurlur', "Zelda's Lullaby"),
+  new Song('epona', 'ulrulr', "Epona's Song"),
+  new Song('saria', 'drldrl', "Saria's Song"),
+  new Song('sun', 'rdurdu', "Sun's Song"),
+  new Song('time', 'radrad', 'Song of Time'),
+  new Song('storms', 'aduadu', 'Song of Storms'),
+  new Song('minuet', 'aulrlr', 'Minuet of Forest'),
+  new Song('bolero', 'dadardrd', 'Bolero of Fire'),
+  new Song('serenade', 'adrrl', 'Serenade of Water'),
+  new Song('nocturne', 'lrralrd', 'Nocturne of Shadow'),
+  new Song('requiem', 'adarda', 'Requiem of Spirit'),
+  new Song('prelude', 'ururlu', 'Prelude of Light'),
 ];
 
 type MapNames = 'overworld' | 'desert';
@@ -220,20 +244,18 @@ export default function Home(): JSX.Element {
           `}
         >
           <span>{currentMap}</span>
-          <ToolTip text={(e) => {
-            const ele = (e.target as HTMLElement);
-            return ele.nodeName === 'path' ? titleize(ele.id.replaceAll('_', ' ')) : '';
-          }}>
+          <ToolTip
+            dynamicText={(e) => {
+              const ele = e.target as HTMLElement;
+              return ele.nodeName === 'path'
+                ? titleize(ele.id.replaceAll('_', ' '))
+                : '';
+            }}
+          >
             {currentMap == 'desert' ? (
-              <MapSvgDesert
-                onClick={switchMap}
-                onContextMenu={switchMap}
-              />
+              <MapSvgDesert onClick={switchMap} onContextMenu={switchMap} />
             ) : (
-              <MapSvg
-                onClick={switchMap}
-                onContextMenu={switchMap}
-              />
+              <MapSvg onClick={switchMap} onContextMenu={switchMap} />
             )}
           </ToolTip>
         </div>

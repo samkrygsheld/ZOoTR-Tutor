@@ -1,6 +1,6 @@
 import { StorageService } from './storage.service';
-import { Check, CheckState, Item, ItemState } from './models';
-import { fetchJson, isMobile } from './utils';
+import { Check, CheckState } from './models';
+import { isMobile } from './utils';
 import checks from '../public/js/checks.json';
 import regions from '../public/js/regions.json';
 

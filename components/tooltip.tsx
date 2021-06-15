@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { ReactNode, cloneElement, isValidElement, useRef, MouseEvent, useState } from 'react';
+import { ReactNode, cloneElement, isValidElement, useRef, MouseEvent, useState, useEffect } from 'react';
 
 const tooltipStyle = css`
   position: absolute;
@@ -14,11 +14,21 @@ const tooltipStyle = css`
   pointer-events: none;
   font-size: 25px;
 `;
-export default function Tooltip(props: { text: ((e: MouseEvent) => string) | string, children?: ReactNode }): JSX.Element {
+export default function Tooltip(props: { dynamicText?: (e: MouseEvent) => string, text?: string, children?: ReactNode }): JSX.Element {
   const [pos, setPos] = useState({x: 0, y: 0});
+  const lastMousePosRef = useRef({x: 0, y: 0});
   const tooltipRef = useRef<HTMLDivElement>(null!);
   const [show, setShow] = useState(false);
-  const [text, setText] = useState(typeof props.text === 'string' ? props.text : '');
+  const [text, setText] = useState(props.text || '');
+  useEffect(() => {
+    setText(props.text || '');
+    // Timeout to let the new text render for correct positioning
+    setTimeout(() => {
+      const ele = tooltipRef.current;
+      const rect = ele.getBoundingClientRect();
+      setPos({ x: lastMousePosRef.current.x - rect.width / 2, y: lastMousePosRef.current.y - rect.height - 10 });
+    }, 0);
+  }, [props.text]);
   return (
     <>
       <div ref={tooltipRef}
@@ -32,11 +42,12 @@ export default function Tooltip(props: { text: ((e: MouseEvent) => string) | str
       </div>
       { isValidElement(props.children) ? cloneElement(props.children, {
         onMouseMove: (e: MouseEvent) => {
-          if (typeof props.text === 'function') {
-            setText(props.text(e));
+          if (typeof props.dynamicText === 'function') {
+            setText(props.dynamicText(e));
           }
           const ele = tooltipRef.current;
           const rect = ele.getBoundingClientRect();
+          lastMousePosRef.current = { x: e.pageX, y: e.pageY };
           setPos({ x: e.pageX - rect.width / 2, y: e.pageY - rect.height - 10 });
           setShow(true);
         },

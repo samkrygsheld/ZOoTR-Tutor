@@ -1,45 +1,43 @@
 {
-    "root": true,
-    "env": {
-        "browser": true,
-        "node": true,
-        "es2021": true,
-        "jquery": true
-    },
-    "parser": "@typescript-eslint/parser",
-    "plugins": [
-        "@emotion",
-        "@typescript-eslint"
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true,
+    "jquery": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@emotion", "@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "ignorePatterns": ["**/vendor/*.js"],
+  "rules": {
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
     ],
-    "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:react-hooks/recommended"
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }
     ],
-    "ignorePatterns": ["**/vendor/*.js"],
-    "rules": {
-        "indent": [
-            "error",
-            2,
-            {
-                "SwitchCase": 1
-            }
-        ],
-        "linebreak-style": [
-            "error",
-            "windows"
-        ],
-        "@typescript-eslint/no-var-requires": 0,
-        "@typescript-eslint/no-explicit-any": 0,
-        "@typescript-eslint/no-non-null-assertion": 0,
-        "@typescript-eslint/no-inferrable-types": 0,
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ]
-    }
+    "linebreak-style": ["error", "windows"],
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-non-null-assertion": 0,
+    "@typescript-eslint/no-inferrable-types": 0,
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "semi": ["error", "always"]
+  }
 }
