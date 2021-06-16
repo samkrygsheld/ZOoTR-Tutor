@@ -1,11 +1,13 @@
-import { StorageService } from './storage.service';
-import { Check, CheckState } from './models';
 import { isMobile } from './utils';
-import checks from '../public/js/checks.json';
-import regions from '../public/js/regions.json';
 
-export async function main(currentMap: string): Promise<CheckState[]> {
-  const $storage = StorageService.Instance;
+let showChecks = false;
+let init = false;
+export function main(): void {
+  if (init) {
+    return;
+  }
+
+  init = true;
 
   $('[data-notes]')
     .on('mouseenter touchstart', (e) => {
@@ -32,10 +34,10 @@ export async function main(currentMap: string): Promise<CheckState[]> {
     },
   });
 
-  if (isMobile()) {
+  if (isMobile() && showChecks === false) {
     $('#checksWrapper').addClass('hidden');
   }
-  let showChecks = false;
+  $(window).off('resize');
   $(window).on('resize', () => {
     showChecks = false;
     $('#inventoryTracker').removeClass('hidden');
@@ -48,6 +50,9 @@ export async function main(currentMap: string): Promise<CheckState[]> {
     });
   });
   let lastScrollTop = 0;
+  $('#checks')
+    .children('ul')
+    .off('scroll');
   $('#checks')
     .children('ul')
     .on('scroll', (e) => {
@@ -63,6 +68,7 @@ export async function main(currentMap: string): Promise<CheckState[]> {
       }
       lastScrollTop = scrollTop;
     });
+  $('#toggleMap').off('click');
   $('#toggleMap').on('click', () => {
     showChecks = !showChecks;
     if (showChecks) {
@@ -74,19 +80,4 @@ export async function main(currentMap: string): Promise<CheckState[]> {
       $('#toggleMap').stop(true, true).show();
     }
   });
-
-  const subregion: string | null = currentMap;
-  const region = regions.find((r: any) => r.region === subregion);
-  let subs: string[] = [];
-  if (region != null) {
-    subs = Object.keys(region.subregions);
-  }
-  return checks.filter(
-    (c) =>
-      c.subregion === subregion ||
-      subs.some((s) => c.subregion == s)
-  ).map((check: any) => new CheckState(
-    new Check(check),
-    $storage.saveData.checks[check.spoiler]
-  ));
 }

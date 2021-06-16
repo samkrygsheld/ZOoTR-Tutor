@@ -14,6 +14,7 @@ import CheckRow from '../components/check-row';
 import { CheckState, Item as ItemModel, Song } from '../shared/models';
 
 import regions from '../public/js/regions.json';
+import { getChecks } from '../shared/checks.service';
 
 const noteStyle = css`
   display: inline-block;
@@ -108,10 +109,8 @@ export default function Home(): JSX.Element {
   const [currentMap, setMap] = useState<MapNames>('overworld');
   const [checks, setChecks] = useState<CheckState[]>([]);
   useEffect(() => {
-    async function doMain() {
-      setChecks(await main(currentMap));
-    }
-    doMain();
+    main();
+    setChecks(getChecks(currentMap));
   }, [currentMap]);
   function switchMap(e: SyntheticEvent) {
     e.preventDefault();
