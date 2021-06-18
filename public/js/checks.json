@@ -765,10 +765,11 @@
     {
         "spoiler": "Graveyard Dampe Gravedigging Tour",
         "description": "Dampe Early Evening",
-        "type": "interactive",
+        "type": "purchase",
         "time-sensitive": "night",
         "subregion": "graveyard",
         "age": "child",
+        "price": 10,
         "x-coord": 0,
         "y-coord": 0
     },
@@ -878,7 +879,7 @@
         "type": "interactive",
         "subregion": "goron_city",
         "age": "adult",
-        "price": "?",
+        "price": 200,
         "x-coord": 0,
         "y-coord": 0
     },
@@ -1193,7 +1194,7 @@
         "type": "purchase",
         "subregion": "haunted_wasteland",
         "age": "adult",
-        "price": "?",
+        "price": 200,
         "x-coord": 0,
         "y-coord": 0
     },
