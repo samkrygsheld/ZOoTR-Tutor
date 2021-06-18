@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="94.625801mm"
+   height="106.10601mm"
+   viewBox="0 0 94.625801 106.10601"
+   version="1.1"
+   id="svg919"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="price-200.svg">
+  <defs
+     id="defs913" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="688.60872"
+     inkscape:cy="274.71584"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata916">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-73.70212,-48.910313)">
+    <g
+       id="g1592"
+       transform="matrix(0.74764596,0,0,0.74764596,41.085828,39.118995)">
+      <path
+         sodipodi:nodetypes="ccc"
+         id="path1531"
+         d="M 72.430042,42.228581 106.9078,84.05626 72.430042,125.88394 Z"
+         style="fill:#63d07e;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccc"
+         id="path1533"
+         d="M 106.9078,13.096202 V 84.05626 L 72.430042,42.228581 Z"
+         style="fill:#b5f4c1;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:#26ac44;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 106.9078,13.096196 V 84.056257 L 141.38557,42.228578 Z"
+         id="path1533-1"
+         sodipodi:nodetypes="ccc" />
+      <path
+         style="fill:#097328;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 141.38557,125.88394 106.9078,84.05626 v 70.96006 z"
+         id="path1533-6"
+         sodipodi:nodetypes="ccc" />
+      <path
+         style="fill:#0fc63b;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 106.9078,155.01632 V 84.05626 l -34.477758,41.82768 z"
+         id="path1533-13"
+         sodipodi:nodetypes="ccc" />
+      <path
+         style="fill:#015418;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 141.38557,42.228578 106.9078,84.05626 141.38557,125.88394 Z"
+         id="path1529-2"
+         sodipodi:nodetypes="ccc" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;line-height:1.25;font-family:'Hylia Serif Beta';-inkscape-font-specification:'Hylia Serif Beta';fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.865;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="121.39602"
+       y="123.7458"
+       id="text1579"><tspan
+         sodipodi:role="line"
+         id="tspan1577"
+         x="121.39602"
+         y="123.7458"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;font-family:'Hylia Serif Beta';-inkscape-font-specification:'Hylia Serif Beta';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.865;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">200</tspan></text>
+  </g>
+</svg>
