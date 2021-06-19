@@ -191,7 +191,7 @@
     },
     {
         "spoiler": "Song from Composers Grave",
-        "description": "Song from the ",
+        "description": "Song from Composers Grave",
         "type": "song",
         "subregion": "graveyard",
         "age": "both",
@@ -209,7 +209,7 @@
     },
     {
         "spoiler": "Song from Windmill",
-        "description": "Song of Storms location",
+        "description": "Song from Windmill",
         "type": "song",
         "subregion": "Kakariko",
         "age": "adult",
@@ -218,7 +218,7 @@
     },
     {
         "spoiler": "Sheik in Forest",
-        "description": "Minuet of Forest location",
+        "description": "Sheik in Forest",
         "type": "song",
         "subregion": "sacred_forest_meadow",
         "age": "adult",
@@ -227,7 +227,7 @@
     },
     {
         "spoiler": "Sheik in Crater",
-        "description": "Bolero of Fire location",
+        "description": "Sheik in Crater",
         "type": "song",
         "subregion": "death_mountain_crater",
         "age": "adult",
@@ -236,7 +236,7 @@
     },
     {
         "spoiler": "Sheik in Ice Cavern",
-        "description": "Serenade of Water location",
+        "description": "Sheik in Ice Cavern",
         "type": "song",
         "subregion": "Ice Cavern",
         "age": "adult",
@@ -245,7 +245,7 @@
     },
     {
         "spoiler": "Sheik at Colossus",
-        "description": "Requiem of Spirit location",
+        "description": "Sheik at Colossus",
         "type": "song",
         "subregion": "desert_colossus",
         "age": "adult",
@@ -254,7 +254,7 @@
     },
     {
         "spoiler": "Sheik in Kakariko",
-        "description": "Nocturne of Shadow location",
+        "description": "Sheik in Kakariko",
         "type": "song",
         "subregion": "Kakariko",
         "age": "adult",
@@ -263,13 +263,22 @@
     },
     {
         "spoiler": "Sheik at Temple",
-        "description": "Prelude of Light location",
+        "description": "Sheik at Temple",
         "type": "song",
         "subregion": "temple_of_time",
         "age": "adult",
         "x-coord": 0,
         "y-coord": 0
     },
+    {
+        "spoiler": "KF Kokiri Sword Chest",
+        "description": "Kokiri Sword Chest",
+        "type": "chest",
+        "subregion": "kokiri_forest",
+        "age": "child",
+        "x-coord": 0,
+        "y-coord": 0
+    }
     {
         "spoiler": "KF Midos Top Left Chest",
         "description": "Mido's House ↖︎",
@@ -789,7 +798,7 @@
         "age": "?",
         "x-coord": 0,
         "y-coord": 0,
-        "early-peek": "?"
+        "early-peek": true
     },
     {
         "spoiler": "DMT Chest",
@@ -1984,7 +1993,7 @@
     },
     {
         "spoiler": "Spirit Temple Child Climb North Chest",
-        "description": "Lizalfos Room Near Stairs",
+        "description": "Child Lizalfos Room Near Stairs",
         "type": "chest",
         "subregion": "spirit_temple",
         "age": "both",
@@ -1993,7 +2002,7 @@
     },
     {
         "spoiler": "Spirit Temple Child Climb East Chest",
-        "description": "Lizalfos Room Near Door",
+        "description": "Child Lizalfos Room Near Door",
         "type": "chest",
         "subregion": "spirit_temple",
         "age": "both",
@@ -2523,7 +2532,8 @@
         "subregion": "kokiri_forest",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["KF Kokiri Sword Chest","KF Midos Bottom Left Chest"]
     },
     {
         "spoiler": "KF GS Bean Patch",
@@ -2532,7 +2542,8 @@
         "subregion": "kokiri_forest",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["KF Midos Bottom Left Chest"]
     },
     {
         "spoiler": "KF GS House of Twins",
@@ -2542,7 +2553,8 @@
         "subregion": "kokiri_forest",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "LW GS Bean Patch Near Bridge",
@@ -2551,7 +2563,8 @@
         "subregion": "lost_woods",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["LW Skull Kid","LW Deku Scrub Near Bridge"]
     },
     {
         "spoiler": "LW GS Bean Patch Near Theater",
@@ -2560,7 +2573,8 @@
         "subregion": "lost_woods",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Deku Theater Skull Mask","Deku Theater Mask of Truth"]
     },
     {
         "spoiler": "LW GS Above Theater",
@@ -2570,7 +2584,8 @@
         "subregion": "lost_woods",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "SFM GS",
@@ -2580,7 +2595,8 @@
         "subregion": "sacred_forest_meadow",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Sheik in Forest"]
     },
     {
         "spoiler": "HF GS Cow Grotto",
@@ -2589,7 +2605,8 @@
         "subregion": "hyrule_field",
         "age": "both",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "HF GS Near Kak Grotto",
@@ -2598,7 +2615,8 @@
         "subregion": "hyrule_field",
         "age": "both",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "Market GS Guard House",
@@ -2607,7 +2625,8 @@
         "subregion": "market",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Market Shooting Gallery Reward"]
     },
     {
         "spoiler": "HC GS Tree",
@@ -2616,7 +2635,8 @@
         "subregion": "castle",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["HC Zeldas Letter","HC Great Fairy Reward","Song from Impa"]
     },
     {
         "spoiler": "HC GS Storms Grotto",
@@ -2625,7 +2645,8 @@
         "subregion": "castle",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["HC Zeldas Letter","Song from Impa"]
     },
     {
         "spoiler": "LLR GS House Window",
@@ -2635,7 +2656,8 @@
         "subregion": "lon_lon_ranch",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "LLR GS Tree",
@@ -2644,7 +2666,8 @@
         "subregion": "lon_lon_ranch",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["LLR Talons Chickens","LLR Freestanding PoH","Song from Malon"]
     },
     {
         "spoiler": "LLR GS Rain Shed",
@@ -2654,7 +2677,8 @@
         "subregion": "lon_lon_ranch",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "LLR GS Back Wall",
@@ -2664,7 +2688,8 @@
         "subregion": "lon_lon_ranch",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "Kak GS Tree",
@@ -2674,7 +2699,8 @@
         "subregion": "kakariko",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Kak 10 Gold Skulltula Reward","Kak 20 Gold Skulltula Reward","Kak 30 Gold Skulltula Reward","Kak 40 Gold Skulltula Reward","Kak 50 Gold Skulltula Reward","Kak Impas House Freestanding PoH","Kak Man on Roof","Kak Open Grotto Chest","Kak Redead Grotto Chest"]
     },
     {
         "spoiler": "Kak GS Guards House",
@@ -2684,7 +2710,8 @@
         "subregion": "kakariko",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Kak 10 Gold Skulltula Reward","Kak 20 Gold Skulltula Reward","Kak 30 Gold Skulltula Reward","Kak 40 Gold Skulltula Reward","Kak 50 Gold Skulltula Reward","Kak Impas House Freestanding PoH","Kak Man on Roof","Kak Open Grotto Chest","Kak Redead Grotto Chest"]
     },
     {
         "spoiler": "Kak GS Watchtower",
@@ -2694,7 +2721,8 @@
         "subregion": "kakariko",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Kak 10 Gold Skulltula Reward","Kak 20 Gold Skulltula Reward","Kak 30 Gold Skulltula Reward","Kak 40 Gold Skulltula Reward","Kak 50 Gold Skulltula Reward","Kak Impas House Freestanding PoH","Kak Man on Roof","Kak Open Grotto Chest","Kak Redead Grotto Chest"]
     },
     {
         "spoiler": "Kak GS Skulltula House",
@@ -2704,7 +2732,8 @@
         "subregion": "kakariko",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Kak 10 Gold Skulltula Reward","Kak 20 Gold Skulltula Reward","Kak 30 Gold Skulltula Reward","Kak 40 Gold Skulltula Reward","Kak 50 Gold Skulltula Reward","Kak Impas House Freestanding PoH","Kak Man on Roof","Kak Open Grotto Chest","Kak Redead Grotto Chest"]
     },
     {
         "spoiler": "Kak GS House Under Construction",
@@ -2714,7 +2743,8 @@
         "subregion": "kakariko",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Kak 10 Gold Skulltula Reward","Kak 20 Gold Skulltula Reward","Kak 30 Gold Skulltula Reward","Kak 40 Gold Skulltula Reward","Kak 50 Gold Skulltula Reward","Kak Impas House Freestanding PoH","Kak Man on Roof","Kak Open Grotto Chest","Kak Redead Grotto Chest"]
     },
     {
         "spoiler": "Kak GS Above Impas House",
@@ -2724,7 +2754,8 @@
         "subregion": "kakariko",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Kak 10 Gold Skulltula Reward","Kak 20 Gold Skulltula Reward","Kak 30 Gold Skulltula Reward","Kak 40 Gold Skulltula Reward","Kak 50 Gold Skulltula Reward"]
     },
     {
         "spoiler": "Graveyard GS Bean Patch",
@@ -2733,7 +2764,8 @@
         "subregion": "graveyard",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Graveyard Shield Grave Chest","Graveyard Heart Piece Grave Chest","Graveyard Dampe Gravedigging Tour","Graveyard Composers Grave Chest"]
     },
     {
         "spoiler": "Graveyard GS Wall",
@@ -2743,7 +2775,8 @@
         "subregion": "graveyard",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Graveyard Shield Grave Chest","Graveyard Heart Piece Grave Chest","Graveyard Dampe Gravedigging Tour","Graveyard Composers Grave Chest"]
     },
     {
         "spoiler": "DMT GS Near Kak",
@@ -2752,7 +2785,8 @@
         "subregion": "death_mountain_trail",
         "age": "both",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["DMT Freestanding PoH","DMT Chest","DMT Storms Grotto Chest"]
     },
     {
         "spoiler": "DMT GS Bean Patch",
@@ -2761,17 +2795,19 @@
         "subregion": "death_mountain_trail",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["DMT Freestanding PoH","DMT Chest","DMT Storms Grotto Chest"]
     },
     {
         "spoiler": "DMT GS Above Dodongos Cavern",
-        "description": "Cavern Overlook Inside Rock",
+        "description": "Cliff Near Dodongos Inside Rock",
         "type": "skull",
         "time-sensitive": "night",
         "subregion": "death_mountain_trail",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["DMT Freestanding PoH","DMT Chest","DMT Storms Grotto Chest"]
     },
     {
         "spoiler": "DMT GS Falling Rocks Path",
@@ -2781,7 +2817,8 @@
         "subregion": "death_mountain_trail",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["DMT Great Fairy Reward","DMT Biggoron"]
     },
     {
         "spoiler": "GC GS Center Platform",
@@ -2790,7 +2827,8 @@
         "subregion": "goron_city",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["GC Rolling Goron as Adult","GC Maze Left Chest","GC Maze Right Chest","GC Maze Center Chest"]
     },
     {
         "spoiler": "GC GS Boulder Maze",
@@ -2799,7 +2837,8 @@
         "subregion": "goron_city",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["GC Maze Left Chest","GC Maze Right Chest","GC Maze Center Chest"]
     },
     {
         "spoiler": "DMC GS Crate",
@@ -2808,7 +2847,8 @@
         "subregion": "death_mountain_crater",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["DMT Great Fairy Reward"]
     },
     {
         "spoiler": "DMC GS Bean Patch",
@@ -2817,7 +2857,8 @@
         "subregion": "death_mountain_crater",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "ZR GS Tree",
@@ -2826,7 +2867,8 @@
         "subregion": "zoras_river",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["ZR Magic Bean Salesman","ZR Open Grotto Chest","ZR Frogs in the Rain","ZR Frogs Ocarina Game","ZR Near Open Grotto Freestanding PoH","ZR Near Domain Freestanding PoH"]
     },
     {
         "spoiler": "ZR GS Ladder",
@@ -2836,7 +2878,8 @@
         "subregion": "zoras_river",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["ZR Near Domain Freestanding PoH"]
     },
     {
         "spoiler": "ZR GS Near Raised Grottos",
@@ -2846,7 +2889,8 @@
         "subregion": "zoras_river",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["ZR Open Grotto Chest"]
     },
     {
         "spoiler": "ZR GS Above Bridge",
@@ -2856,7 +2900,8 @@
         "subregion": "zoras_river",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["ZR Open Grotto Chest","ZR Near Open Grotto Freestanding PoH","ZR Near Domain Freestanding PoH"]
     },
     {
         "spoiler": "ZD GS Frozen Waterfall",
@@ -2866,7 +2911,8 @@
         "subregion": "zoras_domain",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["ZD King Zora Thawed","ZR Near Domain Freestanding PoH"]
     },
     {
         "spoiler": "ZF GS Above the Log",
@@ -2876,7 +2922,8 @@
         "subregion": "zoras_fountain",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Jabu Jabus Belly Boomerang Chest","ZF Great Fairy Reward"]
     },
     {
         "spoiler": "ZF GS Tree",
@@ -2885,7 +2932,8 @@
         "subregion": "zoras_fountain",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["ZF Great Fairy Reward"]
     },
     {
         "spoiler": "ZF GS Hidden Cave",
@@ -2895,7 +2943,8 @@
         "subregion": "zoras_fountain",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "LH GS Bean Patch",
@@ -2904,7 +2953,8 @@
         "subregion": "lake_hylia",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["LH Underwater Item","LH Child Fishing","LH Lab Dive"]
     },
     {
         "spoiler": "LH GS Lab Wall",
@@ -2914,7 +2964,8 @@
         "subregion": "lake_hylia",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks":["LH Underwater Item","LH Child Fishing","LH Lab Dive"]
     },
     {
         "spoiler": "LH GS Small Island",
@@ -2924,7 +2975,8 @@
         "subregion": "lake_hylia",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "LH GS Lab Crate",
@@ -2933,7 +2985,8 @@
         "subregion": "lake_hylia",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["LH Lab Dive"]
     },
     {
         "spoiler": "LH GS Tree",
@@ -2943,7 +2996,8 @@
         "subregion": "lake_hylia",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Morpha","Water Temple Morpha Heart"]
     },
     {
         "spoiler": "GV GS Small Bridge",
@@ -2953,7 +3007,8 @@
         "subregion": "gerudo_valley",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["GV Crate Freestanding PoH","GV Waterfall Freestanding PoH"]
     },
     {
         "spoiler": "GV GS Bean Patch",
@@ -2962,7 +3017,8 @@
         "subregion": "gerudo_valley",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["GV Waterfall Freestanding PoH"]
     },
     {
         "spoiler": "GV GS Behind Tent",
@@ -2972,7 +3028,8 @@
         "subregion": "gerudo_valley",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["GV Chest"]
     },
     {
         "spoiler": "GV GS Pillar",
@@ -2982,7 +3039,8 @@
         "subregion": "gerudo_valley",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["GV Chest"]
     },
     {
         "spoiler": "GF GS Top Floor",
@@ -2992,7 +3050,8 @@
         "subregion": "gerudo_fortress",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["GF Chest"]
     },
     {
         "spoiler": "GF GS Archery Range",
@@ -3002,16 +3061,18 @@
         "subregion": "gerudo_fortress",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "Wasteland GS",
         "description": "Shelter Between Torches",
         "type": "skull",
-        "subregion": "wasteland",
+        "subregion": "haunted_wasteland",
         "age": "both",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Wasteland Chest"]
     },
     {
         "spoiler": "Colossus GS Bean Patch",
@@ -3020,7 +3081,8 @@
         "subregion": "desert_colossus",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Colossus Great Fairy Reward"]
     },
     {
         "spoiler": "Colossus GS Tree",
@@ -3030,7 +3092,8 @@
         "subregion": "desert_colossus",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "Colossus GS Hill",
@@ -3040,7 +3103,8 @@
         "subregion": "desert_colossus",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Colossus Freestanding PoH"]
     },
     {
         "spoiler": "OGC GS",
@@ -3049,7 +3113,8 @@
         "subregion": "castle",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Ganons Castle Forest Trial Chest","OGC Great Fairy Reward"]
     },
     {
         "spoiler": "Deku Tree GS Compass Room",
@@ -3058,7 +3123,8 @@
         "subregion": "deku_tree",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Deku Tree Compass Chest","Deku Tree Compass Room Side Chest"]
     },
     {
         "spoiler": "Deku Tree GS Basement Vines",
@@ -3067,7 +3133,8 @@
         "subregion": "deku_tree",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Deku Tree Basement Chest","Queen Gohma","Deku Tree Queen Gohma Heart"]
     },
     {
         "spoiler": "Deku Tree GS Basement Gate",
@@ -3076,7 +3143,8 @@
         "subregion": "deku_tree",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Deku Tree Basement Chest","Queen Gohma","Deku Tree Queen Gohma Heart"]
     },
     {
         "spoiler": "Deku Tree GS Basement Back Room",
@@ -3085,357 +3153,397 @@
         "subregion": "deku_tree",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "Dodongos Cavern GS Side Room Near Lower Lizalfos",
-        "description": "Know-It-All Skull",
+        "description": "Baby Dodongos Bomb Wall",
         "type": "skull",
         "subregion": "dodongos_cavern",
         "age": "both",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "Dodongos Cavern GS Scarecrow",
-        "description": "Know-It-All Skull",
+        "description": "Baby Dodongos Scarecrow",
         "type": "skull",
         "subregion": "dodongos_cavern",
         "age": "both",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "Dodongos Cavern GS Alcove Above Stairs",
-        "description": "Know-It-All Skull",
+        "description": "Alcove Above Bomb Stairs",
         "type": "skull",
         "subregion": "dodongos_cavern",
         "age": "both",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Dodongos Cavern Compass Chest","Dodongos Cavern Bomb Flower Platform Chest","Dodongos Cavern Bomb Bag Chest"]
     },
     {
         "spoiler": "Dodongos Cavern GS Vines Above Stairs",
-        "description": "Know-It-All Skull",
+        "description": "Vines Above Bomb Stairs",
         "type": "skull",
         "subregion": "dodongos_cavern",
         "age": "both",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Dodongos Cavern Compass Chest","Dodongos Cavern Bomb Flower Platform Chest","Dodongos Cavern Bomb Bag Chest"]
     },
     {
         "spoiler": "Dodongos Cavern GS Back Room",
-        "description": "Know-It-All Skull",
+        "description": "Bomb Wall Past Boss Room Switch",
         "type": "skull",
         "subregion": "dodongos_cavern",
         "age": "both",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "Jabu Jabus Belly GS Water Switch Room",
-        "description": "Know-It-All Skull",
+        "description": "Throw Ruto Water Switch",
         "type": "skull",
         "subregion": "jabu_jabus_belly",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Jabu Jabus Belly Boomerang Chest"]
     },
     {
         "spoiler": "Jabu Jabus Belly GS Lobby Basement Lower",
-        "description": "Know-It-All Skull",
+        "description": "Basement Left",
         "type": "skull",
         "subregion": "jabu_jabus_belly",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Barinade","Jabu Jabus Belly Barinade Heart"]
     },
     {
         "spoiler": "Jabu Jabus Belly GS Lobby Basement Upper",
-        "description": "Know-It-All Skull",
+        "description": "Basement Right",
         "type": "skull",
         "subregion": "jabu_jabus_belly",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Barinade","Jabu Jabus Belly Barinade Heart"]
     },
     {
         "spoiler": "Jabu Jabus Belly GS Near Boss",
-        "description": "Know-It-All Skull",
+        "description": "Room Before Barinade",
         "type": "skull",
         "subregion": "jabu_jabus_belly",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Barinade","Jabu Jabus Belly Barinade Heart"]
     },
     {
         "spoiler": "Bottom of the Well GS West Inner Room",
-        "description": "Know-It-All Skull",
+        "description": "Locked Center Room West",
         "type": "skull",
         "subregion": "bottom_of_the_well",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Bottom of the Well Center Skulltula Chest"]
     },
     {
         "spoiler": "Bottom of the Well GS East Inner Room",
-        "description": "Know-It-All Skull",
+        "description": "Locked Center Room East",
         "type": "skull",
         "subregion": "bottom_of_the_well",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Bottom of the Well Center Skulltula Chest"]
     },
     {
         "spoiler": "Bottom of the Well GS Like Like Cage",
-        "description": "Know-It-All Skull",
+        "description": "Behind Like Like",
         "type": "skull",
         "subregion": "bottom_of_the_well",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Bottom of the Well Fire Keese Chest","Bottom of the Well Like Like Chest"]
     },
     {
         "spoiler": "Forest Temple GS First Room",
-        "description": "Know-It-All Skull",
+        "description": "First Room Vines",
         "type": "skull",
         "subregion": "forest_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Forest Temple First Room Chest"]
     },
     {
         "spoiler": "Forest Temple GS Lobby",
-        "description": "Know-It-All Skull",
+        "description": "Back of Lobby",
         "type": "skull",
         "subregion": "forest_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Forest Temple First Stalfos Chest"]
     },
     {
         "spoiler": "Forest Temple GS Raised Island Courtyard",
-        "description": "Know-It-All Skull",
+        "description": "Near Island Hookshot Chest",
         "type": "skull",
         "subregion": "forest_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Forest Temple Raised Island Courtyard Chest"]
     },
     {
         "spoiler": "Forest Temple GS Level Island Courtyard",
-        "description": "Know-It-All Skull",
+        "description": "Near Courtyard Pillars",
         "type": "skull",
         "subregion": "forest_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Forest Temple Floormaster Chest","Forest Boss Key Chest"]
     },
     {
         "spoiler": "Forest Temple GS Basement",
-        "description": "Know-It-All Skull",
+        "description": "Revolving Basement",
         "type": "skull",
         "subregion": "forest_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Forest Temple Basement Chest","Phantom Ganon","Forest Temple Phantom Ganon Heart"]
     },
     {
         "spoiler": "Fire Temple GS Boss Key Loop",
-        "description": "Know-It-All Skull",
+        "description": "Like Like Room Behind Lobby",
         "type": "skull",
         "subregion": "fire_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Fire Temple Flare Dancer Chest","Fire Temple Boss Key Chest"]
     },
     {
         "spoiler": "Fire Temple GS Song of Time Room",
-        "description": "Know-It-All Skull",
+        "description": "Lava Room Song of Time Block",
         "type": "skull",
         "subregion": "fire_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "Fire Temple GS Boulder Maze",
-        "description": "Know-It-All Skull",
+        "description": "Boulder Maze False Wall",
         "type": "skull",
         "subregion": "fire_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Fire Temple Boulder Maze Side Room Chest"]
     },
     {
         "spoiler": "Fire Temple GS Scarecrow Climb",
-        "description": "Know-It-All Skull",
+        "description": "Scarecrow Chains",
         "type": "skull",
         "subregion": "fire_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Fire Temple Scarecrow Chest"]
     },
     {
         "spoiler": "Fire Temple GS Scarecrow Top",
-        "description": "Know-It-All Skull",
+        "description": "Scarecrow Wall Above Pit",
         "type": "skull",
         "subregion": "fire_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Fire Temple Scarecrow Chest"]
     },
     {
         "spoiler": "Water Temple GS Behind Gate",
-        "description": "Know-It-All Skull",
+        "description": "Bottom Floor South",
         "type": "skull",
         "subregion": "water_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "Water Temple GS Near Boss Key Chest",
-        "description": "Know-It-All Skull",
+        "description": "Rolling Boulders by Boss Chest",
         "type": "skull",
         "subregion": "water_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Water Temple Boss Key Chest"]
     },
     {
         "spoiler": "Water Temple GS Central Pillar",
-        "description": "Know-It-All Skull",
+        "description": "Top of Central Pillar",
         "type": "skull",
         "subregion": "water_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Water Temple Central Pillar Chest"]
     },
     {
         "spoiler": "Water Temple GS Falling Platform Room",
-        "description": "Know-It-All Skull",
+        "description": "Waterfall Platforms",
         "type": "skull",
         "subregion": "water_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Water Temple Longshot Chest"]
     },
     {
         "spoiler": "Water Temple GS River",
-        "description": "Know-It-All Skull",
+        "description": "River After Dark Link",
         "type": "skull",
         "subregion": "water_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Water Temple River Chest"]
     },
     {
         "spoiler": "Shadow Temple GS Like Like Room",
-        "description": "Know-It-All Skull",
+        "description": "Like Like Room",
         "type": "skull",
         "subregion": "shadow_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Shadow Temple Invisible Blades Visible Chest","Shadow Temple Invisible Blades Invisible Chest"]
     },
     {
         "spoiler": "Shadow Temple GS Falling Spikes Room",
-        "description": "Know-It-All Skull",
+        "description": "Falling Spikes Room",
         "type": "skull",
         "subregion": "shadow_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Shadow Temple Falling Spikes Lower Chest","Shadow Temple Falling Spikes Upper Chest","Shadow Temple Falling Spikes Switch Chest"]
     },
     {
         "spoiler": "Shadow Temple GS Single Giant Pot",
-        "description": "Know-It-All Skull",
+        "description": "Behind Skull Pot",
         "type": "skull",
         "subregion": "shadow_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Shadow Temple Freestanding Key"]
     },
     {
         "spoiler": "Shadow Temple GS Near Ship",
-        "description": "Know-It-All Skull",
+        "description": "Across From Ladder to Ship",
         "type": "skull",
         "subregion": "shadow_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "Shadow Temple GS Triple Giant Pot",
-        "description": "Know-It-All Skull",
+        "description": "Triple Skull Pots",
         "type": "skull",
         "subregion": "shadow_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "Spirit Temple GS Metal Fence",
-        "description": "Know-It-All Skull",
+        "description": "Child Side Fire Room",
         "type": "skull",
         "subregion": "spirit_temple",
-        "age": "?",
+        "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Spirit Temple Child Early Torches Chest"]
     },
     {
         "spoiler": "Spirit Temple GS Sun on Floor Room",
         "description": "Know-It-All Skull",
         "type": "skull",
-        "subregion": "spirit_temple",
-        "age": "?",
+        "subregion": "Child Lizalfos Room",
+        "age": "both",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Spirit Temple Child Climb North Chest","Spirit Temple Child Climb East Chest"]
     },
     {
         "spoiler": "Spirit Temple GS Hall After Sun Block Room",
-        "description": "Know-It-All Skull",
+        "description": "Hall After Sun Block Room",
         "type": "skull",
         "subregion": "spirit_temple",
-        "age": "?",
+        "age": "both",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Spirit Temple Sun Block Room Chest","Spirit Temple Silver Gauntlets Chest"]
     },
     {
         "spoiler": "Spirit Temple GS Lobby",
-        "description": "Know-It-All Skull",
+        "description": "Big Statue Corner",
         "type": "skull",
         "subregion": "spirit_temple",
-        "age": "?",
+        "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": null
     },
     {
         "spoiler": "Ice Cavern GS Spinning Scythe Room",
-        "description": "Know-It-All Skull",
+        "description": "Spinning Blade Room",
         "type": "skull",
         "subregion": "ice_cavern",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Ice Cavern Map Chest","Ice Cavern Compass Chest","Ice Cavern Freestanding PoH"]
     },
     {
         "spoiler": "Ice Cavern GS Heart Piece Room",
-        "description": "Know-It-All Skull",
+        "description": "Two Frozen Items Room",
         "type": "skull",
         "subregion": "ice_cavern",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Ice Cavern Compass Chest","Ice Cavern Freestanding PoH"]
     },
     {
         "spoiler": "Ice Cavern GS Push Block Room",
-        "description": "Know-It-All Skull",
+        "description": "Block Puzzle Room",
         "type": "skull",
         "subregion": "ice_cavern",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "nearby-checks": ["Ice Cavern Iron Boots Chest"]
     }
 ]
