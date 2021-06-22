@@ -1,8 +1,19 @@
 const { extendDefaultPlugins } = require('svgo');
 
 module.exports = {
-  presets: ['next/babel'],
+  presets: [
+    [
+      'next/babel',
+      {
+        'preset-react': {
+          runtime: 'automatic',
+          importSource: '@emotion/react',
+        },
+      },
+    ],
+  ],
   plugins: [
+    '@emotion/babel-plugin',
     [
       'inline-react-svg',
       {
@@ -10,11 +21,11 @@ module.exports = {
           plugins: extendDefaultPlugins([
             {
               name: 'mergePaths',
-              active: false
+              active: false,
             },
             {
               name: 'cleanupIDs',
-              active: false
+              active: false,
             },
           ]),
         },

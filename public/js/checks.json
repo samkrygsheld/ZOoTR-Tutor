@@ -3,7 +3,7 @@
         "spoiler": "Links Pocket",
         "description": "Starting Medallion",
         "type": "boss",
-        "subregion": null,
+        "subregion": "overworld",
         "age": "both",
         "x-coord": null,
         "y-coord": null,
@@ -278,7 +278,7 @@
         "age": "child",
         "x-coord": 0,
         "y-coord": 0
-    }
+    },
     {
         "spoiler": "KF Midos Top Left Chest",
         "description": "Mido's House ↖︎",

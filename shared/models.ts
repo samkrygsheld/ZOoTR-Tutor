@@ -1,37 +1,45 @@
-import { kebabToCamel } from './utils';
+import { StorageService } from './storage.service';
+import { kebabToCamel, titleize } from './utils';
 
 export class Item {
   public name: string;
+  public display: string[] | string;
   public icons: string[] = [];
-  constructor(name: string, numberOfStates: number) {
+  constructor(name: string, display?: string[] | string, numberOfStates: number = 1) {
     this.name = name;
-    for (let i = 0; i < numberOfStates; i++) {
+    this.display = display || titleize(name);
+    for (let i = 0; i < numberOfStates + 1; i++) {
       this.icons.push(`images/icons/${name}${i}.png`);
     }
   }
 }
 
+export class Song extends Item {
+  public notes: string;
+  constructor(name: string, notes: string, display?: string) {
+    super(name, display, 1);
+    this.notes = notes;
+  }
+}
+
 export class ItemState {
   public item: Item;
-  public img: HTMLImageElement;
   public state: number = 0;
   public wrap: boolean = false;
-  public get icon() {
+  public get icon(): string {
     return this.item.icons[this.state];
   }
-  constructor(item: Item, img: HTMLImageElement, wrap: boolean = false) {
+  constructor(item: Item, wrap: boolean = false) {
     this.item = item;
-    this.img = img;
     this.wrap = wrap;
-    this.img.src = this.icon;
   }
 
-  public setState(state: number) {
+  public setState(state: number): void {
     this.state = state;
-    this.img.src = this.icon;
+    this.save();
   }
 
-  public changeState(step: number) {
+  public changeState(step: number): void {
     this.state += step;
     if (this.state >= this.item.icons.length) {
       if (this.wrap) {
@@ -46,15 +54,21 @@ export class ItemState {
         this.state = 0;
       }
     }
-    this.img.src = this.icon;
+    this.save();
   }
 
-  public incrementState() {
+  public incrementState(): void {
     this.changeState(1);
   }
 
-  public decrementState() {
+  public decrementState(): void {
     this.changeState(-1);
+  }
+
+  private save() {
+    const $storage = StorageService.Instance;
+    $storage.saveData.inventory[this.item.name] = this.state;
+    $storage.saveState();
   }
 }
 
@@ -92,10 +106,10 @@ export class Check {
   public yCoord: number = 0;
   public videos: string[] = [];
   public earlyPeek: boolean = false;
-  public get completable() {
+  public get completable(): boolean {
     return true;
   }
-  public get icons() {
+  public get icons(): string {
     let icons = '';
     switch (this.age) {
       case 'child':
@@ -136,7 +150,7 @@ export class Check {
     return icons;
   }
   constructor(checkData: JSONObject = {}) {
-    for (let prop in checkData) {
+    for (const prop in checkData) {
       const propName = kebabToCamel(prop);
       if (propName in this) {
         this[propName] = checkData[prop];
@@ -150,14 +164,14 @@ export class Check {
 export class CheckState {
   public check;
   public checked;
-  public get class() {
+  public get class(): string {
     return (
       'check ' +
       (this.checked
         ? 'check-checked'
         : (this.check.completable
-        ? 'check-checkable'
-        : 'check-unchecked'))
+          ? 'check-checkable'
+          : 'check-unchecked'))
     );
   }
   constructor(check: Check, checked: boolean = false) {
