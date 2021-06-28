@@ -112,3 +112,31 @@ export function parseSettingsString(text: string): void {
   // self.settings_string = self.get_settings_string()
   // self.numeric_seed = self.get_numeric_seed()
 }
+
+
+export function createSandbox(code: string, that: Record<string, unknown>, locals: Record<string, unknown>): any {
+  code = '"use strict";' + code;
+  const params = []; // names of local vars
+  const args = []; // local vars
+
+  let keys = Object.getOwnPropertyNames( window );
+  keys = keys.concat([...document.querySelectorAll('*[id]')].map((e) => e.id).filter((id) => !id.includes('-')));
+
+  for (const key of keys) {
+    if (!(key in locals)) {
+      locals[key] = null;
+    }
+  }
+  delete locals['eval'];
+  delete locals['arguments'];
+
+  for (const param in locals) {
+    if (Object.prototype.hasOwnProperty.call(locals, param)) {
+      args.push(locals[param]);
+      params.push(param);
+    }
+  }
+
+  const sandbox = new (Function.prototype.bind.apply(Function, [that, ...params, code])); // create the sandbox
+  return Function.prototype.bind.apply(sandbox, [that, ...args]);
+}

@@ -10,10 +10,7 @@ export interface ISaveData {
 }
 
 export class StorageService {
-  public saveData: ISaveData = {
-    inventory: {},
-    checks: {},
-  };
+  // Singleton
   private static instance: StorageService;
   public static get Instance(): StorageService {
     if (!StorageService.instance) {
@@ -24,6 +21,11 @@ export class StorageService {
   private constructor() {
     this.loadState();
   }
+
+  public saveData: ISaveData = {
+    inventory: {},
+    checks: {},
+  };
 
   public loadState(): void {
     this.saveData = JSON.parse(window.localStorage.getItem('saveData')!) || this.saveData;

@@ -14,7 +14,8 @@ import CheckRow from '../components/check-row';
 import { CheckState, Item as ItemModel, Song } from '../shared/models';
 
 import regions from '../public/js/regions.json';
-import { getChecks } from '../shared/checks.service';
+import { ChecksService } from '../shared/checks.service';
+import { runTests } from '../tests/tests';
 
 const noteStyle = css`
   display: inline-block;
@@ -48,7 +49,7 @@ const items: ItemModel[] = [
 
 const equipment: ItemModel[] = [
   new ItemModel(
-    'child',
+    'child_trading',
     ['Weird Egg', 'Cucco', "Zelda's Letter", 'Keaton Mask', 'Skull Mask'],
     5
   ),
@@ -56,7 +57,7 @@ const equipment: ItemModel[] = [
   new ItemModel('swordmaster', 'Master Sword'),
   new ItemModel('swordbiggoron', "Biggoron's Sword"),
   new ItemModel(
-    'adult',
+    'adult_trading',
     [
       'Pocket Egg',
       'Pocket Cucco',
@@ -110,7 +111,11 @@ export default function Home(): JSX.Element {
   const [checks, setChecks] = useState<CheckState[]>([]);
   useEffect(() => {
     main();
-    setChecks(getChecks(currentMap));
+
+    // ChecksService.Instance.testLogic();
+    runTests();
+
+    setChecks(ChecksService.Instance.getChecksForMap(currentMap));
   }, [currentMap]);
   function switchMap(e: SyntheticEvent) {
     e.preventDefault();
@@ -142,6 +147,7 @@ export default function Home(): JSX.Element {
     // console.log('switching name to', target.id);
     setMap(target.id as any);
   }
+
   return (
     <div id='trackerWrapper'>
       <Head>

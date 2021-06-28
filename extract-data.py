@@ -10,8 +10,9 @@ def recursive_chmod(path, perm):
             os.chmod(os.path.join(dirpath, filename), perm)
 
 randoPath = 'ootrandomizer'
-recursive_chmod(randoPath, stat.S_IWRITE)
-shutil.rmtree(randoPath)
+if os.path.isdir(randoPath):
+    recursive_chmod(randoPath, stat.S_IWRITE)
+    shutil.rmtree(randoPath)
 os.system('git clone -b v6.0 --single-branch https://github.com/TestRunnerSRL/OoT-Randomizer.git ' + randoPath)
 
 sys.path.append(randoPath)
@@ -30,7 +31,7 @@ class MyEncoder(json.JSONEncoder):
         except:
             return json.JSONEncoder.default(self, o)
 
-with open('assets/js/randomizer-data.json', 'w') as jsonFile:
+with open('public/js/randomizer-data.json', 'w') as jsonFile:
     json.dump(setting_infos, jsonFile, cls=MyEncoder, indent=4)
 
 # Import checks
@@ -38,10 +39,10 @@ from Utils import read_json
 for file in os.scandir(os.path.join(randoPath, 'data', 'World')):
     jsonData = read_json(file.path)
     fileName =  file.name.lower().replace(' ', '_')
-    with open(os.path.join('assets', 'js', 'data', 'checks', fileName), 'w') as jsonFile:
+    with open(os.path.join('public', 'js', 'data', 'logic', fileName), 'w') as jsonFile:
         json.dump(jsonData, jsonFile, indent=4)
 
 # Import logic helpers
 jsonData = read_json(os.path.join('ootrandomizer', 'data', 'LogicHelpers.json'))
-with open(os.path.join('assets', 'js', 'data', 'logic_helpers.json'), 'w') as jsonFile:
+with open(os.path.join('public', 'js', 'data', 'logic_helpers.json'), 'w') as jsonFile:
     json.dump(jsonData, jsonFile, indent=4)
