@@ -1,11 +1,12 @@
-/** Settings */
+/* Settings */
 const childSpawn: string = 'KF Links House';
 const adultSpawn: string = 'Temple of Time';
 const open_forest: boolean = true;
 const bombchus_in_logic: boolean = true;
 const logic_grottos_without_agony: boolean = true;
+const logic_mido_backflip: boolean = true;
 
-/** State */
+/* State */
 const age: string = 'child';
 const oppositeAge: string = 'adult';
 const checkStatuses = {
@@ -30,11 +31,12 @@ const inventory = {
   agony: 0,
   bootsiron: 0,
   bootshover: 0,
+  scale: 0,
 };
 
 const roots: string[] = [childSpawn, adultSpawn, 'prelude_warp', 'minuet_warp', 'bolero_warp', 'serenade_warp', 'nocturne_warp', 'requiem_warp'];
 
-/** Helpers */
+/* Helpers */
 function isChild() {
   return age === 'child';
 }
@@ -118,7 +120,7 @@ const regions = [
     },
   },
   {
-    regionName: 'LW Forest Exit', /* Going the wrong way in the woods */
+    regionName: 'LW Forest Exit', // Going the wrong way in the woods
     scene: 'Lost Woods',
     hint: 'the Lost Woods',
     exits: {
@@ -135,15 +137,15 @@ const regions = [
       'LW Target in Woods': () => isChild() && inventory.slingshot,
       'LW Deku Scrub Near Bridge': () => isChild() && canStunDeku(),
       'LW GS Bean Patch Near Bridge': () => canPlantBugs() || canChildAttack(),
-      /** "Bug Shrub": "is_child and can_cut_shrubs and has_bottle" */
+      // 'Bug Shrub': () => 'is_child and can_cut_shrubs and has_bottle',
     },
     exits: {
       'LW Forest Exit': () => true,
-      'GC Woods Warp': () => true, /** COME BACK */
-      'LW Bridge': () => isAdult() && (inventory.bootshover || inventory.shot === 2), //" is_adult and (can_use(Hover_Boots) or can_use(Longshot) or here(can_plant_bean) or logic_lost_woods_bridge)",
-      'Zora River': () => 'can_leave_forest and (can_dive or can_use(Iron_Boots))',
-      'LW Beyond Mido': () => 'is_child or logic_mido_backflip or can_play(Sarias_Song)',
-      'LW Near Shortcuts Grotto': () => 'here(can_blast_or_smash)',
+      'GC Woods Warp': () => true, // COME BACK
+      'LW Bridge': () => isAdult() && (inventory.bootshover || inventory.shot === 2), //" is_adult and (can_use(Hover_Boots) or can_use(Longshot) or here(can_plant_bean) or logic_lost_woods_bridge)", COME BACK
+      'Zora River': () => canLeaveForest() && (inventory.scale || (isAdult() && inventory.bootsiron)),
+      'LW Beyond Mido': () => isChild() || logic_mido_backflip || (inventory.ocarina && inventory.sarias),
+      'LW Near Shortcuts Grotto': 'here(can_blast_or_smash)', // COME BACK - here()
     },
   },
 ];
