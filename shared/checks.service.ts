@@ -290,6 +290,9 @@ export class ChecksService {
         this.debugLog('need to implement here():', stuff);
         return false;
       },
+      at: () => (stuff: string) => {
+        return false;
+      },
       Nuts: false,
       Zeldas_Letter: false,
       Kokiri_Sword: false,
@@ -408,6 +411,7 @@ export class ChecksService {
       Progressive_Scale: 0,
       Big_Poe: false,
       Bottle_with_Big_Poe: 0,
+      Gerudo_Membership_Card: false,
 
       // Convert from adult_trading
       Pocket_Egg: false,
@@ -420,11 +424,31 @@ export class ChecksService {
       Eyeball_Frog: false,
       Prescription: false,
       Claim_Check: false,
-      // Odd_Potion: false,
 
       // Keys
+      Small_Key_Fire_Temple: 0,
+      Small_Key_Water_Temple: 0,
+      Small_Key_Forest_Temple: 0,
       Small_Key_Shadow_Temple: 0,
+      Small_Key_Spirit_Temple: 0,
       Small_Key_Gerudo_Fortress: 0,
+      Boss_Key_Water_Temple: false,
+
+      // Should include checks for what is needed to kill them?
+      Forest_Temple_Jo_and_Beth: true,
+      Forest_Temple_Amy_and_Meg: true,
+      Raise_Water_Level: true,
+      Child_Water_Temple: false,
+
+      skipped_trials: [],
+      Forest: 0,
+      Fire: 0,
+      Water: 0,
+      Shadow: 0,
+      Spirit: 0,
+      Light: 0,
+
+      True: true,
 
       ...newState,
     };

@@ -20,7 +20,7 @@ export function runTests(): void {
     // const event = ChecksService.Instance.findEvent('GC Woods Warp Open');
     // console.log(event);
     // console.log(ChecksService.Instance.evalLogicWithState(event[1], {}));
-    // new EfficiencyTests(ChecksService.Instance).run();
+    new EfficiencyTests(ChecksService.Instance).run();
   });
   // ChecksService.Instance.canReachRegion('ZR Behind Waterfall', { age: 'adult' });
 }

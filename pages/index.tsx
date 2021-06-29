@@ -112,9 +112,6 @@ export default function Home(): JSX.Element {
   useEffect(() => {
     main();
 
-    // ChecksService.Instance.testLogic();
-    runTests();
-
     setChecks(ChecksService.Instance.getChecksForMap(currentMap));
   }, [currentMap]);
   function switchMap(e: SyntheticEvent) {
@@ -207,6 +204,10 @@ export default function Home(): JSX.Element {
             <img id='note7' src='' css={noteStyle} />
           </div>
         </div>
+        <button
+          className='bg-gray-500 hover:bg-gray-600 py-2 px-4 border border-gray-700 rounded font-bold text-white text-shadow-black'
+          onClick={runTests}
+        >Run Logic Tests</button>
       </div>
       <div id='checksWrapper'>
         <div
