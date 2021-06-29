@@ -30,6 +30,7 @@ let inventory = {
   agony: 0,
   bootsiron: 0,
   bootshover: 0,
+  scale: 0,
 }
 const roots: string[] = [child_spawn, adult_spawn, "prelude_warp", "minuet_warp", "bolero_warp", "serenade_warp", "nocturne_warp", "requiem_warp"];
 
@@ -137,11 +138,11 @@ let regions = [
     },
     "exits": {
         "LW Forest Exit": true,
-        "GC Woods Warp": true, /** COME BACK */
-        "LW Bridge": isAdult() && (inventory.bootshover || inventory " is_adult and (can_use(Hover_Boots) or can_use(Longshot) or here(can_plant_bean) or logic_lost_woods_bridge)",
-        "Zora River": "can_leave_forest and (can_dive or can_use(Iron_Boots))",
-        "LW Beyond Mido": "is_child or logic_mido_backflip or can_play(Sarias_Song)",
-        "LW Near Shortcuts Grotto": "here(can_blast_or_smash)"
+        "GC Woods Warp": true,
+        "LW Bridge": isAdult() && (inventory.bootshover || inventory " is_adult and (can_use(Hover_Boots) or can_use(Longshot) or here(can_plant_bean) or logic_lost_woods_bridge)", /** COME BACK */
+        "Zora River": canLeaveForest() && (inventory.scale || (isAdult() && inventory.bootsiron)),
+        "LW Beyond Mido": isChild() || logic_mido_backflip || (inventory.ocarina && inventory.sarias),
+        "LW Near Shortcuts Grotto": "here(can_blast_or_smash)" /** COME BACK - here() */
     }
   },
 ]
