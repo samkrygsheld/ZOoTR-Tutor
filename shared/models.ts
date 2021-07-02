@@ -106,6 +106,8 @@ export class Check {
   public yCoord: number = 0;
   public videos: string[] = [];
   public earlyPeek: boolean = false;
+  public nearbyChecks: string[] = [];
+
   public get completable(): boolean {
     return true;
   }

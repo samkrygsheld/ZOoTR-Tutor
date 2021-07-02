@@ -4,3 +4,4 @@
 - have checks at their location on the map (including dungeon maps)
 - scrollable list to the side as well
 additional ui for dungeon items like keys
+fix logic to handle strings being used as escaped items
