@@ -5,6 +5,8 @@ const open_forest: boolean = true;
 const bombchus_in_logic: boolean = true;
 const logic_grottos_without_agony: boolean = true;
 const logic_mido_backflip: boolean = true;
+const shuffle_scrubs: boolean = false;
+
 
 /* State */
 const age: string = 'child';
@@ -156,220 +158,196 @@ const regions: Region[] = [
   {
     regionName: "LW Beyond Mido",
     scene: "Lost Woods",
-    "locations": {
-        "LW Deku Scrub Near Deku Theater Right": "is_child and can_stun_deku",
-        "LW Deku Scrub Near Deku Theater Left": "is_child and can_stun_deku",
-        "LW GS Above Theater": "
-            is_adult and at_night and
+    locations: {
+        "LW Deku Scrub Near Deku Theater Right": () => isChild() && canStunDeku(),
+        "LW Deku Scrub Near Deku Theater Left": () => isChild() && canStunDeku(),
+        "LW GS Above Theater": () =>
+            isAdult() &&
             (here(can_plant_bean) or
                  (logic_lost_woods_gs_bean and can_use(Hookshot) and
-                 (can_use(Longshot) or can_use(Bow) or has_bombchus or can_use(Dins_Fire))))",
-        "LW GS Bean Patch Near Theater": "
-            can_plant_bugs and 
-            (can_child_attack or (shuffle_scrubs == 'off' and Buy_Deku_Shield))",
-        "Butterfly Fairy": "can_use(Sticks) and has_bottle"
+                 (can_use(Longshot) or can_use(Bow) or has_bombchus or can_use(Dins_Fire))))", // COME BACK
+        "LW GS Bean Patch Near Theater": () => canPlantBugs() && 
+            (canChildAttack() || (shuffle_scrubs === false and inventory.shielddeku))
     },
-    "exits": {
-        "LW Forest Exit": "True",
-        "Lost Woods": "is_child or can_play(Sarias_Song)",
-        "SFM Entryway": "True",
-        "Deku Theater": "True",
-        "LW Scrubs Grotto": "here(can_blast_or_smash)"
+    exits: {
+        "LW Forest Exit": () => true,
+        "Lost Woods": isChild() || (inventory.ocarina > 0 && inventory.sarias),
+        "SFM Entryway": () => true,
+        "Deku Theater": () => true,
+        "LW Scrubs Grotto": "here(can_blast_or_smash)" // COME BACK
     }
   },
   {
-    "region_name": "Lost Woods Mushroom Timeout",
-    "scene": "Lost Woods",
-    "exits": {
-        "Lost Woods": "True"
+    regionName: "Lost Woods Mushroom Timeout",
+    scene: "Lost Woods",
+    exits: {
+        "Lost Woods": () => true
     }
 },
 {
-    "region_name": "SFM Entryway",
-    "scene": "Sacred Forest Meadow",
-    "exits": {
-        "LW Beyond Mido": "True",
-        "Sacred Forest Meadow": "
-            is_adult or Slingshot or Sticks or 
-            Kokiri_Sword or can_use(Dins_Fire)",
-        "SFM Wolfos Grotto": "can_open_bomb_grotto"
+    regionName: "SFM Entryway",
+    scene: "Sacred Forest Meadow",
+    exits: {
+        "LW Beyond Mido": () => true,
+        "Sacred Forest Meadow": () => isAdult() || inventory.slingshot || inventory.sticks || inventory.swordkokiri || (inventory.magic && inventory.dins),
+        "SFM Wolfos Grotto": () => canOpenBombGrotto()
     }
 },
 {
-    "region_name": "Sacred Forest Meadow",
-    "scene": "Sacred Forest Meadow",
-    "locations": {
-        "Song from Saria": "is_child and Zeldas_Letter",
-        "Sheik in Forest": "is_adult",
-        "SFM GS": "can_use(Hookshot) and at_night",
-        "SFM Maze Gossip Stone (Lower)": "True",
-        "SFM Maze Gossip Stone (Upper)": "True",
-        "SFM Saria Gossip Stone": "True",
-        "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and has_bottle"
+    regionName: "Sacred Forest Meadow",
+    scene: "Sacred Forest Meadow",
+    locations: {
+        "Song from Saria": () => isChild() && inventory.questchild > 1 // COME BACK "is_child and Zeldas_Letter",
+        "Sheik in Forest": () => isAdult(),
+        "SFM GS": () => isAdult() && inventory.shot
     },
-    "exits": {
-        "SFM Entryway": "True",
-        "SFM Forest Temple Entrance Ledge": "can_use(Hookshot)",
-        "SFM Fairy Grotto": "True",
-        "SFM Storms Grotto": "can_open_storm_grotto"
+    exits: {
+        "SFM Entryway": () => true,
+        "SFM Forest Temple Entrance Ledge": () => isAdult() && inventory.shot,
+        "SFM Fairy Grotto": () => true,
+        "SFM Storms Grotto": () => canOpenStormGrotto()
     }
 },
 {
-    "region_name": "SFM Forest Temple Entrance Ledge",
-    "scene": "Sacred Forest Meadow",
-    "exits": {
-        "Sacred Forest Meadow": "True",
-        "Forest Temple Lobby": "True"
+    regionName: "SFM Forest Temple Entrance Ledge",
+    scene: "Sacred Forest Meadow",
+    exits: {
+        "Sacred Forest Meadow": () => true,
+        "Forest Temple Lobby": () => true
     }
 },
 {
-    "region_name": "LW Bridge From Forest",
-    "scene": "Lost Woods",
-    "locations": {
-        "LW Gift from Saria": "True"
+    regionName: "LW Bridge From Forest",
+    scene: "Lost Woods",
+    locations: {
+        "LW Gift from Saria": () => true
     },
-    "exits": {
-        "LW Bridge": "True"
+    exits: {
+        "LW Bridge": () => true
     }
 },
 {
-    "region_name": "LW Bridge",
-    "scene": "Lost Woods",
-    "exits": {
-        "Kokiri Forest": "True",
-        "Hyrule Field": "True",
-        "Lost Woods": "can_use(Longshot)"
+    regionName: "LW Bridge",
+    scene: "Lost Woods",
+    exits: {
+        "Kokiri Forest": () => true,
+        "Hyrule Field": () => true,
+        "Lost Woods": () => isAdult() && inventory.shot > 1
     }
 },
 {
-    "region_name": "Hyrule Field",
-    "scene": "Hyrule Field",
-    "time_passes": true,
-    "locations": {
-        "HF Ocarina of Time Item": "is_child and has_all_stones",
-        "Song from Ocarina of Time": "is_child and has_all_stones",
-        "Big Poe Kill": "can_use(Bow) and can_ride_epona and has_bottle"
+    regionName: "Hyrule Field",
+    scene: "Hyrule Field",
+    timePasses: true,
+    locations: {
+        "HF Ocarina of Time Item": () => isChild() && inventory.kokiri && inventory.goron && inventory.zora,
+        "Song from Ocarina of Time": () => isChild() && inventory.kokiri && inventory.goron && inventory.zora,
+        "Big Poe Kill": () => isAdult() && inventory.bow && inventory.eponas && inventory.bottle
     },
-    "exits": {
-        "LW Bridge": "True",
-        "Lake Hylia": "True",
-        "Gerudo Valley": "True",
-        "Market Entrance": "True",
-        "Kakariko Village": "True",
-        "ZR Front": "True",
-        "Lon Lon Ranch": "True",
-        "HF Southeast Grotto": "here(can_blast_or_smash)",
-        "HF Open Grotto": "True",
-        "HF Inside Fence Grotto": "can_open_bomb_grotto",
-        "HF Cow Grotto": "(can_use(Megaton_Hammer) or is_child) and can_open_bomb_grotto",
-                               # There is a hammerable boulder as adult which is not there as child
-        "HF Near Market Grotto": "here(can_blast_or_smash)",
+    exits: {
+        "LW Bridge": () => true,
+        "Lake Hylia": () => true,
+        "Gerudo Valley": () => true,
+        "Market Entrance": () => true,
+        "Kakariko Village": () => true,
+        "ZR Front": () => true,
+        "Lon Lon Ranch": () => true,
+        "HF Southeast Grotto": "here(can_blast_or_smash)", // COME BACK
+        "HF Open Grotto": () => true,
+        "HF Inside Fence Grotto": () => canOpenBonbGrotto(),
+        "HF Cow Grotto": () => ((isAdult() && inventory.hammer) || isChild()) && canOpenBombGrotto(),
+        "HF Near Market Grotto": "here(can_blast_or_smash)", // COME BACK
         "HF Fairy Grotto": "here(can_blast_or_smash)",
-        "HF Near Kak Grotto": "can_open_bomb_grotto",
-        "HF Tektite Grotto": "can_open_bomb_grotto"
+        "HF Near Kak Grotto": () =>  canOpenBombGrotto(),
+        "HF Tektite Grotto": () => canOpenBombGrotto()
     }
 },
 {
-    "region_name": "Lake Hylia",
-    "scene": "Lake Hylia",
-    "time_passes": true,
-    "events": {
-        "Bonooru": "is_child and Ocarina"
+    regionName: "Lake Hylia",
+    scene: "Lake Hylia",
+    timePasses: true,
+    events: {
+        "Bonooru": () => isChild() && inventory.ocarina
     },
-    "locations": {
-        "Pierre": "is_adult and Bonooru and not free_scarecrow",
-        "LH Underwater Item": "is_child and can_dive",
-        "LH Sun": "
+    locations: {
+        "Pierre": () => isAdult() &&  "is_adult and Bonooru and not free_scarecrow", // COME BACK
+        "LH Underwater Item": () => isChild() && inventory.scale,
+        "LH Sun": () => isAdult() &&  "
             is_adult and 
-            (can_use(Distant_Scarecrow) or 'Water Temple Clear') and can_use(Bow)",
-        "LH Freestanding PoH": "
-            is_adult and (can_use(Scarecrow) or here(can_plant_bean))",
-        "LH GS Bean Patch": "can_plant_bugs and can_child_attack",
-        "LH GS Lab Wall": "
-            is_child and (Boomerang or 
-                (logic_lab_wall_gs and (Sticks or Kokiri_Sword))) and at_night",
-        "LH GS Small Island": "is_child and can_child_attack and at_night",
-        "LH GS Tree": "can_use(Longshot) and at_night",
-        "LH Lab Gossip Stone": "True",
-        "LH Gossip Stone (Southeast)": "True",
-        "LH Gossip Stone (Southwest)": "True",
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Bean Plant Fairy": "can_plant_bean and can_play(Song_of_Storms) and has_bottle",
-        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
-        "Bug Shrub": "is_child and can_cut_shrubs and has_bottle"
+            (can_use(Distant_Scarecrow) or 'Water Temple Clear') and can_use(Bow)", // COME BACK
+        "LH Freestanding PoH": () => isAdult() && (inventory.scarecrow && inventory.ocarina  ||  "
+            is_adult and (can_use(Scarecrow) or here(can_plant_bean))",// COME BACK
+        "LH GS Bean Patch": () => canPlantBugs() && canChildAttack(),
+        "LH GS Lab Wall": () => isChild() && (inventory.boomerang || (logic_lab_wall_gs && (inventory.sticks || inventory.swordkokiri))),
+        "LH GS Small Island": () => isChild() && canChildAttack(),
+        "LH GS Tree": () => isAdult() && inventory.shot > 1
     },
-    "exits": {
-        "Hyrule Field": "True",
-        "Zoras Domain": "is_child and can_dive",
-        "LH Owl Flight": "is_child",
-        "LH Lab": "True",
+    exits: {
+        "Hyrule Field": () => true,
+        "Zoras Domain": () => isChild() && inventory.scale,
+        "LH Owl Flight": () => isChild(),
+        "LH Lab": () => true,
         "LH Fishing Island": "
             is_child or can_use(Scarecrow) or
-            here(can_plant_bean) or 'Water Temple Clear'",
-        "Water Temple Lobby": "
-            can_use(Hookshot) and
-            (can_use(Iron_Boots) or
-                ((can_use(Longshot) or logic_water_hookshot_entry) and (Progressive_Scale, 2)))",
-        "LH Grotto": "True"
+            here(can_plant_bean) or 'Water Temple Clear'", // COME BACK
+        "Water Temple Lobby": () => isAdult() && inventory.shot && (inventory.bootsiron || (inventory.shot > 1 || logic_water_hookshot_entry) && inventory.scale > 1),
+        "LH Grotto": () => true
     }
 },
 {
-    "region_name": "LH Fishing Island",
-    "scene": "Lake Hylia",
-    "exits": {
-        "Lake Hylia": "True",
-        "LH Fishing Hole": "True"
+    regionName: "LH Fishing Island",
+    scene: "Lake Hylia",
+    exits: {
+        "Lake Hylia": () => true,
+        "LH Fishing Hole": () => true
     }
 },
 {
-    "region_name": "LH Owl Flight",
-    "scene": "Lake Hylia",
-    "exits": {
-        "Hyrule Field": "True"
+    regionName: "LH Owl Flight",
+    scene: "Lake Hylia",
+    exits: {
+        "Hyrule Field": () => true
     }
 },
 {
-    "region_name": "LH Lab",
-    "scene": "LH Lab",
-    "events": {
-        "Eyedrops Access": "
+    regionName: "LH Lab",
+    scene: "LH Lab",
+    events: {
+        "Eyedrops Access": () => isAdult() // COME BACK "
             is_adult and 
             ('Eyeball Frog Access' or (Eyeball_Frog and disable_trade_revert))"
     },
-    "locations": {
-        "LH Lab Dive": "
-            (Progressive_Scale, 2) or
-            (logic_lab_diving and Iron_Boots and can_use(Hookshot))",
-        "LH GS Lab Crate": "Iron_Boots and can_use(Hookshot)"
+    locations: {
+        "LH Lab Dive": () => inventory.scale > 1 || (logic_lab_diving && isAdult() & inventory.bootsiron && inventory.shot),
+        "LH GS Lab Crate": () => isAdult() && inventory.bootsiron && inventory.shot
     },
-    "exits": {
-        "Lake Hylia": "True"
+    exits: {
+        "Lake Hylia": () => true
     }
 },
 {
-    "region_name": "LH Fishing Hole",
-    "scene": "LH Fishing Hole",
-    "locations": {
-        "LH Child Fishing": "is_child",
-        "LH Adult Fishing": "is_adult"
+    regionName: "LH Fishing Hole",
+    scene: "LH Fishing Hole",
+    locations: {
+        "LH Child Fishing": () => isChild(),
+        "LH Adult Fishing": () => isAdult()
     },
-    "exits": {
-        "LH Fishing Island": "True"
+    exits: {
+        "LH Fishing Island": () => true
     }
 },
 {
-    "region_name": "Gerudo Valley",
-    "scene": "Gerudo Valley",
-    "time_passes": true,
-    "locations": {
-        "GV GS Small Bridge": "can_use(Boomerang) and at_night",
-        "Bug Rock": "is_child and has_bottle"
+    regionName: "Gerudo Valley",
+    scene: "Gerudo Valley",
+    timePasses: true,
+    locations: {
+        "GV GS Small Bridge": () => isChild()
     },
-    "exits": {
-        "Hyrule Field": "True",
-        "GV Upper Stream": "True",
-        "GV Crate Ledge": "is_child or can_use(Longshot)",
-        "GV Grotto Ledge": "True",
+    exits: {
+        "Hyrule Field": () => true,
+        "GV Upper Stream": () => true,
+        "GV Crate Ledge": () => isChild() || inventory.shot > 1,
+        "GV Grotto Ledge": () => true,
         "GV Fortress Side": "
             is_adult and 
             (can_ride_epona or can_use(Longshot) or gerudo_fortress == 'open' or 'Carpenter Rescue')"
