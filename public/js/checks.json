@@ -6,17 +6,7 @@
         "subregion": "overworld",
         "age": "both",
         "x-coord": null,
-        "y-coord": null,
-        "videos": [
-            {
-                "name": "Name1",
-                "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-            },
-            {
-                "name": "Name2",
-                "url": "https://www.youtube.com/watch?v=KmtzQCSh6xk"
-            }
-        ]
+        "y-coord": null
     },
     {
         "spoiler": "Queen Gohma",
@@ -25,7 +15,17 @@
         "subregion": "deku_tree",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "B1 Skip, Backup, and Quick Scrubs",
+                "url": "https://youtu.be/D98QF0YrLg4"
+            },
+            {
+                "name": "Tsundere B1 Skip",
+                "url": "https://youtu.be/oZwvw-dkYAo?t=2138"
+            }
+        ]
     },
     {
         "spoiler": "Deku Tree Queen Gohma Heart",
@@ -34,7 +34,17 @@
         "subregion": "deku_tree",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "B1 Skip, Backup, and Quick Scrubs",
+                "url": "https://youtu.be/D98QF0YrLg4"
+            },
+            {
+                "name": "Tsundere B1 Skip",
+                "url": "https://youtu.be/oZwvw-dkYAo?t=2138"
+            }
+        ]
     },
     {
         "spoiler": "King Dodongo",
@@ -98,7 +108,7 @@
         "age": "adult",
         "x-coord": 0,
         "y-coord": 0,
-		"videos": [
+        "videos": [
             {
                 "name": "Reach Door Without Hovers",
                 "url": "https://www.youtube.com/watch?v=OtNH5K7Jgus"
@@ -113,7 +123,7 @@
         "age": "adult",
         "x-coord": 0,
         "y-coord": 0,
-		"videos": [
+        "videos": [
             {
                 "name": "Reach Door Without Hovers",
                 "url": "https://www.youtube.com/watch?v=OtNH5K7Jgus"
@@ -146,10 +156,14 @@
         "age": "adult",
         "x-coord": 0,
         "y-coord": 0,
-		"videos": [
+        "videos": [
             {
-                "name": "Reach Door Without Arrows",
+                "name": "Reach Door With Bombchus",
                 "url": "https://www.youtube.com/watch?v=sKFYNiFh45U"
+            },
+            {
+                "name": "Reach Door With Scarecrow + Longshot",
+                "url": "https://youtu.be/Rpe2L5hlW6E?t=9427"
             }
         ]
     },
@@ -161,10 +175,14 @@
         "age": "adult",
         "x-coord": 0,
         "y-coord": 0,
-		"videos": [
+        "videos": [
             {
-                "name": "Reach Door Without Arrows",
+                "name": "Reach Door With Bombchus",
                 "url": "https://www.youtube.com/watch?v=sKFYNiFh45U"
+            },
+            {
+                "name": "Reach Door With Scarecrow + Longshot",
+                "url": "https://youtu.be/Rpe2L5hlW6E?t=9427"
             }
         ]
     },
@@ -220,7 +238,13 @@
         "subregion": "graveyard",
         "age": "both",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Kill Keese With Nuts",
+                "url": "https://youtu.be/EDUcrcEsW_U?t=1941"
+            }
+        ]
     },
     {
         "spoiler": "Song from Ocarina of Time",
@@ -518,10 +542,14 @@
         "price": 30,
         "x-coord": 0,
         "y-coord": 0,
-		"videos": [
+        "videos": [
             {
                 "name": "Bowling Setups",
                 "url": "https://youtu.be/7gfy6zqDPJw?t=4036"
+            },
+            {
+                "name": "Avoid Wasting Time",
+                "url": "https://youtu.be/EDUcrcEsW_U?t=3397"
             }
         ]
     },
@@ -535,10 +563,14 @@
         "price": 30,
         "x-coord": 0,
         "y-coord": 0,
-		"videos": [
+        "videos": [
             {
                 "name": "Bowling Setups",
                 "url": "https://youtu.be/7gfy6zqDPJw?t=4036"
+            },
+            {
+                "name": "Avoid Wasting Time",
+                "url": "https://youtu.be/EDUcrcEsW_U?t=3397"
             }
         ]
     },
@@ -636,7 +668,13 @@
         "age": "child",
         "x-coord": 0,
         "y-coord": 0,
-        "early-peek": "time-only"
+        "early-peek": "time-only",
+        "videos": [
+            {
+                "name": "Peek",
+                "url": "https://youtu.be/Q809lk-7qZs?t=933"
+            }
+        ]
     },
     {
         "spoiler": "Kak Anju as Child",
@@ -646,7 +684,13 @@
         "subregion": "kakariko_village",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Movement Tutorial"
+                "url": "https://youtu.be/ge9uODSpv6o"
+            }
+        ]
     },
     {
         "spoiler": "Kak Anju as Adult",
@@ -685,7 +729,12 @@
         "subregion": "kakariko_village",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+        {
+            "name": "Adult Jump From Roof",
+            "url": "https://youtu.be/EDUcrcEsW_U?t=1705"
+        ]
     },
     {
         "spoiler": "Kak Open Grotto Chest",
@@ -786,7 +835,17 @@
         "subregion": "graveyard",
         "age": "both",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Torches With Flame Storage",
+                "url": "https://www.youtube.com/watch?v=Rpe2L5hlW6E&t=4485s"
+            },
+            {
+                "name": "Flame Storage Explanation",
+                "url": "https://youtu.be/Q809lk-7qZs?t=2624"
+            }
+        ]
     },
     {
         "spoiler": "Graveyard Freestanding PoH",
@@ -845,7 +904,7 @@
         "age": "both",
         "x-coord": 0,
         "y-coord": 0,
-		"videos": [
+        "videos": [
             {
                 "name": "Using Strength Instead of Bombs",
                 "url": "https://www.youtube.com/watch?v=w821_WhE_kI"
@@ -961,7 +1020,7 @@
         "x-coord": 0,
         "y-coord": 0,
         "early-peek": true,
-		"videos": [
+        "videos": [
             {
                 "name": "Hover Boots",
                 "url": "https://www.youtube.com/watch?v=bTITu1HrNF0"
@@ -977,6 +1036,12 @@
         "x-coord": 0,
         "y-coord": 0,
         "early-peek": "time-only"
+        "videos": [
+            {
+                "name": "Peek",
+                "url": "https://youtu.be/EDUcrcEsW_U?t=3102"
+            }
+        ]
     },
     {
         "spoiler": "DMC Upper Grotto Chest",
@@ -1004,7 +1069,13 @@
         "age": "child",
         "price": 10,
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Use Cucco to Get Around Gate",
+                "url": "https://youtu.be/PGm9VYM0Erk?t=471"
+            }
+        ]
     },
     {
         "spoiler": "ZR Open Grotto Chest",
@@ -1042,12 +1113,12 @@
         "x-coord": 0,
         "y-coord": 0,
         "early-peek": true,
-		"videos": [
-			{
-				"name": "Jump Setup for Adult",
-				"url": "https://youtu.be/u08aRBS_rYA?t=815"
-			}
-		]
+        "videos": [
+            {
+                "name": "Jump Setup for Adult",
+                "url": "https://youtu.be/u08aRBS_rYA?t=815"
+            }
+        ]
     },
     {
         "spoiler": "ZR Near Domain Freestanding PoH",
@@ -1058,15 +1129,15 @@
         "x-coord": 0,
         "y-coord": 0,
         "early-peek": true,
-		"videos": [
+        "videos": [
             {
                 "name": "Jump Setup for Adult 1",
                 "url": "https://www.youtube.com/watch?v=ilZf39r1s1E"
             },
-			{
-				"name": "Jump Setup for Adult 2",
-				"url": "https://youtu.be/u08aRBS_rYA?t=679"
-			)
+            {
+                "name": "Jump Setup for Adult 2",
+                "url": "https://youtu.be/u08aRBS_rYA?t=679"
+            )
         ]
     },
     {
@@ -1076,7 +1147,17 @@
         "subregion": "zoras_domain",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Quick Diving & Torches With Flame Storage",
+                "url": "https://youtu.be/EDUcrcEsW_U?t=1185"
+            },
+            {
+                "name": "Flame Storage Strat Explanation",
+                "url": "https://youtu.be/Rpe2L5hlW6E?t=7904"
+            }
+        ]
     },
     {
         "spoiler": "ZD Chest",
@@ -1085,7 +1166,17 @@
         "subregion": "zoras_domain",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Quick Diving & Torches With Flame Storage",
+                "url": "https://youtu.be/EDUcrcEsW_U?t=1185"
+            },
+            {
+                "name": "Flame Storage Strat Explanation",
+                "url": "https://youtu.be/Rpe2L5hlW6E?t=7904"
+            }
+        ]
     },
     {
         "spoiler": "ZD King Zora Thawed",
@@ -1188,10 +1279,16 @@
         "description": "Crate in Canyon",
         "type": "freestanding",
         "subregion": "gerudo_valley",
-        "age": "?",
+        "age": "both",
         "x-coord": 0,
         "y-coord": 0,
-        "early-peek": false
+        "early-peek": true,
+        "videos": [
+            {
+                "name": "Peek",
+                "url": "https://youtu.be/EDUcrcEsW_U?t=5698"
+            }
+        ]
     },
     {
         "spoiler": "GV Waterfall Freestanding PoH",
@@ -1219,7 +1316,13 @@
         "subregion": "gerudo_fortress",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Quick Kill Guards With Hookshot",
+                "url": "https://www.youtube.com/watch?v=jm6OxwFGw_w"
+            }
+        ]
     },
     {
         "spoiler": "GF Chest",
@@ -1228,7 +1331,13 @@
         "subregion": "gerudo_fortress",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Hookshot Up the Fortress",
+                "url": "https://youtu.be/Q809lk-7qZs?t=4822"
+            }
+        ]
     },
     {
         "spoiler": "GF HBA 1000 Points",
@@ -1370,7 +1479,11 @@
         "age": "both",
         "x-coord": 0,
         "y-coord": 0,
-		"videos": [
+        "videos": [
+            {
+                "name": "Bomb Stairs With Strength",
+                "url": "https://youtu.be/2QzvNZSvdnM?t=2147"
+            },
             {
                 "name": "Using Hookshot",
                 "url": "https://youtu.be/7gfy6zqDPJw?t=7959"
@@ -1384,7 +1497,13 @@
         "subregion": "dodongos_cavern",
         "age": "?",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Bomb Stairs With Strength",
+                "url": "https://youtu.be/2QzvNZSvdnM?t=2147"
+            }
+        ]
     },
     {
         "spoiler": "Dodongos Cavern End of Bridge Chest",
@@ -1393,7 +1512,13 @@
         "subregion": "dodongos_cavern",
         "age": "?",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Bomb Stairs With Strength",
+                "url": "https://youtu.be/2QzvNZSvdnM?t=2147"
+            }
+        ]
     },
     {
         "spoiler": "Dodongos Cavern Boss Room Chest",
@@ -1484,7 +1609,13 @@
         "age": "child",
         "x-coord": 0,
         "y-coord": 0,
-        "early-peek": true
+        "early-peek": true,
+        "videos": [
+            {
+                "name": "Peek",
+                "url": "https://youtu.be/Rpe2L5hlW6E?t=4088"
+            }
+        ]
     },
     {
         "spoiler": "Bottom of the Well Compass Chest",
@@ -1745,7 +1876,13 @@
         "subregion": "fire_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Circumvent Bow Door",
+                "url": "https://youtu.be/Rpe2L5hlW6E?t=2332"
+            }
+        ]
     },
     {
         "spoiler": "Fire Temple Boulder Maze Shortcut Chest",
@@ -1907,7 +2044,13 @@
         "subregion": "shadow_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "2-Cycle Without Biggoron",
+                "url": "https://youtu.be/Rpe2L5hlW6E?t=8627"
+            }
+        ]
     },
     {
         "spoiler": "Shadow Temple Compass Chest",
@@ -2051,7 +2194,13 @@
         "subregion": "spirit_temple",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Hit Switch With Bombchus",
+                "url": "https://youtu.be/Rpe2L5hlW6E?t=3896"
+            }
+        ]
     },
     {
         "spoiler": "Spirit Temple Child Early Torches Chest",
@@ -2060,7 +2209,13 @@
         "subregion": "spirit_temple",
         "age": "child",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Kill Anubis With Bombs",
+                "url": "https://youtu.be/Rpe2L5hlW6E?t=3925"
+            }
+        ]
     },
     {
         "spoiler": "Spirit Temple Child Climb North Chest",
@@ -2082,7 +2237,7 @@
     },
     {
         "spoiler": "Spirit Temple Map Chest",
-        "description": "Big Statue Torches",
+        "description": "Torch Chest by Statue",
         "type": "chest",
         "subregion": "spirit_temple",
         "age": "both",
@@ -2096,7 +2251,13 @@
         "subregion": "spirit_temple",
         "age": "both",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Easy Torches with Flame Storage",
+                "url": "https://youtu.be/Rpe2L5hlW6E?t=4089"
+            }
+        ]
     },
     {
         "spoiler": "Spirit Temple Silver Gauntlets Chest",
@@ -2150,7 +2311,13 @@
         "subregion": "spirit_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Efficient Statue Room with Longshot"
+                "url": "https://youtu.be/2mJXC3K2bH4?t=11962"
+            }
+        ]
     },
     {
         "spoiler": "Spirit Temple Statue Room Hand Chest",
@@ -2159,7 +2326,13 @@
         "subregion": "spirit_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Efficient Statue Room with Longshot"
+                "url": "https://youtu.be/2mJXC3K2bH4?t=11962"
+            }
+        ]
     },
     {
         "spoiler": "Spirit Temple Near Four Armos Chest",
@@ -2286,7 +2459,12 @@
         "subregion": "gerudo_training_grounds",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+        {
+            "name": "Silver Rupees Without Hookshot",
+            "url": "https://www.youtube.com/watch?v=pS3Rq6s0WIo"
+        ]
     },
     {
         "spoiler": "Gerudo Training Grounds Heavy Block First Chest",
@@ -2331,7 +2509,13 @@
         "subregion": "gerudo_training_grounds",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Optimal Statue Room",
+                "url": "https://youtu.be/EDUcrcEsW_U?t=6091"
+            }
+        ]
     },
     {
         "spoiler": "Gerudo Training Grounds Near Scarecrow Chest",
@@ -2657,10 +2841,10 @@
         "x-coord": 0,
         "y-coord": 0,
         "nearby-checks": null,
-		"videos": [
+        "videos": [
             {
                 "name": "Hookshot and No Beans",
-                "url": "https://www.youtube.com/watch?v=kwZUNCC4YgU"
+                "url": "https://youtu.be/wHZGiJD2KNk?t=11515"
             }
         ]
     },
@@ -2822,7 +3006,7 @@
         "x-coord": 0,
         "y-coord": 0,
         "nearby-checks": ["Kak 10 Gold Skulltula Reward","Kak 20 Gold Skulltula Reward","Kak 30 Gold Skulltula Reward","Kak 40 Gold Skulltula Reward","Kak 50 Gold Skulltula Reward","Kak Impas House Freestanding PoH","Kak Man on Roof","Kak Open Grotto Chest","Kak Redead Grotto Chest"],
-		"videos": [
+        "videos": [
             {
                 "name": "Quick Jump Slash",
                 "url": "https://youtu.be/WXlWr_G9XYU?t=330"
@@ -2911,7 +3095,13 @@
         "age": "adult",
         "x-coord": 0,
         "y-coord": 0,
-        "nearby-checks": ["GC Rolling Goron as Adult","GC Maze Left Chest","GC Maze Right Chest","GC Maze Center Chest"]
+        "nearby-checks": ["GC Rolling Goron as Adult","GC Maze Left Chest","GC Maze Right Chest","GC Maze Center Chest"],
+        "videos": [
+            {
+                "name": "Get Skulltula With No Items",
+                "url": "https://youtu.be/EDUcrcEsW_U?t=2988"
+            }
+        ]
     },
     {
         "spoiler": "GC GS Boulder Maze",
@@ -3049,10 +3239,14 @@
         "x-coord": 0,
         "y-coord": 0,
         "nearby-checks":["LH Underwater Item","LH Child Fishing","LH Lab Dive"],
-		"videos": [
+        "videos": [
             {
                 "name": "Only Sword or Sticks",
                 "url": "https://www.youtube.com/watch?v=Y_RVyjhmLdA"
+            },
+            {
+                "name": "Optimal Pickup with Chus and Boomerang",
+                "url": "https://youtu.be/2KUoB8J07O8?t=7709"
             }
         ]
     },
@@ -3140,7 +3334,13 @@
         "age": "adult",
         "x-coord": 0,
         "y-coord": 0,
-        "nearby-checks": ["GF Chest"]
+        "nearby-checks": ["GF Chest"],
+        "videos": [
+            {
+                "name": "Hookshot Up the Fortress",
+                "url": "https://youtu.be/Q809lk-7qZs?t=4822"
+            }
+        ]
     },
     {
         "spoiler": "GF GS Archery Range",
@@ -3283,7 +3483,13 @@
         "age": "both",
         "x-coord": 0,
         "y-coord": 0,
-        "nearby-checks": ["Dodongos Cavern Compass Chest","Dodongos Cavern Bomb Flower Platform Chest","Dodongos Cavern Bomb Bag Chest"]
+        "nearby-checks": ["Dodongos Cavern Compass Chest","Dodongos Cavern Bomb Flower Platform Chest","Dodongos Cavern Bomb Bag Chest"],
+        "videos": [
+            {
+                "name": "Bomb Stairs With Strength",
+                "url": "https://youtu.be/2QzvNZSvdnM?t=2147"
+            }
+        ]
     },
     {
         "spoiler": "Dodongos Cavern GS Back Room",
@@ -3573,7 +3779,13 @@
         "age": "child",
         "x-coord": 0,
         "y-coord": 0,
-        "nearby-checks": ["Spirit Temple Child Early Torches Chest"]
+        "nearby-checks": ["Spirit Temple Child Early Torches Chest"],
+        "videos": [
+            {
+                "name": "Grab Token From Other Side of Fence",
+                "url": "https://youtu.be/Rpe2L5hlW6E?t=3948"
+            }
+        ]
     },
     {
         "spoiler": "Spirit Temple GS Sun on Floor Room",
