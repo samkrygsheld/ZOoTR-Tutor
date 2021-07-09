@@ -6,6 +6,11 @@ const bombchus_in_logic: boolean = true;
 const logic_grottos_without_agony: boolean = true;
 const logic_mido_backflip: boolean = true;
 const shuffle_scrubs: boolean = false;
+const logic_lens_wasteland: boolean = false;
+const logic_wasteland_crossing: boolean = false;
+const logic_child_dampe_race_poh: boolean = false;
+const open_door_of_time: boolean = true;
+const gerudo_fortress: boolean = true;
 
 
 /* State */
@@ -70,6 +75,19 @@ function canOpenStormGrotto(): boolean {
 function canStunDeku(): boolean {
   return !!(isAdult() || (inventory.shieldDeku || inventory.slingshot || inventory.boomerang || inventory.sticks || inventory.swordKokiri || hasExplosives() || (inventory.magic && inventory.dins) || inventory.nuts));
 }
+
+function canRideEpona(): boolean {
+  // COME BACK
+}
+
+function canTriggerLACS(): boolean {
+  // COME BACK
+}
+
+function canFinishGerudoFortress(): boolean {
+  // COME BACK
+}
+
 
 /* Regions */
 interface RuleObj {
@@ -152,7 +170,7 @@ const regions: Region[] = [
       'LW Bridge': () => isAdult() && (!!inventory.bootshover || inventory.shot === 2), //" isAdult() and (can_use(Hover_Boots) or can_use(Longshot) or here(can_plant_bean) or logic_lost_woods_bridge)", COME BACK
       'Zora River': () => canLeaveForest() && !!(inventory.scale || (isAdult() && inventory.bootsiron)),
       'LW Beyond Mido': () => isChild() || logic_mido_backflip || (inventory.ocarina && inventory.sarias),
-      // 'LW Near Shortcuts Grotto': 'here(can_blast_or_smash)', // COME BACK - here()
+      // 'LW Near Shortcuts Grotto': 'here(canBlastOrSmash())', // COME BACK - here()
     },
   },
   {
@@ -174,7 +192,7 @@ const regions: Region[] = [
         "Lost Woods": isChild() || (inventory.ocarina > 0 && inventory.sarias),
         "SFM Entryway": () => true,
         "Deku Theater": () => true,
-        "LW Scrubs Grotto": "here(can_blast_or_smash)" // COME BACK
+        "LW Scrubs Grotto": "here(canBlastOrSmash())" // COME BACK
     }
   },
   {
@@ -197,14 +215,13 @@ const regions: Region[] = [
     regionName: "Sacred Forest Meadow",
     scene: "Sacred Forest Meadow",
     locations: {
-        "Song from Saria": () => isChild() && inventory.questchild > 1 // COME BACK "isChild() and Zeldas_Letter",
+        "Song from Saria": () => isChild() && inventory.questchild > 2 // COME BACK "isChild() and Zeldas_Letter",
         "Sheik in Forest": () => isAdult(),
         "SFM GS": () => isAdult() && inventory.shot
     },
     exits: {
         "SFM Entryway": () => true,
         "SFM Forest Temple Entrance Ledge": () => isAdult() && inventory.shot,
-        "SFM Fairy Grotto": () => true,
         "SFM Storms Grotto": () => canOpenStormGrotto()
     }
 },
@@ -252,12 +269,11 @@ const regions: Region[] = [
         "Kakariko Village": () => true,
         "ZR Front": () => true,
         "Lon Lon Ranch": () => true,
-        "HF Southeast Grotto": "here(can_blast_or_smash)", // COME BACK
+        "HF Southeast Grotto": "here(canBlastOrSmash())", // COME BACK
         "HF Open Grotto": () => true,
         "HF Inside Fence Grotto": () => canOpenBonbGrotto(),
         "HF Cow Grotto": () => ((isAdult() && inventory.hammer) || isChild()) && canOpenBombGrotto(),
-        "HF Near Market Grotto": "here(can_blast_or_smash)", // COME BACK
-        "HF Fairy Grotto": "here(can_blast_or_smash)",
+        "HF Near Market Grotto": "here(canBlastOrSmash())", // COME BACK
         "HF Near Kak Grotto": () =>  canOpenBombGrotto(),
         "HF Tektite Grotto": () => canOpenBombGrotto()
     }
@@ -348,9 +364,9 @@ const regions: Region[] = [
         "GV Upper Stream": () => true,
         "GV Crate Ledge": () => isChild() || inventory.shot > 1,
         "GV Grotto Ledge": () => true,
-        "GV Fortress Side": () => isAdult() && (inventory.eponas || inventory.shot > 1 || gerudo_fortress === 'open' || //COME BACK "
+        "GV Fortress Side": () => isAdult() && (canRideEpona() || inventory.shot > 1 || gerudo_fortress === 'open' || //COME BACK "
             isAdult() and 
-            (can_ride_epona or can_use(Longshot) or gerudo_fortress == 'open' or 'Carpenter Rescue')"
+            (canRideEpona() or can_use(Longshot) or gerudo_fortress == 'open' or 'Carpenter Rescue')"
     }
 },
 {
@@ -359,11 +375,8 @@ const regions: Region[] = [
     timePasses: true,
     locations: {
         "GV Waterfall Freestanding PoH": () => true,
-        "GV GS Bean Patch": "can_plant_bugs and can_child_attack",
-        "GV Cow": "isChild() and can_play(Eponas_Song)",
-        "GV Gossip Stone": () => true,
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Bean Plant Fairy": "can_plant_bean and can_play(Song_of_Storms) and has_bottle"
+        "GV GS Bean Patch": () => canPlantBugs() && canChildAttack(),
+        "GV Cow": () => isChild() && inventory.ocarina && inventory.eponas
     },
     exits: {
         "GV Lower Stream": () => true
@@ -383,8 +396,8 @@ const regions: Region[] = [
     timePasses: true,
     exits: {
         "GV Lower Stream": () => true,
-        "GV Octorok Grotto": "can_use(Silver_Gauntlets)",
-        "GV Crate Ledge": "can_use(Longshot)"
+        "GV Octorok Grotto": () => isAdult() && inventory.strength > 1,
+        "GV Crate Ledge": () => isAdult() && inventory.shot > 1
     }
 },
 {
@@ -406,20 +419,19 @@ const regions: Region[] = [
         "Broken Sword Access": "isAdult() and ('Poachers Saw Access' or Poachers_Saw)"
     },
     locations: {
-        "GV Chest": "can_use(Megaton_Hammer)",
-        "GV GS Behind Tent": "can_use(Hookshot) and at_night",
-        "GV GS Pillar": "can_use(Hookshot) and at_night"
+        "GV Chest": () => isAdult() && inventory.hammer,
+        "GV GS Behind Tent": () => isAdult() && inventory.shot,
+        "GV GS Pillar": () => isAdult() && inventory.shot
     },
     exits: {
         "Gerudo Fortress": () => true,
         "GV Upper Stream": () => true,
         "GV Crate Ledge": "
             logic_valley_crate_hovers and can_use(Hover_Boots) and can_take_damage",
-        "Gerudo Valley": "
-            isChild() or can_ride_epona or can_use(Longshot) or
-            gerudo_fortress == 'open' or 'Carpenter Rescue'",
-        "GV Carpenter Tent": "isAdult()", # Invisible as child so not in logic
-        "GV Storms Grotto": "isAdult() and can_open_storm_grotto" # Not there as child
+        "Gerudo Valley": () => isChild() || canRideEpona() || (isAdult() && inventory.shot > 1) ||
+            gerudo_fortress === 'open' || checks.carpenter_rescue,
+        "GV Carpenter Tent": isAdult(),
+        "GV Storms Grotto": () => isAdult() && canOpenStormGrotto()
     }
 },
 {
@@ -433,36 +445,27 @@ const regions: Region[] = [
     regionName: "Gerudo Fortress",
     scene: "Gerudo Fortress",
     events: {
-        "Carpenter Rescue": "can_finish_GerudoFortress",
-        "GF Gate Open": "isAdult() and Gerudo_Membership_Card"
+        "Carpenter Rescue": () => canFinishGerudoFortress(),
+        "GF Gate Open": () => isAdult() && inventory.gerudocard
     },
     locations: {
         "GF Chest": "
-            can_use(Hover_Boots) or can_use(Scarecrow) or can_use(Longshot)",
-        "GF HBA 1000 Points": "
-            Gerudo_Membership_Card and can_ride_epona and Bow and at_day",
-        "GF HBA 1500 Points": "
-            Gerudo_Membership_Card and can_ride_epona and Bow and at_day",
-        "GF North F1 Carpenter": "isAdult() or Kokiri_Sword",
-        "GF North F2 Carpenter": "
-            (isAdult() or Kokiri_Sword) and 
-            (Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot)
-                or can_use(Hover_Boots) or logic_gerudo_kitchen)",
-        "GF South F1 Carpenter": "isAdult() or Kokiri_Sword",
-        "GF South F2 Carpenter": "isAdult() or Kokiri_Sword",
-        "GF Gerudo Membership Card": "can_finish_GerudoFortress",
-        "GF GS Archery Range": "
-            can_use(Hookshot) and Gerudo_Membership_Card and at_night",
-        "GF GS Top Floor": "
-            isAdult() and at_night and 
-            (Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or
-                can_use(Hover_Boots) or logic_gerudo_kitchen)"
+            can_use(Hover_Boots) or can_use(Scarecrow) or can_use(Longshot)", // COME BACK - can_use(Scarecrow)
+        "GF HBA 1000 Points": () => inventory.gerudocard && canRideEpona() && inventory.bow,
+        "GF HBA 1500 Points": () => inventory.gerudocard && canRideEpona() && inventory.bow,
+        "GF North F1 Carpenter": () => isAdult() || inventory.swordkokiri,
+        "GF North F2 Carpenter": () => (isAdult() || inventory.swordkokiri) && (inventory.gerudocard || logic_gerudo_kitchen || (isAdult() && (inventory.bow || inventory.shot || inventory.bootshover))),
+        "GF South F1 Carpenter": () => isAdult() || inventory.swordkokiri,
+        "GF South F2 Carpenter": () => isAdult() || inventory.swordkokiri,
+        "GF Gerudo Membership Card": () => canFinishGerudoFortress(),
+        "GF GS Archery Range": () => isAdult() && inventory.shot && inventory.gerudocard,
+        "GF GS Top Floor": () => isAdult() && (inventory.gerudocard || inventory.bow || inventory.shot || inventory.bootshover || logic_gerudo_kitchen)
     },
     exits: {
         "GV Fortress Side": () => true,
         "GF Outside Gate": "'GF Gate Open'",
-        "Gerudo Training Grounds Lobby": "Gerudo_Membership_Card and isAdult()",
-        "GF Storms Grotto": "isAdult() and can_open_storm_grotto" # Not there as child
+        "Gerudo Training Grounds Lobby": () => inventory.gerudocard && isAdult(),
+        "GF Storms Grotto": () => isAdult() && canOpenStormGrotto()
     }
 },
 {
@@ -478,26 +481,20 @@ const regions: Region[] = [
     scene: "Haunted Wasteland",
     exits: {
         "GF Outside Gate": () => true,
-        "Haunted Wasteland": "
-            logic_wasteland_crossing or can_use(Hover_Boots) or can_use(Longshot)"
+        "Haunted Wasteland": () => logic_wasteland_crossing || (isAdult() && (inventory.bootshover || inventory.shot > 1))
     }
 },
 {
     regionName: "Haunted Wasteland",
     scene: "Haunted Wasteland",
     locations: {
-        "Wasteland Chest": "has_fire_source",
-        "Wasteland Bombchu Salesman": "
-            Progressive_Wallet and 
-            (isAdult() or Sticks or Kokiri_Sword)",
-        "Wasteland GS": "can_use(Hookshot) or can_use(Boomerang)",
-        "Fairy Pot": "has_bottle",
-        "Nut Pot": () => true
+        "Wasteland Chest": () => hasFireSource(),
+        "Wasteland Bombchu Salesman": () => inventory.wallet || (isAdult() || inventory.sticks || inventory.swordkokiri),
+        "Wasteland GS": () => (isAdult() && inventory.shot) || (isChild() && inventory.boomerang)
     },
     exits: {
-        "Wasteland Near Colossus": "logic_lens_wasteland or can_use(Lens_of_Truth)",
-        "Wasteland Near Fortress": "
-            logic_wasteland_crossing or can_use(Hover_Boots) or can_use(Longshot)"
+        "Wasteland Near Colossus": logic_lens_wasteland || (inventory.magic && inventory.lens),
+        "Wasteland Near Fortress": logic_wasteland_crossing || (isAdult() && (inventory.bootshover || inventory.shot > 1))
     }
 },
 {
@@ -514,19 +511,15 @@ const regions: Region[] = [
     timePasses: true,
     locations: {
         "Colossus Freestanding PoH": "isAdult() and here(can_plant_bean)",
-        "Colossus GS Bean Patch": "can_plant_bugs and can_child_attack",
+        "Colossus GS Bean Patch": "canPlantBugs() and canChildAttack()",
         "Colossus GS Tree": "can_use(Hookshot) and at_night",
         "Colossus GS Hill": "
             isAdult() and at_night and
                 (here(can_plant_bean) or can_use(Longshot) or
-                    (logic_colossus_gs and can_use(Hookshot)))",
-        "Colossus Gossip Stone": () => true,
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Fairy Pond": "can_play(Song_of_Storms) and has_bottle",
-        "Bug Rock": "has_bottle"
+                    (logic_colossus_gs and can_use(Hookshot)))"
     },
     exits: {
-        "Colossus Great Fairy Fountain": "has_explosives",
+        "Colossus Great Fairy Fountain": "hasExplosives()",
         "Spirit Temple Lobby": () => true,
         "Wasteland Near Colossus": () => true,
         "Colossus Grotto": "can_use(Silver_Gauntlets)"
@@ -546,7 +539,7 @@ const regions: Region[] = [
     regionName: "Colossus Great Fairy Fountain",
     scene: "Colossus Great Fairy Fountain",
     locations: {
-        "Colossus Great Fairy Reward": "can_play(Zeldas_Lullaby)"
+        "Colossus Great Fairy Reward": () => inventory.lullaby && inventory.ocarina
     },
     exits: {
         "Desert Colossus": () => true
@@ -556,7 +549,7 @@ const regions: Region[] = [
     regionName: "Market Entrance",
     scene: "Market Entrance",
     exits: {
-        "Hyrule Field": "isAdult() or at_day",
+        "Hyrule Field": () => true,
         "Market": () => true,
         "Market Guard House": () => true
     }
@@ -568,13 +561,13 @@ const regions: Region[] = [
         "Market Entrance": () => true,
         "ToT Entrance": () => true,
         "Castle Grounds": () => true,
-        "Market Bazaar": "isChild() and at_day",
-        "Market Mask Shop": "isChild() and at_day",
-        "Market Shooting Gallery": "isChild() and at_day",
-        "Market Bombchu Bowling": "isChild()",
-        "Market Potion Shop": "isChild() and at_day",
-        "Market Treasure Chest Game": "isChild() and at_night",
-        "Market Back Alley": "isChild()"
+        "Market Bazaar": () => isChild(),
+        "Market Mask Shop": () => isChild(),
+        "Market Shooting Gallery": () => isChild(),
+        "Market Bombchu Bowling": () => isChild(),
+        "Market Potion Shop": () => isChild(),
+        "Market Treasure Chest Game": () => isChild(),
+        "Market Back Alley": () => isChild()
     }
 },
 {
@@ -582,21 +575,14 @@ const regions: Region[] = [
     scene: "Market",
     exits: {
         "Market": () => true,
-        "Market Bombchu Shop": "at_night",
+        "Market Bombchu Shop": () => true,
         "Market Dog Lady House": () => true,
-        "Market Man in Green House": "at_night"
+        "Market Man in Green House": () => true
     }
 },
 {
     regionName: "ToT Entrance",
     scene: "ToT Entrance",
-    locations: {
-        "ToT Gossip Stone (Left)": () => true,
-        "ToT Gossip Stone (Left-Center)": () => true,
-        "ToT Gossip Stone (Right)": () => true,
-        "ToT Gossip Stone (Right-Center)": () => true,
-        "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and has_bottle"
-    },
     exits: {
         "Market": () => true,
         "Temple of Time": () => true
@@ -606,7 +592,7 @@ const regions: Region[] = [
     regionName: "Temple of Time",
     scene: "Temple of Time",
     locations: {
-        "ToT Light Arrows Cutscene": "isAdult() and can_trigger_lacs"
+        "ToT Light Arrows Cutscene": () => isAdult() && canTriggerLACS()
     },
     exits: {
         "ToT Entrance": () => true,
@@ -639,7 +625,7 @@ const regions: Region[] = [
     timePasses: true,
     locations: {
         "HC Malon Egg": () => true,
-        "HC GS Tree": "can_child_attack",
+        "HC GS Tree": "canChildAttack()",
         "HC Malon Gossip Stone": () => true,
         "HC Rock Wall Gossip Stone": () => true,
         "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
@@ -649,8 +635,8 @@ const regions: Region[] = [
     exits: {
         "Castle Grounds": () => true,
         "HC Garden": "Weird_Egg or skip_child_zelda or (not shuffle_weird_egg)",
-        "HC Great Fairy Fountain": "has_explosives",
-        "HC Storms Grotto": "can_open_storm_grotto"
+        "HC Great Fairy Fountain": "hasExplosives()",
+        "HC Storms Grotto":  "canOpenStormGrotto()"
     }
 },
 {
@@ -662,7 +648,7 @@ const regions: Region[] = [
     }
 },
 {
-    # Directly reachable from Root in "Free Zelda"
+    # Directly reachable from Root in "Free Zelda" // COME BACK
     regionName: "HC Garden Locations",
     scene: "Castle Grounds",
     locations: {
@@ -674,7 +660,7 @@ const regions: Region[] = [
     regionName: "HC Great Fairy Fountain",
     scene: "HC Great Fairy Fountain",
     locations: {
-        "HC Great Fairy Reward": "can_play(Zeldas_Lullaby)"
+        "HC Great Fairy Reward": () => inventory.lullaby && inventory.ocarina
     },
     exits: {
         "Castle Grounds": () => true
@@ -696,7 +682,7 @@ const regions: Region[] = [
     regionName: "OGC Great Fairy Fountain",
     scene: "OGC Great Fairy Fountain",
     locations: {
-        "OGC Great Fairy Reward": "can_play(Zeldas_Lullaby)"
+        "OGC Great Fairy Reward": () => inventory.lullaby && inventory.ocarina
     },
     exits: {
         "Castle Grounds": () => true
@@ -967,20 +953,20 @@ const regions: Region[] = [
 {
     regionName: "Kak Impas House Near Cow",
     locations: {
-        "Kak Impas House Cow": "can_play(Eponas_Song)"
+        "Kak Impas House Cow": () => inventory.ocarina && inventory.eponas
     }
 },
 {
     regionName: "Kak Windmill",
     scene: "Windmill and Dampes Grave",
     events: {
-        "Drain Well": "isChild() and can_play(Song_of_Storms)"
+        "Drain Well": "isChild() and can_play(Song_of_Storms)" // COME BACK - Make this a check to get to BotW
     },
     locations: {
         "Kak Windmill Freestanding PoH": "
             can_use(Boomerang) or
             (logic_windmill_poh and isAdult()) or 'Dampes Windmill Access'",
-        "Song from Windmill": "isAdult() and Ocarina"
+        "Song from Windmill": () => isAdult() && inventory.ocarina
     },
     exits: {
         "Kakariko Village": () => true
@@ -1007,7 +993,7 @@ const regions: Region[] = [
     regionName: "Kak Shooting Gallery",
     scene: "Kak Shooting Gallery",
     locations: {
-        "Kak Shooting Gallery Reward": "isAdult() and Bow"
+        "Kak Shooting Gallery Reward": () => isAdult() && inventory.bow
     },
     exits: {
         "Kakariko Village": () => true
@@ -1017,14 +1003,14 @@ const regions: Region[] = [
     regionName: "Kak Potion Shop Front",
     scene: "Kak Potion Shop Front",
     locations: {
-        "Kak Potion Shop Item 1": "isAdult()",
-        "Kak Potion Shop Item 2": "isAdult()",
-        "Kak Potion Shop Item 3": "isAdult()",
-        "Kak Potion Shop Item 4": "isAdult()",
-        "Kak Potion Shop Item 5": "isAdult()",
-        "Kak Potion Shop Item 6": "isAdult()",
-        "Kak Potion Shop Item 7": "isAdult()",
-        "Kak Potion Shop Item 8": "isAdult()"
+        "Kak Potion Shop Item 1": () => isAdult(),
+        "Kak Potion Shop Item 2": () => isAdult(),
+        "Kak Potion Shop Item 3": () => isAdult(),
+        "Kak Potion Shop Item 4": () => isAdult(),
+        "Kak Potion Shop Item 5": () => isAdult(),
+        "Kak Potion Shop Item 6": () => isAdult(),
+        "Kak Potion Shop Item 7": () => isAdult(),
+        "Kak Potion Shop Item 8": () => isAdult(),
     },
     exits: {
         "Kakariko Village": () => true,
@@ -1058,19 +1044,16 @@ const regions: Region[] = [
         "Graveyard Freestanding PoH": "
             (isAdult() and (here(can_plant_bean) or can_use(Longshot))) or
             (logic_graveyard_poh and can_use(Boomerang))",
-        "Graveyard Dampe Gravedigging Tour": "isChild() and at_dampe_time",
-        "Graveyard GS Wall": "can_use(Boomerang) and at_night",
-        "Graveyard GS Bean Patch": "can_plant_bugs and can_child_attack",
-        "Butterfly Fairy": "can_use(Sticks) and at_day and has_bottle",
-        "Bean Plant Fairy": "can_plant_bean and can_play(Song_of_Storms) and has_bottle",
-        "Bug Rock": "has_bottle"
+        "Graveyard Dampe Gravedigging Tour": () => isChild(),
+        "Graveyard GS Wall": () => isChild() && inventory.boomerang,
+        "Graveyard GS Bean Patch": canPlantBugs() && canChildAttack()
     },
     exits: {
-        "Graveyard Shield Grave": "isAdult() or at_night",
-        "Graveyard Composers Grave": "can_play(Zeldas_Lullaby)",
-        "Graveyard Heart Piece Grave": "isAdult() or at_night",
-        "Graveyard Dampes Grave": "isAdult()",
-        "Graveyard Dampes House": "isAdult() or at_dampe_time",
+        "Graveyard Shield Grave": () => true,
+        "Graveyard Composers Grave": () => inventory.lullaby && inventory.ocarina,
+        "Graveyard Heart Piece Grave": () => true,
+        "Graveyard Dampes Grave": () => isAdult(),
+        "Graveyard Dampes House": () => true,
         "Kakariko Village": () => true
     }
 },
@@ -1078,8 +1061,7 @@ const regions: Region[] = [
     regionName: "Graveyard Shield Grave",
     scene: "Graveyard Shield Grave",
     locations: {
-        "Graveyard Shield Grave Chest": () => true,
-        "Free Fairies": "can_blast_or_smash and has_bottle"
+        "Graveyard Shield Grave Chest": () => true
     },
     exits: {
         "Graveyard": () => true
@@ -1089,7 +1071,7 @@ const regions: Region[] = [
     regionName: "Graveyard Heart Piece Grave",
     scene: "Graveyard Heart Piece Grave",
     locations: {
-        "Graveyard Heart Piece Grave Chest": "can_play(Suns_Song)"
+        "Graveyard Heart Piece Grave Chest": () => inventory.suns && inventory.ocarina
     },
     exits: {
         "Graveyard": () => true
@@ -1099,11 +1081,8 @@ const regions: Region[] = [
     regionName: "Graveyard Composers Grave",
     scene: "Graveyard Composers Grave",
     locations: {
-        "Graveyard Composers Grave Chest": "has_fire_source",
-        "Song from Composers Grave": "
-            isAdult() or 
-            (Slingshot or Boomerang or Sticks or 
-                has_explosives or Kokiri_Sword)"
+        "Graveyard Composers Grave Chest": () => hasFireSource(),
+        "Song from Composers Grave": () => isAdult() || (inventory.slingshot || inventory.boomerang || inventory.sticks || inventory.swordkokiri || hasExplosives())
     },
     exits: {
         "Graveyard": () => true
@@ -1113,12 +1092,11 @@ const regions: Region[] = [
     regionName: "Graveyard Dampes Grave",
     scene: "Windmill and Dampes Grave",
     events: {
-        "Dampes Windmill Access": "isAdult() and can_play(Song_of_Time)"
+        "Dampes Windmill Access": () => isAdult() && inventory.time && inventory.ocarina
     },
     locations: {
         "Graveyard Hookshot Chest": () => true,
-        "Graveyard Dampe Race Freestanding PoH": "isAdult() or logic_child_dampe_race_poh",
-        "Nut Pot": () => true
+        "Graveyard Dampe Race Freestanding PoH": () => isAdult() || logic_child_dampe_race_poh
     },
     exits: {
         "Graveyard": () => true,
@@ -1161,36 +1139,36 @@ const regions: Region[] = [
     timePasses: true,
     locations: {
         "DMT Chest": "
-            can_blast_or_smash or 
+            canBlastOrSmash() or 
             (logic_dmt_bombable and isChild() and Progressive_Strength_Upgrade)",
         "DMT Freestanding PoH": "
             can_take_damage or can_use(Hover_Boots) or
-            (isAdult() and here(can_plant_bean and (has_explosives or Progressive_Strength_Upgrade)))",
+            (isAdult() and here(can_plant_bean and (hasExplosives() or Progressive_Strength_Upgrade)))",
         "DMT GS Bean Patch": "
-            can_plant_bugs and can_child_attack and
-                (has_explosives or Progressive_Strength_Upgrade or
+            canPlantBugs() and canChildAttack() and
+                (hasExplosives() or Progressive_Strength_Upgrade or
                 (logic_dmt_soil_gs and can_use(Boomerang)))",
-        "DMT GS Near Kak": "can_blast_or_smash",
+        "DMT GS Near Kak": "canBlastOrSmash()",
         "DMT GS Above Dodongos Cavern": "
             isAdult() and at_night and
             (can_use(Megaton_Hammer) or
                 (logic_trail_gs_lower_hookshot and can_use(Hookshot)) or
                 (logic_trail_gs_lower_hovers and can_use(Hover_Boots)) or
-                (logic_trail_gs_lower_bean and here(can_plant_bean and (has_explosives or Progressive_Strength_Upgrade))))",
+                (logic_trail_gs_lower_bean and here(can_plant_bean and (hasExplosives() or Progressive_Strength_Upgrade))))",
         "Bean Plant Fairy": "
             can_plant_bean and can_play(Song_of_Storms) and has_bottle and
-            (has_explosives or Progressive_Strength_Upgrade)"
+            (hasExplosives() or Progressive_Strength_Upgrade)"
     },
     exits: {
         "Kak Behind Gate": () => true,
         "Goron City": () => true,
         "Death Mountain Summit": "
-            here(can_blast_or_smash) or
+            here(canBlastOrSmash()) or
                 (isAdult() and here(can_plant_bean and Progressive_Strength_Upgrade)) or
                 (logic_dmt_climb_hovers and can_use(Hover_Boots))",
         "Dodongos Cavern Beginning": "
-            has_explosives or Progressive_Strength_Upgrade or isAdult()",
-        "DMT Storms Grotto": "can_open_storm_grotto"
+            hasExplosives() or Progressive_Strength_Upgrade or isAdult()",
+        "DMT Storms Grotto": "canOpenStormGrotto()"
     }
 },
 {
@@ -1216,8 +1194,8 @@ const regions: Region[] = [
         "Death Mountain": () => true,
         "DMC Upper Local": () => true,
         "DMT Owl Flight": "isChild()",
-        "DMT Cow Grotto": "here(can_blast_or_smash)",
-        "DMT Great Fairy Fountain": "here(can_blast_or_smash)"
+        "DMT Cow Grotto": "here(canBlastOrSmash())",
+        "DMT Great Fairy Fountain": "here(canBlastOrSmash())"
     }
 },
 {
@@ -1233,41 +1211,41 @@ const regions: Region[] = [
     events: {
         "Goron City Child Fire": "isChild() and can_use(Dins_Fire)",
         "GC Woods Warp Open": "
-            can_blast_or_smash or can_use(Dins_Fire) or can_use(Bow) or 
+            canBlastOrSmash() or can_use(Dins_Fire) or can_use(Bow) or 
             Progressive_Strength_Upgrade or 'Goron City Child Fire'",
         "Stop GC Rolling Goron as Adult": "
             isAdult() and 
-            (Progressive_Strength_Upgrade or has_explosives or Bow or
+            (Progressive_Strength_Upgrade or hasExplosives() or Bow or
                 (logic_link_goron_dins and can_use(Dins_Fire)))"
     },
     locations: {
         "GC Maze Left Chest": "
             can_use(Megaton_Hammer) or can_use(Silver_Gauntlets) or
-            (logic_goron_city_leftmost and has_explosives and can_use(Hover_Boots))",
+            (logic_goron_city_leftmost and hasExplosives() and can_use(Hover_Boots))",
         "GC Maze Center Chest": "
-            can_blast_or_smash or can_use(Silver_Gauntlets)",
+            canBlastOrSmash() or can_use(Silver_Gauntlets)",
         "GC Maze Right Chest": "
-            can_blast_or_smash or can_use(Silver_Gauntlets)",
+            canBlastOrSmash() or can_use(Silver_Gauntlets)",
         "GC Pot Freestanding PoH": "
             isChild() and 'Goron City Child Fire' and
             (Bombs or (Progressive_Strength_Upgrade and logic_goron_city_pot_with_strength) or (has_bombchus and logic_goron_city_pot))",
         "GC Rolling Goron as Child": "
             isChild() and 
-            (has_explosives or (Progressive_Strength_Upgrade and logic_child_rolling_with_strength))",
+            (hasExplosives() or (Progressive_Strength_Upgrade and logic_child_rolling_with_strength))",
         "GC Medigoron": "
             isAdult() and Progressive_Wallet and 
-            (can_blast_or_smash or Progressive_Strength_Upgrade)",
+            (canBlastOrSmash() or Progressive_Strength_Upgrade)",
         "GC Rolling Goron as Adult": "'Stop GC Rolling Goron as Adult'",
-        "GC GS Boulder Maze": "isChild() and has_explosives",
+        "GC GS Boulder Maze": "isChild() and hasExplosives()",
         "GC GS Center Platform": "isAdult()",
         "GC Maze Gossip Stone": "
-            can_blast_or_smash or can_use(Silver_Gauntlets)",
+            canBlastOrSmash() or can_use(Silver_Gauntlets)",
         "GC Medigoron Gossip Stone": "
-            can_blast_or_smash or Progressive_Strength_Upgrade",
+            canBlastOrSmash() or Progressive_Strength_Upgrade",
         "Gossip Stone Fairy": "
             can_summon_gossip_fairy_without_suns and has_bottle and
-            (can_blast_or_smash or Progressive_Strength_Upgrade)",
-        "Bug Rock": "(can_blast_or_smash or can_use(Silver_Gauntlets)) and has_bottle",
+            (canBlastOrSmash() or Progressive_Strength_Upgrade)",
+        "Bug Rock": "(canBlastOrSmash() or can_use(Silver_Gauntlets)) and has_bottle",
         "Stick Pot": "isChild()"
     },
     exits: {
@@ -1275,7 +1253,7 @@ const regions: Region[] = [
         "GC Woods Warp": "'GC Woods Warp Open'",
         "GC Shop": "
             (isAdult() and 'Stop GC Rolling Goron as Adult') or 
-            (isChild() and (has_explosives or Progressive_Strength_Upgrade or 'Goron City Child Fire'))",
+            (isChild() and (hasExplosives() or Progressive_Strength_Upgrade or 'Goron City Child Fire'))",
         "GC Darunias Chamber": "
             (isAdult() and 'Stop GC Rolling Goron as Adult') or
             (isChild() and can_play(Zeldas_Lullaby))",
@@ -1294,7 +1272,7 @@ const regions: Region[] = [
     regionName: "GC Woods Warp",
     scene: "Goron City",
     events: {
-        "GC Woods Warp Open": "can_blast_or_smash or can_use(Dins_Fire)"
+        "GC Woods Warp Open": "canBlastOrSmash() or can_use(Dins_Fire)"
     },
     exits: {
         "Goron City": "can_leave_forest and 'GC Woods Warp Open'",
@@ -1349,7 +1327,7 @@ const regions: Region[] = [
     exits: {
         "DMC Upper Local": "can_use(Goron_Tunic)",
         "Death Mountain Summit": () => true,
-        "DMC Upper Grotto": "here(can_blast_or_smash)"
+        "DMC Upper Grotto": "here(canBlastOrSmash())"
     }
 },
 {
@@ -1357,10 +1335,10 @@ const regions: Region[] = [
     scene: "Death Mountain Crater",
     locations: {
         "DMC Wall Freestanding PoH": () => true,
-        "DMC GS Crate": "isChild() and can_child_attack",
-        "DMC Gossip Stone": "has_explosives",
+        "DMC GS Crate": "isChild() and canChildAttack()",
+        "DMC Gossip Stone": "hasExplosives()",
         "Gossip Stone Fairy": "
-            has_explosives and can_summon_gossip_fairy_without_suns and has_bottle"
+            hasExplosives() and can_summon_gossip_fairy_without_suns and has_bottle"
     },
     exits: {
         "DMC Upper Nearby": () => true,
@@ -1424,7 +1402,7 @@ const regions: Region[] = [
     regionName: "DMC Central Local",
     scene: "Death Mountain Crater",
     locations: {
-        "DMC GS Bean Patch": "can_plant_bugs and can_child_attack",
+        "DMC GS Bean Patch": "canPlantBugs() and canChildAttack()",
         "Bean Plant Fairy": "can_plant_bean and can_play(Song_of_Storms) and has_bottle"
     },
     exits: {
@@ -1450,7 +1428,7 @@ const regions: Region[] = [
     regionName: "DMC Great Fairy Fountain",
     scene: "DMC Great Fairy Fountain",
     locations: {
-        "DMC Great Fairy Reward": "can_play(Zeldas_Lullaby)"
+        "DMC Great Fairy Reward": () => inventory.lullaby && inventory.ocarina
     },
     exits: {
         "DMC Lower Local": () => true
@@ -1460,7 +1438,7 @@ const regions: Region[] = [
     regionName: "DMT Great Fairy Fountain",
     scene: "DMT Great Fairy Fountain",
     locations: {
-        "DMT Great Fairy Reward": "can_play(Zeldas_Lullaby)"
+        "DMT Great Fairy Reward": () => inventory.lullaby && inventory.ocarina
     },
     exits: {
         "Death Mountain Summit": () => true
@@ -1471,10 +1449,10 @@ const regions: Region[] = [
     scene: "Zora River",
     timePasses: true,
     locations: {
-        "ZR GS Tree": "isChild() and can_child_attack"
+        "ZR GS Tree": "isChild() and canChildAttack()"
     },
     exits: {
-        "Zora River": "isAdult() or has_explosives",
+        "Zora River": "isAdult() or hasExplosives()",
         "Hyrule Field": () => true
     }
 },
@@ -1493,7 +1471,7 @@ const regions: Region[] = [
             isChild() or can_use(Hover_Boots) or (isAdult() and logic_zora_river_lower)",
         "ZR Near Domain Freestanding PoH": "
             isChild() or can_use(Hover_Boots) or (isAdult() and logic_zora_river_upper)",
-        "ZR GS Ladder": "isChild() and at_night and can_child_attack",
+        "ZR GS Ladder": "isChild() and at_night and canChildAttack()",
         "ZR GS Near Raised Grottos": "can_use(Hookshot) and at_night",
         "ZR GS Above Bridge": "can_use(Hookshot) and at_night",
         "ZR Near Grottos Gossip Stone": () => true,
@@ -1508,9 +1486,8 @@ const regions: Region[] = [
     exits: {
         "ZR Front": () => true,
         "ZR Open Grotto": () => true,
-        "ZR Fairy Grotto": "here(can_blast_or_smash)",
         "Lost Woods": "can_dive or can_use(Iron_Boots)",
-        "ZR Storms Grotto": "can_open_storm_grotto",
+        "ZR Storms Grotto": "canOpenStormGrotto()",
         "ZR Behind Waterfall": "
             can_play(Zeldas_Lullaby) or
             (can_use(Hover_Boots) and logic_zora_with_hovers) or
@@ -1563,7 +1540,7 @@ const regions: Region[] = [
             Deliver_Letter or zora_fountain == 'open' or
             (zora_fountain == 'adult' and isAdult())",
         "ZD Shop": "isChild() or Blue_Fire",
-        "ZD Storms Grotto": "can_open_storm_grotto"
+        "ZD Storms Grotto": "canOpenStormGrotto()"
     }
 },
 {
@@ -1593,18 +1570,14 @@ const regions: Region[] = [
         "ZF GS Tree": "isChild()",
         "ZF GS Above the Log": "can_use(Boomerang) and at_night",
         "ZF GS Hidden Cave": "
-            can_use(Silver_Gauntlets) and can_blast_or_smash and 
-            can_use(Hookshot) and at_night",
-        "ZF Fairy Gossip Stone": () => true,
-        "ZF Jabu Gossip Stone": () => true,
-        "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and has_bottle",
-        "Butterfly Fairy": "can_use(Sticks) and at_day and has_bottle"
+            can_use(Silver_Gauntlets) and canBlastOrSmash() and 
+            can_use(Hookshot) and at_night"
     },
     exits: {
         "ZD Behind King Zora": () => true,
         "Jabu Jabus Belly Beginning": "isChild() and Fish",
         "ZF Ice Ledge": "isAdult()",
-        "ZF Great Fairy Fountain": "has_explosives"
+        "ZF Great Fairy Fountain": "hasExplosives()"
     }
 },
 {
@@ -1636,7 +1609,7 @@ const regions: Region[] = [
     regionName: "ZF Great Fairy Fountain",
     scene: "ZF Great Fairy Fountain",
     locations: {
-        "ZF Great Fairy Reward": "can_play(Zeldas_Lullaby)"
+        "ZF Great Fairy Reward": () => inventory.lullaby && inventory.ocarina
     },
     exits: {
         "Zoras Fountain": () => true
@@ -1646,29 +1619,29 @@ const regions: Region[] = [
     regionName: "Lon Lon Ranch",
     scene: "Lon Lon Ranch",
     events: {
-        "Epona": "can_play(Eponas_Song) and isAdult() and at_day",
-        "Links Cow": "can_play(Eponas_Song) and isAdult() and at_day"
+        "Epona": () => isAdult() && inventory.eponas && inventory.ocarina,
+        "Links Cow": () => isAdult() && inventory.eponas && inventory.ocarina
     },
     locations: {
-        "Song from Malon": "isChild() and Zeldas_Letter and Ocarina and at_day",
-        "LLR GS Tree": "isChild()",
-        "LLR GS Rain Shed": "isChild() and at_night",
-        "LLR GS House Window": "can_use(Boomerang) and at_night",
-        "LLR GS Back Wall": "can_use(Boomerang) and at_night"
+        "Song from Malon": () => isChild() && inventory.questchild > 2 && inventory.ocarina,
+        "LLR GS Tree": () => isChild(),
+        "LLR GS Rain Shed": () => isChild(),
+        "LLR GS House Window": () => isChild() && inventory.boomerang,
+        "LLR GS Back Wall": () => isChild() && inventory.boomerang
     },
     exits: {
         "Hyrule Field": () => true,
-        "LLR Talons House": "isAdult() or at_day",
+        "LLR Talons House": () => true,
         "LLR Stables": () => true,
         "LLR Tower": () => true,
-        "LLR Grotto": "isChild()"
+        "LLR Grotto": () => isChild()
     }
 },
 {
     regionName: "LLR Talons House",
     scene: "LLR Talons House",
     locations: {
-        "LLR Talons Chickens": "isChild() and at_day and Zeldas_Letter"
+        "LLR Talons Chickens": () => isChild() && inventory.questchild > 2
     },
     exits: {
         "Lon Lon Ranch": () => true
@@ -1678,8 +1651,8 @@ const regions: Region[] = [
     regionName: "LLR Stables",
     scene: "LLR Stables",
     locations: {
-        "LLR Stables Left Cow": "can_play(Eponas_Song)",
-        "LLR Stables Right Cow": "can_play(Eponas_Song)"
+        "LLR Stables Left Cow": () => inventory.eponas && inventory.ocarina,
+        "LLR Stables Right Cow": () => inventory.eponas && inventory.ocarina
     },
     exits: {
         "Lon Lon Ranch": () => true
@@ -1689,9 +1662,9 @@ const regions: Region[] = [
     regionName: "LLR Tower",
     scene: "LLR Tower",
     locations: {
-        "LLR Freestanding PoH": "isChild()",
-        "LLR Tower Left Cow": "can_play(Eponas_Song)",
-        "LLR Tower Right Cow": "can_play(Eponas_Song)"
+        "LLR Freestanding PoH": () => isChild(),
+        "LLR Tower Left Cow": () => inventory.eponas && inventory.ocarina,
+        "LLR Tower Right Cow": () => inventory.eponas && inventory.ocarina
     },
     exits: {
         "Lon Lon Ranch": () => true
@@ -1702,16 +1675,12 @@ const regions: Region[] = [
     "dungeon": "Ganons Castle",
     locations: {
         "Ganons Tower Boss Key Chest": () => true,
-        "Ganondorf Hint": "Boss_Key_Ganons_Castle",
-        "Ganon": "Boss_Key_Ganons_Castle and can_use(Light_Arrows)"
+        "Ganon": () => inventory.bosskeyganon && inventory.bow && inventory.arrowslight
     }
 },
 {
     regionName: "GF Storms Grotto",
     scene: "GF Storms Grotto",
-    locations: {
-        "Free Fairies": "has_bottle"
-    },
     exits: {
         "Gerudo Fortress": () => true
     }
@@ -1719,9 +1688,6 @@ const regions: Region[] = [
 {
     regionName: "ZD Storms Grotto",
     scene: "ZD Storms Grotto",
-    locations: {
-        "Free Fairies": "has_bottle"
-    },
     exits: {
         "Zoras Domain": () => true
     }
@@ -1730,12 +1696,7 @@ const regions: Region[] = [
     regionName: "KF Storms Grotto",
     scene: "KF Storms Grotto",
     locations: {
-        "KF Storms Grotto Chest": () => true,
-        "KF Storms Grotto Gossip Stone": () => true,
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
-        "Bug Shrub": "can_cut_shrubs and has_bottle",
-        "Lone Fish": "has_bottle"
+        "KF Storms Grotto Chest": () => true
     },
     exits: {
         "Kokiri Forest": () => true
@@ -1745,12 +1706,7 @@ const regions: Region[] = [
     regionName: "LW Near Shortcuts Grotto",
     scene: "LW Near Shortcuts Grotto",
     locations: {
-        "LW Near Shortcuts Grotto Chest": () => true,
-        "LW Near Shortcuts Grotto Gossip Stone": () => true,
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
-        "Bug Shrub": "can_cut_shrubs and has_bottle",
-        "Lone Fish": "has_bottle"
+        "LW Near Shortcuts Grotto Chest": () => true
     },
     exits: {
         "Lost Woods": () => true
@@ -1760,7 +1716,7 @@ const regions: Region[] = [
     regionName: "Deku Theater",
     scene: "Deku Theater",
     locations: {
-        "Deku Theater Skull Mask": "isChild() and 'Skull Mask'",
+        "Deku Theater Skull Mask": () => isChild() && (inventory.questchild ===  "isChild() and 'Skull Mask'", // COME BACK
         "Deku Theater Mask of Truth": "isChild() and 'Mask of Truth'"
     },
     exits: {
@@ -1771,29 +1727,19 @@ const regions: Region[] = [
     regionName: "LW Scrubs Grotto",
     scene: "LW Scrubs Grotto",
     locations: {
-        "LW Deku Scrub Grotto Rear": "can_stun_deku",
-        "LW Deku Scrub Grotto Front": "can_stun_deku"
+        "LW Deku Scrub Grotto Rear": () => canStunDeku(),
+        "LW Deku Scrub Grotto Front": () => canStunDeku()
     },
     exits: {
         "LW Beyond Mido": () => true
     }
 },
 {
-    regionName: "SFM Fairy Grotto",
-    scene: "SFM Fairy Grotto",
-    locations: {
-        "Free Fairies": "has_bottle"
-    },
-    exits: {
-        "Sacred Forest Meadow": () => true
-    }
-},
-{
     regionName: "SFM Storms Grotto",
     scene: "SFM Storms Grotto",
     locations: {
-        "SFM Deku Scrub Grotto Rear": "can_stun_deku",
-        "SFM Deku Scrub Grotto Front": "can_stun_deku"
+        "SFM Deku Scrub Grotto Rear": () => canStunDeku(),
+        "SFM Deku Scrub Grotto Front": () => canStunDeku()
     },
     exits: {
         "Sacred Forest Meadow": () => true
@@ -1803,9 +1749,7 @@ const regions: Region[] = [
     regionName: "SFM Wolfos Grotto",
     scene: "SFM Wolfos Grotto",
     locations: {
-        "SFM Wolfos Grotto Chest": "
-            isAdult() or Slingshot or Sticks or 
-            Kokiri_Sword or can_use(Dins_Fire)"
+        "SFM Wolfos Grotto Chest": () => isAdult() || inventory.slingshot || inventory.sticks || (inventory.magic && inventory.dins)
     },
     exits: {
         "SFM Entryway": () => true
@@ -1815,9 +1759,9 @@ const regions: Region[] = [
     regionName: "LLR Grotto",
     scene: "LLR Grotto",
     locations: {
-        "LLR Deku Scrub Grotto Left": "can_stun_deku",
-        "LLR Deku Scrub Grotto Right": "can_stun_deku",
-        "LLR Deku Scrub Grotto Center": "can_stun_deku"
+        "LLR Deku Scrub Grotto Left": () => canStunDeku(),
+        "LLR Deku Scrub Grotto Right": () => canStunDeku(),
+        "LLR Deku Scrub Grotto Center": () => canStunDeku()
     },
     exits: {
         "Lon Lon Ranch": () => true
@@ -1827,12 +1771,7 @@ const regions: Region[] = [
     regionName: "HF Southeast Grotto",
     scene: "HF Southeast Grotto",
     locations: {
-        "HF Southeast Grotto Chest": () => true,
-        "HF Southeast Grotto Gossip Stone": () => true,
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
-        "Bug Shrub": "can_cut_shrubs and has_bottle",
-        "Lone Fish": "has_bottle"
+        "HF Southeast Grotto Chest": () => true
     },
     exits: {
         "Hyrule Field": () => true
@@ -1842,12 +1781,7 @@ const regions: Region[] = [
     regionName: "HF Open Grotto",
     scene: "HF Open Grotto",
     locations: {
-        "HF Open Grotto Chest": () => true,
-        "HF Open Grotto Gossip Stone": () => true,
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
-        "Bug Shrub": "can_cut_shrubs and has_bottle",
-        "Lone Fish": "has_bottle"
+        "HF Open Grotto Chest": () => true
     },
     exits: {
         "Hyrule Field": () => true
@@ -1857,7 +1791,7 @@ const regions: Region[] = [
     regionName: "HF Inside Fence Grotto",
     scene: "HF Inside Fence Grotto",
     locations: {
-        "HF Deku Scrub Grotto": "can_stun_deku"
+        "HF Deku Scrub Grotto": () => canStunDeku()
     },
     exits: {
         "Hyrule Field": () => true
@@ -1867,13 +1801,8 @@ const regions: Region[] = [
     regionName: "HF Cow Grotto",
     scene: "HF Cow Grotto",
     locations: {
-        "HF GS Cow Grotto": "
-            has_fire_source and (can_use(Hookshot) or can_use(Boomerang))",
-        "HF Cow Grotto Cow": "has_fire_source and can_play(Eponas_Song)",
-        "HF Cow Grotto Gossip Stone": "has_fire_source",
-        "Gossip Stone Fairy": "has_fire_source and can_summon_gossip_fairy and has_bottle",
-        "Bug Shrub": "has_fire_source and can_cut_shrubs and has_bottle",
-        "Nut Pot": "has_fire_source"
+        "HF GS Cow Grotto": () => hasFireSource() && ((isAdult() && inventory.shot) || (isChild() && inventory.boomerang)),
+        "HF Cow Grotto Cow": () => hasFireSource() && inventory.eponas && inventory.ocarina
     },
     exits: {
         "Hyrule Field": () => true
@@ -1883,22 +1812,7 @@ const regions: Region[] = [
     regionName: "HF Near Market Grotto",
     scene: "HF Near Market Grotto",
     locations: {
-        "HF Near Market Grotto Chest": () => true,
-        "HF Near Market Grotto Gossip Stone": () => true,
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
-        "Bug Shrub": "can_cut_shrubs and has_bottle",
-        "Lone Fish": "has_bottle"
-    },
-    exits: {
-        "Hyrule Field": () => true
-    }
-},
-{
-    regionName: "HF Fairy Grotto",
-    scene: "HF Fairy Grotto",
-    locations: {
-        "Free Fairies": "has_bottle"
+        "HF Near Market Grotto Chest": () => true
     },
     exits: {
         "Hyrule Field": () => true
@@ -1908,7 +1822,7 @@ const regions: Region[] = [
     regionName: "HF Near Kak Grotto",
     scene: "HF Near Kak Grotto",
     locations: {
-        "HF GS Near Kak Grotto": "can_use(Boomerang) or can_use(Hookshot)"
+        "HF GS Near Kak Grotto": () => ((isChild() && inventory.boomerang) || (isAdult() && inventory.shot))
     },
     exits: {
         "Hyrule Field": () => true
@@ -1918,8 +1832,7 @@ const regions: Region[] = [
     regionName: "HF Tektite Grotto",
     scene: "HF Tektite Grotto",
     locations: {
-        "HF Tektite Grotto Freestanding PoH": "
-            (Progressive_Scale, 2) or can_use(Iron_Boots)"
+        "HF Tektite Grotto Freestanding PoH": () => inventory.scale > 1 || (isAdult() && inventory.bootsiron)
     },
     exits: {
         "Hyrule Field": () => true
@@ -1929,13 +1842,7 @@ const regions: Region[] = [
     regionName: "HC Storms Grotto",
     scene: "HC Storms Grotto",
     locations: {
-        "HC GS Storms Grotto": "
-            (can_blast_or_smash or (isChild() and logic_castle_storms_gs)) and
-            (can_use(Boomerang) or can_use(Hookshot))",
-        "HC Storms Grotto Gossip Stone": "can_blast_or_smash",
-        "Gossip Stone Fairy": "can_blast_or_smash and can_summon_gossip_fairy and has_bottle",
-        "Wandering Bugs": "can_blast_or_smash and has_bottle",
-        "Nut Pot": "can_blast_or_smash"
+        "HC GS Storms Grotto": () => (canBlastOrSmash() || (isChild() && logic_castle_storms_gs)) && ((isChild() && inventory.boomerang) || (isAdult() && inventory.shot))
     },
     exits: {
         "Castle Grounds": () => true
@@ -1945,9 +1852,7 @@ const regions: Region[] = [
     regionName: "Kak Redead Grotto",
     scene: "Kak Redead Grotto",
     locations: {
-        "Kak Redead Grotto Chest": "
-            isAdult() or 
-            (Sticks or Kokiri_Sword or can_use(Dins_Fire))"
+        "Kak Redead Grotto Chest": () => isAdult() || (inventory.sticks || inventory.swordkokiri || (inventory.magic && inventory.dins))
     },
     exits: {
         "Kakariko Village": () => true
@@ -1957,12 +1862,7 @@ const regions: Region[] = [
     regionName: "Kak Open Grotto",
     scene: "Kak Open Grotto",
     locations: {
-        "Kak Open Grotto Chest": () => true,
-        "Kak Open Grotto Gossip Stone": () => true,
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
-        "Bug Shrub": "can_cut_shrubs and has_bottle",
-        "Lone Fish": "has_bottle"
+        "Kak Open Grotto Chest": () => true
     },
     exits: {
         "Kak Backyard": () => true
@@ -1972,7 +1872,7 @@ const regions: Region[] = [
     regionName: "DMT Cow Grotto",
     scene: "DMT Cow Grotto",
     locations: {
-        "DMT Cow Grotto Cow": "can_play(Eponas_Song)"
+        "DMT Cow Grotto Cow": () => inventory.ocarina && intenvory eponas
     },
     exits: {
         "Death Mountain Summit": () => true
@@ -1982,12 +1882,7 @@ const regions: Region[] = [
     regionName: "DMT Storms Grotto",
     scene: "DMT Storms Grotto",
     locations: {
-        "DMT Storms Grotto Chest": () => true,
-        "DMT Storms Grotto Gossip Stone": () => true,
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
-        "Bug Shrub": "can_cut_shrubs and has_bottle",
-        "Lone Fish": "has_bottle"
+        "DMT Storms Grotto Chest": () => true
     },
     exits: {
         "Death Mountain": () => true
@@ -1997,9 +1892,9 @@ const regions: Region[] = [
     regionName: "GC Grotto",
     scene: "GC Grotto",
     locations: {
-        "GC Deku Scrub Grotto Left": "can_stun_deku",
-        "GC Deku Scrub Grotto Right": "can_stun_deku",
-        "GC Deku Scrub Grotto Center": "can_stun_deku"
+        "GC Deku Scrub Grotto Left": () => canStunDeku(),
+        "GC Deku Scrub Grotto Right": () => canStunDeku(),
+        "GC Deku Scrub Grotto Center": () => canStunDeku()
     },
     exits: {
         "GC Grotto Platform": () => true
@@ -2009,12 +1904,7 @@ const regions: Region[] = [
     regionName: "DMC Upper Grotto",
     scene: "DMC Upper Grotto",
     locations: {
-        "DMC Upper Grotto Chest": () => true,
-        "DMC Upper Grotto Gossip Stone": () => true,
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
-        "Bug Shrub": "can_cut_shrubs and has_bottle",
-        "Lone Fish": "has_bottle"
+        "DMC Upper Grotto Chest": () => true
     },
     exits: {
         "DMC Upper Local": () => true
@@ -2024,9 +1914,9 @@ const regions: Region[] = [
     regionName: "DMC Hammer Grotto",
     scene: "DMC Hammer Grotto",
     locations: {
-        "DMC Deku Scrub Grotto Left": "can_stun_deku",
-        "DMC Deku Scrub Grotto Right": "can_stun_deku",
-        "DMC Deku Scrub Grotto Center": "can_stun_deku"
+        "DMC Deku Scrub Grotto Left": () => canStunDeku(),
+        "DMC Deku Scrub Grotto Right": () => canStunDeku(),
+        "DMC Deku Scrub Grotto Center": () => canStunDeku()
     },
     exits: {
         "DMC Lower Local": () => true
@@ -2036,22 +1926,7 @@ const regions: Region[] = [
     regionName: "ZR Open Grotto",
     scene: "ZR Open Grotto",
     locations: {
-        "ZR Open Grotto Chest": () => true,
-        "ZR Open Grotto Gossip Stone": () => true,
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
-        "Bug Shrub": "can_cut_shrubs and has_bottle",
-        "Lone Fish": "has_bottle"
-    },
-    exits: {
-        "Zora River": () => true
-    }
-},
-{
-    regionName: "ZR Fairy Grotto",
-    scene: "ZR Fairy Grotto",
-    locations: {
-        "Free Fairies": "has_bottle"
+        "ZR Open Grotto Chest": () => true
     },
     exits: {
         "Zora River": () => true
@@ -2061,8 +1936,8 @@ const regions: Region[] = [
     regionName: "ZR Storms Grotto",
     scene: "ZR Storms Grotto",
     locations: {
-        "ZR Deku Scrub Grotto Rear": "can_stun_deku",
-        "ZR Deku Scrub Grotto Front": "can_stun_deku"
+        "ZR Deku Scrub Grotto Rear": () => canStunDeku(),
+        "ZR Deku Scrub Grotto Front": () => canStunDeku()
     },
     exits: {
         "Zora River": () => true
@@ -2072,9 +1947,9 @@ const regions: Region[] = [
     regionName: "LH Grotto",
     scene: "LH Grotto",
     locations: {
-        "LH Deku Scrub Grotto Left": "can_stun_deku",
-        "LH Deku Scrub Grotto Right": "can_stun_deku",
-        "LH Deku Scrub Grotto Center": "can_stun_deku"
+        "LH Deku Scrub Grotto Left": () => canStunDeku(),
+        "LH Deku Scrub Grotto Right": () => canStunDeku(),
+        "LH Deku Scrub Grotto Center": () => canStunDeku()
     },
     exits: {
         "Lake Hylia": () => true
@@ -2084,8 +1959,8 @@ const regions: Region[] = [
     regionName: "Colossus Grotto",
     scene: "Colossus Grotto",
     locations: {
-        "Colossus Deku Scrub Grotto Rear": "can_stun_deku",
-        "Colossus Deku Scrub Grotto Front": "can_stun_deku"
+        "Colossus Deku Scrub Grotto Rear": () => canStunDeku(),
+        "Colossus Deku Scrub Grotto Front": () => canStunDeku()
     },
     exits: {
         "Desert Colossus": () => true
@@ -2102,8 +1977,8 @@ const regions: Region[] = [
     regionName: "GV Storms Grotto",
     scene: "GV Storms Grotto",
     locations: {
-        "GV Deku Scrub Grotto Rear": "can_stun_deku",
-        "GV Deku Scrub Grotto Front": "can_stun_deku"
+        "GV Deku Scrub Grotto Rear": () => canStunDeku(),
+        "GV Deku Scrub Grotto Front": () => canStunDeku()
     },
     exits: {
         "GV Fortress Side": () => true
