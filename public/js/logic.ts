@@ -20,6 +20,15 @@ const checkStatuses = {
   queenGohma: false,
 };
 const inventory = {
+  stonekokiri: 0,
+  stonegoron: 0,
+  stonezora: 0,
+  medallionlight: 0,
+  medallionforest: 0,
+  medallionfire: 0,
+  medallionwater: 0,
+  medallionshadow: 0,
+  medallionspirit: 0,
   slingshot: 0,
   boomerang: 0,
   sticks: 0,
@@ -29,16 +38,28 @@ const inventory = {
   bombchus: 0,
   magic: 0,
   dins: 0,
+  arrowsfire: 0,
+  arrowslight: 0,
   bottle: 0,
   shot: 0,
   shieldDeku: 0,
   ocarina: 0,
-  storms: 0,
+  lullaby: 0,
   sarias: 0,
+  eponas: 0,
+  suns: 0,
+  storms: 0,
+  minuet: 0,
+  bolero: 0,
+  serenade: 0,
+  nocturne: 0,
+  requiem: 0,
+  prelude: 0,
   agony: 0,
   bootsiron: 0,
   bootshover: 0,
   scale: 0,
+  strength: 0,
 };
 
 const roots: string[] = [childSpawn, adultSpawn, 'prelude_warp', 'minuet_warp', 'bolero_warp', 'serenade_warp', 'nocturne_warp', 'requiem_warp'];
@@ -85,6 +106,14 @@ function canTriggerLACS(): boolean {
 }
 
 function canFinishGerudoFortress(): boolean {
+  // COME BACK
+}
+
+function canUseProjectile(): boolean {
+  // COME BACK
+}
+
+function hasBombchus(): boolean {
   // COME BACK
 }
 
@@ -513,14 +542,14 @@ const regions: Region[] = [
     locations: {
         "Colossus Freestanding PoH": "isAdult() and here(can_plant_bean)",
         "Colossus GS Bean Patch": "canPlantBugs() and canChildAttack()",
-        "Colossus GS Tree": "can_use(Hookshot) and at_night",
+        "Colossus GS Tree": () => isAdult() && inventory.shot,
         "Colossus GS Hill": "
             isAdult() and at_night and
                 (here(can_plant_bean) or can_use(Longshot) or
                     (logic_colossus_gs and can_use(Hookshot)))"
     },
     exits: {
-        "Colossus Great Fairy Fountain": "hasExplosives()",
+        "Colossus Great Fairy Fountain": () => hasExplosives(),
         "Spirit Temple Lobby": () => true,
         "Wasteland Near Colossus": () => true,
         "Colossus Grotto": "can_use(Silver_Gauntlets)"
@@ -597,7 +626,7 @@ const regions: Region[] = [
     },
     exits: {
         "ToT Entrance": () => true,
-        "Beyond Door of Time": "can_play(Song_of_Time) or open_door_of_time"
+        "Beyond Door of Time": "(inventory.time && inventory.ocarina) or open_door_of_time"
     }
 },
 {
@@ -616,8 +645,8 @@ const regions: Region[] = [
     scene: "Castle Grounds",
     exits: {
         "Market": "isChild() or at_dampe_time",
-        "Hyrule Castle Grounds": "isChild()",
-        "Ganons Castle Grounds": "isAdult()"
+        "Hyrule Castle Grounds": () => isChild(),
+        "Ganons Castle Grounds": () => isAdult()
     }
 },
 {
@@ -626,18 +655,13 @@ const regions: Region[] = [
     timePasses: true,
     locations: {
         "HC Malon Egg": () => true,
-        "HC GS Tree": "canChildAttack()",
-        "HC Malon Gossip Stone": () => true,
-        "HC Rock Wall Gossip Stone": () => true,
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
-        "Bug Rock": "has_bottle"
+        "HC GS Tree": () => canChildAttack()
     },
     exits: {
         "Castle Grounds": () => true,
         "HC Garden": "Weird_Egg or skip_child_zelda or (not shuffle_weird_egg)",
-        "HC Great Fairy Fountain": "hasExplosives()",
-        "HC Storms Grotto":  "canOpenStormGrotto()"
+        "HC Great Fairy Fountain": () => hasExplosives(),
+        "HC Storms Grotto": () => canOpenStormGrotto()
     }
 },
 {
@@ -675,7 +699,7 @@ const regions: Region[] = [
     },
     exits: {
         "Castle Grounds": () => true,
-        "OGC Great Fairy Fountain": "can_use(Golden_Gauntlets) and at_dampe_time",
+        "OGC Great Fairy Fountain": () => isAdult() && inventory.strength > 2,
         "Ganons Castle Lobby": "can_build_rainbow_bridge and at_dampe_time"
     }
 },
@@ -699,7 +723,7 @@ const regions: Region[] = [
         "Market 10 Big Poes": "
             isAdult() and 
             (Big_Poe or (Bottle_with_Big_Poe, big_poe_count))",
-        "Market GS Guard House": "isChild()"
+        "Market GS Guard House": () => isChild()
     },
     exits: {
         "Market Entrance": () => true
@@ -729,7 +753,7 @@ const regions: Region[] = [
         "Skull Mask": "Zeldas_Letter and (complete_mask_quest or at('Kakariko Village', isChild()))",
         "Mask of Truth": "'Skull Mask' and
             (complete_mask_quest or
-            (at('Lost Woods', isChild() and can_play(Sarias_Song)) and
+            (at('Lost Woods', isChild() and (inventory.sarias && inventory.ocarina)) and
              at('Graveyard', isChild() and at_day) and
              at('Hyrule Field', isChild() and has_all_stones)))"
     },
@@ -741,7 +765,7 @@ const regions: Region[] = [
     regionName: "Market Shooting Gallery",
     scene: "Market Shooting Gallery",
     locations: {
-        "Market Shooting Gallery Reward": "isChild()"
+        "Market Shooting Gallery Reward": () => isChild()
     },
     exits: {
         "Market": () => true
@@ -780,7 +804,7 @@ const regions: Region[] = [
     regionName: "Market Treasure Chest Game",
     scene: "Market Treasure Chest Game",
     locations: {
-        "Market Treasure Chest Game Reward": "can_use(Lens_of_Truth)"
+        "Market Treasure Chest Game Reward": "(inventory.lens && inventory.magic)"
     },
     exits: {
         "Market": () => true
@@ -828,19 +852,17 @@ const regions: Region[] = [
         "Kakariko Village Gate Open": "isChild() and (Zeldas_Letter or open_kakariko == 'open')"
     },
     locations: {
-        "Sheik in Kakariko": "
-            isAdult() and Forest_Medallion and Fire_Medallion and Water_Medallion",
-        "Kak Anju as Adult": "isAdult() and at_day",
-        "Kak Anju as Child": "isChild() and at_day",
-        "Kak GS House Under Construction": "isChild() and at_night",
-        "Kak GS Skulltula House": "isChild() and at_night",
-        "Kak GS Guards House": "isChild() and at_night",
-        "Kak GS Tree": "isChild() and at_night",
+        "Sheik in Kakariko": () => isAdult() && inventory.medallionforest && inventory.medallionfire && inventory.medallionwater,
+        "Kak Anju as Adult": () => isAdult(),
+        "Kak Anju as Child": () => isChild(),
+        "Kak GS House Under Construction": () => isChild(),
+        "Kak GS Skulltula House": () => isChild(),
+        "Kak GS Guards House": () => isChild(),
+        "Kak GS Tree": () => isChild(),
         "Kak GS Watchtower": "
             isChild() and (Slingshot or has_bombchus or 
                 (logic_kakariko_tower_gs and (Sticks or Kokiri_Sword) and
-                can_take_damage)) and at_night",
-        "Bug Rock": "has_bottle"
+                can_take_damage)) and at_night"
     },
     exits: {
         "Hyrule Field": () => true,
@@ -852,8 +874,8 @@ const regions: Region[] = [
         "Kak Shooting Gallery": "isAdult() and at_day",
         "Bottom of the Well": "
             'Drain Well' and (isChild() or shuffle_dungeon_entrances)",
-        "Kak Potion Shop Front": "isChild() or at_day",
-        "Kak Redead Grotto": "can_open_bomb_grotto",
+        "Kak Potion Shop Front": () => true,
+        "Kak Redead Grotto": () => canOpenBombGrotto(),
         "Kak Impas Ledge": "
             (isChild() and at_day) or (isAdult() and logic_visible_collisions)",
         "Kak Impas Rooftop": "
@@ -904,7 +926,7 @@ const regions: Region[] = [
     exits: {
         "Kakariko Village": () => true,
         "Kak Open Grotto": () => true,
-        "Kak Odd Medicine Building": "isAdult()",
+        "Kak Odd Medicine Building": () => isAdult(),
         "Kak Potion Shop Back": "isAdult() and at_day"
     }
 },
@@ -961,7 +983,7 @@ const regions: Region[] = [
     regionName: "Kak Windmill",
     scene: "Windmill and Dampes Grave",
     events: {
-        "Drain Well": "isChild() and can_play(Song_of_Storms)" // COME BACK - Make this a check to get to BotW
+        "Drain Well": "isChild() and (inventory.storms && inventory.ocarina)" // COME BACK - Make this a check to get to BotW
     },
     locations: {
         "Kak Windmill Freestanding PoH": "
@@ -1101,7 +1123,7 @@ const regions: Region[] = [
     },
     exits: {
         "Graveyard": () => true,
-        "Kak Windmill": "isAdult() and can_play(Song_of_Time)"
+        "Kak Windmill": "isAdult() and (inventory.time && inventory.ocarina)"
     }
 },
 {
@@ -1114,15 +1136,9 @@ const regions: Region[] = [
 {
     regionName: "Graveyard Warp Pad Region",
     scene: "Graveyard",
-    locations: {
-        "Graveyard Gossip Stone": () => true,
-        "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and has_bottle"
-    },
     exits: {
         "Graveyard": () => true,
-        "Shadow Temple Entryway": "
-            can_use(Dins_Fire) or
-            (logic_shadow_fire_arrow_entry and can_use(Fire_Arrows))"
+        "Shadow Temple Entryway": () => (inventory.dins && inventory.magic) || (logic_shadow_fire_arrow_entry && isAdult() && inventory.bow && inventory.arrowsfire && inventory.magic)
     }
 },
 {
@@ -1155,10 +1171,7 @@ const regions: Region[] = [
             (can_use(Megaton_Hammer) or
                 (logic_trail_gs_lower_hookshot and can_use(Hookshot)) or
                 (logic_trail_gs_lower_hovers and can_use(Hover_Boots)) or
-                (logic_trail_gs_lower_bean and here(can_plant_bean and (hasExplosives() or Progressive_Strength_Upgrade))))",
-        "Bean Plant Fairy": "
-            can_plant_bean and can_play(Song_of_Storms) and has_bottle and
-            (hasExplosives() or Progressive_Strength_Upgrade)"
+                (logic_trail_gs_lower_bean and here(can_plant_bean and (hasExplosives() or Progressive_Strength_Upgrade))))"
     },
     exits: {
         "Kak Behind Gate": () => true,
@@ -1185,18 +1198,14 @@ const regions: Region[] = [
             (Claim_Check or 
                 (guarantee_trade_path and 
                 ('Eyedrops Access' or (Eyedrops and disable_trade_revert))))",
-        "DMT GS Falling Rocks Path": "
-            isAdult() and (can_use(Megaton_Hammer) or logic_trail_gs_upper) and at_night",
-        "DMT Gossip Stone": () => true,
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Bug Rock": "isChild() and has_bottle"
+        "DMT GS Falling Rocks Path": () => isAdult() && (inventory.hammer || logic_trail_gs_upper)
     },
     exits: {
         "Death Mountain": () => true,
         "DMC Upper Local": () => true,
-        "DMT Owl Flight": "isChild()",
-        "DMT Cow Grotto": "here(canBlastOrSmash())",
-        "DMT Great Fairy Fountain": "here(canBlastOrSmash())"
+        "DMT Owl Flight": () => isChild(),
+        "DMT Cow Grotto": () => canBlastOrSmash(),
+        "DMT Great Fairy Fountain": () => canBlastOrSmash()
     }
 },
 {
@@ -1210,44 +1219,23 @@ const regions: Region[] = [
     regionName: "Goron City",
     scene: "Goron City",
     events: {
-        "Goron City Child Fire": "isChild() and can_use(Dins_Fire)",
-        "GC Woods Warp Open": "
-            canBlastOrSmash() or can_use(Dins_Fire) or can_use(Bow) or 
-            Progressive_Strength_Upgrade or 'Goron City Child Fire'",
-        "Stop GC Rolling Goron as Adult": "
-            isAdult() and 
-            (Progressive_Strength_Upgrade or hasExplosives() or Bow or
-                (logic_link_goron_dins and can_use(Dins_Fire)))"
+        "Goron City Child Fire": isChild() && inventory.dins && inventory.magic,
+        "GC Woods Warp Open": () => canBlastOrSmash() || (inventory.dins && inventory.magic) || (isAdult() && inventory.bow) || inventory.strength || or can_use(Dins_Fire) or can_use(Bow) or 
+            Progressive_Strength_Upgrade or 'Goron City Child Fire', // COME BACK - any reason to specify child fire?
+        "Stop GC Rolling Goron as Adult": () => isAdult() && (inventory.strength || hasExplosives() || inventory.bow || (logic_link_goron_dins && inventory.dins && inventory.magic))
     },
     locations: {
-        "GC Maze Left Chest": "
-            can_use(Megaton_Hammer) or can_use(Silver_Gauntlets) or
-            (logic_goron_city_leftmost and hasExplosives() and can_use(Hover_Boots))",
-        "GC Maze Center Chest": "
-            canBlastOrSmash() or can_use(Silver_Gauntlets)",
-        "GC Maze Right Chest": "
-            canBlastOrSmash() or can_use(Silver_Gauntlets)",
+        "GC Maze Left Chest": () => isAdult() && (inventory.hammer || inventory.strength > 1 || (logic_goron_city_leftmost && hasExplosives() && inventory.bootshover)),
+        "GC Maze Center Chest": () => canBlastOrSmash() || (isAdult() && inventory.strength > 1),
+        "GC Maze Right Chest": () => canBlastOrSmash() || (isAdult() && inventory.strength > 1),
         "GC Pot Freestanding PoH": "
             isChild() and 'Goron City Child Fire' and
             (Bombs or (Progressive_Strength_Upgrade and logic_goron_city_pot_with_strength) or (has_bombchus and logic_goron_city_pot))",
-        "GC Rolling Goron as Child": "
-            isChild() and 
-            (hasExplosives() or (Progressive_Strength_Upgrade and logic_child_rolling_with_strength))",
-        "GC Medigoron": "
-            isAdult() and Progressive_Wallet and 
-            (canBlastOrSmash() or Progressive_Strength_Upgrade)",
+        "GC Rolling Goron as Child": () => isChild() && (hasExplosives() || (inventory.strength && logic_child_rolling_with_strength)),
+        "GC Medigoron": () => isAdult() && inventory.wallet > 1 && (canBlastOrSmash() || inventory.strength),
         "GC Rolling Goron as Adult": "'Stop GC Rolling Goron as Adult'",
-        "GC GS Boulder Maze": "isChild() and hasExplosives()",
-        "GC GS Center Platform": "isAdult()",
-        "GC Maze Gossip Stone": "
-            canBlastOrSmash() or can_use(Silver_Gauntlets)",
-        "GC Medigoron Gossip Stone": "
-            canBlastOrSmash() or Progressive_Strength_Upgrade",
-        "Gossip Stone Fairy": "
-            can_summon_gossip_fairy_without_suns and has_bottle and
-            (canBlastOrSmash() or Progressive_Strength_Upgrade)",
-        "Bug Rock": "(canBlastOrSmash() or can_use(Silver_Gauntlets)) and has_bottle",
-        "Stick Pot": "isChild()"
+        "GC GS Boulder Maze": () => isChild() && hasExplosives(),
+        "GC GS Center Platform": () => isAdult()
     },
     exits: {
         "Death Mountain": () => true,
@@ -1257,10 +1245,10 @@ const regions: Region[] = [
             (isChild() and (hasExplosives() or Progressive_Strength_Upgrade or 'Goron City Child Fire'))",
         "GC Darunias Chamber": "
             (isAdult() and 'Stop GC Rolling Goron as Adult') or
-            (isChild() and can_play(Zeldas_Lullaby))",
+            (isChild() and (inventory.lullaby && inventory.ocarina)),
         "GC Grotto Platform": "
             isAdult() and 
-            ((can_play(Song_of_Time) and 
+            (((inventory.time && inventory.ocarina) and 
                     ((damage_multiplier != 'ohko' and damage_multiplier != 'quadruple') or 
                         can_use(Goron_Tunic) or can_use(Longshot) or can_use(Nayrus_Love))) or 
                 (can_use(Hookshot) and
@@ -1273,10 +1261,10 @@ const regions: Region[] = [
     regionName: "GC Woods Warp",
     scene: "Goron City",
     events: {
-        "GC Woods Warp Open": "canBlastOrSmash() or can_use(Dins_Fire)"
+        "GC Woods Warp Open": () => canBlastOrSmash() || (inventory.dins && inventory.magic)
     },
     exits: {
-        "Goron City": "can_leave_forest and 'GC Woods Warp Open'",
+        "Goron City": () => canLeaveForest() &&  "can_leave_forest and 'GC Woods Warp Open'",
         "Lost Woods": () => true
     }
 },
@@ -1284,14 +1272,14 @@ const regions: Region[] = [
     regionName: "GC Darunias Chamber",
     scene: "Goron City",
     events: {
-        "Goron City Child Fire": "can_use(Sticks)"
+        "Goron City Child Fire": () => isChild() && inventory.sticks
     },
     locations: {
-        "GC Darunias Joy": "isChild() and can_play(Sarias_Song)"
+        "GC Darunias Joy": () => isChild() && (inventory.sarias && inventory.ocarina)
     },
     exits: {
         "Goron City": () => true,
-        "DMC Lower Local": "isAdult()"
+        "DMC Lower Local": () => isAdult()
     }
 },
 {
@@ -1302,7 +1290,7 @@ const regions: Region[] = [
         "Goron City": "
             (damage_multiplier != 'ohko' and damage_multiplier != 'quadruple') or 
             can_use(Goron_Tunic) or can_use(Nayrus_Love) or 
-            (can_play(Song_of_Time) and can_use(Longshot))"
+            ((inventory.time && inventory.ocarina) and can_use(Longshot))"
     }
 },
 {
@@ -1336,10 +1324,7 @@ const regions: Region[] = [
     scene: "Death Mountain Crater",
     locations: {
         "DMC Wall Freestanding PoH": () => true,
-        "DMC GS Crate": "isChild() and canChildAttack()",
-        "DMC Gossip Stone": "hasExplosives()",
-        "Gossip Stone Fairy": "
-            hasExplosives() and can_summon_gossip_fairy_without_suns and has_bottle"
+        "DMC GS Crate": () => isChild() and canChildAttack()
     },
     exits: {
         "DMC Upper Nearby": () => true,
@@ -1354,23 +1339,21 @@ const regions: Region[] = [
     regionName: "DMC Ladder Area Nearby",
     scene: "Death Mountain Crater",
     locations: {
-        "DMC Deku Scrub": "isChild() and can_stun_deku"
+        "DMC Deku Scrub": () => isChild() && canStunDeku()
     },
     exits: {
-        "DMC Upper Nearby": "isAdult()",
-        "DMC Lower Nearby": "
-            can_use(Hover_Boots) or
-            (logic_crater_upper_to_lower and can_use(Megaton_Hammer))"
+        "DMC Upper Nearby": () => isAdult(),
+        "DMC Lower Nearby": () => isAdult() && (inventory.bootshover || (logic_crater_upper_to_lower && inventory.hammer))
     }
 },
 {
     regionName: "DMC Lower Nearby",
     scene: "Death Mountain Crater",
     exits: {
-        "DMC Lower Local": "can_use(Goron_Tunic)",
+        "DMC Lower Local": () => isAdult() && inventory.tunicgoron,
         "GC Darunias Chamber": () => true,
-        "DMC Great Fairy Fountain": "can_use(Megaton_Hammer)",
-        "DMC Hammer Grotto": "can_use(Megaton_Hammer)"
+        "DMC Great Fairy Fountain": () => isAdult() && inventory.hammer,
+        "DMC Hammer Grotto": () => isAdult() && inventory.hammer
     }
 },
 {
@@ -1379,10 +1362,8 @@ const regions: Region[] = [
     exits: {
         "DMC Lower Nearby": () => true,
         "DMC Ladder Area Nearby": () => true,
-        "DMC Central Nearby": "can_use(Hover_Boots) or can_use(Hookshot)",
-        "DMC Fire Temple Entrance": "
-            (can_use(Hover_Boots) or can_use(Hookshot)) and
-            (logic_fewer_tunic_requirements or can_use(Goron_Tunic))"
+        "DMC Central Nearby": () => isAdult() && (inventory.bootshover || inventory.shot),
+        "DMC Fire Temple Entrance": () => isAdult() && (inventory.bootshover || inventory.shot) && (logic_fewer_tunic_requirements || inventory.tunicgoron)
     }
 },
 {
@@ -1393,18 +1374,17 @@ const regions: Region[] = [
             isAdult() and
             (here(can_plant_bean) or 
                 (logic_crater_bean_poh_with_hovers and Hover_Boots))",
-        "Sheik in Crater": "isAdult()"
+        "Sheik in Crater": () => isAdult()
     },
     exits: {
-        "DMC Central Local": "can_use(Goron_Tunic)"
+        "DMC Central Local": () => isAdult() && inventory.tunicgoron
     }
 },
 {
     regionName: "DMC Central Local",
     scene: "Death Mountain Crater",
     locations: {
-        "DMC GS Bean Patch": "canPlantBugs() and canChildAttack()",
-        "Bean Plant Fairy": "can_plant_bean and can_play(Song_of_Storms) and has_bottle"
+        "DMC GS Bean Patch": () => canPlantBugs() and canChildAttack(),
     },
     exits: {
         "DMC Central Nearby": () => true,
@@ -1422,7 +1402,7 @@ const regions: Region[] = [
     scene: "Death Mountain Crater",
     exits: {
         "Fire Temple Lower": () => true,
-        "DMC Central Nearby": "can_use(Goron_Tunic)"
+        "DMC Central Nearby": () => isAdult() && inventory.tunicgoron
     }
 },
 {
@@ -1450,10 +1430,10 @@ const regions: Region[] = [
     scene: "Zora River",
     timePasses: true,
     locations: {
-        "ZR GS Tree": "isChild() and canChildAttack()"
+        "ZR GS Tree": () => isChild() && canChildAttack()
     },
     exits: {
-        "Zora River": "isAdult() or hasExplosives()",
+        "Zora River": () => isAdult() || hasExplosives(),
         "Hyrule Field": () => true
     }
 },
@@ -1462,27 +1442,14 @@ const regions: Region[] = [
     scene: "Zora River",
     timePasses: true,
     locations: {
-        "ZR Magic Bean Salesman": "isChild()",
-        "ZR Frogs Ocarina Game": "
-            isChild() and can_play(Zeldas_Lullaby) and can_play(Sarias_Song) and 
-            can_play(Suns_Song) and can_play(Eponas_Song) and 
-            can_play(Song_of_Time) and can_play(Song_of_Storms)",
-        "ZR Frogs in the Rain": "isChild() and can_play(Song_of_Storms)",
-        "ZR Near Open Grotto Freestanding PoH": "
-            isChild() or can_use(Hover_Boots) or (isAdult() and logic_zora_river_lower)",
-        "ZR Near Domain Freestanding PoH": "
-            isChild() or can_use(Hover_Boots) or (isAdult() and logic_zora_river_upper)",
-        "ZR GS Ladder": "isChild() and at_night and canChildAttack()",
-        "ZR GS Near Raised Grottos": "can_use(Hookshot) and at_night",
-        "ZR GS Above Bridge": "can_use(Hookshot) and at_night",
-        "ZR Near Grottos Gossip Stone": () => true,
-        "ZR Near Domain Gossip Stone": () => true,
-        "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle",
-        "Bean Plant Fairy": "can_plant_bean and can_play(Song_of_Storms) and has_bottle",
-        "Butterfly Fairy": "can_use(Sticks) and has_bottle",
-        "Bug Shrub": "
-            (isChild() or can_use(Hover_Boots) or (isAdult() and logic_zora_river_lower)) and
-            can_cut_shrubs and has_bottle"
+        "ZR Magic Bean Salesman": () => isChild(),
+        "ZR Frogs Ocarina Game": () => isChild() && inventory.lullaby && inventory.sarias && inventory.suns && inventory.eponas && inventory.time && inventory storms && inventory.ocarina,
+        "ZR Frogs in the Rain": () => isChild() && (inventory.storms && inventory.ocarina),
+        "ZR Near Open Grotto Freestanding PoH": () => isChild() || (isAdult() && (inventory.bootshover || logic_zora_river_lower)),
+        "ZR Near Domain Freestanding PoH": () => isChild() || (isAdult() && (inventory.bootshover || logic_zora_river_upper)),
+        "ZR GS Ladder": () => isChild() && canChildAttack(),
+        "ZR GS Near Raised Grottos": () => isAdult() && inventory.shot,
+        "ZR GS Above Bridge": () => isAdult() && inventory.shot
     },
     exits: {
         "ZR Front": () => true,
@@ -1490,7 +1457,7 @@ const regions: Region[] = [
         "Lost Woods": "can_dive or can_use(Iron_Boots)",
         "ZR Storms Grotto": "canOpenStormGrotto()",
         "ZR Behind Waterfall": "
-            can_play(Zeldas_Lullaby) or
+            (inventory.lullaby && inventory.ocarina) or
             (can_use(Hover_Boots) and logic_zora_with_hovers) or
             (isChild() and logic_zora_with_cucco)"
     }
@@ -1520,28 +1487,20 @@ const regions: Region[] = [
             (Eyedrops or Eyeball_Frog or Prescription or 'Prescription Access')"
     },
     locations: {
-        "ZD Diving Minigame": "isChild()",
-        "ZD Chest": "can_use(Sticks)",
-        "Deliver Rutos Letter": "
-            isChild() and Rutos_Letter and zora_fountain != 'open'",
+        "ZD Diving Minigame": () => isChild(),
+        "ZD Chest": () => isChild() && inventory.sticks,
+        "Deliver Rutos Letter": inventory.rutos && isChild() && zora_fountain != 'open'
         "ZD King Zora Thawed": "'King Zora Thawed'",
-        "ZD GS Frozen Waterfall": "
-            isAdult() and at_night and
-            (Progressive_Hookshot or Bow or Magic_Meter or logic_domain_gs)",
-        "ZD Gossip Stone": () => true,
-        "Gossip Stone Fairy": "can_summon_gossip_fairy_without_suns and has_bottle",
-        "Fish Group": "isChild() and has_bottle",
-        "Stick Pot": "isChild()",
-        "Nut Pot": () => true
+        "ZD GS Frozen Waterfall": () => isAdult() || (inventory.shot || inventory.bow || inventory.magic || logic_domain_gs)
     },
     exits: {
         "ZR Behind Waterfall": () => true,
-        "Lake Hylia": "isChild() and can_dive",
+        "Lake Hylia": () => isChild() and inventory.scale,
         "ZD Behind King Zora": "
             Deliver_Letter or zora_fountain == 'open' or
             (zora_fountain == 'adult' and isAdult())",
-        "ZD Shop": "isChild() or Blue_Fire",
-        "ZD Storms Grotto": "canOpenStormGrotto()"
+        "ZD Shop": () => isChild() || inventory.bluefire Blue_Fire // COME BACK
+        "ZD Storms Grotto": () => canOpenStormGrotto()
     }
 },
 {
@@ -1565,10 +1524,10 @@ const regions: Region[] = [
     regionName: "Zoras Fountain",
     scene: "Zoras Fountain",
     locations: {
-        "ZF Iceberg Freestanding PoH": "isAdult()",
+        "ZF Iceberg Freestanding PoH": () => isAdult(),
         "ZF Bottom Freestanding PoH": "
             isAdult() and Iron_Boots and (logic_fewer_tunic_requirements or can_use(Zora_Tunic))",
-        "ZF GS Tree": "isChild()",
+        "ZF GS Tree": () => isChild(),
         "ZF GS Above the Log": "can_use(Boomerang) and at_night",
         "ZF GS Hidden Cave": "
             can_use(Silver_Gauntlets) and canBlastOrSmash() and 
@@ -1577,8 +1536,8 @@ const regions: Region[] = [
     exits: {
         "ZD Behind King Zora": () => true,
         "Jabu Jabus Belly Beginning": "isChild() and Fish",
-        "ZF Ice Ledge": "isAdult()",
-        "ZF Great Fairy Fountain": "hasExplosives()"
+        "ZF Ice Ledge": () => isAdult(),
+        "ZF Great Fairy Fountain": () => hasExplosives()
     }
 },
 {
@@ -1673,7 +1632,7 @@ const regions: Region[] = [
 },
 {
     regionName: "Ganons Castle Tower",
-    "dungeon": "Ganons Castle",
+    dungeon: "Ganons Castle",
     locations: {
         "Ganons Tower Boss Key Chest": () => true,
         "Ganon": () => inventory.bosskeyganon && inventory.bow && inventory.arrowslight
@@ -1987,238 +1946,232 @@ const regions: Region[] = [
 },
 // Bottom of the Well.json
 {
-        "region_name": "Bottom of the Well",
-        "dungeon": "Bottom of the Well",
-        "exits": {
-            "Kakariko Village": "True",
-            "Bottom of the Well Main Area" : "is_child and (can_child_attack or Nuts)"
+        regionName: "Bottom of the Well",
+        dungeon: "Bottom of the Well",
+        exits: {
+            "Kakariko Village": () => true,
+            "Bottom of the Well Main Area" : () => canChildAttack() || inventory.nuts
         }
     },
     {
-        "region_name": "Bottom of the Well Main Area",
-        "dungeon": "Bottom of the Well",
-        "locations": {
-            "Bottom of the Well Front Left Fake Wall Chest": "logic_lens_botw or can_use(Lens_of_Truth)",
-            "Bottom of the Well Front Center Bombable Chest": "has_explosives",
-            "Bottom of the Well Right Bottom Fake Wall Chest": "logic_lens_botw or can_use(Lens_of_Truth)",
-            "Bottom of the Well Compass Chest": "logic_lens_botw or can_use(Lens_of_Truth)",
-            "Bottom of the Well Center Skulltula Chest": "logic_lens_botw or can_use(Lens_of_Truth)",
-            "Bottom of the Well Back Left Bombable Chest": "has_explosives and (logic_lens_botw or can_use(Lens_of_Truth))",
-            "Bottom of the Well Freestanding Key": "Sticks or can_use(Dins_Fire)",
-            "Bottom of the Well Lens of Truth Chest": "
-                can_play(Zeldas_Lullaby) and 
-                (Kokiri_Sword or (Sticks and logic_child_deadhand))", 
-                #Sword not strictly necessary but frankly being forced to do this with sticks isn't fair
-            "Bottom of the Well Invisible Chest": "can_play(Zeldas_Lullaby) and (logic_lens_botw or can_use(Lens_of_Truth))",
-            "Bottom of the Well Underwater Front Chest": "can_play(Zeldas_Lullaby)",
-            "Bottom of the Well Underwater Left Chest": "can_play(Zeldas_Lullaby)",
+        regionName: "Bottom of the Well Main Area",
+        dungeon: "Bottom of the Well",
+        locations: {
+            "Bottom of the Well Front Left Fake Wall Chest": logic_lens_botw || (inventory.lens && inventory.magic),
+            "Bottom of the Well Front Center Bombable Chest": () => hasExplosives(),
+            "Bottom of the Well Right Bottom Fake Wall Chest": () => logic_lens_botw || (inventory.lens && inventory.magic),
+            "Bottom of the Well Compass Chest": () => logic_lens_botw || (inventory.lens && inventory.magic),
+            "Bottom of the Well Center Skulltula Chest": () => logic_lens_botw || (inventory.lens && inventory.magic),
+            "Bottom of the Well Back Left Bombable Chest": () => hasExplosives() && (logic_lens_botw || (inventory.lens && inventory magic)),
+            "Bottom of the Well Freestanding Key": () => inventory.sticks || (inventory.dins && inventory.magic),
+            "Bottom of the Well Lens of Truth Chest": () => (inventory.lullaby && inventory.ocarina) && (inventory.swordkokiri || (inventory.sticks && logic_child_deadhand)),
+            "Bottom of the Well Invisible Chest": () => (inventory.lullaby && inventory.ocarina) && (logic_lens_botw || (inventory.lens && inventory.magic)),
+            "Bottom of the Well Underwater Front Chest": () => (inventory.lullaby && inventory.ocarina),
+            "Bottom of the Well Underwater Left Chest": () => (inventory.lullaby && inventory.ocarina),
             "Bottom of the Well Map Chest": "
-                has_explosives or 
-                ((((Small_Key_Bottom_of_the_Well, 3) and (logic_lens_botw or can_use(Lens_of_Truth))) or 
+                hasExplosives() or 
+                ((((Small_Key_Bottom_of_the_Well, 3) and (logic_lens_botw or (inventory.lens && inventory.magic))) or 
                     can_use(Dins_Fire) or (logic_botw_basement and Sticks)) and 
                 Progressive_Strength_Upgrade)",
             "Bottom of the Well Fire Keese Chest": "
-                (Small_Key_Bottom_of_the_Well, 3) and (logic_lens_botw or can_use(Lens_of_Truth))", #These pits are really unfair.
+                (Small_Key_Bottom_of_the_Well, 3) and (logic_lens_botw or (inventory.lens && inventory.magic))", #These pits are really unfair.
             "Bottom of the Well Like Like Chest": "
-                (Small_Key_Bottom_of_the_Well, 3) and (logic_lens_botw or can_use(Lens_of_Truth))",
+                (Small_Key_Bottom_of_the_Well, 3) and (logic_lens_botw or (inventory.lens && inventory.magic))",
             "Bottom of the Well GS West Inner Room": "
-                Boomerang and (logic_lens_botw or can_use(Lens_of_Truth)) and 
+                Boomerang and (logic_lens_botw or (inventory.lens && inventory.magic)) and 
                 (Small_Key_Bottom_of_the_Well, 3)",
             "Bottom of the Well GS East Inner Room": "
-                Boomerang and (logic_lens_botw or can_use(Lens_of_Truth)) and 
+                Boomerang and (logic_lens_botw or (inventory.lens && inventory.magic)) and 
                 (Small_Key_Bottom_of_the_Well, 3)",
             "Bottom of the Well GS Like Like Cage": "
-                Boomerang and (logic_lens_botw or can_use(Lens_of_Truth)) and
+                Boomerang and (logic_lens_botw or (inventory.lens && inventory.magic)) and
                 (Small_Key_Bottom_of_the_Well, 3)",
-            "Stick Pot": "True",
-            "Nut Pot": "True"
+            "Stick Pot": () => true,
+            "Nut Pot": () => true
         },
-        "exits": {
-            "Bottom of the Well" : "True"
+        exits: {
+            "Bottom of the Well" : () => true
         }
     },
 // Deku Tree.json
     {
-        "region_name": "Deku Tree Lobby",
-        "dungeon": "Deku Tree",
-        "locations": {
-            "Deku Tree Map Chest": "True",
-            "Deku Tree Compass Chest": "True",
-            "Deku Tree Compass Room Side Chest": "True",
-            "Deku Tree Basement Chest": "is_adult or can_child_attack or Nuts",
-            "Deku Tree GS Compass Room": "is_adult or can_child_attack",
+        regionName: "Deku Tree Lobby",
+        dungeon: "Deku Tree",
+        locations: {
+            "Deku Tree Map Chest": () => true,
+            "Deku Tree Compass Chest": () => true,
+            "Deku Tree Compass Room Side Chest": () => true,
+            "Deku Tree Basement Chest": "isAdult() or can_child_attack or Nuts",
+            "Deku Tree GS Compass Room": "isAdult() or can_child_attack",
             "Deku Tree GS Basement Vines": "
                 can_use_projectile or can_use(Dins_Fire) or
-                (logic_deku_basement_gs and (is_adult or Sticks or Kokiri_Sword))",
-            "Deku Tree GS Basement Gate": "is_adult or can_child_attack",
-            "Deku Baba Sticks": "is_adult or Kokiri_Sword or Boomerang",
+                (logic_deku_basement_gs and (isAdult() or Sticks or Kokiri_Sword))",
+            "Deku Tree GS Basement Gate": "isAdult() or can_child_attack",
+            "Deku Baba Sticks": "isAdult() or Kokiri_Sword or Boomerang",
             "Deku Baba Nuts": "
-                is_adult or Slingshot or Sticks or 
-                has_explosives or Kokiri_Sword or can_use(Dins_Fire)"
+                isAdult() or Slingshot or Sticks or 
+                hasExplosives() or Kokiri_Sword or can_use(Dins_Fire)"
         },
-        "exits": {
-            "KF Outside Deku Tree": "True",
+        exits: {
+            "KF Outside Deku Tree": () => true,
             "Deku Tree Slingshot Room": "here(has_shield)",
             "Deku Tree Basement Backroom": "
                 (here(has_fire_source_with_torch or can_use(Bow)) and
                     here(can_use(Slingshot) or can_use(Bow))) or
-                (is_child and (logic_deku_b1_skip or here(is_adult)))",
+                (isChild() and (logic_deku_b1_skip or here(isAdult())))",
             "Deku Tree Boss Room": "
                 here(has_fire_source_with_torch or
                      (logic_deku_b1_webs_with_bow and can_use(Bow))) and
-                (logic_deku_b1_skip or here(is_adult or can_use(Slingshot)))"
+                (logic_deku_b1_skip or here(isAdult() or can_use(Slingshot)))"
         }
     },
     {
-        "region_name": "Deku Tree Slingshot Room",
-        "dungeon": "Deku Tree",
-        "locations": {
-            "Deku Tree Slingshot Chest": "True",
-            "Deku Tree Slingshot Room Side Chest": "True"
+        regionName: "Deku Tree Slingshot Room",
+        dungeon: "Deku Tree",
+        locations: {
+            "Deku Tree Slingshot Chest": () => true,
+            "Deku Tree Slingshot Room Side Chest": () => true
         },
-        "exits": {
-            "Deku Tree Lobby": "True"
+        exits: {
+            "Deku Tree Lobby": () => true
         }
     },
     {
-        "region_name": "Deku Tree Basement Backroom",
-        "dungeon": "Deku Tree",
-        "locations": {
+        regionName: "Deku Tree Basement Backroom",
+        dungeon: "Deku Tree",
+        locations: {
             "Deku Tree GS Basement Back Room": "
                 here(has_fire_source_with_torch or can_use(Bow)) and
                 here(can_blast_or_smash) and
                 (can_use(Boomerang) or can_use(Hookshot))"
         },
-        "exits": {
-            "Deku Tree Lobby": "True"
+        exits: {
+            "Deku Tree Lobby": () => true
         }
     },
     {
-        "region_name": "Deku Tree Boss Room",
-        "dungeon": "Deku Tree",
-        "events": {
+        regionName: "Deku Tree Boss Room",
+        dungeon: "Deku Tree",
+        events: {
             "Deku Tree Clear": "
-                here(has_shield) and (is_adult or Kokiri_Sword or Sticks)"
+                here(has_shield) and (isAdult() or Kokiri_Sword or Sticks)"
         },
-        "locations": {
+        locations: {
             "Deku Tree Queen Gohma Heart": "
-                here(has_shield) and (is_adult or Kokiri_Sword or Sticks)",
+                here(has_shield) and (isAdult() or Kokiri_Sword or Sticks)",
             "Queen Gohma": "
-                here(has_shield) and (is_adult or Kokiri_Sword or Sticks)"
+                here(has_shield) and (isAdult() or Kokiri_Sword or Sticks)"
         },
-        "exits": {
-            "Deku Tree Lobby": "True"
+        exits: {
+            "Deku Tree Lobby": () => true
         }
     },
 // Dodongos Cavern.json
     {
-        "region_name": "Dodongos Cavern Beginning",
-        "dungeon": "Dodongos Cavern",
-        "exits": {
-            "Death Mountain": "True",
+        regionName: "Dodongos Cavern Beginning",
+        dungeon: "Dodongos Cavern",
+        exits: {
+            "Death Mountain": () => true,
             "Dodongos Cavern Lobby": "
                 here(can_blast_or_smash or Progressive_Strength_Upgrade)"
         }
     },
     {
-        "region_name": "Dodongos Cavern Lobby",
-        "dungeon": "Dodongos Cavern",
-        "locations": {
-            "Dodongos Cavern Map Chest": "True",
+        regionName: "Dodongos Cavern Lobby",
+        dungeon: "Dodongos Cavern",
+        locations: {
+            "Dodongos Cavern Map Chest": () => true,
             "Dodongos Cavern GS Side Room Near Lower Lizalfos": "
-                has_explosives or is_adult or Slingshot or 
+                hasExplosives() or isAdult() or Slingshot or 
                 Boomerang or Sticks or Kokiri_Sword",
             "Dodongos Cavern GS Scarecrow": "
                 can_use(Scarecrow) or can_use(Longshot) or 
-                (logic_dc_scarecrow_gs and (is_adult or can_child_attack))",
+                (logic_dc_scarecrow_gs and (isAdult() or can_child_attack))",
             "Dodongos Cavern Deku Scrub Side Room Near Dodongos": "
-                is_adult or Slingshot or Sticks or 
-                has_explosives or Kokiri_Sword",
-            "Dodongos Cavern Deku Scrub Lobby": "True",
-            "Dodongos Cavern Gossip Stone": "True",
-            "Gossip Stone Fairy": "can_summon_gossip_fairy and has_bottle"
+                isAdult() or Slingshot or Sticks or 
+                hasExplosives() or Kokiri_Sword",
+            "Dodongos Cavern Deku Scrub Lobby": () => true,
         },
-        "exits": {
-            "Dodongos Cavern Beginning": "True",
+        exits: {
+            "Dodongos Cavern Beginning": () => true,
             "Dodongos Cavern Staircase Room": "
-                here(is_adult or Sticks or
-                    (can_use(Dins_Fire) and (Slingshot or has_explosives or Kokiri_Sword)))",
+                here(isAdult() or Sticks or
+                    (can_use(Dins_Fire) and (Slingshot or hasExplosives() or Kokiri_Sword)))",
             "Dodongos Cavern Far Bridge": "at('Dodongos Cavern Far Bridge', True)"
         }
     },
     {
-        "region_name": "Dodongos Cavern Staircase Room",
-        "dungeon": "Dodongos Cavern",
-        "locations": {
-            "Dodongos Cavern Compass Chest": "True",
+        regionName: "Dodongos Cavern Staircase Room",
+        dungeon: "Dodongos Cavern",
+        locations: {
+            "Dodongos Cavern Compass Chest": () => true,
             "Dodongos Cavern GS Vines Above Stairs": "
-                has_explosives or Progressive_Strength_Upgrade or can_use(Dins_Fire) or
+                hasExplosives() or Progressive_Strength_Upgrade or can_use(Dins_Fire) or
                 (logic_dc_staircase and can_use(Bow)) or
                 (logic_dc_vines_gs and can_use(Longshot))"
         },
-        "exits": {
-            "Dodongos Cavern Lobby": "True",
+        exits: {
+            "Dodongos Cavern Lobby": () => true,
             "Dodongos Cavern Climb": "
-                has_explosives or Progressive_Strength_Upgrade or 
+                hasExplosives() or Progressive_Strength_Upgrade or 
                     can_use(Dins_Fire) or (logic_dc_staircase and can_use(Bow))"
         }
     },
     {
-        "region_name": "Dodongos Cavern Climb",
-        "dungeon": "Dodongos Cavern",
-        "locations": {
-            "Dodongos Cavern Bomb Flower Platform Chest": "True",
+        regionName: "Dodongos Cavern Climb",
+        dungeon: "Dodongos Cavern",
+        locations: {
+            "Dodongos Cavern Bomb Flower Platform Chest": () => true,
             "Dodongos Cavern Deku Scrub Near Bomb Bag Right": "
                 can_blast_or_smash or
-                (logic_dc_scrub_room and is_adult and Progressive_Strength_Upgrade)",
+                (logic_dc_scrub_room and isAdult() and Progressive_Strength_Upgrade)",
             "Dodongos Cavern Deku Scrub Near Bomb Bag Left": "
                 can_blast_or_smash or
-                (logic_dc_scrub_room and is_adult and Progressive_Strength_Upgrade)"
+                (logic_dc_scrub_room and isAdult() and Progressive_Strength_Upgrade)"
         },
-        "exits": {
-            "Dodongos Cavern Lobby": "True",
+        exits: {
+            "Dodongos Cavern Lobby": () => true,
             "Dodongos Cavern Far Bridge": "
-                (is_child and (Slingshot or
-                    (logic_dc_slingshot_skip and (Sticks or has_explosives or Kokiri_Sword)))) or 
-                (is_adult and (Bow or Hover_Boots or can_use(Longshot) or logic_dc_jump))"
+                (isChild() and (Slingshot or
+                    (logic_dc_slingshot_skip and (Sticks or hasExplosives() or Kokiri_Sword)))) or 
+                (isAdult() and (Bow or Hover_Boots or can_use(Longshot) or logic_dc_jump))"
         }
     },
     {
-        "region_name": "Dodongos Cavern Far Bridge",
-        "dungeon": "Dodongos Cavern",
-        "locations": {
-            "Dodongos Cavern Bomb Bag Chest": "True",
+        regionName: "Dodongos Cavern Far Bridge",
+        dungeon: "Dodongos Cavern",
+        locations: {
+            "Dodongos Cavern Bomb Bag Chest": () => true,
             "Dodongos Cavern End of Bridge Chest": "can_blast_or_smash",
             "Dodongos Cavern GS Alcove Above Stairs": "can_use(Hookshot) or can_use(Boomerang)"
         },
-        "exits": {
-            "Dodongos Cavern Boss Area": "has_explosives",
-            "Dodongos Cavern Lobby": "True"
+        exits: {
+            "Dodongos Cavern Boss Area": () => hasExplosives(),
+            "Dodongos Cavern Lobby": () => true
         }
     },
     {
-        "region_name": "Dodongos Cavern Boss Area",
-        "dungeon": "Dodongos Cavern",
-        "locations": {
-            "Dodongos Cavern Boss Room Chest": "True",
+        regionName: "Dodongos Cavern Boss Area",
+        dungeon: "Dodongos Cavern",
+        locations: {
+            "Dodongos Cavern Boss Room Chest": () => true,
             "Dodongos Cavern King Dodongo Heart": "
                 (Bombs or Progressive_Strength_Upgrade) and 
-                (is_adult or Sticks or Kokiri_Sword)",
+                (isAdult() or Sticks or Kokiri_Sword)",
             "King Dodongo": "
                 (Bombs or Progressive_Strength_Upgrade) and 
-                (is_adult or Sticks or Kokiri_Sword)",
-            "Dodongos Cavern GS Back Room": "True",
-            "Fairy Pot": "has_bottle"
+                (isAdult() or Sticks or Kokiri_Sword)",
+            "Dodongos Cavern GS Back Room": () => true
         },
-        "exits": {
-            "Dodongos Cavern Lobby": "True"
+        exits: {
+            "Dodongos Cavern Lobby": () => true
         }
     },
 // Fire Temple.json
     {
-        "region_name": "Fire Temple Lower",
-        "dungeon": "Fire Temple",
-        "locations": {
+        regionName: "Fire Temple Lower",
+        dungeon: "Fire Temple",
+        locations: {
             "Fire Temple Near Boss Chest" : "
                 logic_fewer_tunic_requirements or can_use(Goron_Tunic)",
             "Fire Temple Flare Dancer Chest": "
@@ -2228,57 +2181,54 @@ const regions: Region[] = [
             "Fire Temple Volvagia Heart": "
                 can_use(Goron_Tunic) and can_use(Megaton_Hammer) and Boss_Key_Fire_Temple and 
                 (logic_fire_boss_door_jump or Hover_Boots or
-                    at('Fire Temple Upper', can_play(Song_of_Time) or has_explosives))",
+                    at('Fire Temple Upper', (inventory.time && inventory.ocarina) or hasExplosives()))",
             "Volvagia": "
                 can_use(Goron_Tunic) and can_use(Megaton_Hammer) and Boss_Key_Fire_Temple and 
                 (logic_fire_boss_door_jump or Hover_Boots or
-                    at('Fire Temple Upper', can_play(Song_of_Time) or has_explosives))",
+                    at('Fire Temple Upper', (inventory.time && inventory.ocarina) or hasExplosives()))",
             "Fire Temple GS Boss Key Loop": "
-                ((Small_Key_Fire_Temple, 8) or not keysanity) and can_use(Megaton_Hammer)",
-            "Fairy Pot": "
-                has_bottle and (can_use(Hover_Boots) or can_use(Hookshot)) and
-                (logic_fewer_tunic_requirements or can_use(Goron_Tunic))"
+                ((Small_Key_Fire_Temple, 8) or not keysanity) and can_use(Megaton_Hammer)"
         },
-        "exits": {
-            "DMC Fire Temple Entrance": "True",
+        exits: {
+            "DMC Fire Temple Entrance": () => true,
             "Fire Temple Big Lava Room":"
                 (Small_Key_Fire_Temple, 2) and
                 (logic_fewer_tunic_requirements or can_use(Goron_Tunic))"
         }
     },
     {
-        "region_name": "Fire Temple Big Lava Room",
-        "dungeon": "Fire Temple",
-        "locations": {
-            "Fire Temple Big Lava Room Lower Open Door Chest": "True",
-            "Fire Temple Big Lava Room Blocked Door Chest": "is_adult and has_explosives",
+        regionName: "Fire Temple Big Lava Room",
+        dungeon: "Fire Temple",
+        locations: {
+            "Fire Temple Big Lava Room Lower Open Door Chest": () => true,
+            "Fire Temple Big Lava Room Blocked Door Chest": "isAdult() and hasExplosives()",
             "Fire Temple GS Song of Time Room": "
-                is_adult and (can_play(Song_of_Time) or logic_fire_song_of_time)"
+                isAdult() and ((inventory.time && inventory.ocarina) or logic_fire_song_of_time)"
         },
-        "exits": {
-            "Fire Temple Lower":  "True",
+        exits: {
+            "Fire Temple Lower":  () => true,
             "Fire Temple Middle": "
                 can_use(Goron_Tunic) and (Small_Key_Fire_Temple, 4) and
                 (Progressive_Strength_Upgrade or logic_fire_strength) and 
-                (has_explosives or Bow or Progressive_Hookshot)"
+                (hasExplosives() or Bow or Progressive_Hookshot)"
         }
     },
     {
-        "region_name": "Fire Temple Middle",
-        "dungeon": "Fire Temple",
-        "locations": {
-            "Fire Temple Boulder Maze Lower Chest": "True",
+        regionName: "Fire Temple Middle",
+        dungeon: "Fire Temple",
+        locations: {
+            "Fire Temple Boulder Maze Lower Chest": () => true,
             "Fire Temple Boulder Maze Upper Chest": "(Small_Key_Fire_Temple, 6)",
-            "Fire Temple Boulder Maze Side Room Chest": "True",
+            "Fire Temple Boulder Maze Side Room Chest": () => true,
             "Fire Temple Boulder Maze Shortcut Chest": "
-                (Small_Key_Fire_Temple, 6) and has_explosives",
+                (Small_Key_Fire_Temple, 6) and hasExplosives()",
             "Fire Temple Scarecrow Chest": "
                 (Small_Key_Fire_Temple, 6) and
                 (can_use(Scarecrow) or (logic_fire_scarecrow and can_use(Longshot)))",
             "Fire Temple Map Chest": "
                 (Small_Key_Fire_Temple, 6) or ((Small_Key_Fire_Temple, 5) and can_use(Bow))",
             "Fire Temple Compass Chest": "(Small_Key_Fire_Temple, 7)",
-            "Fire Temple GS Boulder Maze": "(Small_Key_Fire_Temple, 4) and has_explosives",
+            "Fire Temple GS Boulder Maze": "(Small_Key_Fire_Temple, 4) and hasExplosives()",
             "Fire Temple GS Scarecrow Climb": "
                 (Small_Key_Fire_Temple, 6) and
                 (can_use(Scarecrow) or (logic_fire_scarecrow and can_use(Longshot)))",
@@ -2286,7 +2236,7 @@ const regions: Region[] = [
                 (Small_Key_Fire_Temple, 6) and
                 (can_use(Scarecrow) or (logic_fire_scarecrow and can_use(Longshot)))"
         },
-        "exits": {
+        exits: {
             "Fire Temple Upper": "
                 (Small_Key_Fire_Temple, 8) or 
                 ((Small_Key_Fire_Temple, 7) and
@@ -2294,184 +2244,171 @@ const regions: Region[] = [
         }
     },
     {
-        "region_name": "Fire Temple Upper",
-        "dungeon": "Fire Temple",
-        "locations": {
+        regionName: "Fire Temple Upper",
+        dungeon: "Fire Temple",
+        locations: {
             "Fire Temple Highest Goron Chest": "
                 can_use(Megaton_Hammer) and 
-                (can_play(Song_of_Time) or (logic_rusted_switches and 
-                    (can_use(Hover_Boots) or has_explosives)))",
-            "Fire Temple Megaton Hammer Chest": "has_explosives"
+                ((inventory.time && inventory.ocarina) or (logic_rusted_switches and 
+                    (can_use(Hover_Boots) or hasExplosives())))",
+            "Fire Temple Megaton Hammer Chest": () => hasExplosives()
         }
     },
 // Forest Temple.json
     {
-        "region_name": "Forest Temple Lobby",
-        "dungeon": "Forest Temple",
-        "locations": {
-            "Forest Temple First Room Chest": "True",
-            "Forest Temple First Stalfos Chest": "is_adult or Kokiri_Sword",
+        regionName: "Forest Temple Lobby",
+        dungeon: "Forest Temple",
+        locations: {
+            "Forest Temple First Room Chest": () => true,
+            "Forest Temple First Stalfos Chest": () => true,
             "Forest Temple GS First Room": "
-                (is_adult and (Hookshot or Bow or Bombs)) or (is_child and (Boomerang or Slingshot)) or
+                (isAdult() and (Hookshot or Bow or Bombs)) or (isChild() and (Boomerang or Slingshot)) or
                 has_bombchus or can_use(Dins_Fire) or (logic_forest_first_gs and (Bombs or
                     (can_jumpslash and (damage_multiplier != 'ohko' or Fairy or can_use(Nayrus_Love)))))",
-            "Forest Temple GS Lobby": "can_use(Hookshot) or can_use(Boomerang)",
-            "Fairy Pot": "has_bottle and (is_adult or can_child_attack or Nuts)"
+            "Forest Temple GS Lobby": () => inventory.shot
         },
-        "exits": {
-            "SFM Forest Temple Entrance Ledge": "True",
-            "Forest Temple NW Outdoors": "can_play(Song_of_Time) or is_child",
-            "Forest Temple NE Outdoors": "can_use(Bow) or can_use(Slingshot)",
+        exits: {
+            "SFM Forest Temple Entrance Ledge": () => true,
+            "Forest Temple NW Outdoors": () => inventory.time && inventory.ocarina,
+            "Forest Temple NE Outdoors": () => inventory.bow,
             "Forest Temple Block Push Room": "(Small_Key_Forest_Temple, 1)",
             "Forest Temple Boss Region": "Forest_Temple_Jo_and_Beth and Forest_Temple_Amy_and_Meg"
         }
     },
     {
-        "region_name": "Forest Temple NW Outdoors",
-        "dungeon": "Forest Temple",
-        "locations": {
+        regionName: "Forest Temple NW Outdoors",
+        dungeon: "Forest Temple",
+        locations: {
             "Forest Temple GS Level Island Courtyard": "
                 can_use(Longshot) or 
-                at('Forest Temple Outside Upper Ledge', can_use(Hookshot))",
-            "Deku Baba Sticks": "is_adult or Kokiri_Sword or Boomerang",
-            "Deku Baba Nuts": "
-                is_adult or Slingshot or Sticks or 
-                has_explosives or Kokiri_Sword or can_use(Dins_Fire)"
+                at('Forest Temple Outside Upper Ledge', can_use(Hookshot))"
         },
-        "exits": {
-            "Forest Temple NE Outdoors": "(Progressive_Scale, 2)",
-            #Other methods of crossing through the well are not currently relevant.
+        exits: {
+            "Forest Temple NE Outdoors": () => inventory.scale > 1,
             "Forest Temple Outdoors High Balconies": "
-                here(is_adult or has_explosives or
+                here(isAdult() or hasExplosives() or
                         ((Boomerang or Nuts or Deku_Shield) and
                             (Sticks or Kokiri_Sword or Slingshot)))"
         }
     },
     {
-        "region_name": "Forest Temple NE Outdoors",
-        "dungeon": "Forest Temple",
-        "locations": {
+        regionName: "Forest Temple NE Outdoors",
+        dungeon: "Forest Temple",
+        locations: {
             "Forest Temple Raised Island Courtyard Chest": "
                 can_use(Hookshot) or
                 at('Forest Temple Falling Room', True) or
                 (logic_forest_outdoors_ledge and can_use(Hover_Boots) and at('Forest Temple Outdoors High Balconies', True))",
             "Forest Temple GS Raised Island Courtyard": "
                 can_use(Hookshot) or (logic_forest_outdoor_east_gs and can_use(Boomerang)) or
-                at('Forest Temple Falling Room', can_use(Bow) or can_use(Dins_Fire) or has_explosives)",
-            "Deku Baba Sticks": "is_adult or Kokiri_Sword or Boomerang",
-            "Deku Baba Nuts": "
-                is_adult or Slingshot or Sticks or 
-                has_explosives or Kokiri_Sword or can_use(Dins_Fire)"
+                at('Forest Temple Falling Room', can_use(Bow) or can_use(Dins_Fire) or hasExplosives())", // COME BACK - move or copy this to the other location?
         },
-        "exits": {
-            "Forest Temple Outdoors High Balconies": "
-                can_use(Longshot) or (logic_forest_vines and can_use(Hookshot))",
-                #Longshot can grab some very high up vines to drain the well.
-            "Forest Temple NW Outdoors": "can_use(Iron_Boots) or (Progressive_Scale, 2)",
-            "Forest Temple Lobby": "True"
+        exits: {
+            "Forest Temple Outdoors High Balconies": () => inventory.shot > 1 || (logic_forest_vines && inventory.shot),
+            "Forest Temple NW Outdoors": () => inventory.bootsiron || inventory.scale > 1,
+            "Forest Temple Lobby": () => true
         }
     },
     {
-        "region_name": "Forest Temple Outdoors High Balconies",
-        "dungeon": "Forest Temple",
-        "locations": {
-            "Forest Temple Well Chest": "True",
-            "Forest Temple Map Chest": "True"
+        regionName: "Forest Temple Outdoors High Balconies",
+        dungeon: "Forest Temple",
+        locations: {
+            "Forest Temple Well Chest": () => true,
+            "Forest Temple Map Chest": () => true
         },
-        "exits": {
-            "Forest Temple NW Outdoors": "True",
-            "Forest Temple NE Outdoors": "True",
-            "Forest Temple Falling Room": "
-                logic_forest_door_frame and can_use(Hover_Boots) and can_use(Scarecrow)"
+        exits: {
+            "Forest Temple NW Outdoors": () => true,
+            "Forest Temple NE Outdoors": () => true,
+            "Forest Temple Falling Room": () => logic_forest_door_frame && inventory.bootshover && "
+                logic_forest_door_frame and can_use(Hover_Boots) and can_use(Scarecrow)" // COME BACK - can_use(Scarecrow)
         }
     },
     {
-        "region_name": "Forest Temple Falling Room",
-        "dungeon": "Forest Temple",
-        "events": {
-            "Forest Temple Amy and Meg": "can_use(Bow)"
+        regionName: "Forest Temple Falling Room",
+        dungeon: "Forest Temple",
+        events: {
+            "Forest Temple Amy and Meg": () => inventory.bow
         },
-        "locations": {
-            "Forest Temple Falling Ceiling Room Chest": "True"
+        locations: {
+            "Forest Temple Falling Ceiling Room Chest": () => true
         },
-        "exits": {
-            "Forest Temple NE Outdoors": "True"
+        exits: {
+            "Forest Temple NE Outdoors": () => true
         }
     },
     {
-        "region_name": "Forest Temple Block Push Room",
-        "dungeon": "Forest Temple",
-        "locations": {
-            "Forest Temple Eye Switch Chest": "
-                Progressive_Strength_Upgrade and (can_use(Bow) or can_use(Slingshot))"
+        regionName: "Forest Temple Block Push Room",
+        dungeon: "Forest Temple",
+        locations: {
+            "Forest Temple Eye Switch Chest": () => inventory.strength && inventory.bow
         },
-        "exits": {
+        exits: {
             #end of the road for child forest. No hovers and too short to climb push blocks
             "Forest Temple Outside Upper Ledge": "
-                can_use(Hover_Boots) or (logic_forest_outside_backdoor and is_adult and Progressive_Strength_Upgrade)",
+                can_use(Hover_Boots) or (logic_forest_outside_backdoor and isAdult() and Progressive_Strength_Upgrade)",
             "Forest Temple Bow Region": "
-                Progressive_Strength_Upgrade and (Small_Key_Forest_Temple, 3) and is_adult",
+                Progressive_Strength_Upgrade and (Small_Key_Forest_Temple, 3) and isAdult()",
             "Forest Temple Straightened Hall": "
                 Progressive_Strength_Upgrade and (Small_Key_Forest_Temple, 2) and can_use(Bow)"
         }
     },
     {
-        "region_name": "Forest Temple Straightened Hall",
-        "dungeon": "Forest Temple",
-        "locations": {
-            "Forest Temple Boss Key Chest": "True"
+        regionName: "Forest Temple Straightened Hall",
+        dungeon: "Forest Temple",
+        locations: {
+            "Forest Temple Boss Key Chest": () => true
         },
-        "exits": {
-            "Forest Temple Outside Upper Ledge": "True"
+        exits: {
+            "Forest Temple Outside Upper Ledge": () => true
         }
     },
     {
-        "region_name": "Forest Temple Outside Upper Ledge",
-        "dungeon": "Forest Temple",
-        "locations": {
-            "Forest Temple Floormaster Chest": "True"
+        regionName: "Forest Temple Outside Upper Ledge",
+        dungeon: "Forest Temple",
+        locations: {
+            "Forest Temple Floormaster Chest": () => true
         },
-        "exits": {
-            "Forest Temple NW Outdoors": "True"
+        exits: {
+            "Forest Temple NW Outdoors": () => true
         }
     },
     {
-        "region_name": "Forest Temple Bow Region",
-        "dungeon": "Forest Temple",
-        "events": {
-            "Forest Temple Jo and Beth": "can_use(Bow)"
+        regionName: "Forest Temple Bow Region",
+        dungeon: "Forest Temple",
+        events: {
+            "Forest Temple Jo and Beth": () => inventory.bow
         },
-        "locations": {
-            "Forest Temple Bow Chest": "True",
-            "Forest Temple Red Poe Chest": "can_use(Bow)",
-            "Forest Temple Blue Poe Chest": "can_use(Bow)"
+        locations: {
+            "Forest Temple Bow Chest": () => true,
+            "Forest Temple Red Poe Chest": () => inventory.bow,
+            "Forest Temple Blue Poe Chest": () => inventory.bow
         },
-        "exits": {
+        exits: {
             "Forest Temple Falling Room": "
             (Small_Key_Forest_Temple, 5) and (Bow or can_use(Dins_Fire))"
         }
     },
     {
-        "region_name": "Forest Temple Boss Region",
-        "dungeon": "Forest Temple",
-        "locations": {
-            "Forest Temple Basement Chest": "True",
+        regionName: "Forest Temple Boss Region",
+        dungeon: "Forest Temple",
+        locations: {
+            "Forest Temple Basement Chest": () => true,
             "Forest Temple Phantom Ganon Heart": "Boss_Key_Forest_Temple",
             "Phantom Ganon": "Boss_Key_Forest_Temple",
-            "Forest Temple GS Basement": "can_use(Hookshot) or can_use(Boomerang)"
+            "Forest Temple GS Basement": () => inventory.shot
         }
     },
 // Ganons Castle.json
     {
-        "region_name": "Ganons Castle Lobby",
-        "dungeon": "Ganons Castle",
-        "exits": {
-            "Castle Grounds": "True",
-            "Ganons Castle Forest Trial": "True",
-            "Ganons Castle Fire Trial": "True",
-            "Ganons Castle Water Trial": "True",
-            "Ganons Castle Shadow Trial": "True",
-            "Ganons Castle Spirit Trial": "True",
+        regionName: "Ganons Castle Lobby",
+        dungeon: "Ganons Castle",
+        exits: {
+            "Castle Grounds": () => true,
+            "Ganons Castle Forest Trial": () => true,
+            "Ganons Castle Fire Trial": () => true,
+            "Ganons Castle Water Trial": () => true,
+            "Ganons Castle Shadow Trial": () => true,
+            "Ganons Castle Spirit Trial": () => true,
             "Ganons Castle Light Trial": "can_use(Golden_Gauntlets)",
             "Ganons Castle Tower": "
                 (skipped_trials[Forest] or 'Forest Trial Clear') and 
@@ -2480,472 +2417,451 @@ const regions: Region[] = [
                 (skipped_trials[Shadow] or 'Shadow Trial Clear') and 
                 (skipped_trials[Spirit] or 'Spirit Trial Clear') and 
                 (skipped_trials[Light] or 'Light Trial Clear')",
-            "Ganons Castle Deku Scrubs": "logic_lens_castle or can_use(Lens_of_Truth)"
+            "Ganons Castle Deku Scrubs": "logic_lens_castle or (inventory.lens && inventory.magic)"
         }
     },
     {
-        "region_name": "Ganons Castle Deku Scrubs",
-        "dungeon": "Ganons Castle",
-        "locations": {
-            "Ganons Castle Deku Scrub Center-Left": "True",
-            "Ganons Castle Deku Scrub Center-Right": "True",
-            "Ganons Castle Deku Scrub Right": "True",
-            "Ganons Castle Deku Scrub Left": "True",
+        regionName: "Ganons Castle Deku Scrubs",
+        dungeon: "Ganons Castle",
+        locations: {
+            "Ganons Castle Deku Scrub Center-Left": () => true,
+            "Ganons Castle Deku Scrub Center-Right": () => true,
+            "Ganons Castle Deku Scrub Right": () => true,
+            "Ganons Castle Deku Scrub Left": () => true,
             "Free Fairies": "has_bottle"
         }
     },
     {
-        "region_name": "Ganons Castle Forest Trial",
-        "dungeon": "Ganons Castle",
-        "events": {
+        regionName: "Ganons Castle Forest Trial",
+        dungeon: "Ganons Castle",
+        events: {
             "Forest Trial Clear": "can_use(Light_Arrows) and (Fire_Arrows or Dins_Fire)"
         },
-        "locations": {
-            "Ganons Castle Forest Trial Chest": "True"
+        locations: {
+            "Ganons Castle Forest Trial Chest": () => true
         }
     },
     {
-        "region_name": "Ganons Castle Fire Trial",
-        "dungeon": "Ganons Castle",
-        "events": {
+        regionName: "Ganons Castle Fire Trial",
+        dungeon: "Ganons Castle",
+        events: {
             "Fire Trial Clear": "
                 can_use(Goron_Tunic) and can_use(Golden_Gauntlets) and 
                 can_use(Light_Arrows) and can_use(Longshot)"
         }
     },
     {
-        "region_name": "Ganons Castle Water Trial",
-        "dungeon": "Ganons Castle",
-        "events": {
+        regionName: "Ganons Castle Water Trial",
+        dungeon: "Ganons Castle",
+        events: {
             "Water Trial Clear": "Blue_Fire and Megaton_Hammer and can_use(Light_Arrows)"
         },
-        "locations": {
-            "Ganons Castle Water Trial Left Chest": "True",
-            "Ganons Castle Water Trial Right Chest": "True",
-            "Fairy Pot": "Blue_Fire and has_bottle",
+        locations: {
+            "Ganons Castle Water Trial Left Chest": () => true,
+            "Ganons Castle Water Trial Right Chest": () => true,
             "Blue Fire": "has_bottle"
         }
     },
     {
-        "region_name": "Ganons Castle Shadow Trial",
-        "dungeon": "Ganons Castle",
-        "events": {
+        regionName: "Ganons Castle Shadow Trial",
+        dungeon: "Ganons Castle",
+        events: {
             "Shadow Trial Clear": "
                 can_use(Light_Arrows) and Megaton_Hammer and 
-                ((Fire_Arrows and (logic_lens_castle or can_use(Lens_of_Truth))) or 
-                    (can_use(Longshot) and (Hover_Boots or (Dins_Fire and (logic_lens_castle or can_use(Lens_of_Truth))))))"
+                ((Fire_Arrows and (logic_lens_castle or (inventory.lens && inventory.magic))) or 
+                    (can_use(Longshot) and (Hover_Boots or (Dins_Fire and (logic_lens_castle or (inventory.lens && inventory.magic))))))"
         },
-        "locations": {
+        locations: {
             "Ganons Castle Shadow Trial Front Chest": "
                 can_use(Fire_Arrows) or Progressive_Hookshot or 
-                Hover_Boots or can_play(Song_of_Time)",
+                Hover_Boots or (inventory.time && inventory.ocarina)",
             "Ganons Castle Shadow Trial Golden Gauntlets Chest": "
                 can_use(Fire_Arrows) or 
                 (can_use(Longshot) and (Hover_Boots or can_use(Dins_Fire)))"
         }
     },
     {
-        "region_name": "Ganons Castle Spirit Trial",
-        "dungeon": "Ganons Castle",
-        "events": {
+        regionName: "Ganons Castle Spirit Trial",
+        dungeon: "Ganons Castle",
+        events: {
             "Spirit Trial Clear": "
                 can_use(Light_Arrows) and Mirror_Shield and has_bombchus and
                 (logic_spirit_trial_hookshot or Progressive_Hookshot)"
         },
-        "locations": {
+        locations: {
             "Ganons Castle Spirit Trial Crystal Switch Chest": "
                 (logic_spirit_trial_hookshot or Progressive_Hookshot)",
             "Ganons Castle Spirit Trial Invisible Chest": "
                 (logic_spirit_trial_hookshot or Progressive_Hookshot) and
-                has_bombchus and (logic_lens_castle or can_use(Lens_of_Truth))",
+                has_bombchus and (logic_lens_castle or (inventory.lens && inventory.magic))",
             "Nut Pot": "
                 (logic_spirit_trial_hookshot or Progressive_Hookshot) and
                 has_bombchus and Bow and Mirror_Shield"
         }
     },
     {
-        "region_name": "Ganons Castle Light Trial",
-        "dungeon": "Ganons Castle",
-        "events": {
+        regionName: "Ganons Castle Light Trial",
+        dungeon: "Ganons Castle",
+        events: {
             "Light Trial Clear": "
                 can_use(Light_Arrows) and Progressive_Hookshot and 
-                (Small_Key_Ganons_Castle, 2) and (logic_lens_castle or can_use(Lens_of_Truth))"
+                (Small_Key_Ganons_Castle, 2) and (logic_lens_castle or (inventory.lens && inventory.magic))"
         },
-        "locations": {
-            "Ganons Castle Light Trial First Left Chest": "True",
-            "Ganons Castle Light Trial Second Left Chest": "True",
-            "Ganons Castle Light Trial Third Left Chest": "True",
-            "Ganons Castle Light Trial First Right Chest": "True",
-            "Ganons Castle Light Trial Second Right Chest": "True",
-            "Ganons Castle Light Trial Third Right Chest": "True",
-            "Ganons Castle Light Trial Invisible Enemies Chest": "logic_lens_castle or can_use(Lens_of_Truth)",
+        locations: {
+            "Ganons Castle Light Trial First Left Chest": () => true,
+            "Ganons Castle Light Trial Second Left Chest": () => true,
+            "Ganons Castle Light Trial Third Left Chest": () => true,
+            "Ganons Castle Light Trial First Right Chest": () => true,
+            "Ganons Castle Light Trial Second Right Chest": () => true,
+            "Ganons Castle Light Trial Third Right Chest": () => true,
+            "Ganons Castle Light Trial Invisible Enemies Chest": "logic_lens_castle or (inventory.lens && inventory.magic)",
             "Ganons Castle Light Trial Lullaby Chest": "
-                can_play(Zeldas_Lullaby) and (Small_Key_Ganons_Castle, 1)"
+                (inventory.lullaby && inventory.ocarina) and (Small_Key_Ganons_Castle, 1)"
         }
     },
 // Gerudo Training Grounds.json
     {
-        "region_name": "Gerudo Training Grounds Lobby",
-        "dungeon": "Gerudo Training Grounds",
-        "locations": {
-            "Gerudo Training Grounds Lobby Left Chest": "can_use(Bow) or can_use(Slingshot)",
-            "Gerudo Training Grounds Lobby Right Chest": "can_use(Bow) or can_use(Slingshot)",
-            "Gerudo Training Grounds Stalfos Chest": "is_adult or Kokiri_Sword",
-            "Gerudo Training Grounds Beamos Chest": "has_explosives and (is_adult or Kokiri_Sword)",
-            "Wall Fairy": "has_bottle and can_use(Bow)" #in the Beamos room shoot the Gerudo symbol above the door to the lava room.
+        regionName: "Gerudo Training Grounds Lobby",
+        dungeon: "Gerudo Training Grounds",
+        locations: {
+            "Gerudo Training Grounds Lobby Left Chest": () => inventory.bow,
+            "Gerudo Training Grounds Lobby Right Chest": () => inventory.bow,
+            "Gerudo Training Grounds Stalfos Chest": () => true,
+            "Gerudo Training Grounds Beamos Chest": () => hasExplosives()
         },
-        "exits": {
-            "Gerudo Fortress": "True",
-            "Gerudo Training Grounds Heavy Block Room": "
-                (is_adult or Kokiri_Sword) and
-                (can_use(Hookshot) or logic_gtg_without_hookshot)",
-            "Gerudo Training Grounds Lava Room": "
-                here(has_explosives and (is_adult or Kokiri_Sword))",
-            "Gerudo Training Grounds Central Maze": "True"
+        exits: {
+            "Gerudo Fortress": () => true,
+            "Gerudo Training Grounds Heavy Block Room": () => inventory.shot || logic_gtg_without_hookshot,
+            "Gerudo Training Grounds Lava Room": () => hasExplosives(),
+            "Gerudo Training Grounds Central Maze": () => true
         }
     },
     {
-        "region_name": "Gerudo Training Grounds Central Maze",
-        "dungeon": "Gerudo Training Grounds",
-        "locations": {
-            "Gerudo Training Grounds Hidden Ceiling Chest": "(Small_Key_Gerudo_Training_Grounds, 3) and (logic_lens_gtg or can_use(Lens_of_Truth))",
+        regionName: "Gerudo Training Grounds Central Maze",
+        dungeon: "Gerudo Training Grounds",
+        locations: {
+            "Gerudo Training Grounds Hidden Ceiling Chest": "(Small_Key_Gerudo_Training_Grounds, 3) and (logic_lens_gtg or (inventory.lens && inventory.magic))",
             "Gerudo Training Grounds Maze Path First Chest": "(Small_Key_Gerudo_Training_Grounds, 4)",
             "Gerudo Training Grounds Maze Path Second Chest": "(Small_Key_Gerudo_Training_Grounds, 6)",
             "Gerudo Training Grounds Maze Path Third Chest": "(Small_Key_Gerudo_Training_Grounds, 7)",
             "Gerudo Training Grounds Maze Path Final Chest": "(Small_Key_Gerudo_Training_Grounds, 9)"
         },
-        "exits": {
+        exits: {
             "Gerudo Training Grounds Central Maze Right": "(Small_Key_Gerudo_Training_Grounds, 9)"
         }
     },
     {
-        "region_name": "Gerudo Training Grounds Central Maze Right",
-        "dungeon": "Gerudo Training Grounds",
-        "locations": {
-            "Gerudo Training Grounds Maze Right Central Chest": "True",
-            "Gerudo Training Grounds Maze Right Side Chest": "True",
-            "Gerudo Training Grounds Freestanding Key": "True"
+        regionName: "Gerudo Training Grounds Central Maze Right",
+        dungeon: "Gerudo Training Grounds",
+        locations: {
+            "Gerudo Training Grounds Maze Right Central Chest": () => true,
+            "Gerudo Training Grounds Maze Right Side Chest": () => true,
+            "Gerudo Training Grounds Freestanding Key": () => true
         },
-        "exits": {
-            "Gerudo Training Grounds Hammer Room": "can_use(Hookshot)",
-            "Gerudo Training Grounds Lava Room": "True"
+        exits: {
+            "Gerudo Training Grounds Hammer Room": () => inventory.shot,
+            "Gerudo Training Grounds Lava Room": () => true
         }
     },
     {
-        "region_name": "Gerudo Training Grounds Lava Room",
-        "dungeon": "Gerudo Training Grounds",
-        "locations": {
+        regionName: "Gerudo Training Grounds Lava Room",
+        dungeon: "Gerudo Training Grounds",
+        locations: {
             "Gerudo Training Grounds Underwater Silver Rupee Chest": "
-                can_use(Hookshot) and can_play(Song_of_Time) and Iron_Boots and 
+                can_use(Hookshot) and (inventory.time && inventory.ocarina) and Iron_Boots and 
                     (logic_fewer_tunic_requirements or can_use(Zora_Tunic))"
         },
-        "exits": {
-            "Gerudo Training Grounds Central Maze Right": "can_play(Song_of_Time) or is_child",
+        exits: {
+            "Gerudo Training Grounds Central Maze Right": "(inventory.time && inventory.ocarina) or isChild()",
             "Gerudo Training Grounds Hammer Room": "
                 can_use(Longshot) or (can_use(Hookshot) and can_use(Hover_Boots))"
         }
     },
     {
-        "region_name": "Gerudo Training Grounds Hammer Room",
-        "dungeon": "Gerudo Training Grounds",
-        "locations": {
-            "Gerudo Training Grounds Hammer Room Clear Chest": "True",
+        regionName: "Gerudo Training Grounds Hammer Room",
+        dungeon: "Gerudo Training Grounds",
+        locations: {
+            "Gerudo Training Grounds Hammer Room Clear Chest": () => true,
             "Gerudo Training Grounds Hammer Room Switch Chest": "can_use(Megaton_Hammer)"
         },
-        "exits": {
+        exits: {
             "Gerudo Training Grounds Eye Statue Lower": "can_use(Megaton_Hammer) and Bow",
-            "Gerudo Training Grounds Lava Room": "True"
+            "Gerudo Training Grounds Lava Room": () => true
         }
     },
     {
-        "region_name": "Gerudo Training Grounds Eye Statue Lower",
-        "dungeon": "Gerudo Training Grounds",
-        "locations": {
+        regionName: "Gerudo Training Grounds Eye Statue Lower",
+        dungeon: "Gerudo Training Grounds",
+        locations: {
             "Gerudo Training Grounds Eye Statue Chest": "can_use(Bow)"
         },
-        "exits": {
-            "Gerudo Training Grounds Hammer Room": "True"
+        exits: {
+            "Gerudo Training Grounds Hammer Room": () => true
         }
     },
     {
-        "region_name": "Gerudo Training Grounds Eye Statue Upper",
-        "dungeon": "Gerudo Training Grounds",
-        "locations": {
+        regionName: "Gerudo Training Grounds Eye Statue Upper",
+        dungeon: "Gerudo Training Grounds",
+        locations: {
             "Gerudo Training Grounds Near Scarecrow Chest": "can_use(Bow)"
         },
-        "exits": {
-            "Gerudo Training Grounds Eye Statue Lower": "True"
+        exits: {
+            "Gerudo Training Grounds Eye Statue Lower": () => true
         }
     },
     {
-        "region_name": "Gerudo Training Grounds Heavy Block Room",
-        "dungeon": "Gerudo Training Grounds",
-        "locations": {
-            "Gerudo Training Grounds Before Heavy Block Chest": "True"
+        regionName: "Gerudo Training Grounds Heavy Block Room",
+        dungeon: "Gerudo Training Grounds",
+        locations: {
+            "Gerudo Training Grounds Before Heavy Block Chest": () => true
         },
-        "exits": {
+        exits: {
             "Gerudo Training Grounds Eye Statue Upper": "
-                (logic_lens_gtg or can_use(Lens_of_Truth)) and
+                (logic_lens_gtg or (inventory.lens && inventory.magic)) and
                 (can_use(Hookshot) or (logic_gtg_fake_wall and can_use(Hover_Boots)))",
             "Gerudo Training Grounds Like Like Room": "
-                can_use(Silver_Gauntlets) and (logic_lens_gtg or can_use(Lens_of_Truth)) and
+                can_use(Silver_Gauntlets) and (logic_lens_gtg or (inventory.lens && inventory.magic)) and
                 (can_use(Hookshot) or (logic_gtg_fake_wall and can_use(Hover_Boots)))"
         }
     },
     {
-        "region_name": "Gerudo Training Grounds Like Like Room",
-        "dungeon": "Gerudo Training Grounds",
-        "locations": {
-            "Gerudo Training Grounds Heavy Block First Chest": "True",
-            "Gerudo Training Grounds Heavy Block Second Chest": "True",
-            "Gerudo Training Grounds Heavy Block Third Chest": "True",
-            "Gerudo Training Grounds Heavy Block Fourth Chest": "True"
+        regionName: "Gerudo Training Grounds Like Like Room",
+        dungeon: "Gerudo Training Grounds",
+        locations: {
+            "Gerudo Training Grounds Heavy Block First Chest": () => true,
+            "Gerudo Training Grounds Heavy Block Second Chest": () => true,
+            "Gerudo Training Grounds Heavy Block Third Chest": () => true,
+            "Gerudo Training Grounds Heavy Block Fourth Chest": () => true
         }
     },
 // Ice Cavern.json
     {
-        "region_name": "Ice Cavern Beginning",
-        "dungeon": "Ice Cavern",
-        "exits": {
-            "ZF Ice Ledge": "True",
-            #Frezzards are weird, they are immune to KS completely. Leave sticks out as 8/10 is a lot
-            "Ice Cavern": "here(is_adult or has_explosives or can_use(Dins_Fire))"
+        regionName: "Ice Cavern Beginning",
+        dungeon: "Ice Cavern",
+        exits: {
+            "ZF Ice Ledge": () => true,
+            "Ice Cavern": () => isAdult() || hasExplosives() || (inventory.dins && inventory.magic)
         }
     },
     {
-        "region_name": "Ice Cavern",
-        "dungeon": "Ice Cavern",
-        "locations": {
-            "Ice Cavern Map Chest": "Blue_Fire and is_adult",
-            "Ice Cavern Compass Chest": "Blue_Fire",
-            "Ice Cavern Iron Boots Chest": "
-                Blue_Fire and 
-                (is_adult or Slingshot or Sticks or 
-                    Kokiri_Sword or can_use(Dins_Fire))",
-            "Sheik in Ice Cavern": "
-                Blue_Fire and 
-                (is_adult or Slingshot or Sticks or 
-                    Kokiri_Sword or can_use(Dins_Fire))",
-            "Ice Cavern Freestanding PoH": "Blue_Fire",
-            "Ice Cavern GS Spinning Scythe Room": "can_use(Hookshot) or can_use(Boomerang)",
-            "Ice Cavern GS Heart Piece Room": "
-                Blue_Fire and (can_use(Hookshot) or can_use(Boomerang))",
-            "Ice Cavern GS Push Block Room": "
-                Blue_Fire and (can_use(Hookshot) or can_use(Boomerang) or
-                    (logic_ice_block_gs and can_use(Hover_Boots)))",
-            "Blue Fire": "is_adult and has_bottle"
+        regionName: "Ice Cavern",
+        dungeon: "Ice Cavern",
+        locations: {
+            "Ice Cavern Map Chest": () => inventory.bottle && isAdult(),
+            "Ice Cavern Compass Chest": () => inventory.bottle,
+            "Ice Cavern Iron Boots Chest": () => inventory.bottle && (isAdult() || inventory.slingshot || inventory.sticks || inventory.swordkokiri || (inventory.dins && inventory.magic),
+            "Sheik in Ice Cavern": () => inventory.bottle && (isAdult() || inventory.slingshot || inventory.sticks || inventory.swordkokiri || (inventory.dins && inventory.magic),
+            "Ice Cavern Freestanding PoH": () => inventory.bottle,
+            "Ice Cavern GS Spinning Scythe Room": () => (inventory.shot && isAdult()) || (inventory.boomerang && isChild()),
+            "Ice Cavern GS Heart Piece Room": () => inventory.bottle && ((inventory.shot && isAdult() || (inventory.boomerang && isChild()),
+            "Ice Cavern GS Push Block Room": () => inventory.bottle && ((inventory.shot && isAdult()) || (inventory.boomerang && isChild()) || (logic_ice_block_gs && inventory.bootshover && isAdult()))
         }
     },
 // Jabu Jabus Belly.json
     {
-        "region_name": "Jabu Jabus Belly Beginning",
-        "dungeon": "Jabu Jabus Belly",
-        "exits": {
-            "Zoras Fountain": "True",
-            "Jabu Jabus Belly Main": "can_use_projectile"
+        regionName: "Jabu Jabus Belly Beginning",
+        dungeon: "Jabu Jabus Belly",
+        exits: {
+            "Zoras Fountain": () => true,
+            "Jabu Jabus Belly Main": () => canUseProjectile()
         }
     },
     {
-        "region_name": "Jabu Jabus Belly Main",
-        "dungeon": "Jabu Jabus Belly",
-        "locations": {
-            "Jabu Jabus Belly Boomerang Chest": "True",
-            "Jabu Jabus Belly GS Water Switch Room": "True",
-            "Jabu Jabus Belly GS Lobby Basement Lower": "can_use(Boomerang) or can_use(Hookshot)",
-            "Jabu Jabus Belly GS Lobby Basement Upper": "can_use(Boomerang) or can_use(Hookshot)",
-            "Jabu Jabus Belly Deku Scrub": "
-                can_dive or is_child or logic_jabu_scrub_jump_dive or can_use(Iron_Boots)",
-            "Fairy Pot": "has_bottle"
+        regionName: "Jabu Jabus Belly Main",
+        dungeon: "Jabu Jabus Belly",
+        locations: {
+            "Jabu Jabus Belly Boomerang Chest": () => true,
+            "Jabu Jabus Belly GS Water Switch Room": () => true,
+            "Jabu Jabus Belly GS Lobby Basement Lower": () => (inventory.boomerang && isChild()) || (inventory.shot && isAdult()),
+            "Jabu Jabus Belly GS Lobby Basement Upper": () => (inventory.boomerang && isChild()) || (inventory.shot && isAdult()),
+            "Jabu Jabus Belly Deku Scrub": () => isChild() || inventory.scale || logic_jabu_scrub_jump_dive || (isAdult() && inventory.bootsiron)
         },
-        "exits": {
-            "Jabu Jabus Belly Beginning": "True",
-            "Jabu Jabus Belly Depths": "can_use(Boomerang)",
+        exits: {
+            "Jabu Jabus Belly Beginning": () => true,
+            "Jabu Jabus Belly Depths": () => isChild() && inventory.boomerang,
             "Jabu Jabus Belly Boss Area": "logic_jabu_boss_gs_adult and can_use(Hover_Boots)"
         }
     },
     {
-        "region_name": "Jabu Jabus Belly Depths",
-        "dungeon": "Jabu Jabus Belly",
-        "locations": {
-            "Jabu Jabus Belly Map Chest": "True",
-            "Jabu Jabus Belly Compass Chest": "True"
+        regionName: "Jabu Jabus Belly Depths",
+        dungeon: "Jabu Jabus Belly",
+        locations: {
+            "Jabu Jabus Belly Map Chest": () => true,
+            "Jabu Jabus Belly Compass Chest": () => true
         },
-        "exits": {
-            "Jabu Jabus Belly Main": "True",
-            "Jabu Jabus Belly Boss Area": "Sticks or Kokiri_Sword"
+        exits: {
+            "Jabu Jabus Belly Main": () => true,
+            "Jabu Jabus Belly Boss Area": () => inventory.sticks || inventory.swordkokiri
         }
     },
     {
-        "region_name": "Jabu Jabus Belly Boss Area",
-        "dungeon": "Jabu Jabus Belly",
-        "locations": {
-            "Jabu Jabus Belly Barinade Heart": "can_use(Boomerang)",
-            "Barinade": "can_use(Boomerang)",
-            "Jabu Jabus Belly GS Near Boss": "True",
-            "Nut Pot": "True"
+        regionName: "Jabu Jabus Belly Boss Area",
+        dungeon: "Jabu Jabus Belly",
+        locations: {
+            "Jabu Jabus Belly Barinade Heart": () => isChild() && inventory.boomerang,
+            "Barinade": () => isChild() && inventory.boomerang,
+            "Jabu Jabus Belly GS Near Boss": () => true,
+            "Nut Pot": () => true
         },
-        "exits": {
-            "Jabu Jabus Belly Main": "True"
+        exits: {
+            "Jabu Jabus Belly Main": () => true
         }
     },
 // Shadow Temple.json
     {
-        "region_name": "Shadow Temple Entryway",
-        "dungeon": "Shadow Temple",
-        "exits": {
-            "Graveyard Warp Pad Region": "True",
+        regionName: "Shadow Temple Entryway",
+        dungeon: "Shadow Temple",
+        exits: {
+            "Graveyard Warp Pad Region": () => true,
             "Shadow Temple Beginning": "
-                (logic_lens_shadow or can_use(Lens_of_Truth)) and
+                (logic_lens_shadow or (inventory.lens && inventory.magic)) and
                 (can_use(Hover_Boots) or can_use(Hookshot))"
         }
     },
     {
-        "region_name": "Shadow Temple Beginning",
-        "dungeon": "Shadow Temple",
-        "locations": {
-            "Shadow Temple Map Chest": "True",
-            "Shadow Temple Hover Boots Chest": "True",
-            "Nut Pot": "True"
+        regionName: "Shadow Temple Beginning",
+        dungeon: "Shadow Temple",
+        locations: {
+            "Shadow Temple Map Chest": () => true,
+            "Shadow Temple Hover Boots Chest": () => true,
+            "Nut Pot": () => true
         },
-        "exits": {
-            "Shadow Temple Entryway": "True",
+        exits: {
+            "Shadow Temple Entryway": () => true,
             "Shadow Temple First Beamos": "Hover_Boots"
         }
     },
     {
-        "region_name": "Shadow Temple First Beamos",
-        "dungeon": "Shadow Temple",
-        "locations": {
-            "Shadow Temple Compass Chest": "True",
-            "Shadow Temple Early Silver Rupee Chest": "True"
+        regionName: "Shadow Temple First Beamos",
+        dungeon: "Shadow Temple",
+        locations: {
+            "Shadow Temple Compass Chest": () => true,
+            "Shadow Temple Early Silver Rupee Chest": () => true
         },
-        "exits": {
-            "Shadow Temple Huge Pit": "has_explosives and (Small_Key_Shadow_Temple, 1)"
+        exits: {
+            "Shadow Temple Huge Pit": "hasExplosives() and (Small_Key_Shadow_Temple, 1)"
         }
     },
     {
-        "region_name": "Shadow Temple Huge Pit",
-        "dungeon": "Shadow Temple",
-        "locations": {
-            "Shadow Temple Invisible Blades Visible Chest": "True",
-            "Shadow Temple Invisible Blades Invisible Chest": "True",
-            "Shadow Temple Falling Spikes Lower Chest": "True",
+        regionName: "Shadow Temple Huge Pit",
+        dungeon: "Shadow Temple",
+        locations: {
+            "Shadow Temple Invisible Blades Visible Chest": () => true,
+            "Shadow Temple Invisible Blades Invisible Chest": () => true,
+            "Shadow Temple Falling Spikes Lower Chest": () => true,
             "Shadow Temple Falling Spikes Upper Chest": "logic_shadow_umbrella or Progressive_Strength_Upgrade",
             "Shadow Temple Falling Spikes Switch Chest": "logic_shadow_umbrella or Progressive_Strength_Upgrade",
             "Shadow Temple Invisible Spikes Chest": "
-                (Small_Key_Shadow_Temple, 2) and (logic_lens_shadow_back or can_use(Lens_of_Truth))",
+                (Small_Key_Shadow_Temple, 2) and (logic_lens_shadow_back or (inventory.lens && inventory.magic))",
             "Shadow Temple Freestanding Key": "
-                (Small_Key_Shadow_Temple, 2) and (logic_lens_shadow_back or can_use(Lens_of_Truth)) 
+                (Small_Key_Shadow_Temple, 2) and (logic_lens_shadow_back or (inventory.lens && inventory.magic)) 
                 and Progressive_Hookshot and 
                 (Bombs or Progressive_Strength_Upgrade or
                     (logic_shadow_freestanding_key and has_bombchus))",
-            "Shadow Temple GS Like Like Room": "True",
+            "Shadow Temple GS Like Like Room": () => true,
             "Shadow Temple GS Falling Spikes Room": "logic_shadow_umbrella_gs or Progressive_Hookshot",
             "Shadow Temple GS Single Giant Pot": "
-                (Small_Key_Shadow_Temple, 2) and (logic_lens_shadow_back or can_use(Lens_of_Truth)) 
+                (Small_Key_Shadow_Temple, 2) and (logic_lens_shadow_back or (inventory.lens && inventory.magic)) 
                 and Progressive_Hookshot"
         },
-        "exits": {
+        exits: {
             "Shadow Temple Wind Tunnel": "
-                (logic_lens_shadow_back or can_use(Lens_of_Truth)) and 
+                (logic_lens_shadow_back or (inventory.lens && inventory.magic)) and 
                 Progressive_Hookshot and (Small_Key_Shadow_Temple, 3)"
         }
     },
     {
-        "region_name": "Shadow Temple Wind Tunnel",
-        "dungeon": "Shadow Temple",
-        "locations": {
-            "Shadow Temple Wind Hint Chest": "True",
-            "Shadow Temple After Wind Enemy Chest": "True",
-            "Shadow Temple After Wind Hidden Chest": "True",
+        regionName: "Shadow Temple Wind Tunnel",
+        dungeon: "Shadow Temple",
+        locations: {
+            "Shadow Temple Wind Hint Chest": () => true,
+            "Shadow Temple After Wind Enemy Chest": () => true,
+            "Shadow Temple After Wind Hidden Chest": () => true,
             "Shadow Temple GS Near Ship": "can_use(Longshot) and (Small_Key_Shadow_Temple, 4)"
         },
-        "exits": {
-            "Shadow Temple Beyond Boat": "can_play(Zeldas_Lullaby) and (Small_Key_Shadow_Temple, 4)"
+        exits: {
+            "Shadow Temple Beyond Boat": "(inventory.lullaby && inventory.ocarina) and (Small_Key_Shadow_Temple, 4)"
         }
     },
     {
-        "region_name": "Shadow Temple Beyond Boat",
-        "dungeon": "Shadow Temple",
-        "locations": {
+        regionName: "Shadow Temple Beyond Boat",
+        dungeon: "Shadow Temple",
+        locations: {
             "Shadow Temple Spike Walls Left Chest": "can_use(Dins_Fire)",
             "Shadow Temple Boss Key Chest": "can_use(Dins_Fire)",
-            "Shadow Temple Invisible Floormaster Chest": "True",
+            "Shadow Temple Invisible Floormaster Chest": () => true,
             "Shadow Temple Bongo Bongo Heart": "
                 (Small_Key_Shadow_Temple, 5) and Boss_Key_Shadow_Temple and
                 (Bow or can_use(Distant_Scarecrow) or (logic_shadow_statue and has_bombchus))",
             "Bongo Bongo": "
                 (Small_Key_Shadow_Temple, 5) and Boss_Key_Shadow_Temple and
                 (Bow or can_use(Distant_Scarecrow) or (logic_shadow_statue and has_bombchus))",
-            "Shadow Temple GS Triple Giant Pot": "True"
+            "Shadow Temple GS Triple Giant Pot": () => true
         }
     },
 // Spirit Temple.json
     {
-        "region_name": "Spirit Temple Lobby",
-        "dungeon": "Spirit Temple",
-        "exits": {
-            "Desert Colossus From Spirit Lobby": "True",
-            "Child Spirit Temple": "is_child",
+        regionName: "Spirit Temple Lobby",
+        dungeon: "Spirit Temple",
+        exits: {
+            "Desert Colossus From Spirit Lobby": () => true,
+            "Child Spirit Temple": () => isChild(),
             "Early Adult Spirit Temple": "can_use(Silver_Gauntlets)"
         }
     },
     {
-        "region_name": "Child Spirit Temple",
-        "dungeon": "Spirit Temple",
-        "locations": {
+        regionName: "Child Spirit Temple",
+        dungeon: "Spirit Temple",
+        locations: {
             "Spirit Temple Child Bridge Chest": "
                 (Boomerang or Slingshot or (has_bombchus and logic_spirit_child_bombchu)) and 
-                (Sticks or has_explosives or 
+                (Sticks or hasExplosives() or 
                     ((Nuts or Boomerang) and 
                         (Kokiri_Sword or Slingshot)))",
             "Spirit Temple Child Early Torches Chest": "
                 (Boomerang or Slingshot or (has_bombchus and logic_spirit_child_bombchu)) and 
-                (Sticks or has_explosives or 
+                (Sticks or hasExplosives() or 
                     ((Nuts or Boomerang) and (Kokiri_Sword or Slingshot))) and 
                 (Sticks or can_use(Dins_Fire))",
             "Spirit Temple GS Metal Fence": "
                 (Boomerang or Slingshot or (has_bombchus and logic_spirit_child_bombchu)) and 
-                (Sticks or has_explosives or 
+                (Sticks or hasExplosives() or 
                     ((Nuts or Boomerang) and (Kokiri_Sword or Slingshot)))"
         },
-        "exits": {
-            "Child Spirit Before Locked Door": "True"
+        exits: {
+            "Child Spirit Before Locked Door": () => true
         }
     },
     {
-        "region_name": "Child Spirit Before Locked Door",
-        "dungeon": "Spirit Temple",
-        "locations": {
-            "Nut Crate": "True"
-        },
-        "exits": {
+        regionName: "Child Spirit Before Locked Door",
+        dungeon: "Spirit Temple",
+        exits: {
             "Child Spirit Temple Climb": "(Small_Key_Spirit_Temple, 1)"
         }
     },
     {
-        "region_name": "Child Spirit Temple Climb",
-        "dungeon": "Spirit Temple",
-        "locations": {
+        regionName: "Child Spirit Temple Climb",
+        dungeon: "Spirit Temple",
+        locations: {
             "Spirit Temple Child Climb North Chest": "
                 has_projectile(both) or 
                 (((Small_Key_Spirit_Temple, 3) or 
                     ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle)) and 
                 can_use(Silver_Gauntlets) and has_projectile(adult)) or 
-                ((Small_Key_Spirit_Temple, 5) and is_child and 
+                ((Small_Key_Spirit_Temple, 5) and isChild() and 
                     has_projectile(child))",
             "Spirit Temple Child Climb East Chest": "
                 has_projectile(both) or 
                 (((Small_Key_Spirit_Temple, 3) or 
                     ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle)) and 
                 can_use(Silver_Gauntlets) and has_projectile(adult)) or 
-                ((Small_Key_Spirit_Temple, 5) and is_child and 
+                ((Small_Key_Spirit_Temple, 5) and isChild() and 
                     has_projectile(child))",
             "Spirit Temple GS Sun on Floor Room": "
                 has_projectile(both) or can_use(Dins_Fire) or 
                 ((damage_multiplier != 'ohko' or Fairy or can_use(Nayrus_Love)) and 
                     (Sticks or Kokiri_Sword or has_projectile(child))) or 
-                (is_child and 
+                (isChild() and 
                     (Small_Key_Spirit_Temple, 5) and has_projectile(child)) or 
                 (((Small_Key_Spirit_Temple, 3) or 
                     ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle)) and 
@@ -2953,103 +2869,101 @@ const regions: Region[] = [
                 (has_projectile(adult) or damage_multiplier != 'ohko' or 
                     Fairy or can_use(Nayrus_Love)))"
         },
-        "exits": {
-            "Spirit Temple Central Chamber": "has_explosives",
+        exits: {
+            "Spirit Temple Central Chamber": () => hasExplosives(),
             "Child Spirit Before Locked Door": "(Small_Key_Spirit_Temple, 5)"
         }
     },
     {
-        "region_name": "Early Adult Spirit Temple",
-        "dungeon": "Spirit Temple",
-        "locations": {
+        regionName: "Early Adult Spirit Temple",
+        dungeon: "Spirit Temple",
+        locations: {
             "Spirit Temple Compass Chest": "
-                can_use(Hookshot) and can_play(Zeldas_Lullaby)",
+                can_use(Hookshot) and (inventory.lullaby && inventory.ocarina)",
             "Spirit Temple Early Adult Right Chest": "
                 Bow or Progressive_Hookshot or has_bombchus or (Bombs and logic_spirit_lower_adult_switch)", 
                 #requires a very specific Bombchu use, Hover Boots can be skipped by jumping on top of the rolling rock.
             "Spirit Temple First Mirror Left Chest": "(Small_Key_Spirit_Temple, 3)",
             "Spirit Temple First Mirror Right Chest": "(Small_Key_Spirit_Temple, 3)",
-            "Spirit Temple GS Boulder Room": "
-                can_play(Song_of_Time) and 
-                (Bow or Progressive_Hookshot or has_bombchus or (Bombs and logic_spirit_lower_adult_switch))"
+            "Spirit Temple GS Boulder Room": () => (inventory.time && inventory.ocarina) && (inventory.bow || inventory.shot || inventory.bombchus || (inventory.bombs && logic_spirit_lower_adult_switch))
         },
-        "exits": {
+        exits: {
             "Spirit Temple Central Chamber": "(Small_Key_Spirit_Temple, 1)"
         }
     },
     {
-        "region_name": "Spirit Temple Central Chamber",
-        "dungeon": "Spirit Temple",
-        "locations": {
+        regionName: "Spirit Temple Central Chamber",
+        dungeon: "Spirit Temple",
+        locations: {
             "Spirit Temple Map Chest": "
-                ((has_explosives or (Small_Key_Spirit_Temple, 3) or ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle)) and 
+                ((hasExplosives() or (Small_Key_Spirit_Temple, 3) or ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle)) and 
                     (can_use(Dins_Fire) or
                         (((Magic_Meter and Fire_Arrows) or logic_spirit_map_chest) and Bow and Sticks))) or 
-                ((Small_Key_Spirit_Temple, 5) and has_explosives and 
+                ((Small_Key_Spirit_Temple, 5) and hasExplosives() and 
                     can_use(Sticks)) or 
                 ((Small_Key_Spirit_Temple, 3) and
                     (can_use(Fire_Arrows) or (logic_spirit_map_chest and Bow)) and 
                     can_use(Silver_Gauntlets))",
             "Spirit Temple Sun Block Room Chest": "
-                ((has_explosives or (Small_Key_Spirit_Temple, 3) or ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle)) and 
+                ((hasExplosives() or (Small_Key_Spirit_Temple, 3) or ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle)) and 
                     (can_use(Dins_Fire) or
                         (((Magic_Meter and Fire_Arrows) or logic_spirit_sun_chest) and Bow and Sticks))) or 
-                ((Small_Key_Spirit_Temple, 5) and has_explosives and
+                ((Small_Key_Spirit_Temple, 5) and hasExplosives() and
                     can_use(Sticks)) or 
                 ((Small_Key_Spirit_Temple, 3) and
                     (can_use(Fire_Arrows) or (logic_spirit_sun_chest and Bow)) and 
                     can_use(Silver_Gauntlets))",
             "Spirit Temple Statue Room Hand Chest": "
                 (Small_Key_Spirit_Temple, 3) and can_use(Silver_Gauntlets) and 
-                can_play(Zeldas_Lullaby)",
+                (inventory.lullaby && inventory.ocarina)",
             "Spirit Temple Statue Room Northeast Chest": "
-                (Small_Key_Spirit_Temple, 3) and can_use(Silver_Gauntlets) and can_play(Zeldas_Lullaby) and 
+                (Small_Key_Spirit_Temple, 3) and can_use(Silver_Gauntlets) and (inventory.lullaby && inventory.ocarina) and 
                 (Progressive_Hookshot or Hover_Boots or logic_spirit_lobby_jump)",
             "Spirit Temple GS Hall After Sun Block Room": "
-                (has_explosives and Boomerang and Progressive_Hookshot) or 
-                (can_use(Boomerang) and (Small_Key_Spirit_Temple, 5) and has_explosives) or 
+                (hasExplosives() and Boomerang and Progressive_Hookshot) or 
+                (can_use(Boomerang) and (Small_Key_Spirit_Temple, 5) and hasExplosives()) or 
                 (Progressive_Hookshot and can_use(Silver_Gauntlets) and 
                     ((Small_Key_Spirit_Temple, 3) or 
                         ((Small_Key_Spirit_Temple, 2) and Boomerang and bombchus_in_logic and not entrance_shuffle)))",
             "Spirit Temple GS Lobby": "
-                ((has_explosives or (Small_Key_Spirit_Temple, 3) or ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle)) and 
+                ((hasExplosives() or (Small_Key_Spirit_Temple, 3) or ((Small_Key_Spirit_Temple, 2) and bombchus_in_logic and not entrance_shuffle)) and 
                     logic_spirit_lobby_gs and Boomerang and (Progressive_Hookshot or Hover_Boots or logic_spirit_lobby_jump)) or
-                (logic_spirit_lobby_gs and (Small_Key_Spirit_Temple, 5) and has_explosives and can_use(Boomerang)) or
+                (logic_spirit_lobby_gs and (Small_Key_Spirit_Temple, 5) and hasExplosives() and can_use(Boomerang)) or
                 ((Small_Key_Spirit_Temple, 3) and can_use(Silver_Gauntlets) and (Progressive_Hookshot or Hover_Boots or logic_spirit_lobby_jump))"
         },
-        "exits": {
-            "Spirit Temple Outdoor Hands": "True",
+        exits: {
+            "Spirit Temple Outdoor Hands": () => true,
             "Spirit Temple Beyond Central Locked Door": "
                 (Small_Key_Spirit_Temple, 4) and can_use(Silver_Gauntlets)",
-            "Child Spirit Temple Climb": "True"
+            "Child Spirit Temple Climb": () => true
         }
     },
     {
-        "region_name": "Spirit Temple Outdoor Hands",
-        "dungeon": "Spirit Temple",
-        "locations": {
+        regionName: "Spirit Temple Outdoor Hands",
+        dungeon: "Spirit Temple",
+        locations: {
             "Spirit Temple Silver Gauntlets Chest": "
-                ((Small_Key_Spirit_Temple, 3) and (Progressive_Hookshot, 2) and has_explosives) or 
+                ((Small_Key_Spirit_Temple, 3) and (Progressive_Hookshot, 2) and hasExplosives()) or 
                 (Small_Key_Spirit_Temple, 5)",
             "Spirit Temple Mirror Shield Chest": "
-                (Small_Key_Spirit_Temple, 4) and can_use(Silver_Gauntlets) and has_explosives"
+                (Small_Key_Spirit_Temple, 4) and can_use(Silver_Gauntlets) and hasExplosives()"
         },
-        "exits": {
+        exits: {
             "Desert Colossus": "
-                (is_child and (Small_Key_Spirit_Temple, 5)) or
+                (isChild() and (Small_Key_Spirit_Temple, 5)) or
                 (can_use(Silver_Gauntlets) and
-                    (((Small_Key_Spirit_Temple, 3) and has_explosives) or (Small_Key_Spirit_Temple, 5)))"
+                    (((Small_Key_Spirit_Temple, 3) and hasExplosives()) or (Small_Key_Spirit_Temple, 5)))"
         }
     },
     {
-        "region_name": "Spirit Temple Beyond Central Locked Door",
-        "dungeon": "Spirit Temple",
-        "locations": {
-            "Spirit Temple Near Four Armos Chest": "Mirror_Shield and has_explosives",
-            "Spirit Temple Hallway Left Invisible Chest": "(logic_lens_spirit or can_use(Lens_of_Truth)) and has_explosives",
-            "Spirit Temple Hallway Right Invisible Chest": "(logic_lens_spirit or can_use(Lens_of_Truth)) and has_explosives"
+        regionName: "Spirit Temple Beyond Central Locked Door",
+        dungeon: "Spirit Temple",
+        locations: {
+            "Spirit Temple Near Four Armos Chest": () => inventory.shieldmirror && hasExplosives(),
+            "Spirit Temple Hallway Left Invisible Chest": () => (logic_lens_spirit || (inventory.lens && inventory.magic)) && hasExplosives(),
+            "Spirit Temple Hallway Right Invisible Chest": () => (logic_lens_spirit || (inventory.lens && inventory.magic)) && hasExplosives()
         },
-        "exits": {
+        exits: {
             "Spirit Temple Beyond Final Locked Door": "
                 (Small_Key_Spirit_Temple, 5) and 
                 (logic_spirit_wall or can_use(Longshot) or has_bombchus or 
@@ -3058,36 +2972,34 @@ const regions: Region[] = [
         }
     },
     {
-        "region_name": "Spirit Temple Beyond Final Locked Door",
-        "dungeon": "Spirit Temple",
-        "locations": {
-            "Spirit Temple Boss Key Chest": "
-                can_play(Zeldas_Lullaby) and Bow and 
-                Progressive_Hookshot",
-            "Spirit Temple Topmost Chest": "Mirror_Shield",
-            "Spirit Temple Twinrova Heart": "
-                Mirror_Shield and has_explosives and 
-                Progressive_Hookshot and Boss_Key_Spirit_Temple",
+        regionName: "Spirit Temple Beyond Final Locked Door",
+        dungeon: "Spirit Temple",
+        locations: {
+            "Spirit Temple Boss Key Chest": () => inventory.lullaby && inventory.ocarina && inventory.bow && inventory.shot,
+            "Spirit Temple Topmost Chest": () => inventory.shieldmirror,
+            "Spirit Temple Twinrova Heart": () => inventory.shieldmirror && hasExplosives() && inventory.shot && "
+                Mirror_Shield and hasExplosives() and 
+                Progressive_Hookshot and Boss_Key_Spirit_Temple", // COME BACK - boss key
             "Twinrova": "
-                Mirror_Shield and has_explosives and 
+                Mirror_Shield and hasExplosives() and 
                 Progressive_Hookshot and Boss_Key_Spirit_Temple"
         }
     },
 // Water Temple.json
     {
-        "region_name": "Water Temple Lobby",
-        "dungeon": "Water Temple",
-        "events": {
-            "Child Water Temple": "is_child",
+        regionName: "Water Temple Lobby",
+        dungeon: "Water Temple",
+        events: {
+            "Child Water Temple": () => isChild(),
                 # Child can access only the falling platform room as the sole entrant into Water Temple.
                 # Use Child_Water_Temple for cases where child assists after the water is lowered.
             "Raise Water Level": "
-                (is_adult and (Hookshot or Hover_Boots or Bow)) or
+                (isAdult() and (Hookshot or Hover_Boots or Bow)) or
                 (has_fire_source_with_torch and can_use_projectile)"
                 # Ensure that the water level can be raised if it were to be lowered.
         },
-        "exits": {
-            "Lake Hylia": "True",
+        exits: {
+            "Lake Hylia": () => true,
             "Water Temple Highest Water Level": "Raise_Water_Level",
             "Water Temple Dive": "
                 (can_use(Zora_Tunic) or logic_fewer_tunic_requirements) and
@@ -3095,41 +3007,40 @@ const regions: Region[] = [
         }
     },
     {
-        "region_name": "Water Temple Highest Water Level",
-        "dungeon":  "Water Temple",
-        "events": {
+        regionName: "Water Temple Highest Water Level",
+        dungeon:  "Water Temple",
+        events: {
             "Water Temple Clear": "Boss_Key_Water_Temple and can_use(Longshot)"
         },
-        "locations": {
+        locations: {
             "Morpha": "Boss_Key_Water_Temple and can_use(Longshot)",
             "Water Temple Morpha Heart": "Boss_Key_Water_Temple and can_use(Longshot)",
-            "Fairy Pot": "has_bottle and can_use(Longshot)"
         },
-        "exits": {
+        exits: {
             "Water Temple Falling Platform Room": "(Small_Key_Water_Temple, 5)"
         }
     },
     {
-        "region_name": "Water Temple Dive",
-        "dungeon": "Water Temple",
-        "locations": {
+        regionName: "Water Temple Dive",
+        dungeon: "Water Temple",
+        locations: {
             "Water Temple Map Chest": "Raise_Water_Level",
             "Water Temple Compass Chest": "
-                (can_play(Zeldas_Lullaby) or Iron_Boots) and can_use(Hookshot)",
+                ((inventory.lullaby && inventory.ocarina) or Iron_Boots) and can_use(Hookshot)",
             "Water Temple Torches Chest": "
                 (Bow or can_use(Dins_Fire) or 
                     (Child_Water_Temple and Sticks and Kokiri_Sword and Magic_Meter)) and
-                can_play(Zeldas_Lullaby)",
+                (inventory.lullaby && inventory.ocarina)",
             "Water Temple Central Bow Target Chest": "
-                Progressive_Strength_Upgrade and can_play(Zeldas_Lullaby) and 
+                Progressive_Strength_Upgrade and (inventory.lullaby && inventory.ocarina) and 
                 ((Bow and (logic_water_central_bow or Hover_Boots or can_use(Longshot))) or
                     (logic_water_central_bow and Child_Water_Temple and Slingshot and at('Water Temple Middle Water Level', True)))",
             "Water Temple GS Behind Gate": "
                 (can_use(Hookshot) or can_use(Hover_Boots)) and 
-                has_explosives and can_play(Zeldas_Lullaby) and
+                hasExplosives() and (inventory.lullaby && inventory.ocarina) and
                 (can_use(Iron_Boots) or can_dive)",
             "Water Temple GS Central Pillar": "
-                can_play(Zeldas_Lullaby) and
+                (inventory.lullaby && inventory.ocarina) and
                     (((can_use(Longshot) or (logic_water_central_gs_fw and can_use(Hookshot) and can_use(Farores_Wind))) and 
                         ((Small_Key_Water_Temple, 6) or can_use(Bow) or can_use(Dins_Fire))) or
                     (logic_water_central_gs_irons and can_use(Hookshot) and can_use(Iron_Boots) and
@@ -3138,100 +3049,83 @@ const regions: Region[] = [
                         (Sticks or can_use(Dins_Fire) or
                         ((Small_Key_Water_Temple, 6) and (can_use(Hover_Boots) or can_use(Bow))))))"
         },
-        "exits": {
+        exits: {
             "Water Temple Cracked Wall": "
-                can_play(Zeldas_Lullaby) and (can_use(Hookshot) or can_use(Hover_Boots)) and
+                (inventory.lullaby && inventory.ocarina) and (can_use(Hookshot) or can_use(Hover_Boots)) and
                 (logic_water_cracked_wall_nothing or (logic_water_cracked_wall_hovers and can_use(Hover_Boots)))",
             "Water Temple Middle Water Level": "
                 (Bow or can_use(Dins_Fire) or
                     ((Small_Key_Water_Temple, 6) and can_use(Hookshot)) or
                     (Child_Water_Temple and Sticks)) and
-                can_play(Zeldas_Lullaby)",
+                (inventory.lullaby && inventory.ocarina)",
             "Water Temple North Basement": "
                 (Small_Key_Water_Temple, 5) and
                 (can_use(Longshot) or (logic_water_boss_key_region and can_use(Hover_Boots))) and
-                (can_use(Iron_Boots) or can_play(Zeldas_Lullaby))",
+                (can_use(Iron_Boots) or (inventory.lullaby && inventory.ocarina))",
             "Water Temple Dragon Statue": "
-                can_play(Zeldas_Lullaby) and Progressive_Strength_Upgrade and
+                (inventory.lullaby && inventory.ocarina) and Progressive_Strength_Upgrade and
                 ((Iron_Boots and can_use(Hookshot)) or
                     (logic_water_dragon_adult and (has_bombchus or can_use(Bow) or can_use(Hookshot)) and (can_dive or Iron_Boots)) or
                     (logic_water_dragon_child and Child_Water_Temple and (has_bombchus or Slingshot or Boomerang) and can_dive))"
         }
     },
     {
-        "region_name": "Water Temple North Basement",
-        "dungeon": "Water Temple",
-        "locations": {
+        regionName: "Water Temple North Basement",
+        dungeon: "Water Temple",
+        locations: {
             "Water Temple Boss Key Chest": "
                 (Small_Key_Water_Temple, 6) and 
                 (logic_water_bk_jump_dive or can_use(Iron_Boots)) and
-                (logic_water_north_basement_ledge_jump or (has_explosives and Progressive_Strength_Upgrade) or Hover_Boots)",
-            "Water Temple GS Near Boss Key Chest": "True",
-                # Longshot just reaches without the need to actually go near,
-                # Otherwise you have hovers and just hover over and collect with a jump slash
-            "Fairy Pot": "
-                has_bottle and (Small_Key_Water_Temple, 6) and 
-                (logic_water_bk_jump_dive or can_use(Iron_Boots)) and
-                (logic_water_north_basement_ledge_jump or (has_explosives and Progressive_Strength_Upgrade) or Hover_Boots)"
+                (logic_water_north_basement_ledge_jump or (hasExplosives() and Progressive_Strength_Upgrade) or Hover_Boots)",
+            "Water Temple GS Near Boss Key Chest": () => true
         }
     },
     {
-        "region_name": "Water Temple Cracked Wall",
-        "dungeon": "Water Temple",
-        "locations": {
-            "Water Temple Cracked Wall Chest": "has_explosives"
+        regionName: "Water Temple Cracked Wall",
+        dungeon: "Water Temple",
+        locations: {
+            "Water Temple Cracked Wall Chest": () => hasExplosives()
         }
     },
     {
-        "region_name": "Water Temple Dragon Statue",
-        "dungeon": "Water Temple",
-        "locations": {
-            "Water Temple Dragon Chest": "True"
+        regionName: "Water Temple Dragon Statue",
+        dungeon: "Water Temple",
+        locations: {
+            "Water Temple Dragon Chest": () => true
         }
     },
     {
-        "region_name": "Water Temple Middle Water Level",
-        "dungeon": "Water Temple",
-        "locations": {
+        regionName: "Water Temple Middle Water Level",
+        dungeon: "Water Temple",
+        locations: {
             "Water Temple Central Pillar Chest": "
                 can_use(Iron_Boots) and can_use(Zora_Tunic) and can_use(Hookshot) and 
                 ((Small_Key_Water_Temple, 6) or can_use(Bow) or can_use(Dins_Fire))"
         },
-        "exits": {
-            "Water Temple Cracked Wall": "True"
+        exits: {
+            "Water Temple Cracked Wall": () => true
         }
     },
     {
-        "region_name": "Water Temple Falling Platform Room",
-        "dungeon": "Water Temple",
-        "locations": {
-            "Water Temple GS Falling Platform Room": "
-                can_use(Longshot) or
-                (logic_water_falling_platform_gs_hookshot and can_use(Hookshot)) or
-                (logic_water_falling_platform_gs_boomerang and can_use(Boomerang))"
+        regionName: "Water Temple Falling Platform Room",
+        dungeon: "Water Temple",
+        locations: {
+            "Water Temple GS Falling Platform Room": () => inventory.shot > 1 || (logic_water_falling_platform_gs_hookshot && inventory.shot)
         },
-        "exits": {
-            "Water Temple Dark Link Region": "(Small_Key_Water_Temple, 6) and can_use(Hookshot)"
+        exits: {
+            "Water Temple Dark Link Region": "(Small_Key_Water_Temple, 6) and can_use(Hookshot)" // COME BACK
         }
     },
     {
-        "region_name": "Water Temple Dark Link Region",
-        "dungeon": "Water Temple",
-        "locations": {
-            "Water Temple Longshot Chest": "True",
-            "Water Temple River Chest": "can_play(Song_of_Time) and Bow",
-            "Water Temple GS River": "
-                can_play(Song_of_Time) and 
-                ((Iron_Boots and (can_use(Zora_Tunic) or logic_fewer_tunic_requirements)) or
-                    (logic_water_river_gs and can_use(Longshot) and (Bow or has_bombchus)))",
-            "Fairy Pot": 
-                "has_bottle and can_play(Song_of_Time)"
+        regionName: "Water Temple Dark Link Region",
+        dungeon: "Water Temple",
+        locations: {
+            "Water Temple Longshot Chest": () => true,
+            "Water Temple River Chest": () => (inventory.time & inventory.ocarina) && inventory.bow,
+            "Water Temple GS River": () => (inventory.time && inventory.ocarina) && ((inventory.bootsiron && (inventory.tuniczora || logic_fewer_tunic_requirements) || (logic_water_river_gs && (inventory.shot > 1 && (inventory.bow || inventory.bombchus))))
         },
-        "exits": {
-            "Water Temple Dragon Statue": "
-                (can_use(Zora_Tunic) or logic_fewer_tunic_requirements) and
-                can_play(Song_of_Time) and Bow and
-                (Iron_Boots or logic_water_dragon_jump_dive or logic_water_dragon_adult)"
+        exits: {
+            "Water Temple Dragon Statue": () => (inventory.tuniczora || logic_fewer_tunic_requirements) && (inventory.time && inventory.ocarina) && inventory.bow && (inventory.bootsiron || logic_water_dragon_jump_dive || logic_water_dragon_adult)
         }
     }
 ];
