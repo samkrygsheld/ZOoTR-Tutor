@@ -1,6 +1,7 @@
 /* Settings */
 const childSpawn: string = 'KF Links House';
 const adultSpawn: string = 'Temple of Time';
+const keysanity: boolean = false;
 const open_forest: boolean = true;
 const bombchus_in_logic: boolean = true;
 const logic_grottos_without_agony: boolean = true;
@@ -29,6 +30,17 @@ const inventory = {
   medallionwater: 0,
   medallionshadow: 0,
   medallionspirit: 0,
+  keyswell: 0,
+  keysforest: 0,
+  bosskeyforest: 0,
+  keysfire: 0,
+  bosskeyfire: 0,
+  keyswater: 0,
+  bosskeywater: 0,
+  keysshadow: 0,
+  bosskeyshadow: 0,
+  keysspirit: 0,
+  bosskeyspirit: 0,
   slingshot: 0,
   boomerang: 0,
   sticks: 0,
@@ -2177,14 +2189,11 @@ const regions: Region[] = [
                 can_use(Goron_Tunic) && can_use(Megaton_Hammer) && Boss_Key_Fire_Temple && 
                 (logic_fire_boss_door_jump || Hover_Boots or
                     at('Fire Temple Upper', (inventory.time && inventory.ocarina) || hasExplosives()))",
-            "Fire Temple GS Boss Key Loop": "
-                ((Small_Key_Fire_Temple, 8) || not keysanity) && can_use(Megaton_Hammer)"
+            "Fire Temple GS Boss Key Loop": () => (inventory.keysfire > 7 || keysanity === false) && inventory.hammer
         },
         exits: {
             "DMC Fire Temple Entrance": () => true,
-            "Fire Temple Big Lava Room":"
-                (Small_Key_Fire_Temple, 2) and
-                (logic_fewer_tunic_requirements || can_use(Goron_Tunic))"
+            "Fire Temple Big Lava Room": () => inventory.keysfire > 1 && (logic_fewer_tunic_requirements || inventory.tunicgoron)
         }
     },
     {
@@ -2192,16 +2201,12 @@ const regions: Region[] = [
         dungeon: "Fire Temple",
         locations: {
             "Fire Temple Big Lava Room Lower Open Door Chest": () => true,
-            "Fire Temple Big Lava Room Blocked Door Chest": "isAdult() && hasExplosives()",
-            "Fire Temple GS Song of Time Room": "
-                isAdult() && ((inventory.time && inventory.ocarina) || logic_fire_song_of_time)"
+            "Fire Temple Big Lava Room Blocked Door Chest": () => hasExplosives(),
+            "Fire Temple GS Song of Time Room": () => ((inventory.time && inventory.ocarina) || logic_fire_song_of_time)
         },
         exits: {
             "Fire Temple Lower":  () => true,
-            "Fire Temple Middle": "
-                can_use(Goron_Tunic) && (Small_Key_Fire_Temple, 4) and
-                (inventory.strength || logic_fire_strength) && 
-                (hasExplosives() || Bow || Progressive_Hookshot)"
+            "Fire Temple Middle": () => inventory.tunicgoron && inventory.keysfire > 3 && (inventory.strength || logic_fire_strength) && (hasExplosives() || inventory.bow || inventory.shot)
         }
     },
     {
@@ -2209,39 +2214,30 @@ const regions: Region[] = [
         dungeon: "Fire Temple",
         locations: {
             "Fire Temple Boulder Maze Lower Chest": () => true,
-            "Fire Temple Boulder Maze Upper Chest": "(Small_Key_Fire_Temple, 6)",
+            "Fire Temple Boulder Maze Upper Chest": () => inventory.keysfire > 5,
             "Fire Temple Boulder Maze Side Room Chest": () => true,
-            "Fire Temple Boulder Maze Shortcut Chest": "
-                (Small_Key_Fire_Temple, 6) && hasExplosives()",
-            "Fire Temple Scarecrow Chest": "
-                (Small_Key_Fire_Temple, 6) and
+            "Fire Temple Boulder Maze Shortcut Chest": hasExplosives() && inventory.keysfire > 5,
+            "Fire Temple Scarecrow Chest": () => inventory.keysfire > 5 &&
                 (can_use(Scarecrow) || (logic_fire_scarecrow && can_use(Longshot)))",
-            "Fire Temple Map Chest": "
-                (Small_Key_Fire_Temple, 6) || ((Small_Key_Fire_Temple, 5) && can_use(Bow))",
-            "Fire Temple Compass Chest": "(Small_Key_Fire_Temple, 7)",
-            "Fire Temple GS Boulder Maze": "(Small_Key_Fire_Temple, 4) && hasExplosives()",
-            "Fire Temple GS Scarecrow Climb": "
-                (Small_Key_Fire_Temple, 6) and
+            "Fire Temple Map Chest": () => inventory.keysfire > 4 && (inventory.bow || inventory.keysfire > 5),
+            "Fire Temple Compass Chest": () => inventory.keysfire > 6,
+            "Fire Temple GS Boulder Maze": () => inventory.keysfire > 3 && hasExplosives(),
+            "Fire Temple GS Scarecrow Climb": () => inventory.keysfire > 5 && 
                 (can_use(Scarecrow) || (logic_fire_scarecrow && can_use(Longshot)))",
-            "Fire Temple GS Scarecrow Top": "
-                (Small_Key_Fire_Temple, 6) and
+            "Fire Temple GS Scarecrow Top": () => inventory.keysfire > 5 &&
                 (can_use(Scarecrow) || (logic_fire_scarecrow && can_use(Longshot)))"
         },
         exits: {
-            "Fire Temple Upper": "
-                (Small_Key_Fire_Temple, 8) || 
-                ((Small_Key_Fire_Temple, 7) and
-                    ((can_use(Hover_Boots) && can_use(Megaton_Hammer)) || logic_fire_flame_maze))"
+            "Fire Temple Upper": () => inventory.keysfire > 6 && (inventory.keysfire > 7 || (inventory.bootshover && inventory.hammer) || logic_fire_flame_maze)
         }
     },
     {
         regionName: "Fire Temple Upper",
         dungeon: "Fire Temple",
         locations: {
-            "Fire Temple Highest Goron Chest": "
-                can_use(Megaton_Hammer) && 
+            "Fire Temple Highest Goron Chest": () => inventory.hammer && 
                 ((inventory.time && inventory.ocarina) || (logic_rusted_switches && 
-                    (can_use(Hover_Boots) || hasExplosives())))",
+                    (inventory.bootshover || hasExplosives()))),
             "Fire Temple Megaton Hammer Chest": () => hasExplosives()
         }
     },
@@ -2252,17 +2248,14 @@ const regions: Region[] = [
         locations: {
             "Forest Temple First Room Chest": () => true,
             "Forest Temple First Stalfos Chest": () => true,
-            "Forest Temple GS First Room": "
-                (isAdult() && (Hookshot || Bow || Bombs)) || (isChild() && (Boomerang || Slingshot)) or
-                has_bombchus || (inventory.dins && inventory.magic) || (logic_forest_first_gs && (Bombs or
-                    (can_jumpslash && (damage_multiplier != 'ohko' || Fairy || can_use(Nayrus_Love)))))",
+            "Forest Temple GS First Room": () => inventory.shot || inventory.bow || inventory.bombs || inventory.bombchus || (inventory.dins && inventory.magic) || (logic_forest_first_gs && (canJumpslash() && (damage_multiplier != 'ohko' || inventory.bottle || (inventory.magic && inventory.nayrus)))),
             "Forest Temple GS Lobby": () => inventory.shot
         },
         exits: {
             "SFM Forest Temple Entrance Ledge": () => true,
             "Forest Temple NW Outdoors": () => inventory.time && inventory.ocarina,
             "Forest Temple NE Outdoors": () => inventory.bow,
-            "Forest Temple Block Push Room": "(Small_Key_Forest_Temple, 1)",
+            "Forest Temple Block Push Room": () => inventory.keysforest > 0,
             "Forest Temple Boss Region": "Forest_Temple_Jo_and_Beth && Forest_Temple_Amy_and_Meg"
         }
     },
@@ -2332,10 +2325,8 @@ const regions: Region[] = [
         },
         exits: {
             "Forest Temple Outside Upper Ledge": inventory.bootshover || (logic_forest_outside_backdoor && inventory.strength),
-            "Forest Temple Bow Region": "
-                inventory.strength && (Small_Key_Forest_Temple, 3) && isAdult()",
-            "Forest Temple Straightened Hall": "
-                inventory.strength && (Small_Key_Forest_Temple, 2) && can_use(Bow)"
+            "Forest Temple Bow Region": () => inventory.strength && inventory.keysforest > 2,
+            "Forest Temple Straightened Hall": () => inventory.strength && inventory.keysforest > 1 && inventory.bow
         }
     },
     {
@@ -2362,7 +2353,7 @@ const regions: Region[] = [
         regionName: "Forest Temple Bow Region",
         dungeon: "Forest Temple",
         events: {
-            "Forest Temple Jo && Beth": () => inventory.bow
+            "Forest Temple Jo and Beth": () => inventory.bow
         },
         locations: {
             "Forest Temple Bow Chest": () => true,
@@ -2370,8 +2361,7 @@ const regions: Region[] = [
             "Forest Temple Blue Poe Chest": () => inventory.bow
         },
         exits: {
-            "Forest Temple Falling Room": "
-            (Small_Key_Forest_Temple, 5) && (Bow || (inventory.dins && inventory.magic))"
+            "Forest Temple Falling Room": () => inventory.keysforest > 4 && (inventory.bow || (inventory.dins && inventory.magic))
         }
     },
     {
@@ -2379,8 +2369,8 @@ const regions: Region[] = [
         dungeon: "Forest Temple",
         locations: {
             "Forest Temple Basement Chest": () => true,
-            "Forest Temple Phantom Ganon Heart": "Boss_Key_Forest_Temple",
-            "Phantom Ganon": "Boss_Key_Forest_Temple",
+            "Forest Temple Phantom Ganon Heart": () => inventory.bosskeyforest,
+            "Phantom Ganon": () => inventory.bosskeyforest,
             "Forest Temple GS Basement": () => inventory.shot
         }
     },
@@ -2395,7 +2385,7 @@ const regions: Region[] = [
             "Ganons Castle Water Trial": () => true,
             "Ganons Castle Shadow Trial": () => true,
             "Ganons Castle Spirit Trial": () => true,
-            "Ganons Castle Light Trial": "can_use(Golden_Gauntlets)",
+            "Ganons Castle Light Trial": () => inventory.strength > 2,
             "Ganons Castle Tower": "
                 (skipped_trials[Forest] || 'Forest Trial Clear') && 
                 (skipped_trials[Fire] || 'Fire Trial Clear') && 
@@ -2403,7 +2393,7 @@ const regions: Region[] = [
                 (skipped_trials[Shadow] || 'Shadow Trial Clear') && 
                 (skipped_trials[Spirit] || 'Spirit Trial Clear') && 
                 (skipped_trials[Light] || 'Light Trial Clear')",
-            "Ganons Castle Deku Scrubs": "logic_lens_castle || (inventory.lens && inventory.magic)"
+            "Ganons Castle Deku Scrubs": () => logic_lens_castle || (inventory.lens && inventory.magic)
         }
     },
     {
@@ -2413,15 +2403,14 @@ const regions: Region[] = [
             "Ganons Castle Deku Scrub Center-Left": () => true,
             "Ganons Castle Deku Scrub Center-Right": () => true,
             "Ganons Castle Deku Scrub Right": () => true,
-            "Ganons Castle Deku Scrub Left": () => true,
-            "Free Fairies": "has_bottle"
+            "Ganons Castle Deku Scrub Left": () => true
         }
     },
     {
         regionName: "Ganons Castle Forest Trial",
         dungeon: "Ganons Castle",
         events: {
-            "Forest Trial Clear": "can_use(Light_Arrows) && (Fire_Arrows || Dins_Fire)"
+            "Forest Trial Clear": () => inventory.arrowslight && inventory.bow && inventory.magic && (inventory.arrowsfire || inventory.dins)
         },
         locations: {
             "Ganons Castle Forest Trial Chest": () => true
@@ -2431,7 +2420,7 @@ const regions: Region[] = [
         regionName: "Ganons Castle Fire Trial",
         dungeon: "Ganons Castle",
         events: {
-            "Fire Trial Clear": "
+            "Fire Trial Clear": () => "
                 can_use(Goron_Tunic) && can_use(Golden_Gauntlets) && 
                 can_use(Light_Arrows) && can_use(Longshot)"
         }
