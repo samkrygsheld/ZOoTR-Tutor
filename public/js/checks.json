@@ -271,7 +271,13 @@
         "subregion": "sacred_forest_meadow",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Jump up Forest Meadow walls"
+                "url": "https://youtu.be/bwk9kHeB1SE"
+            }
+        ]
     },
     {
         "spoiler": "Sheik in Crater",
@@ -453,7 +459,13 @@
         "age": "both",
         "price": 40,
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Skip Mido with nothing",
+                "url": "https://youtu.be/ITotQllc2DM"
+            }
+        ]
     },
     {
         "spoiler": "SFM Wolfos Grotto Chest",
@@ -1307,7 +1319,13 @@
         "subregion": "gerudo_valley",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Get across bridge with Hookshot",
+                "url": "https://youtu.be/RMqzj3XLqqg"
+            }
+        ]
     },
     {
         "spoiler": "GF Gerudo Membership Card",
