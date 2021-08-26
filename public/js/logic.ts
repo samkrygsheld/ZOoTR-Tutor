@@ -3,7 +3,7 @@ const childSpawn: string = 'KF Links House';
 const adultSpawn: string = 'Temple of Time';
 const keysanity: boolean = false;
 const open_forest: boolean = true;
-const zora_fountain: boolean = false;
+const zora_fountain: string = 'open';
 const lacs_condition: string = 'vanilla';
 const lacs_stones: number = 0;
 const lacs_medallions: number = 0;
@@ -18,12 +18,12 @@ const logic_lens_wasteland: boolean = false;
 const logic_wasteland_crossing: boolean = false;
 const logic_child_dampe_race_poh: boolean = false;
 const open_door_of_time: boolean = true;
-const gerudo_fortress: boolean = true;
+const gerudo_fortress: string = 'fast';
 const logic_fire_boss_door_jump: boolean = false;
 const complete_mask_quest: boolean = false;
 const disable_trade_revert: boolean = false;
 const guarantee_trade_path: boolean = false;
-const open_kakariko: boolean = true;
+const open_kakariko: string = 'open';
 const logic_forest_outdoors_ledge: boolean = false;
 const logic_lost_woods_bridge: boolean = false;
 const logic_lost_woods_gs_bean: boolean = false;
@@ -43,6 +43,7 @@ const logic_trail_gs_lower_hovers: boolean = false;
 const logic_trail_gs_lower_bean: boolean = false;
 const big_poe_count: number = 1;
 const shuffle_dungeon_entrances: boolean = false;
+const shuffle_overworld_entrances: boolean = false;
 const logic_visible_collisions: boolean = true;
 const logic_trail_gs_upper: boolean = true;
 const logic_goron_city_pot_with_strength: boolean = true;
@@ -74,6 +75,42 @@ const logic_lens_gtg: boolean = true;
 const logic_gtg_fake_wall: boolean = true;
 const logic_shadow_freestanding_keys: boolean = false;
 const logic_spirit_child_bombchu: boolean = false;
+const logic_gerudo_kitchen: boolean = false;
+const logic_water_hookshot_entry: boolean = false;
+const logic_lab_diving: boolean = false;
+const logic_kakariko_tower_gs: boolean = false;
+const logic_shadow_fire_arrow_entry: boolean = false;
+const logic_dmt_climb_hovers: boolean = false;
+const logic_domain_gs: boolean = false;
+const logic_link_goron_dins: boolean = false;
+const logic_goron_city_leftmost: boolean = false;
+const logic_child_rolling_with_strength: boolean = false;
+const logic_goron_grotto: boolean = false;
+const logic_crater_upper_to_lower: boolean = false;
+const logic_zora_river_lower: boolean = false;
+const logic_zora_river_upper: boolean = false;
+const logic_castle_storms_gs: boolean = false;
+const logic_deku_b1_skip: boolean = false;
+const logic_dc_scarecrow_gs: boolean = false;
+const logic_fire_song_of_time: boolean = false;
+const logic_fire_strength: boolean = false;
+const logic_fire_flame_maze: boolean = false;
+const logic_forest_first_gs: boolean = false;
+const logic_forest_vines: boolean = true;
+const logic_forest_door_frame: boolean = false;
+const logic_forest_outside_backdoor: boolean = false;
+const logic_rusted_switches: boolean = true;
+const logic_gtg_without_hookshot: boolean = false;
+const logic_ice_block_gs: boolean = false;
+const logic_spirit_lower_adult_switch: boolean = false;
+const skippedTrials = {
+    forest = true,
+    fire = true,
+    water = true,
+    shadow = true,
+    spirit = true,
+    light = true,
+};
 
 
 /* State */
@@ -102,6 +139,8 @@ const inventory = {
   bosskeyshadow: 0,
   keysspirit: 0,
   bosskeyspirit: 0,
+  keysfortress: 0,
+  keysgtg: 0,
   keysganon: 0,
   bosskeyganon: 0,
   slingshot: 0,
@@ -121,6 +160,7 @@ const inventory = {
   arrowslight: 0,
   hammer: 0,
   bottle: 0,
+  rutos: 0,
   shot: 0,
   shielddeku: 0,
   shieldmirror: 0,
@@ -130,6 +170,7 @@ const inventory = {
   eponas: 0,
   suns: 0,
   storms: 0,
+  time: 0,
   minuet: 0,
   bolero: 0,
   serenade: 0,
@@ -145,47 +186,84 @@ const inventory = {
   tunicgoron: 0,
   tuniczora: 0,
   skulls: 0,
+  gerudocard: 0,
+  child_trading: 0,
+  adult_trading: 0,
+  wallet: 0,
 };
 
 const roots: string[] = [childSpawn, adultSpawn, 'prelude_warp', 'minuet_warp', 'bolero_warp', 'serenade_warp', 'nocturne_warp', 'requiem_warp'];
 
 /* Helpers */
-function note(note_text): boolean {return true;} /* Just for leaving notes */
+function note(note_text:string): boolean {
+    return true;
+    // Just for leaving notes
+}
 
 function isChild(): boolean {
-  return age === 'child';
+    return age === 'child';
 }
 
 function isAdult(): boolean {
-  return age === 'adult';
+    return age === 'adult';
 }
 
 function canLeaveForest(): boolean {
-  return open_forest || isAdult() || checkStatuses['Queen Gohma'];
+    return !!(open_forest || isAdult() || checkStatuses['Queen Gohma']);
 }
 
 function hasExplosives(): boolean {
-  return !!(inventory.bombs || (bombchus_in_logic && inventory.bombchus));
+    return !!(inventory.bombs || (bombchus_in_logic && inventory.bombchus));
+}
+
+function hasProjectile(for_age:string): boolean {
+    if (hasExplosives()) {
+        return true
+    }
+    else if (for_age === 'child') {
+        return !!(inventory.slingshot || inventory.boomerang)
+    }
+    else if (for_age === 'adult') {
+        return !!(inventory.bow || inventory.shot)
+    }
+    else if (for_age === 'both') {
+        return !!((inventory.slingshot || inventory.boomerang) && (inventory.bow || inventory.shot))
+    }
+    else {
+        return !!(inventory.slingshot || inventory.boomerang || inventory.bow || inventory.shot)
+    }
+}
+
+function hasFireSource(): boolean {
+    return !!(inventory.magic && (inventory.dins || (inventory.arrowsfire && inventory.bow)))
+}
+
+function hasFireSourceWithTorch(): boolean {
+    return hasFireSource() || !!(isChild() && inventory.sticks)
 }
 
 function canChildAttack(): boolean {
-  return !!(inventory.slingshot || inventory.boomerang || inventory.sticks || inventory.swordkokiri || hasExplosives() || (inventory.magic && inventory.dins));
+    return !!(inventory.slingshot || inventory.boomerang || inventory.sticks || inventory.swordkokiri || hasExplosives() || (inventory.magic && inventory.dins));
+}
+
+function canJumpslash(): boolean {
+    return !!(isAdult() || inventory.sticks || inventory.swordkokiri)
 }
 
 function canPlantBugs(): boolean {
-  return !!inventory.bottle;
+    return !!inventory.bottle;
 }
 
 function canOpenStormGrotto(): boolean {
-  return !!((inventory.ocarina && inventory.storms) && (inventory.agony || logic_grottos_without_agony));
+    return !!((inventory.ocarina && inventory.storms) && (inventory.agony || logic_grottos_without_agony));
 }
 
 function canOpenBombGrotto(): boolean {
-    return !!(canBlastOrSmash() && (inventory.agony || logic_grottos_without_agony))
+    return !!(canBlastOrSmash() && (inventory.agony || logic_grottos_without_agony));
 }
 
 function canStunDeku(): boolean {
-  return !!(isAdult() || (inventory.shielddeku || inventory.slingshot || inventory.boomerang || inventory.sticks || inventory.swordkokiri || hasExplosives() || (inventory.magic && inventory.dins) || inventory.nuts));
+    return !!(isAdult() || (inventory.shielddeku || inventory.slingshot || inventory.boomerang || inventory.sticks || inventory.swordkokiri || hasExplosives() || (inventory.magic && inventory.dins) || inventory.nuts));
 }
 
 function canRideEpona(): boolean {
@@ -199,19 +277,27 @@ function canTriggerLACS(): boolean {
         (lacs_condition === 'medallions' && (inventory.medallionlight + inventory.medallionforest + inventory.medallionfire + inventory.medallionwater + inventory.medallionshadow + inventory.medallionspirit >= lacs_medallions)) ||
         (lacs_condition === 'dungeons' && (inventory.stonekokiri + inventory.stonegoron + inventory.stonezora + inventory.medallionlight + inventory.medallionforest + inventory.medallionfire + inventory.medallionwater + inventory.medallionshadow + inventory.medallionspirit >= lacs_rewards)) ||
         (lacs_condition === 'tokens' && (inventory.skulls >= lacs_tokens))
-    )
+    );
 }
 
 function canFinishGerudoFortress(): boolean {
-  // COME BACK
+    return !!(
+        (gerudo_fortress === 'normal' && inventory.keysfortress > 3 && (isAdult() || inventory.swordkokiri) && (isAdult() && (inventory.bow || inventory.shot || inventory.bootshover) || inventory.gerudocard || logic_gerudo_kitchen))
+        || (gerudo_fortress === 'fast' && inventory.keysfortress && (isAdult() || inventory.swordkokiri))
+        || (gerudo_fortress != 'normal' && gerudo_fortress != 'fast')
+    );
 }
 
 function canUseProjectile(): boolean {
-    return !!(hasExplosives() || (isAdult() && (inventory.bow || inventory.shot)) || (isChild() && (inventory.slingshot || inventory.boomerang))
+    return !!(
+        hasExplosives() || 
+        (isAdult() && (inventory.bow || inventory.shot)) || 
+        (isChild() && (inventory.slingshot || inventory.boomerang))
+    );
 }
 
 function hasBombchus(): boolean {
-  // COME BACK
+    return !!(bombchus_in_logic || inventory.bombs); // && (Buy_Bombchu_5 or Buy_Bombchu_10 or Buy_Bombchu_20 or Bombchu_Drop)
 }
 
 function canBlastOrSmash(): boolean {
@@ -235,7 +321,7 @@ function canUseScarecrow(distance='near'): boolean {
     }
     else {
         return false
-    }
+    };
 }
 
 function eventCompletable(event): boolean {
@@ -490,7 +576,7 @@ const regions: Region[] = [
         'Eyedrops Access': () => isAdult() && (eventCompletable('Eyeball Frog Access') || (inventory.adult_trading > 8 && disable_trade_revert))
     },
     locations: {
-        'LH Lab Dive': () => inventory.scale > 1 || (logic_lab_diving && isAdult() & inventory.bootsiron && inventory.shot),
+        'LH Lab Dive': () => inventory.scale > 1 || (logic_lab_diving && isAdult() && inventory.bootsiron && inventory.shot),
         'LH GS Lab Crate': () => isAdult() && inventory.bootsiron && inventory.shot
     },
     exits: {
@@ -570,7 +656,7 @@ const regions: Region[] = [
     scene: 'Gerudo Valley',
     timePasses: true,
     events: {
-        'Broken Sword Access': 'isAdult() && ('Poachers Saw Access' || Poachers_Saw)'
+        'Broken Sword Access': () => isAdult() && (eventCompletable('Poachers Saw Access') || inventory.adult_trading === 6)
     },
     locations: {
         'GV Chest': () => isAdult() && inventory.hammer,
@@ -582,7 +668,7 @@ const regions: Region[] = [
         'GV Upper Stream': () => true,
         'GV Crate Ledge': () => isAdult() && logic_valley_crate_hovers && inventory.bootshover && canTakeDamage(),
         'Gerudo Valley': () => isChild() || canRideEpona() || (isAdult() && inventory.shot > 1) ||
-            gerudo_fortress === 'open' || checks.carpenter_rescue,
+            gerudo_fortress === 'open' || eventCompletable('Carpenter Rescue'),
         'GV Carpenter Tent': isAdult(),
         'GV Storms Grotto': () => isAdult() && canOpenStormGrotto()
     }
@@ -615,7 +701,7 @@ const regions: Region[] = [
     },
     exits: {
         'GV Fortress Side': () => true,
-        'GF Outside Gate': ''GF Gate Open'',
+        'GF Outside Gate': () => eventCompletable('GF Gate Open'),
         'Gerudo Training Grounds Lobby': () => inventory.gerudocard && isAdult(),
         'GF Storms Grotto': () => isAdult() && canOpenStormGrotto()
     }
@@ -624,7 +710,7 @@ const regions: Region[] = [
     regionName: 'GF Outside Gate',
     scene: 'Gerudo Fortress',
     exits: {
-        'Gerudo Fortress': 'isAdult() || (shuffle_overworld_entrances && 'GF Gate Open')',
+        'Gerudo Fortress': () => isAdult() || (shuffle_overworld_entrances && eventCompletable('GF Gate Open')),
         'Wasteland Near Fortress': () => true
     }
 },
@@ -748,7 +834,7 @@ const regions: Region[] = [
     },
     exits: {
         'ToT Entrance': () => true,
-        'Beyond Door of Time': '(inventory.time && inventory.ocarina) || open_door_of_time'
+        'Beyond Door of Time': () => open_door_of_time || (inventory.time && inventory.ocarina)
     }
 },
 {
@@ -756,7 +842,7 @@ const regions: Region[] = [
     scene: 'Temple of Time',
     locations: {
         'Master Sword Pedestal': () => true,
-        'Sheik at Temple': 'Forest_Medallion && isAdult()'
+        'Sheik at Temple': () => inventory.medallionforest && isAdult()
     },
     exits: {
         'Temple of Time': () => true
@@ -766,7 +852,7 @@ const regions: Region[] = [
     regionName: 'Castle Grounds',
     scene: 'Castle Grounds',
     exits: {
-        'Market': 'isChild() || at_dampe_time',
+        'Market': () => true,
         'Hyrule Castle Grounds': () => isChild(),
         'Ganons Castle Grounds': () => isAdult()
     }
@@ -838,10 +924,11 @@ const regions: Region[] = [
     regionName: 'Market Guard House',
     scene: 'Market Guard House',
     events: {
-        'Sell Big Poe': () => isAdult() && (inventory.bottlebigpoe || eventCompletable('Big Poe Kill'))
+        'Sell Big Poe': () => isAdult() && (inventory.bottle || eventCompletable('Big Poe Kill'))
     },
     locations: {
-        'Market 10 Big Poes': () => isAdult() && (eventCompletable('Big Poe Kill') || inventory.bottlebigpoe > big_poe_count),
+        'Market 10 Big Poes': () => isAdult() && eventCompletable('Big Poe Kill'),
+        // COME BACK - do some sort of special logic here? Not currently tracking bottle contents, but if inventory.bottlebigpoe > big_poe_count, this is completable
         'Market GS Guard House': () => isChild()
     },
     exits: {
@@ -869,7 +956,7 @@ const regions: Region[] = [
     regionName: 'Market Mask Shop',
     scene: 'Market Mask Shop',
     events: {
-        'Skull Mask': () => inventory.child > 2 && (complete_mask_quest || eventCompletable('Sell Keaton Mask')),
+        'Skull Mask': () => inventory.child_trading > 2 && (complete_mask_quest || eventCompletable('Sell Keaton Mask')),
         'Mask of Truth': () => eventCompletable(['Skull Mask']) && (complete_mask_quest || (eventCompletable('Sell Skull Mask') && eventCompletable('Sell Spooky Mask') && eventCompletable('Sell Bunny Hood')))
     },
     exits: {
@@ -991,9 +1078,9 @@ const regions: Region[] = [
         'Kak Impas Ledge': () => isChild() || (isAdult() && logic_visible_collisions),
         'Kak Impas Rooftop': () => isAdult() && inventory.shot > 1 || (logic_kakariko_rooftop_gs && inventory.bootshover),
         'Kak Odd Medicine Rooftop': () => (isAdult() && inventory.shot > 1) || logic_man_on_roof,
-        'Kak Backyard': 'isAdult() || at_day',
+        'Kak Backyard': () => true,
         'Graveyard': () => true,
-        'Kak Behind Gate': 'isAdult() || 'Kakariko Village Gate Open''
+        'Kak Behind Gate': () => isAdult() || eventCompletable('Kakariko Village Gate Open')
     }
 },
 {
@@ -1008,7 +1095,7 @@ const regions: Region[] = [
     regionName: 'Kak Impas Rooftop',
     scene: 'Kakariko Village',
     locations: {
-        'Kak GS Above Impas House': 'isAdult() && at_night'
+        'Kak GS Above Impas House': () => isAdult()
     },
     exits: {
         'Kak Impas Ledge': () => true,
@@ -1033,7 +1120,7 @@ const regions: Region[] = [
         'Kakariko Village': () => true,
         'Kak Open Grotto': () => true,
         'Kak Odd Medicine Building': () => isAdult(),
-        'Kak Potion Shop Back': 'isAdult() && at_day'
+        'Kak Potion Shop Back': () => isAdult()
     }
 },
 {
@@ -1050,11 +1137,11 @@ const regions: Region[] = [
     regionName: 'Kak House of Skulltula',
     scene: 'Kak House of Skulltula',
     locations: {
-        'Kak 10 Gold Skulltula Reward': '(Gold_Skulltula_Token, 10)',
-        'Kak 20 Gold Skulltula Reward': '(Gold_Skulltula_Token, 20)',
-        'Kak 30 Gold Skulltula Reward': '(Gold_Skulltula_Token, 30)',
-        'Kak 40 Gold Skulltula Reward': '(Gold_Skulltula_Token, 40)',
-        'Kak 50 Gold Skulltula Reward': '(Gold_Skulltula_Token, 50)'
+        'Kak 10 Gold Skulltula Reward': () => inventory.skulls > 9,
+        'Kak 20 Gold Skulltula Reward': () => inventory.skulls > 19,
+        'Kak 30 Gold Skulltula Reward': () => inventory.skulls > 29,
+        'Kak 40 Gold Skulltula Reward': () => inventory.skulls > 39,
+        'Kak 50 Gold Skulltula Reward': () => inventory.skulls > 49
     },
     exits: {
         'Kakariko Village': () => true
@@ -1156,7 +1243,7 @@ const regions: Region[] = [
     regionName: 'Kak Odd Medicine Building',
     scene: 'Kak Odd Medicine Building',
     events: {
-        'Odd Potion Access': () => isAdult() && inventory.adult_trading === 4 & disable_trade_revert
+        'Odd Potion Access': () => isAdult() && inventory.adult_trading === 4 && disable_trade_revert
     },
     exits: {
         'Kak Backyard': () => true
@@ -1227,7 +1314,7 @@ const regions: Region[] = [
     },
     exits: {
         'Graveyard': () => true,
-        'Kak Windmill': 'isAdult() && (inventory.time && inventory.ocarina)'
+        'Kak Windmill': () => isAdult() && (inventory.time && inventory.ocarina)
     }
 },
 {
@@ -1271,7 +1358,7 @@ const regions: Region[] = [
     exits: {
         'Kak Behind Gate': () => true,
         'Goron City': () => true,
-        'Death Mountain Summit': () => eventCompletable('Can Open Summit') || (isAdult() && (eventCompletable('Can Plant Bean Death Mountain Trail') || (islogic_dmt_climb_hovers && inventory.bootshover))),
+        'Death Mountain Summit': () => eventCompletable('Can Open Summit') || (isAdult() && (eventCompletable('Can Plant Bean Death Mountain Trail') || (logic_dmt_climb_hovers && inventory.bootshover))),
         'Dodongos Cavern Beginning': () => hasExplosives() || inventory.strength || isAdult(),
         'DMT Storms Grotto': () => canOpenStormGrotto()
     }
@@ -1284,7 +1371,7 @@ const regions: Region[] = [
         'Prescription Access': () => isAdult() && (eventCompletable('Broken Sword Access') || inventory.adult_trading === 7)
     },
     locations: {
-        'DMT Biggoron': () => isAdult() && (inventory.adult_trading === 11 || (guarantee_trade_path && (eventCompletable('Eyedrops Access') || (inventory.adult_trading = 10 && disable_trade_revert)))),
+        'DMT Biggoron': () => isAdult() && (inventory.adult_trading === 11 || (guarantee_trade_path && (eventCompletable('Eyedrops Access') || (inventory.adult_trading === 10 && disable_trade_revert)))),
         'DMT GS Falling Rocks Path': () => isAdult() && (inventory.hammer || logic_trail_gs_upper)
     },
     exits: {
@@ -1644,7 +1731,7 @@ const regions: Region[] = [
         'Links Cow': () => isAdult() && inventory.eponas && inventory.ocarina
     },
     locations: {
-        'Song from Malon': () => isChild() && inventory.questchild > 2 && inventory.ocarina,
+        'Song from Malon': () => isChild() && inventory.child_trading > 2 && inventory.ocarina,
         'LLR GS Tree': () => isChild(),
         'LLR GS Rain Shed': () => isChild(),
         'LLR GS House Window': () => isChild() && inventory.boomerang,
@@ -1662,7 +1749,7 @@ const regions: Region[] = [
     regionName: 'LLR Talons House',
     scene: 'LLR Talons House',
     locations: {
-        'LLR Talons Chickens': () => isChild() && inventory.questchild > 2
+        'LLR Talons Chickens': () => isChild() && inventory.child_trading > 2
     },
     exits: {
         'Lon Lon Ranch': () => true
@@ -1737,8 +1824,8 @@ const regions: Region[] = [
     regionName: 'Deku Theater',
     scene: 'Deku Theater',
     locations: {
-        'Deku Theater Skull Mask': () => isChild() && (inventory.child_trading === 5),
-        'Deku Theater Mask of Truth': () => isChild() && inventory.child_trading === 7)
+        'Deku Theater Skull Mask': () => isChild() && inventory.child_trading === 5,
+        'Deku Theater Mask of Truth': () => isChild() && inventory.child_trading === 7
     },
     exits: {
         'LW Beyond Mido': () => true
@@ -2094,11 +2181,11 @@ const regions: Region[] = [
         regionName: 'Deku Tree Boss Room',
         dungeon: 'Deku Tree',
         events: {
-            'Deku Tree Clear': () => inventory.shielddeku && (Kokiri_Sword || Sticks)
+            'Deku Tree Clear': () => inventory.shielddeku && (inventory.swordkokiri || inventory.sticks)
         },
         locations: {
-            'Deku Tree Queen Gohma Heart': () => inventory.shielddeku && (Kokiri_Sword || Sticks),
-            'Queen Gohma': () => inventory.shielddeku && (Kokiri_Sword || Sticks)
+            'Deku Tree Queen Gohma Heart': () => inventory.shielddeku && (inventory.swordkokiri || inventory.sticks),
+            'Queen Gohma': () => inventory.shielddeku && (inventory.swordkokiri || inventory.sticks)
         },
         exits: {
             'Deku Tree Lobby': () => true
@@ -2194,10 +2281,10 @@ const regions: Region[] = [
         dungeon: 'Fire Temple',
         locations: {
             'Fire Temple Near Boss Chest' : () => logic_fewer_tunic_requirements || inventory.tunicgoron,
-            'Fire Temple Flare Dancer Chest': () => (inventory.keysfire > 7 || keysanity === 0) && inventory.hammer,
-            'Fire Temple Boss Key Chest': () => (inventory.keysfire > 7 || keysanity === 0) && inventory.hammer,
-            'Fire Temple Volvagia Heart': () => inventory.tunicGoron && inventory.hammer && inventory.bosskeyfire && (logic_fire_boss_door_jump || inventory.bootshover || eventCompletable('Volvagia Access')),
-            'Volvagia': () => inventory.tunicGoron && inventory.hammer && inventory.bosskeyfire && (logic_fire_boss_door_jump || inventory.bootshover || eventCompletable('Volvagia Access')),
+            'Fire Temple Flare Dancer Chest': () => (inventory.keysfire > 7 || keysanity === false) && inventory.hammer,
+            'Fire Temple Boss Key Chest': () => (inventory.keysfire > 7 || keysanity === false) && inventory.hammer,
+            'Fire Temple Volvagia Heart': () => inventory.tunicgoron && inventory.hammer && inventory.bosskeyfire && (logic_fire_boss_door_jump || inventory.bootshover || eventCompletable('Volvagia Access')),
+            'Volvagia': () => inventory.tunicgoron && inventory.hammer && inventory.bosskeyfire && (logic_fire_boss_door_jump || inventory.bootshover || eventCompletable('Volvagia Access')),
             'Fire Temple GS Boss Key Loop': () => (inventory.keysfire > 7 || keysanity === false) && inventory.hammer
         },
         exits: {
@@ -2392,12 +2479,12 @@ const regions: Region[] = [
             'Ganons Castle Spirit Trial': () => true,
             'Ganons Castle Light Trial': () => inventory.strength > 2,
             'Ganons Castle Tower': () => 
-                (skipped_trials[Forest] || 'Forest Trial Clear') && 
-                (skipped_trials[Fire] || 'Fire Trial Clear') && 
-                (skipped_trials[Water] || 'Water Trial Clear') && 
-                (skipped_trials[Shadow] || 'Shadow Trial Clear') && 
-                (skipped_trials[Spirit] || 'Spirit Trial Clear') && 
-                (skipped_trials[Light] || 'Light Trial Clear'), // COME BACK
+                (skippedTrials.forest || 'Forest Trial Clear') && 
+                (skippedTrials.fire || 'Fire Trial Clear') && 
+                (skippedTrials.water || 'Water Trial Clear') && 
+                (skippedTrials.shadow || 'Shadow Trial Clear') && 
+                (skippedTrials.spirit || 'Spirit Trial Clear') && 
+                (skippedTrials.light || 'Light Trial Clear'), // COME BACK
             'Ganons Castle Deku Scrubs': () => logic_lens_castle || (inventory.lens && inventory.magic)
         }
     },
@@ -2433,7 +2520,7 @@ const regions: Region[] = [
         dungeon: 'Ganons Castle',
         events: {
             'Can Get Blue Fire GC': () => inventory.bottle,
-            'Water Trial Clear': () => inventory.hammer && inventory.bottle && inventory.bow && inventory.magic && inventory.arrowlight // 'Blue_Fire'
+            'Water Trial Clear': () => inventory.hammer && inventory.bottle && inventory.bow && inventory.magic && inventory.arrowslight // 'Blue_Fire'
         },
         locations: {
             'Ganons Castle Water Trial Left Chest': () => true,
@@ -2503,14 +2590,14 @@ const regions: Region[] = [
         regionName: 'Gerudo Training Grounds Central Maze',
         dungeon: 'Gerudo Training Grounds',
         locations: {
-            'Gerudo Training Grounds Hidden Ceiling Chest': '(Small_Key_Gerudo_Training_Grounds, 3) && (logic_lens_gtg || (inventory.lens && inventory.magic))',
-            'Gerudo Training Grounds Maze Path First Chest': '(Small_Key_Gerudo_Training_Grounds, 4)',
-            'Gerudo Training Grounds Maze Path Second Chest': '(Small_Key_Gerudo_Training_Grounds, 6)',
-            'Gerudo Training Grounds Maze Path Third Chest': '(Small_Key_Gerudo_Training_Grounds, 7)',
-            'Gerudo Training Grounds Maze Path Final Chest': '(Small_Key_Gerudo_Training_Grounds, 9)'
+            'Gerudo Training Grounds Hidden Ceiling Chest': () => inventory.keysgtg > 2 && (logic_lens_gtg || (inventory.lens && inventory.magic)),
+            'Gerudo Training Grounds Maze Path First Chest': inventory.keysgtg > 3,
+            'Gerudo Training Grounds Maze Path Second Chest': inventory.keysgtg > 5,
+            'Gerudo Training Grounds Maze Path Third Chest': inventory.keysgtg > 6,
+            'Gerudo Training Grounds Maze Path Final Chest': inventory.keysgtg > 8
         },
         exits: {
-            'Gerudo Training Grounds Central Maze Right': '(Small_Key_Gerudo_Training_Grounds, 9)'
+            'Gerudo Training Grounds Central Maze Right': inventory.keysgtg > 8
         }
     },
     {
@@ -2683,7 +2770,7 @@ const regions: Region[] = [
         },
         exits: {
             'Shadow Temple Entryway': () => true,
-            'Shadow Temple First Beamos': 'Hover_Boots'
+            'Shadow Temple First Beamos': () => inventory.bootshover
         }
     },
     {
@@ -2787,31 +2874,29 @@ const regions: Region[] = [
         regionName: 'Child Spirit Temple Climb',
         dungeon: 'Spirit Temple',
         locations: {
-            'Spirit Temple Child Climb North Chest': '
-                has_projectile(both) || 
-                (((Small_Key_Spirit_Temple, 3) || 
-                    ((Small_Key_Spirit_Temple, 2) && bombchus_in_logic && not entrance_shuffle)) && 
-                can_use(Silver_Gauntlets) && has_projectile(adult)) || 
-                ((Small_Key_Spirit_Temple, 5) && isChild() && 
-                    has_projectile(child))',
-            'Spirit Temple Child Climb East Chest': '
-                has_projectile(both) || 
-                (((Small_Key_Spirit_Temple, 3) || 
-                    ((Small_Key_Spirit_Temple, 2) && bombchus_in_logic && not entrance_shuffle)) && 
-                can_use(Silver_Gauntlets) && has_projectile(adult)) || 
-                ((Small_Key_Spirit_Temple, 5) && isChild() && 
-                    has_projectile(child))',
-            'Spirit Temple GS Sun on Floor Room': '
-                has_projectile(both) || (inventory.dins && inventory.magic) || 
-                ((damage_multiplier != 'ohko' || Fairy || can_use(Nayrus_Love)) && 
-                    (Sticks || Kokiri_Sword || has_projectile(child))) || 
-                (isChild() && 
-                    (Small_Key_Spirit_Temple, 5) && has_projectile(child)) || 
-                (((Small_Key_Spirit_Temple, 3) || 
-                    ((Small_Key_Spirit_Temple, 2) && bombchus_in_logic && not entrance_shuffle)) && 
-                can_use(Silver_Gauntlets) and
-                (has_projectile(adult) || damage_multiplier != 'ohko' || 
-                    Fairy || can_use(Nayrus_Love)))'
+            'Spirit Temple Child Climb North Chest': () =>
+                hasProjectile('both') ||
+                ((inventory.keysspirit > 2 ||
+                    (inventory.keysspirit > 1 && bombchus_in_logic && entrance_shuffle === false)) &&
+                    (isAdult() && inventory.strength > 1) && hasProjectile('adult')) ||
+                (inventory.keysspirit > 4 && isChild() && hasProjectile('child')),
+            'Spirit Temple Child Climb East Chest': () =>
+                hasProjectile('both') ||
+                ((inventory.keysspirit > 2 ||
+                    (inventory.keysspirit > 1 && bombchus_in_logic && entrance_shuffle === false)) &&
+                    (isAdult() && inventory.strength > 1) && hasProjectile('adult')) ||
+                (inventory.keysspirit > 4 && isChild() && hasProjectile('child')),
+            'Spirit Temple GS Sun on Floor Room': () =>
+                hasProjectile('both') ||
+                (inventory.dins && inventory.magic) ||
+                ((damage_multiplier != 'ohko' || inventory.bottle || (inventory.nayrus && inventory.magic)) &&
+                    (inventory.sticks || inventory.swordkokiri || hasProjectile('child'))) ||
+                (isChild() &&
+                    inventory.keysspirit > 4 && hasProjectile('child')) ||
+                ((inventory.keysspirit > 2 ||
+                    (inventory.keysspirit > 1 && bombchus_in_logic && entrance_shuffle === false)) &&
+                    (isAdult() && inventory.strength > 1) &&
+                    (hasProjectile('adult') || damage_multiplier != 'ohko' || inventory.bottle || (inventory.nayrus && inventory.magic))) // yikes
         },
         exits: {
             'Spirit Temple Central Chamber': () => hasExplosives(),
