@@ -103,6 +103,11 @@ const logic_rusted_switches: boolean = true;
 const logic_gtg_without_hookshot: boolean = false;
 const logic_ice_block_gs: boolean = false;
 const logic_spirit_lower_adult_switch: boolean = false;
+const logic_spirit_lobby_jump: boolean = false;
+const logic_spirit_lobby_gs: boolean = false;
+const logic_lens_spirit: boolean = false;
+const logic_water_temple_torch_longshot: boolean = false;
+const logic_spirit_wall: boolean = false;
 const skippedTrials = {
     forest = true,
     fire = true,
@@ -2922,46 +2927,46 @@ const regions: Region[] = [
         regionName: 'Spirit Temple Central Chamber',
         dungeon: 'Spirit Temple',
         locations: {
-            'Spirit Temple Map Chest': '
-                ((hasExplosives() || (Small_Key_Spirit_Temple, 3) || ((Small_Key_Spirit_Temple, 2) && bombchus_in_logic && not entrance_shuffle)) && 
-                    ((inventory.dins && inventory.magic) or
-                        (((Magic_Meter && Fire_Arrows) || logic_spirit_map_chest) && Bow && Sticks))) || 
-                ((Small_Key_Spirit_Temple, 5) && hasExplosives() && 
-                    can_use(Sticks)) || 
-                ((Small_Key_Spirit_Temple, 3) and
-                    (can_use(Fire_Arrows) || (logic_spirit_map_chest && Bow)) && 
-                    can_use(Silver_Gauntlets))',
-            'Spirit Temple Sun Block Room Chest': '
-                ((hasExplosives() || (Small_Key_Spirit_Temple, 3) || ((Small_Key_Spirit_Temple, 2) && bombchus_in_logic && not entrance_shuffle)) && 
-                    ((inventory.dins && inventory.magic) or
-                        (((Magic_Meter && Fire_Arrows) || logic_spirit_sun_chest) && Bow && Sticks))) || 
-                ((Small_Key_Spirit_Temple, 5) && hasExplosives() and
-                    can_use(Sticks)) || 
-                ((Small_Key_Spirit_Temple, 3) and
-                    (can_use(Fire_Arrows) || (logic_spirit_sun_chest && Bow)) && 
-                    can_use(Silver_Gauntlets))',
-            'Spirit Temple Statue Room Hand Chest': '
-                (Small_Key_Spirit_Temple, 3) && can_use(Silver_Gauntlets) && 
-                (inventory.lullaby && inventory.ocarina)',
-            'Spirit Temple Statue Room Northeast Chest': '
-                (Small_Key_Spirit_Temple, 3) && can_use(Silver_Gauntlets) && (inventory.lullaby && inventory.ocarina) && 
-                (Progressive_Hookshot || Hover_Boots || logic_spirit_lobby_jump)',
-            'Spirit Temple GS Hall After Sun Block Room': '
-                (hasExplosives() && Boomerang && Progressive_Hookshot) || 
-                (can_use(Boomerang) && (Small_Key_Spirit_Temple, 5) && hasExplosives()) || 
-                (Progressive_Hookshot && can_use(Silver_Gauntlets) && 
-                    ((Small_Key_Spirit_Temple, 3) || 
-                        ((Small_Key_Spirit_Temple, 2) && Boomerang && bombchus_in_logic && not entrance_shuffle)))',
-            'Spirit Temple GS Lobby': '
-                ((hasExplosives() || (Small_Key_Spirit_Temple, 3) || ((Small_Key_Spirit_Temple, 2) && bombchus_in_logic && not entrance_shuffle)) && 
-                    logic_spirit_lobby_gs && Boomerang && (Progressive_Hookshot || Hover_Boots || logic_spirit_lobby_jump)) or
-                (logic_spirit_lobby_gs && (Small_Key_Spirit_Temple, 5) && hasExplosives() && can_use(Boomerang)) or
-                ((Small_Key_Spirit_Temple, 3) && can_use(Silver_Gauntlets) && (Progressive_Hookshot || Hover_Boots || logic_spirit_lobby_jump))'
+            /*
+            'Spirit Temple Map Chest': () =>
+                ((hasExplosives() || inventory.keysspirit > 2 || (inventory.keysspirit > 1 && bombchus_in_logic && !entrance_shuffle)) &&
+                    ((inventory.dins && inventory.magic) ||
+                        (((inventory.magic && inventory.arrowsfire) || logic_spirit_map_chest) && inventory.bow && inventory.sticks))) ||
+                (inventory.keysspirit > 4 && hasExplosives() &&
+                    (isChild() && inventory.sticks)) ||
+                (inventory > 2 &&
+                    ((isAdult() && inventory.bow && inventory.magic && inventory.arrowsfire) || (logic_spirit_map_chest && inventory.bow)) &&
+                    (isAdult && inventory.strength > 1)),
+            'Spirit Temple Sun Block Room Chest': () =>
+                ((hasExplosives() || inventory.keysspirit > 2 || (inventory.keysspirit > 1 && bombchus_in_logic && !entrance_shuffle) &&
+                    ((inventory.dins && inventory.magic) ||
+                        (((inventory.magic && inventory.arrows_fire) || logic_spirit_sun_chest) && inventory.bow && inventory.sticks))) ||
+                (inventory.keysspirit > 4 && hasExplosives() &&
+                    (isChild() && inventory.sticks)) ||
+                (inventory.keysspirit > 2 && 
+                    ((isAdult() && inventory.bow && inventory.magic && inventory.arrowsfire) || (logic_spirit_sun_chest && inventory.bow)) &&
+                    (isAdult() && inventory.strength > 1)), */
+            'Spirit Temple Statue Room Hand Chest': () =>
+                inventory.keysspirit > 2 && (isAdult() && inventory.strength > 1) &&
+                (inventory.lullaby && inventory.ocarina),
+            'Spirit Temple Statue Room Northeast Chest': () =>
+                inventory.keysspirit > 2 && (isAdult() && inventory.strength > 1) && (inventory.lullaby && inventory.ocarina) &&
+                (inventory.shot || inventory.bootshover || logic_spirit_lobby_jump),
+            'Spirit Temple GS Hall After Sun Block Room': () =>
+                (hasExplosives() && inventory.boomerang && inventory.shot) ||
+                ((isChild() && inventory.boomerang) && inventory.keysspirit > 4 && hasExplosives()) ||
+                (inventory.shot && (isAdult() && inventory.strength > 1) &&
+                    (inventory.keysspirit > 3 ||
+                        (inventory.keysspirit > 1 && inventory.boomerang && bombchus_in_logic && !entrance_shuffle))),
+            'Spirit Temple GS Lobby': () =>
+                ((hasExplosives() || inventory.keysspirit > 2 || (inventory.keysspirit > 1 && bombchus_in_logic && !entrance_shuffle)) &&
+                    logic_spirit_lobby_gs && inventory.boomerang && (inventory.shot || inventory.bootshover || logic_spirit_lobby_jump)) ||
+                (logic_spirit_lobby_gs && inventory.keysspirit > 4 && hasExplosives() && (isAdult() && inventory.boomerang)) ||
+                (inventory.keysspirit > 2 && (isAdult() && inventory.strength > 1) && (inventory.shot || inventory.bootshover ||logic_spirit_lobby_jump))
         },
         exits: {
             'Spirit Temple Outdoor Hands': () => true,
-            'Spirit Temple Beyond Central Locked Door': '
-                (Small_Key_Spirit_Temple, 4) && can_use(Silver_Gauntlets)',
+            'Spirit Temple Beyond Central Locked Door': () => inventory.keysspirit > 3 && isAdult() && inventory.strength > 1,
             'Child Spirit Temple Climb': () => true
         }
     },
@@ -2969,17 +2974,17 @@ const regions: Region[] = [
         regionName: 'Spirit Temple Outdoor Hands',
         dungeon: 'Spirit Temple',
         locations: {
-            'Spirit Temple Silver Gauntlets Chest': '
-                ((Small_Key_Spirit_Temple, 3) && (Progressive_Hookshot, 2) && hasExplosives()) || 
-                (Small_Key_Spirit_Temple, 5)',
-            'Spirit Temple Mirror Shield Chest': '
-                (Small_Key_Spirit_Temple, 4) && can_use(Silver_Gauntlets) && hasExplosives()'
+            'Spirit Temple Silver Gauntlets Chest': () =>
+                (inventory.keysspirit > 2 && inventory.shot > 1 && hasExplosives()) ||
+                inventory.keysspirit > 4,
+            'Spirit Temple Mirror Shield Chest': () =>
+                inventory.keysspirit > 3 && (isAdult() && inventory.strength > 1) && hasExplosives(),
         },
         exits: {
-            'Desert Colossus': '
-                (isChild() && (Small_Key_Spirit_Temple, 5)) or
-                (can_use(Silver_Gauntlets) and
-                    (((Small_Key_Spirit_Temple, 3) && hasExplosives()) || (Small_Key_Spirit_Temple, 5)))'
+            'Desert Colossus': () =>
+                (isChild() && inventory.keysspirit > 4) ||
+                ((isAdult() && inventory.strength > 1) &&
+                    ((inventory.keysspirit > 2 && hasExplosives()) || inventory.keysspirit > 4))
         }
     },
     {
@@ -2991,11 +2996,11 @@ const regions: Region[] = [
             'Spirit Temple Hallway Right Invisible Chest': () => (logic_lens_spirit || (inventory.lens && inventory.magic)) && hasExplosives()
         },
         exits: {
-            'Spirit Temple Beyond Final Locked Door': '
-                (Small_Key_Spirit_Temple, 5) && 
-                (logic_spirit_wall || can_use(Longshot) || has_bombchus || 
-                    ((Bombs || Nuts || (inventory.dins && inventory.magic)) && 
-                        (Bow || can_use(Hookshot) || Megaton_Hammer)))'
+            'Spirit Temple Beyond Final Locked Door': () =>
+                inventory.keysspirit > 4 &&
+                (logic_spirit_wall || inventory.shot > 1 || hasBombchus() ||
+                    ((inventory.bombs || inventory.nuts || (inventory.dins && inventory.magic)) &&
+                        (inventory.bow || (isAdult() && inventory.shot) || inventory.hammer)))
         }
     },
     {
@@ -3004,7 +3009,7 @@ const regions: Region[] = [
         locations: {
             'Spirit Temple Boss Key Chest': () => inventory.lullaby && inventory.ocarina && inventory.bow && inventory.shot,
             'Spirit Temple Topmost Chest': () => inventory.shieldmirror,
-            'Spirit Temple Twinrova Heart': () => inventory.shieldmirror && hasExplosives() && inventory.shot && inventory.bosskeyspirit
+            'Spirit Temple Twinrova Heart': () => inventory.shieldmirror && hasExplosives() && inventory.shot && inventory.bosskeyspirit,
             'Twinrova': () => inventory.shieldmirror && hasExplosives() && inventory.shot && inventory.bosskeyspirit
         }
     },
@@ -3059,15 +3064,14 @@ const regions: Region[] = [
         },
         exits: {
             'Water Temple Cracked Wall': () => (inventory.lullaby && inventory.ocarina) && (inventory.shot || inventory.bootshover) && (logic_water_cracked_wall_nothing || (logic_water_cracked_wall_hovers && inventory.bootshover)),
-            'Water Temple Middle Water Level': '
-                (Bow || (inventory.dins && inventory.magic) or
-                    ((Small_Key_Water_Temple, 6) && can_use(Hookshot)) or
-                    (Child_Water_Temple && Sticks)) and
-                (inventory.lullaby && inventory.ocarina)',
-            'Water Temple North Basement': '
-                (Small_Key_Water_Temple, 5) and
-                (can_use(Longshot) || (logic_water_boss_key_region && can_use(Hover_Boots))) and
-                (can_use(Iron_Boots) || (inventory.lullaby && inventory.ocarina))',
+            'Water Temple Middle Water Level': () =>
+                (inventory.bow || (inventory.dins && inventory.magic) ||
+                    (inventory.keyswater > 5 && (isAdult() && inventory.shot))) &&
+                (inventory.lullaby && inventory.ocarina),
+            'Water Temple North Basement': () =>
+                inventory.keyswater > 4 &&
+                (isAdult() && inventory.shot > 1 || (logic_water_boss_key_region && inventory.bootshover)) &&
+                (isAdult() && inventory.bootsiron) || (inventory.lullaby && inventory.ocarina)
             'Water Temple Dragon Statue': () => (inventory.lullaby && inventory.ocarina) && inventory.strength && ((inventory.bootsiron && inventory.shot) || (logic_water_dragon_adult && inventory.bombchus || inventory.bow || inventory.shot) && (inventory.scale || inventory.bootsiron)) // COME BACK - all bombchu checks probably care about a logic variable
         }
     },
