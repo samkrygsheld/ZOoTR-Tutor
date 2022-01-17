@@ -1207,7 +1207,13 @@
         "subregion": "zoras_fountain",
         "age": "both",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Get Past King Zora as Adult without Letter",
+                "url": "https://www.youtube.com/watch?v=65EI_McXzUk"
+            }
+        ]
     },
     {
         "spoiler": "ZF Iceberg Freestanding PoH",
@@ -1217,7 +1223,13 @@
         "age": "adult",
         "x-coord": 0,
         "y-coord": 0,
-        "early-peek": false
+        "early-peek": false,
+        "videos": [
+            {
+                "name": "Get Past King Zora as Adult without Letter",
+                "url": "https://www.youtube.com/watch?v=65EI_McXzUk"
+            }
+        ]
     },
     {
         "spoiler": "ZF Bottom Freestanding PoH",
@@ -1227,7 +1239,13 @@
         "age": "adult",
         "x-coord": 0,
         "y-coord": 0,
-        "early-peek": "?"
+        "early-peek": "?",
+        "videos": [
+            {
+                "name": "Get Past King Zora as Adult without Letter",
+                "url": "https://www.youtube.com/watch?v=65EI_McXzUk"
+            }
+        ]
     },
     {
         "spoiler": "LH Underwater Item",
@@ -2414,7 +2432,13 @@
         "subregion": "ice_cavern",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Get Past King Zora as Adult without Letter",
+                "url": "https://www.youtube.com/watch?v=65EI_McXzUk"
+            }
+        ]
     },
     {
         "spoiler": "Ice Cavern Compass Chest",
@@ -2423,7 +2447,13 @@
         "subregion": "ice_cavern",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Get Past King Zora as Adult without Letter",
+                "url": "https://www.youtube.com/watch?v=65EI_McXzUk"
+            }
+        ]
     },
     {
         "spoiler": "Ice Cavern Freestanding PoH",
@@ -2433,7 +2463,13 @@
         "age": "adult",
         "x-coord": 0,
         "y-coord": 0,
-        "early-peek": true
+        "early-peek": true,
+        "videos": [
+            {
+                "name": "Get Past King Zora as Adult without Letter",
+                "url": "https://www.youtube.com/watch?v=65EI_McXzUk"
+            }
+        ]
     },
     {
         "spoiler": "Ice Cavern Iron Boots Chest",
@@ -2442,7 +2478,13 @@
         "subregion": "ice_cavern",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "Get Past King Zora as Adult without Letter",
+                "url": "https://www.youtube.com/watch?v=65EI_McXzUk"
+            }
+        ]
     },
     {
         "spoiler": "Gerudo Training Grounds Lobby Left Chest",
@@ -3003,7 +3045,12 @@
         "age": "child",
         "x-coord": 0,
         "y-coord": 0,
-        "nearby-checks": ["Kak 10 Gold Skulltula Reward","Kak 20 Gold Skulltula Reward","Kak 30 Gold Skulltula Reward","Kak 40 Gold Skulltula Reward","Kak 50 Gold Skulltula Reward","Kak Impas House Freestanding PoH","Kak Man on Roof","Kak Open Grotto Chest","Kak Redead Grotto Chest"]
+        "nearby-checks": ["Kak 10 Gold Skulltula Reward","Kak 20 Gold Skulltula Reward","Kak 30 Gold Skulltula Reward","Kak 40 Gold Skulltula Reward","Kak 50 Gold Skulltula Reward","Kak Impas House Freestanding PoH","Kak Man on Roof","Kak Open Grotto Chest","Kak Redead Grotto Chest"],
+        "videos": [
+            {
+                "name": "Skull Kill with Boomerang",
+                "url": "https://youtu.be/pe6Aw2xbttw"
+            }
     },
     {
         "spoiler": "Kak GS Skulltula House",
