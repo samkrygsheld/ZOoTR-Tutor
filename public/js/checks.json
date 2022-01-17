@@ -1751,7 +1751,13 @@
         "subregion": "forest_temple",
         "age": "adult",
         "x-coord": 0,
-        "y-coord": 0
+        "y-coord": 0,
+        "videos": [
+            {
+                "name": "From Above with Hover Boots",
+                "url": "https://www.youtube.com/watch?v=EXh2G-05QxA"
+            }
+        ]
     },
     {
         "spoiler": "Forest Temple Map Chest",
@@ -3666,7 +3672,13 @@
         "age": "adult",
         "x-coord": 0,
         "y-coord": 0,
-        "nearby-checks": ["Forest Temple Raised Island Courtyard Chest"]
+        "nearby-checks": ["Forest Temple Raised Island Courtyard Chest"],
+        "videos": [
+            {
+                "name": "From Above with Hover Boots",
+                "url": "https://www.youtube.com/watch?v=EXh2G-05QxA"
+            }
+        ]
     },
     {
         "spoiler": "Forest Temple GS Level Island Courtyard",
