@@ -108,9 +108,11 @@ export class Check {
   public earlyPeek: boolean = false;
   public nearbyChecks: string[] = [];
 
-  public get completable(): boolean {
-    return true;
-  }
+  public completable: boolean = false;
+
+  // public get completable(): boolean {
+  //   return true;
+  // }
   public get icons(): string {
     let icons = '';
     switch (this.age) {

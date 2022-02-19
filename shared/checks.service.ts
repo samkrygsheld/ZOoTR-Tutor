@@ -25,6 +25,11 @@ import tricks from '../public/js/data/logic/tricks';
 export type ChecksState = Record<string, unknown>;
 export type RuleCache = Record<string, boolean>;
 
+type HelperValue = ((cache: any, state: any) => boolean) | ((cache: any, state: any) => ((arg: any) => boolean));
+interface IHelpers {
+  [name: string]: HelperValue;
+}
+
 export class ChecksService {
   // Singleton
   private static instance: ChecksService;
@@ -46,10 +51,10 @@ export class ChecksService {
   };
 
 
-  private helpers: any = {};
+  private helpers: IHelpers = {};
+  private helpersCache: any = {};
   private regions: Region[];
   private recursiveCount = 0;
-  private tmpFlag = false;
 
   private constructor() {
     this.regions = [
@@ -67,32 +72,24 @@ export class ChecksService {
       spiritTemple,
       waterTemple,
     ].flat().map((locationData) => new Region(locationData as any));
+    this.buildHelpers();
   }
 
   private buildHelpers() {
     this.helpers = {};
     for (const [helper, rule] of Object.entries(logicHelpers)) {
       const matches = helper.match(/([\w_]+)\(([\w_]+)\)/);
-      // this.debugLog(helper);
       if (matches) {
         const funcName = matches[1];
         const argName = matches[2];
         this.helpers[funcName] = (cache: any, state: any) => {
           return (arg: any) => {
-            // console.log(`${funcName} ${state['_is_magic_item']}`);
             return this.evalLogic(rule, { ...state, [argName]: arg }, cache);
           };
         };
       } else {
         this.helpers[helper] = (cache: any, state: any) => {
-          if (helper == 'can_blast_or_smash') {
-            // console.log('cnblast orsmsh:', rule, { ...state }['_is_magic_item']);
-          }
           const res = this.evalLogic(rule, { ...state }, cache);
-          // if (helper == 'can_use_projectile') {
-          //   this.debugLog(helper, res, rule, JSON.parse(JSON.stringify(state)), cache['is_child']);
-          //   this.debugLog(cache['is_child'] && state['Boomerang']);
-          // }
           return res;
         };
       }
@@ -107,14 +104,20 @@ export class ChecksService {
     if (region != null) {
       subs = Object.keys(region.subregions);
     }
+    const ruleCache = {};
     return checks.filter(
       (c) =>
         c.subregion === subregion ||
         subs.some((s) => c.subregion == s)
-    ).map((check: any) => new CheckState(
-      new Check(check),
-      $storage.saveData.checks[check.spoiler]
-    ));
+    ).map((check: any) => {
+      const checkObj = new Check(check);
+      const locationRule = this.findLocation(checkObj.spoiler)![1];
+      checkObj.completable = this.evalLogicWithState(locationRule, {}, ruleCache);
+      return new CheckState(
+        checkObj,
+        $storage.saveData.checks[check.spoiler]
+      );
+    });
   }
 
   public getRegionByName(name: string): Region | undefined {
@@ -203,9 +206,7 @@ export class ChecksService {
 
   public evalLogicWithState(logic: string, state: ChecksState, cache: RuleCache = {}): boolean {
     state = this.buildState(state);
-    this.buildHelpers();
     this.compileHelpers(state);
-    this.tmpFlag = true;
     return this.evalLogic(logic, state, cache);
   }
   private evalLogic(logic: string, extraLocals: ChecksState = {}, cache: RuleCache = {}): boolean {
@@ -240,24 +241,33 @@ export class ChecksService {
   }
 
   private compileHelpers(state: ChecksState) {
-    console.log('Compiling helpers...');
+    // console.log('Compiling helpers...', this.helpersCache);
     this.recursiveCount = 0;
-    this.buildHelpers();
-    this.compileHelpersHelper(state, this.helpers);
-    console.log('Done compiling helpers!!!');
+    // if (JSON.stringify(state)+'can_use' in this.helpersCache) {
+    //   console.log('helpers are cached');
+    // } else {
+    //   console.log('helpers are not cached');
+    // }
+    this.compileHelpersHelper(state, this.helpers, JSON.stringify(state));
+    // console.log('Done compiling helpers!!!');
   }
-  private compileHelpersHelper(state: ChecksState, helpersToCompile: any) {
+  private compileHelpersHelper(state: ChecksState, helpersToCompile: IHelpers, stateCacheKey: string) {
     const helpers: ChecksState = {};
-    const cache: any = {};
-    const redo: any = {};
-    for (const [helper, func] of Object.entries<(cache: any, state: any) => boolean>(helpersToCompile)) {
+    const cache: ChecksState = {};
+    const redo: IHelpers = {};
+    for (const [helper, func] of Object.entries(helpersToCompile)) {
       // if (helper === 'can_use_projectile') {
       // console.log(helper, state);
+      if (stateCacheKey+helper in this.helpersCache) {
+        Object.assign(state, { [helper]: this.helpersCache[stateCacheKey+helper] });
+        continue;
+      }
       try {
-        cache[helper] = helpers[helper] = func(cache, state);
-        if (typeof cache[helper] === 'function') {
+        const evaluatedHelper = cache[helper] = helpers[helper] = func(cache, state);
+        this.helpersCache[stateCacheKey+helper] = evaluatedHelper;
+        if (typeof evaluatedHelper === 'function') {
           // for triggering error
-          cache[helper](true);
+          evaluatedHelper(true);
         }
       } catch(e) {
         // console.error(e);
@@ -266,7 +276,6 @@ export class ChecksService {
       // }
       Object.assign(state, helpers);
     }
-    // this.buildHelpers();
     if (Object.entries(redo).length > 0) {
       // console.log(helpers, redo);
       // debugger;
@@ -275,13 +284,17 @@ export class ChecksService {
         console.log(this.recursiveCount, helpers, redo);
         throw new Error('too many recursion');
       }
-      this.compileHelpersHelper(state, redo);
+      this.compileHelpersHelper(state, redo, stateCacheKey);
       this.recursiveCount--;
     }
   }
 
-  public findEvent(eventName: string): any {
+  public findEvent(eventName: string): [string, string] | undefined {
     return this.regions.map((e) => e.events).filter((v) => v).flatMap((events) => Object.entries(events!)).find((event) => event[0] === eventName);
+  }
+
+  public findLocation(locationName: string): [string, string] | undefined {
+    return this.regions.map((e) => e.locations).filter((v) => v).flatMap((locations) => Object.entries(locations!)).find((location) => location[0] === locationName);
   }
 
   private buildState(newState: ChecksState): ChecksState {
@@ -320,6 +333,7 @@ export class ChecksService {
       Magic_Meter: false,
       Progressive_Hookshot: 0,
       Progressive_Strength_Upgrade: 0,
+      Progressive_Wallet: 0,
 
       // State
       age: 'child',
@@ -355,6 +369,7 @@ export class ChecksService {
       bombchus_in_logic: false,
       disable_trade_revert: false,
       open_door_of_time: false,
+      had_night_start: false,
 
       // Tricks
       ...tricks,
@@ -412,6 +427,7 @@ export class ChecksService {
       Big_Poe: false,
       Bottle_with_Big_Poe: 0,
       Gerudo_Membership_Card: false,
+      Gold_Skulltula_Token: 0,
 
       // Convert from adult_trading
       Pocket_Egg: false,

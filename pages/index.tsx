@@ -112,7 +112,9 @@ export default function Home(): JSX.Element {
   useEffect(() => {
     main();
 
+    const before = performance.now();
     setChecks(ChecksService.Instance.getChecksForMap(currentMap));
+    console.log('Took:', performance.now() - before);
   }, [currentMap]);
   function switchMap(e: SyntheticEvent) {
     e.preventDefault();
