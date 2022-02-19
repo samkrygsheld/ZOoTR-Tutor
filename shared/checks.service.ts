@@ -96,7 +96,7 @@ export class ChecksService {
     }
   }
 
-  public getChecksForMap(map: string): CheckState[] {
+  public getChecksForMap(map: string, state: any = {}): CheckState[] {
     const $storage = StorageService.Instance;
     const subregion: string | null = map;
     const region = regions.find((r: any) => r.region === subregion);
@@ -112,7 +112,7 @@ export class ChecksService {
     ).map((check: any) => {
       const checkObj = new Check(check);
       const locationRule = this.findLocation(checkObj.spoiler)![1];
-      checkObj.completable = this.evalLogicWithState(locationRule, {}, ruleCache);
+      checkObj.completable = this.evalLogicWithState(locationRule, state, ruleCache);
       return new CheckState(
         checkObj,
         $storage.saveData.checks[check.spoiler]
@@ -154,10 +154,12 @@ export class ChecksService {
       path.push(regionName);
       return true;
     }
-    if (regionName === 'LW Bridge') {
-      // debugger;
-      regionName = 'LW Bridge From Forest';
-    }
+    // don't recall why i had this
+    // if (regionName === 'LW Bridge') {
+    //   // debugger;
+    //   regionName = 'LW Bridge From Forest';
+    // }
+
     // if (this.recursiveCount > 50) {
     //   throw new Error('asdf');
     // }
@@ -328,7 +330,7 @@ export class ChecksService {
       Requiem_of_Spirit: false,
       Epona: false,
       Eponas_Song: false,
-      Scarecrow_Song: false,
+      Scarecrow_Song: true,
 
       Magic_Meter: false,
       Progressive_Hookshot: 0,
@@ -370,6 +372,7 @@ export class ChecksService {
       disable_trade_revert: false,
       open_door_of_time: false,
       had_night_start: false,
+      complete_mask_quest: false,
 
       // Tricks
       ...tricks,

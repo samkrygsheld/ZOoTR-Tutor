@@ -4,17 +4,17 @@ import Head from 'next/head';
 import MapSvg from '../maps/map.svg';
 import MapSvgDesert from '../maps/map-desert.svg';
 import { main } from '../shared/zootr';
-import { SyntheticEvent, useEffect, useState } from 'react';
+import { SyntheticEvent, useCallback, useEffect, useRef, useState } from 'react';
 import ToolTip from '../components/tooltip';
 import { titleize } from '../shared/utils';
 import Grid from '../components/layout/grid';
 import { css } from '@emotion/react';
 import { Item } from '../components/item';
 import CheckRow from '../components/check-row';
-import { CheckState, Item as ItemModel, Song } from '../shared/models';
+import { CheckState, Item as ItemModel, ItemState, Song } from '../shared/models';
 
 import regions from '../public/js/regions.json';
-import { ChecksService } from '../shared/checks.service';
+import { ChecksService, ChecksState } from '../shared/checks.service';
 import { runTests } from '../tests/tests';
 
 const noteStyle = css`
@@ -35,7 +35,7 @@ const items: ItemModel[] = [
   new ItemModel('arrowsfire', 'Fire Arrow'),
   new ItemModel('din', "Din's Fire"),
   new ItemModel('slingshot', 'Fairy Slingshot'),
-  new ItemModel('ocarina', 'Ocarina', 2),
+  new ItemModel('ocarina', ['Fairy Ocarina', 'Ocarina of Time'], 2),
   new ItemModel('bombchu'),
   new ItemModel('shot', ['Hookshot', 'Longshot'], 2),
   new ItemModel('arrowslight', 'Light Arrow'),
@@ -106,16 +106,84 @@ const songs: Song[] = [
 ];
 
 type MapNames = 'overworld' | 'desert';
+
+const nameMap: {[idx: string]: string} = {
+  'Weird Egg': 'Wierd_Egg',
+  'Cucco': 'Pocket_Cucco',
+  "Zelda's Letter": 'Zeldas_Letter',
+  'Fairy Ocarina': 'Ocarina',
+  'Ocarina of Time': 'Ocarina',
+  'Fairy Bow': 'Bow',
+  // 'Keaton Mask': 'Keaton_Mask',
+  // 'Skull Mask': 'Skull_Mask',
+};
+
+function getStateForChecks(itemStates: ItemState[]): ChecksState {
+  const state: any = {};
+  for (const itemState of itemStates) {
+    if (itemState.item.name === 'age') {
+      state['age'] = itemState.state === 0 ? 'child' : 'adult';
+      continue;
+    }
+    if (typeof itemState.item.display === 'string') {
+      let name = itemState.item.display;
+      if (name in nameMap) {
+        name = nameMap[name];
+      } else {
+        name = name.replaceAll(' ', '_').replaceAll("'", '');
+      }
+      state[name] = itemState.state;
+    } else {
+      for (let i = 0; i < itemState.state; i++) {
+        let name: string = itemState.item.display[i];
+        if (name in nameMap) {
+          name = nameMap[name];
+        } else {
+          name = name.replaceAll(' ', '_').replaceAll("'", '');
+        }
+        if (itemState.item.name === 'shot') {
+          state['Progressive_Hookshot'] = itemState.state;
+          continue;
+        }
+        state[name] = true;
+      }
+    }
+  }
+  console.log(state);
+  return state;
+}
 export default function Home(): JSX.Element {
   const [currentMap, setMap] = useState<MapNames>('overworld');
   const [checks, setChecks] = useState<CheckState[]>([]);
+  const [doneInit, setDoneInit] = useState(false);
+  const [itemStates] = useState([] as ItemState[]);
+
   useEffect(() => {
     main();
 
     const before = performance.now();
-    setChecks(ChecksService.Instance.getChecksForMap(currentMap));
+    const s = getStateForChecks(itemStates);
+    console.log('state', s);
+    setChecks(ChecksService.Instance.getChecksForMap(currentMap, s));
     console.log('Took:', performance.now() - before);
-  }, [currentMap]);
+    setDoneInit(true);
+  }, [currentMap, itemStates]);
+  const revalidateChecks = useCallback((map) => {
+    // console.log('revalidate checks...');
+    const s = getStateForChecks(itemStates);
+    // console.log(s, map);
+    setChecks(ChecksService.Instance.getChecksForMap(map, s));
+  }, [itemStates]);
+  const updateItemState = useCallback((itemState: ItemState) => {
+    // console.log('updateItemState', itemState.item.name);
+    if (!itemStates.includes(itemState)) {
+      // console.log(itemState, itemStates);
+      itemStates.push(itemState);
+    }
+    if (doneInit) {
+      revalidateChecks(currentMap);
+    }
+  }, [doneInit, revalidateChecks, itemStates, currentMap]);
   function switchMap(e: SyntheticEvent) {
     e.preventDefault();
 
@@ -172,19 +240,19 @@ export default function Home(): JSX.Element {
         <h1 css={headerStyle}>ZOoTR Tutor</h1>
         <Grid columns={6} rows={3}>
           {items.map((item) => (
-            <Item key={item.name} item={item} />
+            <Item key={item.name} item={item} onUpdate={updateItemState} />
           ))}
         </Grid>
         <br />
         <Grid columns={4} rows={4}>
           {equipment.map((item) => (
-            <Item key={item.name} item={item} />
+            <Item key={item.name} item={item} onUpdate={updateItemState} />
           ))}
         </Grid>
         <br />
         <Grid columns={6} rows={2}>
           {songs.map((item) => (
-            <Item key={item.name} item={item} data-notes={item.notes} />
+            <Item key={item.name} item={item} data-notes={item.notes} onUpdate={updateItemState} />
           ))}
         </Grid>
         <div
@@ -210,6 +278,10 @@ export default function Home(): JSX.Element {
           className='bg-gray-500 hover:bg-gray-600 py-2 px-4 border border-gray-700 rounded font-bold text-white text-shadow-black'
           onClick={runTests}
         >Run Logic Tests</button>
+        <button
+          className='bg-gray-500 hover:bg-gray-600 py-2 px-4 border border-gray-700 rounded font-bold text-white text-shadow-black'
+          onClick={revalidateChecks}
+        >Revalidate Checks</button>
       </div>
       <div id='checksWrapper'>
         <div
