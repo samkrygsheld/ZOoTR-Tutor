@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="map-death_mountain_trail.svg"
+   viewBox="0 0 105 234"
+   height="234"
+   width="105"
+   id="svg834"
+   version="1.1">
+  <metadata
+     id="metadata840">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs838" />
+  <sodipodi:namedview
+     inkscape:current-layer="g842"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="892"
+     inkscape:cy="156.19763"
+     inkscape:cx="59.377332"
+     inkscape:zoom="1.6257412"
+     showgrid="false"
+     id="namedview836"
+     inkscape:window-height="705"
+     inkscape:window-width="1366"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <g
+     id="g842"
+     inkscape:label="Image"
+     inkscape:groupmode="layer">
+    <path
+       sodipodi:nodetypes="sccccccss"
+       inkscape:label="Goron City"
+       d="m 72.117188,82.818359 c -14.80214,-0.121518 -25.570192,15.651665 -24.376954,39.626951 -3.214497,1.38204 -6.765438,2.21939 -9.029296,0.64453 l -1.958985,14.78711 13.478516,1 c 1.28968,5.24179 2.939269,10.99345 5.306473,16.66998 l 13.115098,2.96236 c 0,0 29.211155,-71.955517 6.594054,-75.435071 -1.060177,-0.163104 -2.104638,-0.247451 -3.128906,-0.25586 z"
+       style="fill:#473b22;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path1409" />
+    <path
+       inkscape:label="Trail"
+       sodipodi:nodetypes="cscccccsssssssccccsc"
+       id="path1407"
+       d="M 55.672862,155.27509 C 56.977695,143.5316 81.769517,60.892193 88.29368,40.884758 94.817844,20.877323 78.289963,19.572491 78.289963,19.572491 v -5.654275 h -8.263941 v 6.524163 c -13.918215,0.434944 -8.698884,22.617101 -6.524163,30.446097 2.174721,7.828996 -17.39777,83.074354 -19.137547,100.907064 -1.739777,17.83271 -7.394052,17.83271 -8.698884,15.22305 -1.304833,-2.60967 8.698884,-53.49814 2.174721,-53.49814 -13.048327,0 -22.617101,36.97026 -23.052045,44.79925 -0.434944,7.829 3.04461,10.43866 3.04461,14.78811 0,4.34944 -0.869889,5.65427 -2.609666,13.04832 -1.739777,7.39406 -3.044609,26.09666 7.394052,27.40149 14.788104,0.43495 15.223049,5.65428 15.223049,5.65428 h 11.30855 C 49.583643,206.16357 28.70632,199.63941 28.70632,199.63941 c 0,0 -4.349443,-24.35688 -0.869889,-47.84387 0,0 -2.174721,46.97398 9.568773,44.36431 11.743495,-2.60966 28.271376,0 31.315985,-37.84015 z"
+       style="fill:#5d492b;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:label="Biggoron"
+       d="m 70.025391,13.917969 v 6.52539 c -7.587247,0.237102 -9.47081,6.941714 -9.277344,14.25586 l 27.724609,5.585937 C 94.464739,20.862233 78.289062,19.572266 78.289062,19.572266 v -5.654297 z"
+       style="fill:#6c5933;fill-opacity:1;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-dashoffset:37.0394;stroke-opacity:1;stop-color:#000000"
+       id="rect1414" />
+  </g>
+</svg>
