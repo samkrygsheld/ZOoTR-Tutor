@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="map-kakariko_village.svg"
+   viewBox="0 0 213 169"
+   height="169"
+   width="213"
+   id="svg970"
+   version="1.1">
+  <metadata
+     id="metadata976">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs974">
+    <filter
+       height="1.000002"
+       y="-1.008627e-06"
+       width="1.000003"
+       x="-1.480999e-06"
+       id="filter1749"
+       style="color-interpolation-filters:sRGB"
+       inkscape:collect="always">
+      <feGaussianBlur
+         id="feGaussianBlur1751"
+         stdDeviation="1.6846586e-05"
+         inkscape:collect="always" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     inkscape:snap-global="true"
+     inkscape:current-layer="g978"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="892"
+     inkscape:cy="80.516347"
+     inkscape:cx="121.30669"
+     inkscape:zoom="3.183432"
+     showgrid="false"
+     id="namedview972"
+     inkscape:window-height="705"
+     inkscape:window-width="1366"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <g
+     id="g978"
+     inkscape:label="Image"
+     inkscape:groupmode="layer">
+    <path
+       inkscape:label="Level 1"
+       d="m 88.675781,70.992188 c -0.624726,2.83515 -1.094517,5.767655 -1.349609,8.796874 -7.748384,7.748385 -26.124086,29.073238 -55.283203,36.416018 l -20.419922,2.53515 v 12.56446 c 0,0 33.297971,6.28246 64.396484,-15.07813 l 13.613281,28.90039 H 137.90234 V 70.992188 Z"
+       style="fill:#1a6621;fill-opacity:1;stroke:none;stroke-width:2.3;stroke-opacity:1;stop-color:#000000"
+       id="rect1619" />
+    <path
+       sodipodi:nodetypes="cccccccccccccccccccsccccc"
+       inkscape:label="Level 2"
+       d="m 106.99023,34.873047 c -6.86203,8.273938 -17.947921,24.536891 -19.664058,44.916015 -1.166709,1.166709 -2.655546,2.708229 -4.304688,4.396485 h 8.902344 v -4.710938 h 43.347652 l 0.006,28.197801 c -4.36625,0 -7.59801,-4.1e-4 -12.96704,-4.1e-4 l -0.11109,13.61219 h -7.64341 l 0.11106,-9.76932 h -6.2934 l -15.541082,4.71169 H 76.019531 l 17.904297,38.00977 h 41.464842 c 0,0 51.83012,-9.11006 63.13867,-15.39258 v -10.99414 c 0,0 -9.73828,-0.001 -9.73828,-31.09961 0,0 -6.59513,-9.422215 -22.92968,-13.505859 C 149.5248,79.160498 145.44141,60.626953 145.44141,60.626953 h -5.02735 c 0,0 -1.25687,-6.283203 -11.62304,-6.283203 0,0 0.1503,-11.895192 -1.60352,-19.470703 z"
+       style="display:inline;opacity:1;fill:#21822a;fill-opacity:1;stroke:none;stroke-width:2.85621;stroke-opacity:1;stop-color:#000000"
+       id="rect1574" />
+    <path
+       d="m 110.89648,30.472656 c -3.8292,3.993609 -13.949388,15.567429 -19.693355,31.732422 l 16.792965,6.462891 3.17774,-8.126953 8.68945,3.255859 c 5.26718,-3.151384 9.42542,-3.57085 15.76172,-0.560547 l 5.21875,1.945313 1.67969,-4.554688 h -2.10938 c 0,0 -1.25687,-6.283203 -11.62304,-6.283203 0,0 0.12528,-9.943957 -1.19141,-17.441406 z m 32.34571,46.84375 v 9.75586 h 7.24414 v -9.75586 z m 8.92187,17.927735 v 39.515629 h 6.36524 V 95.244141 Z m -64.166013,29.201169 -6.634766,3.12696 12.560547,26.66406 32.355472,0.0195 V 138.5293 H 94.632812 Z"
+       inkscape:label="Level 3"
+       style="display:inline;fill:#289f32;fill-opacity:1;stroke:none;stroke-width:2.3;stroke-opacity:1;stop-color:#000000"
+       id="rect1671" />
+    <path
+       inkscape:label="Level 4"
+       d="m 158.5293,80.044922 v 69.712888 c 6.76931,-1.39998 14.01113,-2.97835 20.67968,-4.64843 V 88.662109 c -3.421,-2.035777 -7.81364,-4.033975 -13.3496,-5.417968 -2.78982,-0.697453 -5.21431,-1.823087 -7.33008,-3.199219 z"
+       style="fill:#3db03a;fill-opacity:1;stroke:none;stroke-width:2.63637;stroke-linecap:round;stroke-opacity:1;stop-color:#000000"
+       id="rect1824" />
+    <path
+       d="m 108.6875,10.365234 c 0,0 4.39778,9.111365 3.76953,18.535157 0,0 -4.38918,4.089105 -9.51367,11.207031 l 25.80078,10.089844 c -0.16304,-6.482336 -0.90619,-18.574513 -4.20312,-21.025391 -0.002,-0.0016 -0.004,-0.0043 -0.006,-0.0059 -0.001,-8.98e-4 -0.003,-0.0011 -0.004,-0.002 -0.14567,-0.107255 -0.29541,-0.195525 -0.45117,-0.263671 0.31412,-10.052044 -3.14063,-18.535157 -3.14063,-18.535157 z"
+       inkscape:label="Trail Entrance"
+       style="display:inline;fill:#6b613e;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter1749)"
+       id="path1568" />
+    <g
+       inkscape:label="Houses"
+       id="g2461">
+      <rect
+         style="fill:#7e3020;fill-opacity:1;stroke:none;stroke-width:2.25332;stroke-opacity:1;stop-color:#000000"
+         id="rect1570"
+         width="13.266264"
+         height="15.70632"
+         x="115.28439"
+         y="79.473976"
+         inkscape:label="House 1" />
+      <rect
+         style="fill:#2d307f;fill-opacity:1;stroke:none;stroke-width:2.37124;stroke-opacity:1;stop-color:#000000"
+         id="rect1572"
+         width="14.690995"
+         height="15.706322"
+         x="-143.24164"
+         y="79.473976"
+         transform="scale(-1,1)"
+         inkscape:label="House 2" />
+      <rect
+         style="fill:#7e3020;fill-opacity:1;stroke:none;stroke-width:2.3;stroke-opacity:1;stop-color:#000000"
+         id="rect1566"
+         width="14.442274"
+         height="15.937906"
+         x="134.87047"
+         y="-0.4874455"
+         transform="rotate(21.505275)"
+         inkscape:label="House 3" />
+      <rect
+         style="fill:#b1671b;fill-opacity:1;stroke:none;stroke-width:2.3;stroke-opacity:1;stop-color:#000000"
+         id="rect1564"
+         width="16.648699"
+         height="15.70632"
+         x="106.10117"
+         y="9.5295238"
+         transform="rotate(21.075627)"
+         inkscape:label="House 4" />
+      <rect
+         style="fill:#7e3020;fill-opacity:1;stroke:none;stroke-width:2.3;stroke-opacity:1;stop-color:#000000"
+         id="rect1642"
+         width="16.020447"
+         height="15.70632"
+         x="92.353157"
+         y="111.51487"
+         inkscape:label="House-Skulltula" />
+      <rect
+         style="fill:#7e3020;fill-opacity:1;stroke:none;stroke-width:2.3;stroke-opacity:1;stop-color:#000000"
+         id="rect1644"
+         width="14.018692"
+         height="13.821767"
+         x="122.3104"
+         y="115.28419"
+         inkscape:label="House-Shooting" />
+      <rect
+         style="fill:#7e3020;fill-opacity:1;stroke:none;stroke-width:2.32476;stroke-opacity:1;stop-color:#000000"
+         id="rect1646"
+         width="22.302975"
+         height="15.725374"
+         x="103.97584"
+         y="138.52974"
+         inkscape:label="House-Impa" />
+    </g>
+    <g
+       inkscape:label="Well"
+       id="g1852">
+      <path
+         sodipodi:type="star"
+         style="fill:#4f4f7d;fill-opacity:1;stroke:#faf9f5;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+         id="path1790"
+         sodipodi:sides="6"
+         sodipodi:cx="143.48611"
+         sodipodi:cy="103.11963"
+         sodipodi:r1="4.1297927"
+         sodipodi:r2="3.5765052"
+         sodipodi:arg1="1.5707963"
+         sodipodi:arg2="2.0943951"
+         inkscape:flatsided="true"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="m 143.48611,107.24942 -3.5765,-2.06489 0,-4.1298 3.5765,-2.064894 3.57651,2.064894 0,4.1298 z"
+         inkscape:label="Well" />
+      <rect
+         inkscape:label="Beam"
+         style="fill:#7d704f;fill-opacity:1;stroke:none;stroke-width:2.3;stroke-linecap:round;stroke-opacity:1;stop-color:#000000"
+         id="rect1792"
+         width="8.1534081"
+         height="0.90155548"
+         x="156.97269"
+         y="-74.646172"
+         transform="rotate(60)" />
+    </g>
+    <g
+       style="display:inline"
+       inkscape:label="Stairs"
+       id="g1862">
+      <path
+         inkscape:label="Stairs 8"
+         id="rect1730"
+         style="display:inline;fill:#919191;fill-opacity:1;stroke:none;stroke-width:2.3;stroke-opacity:1;stop-color:#000000"
+         d="m 87.998047,124.44531 -6.634766,3.12696 6.625,14.06445 6.644531,-3.10742 z" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         d="m 152.16445,118.48949 h 6.3647 v 16.27073 h -6.36503 z"
+         inkscape:label="Stairs 7"
+         style="display:inline;fill:#919191;stroke:none;stroke-width:2.33306;stroke-opacity:1;stop-color:#000000"
+         id="rect1562-4-3" />
+      <path
+         id="rect1562-4"
+         style="display:inline;fill:#919191;stroke:none;stroke-width:1.37586;stroke-opacity:1;stop-color:#000000"
+         inkscape:label="Stairs 6"
+         d="m 114.55594,121.28419 h 7.64341 v 4.71189 h -7.6438 z"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         id="rect1640"
+         style="fill:#919191;fill-opacity:1;stroke:none;stroke-width:2.30001;stroke-opacity:1;stop-color:#000000"
+         inkscape:label="Stairs 5"
+         d="m 129.62315,95.107353 h 5.65433 v 12.565057 l -5.65433,-4.1e-4 z"
+         sodipodi:nodetypes="ccccc" />
+      <rect
+         style="fill:#919191;stroke:none;stroke-width:1.96463;stroke-opacity:1;stop-color:#000000"
+         id="rect1562"
+         width="15.585452"
+         height="4.7118959"
+         x="91.92379"
+         y="79.473976"
+         inkscape:label="Stairs 4" />
+      <rect
+         inkscape:label="Stairs 3"
+         y="77.316467"
+         x="135.19522"
+         height="2.1575055"
+         width="8.0464182"
+         id="rect1562-5"
+         style="fill:#919191;stroke:none;stroke-width:0.95521;stroke-opacity:1;stop-color:#000000" />
+      <rect
+         style="fill:#919191;fill-opacity:1;stroke:none;stroke-width:2.3;stroke-opacity:1;stop-color:#000000"
+         id="rect1680"
+         width="6.2739363"
+         height="8.9817457"
+         x="125.57673"
+         y="15.525666"
+         transform="rotate(21.422527)"
+         ry="0"
+         inkscape:label="Stairs 2" />
+      <rect
+         ry="0"
+         transform="rotate(21.422527)"
+         y="-0.28393394"
+         x="119.19279"
+         height="6.2627273"
+         width="7.4324489"
+         id="rect1680-1"
+         style="fill:#919191;fill-opacity:1;stroke:none;stroke-width:2.3;stroke-opacity:1;stop-color:#000000"
+         inkscape:label="Stairs 1" />
+      <rect
+         y="74.133827"
+         x="115.28439"
+         height="5.340147"
+         width="5.340147"
+         id="rect1870"
+         style="fill:#967531;fill-opacity:1;stroke:#faf9f5;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000" />
+    </g>
+    <rect
+       inkscape:label="Windmill"
+       y="95.244141"
+       x="158.5293"
+       height="12.187086"
+       width="14.240216"
+       id="rect1872"
+       style="fill:#818181;fill-opacity:1;stroke:#faf9f5;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000" />
+    <g
+       inkscape:label="Cucco pen"
+       id="g1866">
+      <rect
+         style="fill:#a99a67;fill-opacity:1;stroke:none;stroke-width:2.3;stroke-linecap:round;stroke-opacity:1;stop-color:#000000"
+         id="rect1843"
+         width="5.4972138"
+         height="9.4428434"
+         x="126.27881"
+         y="144.81227"
+         inkscape:label="Cucco Hutch" />
+      <path
+         style="fill:none;stroke:#584d2c;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 126.27881,138.52974 9.10986,-4.4e-4 v 15.70703"
+         id="path1845"
+         inkscape:label="Cucco Fence" />
+    </g>
+    <g
+       inkscape:label="Fences"
+       id="g1879">
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 133.25423,69.110952 -3.57719,9.918784"
+         id="path1769"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 150.48691,77.316467 v 9.754929 h -7.24527"
+         id="path1788" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.01005px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 150.59797,83.961702 h 7.93129"
+         id="path1868" />
+    </g>
+  </g>
+</svg>
