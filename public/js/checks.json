@@ -292,7 +292,7 @@
         "spoiler": "Sheik in Ice Cavern",
         "description": "Sheik in Ice Cavern",
         "type": "song",
-        "subregion": "Ice Cavern",
+        "subregion": "ice_cavern",
         "age": "adult",
         "x-coord": 0,
         "y-coord": 0
