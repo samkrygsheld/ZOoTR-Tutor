@@ -10,9 +10,9 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    sodipodi:docname="map-lost_woods.svg"
-   viewBox="0 0 455 565"
-   height="565"
-   width="455"
+   viewBox="0 0 403.66211 525.86011"
+   height="525.86011"
+   width="403.66211"
    id="svg1563"
    version="1.1">
   <metadata
@@ -189,9 +189,9 @@
        gradientTransform="matrix(1,0,0,0.50051797,-344.71719,-373.43428)" />
     <filter
        height="1.6"
-       y="-0.3"
+       y="-0.30000001"
        width="1.6"
-       x="-0.3"
+       x="-0.30000001"
        id="filter3040"
        style="color-interpolation-filters:sRGB"
        inkscape:collect="always">
@@ -202,9 +202,9 @@
     </filter>
     <filter
        height="1.6"
-       y="-0.3"
+       y="-0.30000001"
        width="1.6"
-       x="-0.3"
+       x="-0.30000001"
        id="filter3044"
        style="color-interpolation-filters:sRGB"
        inkscape:collect="always">
@@ -215,9 +215,9 @@
     </filter>
     <filter
        height="1.6"
-       y="-0.3"
+       y="-0.30000001"
        width="1.6"
-       x="-0.3"
+       x="-0.30000001"
        id="filter3048"
        style="color-interpolation-filters:sRGB"
        inkscape:collect="always">
@@ -228,13 +228,17 @@
     </filter>
   </defs>
   <sodipodi:namedview
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
      inkscape:current-layer="g1571"
      inkscape:window-maximized="1"
      inkscape:window-y="-8"
      inkscape:window-x="892"
-     inkscape:cy="244.60117"
-     inkscape:cx="276.0582"
-     inkscape:zoom="0.95221239"
+     inkscape:cy="446.39785"
+     inkscape:cx="54.33399"
+     inkscape:zoom="3.8088496"
      showgrid="false"
      id="namedview1565"
      inkscape:window-height="705"
@@ -246,8 +250,10 @@
      objecttolerance="10"
      borderopacity="1"
      bordercolor="#666666"
-     pagecolor="#ffffff" />
+     pagecolor="#ffffff"
+     inkscape:document-rotation="0" />
   <g
+     transform="translate(-29.802742,-20.317631)"
      id="g1571"
      inkscape:label="Image"
      inkscape:groupmode="layer">
@@ -526,5 +532,13 @@
        width="19.246462"
        id="rect3052"
        style="opacity:1;fill:#858585;fill-opacity:1;stroke:none;stroke-width:6.897;stop-color:#000000" />
+    <rect
+       style="fill:#8c6c0c;fill-opacity:1;stroke-width:3.4;stop-color:#000000"
+       id="rect899"
+       width="40.825981"
+       height="19.307434"
+       x="50.802742"
+       y="455.18481"
+       inkscape:label="Bridge" />
   </g>
 </svg>
