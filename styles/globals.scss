@@ -33,13 +33,25 @@ body {
   background-image: linear-gradient(var(--light-brown), #503512);
 }
 
-svg > path {
+svg * {
   cursor: pointer;
-  fill: transparent;
-  stroke:black;
-  stroke-width:2;
+  stroke: black;
+  stroke-width: 3;
 }
-svg > path:hover {
+svg *.floor {
+  cursor: unset;
+}
+svg:not(.overlay) {
+  paint-order: stroke;
+}
+svg:not(.overlay) *:not(.floor):hover {
+  /* filter: brightness(115%); */
+  stroke: #ccc;
+}
+svg.overlay {
+  fill: transparent;
+}
+svg.overlay *:hover {
   fill: rgba(255, 255, 255, 0.5);
 }
 
@@ -129,16 +141,6 @@ ul {
   display: flex;
 
   flex-direction: row;
-}
-
-#mapSvg > path {
-  cursor: pointer;
-  fill: transparent;
-  stroke:black;
-  stroke-width:2;
-}
-#mapSvg > path:hover {
-  fill: rgba(255, 255, 255, 0.5);
 }
 
 @media only screen and (max-width: 900px) {

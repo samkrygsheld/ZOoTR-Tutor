@@ -1,5 +1,3 @@
-const { extendDefaultPlugins } = require('svgo');
-
 module.exports = {
   presets: [
     [
@@ -8,28 +6,12 @@ module.exports = {
         'preset-react': {
           runtime: 'automatic',
           importSource: '@emotion/react',
+          throwIfNamespace: false,
         },
       },
     ],
   ],
   plugins: [
     '@emotion/babel-plugin',
-    [
-      'inline-react-svg',
-      {
-        svgo: {
-          plugins: extendDefaultPlugins([
-            {
-              name: 'mergePaths',
-              active: false,
-            },
-            {
-              name: 'cleanupIDs',
-              active: false,
-            },
-          ]),
-        },
-      },
-    ],
   ],
 };

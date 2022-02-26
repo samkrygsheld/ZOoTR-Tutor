@@ -8,12 +8,10 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   id="svg1461"
-   width="149.19"
-   height="129.21933"
-   viewBox="0 0 149.19 129.21933"
+   id="desert_colossus"
+   viewBox="0 0 159.19 139.21933"
    sodipodi:docname="map-desert_colossus.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)">
   <metadata
      id="metadata1467">
     <rdf:RDF>
@@ -22,7 +20,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -42,59 +40,49 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
      id="namedview1463"
      showgrid="false"
      inkscape:zoom="2.4077433"
-     inkscape:cx="75.046875"
+     inkscape:cx="-30.861425"
      inkscape:cy="64.609665"
-     inkscape:window-x="892"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1469" />
-  <g
-     transform="translate(-11.453125,-14.390335)"
-     inkscape:groupmode="layer"
-     inkscape:label="Image"
-     id="g1469">
-    <path
-       style="fill:#d7ac76;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 11.453532,108.36803 V 44.639405 c 0,0 2.349442,-30.24907 22.319702,-30.24907 19.97026,0 29.955391,3.524163 29.955391,17.327137 0.29368,7.635688 13.215613,15.565056 16.152416,15.271376 2.936803,-0.293681 4.992565,-8.516729 10.572491,-8.516729 h 32.892188 c 0,0 16.15242,21.438662 23.20074,21.438662 7.04833,0 5.87361,-8.81041 14.09666,-11.159852 0,0 0,33.477182 0,39.940521 -7.34201,-3.600568 -7.04832,-7.929368 -12.04089,-8.516729 -4.99256,-0.58736 -20.8513,3.524164 -28.78067,14.096654 -7.92937,10.572495 -13.21561,49.338295 -33.773233,49.338295 -20.557621,0 -41.702602,-29.36803 -41.702602,-29.36803 H 20.851301 c 0,0 -2.349441,-6.16729 -9.397769,-5.87361 z"
-       id="path2036"
-       sodipodi:nodetypes="ccscsscsccsssccc" />
-    <path
-       id="path2038"
-       style="fill:#967150;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 11.453125,53.445312 V 97.142578 C 25.731108,96.293298 24.669922,86.634766 24.669922,86.634766 v -2.642578 h 8.810547 V 66.958984 h -8.810547 c 0,-9.289841 -9.874885,-12.639076 -13.216797,-13.513672 z" />
-    <rect
-       style="fill:#634f3c;fill-opacity:1;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-dashoffset:37.0394;stroke-opacity:1;stop-color:#000000"
-       id="rect2044"
-       width="6.1672864"
-       height="13.509294"
-       x="38.7658"
-       y="68.721191" />
-    <ellipse
-       style="fill:#917c65;fill-opacity:1;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-dashoffset:37.0394;stroke-opacity:1;stop-color:#000000"
-       id="path2046"
-       cx="92.509293"
-       cy="65.637543"
-       rx="5.8736057"
-       ry="5.7267656" />
-    <ellipse
-       style="fill:#917c65;fill-opacity:1;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-dashoffset:37.0394;stroke-opacity:1;stop-color:#000000"
-       id="path2048"
-       cx="103.18281"
-       cy="69.241737"
-       rx="14.390334"
-       ry="9.54461"
-       transform="rotate(23.046915)" />
-    <ellipse
-       style="fill:#9e8058;fill-opacity:1;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-dashoffset:37.0394;stroke-opacity:1;stop-color:#000000"
-       id="path2050"
-       cx="80.174721"
-       cy="125.25465"
-       rx="5.8736057"
-       ry="5.4330854" />
-  </g>
+     inkscape:current-layer="desert_colossus" />
+  <path
+     style="fill:#d7ac76;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 5.000432,98.9777 V 35.2491 c 0,0 2.349438,-30.249065 22.319668,-30.249065 19.9703,0 29.9554,3.524165 29.9554,17.327165 0.2937,7.6357 13.2156,15.565 16.1524,15.2713 2.9368,-0.2936 4.9926,-8.5167 10.5725,-8.5167 h 32.8926 c 0,0 16.152,21.4387 23.2,21.4387 7.049,0 5.874,-8.8104 14.097,-11.1599 0,0 0,33.4772 0,39.9406 -7.342,-3.6006 -7.048,-7.9294 -12.041,-8.5168 -4.992,-0.5873 -20.851,3.5242 -28.781,14.0967 -7.929,10.5725 -13.2151,49.3379 -33.7728,49.3379 -20.5576,0 -41.7026,-29.3677 -41.7026,-29.3677 H 14.3982 c 0,0 -2.34944,-6.1673 -9.397768,-5.8736 z"
+     class="floor"
+     id="path2036" />
+  <path
+     id="spirit_temple"
+     style="fill:#967150;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 5.000025,44.055 V 87.7523 C 19.278,86.903 18.2168,77.2445 18.2168,77.2445 v -2.6426 h 8.8106 V 57.5687 h -8.8106 c 0,-9.2899 -9.87486,-12.6391 -13.216775,-13.5137 z" />
+  <path
+     id="rect2044"
+     style="fill:#634f3c;fill-opacity:1;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-dashoffset:37.0394;stroke-opacity:1;stop-color:#000000"
+     d="M 32.3127,59.3309 H 38.48 v 13.5093 h -6.1673 z" />
+  <ellipse
+     style="fill:#917c65;fill-opacity:1;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-dashoffset:37.0394;stroke-opacity:1;stop-color:#000000"
+     id="path2046"
+     cx="86.05619"
+     cy="56.247242"
+     rx="5.8736057"
+     ry="5.7267656" />
+  <ellipse
+     style="fill:#917c65;fill-opacity:1;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-dashoffset:37.0394;stroke-opacity:1;stop-color:#000000"
+     id="path2048"
+     cx="61.387077"
+     cy="94.71936"
+     rx="14.390334"
+     ry="9.54461" />
+  <ellipse
+     style="fill:#9e8058;fill-opacity:1;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-dashoffset:37.0394;stroke-opacity:1;stop-color:#000000"
+     id="path2050"
+     cx="73.721619"
+     cy="115.86435"
+     rx="5.8736057"
+     ry="5.4330854" />
 </svg>

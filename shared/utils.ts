@@ -47,6 +47,7 @@ export async function fetchJson<T = any>(url: string): Promise<T> {
   return (await fetch(url)).json();
 }
 
+import { useEffect, useRef, useState } from 'react';
 import randoData from '../public/js/randomizer-data.json';
 
 export function parseSettingsString(text: string): void {
@@ -139,4 +140,48 @@ export function createSandbox(code: string, that: Record<string, unknown>, local
 
   const sandbox = new (Function.prototype.bind.apply(Function, [that, ...params, code])); // create the sandbox
   return Function.prototype.bind.apply(sandbox, [that, ...args]);
+}
+
+
+interface UseDynamicSVGImportOptions {
+  onCompleted?: (
+    name: string,
+    SvgImage: React.FC<React.SVGProps<SVGSVGElement>> | undefined
+  ) => void;
+  onError?: (err: Error) => void;
+}
+interface DynamicSVGImportReturn {
+  error: Error | undefined;
+  loading: boolean;
+  SvgImage: React.FC<React.SVGProps<SVGSVGElement>> | undefined
+}
+export function useDynamicSVGImport(
+  name: string,
+  options: UseDynamicSVGImportOptions = {}
+): DynamicSVGImportReturn {
+  const ImportedIconRef = useRef<React.FC<React.SVGProps<SVGSVGElement>>>();
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<Error>();
+
+  const { onCompleted, onError } = options;
+  useEffect(() => {
+    setLoading(true);
+    const importIcon = async (): Promise<void> => {
+      try {
+        ImportedIconRef.current = (
+          await import(`../public/images/maps/${name}.svg`)
+          // await import(`!!@svgr/webpack?+titleProp,+ref!../public/images/maps/${name}.svg`)
+        ).default;
+        onCompleted?.(name, ImportedIconRef.current);
+      } catch (err: any) {
+        onError?.(err);
+        setError(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    importIcon();
+  }, [name, onCompleted, onError]);
+
+  return { error, loading, SvgImage: ImportedIconRef.current };
 }

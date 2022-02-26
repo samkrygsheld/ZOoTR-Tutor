@@ -1,12 +1,13 @@
 import Head from 'next/head';
 // import Image from 'next/image';
 // import styles from '../styles/Home.module.css';
-import MapSvg from '../maps/map.svg';
-import MapSvgDesert from '../maps/map-desert.svg';
+import MapSvg from '../public/images/maps/map-overworld.svg';
+import MapSvgDesert from '../public/images/maps/map-desert.svg';
+import MapSvgDesertColossus from '../public/images/maps/map-desert_colossus.svg';
 import { main } from '../shared/zootr';
 import { SyntheticEvent, useCallback, useEffect, useRef, useState } from 'react';
 import ToolTip from '../components/tooltip';
-import { titleize } from '../shared/utils';
+import { titleize, useDynamicSVGImport } from '../shared/utils';
 import Grid from '../components/layout/grid';
 import { css } from '@emotion/react';
 import { Item } from '../components/item';
@@ -105,7 +106,7 @@ const songs: Song[] = [
   new Song('prelude', 'ururlu', 'Prelude of Light'),
 ];
 
-type MapNames = 'overworld' | 'desert';
+type MapNames = 'overworld' | 'desert' | 'desert_colossus';
 
 const nameMap: {[idx: string]: string} = {
   'Weird Egg': 'Wierd_Egg',
@@ -156,6 +157,10 @@ export default function Home(): JSX.Element {
   const [checks, setChecks] = useState<CheckState[]>([]);
   const [doneInit, setDoneInit] = useState(false);
   const [itemStates] = useState([] as ItemState[]);
+  const { error, loading, SvgImage } = useDynamicSVGImport(`map-${currentMap}`);
+  if (!loading) {
+    console.log(error, loading, SvgImage);
+  }
 
   useEffect(() => {
     main();
@@ -186,27 +191,53 @@ export default function Home(): JSX.Element {
   function switchMap(e: SyntheticEvent) {
     e.preventDefault();
 
+    setTimeout(() => {
+      window.scrollTo(0, document.body.scrollHeight);
+    });
+
+    function findParent(obj: any[], current: string): string {
+      for (const child of obj) {
+        if (child.region === current) {
+          return 'overworld';
+        }
+        if (child.subregions) {
+          if (Object.keys(child.subregions).some((k) => k === currentMap)) {
+            return child.region;
+          }
+          for (const [sub, dungeons] of Object.entries<string[]>(child.subregions)) {
+            if (dungeons.some((k) => k === currentMap)) {
+              return sub;
+            }
+          }
+        }
+      }
+      return 'overworld';
+    }
+
     if (e.type === 'contextmenu') {
       if (currentMap === 'overworld') {
         return;
       }
-      if (regions.some((region) => region.region === currentMap)) {
-        setMap('overworld');
-      } else {
-        const parentRegion = regions.find((region) =>
-          Object.keys(region.subregions).some((k) => k === currentMap)
-        );
-        if (parentRegion) {
-          console.log('found parent:', parentRegion.region);
-          setMap(parentRegion.region as any);
-        }
-      }
+      const parent = findParent(regions, currentMap);
+      setMap(parent as any);
+      // if (regions.some((region) => region.region === currentMap)) {
+      //   setMap('overworld');
+      // } else {
+      //   const parentRegion = regions.find((region) =>
+      //     Object.keys(region.subregions).some((k) => k === currentMap)
+      //   );
+      //   if (parentRegion) {
+      //     console.log('found parent:', parentRegion.region);
+      //     setMap(parentRegion.region as any);
+      //   }
+      // }
       return;
     }
 
     const target = e.target as HTMLElement;
     // console.log(target, target.nodeName, target.id);
-    if (target.nodeName !== 'path') {
+    const mapName = target.id.toLowerCase();
+    if (target.nodeName !== 'path' || mapName === '' || mapName.includes('path') || mapName.includes('rect') || mapName.includes('ellipse')) {
       return;
     }
     // console.log(e);
@@ -326,16 +357,19 @@ export default function Home(): JSX.Element {
           <ToolTip
             dynamicText={(e) => {
               const ele = e.target as HTMLElement;
-              return ele.nodeName === 'path'
+              return ele.nodeName === 'path' || ele.nodeName === 'ellipse'
                 ? titleize(ele.id.replaceAll('_', ' '))
                 : '';
             }}
           >
-            {currentMap == 'desert' ? (
+            {/* {currentMap == 'desert' ? (
               <MapSvgDesert onClick={switchMap} onContextMenu={switchMap} />
+            ) : currentMap == 'desert_colossus' ? (
+              <MapSvgDesertColossus onClick={switchMap} onContextMenu={switchMap} />
             ) : (
               <MapSvg onClick={switchMap} onContextMenu={switchMap} />
-            )}
+            )} */}
+            { SvgImage ? (<SvgImage onClick={switchMap} onContextMenu={switchMap}></SvgImage>) : null }
           </ToolTip>
         </div>
       </div>
