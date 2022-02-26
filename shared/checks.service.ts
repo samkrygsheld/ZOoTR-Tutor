@@ -40,7 +40,7 @@ export class ChecksService {
     return ChecksService.instance;
   }
 
-  private _debug: boolean = false;
+  private _debug: boolean = true;
   public set debug(val: boolean) {
     this.debugLog = val ? console.log.bind(console) : () => {
       //
@@ -73,6 +73,7 @@ export class ChecksService {
       waterTemple,
     ].flat().map((locationData) => new Region(locationData as any));
     this.buildHelpers();
+    this.debug = true;
   }
 
   private buildHelpers() {
@@ -301,11 +302,11 @@ export class ChecksService {
 
   private buildState(newState: ChecksState): ChecksState {
     const combinedState: ChecksState = {
-      here: () => (stuff: string) => {
+      here: (stuff: string) => {
         this.debugLog('need to implement here():', stuff);
         return false;
       },
-      at: () => (stuff: string) => {
+      at: (stuff: string) => {
         return false;
       },
       Nuts: false,

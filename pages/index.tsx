@@ -149,7 +149,6 @@ function getStateForChecks(itemStates: ItemState[]): ChecksState {
       }
     }
   }
-  console.log(state);
   return state;
 }
 export default function Home(): JSX.Element {
