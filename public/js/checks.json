@@ -302,7 +302,7 @@
         "description": "Sheik at Colossus",
         "type": "song",
         "subregion": "desert_colossus",
-        "age": "adult",
+        "age": "both",
         "x-coord": 0,
         "y-coord": 0
     },
@@ -883,7 +883,7 @@
     },
     {
         "spoiler": "Graveyard Hookshot Chest",
-        "description": "Dampe Race",
+        "description": "Dampe Race Chest",
         "type": "chest",
         "subregion": "graveyard",
         "age": "adult",
@@ -892,7 +892,7 @@
     },
     {
         "spoiler": "Graveyard Dampe Race Freestanding PoH",
-        "description": "Dampe Race Fast",
+        "description": "Dampe Race Under 1:00",
         "type": "interactive",
         "subregion": "graveyard",
         "age": "adult",
@@ -3868,9 +3868,9 @@
     },
     {
         "spoiler": "Spirit Temple GS Sun on Floor Room",
-        "description": "Know-It-All Skull",
+        "description": "Child Lizalfos Room",
         "type": "skull",
-        "subregion": "Child Lizalfos Room",
+        "subregion": "spirit_temple",
         "age": "both",
         "x-coord": 0,
         "y-coord": 0,
