@@ -121,7 +121,7 @@ const skippedTrials = {
 /* State */
 const age: string = 'child';
 const oppositeAge: string = 'adult';
-const checkStatuses = {
+const checkStatuses: { [name: string]: boolean } = {
 };
 const inventory = {
   stonekokiri: 0,
@@ -329,8 +329,9 @@ function canUseScarecrow(distance='near'): boolean {
     };
 }
 
-function eventCompletable(event): boolean {
+function eventCompletable(event: string): boolean {
   // COME BACK
+  return true;
 }
 
 
@@ -342,6 +343,8 @@ interface Region {
   regionName: string;
   scene: string;
   locations?: RuleObj;
+  events?: RuleObj;
+  timePasses?: boolean;
   exits: RuleObj;
 }
 const regions: Region[] = [
@@ -404,7 +407,7 @@ const regions: Region[] = [
     scene: 'Lost Woods',
     events: {
       'Sell Skull Mask': () =>  isChild() && !!(inventory.ocarina && inventory.sarias),
-      'Can Plant Bean LW Bridge': () => isChild() && inventory.beans,
+      'Can Plant Bean LW Bridge': () => isChild() && !!inventory.beans,
       'Can Open Grotto LW Near Shortcuts': () => canBlastOrSmash()
     },
     locations: {
@@ -420,28 +423,28 @@ const regions: Region[] = [
       'LW Bridge': () => isAdult() && (eventCompletable('Can Plant Bean LW Bridge') || !!inventory.bootshover || inventory.shot > 1 || logic_lost_woods_bridge),
       'Zora River': () => canLeaveForest() && !!(inventory.scale || (isAdult() && inventory.bootsiron)),
       'LW Beyond Mido': () => isChild() || logic_mido_backflip || (inventory.ocarina && inventory.sarias),
-      'LW Near Shortcuts Grotto': eventCompletable('Can Open Grotto LW Near Shortcuts')
+      'LW Near Shortcuts Grotto': () => eventCompletable('Can Open Grotto LW Near Shortcuts')
     },
   },
   {
     regionName: 'LW Beyond Mido',
     scene: 'Lost Woods',
     events: {
-        'Can Plant Bean LW Deku Theater': () => isChild() && inventory.beans,
+        'Can Plant Bean LW Deku Theater': () => isChild() && !!inventory.beans,
         'Can Open Grotto LW Near Meadow': () => canBlastOrSmash()
     },
     locations: {
         'LW Deku Scrub Near Deku Theater Right': () => isChild() && canStunDeku(),
         'LW Deku Scrub Near Deku Theater Left': () => isChild() && canStunDeku(),
         'LW GS Above Theater': () => isAdult() && (eventCompletable('Can Plant Bean LW Deku Theater') || (logic_lost_woods_gs_bean && inventory.shot && (inventory.shot > 1 || inventory.bow || hasBombchus() || (inventory.dins && inventory.magic)))),
-        'LW GS Bean Patch Near Theater': () => canPlantBugs() && (canChildAttack() || (shuffle_scrubs === false && inventory.shielddeku))
+        'LW GS Bean Patch Near Theater': () => canPlantBugs() && (canChildAttack() || (shuffle_scrubs === false && !!inventory.shielddeku))
     },
     exits: {
         'LW Forest Exit': () => true,
-        'Lost Woods': isChild() || (inventory.ocarina > 0 && inventory.sarias),
+        'Lost Woods': () => isChild() || (inventory.ocarina > 0 && !!inventory.sarias),
         'SFM Entryway': () => true,
         'Deku Theater': () => true,
-        'LW Scrubs Grotto': eventCompletable('Can Open Grotto LW Near Meadow')
+        'LW Scrubs Grotto': () => eventCompletable('Can Open Grotto LW Near Meadow')
     }
   },
   {
@@ -456,7 +459,7 @@ const regions: Region[] = [
     scene: 'Sacred Forest Meadow',
     exits: {
         'LW Beyond Mido': () => true,
-        'Sacred Forest Meadow': () => isAdult() || inventory.slingshot || inventory.sticks || inventory.swordkokiri || (inventory.magic && inventory.dins),
+        'Sacred Forest Meadow': () => !!(isAdult() || inventory.slingshot || inventory.sticks || inventory.swordkokiri || (inventory.magic && inventory.dins)),
         'SFM Wolfos Grotto': () => canOpenBombGrotto()
     }
 },
@@ -466,11 +469,11 @@ const regions: Region[] = [
     locations: {
         'Song from Saria': () => isChild() && inventory.child_trading > 2,
         'Sheik in Forest': () => isAdult(),
-        'SFM GS': () => isAdult() && inventory.shot
+        'SFM GS': () => isAdult() && !!inventory.shot
     },
     exits: {
         'SFM Entryway': () => true,
-        'SFM Forest Temple Entrance Ledge': () => isAdult() && inventory.shot,
+        'SFM Forest Temple Entrance Ledge': () => isAdult() && !!inventory.shot,
         'SFM Storms Grotto': () => canOpenStormGrotto()
     }
 },
@@ -506,13 +509,13 @@ const regions: Region[] = [
     scene: 'Hyrule Field',
     timePasses: true,
     events: {
-        'Sell Bunny Hood': () => inventory.stonekokiri && inventory.stonegoron && inventory.stonezora && isChild(),
+        'Sell Bunny Hood': () => !!(inventory.stonekokiri && inventory.stonegoron && inventory.stonezora) && isChild(),
         'Can Open Grotto HF': () => canBlastOrSmash()
     },
     locations: {
-        'HF Ocarina of Time Item': () => isChild() && inventory.stonekokiri && inventory.stonegoron && inventory.stonezora,
-        'Song from Ocarina of Time': () => isChild() && inventory.stonekokiri && inventory.stonegoron && inventory.stonezora,
-        'Big Poe Kill': () => isAdult() && inventory.bow && inventory.eponas && inventory.bottle
+        'HF Ocarina of Time Item': () => isChild() && !!(inventory.stonekokiri && inventory.stonegoron && inventory.stonezora),
+        'Song from Ocarina of Time': () => isChild() && !!(inventory.stonekokiri && inventory.stonegoron && inventory.stonezora),
+        'Big Poe Kill': () => isAdult() && !!(inventory.bow && inventory.eponas && inventory.bottle)
     },
     exits: {
         'LW Bridge': () => true,
@@ -3052,14 +3055,14 @@ const regions: Region[] = [
             'Water Temple Torches Chest': () => (inventory.bow || (inventory.dins && inventory.magic)) && (inventory.lullaby && inventory.ocarina)
             'Water Temple Central Bow Target Chest': () => inventory.strength && (inventory.lullaby && inventory.ocarina) && (inventory.bow && (logic_water_central_bow || inventory.bootshover || inventory.shot > 1)),
             'Water Temple GS Behind Gate': () => (inventory.shot || inventory.bootshover) && hasExplosives() && (inventory.lullaby && inventory.ocarina) && (inventory.bootsiron || inventory.scale),
-            'Water Temple GS Central Pillar': '
-                (inventory.lullaby && inventory.ocarina) and
-                    (((can_use(Longshot) || (logic_water_central_gs_fw && can_use(Hookshot) && can_use(Farores_Wind))) && 
-                        ((Small_Key_Water_Temple, 6) || can_use(Bow) || (inventory.dins && inventory.magic))) or
-                    (logic_water_central_gs_irons && can_use(Hookshot) && can_use(Iron_Boots) and
-                        (can_use(Bow) || (inventory.dins && inventory.magic))) or
-                    (logic_water_central_gs_fw && Child_Water_Temple && Boomerang && can_use(Farores_Wind) and
-                        (Sticks || (inventory.dins && inventory.magic) or
+            'Water Temple GS Central Pillar': '\
+                (inventory.lullaby && inventory.ocarina) and\
+                    (((can_use(Longshot) || (logic_water_central_gs_fw && can_use(Hookshot) && can_use(Farores_Wind))) && \
+                        ((Small_Key_Water_Temple, 6) || can_use(Bow) || (inventory.dins && inventory.magic))) or\
+                    (logic_water_central_gs_irons && can_use(Hookshot) && can_use(Iron_Boots) and\
+                        (can_use(Bow) || (inventory.dins && inventory.magic))) or\
+                    (logic_water_central_gs_fw && Child_Water_Temple && Boomerang && can_use(Farores_Wind) and\
+                        (Sticks || (inventory.dins && inventory.magic) or\
                         ((Small_Key_Water_Temple, 6) && (can_use(Hover_Boots) || can_use(Bow))))))'
         },
         exits: {
