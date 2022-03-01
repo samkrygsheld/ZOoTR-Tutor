@@ -12,6 +12,8 @@ export class RegionTests implements ITest {
       ['testIceCavernFreestandingPoH', this.testIceCavernFreestandingPoH()],
       ['testBarinade', this.testBarinade()],
       ['testDMTBiggoron', this.testDMTBiggoron()],
+      ['testSongFromSaria', this.testSongFromSaria()],
+      ['testShootMorningSun', this.testShootMorningSun()],
     ].map(([name, testResult]) => {
       const valid = testResult[0] && testResult[1];
       console.log(`%c${name} | Region: ${testResult[0]}, Check: ${testResult[1]}`, `color: ${valid ? 'green' : 'red'}`);
@@ -84,6 +86,22 @@ export class RegionTests implements ITest {
       open_forest: 'open',
       open_kakariko: 'open',
       Claim_Check: true,
+    });
+  }
+
+  private testSongFromSaria(): [boolean, boolean] {
+    return this.checkRegionAndCheck('Sacred Forest Meadow', 'Song from Saria', {
+      age: 'child',
+      Zeldas_Letter: true,
+    });
+  }
+
+  private testShootMorningSun(): [boolean, boolean] {
+    return this.checkRegionAndCheck('Lake Hylia', 'LH Sun', {
+      age: 'adult',
+      Ocarina: true,
+      Progressive_Hookshot: 2,
+      Bow: true,
     });
   }
 

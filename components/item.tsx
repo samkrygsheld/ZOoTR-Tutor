@@ -9,13 +9,18 @@ function getItemName(itemState: ItemState) {
   return typeof itemState.item.display === 'string' ? itemState.item.display : itemState.item.display[displayIdx];
 }
 
-export function Item({ item, ...props }: { item: ItemModel }): JSX.Element {
+export function Item({ item, onUpdate, ...props }: { item: ItemModel, onUpdate: (_: ItemState) => void }): JSX.Element {
   const itemState = useMemo(
     () => new ItemState(item, item.icons.length === 2),
     [item]
   );
   const [currentImage, setImage] = useState(itemState.icon);
   const [tooltipText, setTooltipText] = useState(getItemName(itemState));
+  const [initialState] = useState(itemState);
+  const [initialOnUpdate] = useState(() => onUpdate);
+  useEffect(() => {
+    initialOnUpdate(initialState);
+  }, [initialOnUpdate, initialState]);
   useEffect(() => {
     const $storage = StorageService.Instance;
     itemState.setState($storage.saveData.inventory[item.name] || 0);
@@ -39,12 +44,14 @@ export function Item({ item, ...props }: { item: ItemModel }): JSX.Element {
           itemState.incrementState();
           setImage(itemState.icon);
           setTooltipText(getItemName(itemState));
+          onUpdate(itemState);
         }}
         onContextMenu={(e) => {
           e.preventDefault();
           itemState.decrementState();
           setImage(itemState.icon);
           setTooltipText(getItemName(itemState));
+          onUpdate(itemState);
         }}
       ></img>
     </Tooltip>

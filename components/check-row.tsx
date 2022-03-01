@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CheckState } from '../shared/models';
 import { StorageService } from '../shared/storage.service';
 
@@ -9,6 +9,10 @@ function colorFromState(checkState: CheckState) {
 export default function CheckRow({ checkState }: { checkState: CheckState }): JSX.Element {
   const $storage = StorageService.Instance;
   const [color, setColor] = useState(colorFromState(checkState));
+  // Updates color when needed
+  useEffect(() => {
+    setColor(colorFromState(checkState));
+  }, [checkState]);
   return (
     <li css={css`
       display: flex;

@@ -1,20 +1,21 @@
 import Head from 'next/head';
 // import Image from 'next/image';
 // import styles from '../styles/Home.module.css';
-import MapSvg from '../maps/map.svg';
-import MapSvgDesert from '../maps/map-desert.svg';
+import MapSvg from '../public/images/maps/map-overworld.svg';
+import MapSvgDesert from '../public/images/maps/map-desert.svg';
+import MapSvgDesertColossus from '../public/images/maps/map-desert_colossus.svg';
 import { main } from '../shared/zootr';
-import { SyntheticEvent, useEffect, useState } from 'react';
+import { SyntheticEvent, useCallback, useEffect, useRef, useState } from 'react';
 import ToolTip from '../components/tooltip';
-import { titleize } from '../shared/utils';
+import { titleize, useDynamicSVGImport } from '../shared/utils';
 import Grid from '../components/layout/grid';
 import { css } from '@emotion/react';
 import { Item } from '../components/item';
 import CheckRow from '../components/check-row';
-import { CheckState, Item as ItemModel, Song } from '../shared/models';
+import { CheckState, Item as ItemModel, ItemState, Song } from '../shared/models';
 
 import regions from '../public/js/regions.json';
-import { ChecksService } from '../shared/checks.service';
+import { ChecksService, ChecksState } from '../shared/checks.service';
 import { runTests } from '../tests/tests';
 
 const noteStyle = css`
@@ -35,7 +36,7 @@ const items: ItemModel[] = [
   new ItemModel('arrowsfire', 'Fire Arrow'),
   new ItemModel('din', "Din's Fire"),
   new ItemModel('slingshot', 'Fairy Slingshot'),
-  new ItemModel('ocarina', 'Ocarina', 2),
+  new ItemModel('ocarina', ['Fairy Ocarina', 'Ocarina of Time'], 2),
   new ItemModel('bombchu'),
   new ItemModel('shot', ['Hookshot', 'Longshot'], 2),
   new ItemModel('arrowslight', 'Light Arrow'),
@@ -105,39 +106,138 @@ const songs: Song[] = [
   new Song('prelude', 'ururlu', 'Prelude of Light'),
 ];
 
-type MapNames = 'overworld' | 'desert';
+type MapNames = 'overworld' | 'desert' | 'desert_colossus';
+
+const nameMap: {[idx: string]: string} = {
+  'Weird Egg': 'Wierd_Egg',
+  'Cucco': 'Pocket_Cucco',
+  "Zelda's Letter": 'Zeldas_Letter',
+  'Fairy Ocarina': 'Ocarina',
+  'Ocarina of Time': 'Ocarina',
+  'Fairy Bow': 'Bow',
+  // 'Keaton Mask': 'Keaton_Mask',
+  // 'Skull Mask': 'Skull_Mask',
+};
+
+function getStateForChecks(itemStates: ItemState[]): ChecksState {
+  const state: any = {};
+  for (const itemState of itemStates) {
+    if (itemState.item.name === 'age') {
+      state['age'] = itemState.state === 0 ? 'child' : 'adult';
+      continue;
+    }
+    if (typeof itemState.item.display === 'string') {
+      let name = itemState.item.display;
+      if (name in nameMap) {
+        name = nameMap[name];
+      } else {
+        name = name.replaceAll(' ', '_').replaceAll("'", '');
+      }
+      state[name] = itemState.state;
+    } else {
+      for (let i = 0; i < itemState.state; i++) {
+        let name: string = itemState.item.display[i];
+        if (name in nameMap) {
+          name = nameMap[name];
+        } else {
+          name = name.replaceAll(' ', '_').replaceAll("'", '');
+        }
+        if (itemState.item.name === 'shot') {
+          state['Progressive_Hookshot'] = itemState.state;
+          continue;
+        }
+        state[name] = true;
+      }
+    }
+  }
+  return state;
+}
 export default function Home(): JSX.Element {
   const [currentMap, setMap] = useState<MapNames>('overworld');
   const [checks, setChecks] = useState<CheckState[]>([]);
+  const [doneInit, setDoneInit] = useState(false);
+  const [itemStates] = useState([] as ItemState[]);
+  const { error, loading, SvgImage } = useDynamicSVGImport(`map-${currentMap}`);
+  if (!loading) {
+    console.log(error, loading, SvgImage);
+  }
+
   useEffect(() => {
     main();
 
-    setChecks(ChecksService.Instance.getChecksForMap(currentMap));
-  }, [currentMap]);
+    const before = performance.now();
+    const s = getStateForChecks(itemStates);
+    console.log('state', s);
+    setChecks(ChecksService.Instance.getChecksForMap(currentMap, s));
+    console.log('Took:', performance.now() - before);
+    setDoneInit(true);
+  }, [currentMap, itemStates]);
+  const revalidateChecks = useCallback((map) => {
+    // console.log('revalidate checks...');
+    const s = getStateForChecks(itemStates);
+    // console.log(s, map);
+    setChecks(ChecksService.Instance.getChecksForMap(map, s));
+  }, [itemStates]);
+  const updateItemState = useCallback((itemState: ItemState) => {
+    // console.log('updateItemState', itemState.item.name);
+    if (!itemStates.includes(itemState)) {
+      // console.log(itemState, itemStates);
+      itemStates.push(itemState);
+    }
+    if (doneInit) {
+      revalidateChecks(currentMap);
+    }
+  }, [doneInit, revalidateChecks, itemStates, currentMap]);
   function switchMap(e: SyntheticEvent) {
     e.preventDefault();
+
+    setTimeout(() => {
+      window.scrollTo(0, document.body.scrollHeight);
+    });
+
+    function findParent(obj: any[], current: string): string {
+      for (const child of obj) {
+        if (child.region === current) {
+          return 'overworld';
+        }
+        if (child.subregions) {
+          if (Object.keys(child.subregions).some((k) => k === currentMap)) {
+            return child.region;
+          }
+          for (const [sub, dungeons] of Object.entries<string[]>(child.subregions)) {
+            if (dungeons.some((k) => k === currentMap)) {
+              return sub;
+            }
+          }
+        }
+      }
+      return 'overworld';
+    }
 
     if (e.type === 'contextmenu') {
       if (currentMap === 'overworld') {
         return;
       }
-      if (regions.some((region) => region.region === currentMap)) {
-        setMap('overworld');
-      } else {
-        const parentRegion = regions.find((region) =>
-          Object.keys(region.subregions).some((k) => k === currentMap)
-        );
-        if (parentRegion) {
-          console.log('found parent:', parentRegion.region);
-          setMap(parentRegion.region as any);
-        }
-      }
+      const parent = findParent(regions, currentMap);
+      setMap(parent as any);
+      // if (regions.some((region) => region.region === currentMap)) {
+      //   setMap('overworld');
+      // } else {
+      //   const parentRegion = regions.find((region) =>
+      //     Object.keys(region.subregions).some((k) => k === currentMap)
+      //   );
+      //   if (parentRegion) {
+      //     console.log('found parent:', parentRegion.region);
+      //     setMap(parentRegion.region as any);
+      //   }
+      // }
       return;
     }
 
     const target = e.target as HTMLElement;
     // console.log(target, target.nodeName, target.id);
-    if (target.nodeName !== 'path') {
+    const mapName = target.id.toLowerCase();
+    if (target.nodeName !== 'path' || mapName === '' || mapName.includes('path') || mapName.includes('rect') || mapName.includes('ellipse')) {
       return;
     }
     // console.log(e);
@@ -170,19 +270,19 @@ export default function Home(): JSX.Element {
         <h1 css={headerStyle}>ZOoTR Tutor</h1>
         <Grid columns={6} rows={3}>
           {items.map((item) => (
-            <Item key={item.name} item={item} />
+            <Item key={item.name} item={item} onUpdate={updateItemState} />
           ))}
         </Grid>
         <br />
         <Grid columns={4} rows={4}>
           {equipment.map((item) => (
-            <Item key={item.name} item={item} />
+            <Item key={item.name} item={item} onUpdate={updateItemState} />
           ))}
         </Grid>
         <br />
         <Grid columns={6} rows={2}>
           {songs.map((item) => (
-            <Item key={item.name} item={item} data-notes={item.notes} />
+            <Item key={item.name} item={item} data-notes={item.notes} onUpdate={updateItemState} />
           ))}
         </Grid>
         <div
@@ -208,6 +308,10 @@ export default function Home(): JSX.Element {
           className='bg-gray-500 hover:bg-gray-600 py-2 px-4 border border-gray-700 rounded font-bold text-white text-shadow-black'
           onClick={runTests}
         >Run Logic Tests</button>
+        <button
+          className='bg-gray-500 hover:bg-gray-600 py-2 px-4 border border-gray-700 rounded font-bold text-white text-shadow-black'
+          onClick={revalidateChecks}
+        >Revalidate Checks</button>
       </div>
       <div id='checksWrapper'>
         <div
@@ -253,16 +357,19 @@ export default function Home(): JSX.Element {
           <ToolTip
             dynamicText={(e) => {
               const ele = e.target as HTMLElement;
-              return ele.nodeName === 'path'
+              return ele.nodeName === 'path' || ele.nodeName === 'ellipse'
                 ? titleize(ele.id.replaceAll('_', ' '))
                 : '';
             }}
           >
-            {currentMap == 'desert' ? (
+            {/* {currentMap == 'desert' ? (
               <MapSvgDesert onClick={switchMap} onContextMenu={switchMap} />
+            ) : currentMap == 'desert_colossus' ? (
+              <MapSvgDesertColossus onClick={switchMap} onContextMenu={switchMap} />
             ) : (
               <MapSvg onClick={switchMap} onContextMenu={switchMap} />
-            )}
+            )} */}
+            { SvgImage ? (<SvgImage onClick={switchMap} onContextMenu={switchMap}></SvgImage>) : null }
           </ToolTip>
         </div>
       </div>
