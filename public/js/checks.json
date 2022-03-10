@@ -1896,7 +1896,7 @@
     },
     {
         "spoiler": "Fire Temple Boulder Maze Lower Chest",
-        "description": "Boulder Maze 1F Southeast",
+        "description": "Boulder Maze Low Southeast",
         "type": "chest",
         "subregion": "fire_temple",
         "age": "adult",
@@ -1905,7 +1905,7 @@
     },
     {
         "spoiler": "Fire Temple Boulder Maze Side Room Chest",
-        "description": "Boulder Maze 1F North",
+        "description": "Boulder Maze Low North",
         "type": "chest",
         "subregion": "fire_temple",
         "age": "adult",
@@ -1938,7 +1938,7 @@
     },
     {
         "spoiler": "Fire Temple Boulder Maze Upper Chest",
-        "description": "Boulder Maze 2F Southwest",
+        "description": "Boulder Maze High Southwest",
         "type": "chest",
         "subregion": "fire_temple",
         "age": "adult",
@@ -1947,7 +1947,7 @@
     },
     {
         "spoiler": "Fire Temple Scarecrow Chest",
-        "description": "Boulder Maze 2F Scarecrow Song",
+        "description": "Boulder Maze High Scarecrow",
         "type": "chest",
         "subregion": "fire_temple",
         "age": "adult",
