@@ -9,9 +9,9 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg833"
-   width="3000"
-   height="4340"
-   viewBox="0 0 3000 4340"
+   width="2942.2656"
+   height="4296.416"
+   viewBox="0 0 2942.2656 4296.416"
    sodipodi:docname="map-fire_temple.svg"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
   <metadata
@@ -22,13 +22,17 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs837" />
   <sodipodi:namedview
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
      inkscape:document-rotation="0"
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -43,13 +47,14 @@
      id="namedview835"
      showgrid="false"
      inkscape:zoom="0.19585253"
-     inkscape:cx="1388.0025"
-     inkscape:cy="1200.5965"
+     inkscape:cx="1366.3033"
+     inkscape:cy="3217.26"
      inkscape:window-x="892"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="g841" />
   <g
+     transform="translate(-21.699219,-25.689453)"
      inkscape:groupmode="layer"
      inkscape:label="Image"
      id="g841">
