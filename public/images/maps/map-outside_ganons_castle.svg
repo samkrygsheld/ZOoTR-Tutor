@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   id="svg3054"
-   width="121.18905"
-   height="146.33681"
-   viewBox="0 0 121.18905 146.33681"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    sodipodi:docname="map-outside_ganons_castle.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
+   viewBox="0 0 121.18905 146.33681"
+   height="146.33681"
+   width="121.18905"
+   id="svg3054"
+   version="1.1">
   <metadata
      id="metadata3060">
     <rdf:RDF>
@@ -22,66 +22,80 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs3058" />
   <sodipodi:namedview
-     fit-margin-bottom="0"
-     fit-margin-right="0"
-     fit-margin-left="0"
-     fit-margin-top="0"
-     inkscape:document-rotation="0"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
-     id="namedview3056"
-     showgrid="false"
-     inkscape:zoom="1.6503067"
-     inkscape:cx="62.046471"
-     inkscape:cy="72.713753"
-     inkscape:window-x="892"
-     inkscape:window-y="-8"
+     inkscape:current-layer="g3062"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g3062" />
+     inkscape:window-y="-8"
+     inkscape:window-x="892"
+     inkscape:cy="72.713753"
+     inkscape:cx="62.046471"
+     inkscape:zoom="1.6503067"
+     showgrid="false"
+     id="namedview3056"
+     inkscape:window-height="705"
+     inkscape:window-width="1366"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     inkscape:document-rotation="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <g
-     transform="translate(-5.4535294,-8.7862473)"
-     inkscape:groupmode="layer"
+     id="g3062"
      inkscape:label="Image"
-     id="g3062">
+     inkscape:groupmode="layer"
+     transform="translate(-5.4535294,-8.7862473)">
     <circle
-       style="fill:#b54600;fill-opacity:1;stroke-width:6.897;stop-color:#000000"
-       id="path3631"
-       cx="49.081783"
-       cy="52.414501"
+       inkscape:label="Lava"
        r="43.628254"
-       inkscape:label="path3631" />
-    <path
-       style="fill:#484848;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 19.996282,84.832714 c 3.635688,13.936803 16.663569,27.267656 34.842008,28.176576 7.574349,9.99814 9.998141,12.11896 19.693309,2.12082 9.695167,-9.99814 16.05762,-16.057619 16.05762,-28.782526 C 100.28439,83.01487 106.34387,81.197026 106.04089,74.228625 105.73792,67.260223 80.591078,64.533457 62.109665,87.55948 53.929368,93.013011 51.505576,95.133829 46.355019,95.436803 41.204461,95.739777 29.085501,84.832714 19.996282,84.832714 Z"
-       id="path3627"
-       sodipodi:nodetypes="ccscscsc"
-       inkscape:label="Terrain" />
-    <circle
-       style="fill:#858585;stroke-width:6.897;stop-color:#000000"
-       id="path3629"
-       cx="49.081783"
        cy="52.414501"
-       r="23.631969"
-       inkscape:label="Castle" />
+       cx="49.081783"
+       id="path3631"
+       style="display:inline;fill:#b54600;fill-opacity:1;stroke-width:6.897;stop-color:#000000" />
     <path
-       id="path3634"
-       style="fill:#7b7b7b;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:label="Terrain"
+       sodipodi:nodetypes="ccscscsc"
+       id="path3627"
+       d="m 19.996282,84.832714 c 3.635688,13.936803 16.663569,27.267656 34.842008,28.176576 7.574349,9.99814 9.998141,12.11896 19.693309,2.12082 9.695167,-9.99814 16.05762,-16.057619 16.05762,-28.782526 C 100.28439,83.01487 106.34387,81.197026 106.04089,74.228625 105.73792,67.260223 80.591078,64.533457 62.109665,87.55948 53.929368,93.013011 51.505576,95.133829 46.355019,95.436803 41.204461,95.739777 29.085501,84.832714 19.996282,84.832714 Z"
+       style="fill:#484848;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <circle
+       inkscape:label="Castle"
+       r="23.631969"
+       cy="52.414501"
+       cx="49.081783"
+       id="path3629"
+       style="fill:#858585;stroke-width:6.897;stop-color:#000000" />
+    <path
+       inkscape:label="Path"
        d="m 123.61328,66.351562 c -29.085498,0 -29.38793,-0.606209 -45.142577,15.148438 -5.514577,6.066035 -7.07798,7.144143 -13.925781,10.708984 l -2.435547,-4.65039 -5.755859,2.423828 2.505859,5.207031 c -7.089425,3.816218 -12.623173,7.497337 -15.230469,12.972657 -3.02974,6.36245 -4.848266,24.54087 3.332032,46.96094 h 10.300781 c 0,0 -17.874435,-39.08469 3.636719,-53.02149 8.180296,-4.544606 19.389223,-8.482768 23.630859,-15.451169 5.150557,-7.271376 6.968302,-11.816407 42.113283,-11.816407 v -8.482422 z"
-       inkscape:label="Path" />
+       style="fill:#7b7b7b;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path3634" />
+    <circle
+       inkscape:label="check:OGCGreatFairyReward"
+       r="1.8178439"
+       cy="69.38105"
+       cx="124.21933"
+       id="path851"
+       style="fill:#000000;stroke-width:3.4;stop-color:#000000" />
+    <circle
+       inkscape:label="check:OGCGS"
+       style="fill:#ffffff;stroke-width:3.4;stop-color:#000000"
+       id="path851-0"
+       cx="83.01487"
+       cy="74.22863"
+       r="1.8178439" />
   </g>
 </svg>
