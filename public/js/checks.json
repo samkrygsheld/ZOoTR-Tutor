@@ -319,7 +319,7 @@
         "spoiler": "Sheik at Temple",
         "description": "Sheik at Temple",
         "type": "song",
-        "subregion": "temple_of_time",
+        "subregion": "market",
         "age": "adult",
         "x-coord": 0,
         "y-coord": 0
@@ -620,7 +620,7 @@
         "spoiler": "ToT Light Arrows Cutscene",
         "description": "Light Arrows",
         "type": "auto",
-        "subregion": "temple_of_time",
+        "subregion": "market",
         "age": "adult",
         "x-coord": 0,
         "y-coord": 0
