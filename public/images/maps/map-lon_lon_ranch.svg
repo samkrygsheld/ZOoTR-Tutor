@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   inkscape:version="1.1.2 (0a00cf5, 2022-02-04)"
    sodipodi:docname="map-lon_lon_ranch.svg"
    viewBox="0 0 111.57617 148.66016"
    height="148.66016"
    width="111.57617"
    id="svg948"
-   version="1.1">
+   version="1.1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata954">
     <rdf:RDF>
@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -30,11 +30,11 @@
      id="defs952" />
   <sodipodi:namedview
      inkscape:current-layer="g956"
-     inkscape:window-maximized="1"
-     inkscape:window-y="-8"
-     inkscape:window-x="892"
-     inkscape:cy="66.861075"
-     inkscape:cx="76.800637"
+     inkscape:window-maximized="0"
+     inkscape:window-y="25"
+     inkscape:window-x="0"
+     inkscape:cy="66.817843"
+     inkscape:cx="72.092936"
      inkscape:zoom="3.127907"
      fit-margin-bottom="0"
      fit-margin-right="0"
@@ -42,8 +42,8 @@
      fit-margin-top="0"
      showgrid="false"
      id="namedview950"
-     inkscape:window-height="705"
-     inkscape:window-width="1366"
+     inkscape:window-height="743"
+     inkscape:window-width="1042"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      guidetolerance="10"
@@ -51,12 +51,12 @@
      objecttolerance="10"
      borderopacity="1"
      bordercolor="#666666"
-     pagecolor="#ffffff" />
+     pagecolor="#ffffff"
+     inkscape:pagecheckerboard="0" />
   <g
      transform="translate(-11.509766,-10.550781)"
      id="g956"
-     inkscape:label="Image"
-     inkscape:groupmode="layer">
+     inkscape:label="Image">
     <path
        inkscape:label="Main"
        d="m 86.320312,10.550781 v 7.992188 2.55664 h -5.115234 v 15.027344 h 5.115234 v 8.630859 H 67.777344 l -33.56836,8.3125 -22.699218,31.650391 V 127.56055 L 24.9375,144.50586 45.716797,159.21094 H 99.427734 L 123.08594,143.22656 V 74.171875 L 105.18164,44.757812 H 94.3125 V 18.542969 h 20.14062 V 10.550781 H 94.3125 Z"
@@ -97,5 +97,54 @@
        width="14.70632"
        id="rect1561"
        style="opacity:1;fill:#969696;fill-opacity:1;stroke:none;stroke-width:6.897;stroke-opacity:1;stop-color:#000000" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.328661;stroke-miterlimit:1.7"
+       id="path2804"
+       cx="20.723988"
+       cy="148.94658"
+       r="1.5"
+       inkscape:label="check:LLRFreestandingPoH" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.328661;stroke-miterlimit:1.7"
+       id="path2804-1"
+       cx="15.165379"
+       cy="128.89008"
+       r="1.5"
+       inkscape:label="check:LLRGSBackWall" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.328661;stroke-miterlimit:1.7"
+       id="path2804-8"
+       cx="89.197495"
+       cy="120.84818"
+       r="1.5"
+       inkscape:label="check:LLRGSRainShed" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.328661;stroke-miterlimit:1.7"
+       id="path2804-7"
+       cx="102.75846"
+       cy="52.562382"
+       r="1.5"
+       inkscape:label="check:LLRGSTree" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.328661;stroke-miterlimit:1.7"
+       id="path2804-9"
+       cx="93.673332"
+       cy="36.44669"
+       r="1.5"
+       inkscape:label="check:LLRGSHouseWindow" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.328661;stroke-miterlimit:1.7"
+       id="path2804-2"
+       cx="99.681122"
+       cy="25.62903"
+       r="1.5"
+       inkscape:label="check:LLRTalonsChickens" />
+    <circle
+       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.328661;stroke-miterlimit:1.7"
+       id="path2804-0"
+       cx="71.138016"
+       cy="91.115837"
+       r="1.5"
+       inkscape:label="check:SongfromMalon" />
   </g>
 </svg>
