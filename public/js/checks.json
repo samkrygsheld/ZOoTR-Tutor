@@ -2106,7 +2106,7 @@
     },
     {
         "spoiler": "Shadow Temple Early Silver Rupee Chest",
-        "description": "Silver Rupees Near Beamos",
+        "description": "Silver Rupees Near Beamos 4-Way",
         "type": "chest",
         "subregion": "shadow_temple",
         "age": "adult",
@@ -2205,7 +2205,7 @@
     },
     {
         "spoiler": "Shadow Temple Spike Walls Left Chest",
-        "description": "Spike Walls Left",
+        "description": "Spike Wall Trap Left",
         "type": "chest",
         "subregion": "shadow_temple",
         "age": "adult",
@@ -2214,7 +2214,7 @@
     },
     {
         "spoiler": "Shadow Temple Boss Key Chest",
-        "description": "Spike Walls Boss Key",
+        "description": "Spike Wall Trap Right",
         "type": "chest",
         "subregion": "shadow_temple",
         "age": "adult",
