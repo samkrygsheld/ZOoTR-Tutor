@@ -1869,7 +1869,7 @@
     },
     {
         "spoiler": "Fire Temple Boss Key Chest",
-        "description": "Fire Boss Key Chest",
+        "description": "Goron Behind Lobby",
         "type": "chest",
         "subregion": "fire_temple",
         "age": "adult",
@@ -1929,7 +1929,7 @@
     },
     {
         "spoiler": "Fire Temple Boulder Maze Shortcut Chest",
-        "description": "Boulder Maze 2F Cracked Tile",
+        "description": "Boulder Maze High Cracked Tile",
         "type": "chest",
         "subregion": "fire_temple",
         "age": "adult",
@@ -1947,7 +1947,7 @@
     },
     {
         "spoiler": "Fire Temple Scarecrow Chest",
-        "description": "Boulder Maze High Scarecrow",
+        "description": "Boulder Maze High Scarecrow Song",
         "type": "chest",
         "subregion": "fire_temple",
         "age": "adult",
@@ -2019,7 +2019,7 @@
     },
     {
         "spoiler": "Water Temple Boss Key Chest",
-        "description": "Boss Key (From 1F↑)",
+        "description": "Near Boulder Waterfall (From 1F↑)",
         "type": "chest",
         "subregion": "water_temple",
         "age": "adult",
@@ -2840,7 +2840,7 @@
     },
     {
         "spoiler": "Ganons Tower Boss Key Chest",
-        "description": "Ganon's Boss Key Chest",
+        "description": "Ganon's Tower Chest",
         "type": "chest",
         "subregion": "ganons_castle",
         "age": "adult",
@@ -3689,7 +3689,7 @@
         "age": "adult",
         "x-coord": 0,
         "y-coord": 0,
-        "nearby-checks": ["Forest Temple Floormaster Chest","Forest Boss Key Chest"]
+        "nearby-checks": ["Forest Temple Floormaster Chest","Forest Temple Boss Key Chest"]
     },
     {
         "spoiler": "Forest Temple GS Basement",
@@ -3763,7 +3763,7 @@
     },
     {
         "spoiler": "Water Temple GS Near Boss Key Chest",
-        "description": "Rolling Boulders by Boss Chest",
+        "description": "Rolling Boulders Hallway",
         "type": "skull",
         "subregion": "water_temple",
         "age": "adult",

@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   inkscape:version="1.1.2 (0a00cf5, 2022-02-04)"
    sodipodi:docname="map-spirit_temple.svg"
-   viewBox="0 0 3413.2461 2774.0879"
+   viewBox="0 0 2817.563 2774.0879"
    id="svg1532"
-   version="1.1">
+   version="1.1"
+   width="2817.563"
+   height="2774.0879"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata1538">
     <rdf:RDF>
@@ -20,7 +22,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -28,11 +29,11 @@
      id="defs1536" />
   <sodipodi:namedview
      inkscape:current-layer="g1540"
-     inkscape:window-maximized="1"
-     inkscape:window-y="-8"
-     inkscape:window-x="-8"
-     inkscape:cy="1680.7173"
-     inkscape:cx="1534.7493"
+     inkscape:window-maximized="0"
+     inkscape:window-y="25"
+     inkscape:window-x="0"
+     inkscape:cy="1371.584"
+     inkscape:cx="1423.2769"
      inkscape:zoom="0.14508772"
      fit-margin-bottom="0"
      fit-margin-right="0"
@@ -40,8 +41,8 @@
      fit-margin-top="0"
      showgrid="false"
      id="namedview1534"
-     inkscape:window-height="1017"
-     inkscape:window-width="1920"
+     inkscape:window-height="743"
+     inkscape:window-width="998"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      guidetolerance="10"
@@ -49,27 +50,236 @@
      objecttolerance="10"
      borderopacity="1"
      bordercolor="#666666"
-     pagecolor="#ffffff" />
+     pagecolor="#ffffff"
+     inkscape:pagecheckerboard="0" />
   <g
-     transform="translate(-83.871094,-41.787109)"
+     transform="translate(-831.23981,-41.787109)"
      id="g1540"
      inkscape:label="Image"
      inkscape:groupmode="layer">
     <path
-       d="m 1400.8984,1028.9648 -56.1601,56.1602 v 78.832 l 56.1601,56.1602 h 14.8184 v 61.4492 h -71.6074 v 32.0527 h -31.8223 v 30.0821 h 31.8223 v 78.1562 h -33.9473 v 33.3184 h 33.9473 v 75.0234 h -34.0625 v 30.8047 h 34.0625 v 42.3086 l 12.3652,20.1406 -69.6465,40.209 -15.1308,-26.207 h -12.668 v -8.7637 h 31.4336 l 17.2891,-17.2891 V 1453.291 l -16.293,-16.293 h -31.3809 v -106.2988 h -47.7812 v 306.584 h -12.1543 l -15.3301,26.5527 -69.3867,-40.0586 12.6875,-21.9746 v -208.2363 l -96.3223,-96.3203 h -95.90038 v 304.4121 l 48.10547,83.3223 h 95.65041 l 12.123,-20.9981 69.7715,40.2813 -13.2871,23.0136 v 105.1055 H 971.37891 v -35.6621 l -80.33399,-57.5918 H 729.47461 l -80.67969,58.6758 v 37.7207 l -41.91211,8.8027 v 21.5606 h -97.14258 v -21.3379 H 467.6582 v -125.3613 l -8.86914,-14.7891 69.69141,-40.2383 12.18164,21.0977 h 96.13477 l 48.14648,-83.3926 V 1546.125 H 492.64648 v 55.8828 l 12.1211,20.9961 -69.53516,40.1465 -8.67578,-15.0274 h -35.51953 v -96.9687 h 40.23437 v -116.0957 h -23.4707 V 1339.5 h -47.7793 v 95.5586 h -23.4707 v 116.0957 h 41.49414 v 96.9687 h -35.08008 l -9.11718,15.793 -70.33594,-40.6074 12.40039,-21.4785 h -32.30273 l -39.41602,-55.7149 h -48.01172 l -40.30469,56.1739 H 83.970703 l 48.207027,83.498 h 96.54493 l 12.34375,-21.3809 69.00586,39.8399 -8.96875,15.5371 v 125.9531 c 0,61.3467 61.3457,61.9395 61.3457,61.9395 H 467.6582 v -8.002 h 42.08203 v -21.6347 h 97.14258 v 22.2402 l 40.0586,9.334 0.27148,217.8281 64.125,64.125 h 67.38281 v 101.0078 h 62.86719 v -101.0078 h 67.38281 l 63.91602,-63.916 v -215.6348 h 267.70118 c 0,0 84.2422,4.6096 84.2422,-83.8242 v -98.0742 l -14.668,-25.9844 69.9922,-39.8164 12.5742,22.1172 h 93.8809 l 49.457,-49.4551 v -129.6211 h 32.4805 v -31.4336 h -32.4805 v -76.9082 h 31.6426 v -31.8535 h -31.6426 v -85.5957 h -71.8945 v -61.4492 h 15.5586 l 56.1601,-56.1602 v -78.832 l -56.1601,-56.1602 z m -1066.75192,46.084 -57.27148,57.2715 16.81836,16.8184 h 22.375 l 34.23047,-34.2285 h 68.75586 l 17.04101,17.041 -41.63867,41.6386 h -19.56055 l -13.63281,13.6329 v 18.9668 l -42.23242,42.2324 -2.51758,-2.5196 h -22.22656 l -82.98242,82.9805 -31.41407,-31.414 H 83.871094 v 95.4277 h 32.005856 l 40.00977,56.6055 h 47.71289 l 40.60156,-56.4571 h 31.26563 l -30.82227,-30.8222 65.94141,-65.9395 23.70898,23.709 h 100.16992 l 23.85743,-23.8574 65.49609,65.4961 -32.9707,32.9687 2,55.1231 h 192.04296 v -152.5508 h -95.42968 l -31.1543,31.1543 -82.94336,-82.9434 h -22.44922 l -34.74804,34.7481 h -67.42383 l -17.85547,-17.8555 41.41797,-41.416 h 20.0039 l 13.48438,-13.4844 v -20.1523 l 41.49023,-41.4922 3.55664,3.5566 h 22.52344 l 16.66992,-16.6699 -57.56836,-57.5684 z"
-       style="fill:#5b470c;fill-opacity:1;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="rect2105" />
+       id="path1209"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 0,1199.7793 0.09960937,209.3926 191.94141063,-0.459 -0.44532,-208.7852 z m 406.97656,56.8262 v 96.4023 h 194.09571 l -0.0527,-96.4023 z"
+       transform="translate(831.23981,41.787109)"
+       inkscape:label="DemsDaPits" />
+    <path
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 903.25544,1298.1717 0.29492,96.6132 h 48.01172 l -0.59375,-96.6132 z"
+       id="path3178"
+       inkscape:label="Bridge" />
+    <path
+       d="m 2148.2671,877.63446 -56.1601,56.1602 v 78.83204 l 56.1601,56.1602 h 14.8184 v 61.4492 h -71.6074 v 32.0527 h -31.8223 v 30.0821 h 31.8223 v 78.1562 h -33.9473 v 33.3184 h 33.9473 v 75.0234 h -34.0625 v 30.8047 h 34.0625 v 42.3086 l 12.3652,20.1406 -69.6465,40.209 -15.1308,-26.207 h -12.668 v -8.7637 h 31.4336 l 17.2891,-17.2891 v -158.1113 l -16.293,-16.293 h -31.3809 v -106.2988 h -47.7812 v 306.584 h -12.1543 l -15.3301,26.5527 -69.3867,-40.0586 12.6875,-21.9746 v -208.2363 l -96.3223,-96.3203 h -95.9004 v 304.4121 l 48.1055,83.3223 h 95.6504 l 12.123,-20.9981 69.7715,40.2813 -13.2871,23.0136 v 105.1055 h -176.875 v -35.6621 l -80.334,-57.5918 h -161.5703 l -80.6797,58.6758 v 37.7207 l -41.9121,8.8027 v 21.5606 h -97.1425 v -21.3379 h -42.0821 v -125.3613 l -8.8691,-14.7891 69.6914,-40.2383 12.1816,21.0977 h 96.1348 l 48.1465,-88.1424 v -50.9924 h -194.0953 v 50.9924 l 13.9195,25.8865 -69.5352,40.1465 -8.6757,-15.0274 h -35.5196 v -96.9687 h 40.2344 v -116.0957 h -23.4707 v -95.5586 h -47.7793 v 95.5586 h -23.4707 v 116.0957 h 41.4941 v 96.9687 h -35.08 l -9.1172,15.793 -70.336,-40.6074 12.4004,-21.4785 h -32.3027 l -39.41602,-55.7149 h -48.01172 l -40.30469,56.1739 h -31.90625 l 48.20703,83.498 h 96.54493 l 12.34375,-21.3809 69.00587,39.8399 -8.9688,15.5371 v 125.9531 c 0,61.3467 61.3457,61.9395 61.3457,61.9395 h 105.209 v -8.002 h 42.0821 v -21.6347 h 97.1425 v 22.2402 l 40.0586,9.334 0.2715,217.8281 64.125,64.125 h 67.3828 v 101.0078 h 62.8672 v -101.0078 h 67.3828 l 63.916,-63.916 v -215.6348 h 267.7012 c 0,0 84.2422,4.6096 84.2422,-83.8242 v -98.0742 l -14.668,-25.9844 69.9922,-39.8164 12.5742,22.1172 h 93.8809 l 49.457,-49.4551 v -129.6211 h 32.4805 v -31.4336 h -32.4805 v -76.9082 h 31.6426 v -31.8535 h -31.6426 v -85.5957 h -71.8945 v -61.4492 h 15.5586 l 56.1601,-56.1602 v -78.83204 l -56.1601,-56.1602 z m -1066.7519,46.084 -57.2715,57.2715 16.8184,16.8184 h 22.375 l 34.2305,-34.2285 h 68.7558 l 17.041,17.041 -41.6386,41.63864 h -19.5606 l -13.6328,13.6329 v 18.9668 l -42.2324,42.2324 -2.5176,-2.5196 h -22.2266 l -82.98239,82.9805 -31.41407,-31.414 h -96.01953 v 95.4277 h 32.00586 l 40.00977,56.6055 h 47.71289 l 40.60156,-56.4571 h 31.26561 l -30.82225,-30.8222 65.94145,-65.9395 23.7089,23.709 h 100.17 l 23.8574,-23.8574 65.4961,65.4961 -32.9703,32.9687 v 55.1231 h 194.0425 v -152.5508 h -95.4296 l -31.1543,31.1543 -82.9434,-82.9434 h -22.4492 l -34.7481,34.7481 h -67.4238 l -17.8555,-17.8555 41.418,-41.416 h 20.0039 l 13.4844,-13.4844 v -20.1523 l 41.4902,-41.49224 3.5567,3.5566 h 22.5234 l 16.6699,-16.6699 -57.5683,-57.5684 z"
+       style="fill:#5c470b;fill-opacity:1;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
+       id="rect2105"
+       inkscape:label="1F"
+       sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccsccccccccccccccccccscccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+    <path
+       d="m 1310.8866,109.94864 v 145.2168 h -64.0137 v 144.03125 h -17.4863 V 291.61857 h -79.8086 v -13.31446 -47.36133 h -47.3594 v 47.36133 h -47.7793 v 13.31446 h -6.7207 V 494.3295 h 46.5273 v 23.70899 h 40.0098 V 494.3295 h 95.1309 v -48.90039 h 53.5293 140.5879 v 49.19531 h 81.2031 v 17.78321 h -16.5957 v 105.5039 h 78.832 32.0059 v -77.05468 h -32.0059 v -28.44922 h -16.0039 v -17.78321 h 81.2031 v -49.19531 h 175.4453 18.375 v 85.35157 H 2048.826 V 281.83732 h -46.8261 v -58.67969 h -96.6133 v 58.67969 h -79.4239 v 117.95312 h -18.375 v -144.625 h -64.0136 v -145.2168 z m 152.9218,589.7578 v 78.8321 h 217.5293 v -78.8321 z"
+       style="fill:#886a11;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
+       id="rect2447"
+       inkscape:label="2F" />
+    <path
+       id="path6211-0"
+       style="fill:#6b3b24;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1414.6084,109.44864 -30.6075,18.1621 -24.4511,93.8105 -17.2188,12.4707 v 26.0879 l 10.8086,4.1699 2.4727,28.8164 15.9824,12.25 h 5.0859 l 14.4297,-13.6953 3.5527,-32.1035 -1.9492,-18.5137 -9.748,-19.0703 c 0,0 32.2046,-70.6656 28.6445,-83.7871 l 20.2461,2.9629 13.9024,-3.2558 v 7.1328 l 23.0292,2.414 21.4668,40.541 h 74.1719 l 21.4668,-40.541 23.0293,-2.414 v -7.1328 l 13.9024,3.2558 20.246,-2.9629 c -3.56,13.1215 28.6446,83.7871 28.6446,83.7871 l -9.7481,19.0703 -1.9511,18.5137 3.5546,32.1035 14.4278,13.6953 h 5.0859 l 15.9844,-12.25 2.4727,-28.8164 10.8066,-4.1699 v -26.0879 l -17.2168,-12.4707 -24.4512,-93.8105 -30.6074,-18.1621 h -75.6465 -74.1719 z"
+       inkscape:label="StatueLower" />
     <path
        d="M 2360.8105,41.787109 2258.418,144.17969 v 557.30664 l 101.2832,100.46679 h 254.3359 v 17.8418 h -11.7363 v 219.19728 h 12.5742 v 16.3457 h -136.6328 v 143.3379 h 47.7793 v 177.2871 h 88.4336 v 82.1484 h -256.918 v 384.3301 72.5078 c 0,97.0707 -107.5644,91.4141 -107.5644,91.4141 h -21.9317 v -81.9102 h -55.123 -304.6582 v 207.5664 161.2207 h 39.1191 v 16.0039 h -19.5605 v 266.7247 h 19.5605 v 16.0039 h -63.8398 v 223.457 h 336.1953 v -87.1309 h 195.0058 v 35.252 h 82.9649 v -82.9668 h -74.3711 -203.5996 v -88.6113 h -225.5313 v -16.0039 h 18.9688 v -266.7247 h -18.375 v -16.0039 h 218.1211 v -161.2207 h 55.123 v -80.0156 h 21.9317 c 163.8875,0 154.9238,-137.0547 154.9238,-137.0547 v -72.5078 h 466.0586 v 61.1914 c 0,0 -10.4767,147.7383 158.4277,147.7383 h 19.0938 v 31.1191 h 77.2422 v 35.8985 h -9.7793 -68.1641 v 29.6347 h -81.2031 v -68.7558 h -159.4414 v 148.7734 h 159.4414 v -31.414 h 81.2031 v 23.7089 h 68.1641 v -69.3476 h 104.0214 v 69.6445 h 68.1641 v -24.2461 h 17.4551 v 96.6055 h 73.3457 v 15.918 h -21.1641 v 266.9863 h 20.9551 v 16.5215 h -225.7266 v 87.8965 h -194.7832 -82.9648 v 82.9648 h 82.9648 v -35.252 h 194.7832 v 87.8477 h 336.1953 v -223.457 h -64.9941 v -16.5215 h 20.7461 v -266.9863 h -19.9082 v -15.918 h 72.0879 v -335.7695 h -100.7969 v -17.127 l 40.8633,-40.8633 v -47.5703 l -31.8535,-31.8535 h -64.125 l -32.2715,32.2715 v 47.3613 l 41.0742,40.4063 v 17.375 h -44.4277 v 192.8515 h -17.4551 v -31.6855 h -56.0137 -21.041 v -35.8848 l 8.8692,-8.8672 h 33.6152 l 10.1152,9.2735 h 24.8321 v -34.2637 h -24.8321 l -9.5801,9.5801 h -33.5605 l -9.459,-9.459 v -33.8008 l 8.834,-9.6348 h 0.072 v -24.791 h -34.336 v 24.791 l 9.1309,9.1309 v 34.5996 l -9.1621,9.1641 h -31.9356 l -10.8457,-9.9454 h -25.9863 v -68.2207 h -68.3652 v 25.2071 h -19.0938 c 0,0 -111.0664,6.4975 -111.0664,-101.6348 v -80.4668 -365.0547 h -256.9199 v -82.1484 h 88.0156 v -177.2871 h 48.1973 V 1055.3379 H 2662.654 v -16.3457 h 10.8965 V 819.79492 h -11.7344 v -17.8418 H 2916.488 L 3018.7324,699.70898 V 144.32812 L 2916.1914,41.787109 Z M 3151.7344,2073.6367 h 34.4648 l 8.5723,8.5723 v 36.1797 h -53.0488 v -35.8985 h 1.0332 l 0.072,0.053 z"
-       style="fill:#896c11;fill-opacity:1;stroke:none;stroke-width:1.45113;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="rect2195" />
+       style="fill:#b58f17;fill-opacity:1;stroke:none;stroke-width:1.45113;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
+       id="rect2195"
+       inkscape:label="3F" />
     <path
-       d="m 1379.2637,146.40234 v 145.2168 H 1315.25 v 144.03125 h -17.4863 V 328.07227 h -79.8086 v -13.31446 -47.36133 h -47.3594 v 47.36133 h -47.7793 v 13.31446 h -6.7207 V 530.7832 h 46.5273 v 23.70899 h 40.0098 V 530.7832 h 95.1309 v -48.90039 h 53.5293 140.5879 v 49.19531 h 81.2031 v 17.78321 h -16.5957 v 105.5039 h 78.832 32.0059 v -77.05468 h -32.0059 v -28.44922 h -16.0039 v -17.78321 h 81.2031 v -49.19531 h 175.4453 18.375 v 85.35157 h 222.8633 V 318.29102 h -46.8261 v -58.67969 h -96.6133 v 58.67969 h -79.4239 v 117.95312 h -18.375 v -144.625 h -64.0136 v -145.2168 z m 152.9218,589.75782 v 78.83203 h 217.5293 v -78.83203 z"
-       style="fill:#b48c16;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="rect2447" />
+       id="path6211"
+       style="fill:#6b3b24;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 2525.2298,1457.6113 -30.6075,18.1621 -24.4511,93.8105 -17.2188,12.4707 v 26.0879 l 10.8086,4.1699 2.4727,28.8164 15.9824,12.25 h 5.0859 l 14.4297,-13.6953 3.5527,-32.1035 -1.9492,-18.5137 -9.748,-19.0703 c 0,0 32.2046,-70.6656 28.6445,-83.7871 l 20.2461,2.9629 13.9024,-3.2558 v 7.1328 l 23.0292,2.414 21.4668,40.541 h 74.1719 l 21.4668,-40.541 23.0293,-2.414 v -7.1328 l 13.9024,3.2558 20.246,-2.9629 c -3.56,13.1215 28.6446,83.7871 28.6446,83.7871 l -9.7481,19.0703 -1.9511,18.5137 3.5546,32.1035 14.4278,13.6953 h 5.0859 l 15.9844,-12.25 2.4727,-28.8164 10.8066,-4.1699 v -26.0879 l -17.2168,-12.4707 -24.4512,-93.8105 -30.6074,-18.1621 h -75.6465 -74.1719 z"
+       inkscape:label="StatueUpper" />
     <path
-       d="M 783.33008,75.441406 V 339.48438 h 83.82422 v 49.45703 H 737.64648 V 261.10938 H 546.94922 v 127.83203 h -82.14844 v -18.19922 c 0,-16.62 -13.38,-30 -30,-30 h -82.5 c -16.62,0 -30,13.38 -30,30 v 82.5 c 0,16.62 13.38,30 30,30 h 18.0957 v 41.91211 h -21.5664 c -27.7,0 -50,22.3 -50,50 v 89.86132 c 0,27.70001 22.3,50 50,50 h 89.86133 c 27.7,0 50,-22.29999 50,-50 v -20.83203 h 82.5664 v 18.19922 c 0,16.62 13.38,30 30,30 h 82.5 c 16.62,0 30,-13.38 30,-30 v -82.5 c 0,-16.62 -13.38,-30 -30,-30 h -18.61719 v -90.52929 h 72.50586 v -23.89063 h 97.23438 l 32.69336,32.69141 V 575.86719 H 811.41211 V 709.98438 H 970.67578 V 575.86719 H 914.51562 V 468.1543 l 32.27149,-40.23438 v -38.97851 h -32.27149 v -49.45703 h 84.66016 V 75.441406 Z M 464.80078,435.46289 h 82.14844 v 23.89063 h 71.66797 v 90.52929 h -17.35938 c -16.62,0 -30,13.38 -30,30 v 16.94141 h -82.5664 V 575.1543 c 0,-27.7 -22.3,-50 -50,-50 h -22.60352 v -41.91211 h 18.71289 c 16.62,0 30,-13.38 30,-30 z M 867.99219,812.25 v 49.45508 h 48.19922 V 812.25 Z"
+       d="m 3432.9571,592.76507 v 264.04298 h 83.8242 v 49.45703 H 3387.2735 V 778.43305 h -190.6972 v 127.83203 h -82.1485 v -18.19922 c 0,-16.62 -13.38,-30 -30,-30 h -82.5 c -16.62,0 -30,13.38 -30,30 v 82.5 c 0,16.62 13.38,30.00004 30,30.00004 h 18.0957 v 41.9121 h -21.5664 c -27.7,0 -50,22.3 -50,50 v 89.8613 c 0,27.7 22.3,50 50,50 h 89.8613 c 27.7,0 50,-22.3 50,-50 v -20.832 h 82.5664 v 18.1992 c 0,16.62 13.38,30 30,30 h 82.5 c 16.62,0 30,-13.38 30,-30 v -82.5 c 0,-16.62 -13.38,-30 -30,-30 h -18.6171 v -90.52931 h 72.5058 v -23.89063 h 97.2344 l 32.6934,32.69141 v 107.71293 h -56.1622 v 134.1172 h 159.2637 v -134.1172 h -56.1601 V 985.47797 l 32.2715,-40.23438 v -38.97851 h -32.2715 v -49.45703 h 84.6601 V 592.76507 Z m -318.5293,360.02149 h 82.1485 v 23.89063 h 71.6679 v 90.52931 h -17.3594 c -16.62,0 -30,13.38 -30,30 v 16.9414 h -82.5664 v -21.6699 c 0,-27.7 -22.3,-50 -50,-50 h -22.6035 v -41.9121 h 18.7129 c 16.62,0 30,-13.38004 30,-30.00004 z m 403.1914,376.78714 v 49.455 h 48.1993 v -49.455 z"
        style="fill:#e3b31e;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="rect2482" />
+       id="rect2482"
+       inkscape:label="4F" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987"
+       cx="884.06897"
+       cy="1160.9564"
+       r="10"
+       inkscape:label="check:SpiritTempleChildBridgeChest" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3"
+       cx="1399.8613"
+       cy="1223.8307"
+       r="10"
+       inkscape:label="check:SpiritTempleChildEarlyTorchesChest" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5"
+       cx="1710.0186"
+       cy="1173.8608"
+       r="10"
+       inkscape:label="check:SpiritTempleCompassChest" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3"
+       cx="2187.8379"
+       cy="973.21069"
+       r="10"
+       inkscape:label="check:SpiritTempleEarlyAdultRightChest" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-7"
+       cx="1413.641"
+       cy="1310.5914"
+       r="10"
+       inkscape:label="check:SpiritTempleGSMetalFence" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-6"
+       cx="1117.635"
+       cy="1231.1405"
+       r="10"
+       inkscape:label="check:SpiritTempleGSSunonFloorRoom" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-5"
+       cx="2074.5793"
+       cy="1287.1863"
+       r="10"
+       inkscape:label="check:SpiritTempleGSBoulderRoom" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6"
+       cx="2023.6219"
+       cy="431.2067"
+       r="10"
+       inkscape:label="check:SpiritTempleFirstMirrorRightChest" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6-5"
+       cx="2023.6219"
+       cy="371.2067"
+       r="10"
+       inkscape:label="check:SpiritTempleFirstMirrorLeftChest" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6-2"
+       cx="1527.6946"
+       cy="295.21692"
+       r="10"
+       inkscape:label="check:SpiritTempleMapChest" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6-2-9"
+       cx="1215.0398"
+       cy="305.40103"
+       r="10"
+       inkscape:label="check:SpiritTempleChildClimbEastChest" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6-2-1"
+       cx="1135.8429"
+       cy="244.04359"
+       r="10"
+       inkscape:label="check:SpiritTempleChildClimbNorthChest" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6-2-2"
+       cx="3540.9155"
+       cy="614.7373"
+       r="10"
+       inkscape:label="check:SpiritTempleBossKeyChest" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6-2-2-7"
+       cx="2995.8503"
+       cy="884.10822"
+       r="10"
+       inkscape:label="check:SpiritTempleTopmostChest" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6-2-2-0"
+       cx="2369.75"
+       cy="1509.6294"
+       r="10"
+       inkscape:label="check:SpiritTempleGSLobby" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6-2-2-9"
+       cx="2483.1726"
+       cy="1608.512"
+       r="10"
+       inkscape:label="check:SpiritTempleStatueRoomHandChest" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6-2-2-9-2"
+       cx="2625.5752"
+       cy="409.83356"
+       r="10"
+       inkscape:label="check:Twinrova" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6-2-2-9-2-7"
+       cx="2651.5752"
+       cy="435.83356"
+       r="10"
+       inkscape:label="check:SpiritTempleTwinrovaHeart" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6-2-2-9-0"
+       cx="2872.0808"
+       cy="1579.4237"
+       r="10"
+       inkscape:label="check:SpiritTempleStatueRoomNortheastChest" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6-2-2-9-0-6"
+       cx="2100.8257"
+       cy="2278.7925"
+       r="10"
+       inkscape:label="check:SpiritTempleSunBlockRoomChest" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6-2-2-9-0-2"
+       cx="2415.8691"
+       cy="2721.7139"
+       r="10"
+       inkscape:label="check:SpiritTempleSilverGauntletsChest" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6-2-2-9-0-61"
+       cx="2917.0781"
+       cy="2721.8701"
+       r="10"
+       inkscape:label="check:SpiritTempleMirrorShieldChest" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6-2-2-9-0-61-7"
+       cx="3373.27"
+       cy="1845.0374"
+       r="10"
+       inkscape:label="check:SpiritTempleNearFourArmosChest" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6-2-2-9-0-8"
+       cx="1930.5625"
+       cy="2321.019"
+       r="10"
+       inkscape:label="check:SpiritTempleGSHallAfterSunBlockRoom" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6-2-2-9-0-61-7-9"
+       cx="3368.6687"
+       cy="2442.4033"
+       r="10"
+       inkscape:label="check:SpiritTempleHallwayRightInvisibleChest" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.672742;stroke-miterlimit:1.7"
+       id="path987-3-5-3-6-2-2-9-0-61-7-2"
+       cx="3433.5339"
+       cy="2442.4033"
+       r="10"
+       inkscape:label="check:SpiritTempleHallwayLeftInvisibleChest" />
   </g>
 </svg>
