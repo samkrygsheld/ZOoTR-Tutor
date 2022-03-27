@@ -120,8 +120,9 @@ export function createSandbox(code: string, that: Record<string, unknown>, local
   const params = []; // names of local vars
   const args = []; // local vars
 
-  let keys = Object.getOwnPropertyNames( window );
-  keys = keys.concat([...document.querySelectorAll('*[id]')].map((e) => e.id).filter((id) => !id.includes('-')));
+  const keys = Object.getOwnPropertyNames( window );
+  // wtf why was i adding these
+  // keys = keys.concat([...document.querySelectorAll('*[id]')].map((e) => e.id).filter((id) => !id.includes('-')));
 
   for (const key of keys) {
     if (!(key in locals)) {

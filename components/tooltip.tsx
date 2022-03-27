@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { ReactNode, cloneElement, isValidElement, useRef, MouseEvent, useState, useEffect } from 'react';
+import { ReactNode, MouseEvent, forwardRef } from 'react';
 
 const tooltipStyle = css`
   position: absolute;
@@ -14,48 +14,22 @@ const tooltipStyle = css`
   pointer-events: none;
   font-size: 25px;
 `;
-export default function Tooltip(props: { dynamicText?: (e: MouseEvent) => string, text?: string, children?: ReactNode }): JSX.Element {
-  const [pos, setPos] = useState({x: 0, y: 0});
-  const lastMousePosRef = useRef({x: 0, y: 0});
-  const tooltipRef = useRef<HTMLDivElement>(null!);
-  const [show, setShow] = useState(false);
-  const [text, setText] = useState(props.text || '');
-  useEffect(() => {
-    setText(props.text || '');
-    // Timeout to let the new text render for correct positioning
-    setTimeout(() => {
-      const ele = tooltipRef.current;
-      const rect = ele.getBoundingClientRect();
-      setPos({ x: lastMousePosRef.current.x - rect.width / 2, y: lastMousePosRef.current.y - rect.height - 10 });
-    }, 0);
-  }, [props.text]);
-  return (
-    <>
-      <div ref={tooltipRef}
-        css={tooltipStyle}
-        style={{
-          transform: `translate(${pos.x}px, ${pos.y}px)`,
-          opacity: `${ show ? 1 : 0 }`,
-        }}
-      >
-        { text }
-      </div>
-      { isValidElement(props.children) ? cloneElement(props.children, {
-        onMouseMove: (e: MouseEvent) => {
-          if (typeof props.dynamicText === 'function') {
-            setText(props.dynamicText(e));
-          }
-          const ele = tooltipRef.current;
-          const rect = ele.getBoundingClientRect();
-          lastMousePosRef.current = { x: e.pageX, y: e.pageY };
-          setPos({ x: e.pageX - rect.width / 2, y: e.pageY - rect.height - 10 });
-          setShow(true);
-        },
-        onMouseOut: () => {
-          setShow(false);
-        },
-      }) : props.children }
-    </>
-  );
+export default forwardRef<HTMLDivElement, { dynamicText?: (e: MouseEvent) => string, text?: string, children?: ReactNode, pos: {x: number, y: number}, show?: boolean }>(
+  function Tooltip(props, ref): JSX.Element {
+    return (
+      <>
+        <div ref={ref}
+          css={tooltipStyle}
+          style={{
+            transform: `translate(${props.pos.x}px, ${props.pos.y}px)`,
+            opacity: `${ props.show === false ? 0 : 1 }`,
+          }}
+        >
+          { props.text }
+        </div>
+        { props.children }
+      </>
+    );
 
-}
+  }
+);

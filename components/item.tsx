@@ -2,7 +2,7 @@ import { css } from '@emotion/react';
 import { useEffect, useMemo, useState } from 'react';
 import { Item as ItemModel, ItemState } from '../shared/models';
 import { StorageService } from '../shared/storage.service';
-import Tooltip from './tooltip';
+import MouseTooltip from './mouse-tooltip';
 
 function getItemName(itemState: ItemState) {
   const displayIdx = Math.max(itemState.state - 1, 0);
@@ -28,7 +28,7 @@ export function Item({ item, onUpdate, ...props }: { item: ItemModel, onUpdate: 
     setTooltipText(getItemName(itemState));
   }, [item.name, itemState]);
   return (
-    <Tooltip text={tooltipText}>
+    <MouseTooltip text={tooltipText}>
       <img
         id={item.name}
         {...props}
@@ -54,6 +54,6 @@ export function Item({ item, onUpdate, ...props }: { item: ItemModel, onUpdate: 
           onUpdate(itemState);
         }}
       ></img>
-    </Tooltip>
+    </MouseTooltip>
   );
 }
