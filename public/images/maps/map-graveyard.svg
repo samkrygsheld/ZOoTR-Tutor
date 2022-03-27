@@ -61,7 +61,7 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1366"
      inkscape:window-height="705"
-     id="namedview3521"
+     id="Image"
      showgrid="false"
      inkscape:document-rotation="0"
      inkscape:zoom="6.183908"
@@ -83,35 +83,35 @@
     <path
        style="opacity:1;fill:#3d4325;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 12.343,41.543253 h 7.525512 l 9.633218,-9.633218 v -17.15917 h 69.539792 l 5.719728,8.128028 H 118.609 l 6.92387,9.33218 v 19.868512 l -6.3218,8.429065 H 103.25606 L 96.031142,73.754325 H 28.899654 L 17.610727,62.465398 H 12.343 Z"
-       id="path4106"
+       id="Main"
        sodipodi:nodetypes="cccccccccccccccc"
        inkscape:label="Main" />
     <path
-       id="rect4108"
+       id="Path"
        style="fill:#919191;fill-opacity:1;stroke-width:7.55906;stroke-linecap:round;stroke-dashoffset:37.0394;stop-color:#000000"
        d="m 56.144531,25.888672 v 3.011719 H 59.90625 V 39.886719 H 42.144531 c 0,3.437009 0,14.851527 0,17.761719 h 3.462891 V 43.349609 H 59.90625 c 0,3.713082 0,22.923063 0,26.492188 4.490791,0 22.377776,0 26.34175,0 0,-3.891332 3.4e-5,-20.346597 4.7e-5,-26.492188 h 16.255863 v 7.826172 h 3.46093 3.3125 v -2.708984 h -3.3125 V 35.070312 h 3.46289 v -2.708984 h -6.92382 c 0,2.872783 9e-5,5.632677 9e-5,7.828125 H 86.248047 V 25.888672 Z m 7.074219,3.011719 H 83.085938 V 66.378906 H 63.21875 Z"
        sodipodi:nodetypes="ccccccccccccccccccccccccccccccc"
        inkscape:label="Path" />
     <path
-       id="rect4139"
+       id="Platforms"
        style="display:inline;fill:#626e30;fill-opacity:1;stroke-width:7.55906;stroke-linecap:round;stroke-dashoffset:37.0394;stop-color:#000000"
        d="M 29.501953,14.75 V 31.609375 H 49.371094 V 14.75 Z M 125.5332,32.210938 v 19.86914 h 17.72657 v -19.86914 z"
        inkscape:label="Platforms" />
     <path
        style="fill:#342d1b;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 163.61418,28.297577 17.76125,-7.224913 17.76124,7.224913 v 26.641868 l -17.76124,7.224915 -17.76125,-7.224915 z"
-       id="path4168"
+       id="ShadowEntrance"
        inkscape:label="ShadowEntrance" />
     <rect
        style="display:inline;fill:url(#linearGradient843);fill-opacity:1;stroke:none;stroke-width:7.70948;stroke-linecap:round;stroke-dashoffset:37.0394;stop-color:#000000"
-       id="rect4170"
+       id="Stairs"
        width="21.763119"
        height="5.1176472"
        x="142.94946"
        y="39.134949"
        inkscape:label="Stairs" />
     <path
-       id="rect845"
+       id="GraveRedead"
        style="fill:#6e6e6e;fill-opacity:1;stroke-width:1px;stop-color:#000000"
        inkscape:label="Graves"
        d="m 60.640625,21.345703 v 3.234375 h 2.912109 v -3.234375 z m 5.353516,0 v 3.234375 h 2.910156 v -3.234375 z m 5.375,0 v 3.234375 h 2.910156 v -3.234375 z m 5.271484,0 v 3.234375 h 2.912109 v -3.234375 z m 5.394531,0 v 3.234375 h 2.910156 v -3.234375 z m 5.982422,7.398438 v 2.910156 h 3.234375 v -2.910156 z m 22.330082,3.486328 v 2.910156 h 3.23437 v -2.910156 z m -22.330082,1.867187 v 2.910156 h 3.234375 v -2.910156 z m -22.5,5.222656 v 2.91211 h 3.234375 v -2.91211 z m 22.5,7.140626 v 2.910156 h 3.234375 v -2.910156 z m 22.330082,1.810546 v 2.910157 h 3.23437 v -2.910157 z m -44.830082,1.736328 v 2.910157 h 3.234375 v -2.910157 z m 0,5.3125 v 2.91211 h 3.234375 v -2.91211 z m 22.5,1.78711 v 2.912109 h 3.234375 v -2.912109 z m -22.5,3.55664 v 2.910157 h 3.234375 v -2.910157 z m 22.5,1.796876 v 2.910156 h 3.234375 v -2.910156 z m 0,5.292968 v 2.91211 h 3.234375 v -2.91211 z" />
@@ -122,7 +122,7 @@
        x="51.832016"
        height="3.2342007"
        width="2.9107807"
-       id="rect845-21-4-3-3-5-2"
+       id="GraveShield"
        style="fill:#6e6e6e;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000" />
     <rect
        transform="rotate(90)"
@@ -131,7 +131,7 @@
        x="44.673462"
        height="3.2342007"
        width="2.9107807"
-       id="rect845-21-4-3-3-5-2-5"
+       id="GraveDampe"
        style="fill:#6e6e6e;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000" />
     <rect
        inkscape:label="GraveDampe"
@@ -139,11 +139,11 @@
        x="55.329609"
        height="3.2342007"
        width="2.9107807"
-       id="rect845-21-4-3-3-5-2-4"
+       id="RoyalFamily"
        style="fill:#6e6e6e;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000" />
     <path
        inkscape:label="RoyalFamily"
-       id="rect1057"
+       id="check:Graveyard_Freestanding_PoH"
        style="fill:#6e6e6e;fill-opacity:1;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
        d="m 114.08643,37.67844 6.3067,0.80855 v 6.549257 l -6.3067,0.80855 z"
        sodipodi:nodetypes="ccccc" />
@@ -152,54 +152,54 @@
        r="0.75"
        cy="23.262081"
        cx="35.085564"
-       id="path7455"
+       id="check:Graveyard_Dampe_Race_Freestanding_PoH"
        style="fill:#000000;stroke-width:8.86005;stop-color:#000000" />
     <circle
        inkscape:label="check:Graveyard_Dampe_Race_Freestanding_PoH"
        style="fill:#000000;stroke-width:8.86005;stop-color:#000000"
-       id="path7455-2"
+       id="check:Graveyard_Hookshot_Chest"
        cx="56.004711"
        cy="22.188662"
        r="0.75" />
     <circle
        inkscape:label="check:Graveyard_Hookshot_Chest"
        style="fill:#000000;stroke-width:8.86005;stop-color:#000000"
-       id="path7455-21"
+       id="check:Graveyard_Shield_Grave_Chest"
        cx="57.298389"
        cy="23.320633"
        r="0.75" />
     <circle
        inkscape:label="check:Graveyard_Shield_Grave_Chest"
        style="fill:#000000;stroke-width:8.86005;stop-color:#000000"
-       id="path7455-8"
+       id="check:Graveyard_Heart_Piece_Grave_Chest"
        cx="67.162697"
        cy="46.121746"
        r="0.75" />
     <circle
        inkscape:label="check:Graveyard_Heart_Piece_Grave_Chest"
        style="fill:#000000;stroke-width:8.86005;stop-color:#000000"
-       id="path7455-9"
+       id="check:Song_from_Composers_Grave"
        cx="89.640396"
        cy="53.236992"
        r="0.75" />
     <circle
        inkscape:label="check:Song_from_Composers_Grave"
        style="fill:#ff0000;stroke-width:8.86005;stop-color:#000000"
-       id="path7455-6"
+       id="check:Graveyard_Composers_Grave_Chest"
        cx="116.48431"
        cy="40.785316"
        r="0.75" />
     <circle
        inkscape:label="check:Graveyard_Composers_Grave_Chest"
        style="fill:#000000;stroke-width:8.86005;stop-color:#000000"
-       id="path7455-5"
+       id="check:Graveyard_GS_Bean_Patch"
        cx="117.93964"
        cy="42.564125"
        r="0.75" />
     <circle
        inkscape:label="check:Graveyard_GS_Bean_Patch"
        style="fill:#ffffff;stroke-width:8.86005;stop-color:#000000"
-       id="path7455-99"
+       id="check:Graveyard_GS_Wall"
        cx="51.47683"
        cy="23.320633"
        r="0.75" />
@@ -214,7 +214,7 @@
        r="0.75"
        cy="54.368958"
        cx="61.502853"
-       id="path7455-8-1"
+       id="check:Graveyard_Dampe_Gravedigging_Tour"
        style="fill:#000000;stroke-width:8.86005;stop-color:#000000"
        inkscape:label="check:Graveyard_Dampe_Gravedigging_Tour" />
   </g>

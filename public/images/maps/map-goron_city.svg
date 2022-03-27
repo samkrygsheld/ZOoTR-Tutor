@@ -132,7 +132,7 @@
      fit-margin-right="0"
      fit-margin-bottom="0" />
   <g
-     id="g2712"
+     id="Floor1"
      inkscape:label="Image"
      inkscape:groupmode="layer"
      transform="translate(-6.4902344,-6.015625)">
@@ -142,7 +142,7 @@
        style="opacity:0.998;fill:#332b1a;fill-opacity:1;stroke-width:7.55906;stroke-linecap:round;stroke-dashoffset:37.0394;stop-color:#000000"
        id="rect3277" />
     <path
-       id="path3301"
+       id="Stairs2-3"
        style="display:inline;fill:#675932;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        inkscape:label="Floor 2"
        d="m 73.994141,63.554688 c -4.35492,0.106669 -10.216851,2.122263 -10.513672,12.115234 -0.474913,15.988754 0,30.869138 0,30.869138 0,0 13.771938,18.20454 40.525391,3.79883 L 107.17188,82.476562 91.183594,64.113281 h -2.460938 c 3.221238,0.885044 6.900701,3.701332 7.369141,11.873047 l 0.632812,25.802732 -9.814453,6.01563 -9.18164,-2.45313 -2.84961,-14.167966 v -19.63086 c 0,-1.899999 1.107217,-3.396986 2.533203,-4.548828 v -3.173828 c -0.850936,-0.154718 -2.054192,-0.308795 -3.417968,-0.27539 z m 35.626949,68.556642 -9.18164,3.00781 9.54297,31.57617 h 9.27735 z"
@@ -153,56 +153,56 @@
        x="42.312634"
        height="21.492132"
        width="8.9550543"
-       id="rect3459"
+       id="Floor3"
        style="opacity:1;fill:url(#linearGradient3467);fill-opacity:1;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-dashoffset:37.0394;stop-color:#000000" />
     <path
        sodipodi:nodetypes="ssccccccssccccccssccscccccccscccccccccccc"
        d="m 90.767578,39.179688 c -2.75054,0 -6.1536,0.39547 -8.765625,1.978515 -5.224048,3.16609 -15.830132,11.715331 -21.845703,20.105469 V 115.7207 c 0,0 17.253765,31.02696 60.1543,10.28907 L 124.42773,91.341797 114.45508,54.773438 95.615234,39.576172 c 0,0 -2.097115,-0.396484 -4.847656,-0.396484 z m -0.294922,11.054687 c 0.880535,-0.01051 1.804862,0.07269 2.769532,0.265625 l 9.972652,10.447266 -5.541012,9.18164 15.988282,18.363282 -3.16602,27.861332 c -26.75344,14.40571 -40.525387,-3.79883 -40.525387,-3.79883 0,0 -0.474913,-14.880389 0,-30.869143 0.296821,-9.992971 6.158752,-12.008565 10.513672,-12.115235 1.363776,-0.0334 2.567033,0.120673 3.417969,0.275391 0,0 -1.82096,-2.917059 -6.492188,-10.798828 0,0 4.550662,-8.710927 13.0625,-8.8125 z M 25.96875,93.132812 v 7.611328 H 42.4 v -7.611328 z m 42.101562,44.427738 v 9.3457 c 0,0 0.316859,7.59961 -6.490234,7.59961 h -3.957031 c 0,0 0.316094,-6.33203 -11.398438,-6.33203 v 3.00781 H 30.710938 v 15.98828 h 15.513671 v 3.63477 c 11.073659,-0.0579 11.240235,-5.85155 11.240235,-5.85157 h 9.023437 c 10.448097,5e-5 10.289063,-10.44726 10.289063,-10.44726 v -14.40625 z"
        inkscape:label="Floor 3"
        style="fill:#9a824c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter3404)"
-       id="path3320" />
+       id="Stairs3-4E" />
     <rect
        inkscape:label="Stairs 3-4 E"
        y="92.460938"
        x="123.26086"
        height="8.3953638"
        width="20.467766"
-       id="rect3408"
+       id="Stairs3-4W"
        style="display:inline;fill:url(#linearGradient3416);fill-opacity:1;stroke:none;stroke-width:7.81656;stroke-linecap:round;stroke-dashoffset:37.0394;stop-color:#000000" />
     <path
        sodipodi:nodetypes="ccccc"
        d="m 25.96875,100.1367 h 8.955963 v 23.68574 H 25.969 Z"
        inkscape:label="Stairs 3-4 W"
        style="opacity:1;fill:url(#linearGradient3511);fill-opacity:1;stroke:none;stroke-width:6.64272;stroke-linecap:round;stroke-dashoffset:37.0394;stop-color:#000000"
-       id="rect3499" />
+       id="Ropes" />
     <path
        inkscape:label="Ropes"
        transform="translate(6.4902344,6.015625)"
        d="m 53.294922,65.585938 -0.841797,0.537109 14.160156,22.166015 -13.509765,2.402344 0.173828,0.984375 14.083984,-2.503906 15.050781,7.525391 0.447266,-0.894532 -15.074219,-7.537109 z m 64.398438,25.105468 -27.544922,4.748047 0.169921,0.986328 27.544921,-4.75 z M 85.300781,101.31445 v 26.2793 h 1 v -26.2793 z"
        style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
-       id="path6759" />
+       id="Floor4" />
     <path
        transform="translate(6.4902344,6.015625)"
        d="m 0,11.082031 v 48.59961 h 9.3398438 v 10.447265 c 0,11.872837 9.9726562,12.347656 9.9726562,12.347656 h 24.378906 v 34.640628 h -24.21289 v 8.375 H 45.3125 c 10.948242,12.00148 37.480469,11.4414 37.480469,11.4414 v 29.76172 h 10.607422 v -29.1289 c 33.085649,-5.22405 34.035159,-29.91993 34.035159,-29.91993 h 17.25586 V 78.994141 h 3.65234 V 65.753906 h 2.67969 V 39.275391 h -2.67969 V 16.271484 H 133.2793 v 23.003907 h -2.67774 v 26.478515 h 2.67774 v 13.240235 h 3.8125 v 20.421875 h -8.07422 L 117.9375,85.326172 113.82031,119.99414 C 70.919783,140.73203 53.666016,109.70508 53.666016,109.70508 V 62.714844 c -6.727102,1.761954 -12.50586,13.746094 -12.50586,13.746094 H 21.054688 c -5.857268,0 -5.382813,-6.173829 -5.382813,-6.173829 V 59.681641 h 10.291016 v -48.59961 z m 86.275391,81.367188 a 4.9074392,4.9074392 0 0 0 -4.90625,4.908203 4.9074392,4.9074392 0 0 0 4.90625,4.908198 4.9074392,4.9074392 0 0 0 4.908203,-4.908198 4.9074392,4.9074392 0 0 0 -4.908203,-4.908203 z"
        inkscape:label="Floor 4"
        style="fill:#bba777;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="path3308" />
+       id="Lava" />
     <path
        inkscape:label="Lava"
        d="m 139.76953,32.238281 v 13.052735 h -2.67773 v 26.478515 h 2.67773 v 8.378907 h 15.06445 v -8.378907 h 2.67969 V 45.291016 h -2.67969 V 32.238281 Z"
        style="display:inline;opacity:1;fill:#ff1919;fill-opacity:1;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-dashoffset:37.0394;stop-color:#000000"
-       id="rect3418" />
+       id="check:GC_Maze_Left_Chest" />
     <circle
        inkscape:label="check:GC_Maze_Left_Chest"
        r="1"
        cy="21.263027"
        cx="9.7064943"
-       id="path6774"
+       id="check:GC_Maze_Center_Chest"
        style="fill:#000000;stroke-width:19.1877;stop-color:#000000" />
     <circle
        inkscape:label="check:GC_Maze_Center_Chest"
        style="fill:#000000;stroke-width:19.1877;stop-color:#000000"
-       id="path6774-3"
+       id="check:GC_Maze_Right_Chest"
        cx="19.787811"
        cy="20.896248"
        r="1" />
@@ -211,49 +211,49 @@
        r="1"
        cy="20.896248"
        cx="25.787811"
-       id="path6774-3-4"
+       id="check:GC_GS_Boulder_Maze"
        style="fill:#000000;stroke-width:19.1877;stop-color:#000000" />
     <circle
        inkscape:label="check:GC_GS_Boulder_Maze"
        r="1"
        cy="18.996593"
        cx="30.869127"
-       id="path6774-3-7"
+       id="check:GC_GS_Center_Platform"
        style="fill:#ffffff;stroke-width:19.1877;stop-color:#000000" />
     <circle
        inkscape:label="check:GC_GS_Center_Platform"
        r="1"
        cy="99.415276"
        cx="92.924492"
-       id="path6774-3-3"
+       id="check:GC_Darunias_Joy"
        style="fill:#ffffff;stroke-width:19.1877;stop-color:#000000" />
     <circle
        inkscape:label="check:GC_Darunias_Joy"
        r="1"
        cy="11.714587"
        cx="95.457359"
-       id="path6774-3-9"
+       id="check:GC_Pot_Freestanding_PoH"
        style="fill:#000000;stroke-width:19.1877;stop-color:#000000" />
     <circle
        inkscape:label="check:GC_Pot_Freestanding_PoH"
        r="1"
        cy="87.700745"
        cx="91.658051"
-       id="path6774-3-45"
+       id="check:GC_Rolling_Goron_as_Child"
        style="fill:#000000;stroke-width:19.1877;stop-color:#000000" />
     <circle
        inkscape:label="check:GC_Rolling_Goron_as_Child"
        r="1"
        cy="48.124622"
        cx="80.576736"
-       id="path6774-3-48"
+       id="check:GC_Rolling_Goron_as_Adult"
        style="fill:#000000;stroke-width:19.1877;stop-color:#000000" />
     <circle
        inkscape:label="check:GC_Rolling_Goron_as_Adult"
        r="1"
        cy="118.41182"
        cx="66.645943"
-       id="path6774-3-5"
+       id="check:GC_Medigoron"
        style="fill:#000000;stroke-width:19.1877;stop-color:#000000" />
     <circle
        inkscape:label="check:GC_Medigoron"

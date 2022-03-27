@@ -54,16 +54,16 @@
      inkscape:lockguides="true" />
   <g
      transform="translate(-24.705996,-23.451328)"
-     id="g841"
+     id="Image"
      inkscape:label="Image"
      inkscape:groupmode="layer">
     <path
-       id="rect976"
+       id="Downstairs"
        style="fill:#403925;fill-opacity:1;stroke-width:5.91496;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
        d="m 1814.6699,894.94538 -33.168,110.89262 -199.3359,70.3535 -48.5782,177.8945 -175.2148,-8.375 -104.5254,-159.8047 -28.8125,-175.21482 h -47.2363 l 12.3945,192.30082 123.2871,182.25 21.1699,105.5312 h -112.9648 v 45.5625 h 112.1758 l 96.2051,97.4903 175.2168,15.0761 76.3828,17.4219 84.7597,87.7754 h 48.2442 l 78.7285,-55.9492 v -80.0703 h -47.9082 l -80.4043,56.6191 -62.6484,-72.0293 -80.7383,-17.0859 71.6933,-99.836 71.6934,-123.957 172.5352,-30.8223 83.0839,-49.916 23.7871,-106.8711 v -51.9297 h -62.9843 l -72.3633,47.2383 -15.7461,95.8164 -175.8848,48.5762 -48.5781,95.4805 -54.6074,-22.7813 39.1972,-153.1035 207.0411,-96.1504 V 894.94538 Z"
        inkscape:label="Downstairs" />
     <path
-       id="rect845"
+       id="Upstairs"
        style="fill:#726643;stroke-width:5.91496;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
        d="M 985.04102,0 V 48.912109 H 568.27734 v 62.984371 h 168.17969 v 31.28516 209.92774 H 574.30859 V 320.94727 H 405.45898 v 42.88281 H 386.69727 V 249.25391 H 0 V 502.5293 H 386.69727 V 389.29297 h 18.76171 v 42.21094 h 168.84961 v -31.49219 h 162.14844 v 240.78906 h -53.79687 v -17.66601 h 36.375 v -94.47461 h -99.83399 v 94.47461 h 36.92578 v 17.66601 h -27.95312 v 79.5957 h 292.20898 v 112.79493 h 91.45899 v 16.41601 h -19.42969 v 294.81638 h 26.13089 v 50.2539 h -32.83206 v 253.2735 h 77.72456 v -253.2735 h -31.4921 v -50.2539 h 24.457 V 849.60742 h -21.1055 v -16.41601 h 92.4649 v -71.35743 h 48.5781 v 37.52149 h 201.0098 v -30.48633 h 15.9941 v 107.87695 h 23.6894 v 23.2168 h 238.7911 v -23.2168 h 25.5839 V 636.53516 h -25.5839 v -24.16211 h -238.7911 v 24.16211 h -23.6894 v 108.88281 h -15.9941 v -32.16211 h -201.0098 v 36.18164 h -48.5781 V 695.5 h 184.9297 V 641.22656 418.77344 h 164.1601 v -82.41406 h -88.4453 V 318.9375 h 115.916 V 145.39844 112.56641 h -10.7207 V 95.144531 h 11.3906 V 48.912109 h -79.0644 v 18.761719 h -67.0039 V 48.912109 H 1063.4355 V 0 Z m 373.88088,78.394531 h 67.0039 v 16.75 h 44.2226 v 17.421879 h -12.0605 v 32.83203 h -97.8262 v 173.53906 17.42188 h -47.5722 v -224.4629 h 46.2324 z M 815.52148,143.18164 h 183.62891 v 81.63281 h -30.79687 v 96.80469 h -94.75586 v -18.63086 h 66.80273 v -11.84375 h 11.37109 v -117.5 h -11.37109 v -12.31836 h -94.75781 v 12.31836 h -12.79102 v 117.5 h 12.79102 l 4.2e-4,11.84375 c 0,4.24982 0,14.286 0,18.63086 h -12.02972 v 31.49024 h -18.0918 z m 232.90232,0 h 200.6114 v 210.50195 h -17.42 v -32.06445 h -14.0488 v -17.68359 h 14.6875 V 161.32617 h -167.2461 v 46.43164 h 48.7988 v 96.17774 h 79.1231 v 17.68359 h -113.2344 v -96.80469 h -31.2715 z m 183.1914,256.46094 h 17.42 v 177.92969 h -64.3223 v 46.90234 h 64.3223 v 16.75195 h -121.9454 v -79.73437 h -79.0644 v -17.42188 h 183.5898 z m -447.5859,0.36914 h 49.58398 v 97.15625 H 784.0293 Z m 0,144.05859 h 58.96289 158.13081 v 17.42188 h -80.4062 v 79.30859 h -48.54102 v -63.96289 h -47.85351 v 63.96289 H 784.0293 Z"
        transform="translate(24.705996,23.451328)"
@@ -71,119 +71,119 @@
        sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
     <circle
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.732534"
-       id="path79"
+       id="check:Bottom_of_the_Well_Front_Center_Bombable_Chest"
        cx="979.0672"
        cy="619.32568"
        inkscape:label="check:Bottom_of_the_Well_Front_Center_Bombable_Chest"
        r="10" />
     <circle
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.732534"
-       id="path79-3"
+       id="check:Bottom_of_the_Well_Front_Left_Fake_Wall_Chest"
        cx="872.97906"
        cy="623.95105"
        inkscape:label="check:Bottom_of_the_Well_Front_Left_Fake_Wall_Chest"
        r="10" />
     <circle
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.732534"
-       id="path79-6"
+       id="check:Bottom_of_the_Well_Right_Bottom_Fake_Wall_Chest"
        cx="1232.8802"
        cy="624.1449"
        inkscape:label="check:Bottom_of_the_Well_Right_Bottom_Fake_Wall_Chest"
        r="10" />
     <circle
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.732534"
-       id="path79-7"
+       id="check:Bottom_of_the_Well_Center_Skulltula_Chest"
        cx="1190.4946"
        cy="528.9411"
        inkscape:label="check:Bottom_of_the_Well_Center_Skulltula_Chest"
        r="10" />
     <circle
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.732534"
-       id="path79-7-3"
+       id="check:Bottom_of_the_Well_GS_West_Inner_Room"
        cx="914.16229"
        cy="199.07672"
        inkscape:label="check:Bottom_of_the_Well_GS_West_Inner_Room"
        r="10" />
     <circle
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.732534"
-       id="path79-7-56"
+       id="check:Bottom_of_the_Well_GS_East_Inner_Room"
        cx="1101.957"
        cy="203.28322"
        inkscape:label="check:Bottom_of_the_Well_GS_East_Inner_Room"
        r="10" />
     <circle
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.732534"
-       id="path79-7-56-2"
+       id="check:Bottom_of_the_Well_Back_Left_Bombable_Chest"
        cx="612.349"
        cy="88.929436"
        inkscape:label="check:Bottom_of_the_Well_Back_Left_Bombable_Chest"
        r="10" />
     <circle
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.732534"
-       id="path79-7-5"
+       id="check:Bottom_of_the_Well_Compass_Chest"
        cx="921.94409"
        cy="529.16492"
        inkscape:label="check:Bottom_of_the_Well_Compass_Chest"
        r="10" />
     <circle
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.732534"
-       id="path79-7-56-9"
+       id="check:Bottom_of_the_Well_Underwater_Left_Chest"
        cx="507.51529"
        cy="398.26886"
        inkscape:label="check:Bottom_of_the_Well_Underwater_Left_Chest"
        r="10" />
     <circle
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.732534"
-       id="path79-7-56-9-1"
+       id="check:Bottom_of_the_Well_Freestanding_Key"
        cx="98.617195"
        cy="456.73914"
        inkscape:label="check:Bottom_of_the_Well_Freestanding_Key"
        r="10" />
     <circle
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.732534"
-       id="path79-7-56-9-2"
+       id="check:Bottom_of_the_Well_Map_Chest"
        cx="1853.6345"
        cy="1567.1843"
        inkscape:label="check:Bottom_of_the_Well_Map_Chest"
        r="10" />
     <circle
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.732534"
-       id="path79-7-56-9-7"
+       id="check:Bottom_of_the_Well_Lens_Of_Truth_Chest"
        cx="1558.5793"
        cy="780.49396"
        inkscape:label="check:Bottom_of_the_Well_Lens_Of_Truth_Chest"
        r="10" />
     <circle
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.732534"
-       id="path79-7-56-9-7-0"
+       id="check:Bottom_of_the_Well_Invisible_Chest"
        cx="1686.5793"
        cy="780.49396"
        inkscape:label="check:Bottom_of_the_Well_Invisible_Chest"
        r="10" />
     <circle
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.732534"
-       id="path79-7-56-9-7-9"
+       id="check:Bottom_of_the_Well_Like_Like_Chest"
        cx="1471.3669"
        cy="400.1712"
        inkscape:label="check:Bottom_of_the_Well_Like_Like_Chest"
        r="10" />
     <circle
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.732534"
-       id="path79-7-56-9-7-9-6"
+       id="check:Bottom_of_the_Well_GS_Like_Like_Cage"
        cx="1487.3669"
        cy="400.1712"
        inkscape:label="check:Bottom_of_the_Well_GS_Like_Like_Cage"
        r="10" />
     <circle
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.732534"
-       id="path79-7-56-9-7-3"
+       id="check:Bottom_of_the_Well_Fire_Keese_Chest"
        cx="1504.8168"
        cy="325.25073"
        inkscape:label="check:Bottom_of_the_Well_Fire_Keese_Chest"
        r="10" />
     <circle
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.732534"
-       id="path79-0"
+       id="check:Bottom_of_the_Well_Underwater_Front_Chest"
        cx="1014.9377"
        cy="778.15613"
        inkscape:label="check:Bottom_of_the_Well_Underwater_Front_Chest"

@@ -77,11 +77,11 @@
      inkscape:pagecheckerboard="0" />
   <g
      transform="translate(-14.361328,-21.09787)"
-     id="g5273"
+     id="Image"
      inkscape:label="Image"
      inkscape:groupmode="layer">
     <path
-       id="path1028"
+       id="Cavernentrance"
        style="fill:url(#linearGradient5210);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 125.51562,103.03516 -2.98242,11.63867 8.3418,7.79883 -26.03711,20.4375 1.83399,3.69726 3.92773,0.38477 31.12695,-21.36914 v -7.43164 z"
        transform="translate(14.361328,21.09787)" />
@@ -91,37 +91,37 @@
        x="89.801186"
        height="18.393015"
        width="30.294376"
-       id="rect880"
+       id="Water"
        style="opacity:1;fill:#524e46;fill-opacity:1;stroke:none;stroke-width:6.897;stop-color:#000000" />
     <path
        inkscape:label="Water"
        sodipodi:nodetypes="cccccccccccccccccccc"
        d="M 126.32812,27.095703 79.826172,30.392578 50.128906,69.988281 14.361328,75.126953 v 26.228517 c 11.271484,1.17187 0,0 11.271484,1.17187 v 14.64649 h 14.646485 v -13.4668 l 5.933594,0.53906 4.685547,18.42188 3.294921,48.33398 38.447266,2.5625 17.210935,-6.95703 18.67383,1.83203 11.35156,-44.30664 17.94336,-19.4082 -0.73242,-36.250001 -5.49219,-25.632812 z"
        style="opacity:1;fill:#0d7474;fill-opacity:1;stroke-width:9.4;stop-color:#000000"
-       id="rect5838" />
+       id="Platform-Jabu" />
     <rect
        inkscape:label="Platform-Jabu"
        y="73.2342"
        x="49.799255"
        height="19.040892"
        width="20.139404"
-       id="rect5846"
+       id="Rock"
        style="fill:#818181;fill-opacity:1;stroke-width:9.4;stop-color:#000000" />
     <path
        inkscape:label="Rock"
-       id="path5852"
+       id="Log"
        d="m 65.766188,94.50653 41.945362,24.85651 -12.687176,7.76766 -19.41915,-10.09796 z"
        style="fill:#4c4c4c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:label="Log"
        d="m 69.853516,120.89648 -17.308594,20.43164 2.626953,2.22461 9.958984,-11.7539 h 5.908203 v -1.91211 H 66.75 l 5.730469,-6.76367 z"
        style="fill:#705820;fill-opacity:1;stroke-width:6.897;stop-color:#000000"
-       id="rect851" />
+       id="Platform-Fairy" />
     <path
        inkscape:label="Platform-Fairy"
        d="m 133.74219,148.07422 -22.84375,3.39844 -1.04688,15.13476 18.67383,1.83203 z"
        style="fill:#4c4c4c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="path858" />
+       id="Ice" />
     <path
        inkscape:label="Ice"
        d="m 139.57053,87.366819 -5.38769,-3.110583 0,-6.221166 5.38769,-3.110584 5.38768,3.110583 0,6.221167 z"
@@ -140,42 +140,42 @@
        sodipodi:type="star" />
     <circle
        style="fill:#000000;stroke-width:0.300236;stroke-miterlimit:1.7"
-       id="path851"
+       id="check:ZF_Great_Fairy_Reward"
        cx="119.83112"
        cy="166.4926"
        r="1"
        inkscape:label="check:ZF_Great_Fairy_Reward" />
     <circle
        style="fill:#000000;stroke-width:0.300236;stroke-miterlimit:1.7"
-       id="path851-35"
+       id="check:ZF_Iceberg_Freestanding_PoH"
        cx="139.57053"
        cy="81.145653"
        r="1"
        inkscape:label="check:ZF_Iceberg_Freestanding_PoH" />
     <circle
        style="fill:#ffffff;stroke-width:0.300236;stroke-miterlimit:1.7"
-       id="path851-35-2"
+       id="check:ZF_GS_Above_the_Log"
        cx="53.406872"
        cy="144.23161"
        r="1"
        inkscape:label="check:ZF_GS_Above_the_Log" />
     <circle
        style="fill:#000000;stroke-width:0.300236;stroke-miterlimit:1.7"
-       id="path851-35-6"
+       id="check:ZF_Bottom_Freestanding_PoH"
        cx="109.2289"
        cy="78.998009"
        r="1"
        inkscape:label="check:ZF_Bottom_Freestanding_PoH" />
     <circle
        style="fill:#ffffff;stroke-width:0.300236;stroke-miterlimit:1.7"
-       id="path851-3"
+       id="check:ZF_GS_Hidden_Cave"
        cx="140.54054"
        cy="135.44159"
        r="1"
        inkscape:label="check:ZF_GS_Hidden_Cave" />
     <circle
        style="fill:#ffffff;stroke-width:0.300236;stroke-miterlimit:1.7"
-       id="path851-35-2-9"
+       id="check:ZF_GS_Tree"
        cx="115.06084"
        cy="155.17262"
        r="1"

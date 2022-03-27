@@ -49,7 +49,7 @@
      pagecolor="#ffffff"
      inkscape:pagecheckerboard="0" />
   <g
-     id="g841"
+     id="Image"
      inkscape:label="Image"
      inkscape:groupmode="layer">
     <image
@@ -61,16 +61,16 @@
     <path
        d="m 1341.2695,369.76953 v 547.80664 h 249.5098 v 16.26367 h -24.3945 v 312.84766 h 36.3769 v 17.5469 h -93.2969 v 111.4902 l -153.7128,274.7832 v 20.3027 h -16.1934 v -19.2597 h -161.3457 v -81.3145 H 960.37305 v 225.9707 h 217.83985 v -81.7441 h 161.3457 v -19.2578 h 16.1934 v 23.0898 l 79.2871,130.7324 h -78.6817 v 11.375 h -17.2265 v -115.9804 h -128.3926 v 172.9004 h 128.3926 v -32.9532 h 17.2265 v 12.4727 h 104.7071 l 113.1816,12.7109 9.0781,153.127 v 67.1836 h 63.5508 v -67.7891 l 7.2637,-153.1269 157.3633,-47.209 28.4472,-142.8379 41.1563,-12.1055 h 47.8144 v 146.4707 h 48.4199 v -193.6797 h -96.2343 l -40.5508,-23.6054 -29.6563,-151.3106 -92.1543,-107.4258 v -113.0097 h -92.8711 v -17.5469 h 36.377 V 933.83984 h -24.8223 v -16.26367 h 251.6485 V 369.76953 Z"
        style="fill:#0000ab;fill-opacity:1;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="rect845"
+       id="3F-1"
        inkscape:label="3F-1" />
     <path
        d="m 2167.2598,1701.1973 v 116.0547 h -16.6914 v -52.2872 h -124.9668 v 127.9629 h 124.9668 v -53.0683 h 16.6914 v 117.2656 h 257.2129 v -255.9277 z"
        style="fill:#0000ab;fill-opacity:1;stroke:none;stroke-width:1.00512;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="rect913"
+       id="3F-2"
        inkscape:label="3F-2" />
     <circle
        style="fill:#000000;stroke-width:0.853059;stroke-miterlimit:1.7"
-       id="path964-3-6-7"
+       id="check:Water_Temple_Map_Chest"
        cx="2295.8662"
        cy="1829.1611"
        inkscape:label="check:Water_Temple_Map_Chest"
@@ -80,20 +80,20 @@
        x="2123.2048"
        height="192.93384"
        width="193.07364"
-       id="rect961"
+       id="3F-3"
        style="fill:#0000ab;fill-opacity:1;stroke:none;stroke-width:1.00279;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
        inkscape:label="3F-3" />
     <path
        d="M 307.46484,13.796875 V 254.80859 h 109.24805 v 17.58789 H 24.822266 V 1078.4941 H 416.41797 v 15.7813 h -59.91602 v 300.0644 h 11.98438 v 12.8379 H 267.48438 v 115.9825 h -96.29493 v 200.291 h 96.29493 281.60546 v -28.461 h 17.11914 v 20.543 h 68.47657 v 80.6738 H 908.16016 V 1570.6641 H 634.68555 v 80.455 h -68.47657 v 20.9747 h -17.11914 v -148.9336 -115.9825 h -60.34375 v -12.8379 h 11.55469 v -300.0644 h -59.91601 v -15.7813 h 391.5957 V 272.39648 H 440.01367 V 254.80859 H 549.56445 V 13.796875 Z"
        style="fill:#0000ab;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="rect878"
+       id="3F-DarkLink"
        inkscape:label="3F-DarkLink" />
     <rect
        y="2088.5129"
        x="2638.0312"
        height="32.526012"
        width="225.97023"
-       id="rect921"
+       id="B1-SouthCorridor"
        style="fill:#000089;fill-opacity:1;stroke:none;stroke-width:0.456481;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
        inkscape:label="B1-SouthCorridor" />
     <rect
@@ -110,7 +110,7 @@
     <path
        d="m 3202.957,1959.2637 v 232.8183 h 48.7891 48.3613 v 72.3282 h 153.2149 v 8.1308 h 120.2597 v -63.3398 h -80.0312 v -137.3789 h -193.4434 v 73.1836 h -48.3613 v -185.7422 z"
        style="fill:#0000ab;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="rect963"
+       id="B1-Southeast"
        inkscape:label="B1-Southeast" />
     <rect
        y="1660.5388"
@@ -198,7 +198,7 @@
     <path
        d="m 356.07422,1830.873 v 95.1075 L 225.9707,1993.502 v 160.0625 l 98.4336,65.9082 v 79.6035 l -65.05274,143.7988 v 189.1641 l 49.64649,162.6308 h 224.25781 v -114.6972 l 49.64453,-177.1817 h 31.66992 v 225.9707 l 17.11914,65.9082 h 192.58789 l 31.66993,-65.9082 h 8.56054 l 16.26172,67.6192 v 112.1308 h 47.93359 V 2682.541 l -72.75585,-17.9746 v -62.4844 h -65.05079 v 63.3399 h -31.66992 v -66.7637 l -48.78906,-160.918 -61.62891,-61.6289 h -65.9082 l -99.28906,65.0528 -62.48438,255.9277 h -33.38281 l -16.26367,-68.4766 V 2441.1641 L 484.4668,2296.5078 v -80.459 l 49.64453,-223.4023 -83.02735,-65.957 v -95.8165 z"
        style="fill:#0000ab;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="rect1162"
+       id="River"
        inkscape:label="River" />
     <path
        d="m 1509.4844,2419.1699 -153.127,271.7559 v 22.3945 h -16.3418 v -52.6562 h -128.9179 v 250.5722 h 128.9179 v -174.3125 h 16.3418 v 23 l 103.4981,176.127 115.6015,15.1308 14.5254,25.8223 v 127.3047 h 49.0254 192.4688 v -47.209 -16.9473 h 97.4433 v 48.0215 h -39.664 v 129.3164 h 128.6367 v -129.3164 h -40.5528 v -48.0215 h 47.8145 v -47.6445 h -47.8145 v -145.2324 h -48.4199 v 145.2324 h -97.4433 -46.6055 v 47.6445 16.9473 h -145.8633 v -82.5351 l 15.1309,-23.9883 h 51.4453 l 88.3672,-26.6309 16.9472,-19.3672 29.0508,-143.4433 40.6094,-12.1055 h 96.7812 v -46.6738 -203.293 h 274.1778 v -63.5508 h -322.4121 v 63.5508 203.293 h -47.252 l -41.9043,-24.1387 -29.6562,-153.1289 -90.1817,-105.918 z m 516.8808,386.7539 v 129.5215 h 314.1231 v -129.5215 z"
@@ -206,112 +206,112 @@
        id="rect1166" />
     <circle
        style="fill:#000000;stroke-width:0.853059;stroke-miterlimit:1.7"
-       id="path964"
+       id="check:Morpha"
        cx="1605.1729"
        cy="633.67285"
        r="7.5"
        inkscape:label="check:Morpha" />
     <circle
        style="fill:#000000;stroke-width:0.853059;stroke-miterlimit:1.7"
-       id="path964-3"
+       id="check:Water_Temple_Morpha_Heart"
        cx="1625.1729"
        cy="653.67285"
        inkscape:label="check:Water_Temple_Morpha_Heart"
        r="7.5" />
     <circle
        style="fill:#000000;stroke-width:0.853059;stroke-miterlimit:1.7"
-       id="path964-3-6"
+       id="check:Water_Temple_Compass_Chest"
        cx="2297.364"
        cy="1426.3334"
        inkscape:label="check:Water_Temple_Compass_Chest"
        r="7.5" />
     <circle
        style="fill:#000000;stroke-width:0.853059;stroke-miterlimit:1.7"
-       id="path964-3-6-5"
+       id="check:Water_Temple_Cracked_Wall_Chest"
        cx="2265.1252"
        cy="2869.9885"
        inkscape:label="check:Water_Temple_Cracked_Wall_Chest"
        r="7.5" />
     <circle
        style="fill:#000000;stroke-width:0.853059;stroke-miterlimit:1.7"
-       id="path964-3-6-7-3"
+       id="check:Water_Temple_Torches_Chest"
        cx="3672.8723"
        cy="1830.6584"
        inkscape:label="check:Water_Temple_Torches_Chest"
        r="7.5" />
     <circle
        style="fill:#000000;stroke-width:0.853059;stroke-miterlimit:1.7"
-       id="path964-3-6-7-3-5"
+       id="check:Water_Temple_Boss_Key_Chest"
        cx="2547.9424"
        cy="592.10156"
        inkscape:label="check:Water_Temple_Boss_Key_Chest"
        r="7.5" />
     <circle
        style="fill:#000000;stroke-width:0.853059;stroke-miterlimit:1.7"
-       id="path964-3-6-7-3-5-6"
+       id="check:Water_Temple_Central_Pillar_Chest"
        cx="3555.8955"
        cy="2242.0071"
        inkscape:label="check:Water_Temple_Central_Pillar_Chest"
        r="7.5" />
     <circle
        style="fill:#000000;stroke-width:0.853059;stroke-miterlimit:1.7"
-       id="path964-3-6-7-3-5-6-2"
+       id="check:Water_Temple_Central_Bow_Target_Chest"
        cx="1953.5742"
        cy="3152.832"
        inkscape:label="check:Water_Temple_Central_Bow_Target_Chest"
        r="7.5" />
     <circle
        style="fill:#000000;stroke-width:0.853059;stroke-miterlimit:1.7"
-       id="path964-3-6-7-3-5-6-2-9"
+       id="check:Water_Temple_Longshot_Chest"
        cx="428.51465"
        cy="134.30273"
        inkscape:label="check:Water_Temple_Longshot_Chest"
        r="7.5" />
     <circle
        style="fill:#000000;stroke-width:0.853059;stroke-miterlimit:1.7"
-       id="path964-3-6-7-3-5-6-2-9-1"
+       id="check:Water_Temple_River_Chest"
        cx="905.59283"
        cy="2704.7952"
        inkscape:label="check:Water_Temple_River_Chest"
        r="7.5" />
     <circle
        style="fill:#000000;stroke-width:0.853059;stroke-miterlimit:1.7"
-       id="path964-3-6-7-3-5-6-2-9-1-2"
+       id="check:Water_Temple_Dragon_Chest"
        cx="2179.677"
        cy="971.11804"
        inkscape:label="check:Water_Temple_Dragon_Chest"
        r="7.5" />
     <circle
        style="fill:#ffffff;stroke-width:0.853059;stroke-miterlimit:1.7"
-       id="path964-3-6-7-3-5-6-2-9-1-2-7"
+       id="check:Water_Temple_GS_Behind_Gate"
        cx="2142.5728"
        cy="2111.0999"
        inkscape:label="check:Water_Temple_GS_Behind_Gate"
        r="7.5" />
     <circle
        style="fill:#ffffff;stroke-width:0.853059;stroke-miterlimit:1.7"
-       id="path964-3-6-7-3-5-6-2-9-1-2-7-0"
+       id="check:Water_Temple_GS_Near_Boss_Key_Chest"
        cx="2597.718"
        cy="857.45007"
        inkscape:label="check:Water_Temple_GS_Near_Boss_Key_Chest"
        r="7.5" />
     <circle
        style="fill:#ffffff;stroke-width:0.853059;stroke-miterlimit:1.7"
-       id="path964-3-6-7-3-5-6-2-9-1-2-7-9"
+       id="check:Water_Temple_GS_Central_Pillar"
        cx="1579.6935"
        cy="1600.2719"
        inkscape:label="check:Water_Temple_GS_Central_Pillar"
        r="7.5" />
     <circle
        style="fill:#ffffff;stroke-width:0.853059;stroke-miterlimit:1.7"
-       id="path964-3-6-7-3-5-6-2-9-1-2-7-9-3"
+       id="check:Water_Temple_GS_Falling_Platform_Room"
        cx="984.13086"
        cy="1578.5354"
        inkscape:label="check:Water_Temple_GS_Falling_Platform_Room"
        r="7.5" />
     <circle
        style="fill:#ffffff;stroke-width:0.853059;stroke-miterlimit:1.7"
-       id="path964-3-6-7-3-5-6-2-9-1-2-7-9-3-6"
+       id="check:Water_Temple_GS_River"
        cx="616.14099"
        cy="2386.7239"
        inkscape:label="check:Water_Temple_GS_River"

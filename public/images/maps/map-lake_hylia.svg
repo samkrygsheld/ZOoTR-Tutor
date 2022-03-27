@@ -111,26 +111,26 @@
      inkscape:pagecheckerboard="0" />
   <g
      transform="translate(-15.589844,-18.957031)"
-     id="g2735"
+     id="Water"
      inkscape:label="Image"
      inkscape:groupmode="layer">
     <path
        inkscape:label="Water"
        d="M 67.359375,18.957031 60.904297,34.285156 60.501953,47.998047 42.455078,72.568359 C 32.789557,52.153037 15.589844,61.097656 15.589844,61.097656 l 1.685547,9.269532 c 9.447961,-2.952488 14.296504,4.670086 16.783203,13.630859 l -7.035156,9.578125 -8.46875,28.636718 v 22.18555 l 14.923828,34.2832 46.384765,22.18359 h 26.216799 l 39.125,-12.50195 22.18359,-45.98242 V 132.29688 L 135.52344,100.43359 V 79.458984 L 121.00391,68.166016 77.039062,52.03125 72.199219,33.880859 79.458984,18.957031 Z"
        style="display:inline;opacity:1;fill:#544fcb;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="path3300" />
+       id="Pathways" />
     <path
        inkscape:label="Pathways"
        d="M 43.158203,91.558594 V 138.75 h 4.839844 V 91.558594 Z m 4.839844,50.384766 -2.078125,4.37109 42.615234,20.26953 2.080078,-4.37109 z"
        style="display:inline;fill:#b5a57d;fill-opacity:1;stroke-linecap:round;stop-color:#000000"
-       id="rect3302" />
+       id="Grave" />
     <rect
        inkscape:label="Grave"
        y="135.12082"
        x="41.141262"
        height="12.907063"
        width="12.907063"
-       id="rect3319"
+       id="WaterTemple"
        style="display:inline;fill:#28c26f;fill-opacity:1;stroke-linecap:round;stop-color:#000000" />
     <ellipse
        inkscape:label="Water Temple"
@@ -139,7 +139,7 @@
        rx="11.797862"
        cy="133.65758"
        cx="-133.14812"
-       id="path3321"
+       id="FireArrows"
        style="fill:#28c26f;fill-opacity:1;stroke-linecap:round;stop-color:#000000" />
     <rect
        inkscape:label="Fire Arrows"
@@ -147,31 +147,31 @@
        x="118.78532"
        height="8.6719332"
        width="8.6719332"
-       id="rect3323"
+       id="Pillars"
        style="fill:#28c26f;fill-opacity:1;stroke-linecap:round;stop-color:#000000" />
     <path
        inkscape:label="Pillars"
        d="m 125.28906,160.73242 v 2.16797 h 2.16797 v -2.16797 z m 0,6.50391 v 2.16797 h 2.16797 v -2.16797 z"
        style="fill:#ababab;fill-opacity:1;stroke-linecap:round;stop-color:#000000"
-       id="rect3325" />
+       id="ZoraShortcut" />
     <rect
        inkscape:label="Zora Shortcut"
        y="82.797089"
        x="84.482521"
        height="7.3737864"
        width="11.376699"
-       id="rect904"
+       id="Shore"
        style="opacity:1;fill:#c0b290;fill-opacity:1;stroke:none;stroke-width:6.897;stroke-opacity:1;stop-color:#000000" />
     <path
        inkscape:label="Shore"
        d="M 67.359375,18.957031 60.904297,34.285156 60.501953,47.998047 42.455078,72.568359 c -0.561966,-1.186973 -1.151724,-2.265714 -1.759766,-3.261718 l 0.808594,5.273437 v 11.798828 h -7.478515 v -2.318359 l -0.0098,-0.0039 -6.992187,9.519531 -6.205079,20.984382 13.207032,-5.63867 V 92.277344 h 7.566406 l 1.597656,7.583984 h 20.857422 l 2.527344,-4.634766 V 92.699219 L 82.375,89.960938 127.71875,73.388672 121.00391,68.166016 77.039062,52.03125 72.199219,33.880859 79.458984,18.957031 Z m 68.164065,60.501953 c 0,0 -14.59454,8.954836 -10.31641,20.933596 4.00225,11.2063 11.50071,13.17662 20.85742,10.58203 l -10.54101,-10.54102 z"
        style="display:inline;fill:#28c26f;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="path3342" />
+       id="Lab" />
     <path
        d="m 48.949219,89.126953 v 3.757813 H 47.96875 v 7.001953 h 13.707031 v -7.001953 h -7.662109 v -3.757813 z"
        inkscape:label="Lab"
        style="fill:#7e4fcb;fill-opacity:1;stroke:none;stroke-width:6.897;stroke-opacity:1;stop-color:#000000"
-       id="rect900" />
+       id="Scarecrows" />
     <path
        inkscape:label="Scarecrows"
        d="m 111.34375,68.419922 -4.31836,0.984375 v 3.646484 l -6.53125,2.06836 v 8.21875 l 13.48438,-4.927735 v -3.978515 l 2,-0.789063 v -3.84375 z"
@@ -179,7 +179,7 @@
        id="path906" />
     <circle
        style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:1.7;stroke-dasharray:none;stroke-opacity:1"
-       id="path2493"
+       id="MagnifyCircle"
        cx="71.31105"
        cy="110.76805"
        r="5.7601647"
@@ -187,81 +187,81 @@
     <path
        style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.7;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow2Mstart)"
        d="m 61.926821,95.958874 6.093557,9.915396 v -0.05"
-       id="path2095"
+       id="MagnifyArrow"
        inkscape:label="MagnifyArrow" />
     <circle
        style="fill:#000000;stroke-width:0.296582"
-       id="path1672"
+       id="check:LH_Underwater_Item"
        cx="89.893463"
        cy="99.434074"
        r="1.5"
        inkscape:label="check:LH_Underwater_Item" />
     <circle
        style="fill:#000000;stroke-width:0.296582"
-       id="path1672-1"
+       id="check:LH_Child_Fishing"
        cx="130.82501"
        cy="98.993607"
        r="1.5"
        inkscape:label="check:LH_Child_Fishing" />
     <circle
        style="fill:#000000;stroke-width:0.296582"
-       id="path1672-1-7"
+       id="check:LH_Adult_Fishing"
        cx="134.82501"
        cy="102.99361"
        r="1.5"
        inkscape:label="check:LH_Adult_Fishing" />
     <circle
        style="fill:#000000;stroke-width:0.296582"
-       id="path1672-1-7-0"
+       id="check:LH_Freestanding_PoH"
        cx="56.172371"
        cy="97.461891"
        r="1.5"
        inkscape:label="check:LH_Freestanding_PoH" />
     <circle
        style="fill:#000000;stroke-width:0.296582"
-       id="path1672-1-7-9"
+       id="check:LH_Lab_Dive"
        cx="69.40818"
        cy="108.52719"
        r="1.5"
        inkscape:label="check:LH_Lab_Dive" />
     <circle
        style="fill:#ffffff;stroke-width:0.296582"
-       id="path1672-1-7-9-6-2"
+       id="check:LH_GS_Lab_Crate"
        cx="73.351311"
        cy="112.66453"
        r="1.5"
        inkscape:label="check:LH_GS_Lab_Crate" />
     <circle
        style="fill:#ffffff;stroke-width:0.296582"
-       id="path1672-1-7-9-6-2-6"
+       id="check:LH_GS_Tree"
        cx="94.289139"
        cy="171.57158"
        r="1.5"
        inkscape:label="check:LH_GS_Tree" />
     <circle
        style="fill:#000000;stroke-width:0.296582"
-       id="path1672-1-7-3"
+       id="check:LH_Sun"
        cx="100.53235"
        cy="164.49127"
        r="1.5"
        inkscape:label="check:LH_Sun" />
     <circle
        style="fill:#ffffff;stroke-width:0.296582"
-       id="path1672-1-7-9-6"
+       id="check:LH_GS_Bean_Patch"
        cx="56.383045"
        cy="89.456062"
        r="1.5"
        inkscape:label="check:LH_GS_Bean_Patch" />
     <circle
        style="fill:#ffffff;stroke-width:0.296582"
-       id="path1672-1-7-9-6-0"
+       id="check:LH_GS_Lab_Wall"
        cx="50.56266"
        cy="101.54344"
        r="1.5"
        inkscape:label="check:LH_GS_Lab_Wall" />
     <circle
        style="fill:#ffffff;stroke-width:0.296582"
-       id="path1672-1-7-9-6-6"
+       id="check:LH_GS_Small_Island"
        cx="122.61509"
        cy="165.37936"
        r="1.5"

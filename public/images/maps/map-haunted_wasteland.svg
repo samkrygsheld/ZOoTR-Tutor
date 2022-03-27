@@ -52,7 +52,7 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1366"
      inkscape:window-height="705"
-     id="namedview870"
+     id="Image"
      showgrid="false"
      inkscape:zoom="2.9081082"
      inkscape:cx="190.98906"
@@ -68,12 +68,12 @@
     <path
        style="fill:#cd9f65;fill-opacity:1;stroke:#000000;stroke-width:6.8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1721)"
        d="M 27.154326,110.03717 C 64.291873,107.28625 63.60414,112.7881 79.421984,84.59108 95.239827,56.394054 131.00191,44.014872 147.50749,45.390337 c 16.50558,1.375464 43.32714,-2.063197 55.01859,31.635687 11.69145,33.698886 17.19331,51.579926 11.69145,77.026016 -5.50186,25.4461 6.18959,38.51302 32.32342,26.13383 16.50557,-6.18959 39.20074,16.50558 53.64312,18.56878 14.44238,2.06319 32.32342,-2.0632 41.95167,-0.68774 9.62825,1.37547 71.52417,20.63197 2.75093,60.52045 -26.82156,14.44238 -61.20818,6.18959 -79.77695,0 -18.56877,-6.18959 -58.45725,18.56877 -70.83643,28.88476 -12.37918,10.31598 -52.95539,7.56505 -41.26394,-30.94796 11.69145,-38.51301 7.56505,-52.26765 0,-72.21189 -7.56506,-19.94424 -9.62825,-30.94796 -37.82528,-28.19703 -28.197033,2.75093 -63.271379,6.87733 -86.654279,16.50558 -23.3829,9.62825 -66.710038,-52.9554 -1.375465,-62.58365 z"
-       id="path1443"
+       id="Path"
        inkscape:label="Path" />
     <path
        sodipodi:type="star"
        style="opacity:1;fill:#554d40;fill-opacity:1;stroke-width:1px;stop-color:#000000"
-       id="path1441"
+       id="Shelter"
        sodipodi:sides="8"
        sodipodi:cx="181.3894"
        sodipodi:cy="100.75279"
@@ -89,7 +89,7 @@
        inkscape:label="Shelter" />
     <rect
        style="opacity:1;fill:#ff0000;fill-opacity:1;stroke-width:6.8;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
-       id="rect1727"
+       id="Carpet"
        width="6.5334573"
        height="6.5334573"
        x="188.94337"
@@ -97,7 +97,7 @@
        inkscape:label="Carpet" />
     <rect
        style="opacity:1;fill:#898061;fill-opacity:1;stroke-width:6.8;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
-       id="rect1729"
+       id="check:Wasteland_Bombchu_Salesman"
        width="3.4386618"
        height="12.035316"
        x="292.61816"
@@ -109,12 +109,12 @@
        r="2"
        cy="241.7755"
        cx="196.86395"
-       id="path8150"
+       id="check:Wasteland_GS"
        style="fill:#000000;stroke-width:19.9877;stop-color:#000000" />
     <circle
        inkscape:label="check:Wasteland_GS"
        style="fill:#ffffff;stroke-width:19.9877;stop-color:#000000"
-       id="path8150-2"
+       id="check:Wasteland_Chest"
        cx="168.15056"
        cy="106.25465"
        r="2" />
