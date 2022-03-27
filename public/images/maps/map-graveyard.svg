@@ -148,63 +148,63 @@
        d="m 114.08643,37.67844 6.3067,0.80855 v 6.549257 l -6.3067,0.80855 z"
        sodipodi:nodetypes="ccccc" />
     <circle
-       inkscape:label="check:GraveyardFreestandingPoH"
+       inkscape:label="check:Graveyard_Freestanding_PoH"
        r="0.75"
        cy="23.262081"
        cx="35.085564"
        id="path7455"
        style="fill:#000000;stroke-width:8.86005;stop-color:#000000" />
     <circle
-       inkscape:label="check:GraveyardDampeRaceFreestandingPoH"
+       inkscape:label="check:Graveyard_Dampe_Race_Freestanding_PoH"
        style="fill:#000000;stroke-width:8.86005;stop-color:#000000"
        id="path7455-2"
        cx="56.004711"
        cy="22.188662"
        r="0.75" />
     <circle
-       inkscape:label="check:GraveyardHookshotChest"
+       inkscape:label="check:Graveyard_Hookshot_Chest"
        style="fill:#000000;stroke-width:8.86005;stop-color:#000000"
        id="path7455-21"
        cx="57.298389"
        cy="23.320633"
        r="0.75" />
     <circle
-       inkscape:label="check:GraveyardShieldGraveChest"
+       inkscape:label="check:Graveyard_Shield_Grave_Chest"
        style="fill:#000000;stroke-width:8.86005;stop-color:#000000"
        id="path7455-8"
        cx="67.162697"
        cy="46.121746"
        r="0.75" />
     <circle
-       inkscape:label="check:GraveyardHeartPieceGraveChest"
+       inkscape:label="check:Graveyard_Heart_Piece_Grave_Chest"
        style="fill:#000000;stroke-width:8.86005;stop-color:#000000"
        id="path7455-9"
        cx="89.640396"
        cy="53.236992"
        r="0.75" />
     <circle
-       inkscape:label="check:SongfromComposersGrave"
+       inkscape:label="check:Song_from_Composers_Grave"
        style="fill:#ff0000;stroke-width:8.86005;stop-color:#000000"
        id="path7455-6"
        cx="116.48431"
        cy="40.785316"
        r="0.75" />
     <circle
-       inkscape:label="check:GraveyardComposersGraveChest"
+       inkscape:label="check:Graveyard_Composers_Grave_Chest"
        style="fill:#000000;stroke-width:8.86005;stop-color:#000000"
        id="path7455-5"
        cx="117.93964"
        cy="42.564125"
        r="0.75" />
     <circle
-       inkscape:label="check:GraveyardGSBeanPatch"
+       inkscape:label="check:Graveyard_GS_Bean_Patch"
        style="fill:#ffffff;stroke-width:8.86005;stop-color:#000000"
        id="path7455-99"
        cx="51.47683"
        cy="23.320633"
        r="0.75" />
     <circle
-       inkscape:label="check:GraveyardGSWall"
+       inkscape:label="check:Graveyard_GS_Wall"
        style="fill:#ffffff;stroke-width:8.86005;stop-color:#000000"
        id="path7455-0"
        cx="89.478691"
@@ -216,6 +216,6 @@
        cx="61.502853"
        id="path7455-8-1"
        style="fill:#000000;stroke-width:8.86005;stop-color:#000000"
-       inkscape:label="check:GraveyardDampeGravediggingTour" />
+       inkscape:label="check:Graveyard_Dampe_Gravedigging_Tour" />
   </g>
 </svg>

@@ -80,9 +80,9 @@
        cy="106.66467"
        r="10"
        transform="scale(-1,1)"
-       inkscape:label="check:DekuTreeBasementChest" />
+       inkscape:label="check:Deku_Tree_Basement_Chest" />
     <circle
-       inkscape:label="check:DekuTreeGSBasementVines"
+       inkscape:label="check:Deku_Tree_GS_Basement_Vines"
        transform="scale(-1,1)"
        r="10"
        cy="200.66467"
@@ -96,9 +96,9 @@
        cy="48.194084"
        r="10"
        transform="scale(-1,1)"
-       inkscape:label="check:DekuTreeGSBasementGate" />
+       inkscape:label="check:Deku_Tree_GS_Basement_Gate" />
     <circle
-       inkscape:label="check:DekuTreeGSBasementGate"
+       inkscape:label="check:Deku_Tree_GS_Basement_Gate"
        transform="scale(-1,1)"
        r="10"
        cy="40.664677"
@@ -123,7 +123,7 @@
        style="display:inline;fill:#00c200;fill-opacity:1;stroke:none;stroke-width:5.91496;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
        d="m 702.45285,13.57484 a 196.32611,196.32611 0 0 0 -196.32617,196.32617 196.32611,196.32611 0 0 0 17.39844,80.80078 l -35.66016,65.08203 21.47266,22.13477 -13.25586,12.43554 -25.15821,-25.1582 -59.29492,9.41211 -110.11718,113.88281 -9.41211,57.41016 25.10937,25.10937 -10.99609,10.31446 -11.31055,-12.05664 -47.95117,44.98437 -16.02735,-15.64453 -55.52929,9.41211 -80,80 -11.29492,45.17578 164.70703,159.99995 47.05859,-50.82417 -42.35351,-63.05859 46.11718,-46.11719 10.35352,-57.41211 -21.77539,-21.25586 46.10351,-43.25195 -8.13476,-8.67188 11.67578,-10.95117 25.77734,25.77734 56.47071,-12.23437 112.9414,-112 8.47071,-57.41211 -24.78711,-24.78711 12.93359,-12.13476 19.38281,19.98046 64.71289,-33.79296 A 196.32611,196.32611 0 0 0 702.45285,406.22718 196.32611,196.32611 0 0 0 898.77903,209.90101 196.32611,196.32611 0 0 0 702.45285,13.57484 Z" />
     <circle
-       inkscape:label="check:DekuTreeMapChest"
+       inkscape:label="check:Deku_Tree_Map_Chest"
        transform="scale(-1,1)"
        r="10"
        cy="325.60583"
@@ -137,9 +137,9 @@
        cy="767.37061"
        r="10"
        transform="scale(-1,1)"
-       inkscape:label="check:DekuTreeSlingshotChest" />
+       inkscape:label="check:Deku_Tree_Slingshot_Chest" />
     <circle
-       inkscape:label="check:DekuTreeSlinshotRoomSideChest"
+       inkscape:label="check:Deku_Tree_Slingshot_Room_Side_Chest"
        transform="scale(-1,1)"
        r="10"
        cy="846.42938"
@@ -158,9 +158,9 @@
        cy="213.95882"
        r="10"
        transform="scale(-1,1)"
-       inkscape:label="check:DekuTreeCompassChest" />
+       inkscape:label="check:Deku_Tree_Compass_Chest" />
     <circle
-       inkscape:label="check:DekuTreeCompassRoomSideChest"
+       inkscape:label="check:Deku_Tree_Compass_Room_Side_Chest"
        transform="scale(-1,1)"
        r="10"
        cy="361.72351"
@@ -174,6 +174,6 @@
        cy="399.72351"
        r="10"
        transform="scale(-1,1)"
-       inkscape:label="check:DekuTreeGSCompassRoom" />
+       inkscape:label="check:Deku_Tree_GS_Compass_Room" />
   </g>
 </svg>

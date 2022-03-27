@@ -195,76 +195,76 @@
        cx="89.893463"
        cy="99.434074"
        r="1.5"
-       inkscape:label="check:LHUnderwaterItem" />
+       inkscape:label="check:LH_Underwater_Item" />
     <circle
        style="fill:#000000;stroke-width:0.296582"
        id="path1672-1"
        cx="130.82501"
        cy="98.993607"
        r="1.5"
-       inkscape:label="check:LHChildFishing" />
+       inkscape:label="check:LH_Child_Fishing" />
     <circle
        style="fill:#000000;stroke-width:0.296582"
        id="path1672-1-7"
        cx="134.82501"
        cy="102.99361"
        r="1.5"
-       inkscape:label="check:LHAdultFishing" />
+       inkscape:label="check:LH_Adult_Fishing" />
     <circle
        style="fill:#000000;stroke-width:0.296582"
        id="path1672-1-7-0"
        cx="56.172371"
        cy="97.461891"
        r="1.5"
-       inkscape:label="check:LHFreestandingPoH" />
+       inkscape:label="check:LH_Freestanding_PoH" />
     <circle
        style="fill:#000000;stroke-width:0.296582"
        id="path1672-1-7-9"
        cx="69.40818"
        cy="108.52719"
        r="1.5"
-       inkscape:label="check:LHLabDive" />
+       inkscape:label="check:LH_Lab_Dive" />
     <circle
        style="fill:#ffffff;stroke-width:0.296582"
        id="path1672-1-7-9-6-2"
        cx="73.351311"
        cy="112.66453"
        r="1.5"
-       inkscape:label="check:LHGSLabCrate" />
+       inkscape:label="check:LH_GS_Lab_Crate" />
     <circle
        style="fill:#ffffff;stroke-width:0.296582"
        id="path1672-1-7-9-6-2-6"
        cx="94.289139"
        cy="171.57158"
        r="1.5"
-       inkscape:label="check:LHGSTree" />
+       inkscape:label="check:LH_GS_Tree" />
     <circle
        style="fill:#000000;stroke-width:0.296582"
        id="path1672-1-7-3"
        cx="100.53235"
        cy="164.49127"
        r="1.5"
-       inkscape:label="check:LHSun" />
+       inkscape:label="check:LH_Sun" />
     <circle
        style="fill:#ffffff;stroke-width:0.296582"
        id="path1672-1-7-9-6"
        cx="56.383045"
        cy="89.456062"
        r="1.5"
-       inkscape:label="check:LHGSBeanPatch" />
+       inkscape:label="check:LH_GS_Bean_Patch" />
     <circle
        style="fill:#ffffff;stroke-width:0.296582"
        id="path1672-1-7-9-6-0"
        cx="50.56266"
        cy="101.54344"
        r="1.5"
-       inkscape:label="check:LHGSLabWall" />
+       inkscape:label="check:LH_GS_Lab_Wall" />
     <circle
        style="fill:#ffffff;stroke-width:0.296582"
        id="path1672-1-7-9-6-6"
        cx="122.61509"
        cy="165.37936"
        r="1.5"
-       inkscape:label="check:LHGSSmallIsland" />
+       inkscape:label="check:LH_GS_Small_Island" />
   </g>
 </svg>

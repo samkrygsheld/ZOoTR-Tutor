@@ -174,27 +174,27 @@
        cx="71.148628"
        cy="99.858528"
        r="1.5"
-       inkscape:label="check:ZDDivingMinigame" />
+       inkscape:label="check:ZD_Diving_Minigame" />
     <circle
        style="fill:#000000;stroke-width:0.402194;stroke-miterlimit:1.7"
        id="path884-3"
        cx="68.86805"
        cy="104.73701"
        r="1.5"
-       inkscape:label="check:ZDChest" />
+       inkscape:label="check:ZD_Chest" />
     <circle
        style="fill:#ffffff;stroke-width:0.402194;stroke-miterlimit:1.7"
        id="path884-3-7"
        cx="76.935371"
        cy="106.16831"
        r="1.5"
-       inkscape:label="check:ZDGSFrozenWaterfall" />
+       inkscape:label="check:ZD_GS_Frozen_Waterfall" />
     <circle
        style="fill:#000000;stroke-width:0.402194;stroke-miterlimit:1.7"
        id="path884-3-6"
        cx="109.59504"
        cy="66.612389"
        r="1.5"
-       inkscape:label="check:ZDKingZoraThawed" />
+       inkscape:label="check:ZD_King_Zora_Thawed" />
   </g>
 </svg>

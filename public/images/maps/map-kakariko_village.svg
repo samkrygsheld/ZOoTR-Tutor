@@ -272,42 +272,42 @@
        inkscape:label="CuccoHutch"
        d="m 126.27881,144.81227 h 5.49721 v 9.44284 h -5.49721 z" />
     <circle
-       inkscape:label="check:KakGSTree"
+       inkscape:label="check:Kak_GS_Tree"
        r="1"
        style="fill:#ffffff;stroke:none;stroke-width:0.382012;stop-color:#000000"
        id="path866"
        cx="85.603119"
        cy="102.87863" />
     <circle
-       inkscape:label="check:KakGSSkulltulaHouse"
+       inkscape:label="check:Kak_GS_Skulltula_House"
        cy="128.16251"
        cx="97.69368"
        id="path866-9"
        style="fill:#ffffff;stroke:none;stroke-width:0.382012;stop-color:#000000"
        r="1" />
     <circle
-       inkscape:label="check:KakGSAboveImpasHouse"
+       inkscape:label="check:Kak_GS_Above_Impas_House"
        cy="147.63834"
        cx="114.6565"
        id="path866-1"
        style="fill:#ffffff;stroke:none;stroke-width:0.382012;stop-color:#000000"
        r="1" />
     <circle
-       inkscape:label="check:KakGSHouseUnderConstruction"
+       inkscape:label="check:Kak_GS_House_Under_Construction"
        r="1"
        style="fill:#ffffff;stroke:none;stroke-width:0.382012;stop-color:#000000"
        id="path866-1-7"
        cx="129.125"
        cy="120.7592" />
     <circle
-       inkscape:label="check:KakGSWatchtower"
+       inkscape:label="check:Kak_GS_Watchtower"
        r="1"
        style="fill:#ffffff;stroke:none;stroke-width:0.382012;stop-color:#000000"
        id="path866-1-8"
        cx="117.9079"
        cy="72.892143" />
     <circle
-       inkscape:label="check:KakGSGuardsHouse"
+       inkscape:label="check:Kak_GS_Guards_House"
        r="1"
        style="fill:#ffffff;stroke:none;stroke-width:0.382012;stop-color:#000000"
        id="path866-1-5"
@@ -319,9 +319,9 @@
        id="path866-9-3"
        cx="166.48735"
        cy="105.85953"
-       inkscape:label="check:SongfromWindmill" />
+       inkscape:label="check:Song_from_Windmill" />
     <circle
-       inkscape:label="check:SheikinKakariko"
+       inkscape:label="check:Sheik_in_Kakariko"
        cy="103.18948"
        cx="137.43065"
        id="path866-9-3-5"
@@ -333,16 +333,16 @@
        id="path866-9-3-5-2"
        cx="136.80241"
        cy="139.62811"
-       inkscape:label="check:KakAnjuasChild" />
+       inkscape:label="check:Kak_Anju_as_Child" />
     <circle
        r="1"
        style="fill:#000000;stroke:none;stroke-width:0.382012;stop-color:#000000"
        id="path866-9-3-5-0"
        cx="138.53011"
        cy="141.51288"
-       inkscape:label="check:KakAnjuasAdult" />
+       inkscape:label="check:Kak_Anju_as_Adult" />
     <circle
-       inkscape:label="check:KakImpasHouseFreestandingPoH"
+       inkscape:label="check:Kak_Impas_House_Freestanding_PoH"
        cy="151.56493"
        cx="127.37864"
        id="path866-9-3-5-0-0"
@@ -354,65 +354,65 @@
        id="path866-9-3-5-0-0-2"
        cx="166.17323"
        cy="97.06398"
-       inkscape:label="check:KakWindmillFreestandingPoH" />
+       inkscape:label="check:Kak_Windmill_Freestanding_PoH" />
     <circle
        r="1"
        style="fill:#000000;stroke:none;stroke-width:0.382012;stop-color:#000000"
        id="path866-9-3-5-0-0-5"
        cx="129.89163"
        cy="87.011948"
-       inkscape:label="check:KakManonRoof" />
+       inkscape:label="check:Kak_Man_on_Roof" />
     <circle
        r="1"
        style="fill:#000000;stroke:none;stroke-width:0.382012;stop-color:#000000"
        id="path866-9-3-5-0-0-9"
        cx="146.38327"
        cy="73.34745"
-       inkscape:label="check:KakOpenGrottoChest" />
+       inkscape:label="check:Kak_Open_Grotto_Chest" />
     <circle
        r="1"
        style="fill:#000000;stroke:none;stroke-width:0.382012;stop-color:#000000"
        id="path866-9-3-5-0-0-4"
        cx="105.86096"
        cy="98.163429"
-       inkscape:label="check:KakRedeadGrottoChest" />
+       inkscape:label="check:Kak_Redead_Grotto_Chest" />
     <circle
-       inkscape:label="check:KakShootingGalleryReward"
+       inkscape:label="check:Kak_Shooting_Gallery_Reward"
        cy="116.38277"
        cx="127.22156"
        id="path866-9-3-5-0-0-4-3"
        style="fill:#000000;stroke:none;stroke-width:0.382012;stop-color:#000000"
        r="1" />
     <circle
-       inkscape:label="check:Kak50GoldSkulltulaReward"
+       inkscape:label="check:Kak_50_Gold_Skulltula_Reward"
        cy="116.64996"
        cx="98.083603"
        id="path866-9-3-5-0-0-4-7"
        style="fill:#000000;stroke:none;stroke-width:0.382012;stop-color:#000000"
        r="1" />
     <circle
-       inkscape:label="check:Kak10GoldSkulltulaReward"
+       inkscape:label="check:Kak_10_Gold_Skulltula_Reward"
        cy="116.64996"
        cx="102.3039"
        id="path866-9-3-5-0-0-4-4"
        style="fill:#000000;stroke:none;stroke-width:0.382012;stop-color:#000000"
        r="1" />
     <circle
-       inkscape:label="check:Kak20GoldSkulltulaReward"
+       inkscape:label="check:Kak_20_Gold_Skulltula_Reward"
        cy="120.64813"
        cx="103.63663"
        id="path866-9-3-5-0-0-4-8"
        style="fill:#000000;stroke:none;stroke-width:0.382012;stop-color:#000000"
        r="1" />
     <circle
-       inkscape:label="check:Kak30GoldSkulltulaReward"
+       inkscape:label="check:Kak_30_Gold_Skulltula_Reward"
        cy="123.14699"
        cx="100.19376"
        id="path866-9-3-5-0-0-4-2"
        style="fill:#000000;stroke:none;stroke-width:0.382012;stop-color:#000000"
        r="1" />
     <circle
-       inkscape:label="check:KakRedeadGrottoChest"
+       inkscape:label="check:Kak_Redead_Grotto_Chest"
        cy="120.70366"
        cx="96.806412"
        id="path866-9-3-5-0-0-4-0"

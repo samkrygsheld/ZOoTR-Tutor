@@ -89,42 +89,42 @@
        cx="123.16995"
        cy="96.90097"
        r="1"
-       inkscape:label="check:HCGreatFairyReward" />
+       inkscape:label="check:HC_Great_Fairy_Reward" />
     <circle
        r="1"
        cy="106.66214"
        cx="47.158298"
        id="path851-3"
        style="fill:#ffffff;stroke-width:0.315952;stop-color:#000000"
-       inkscape:label="check:HCGSTree" />
+       inkscape:label="check:HC_GS_Tree" />
     <circle
        r="1"
        cy="52.539806"
        cx="76.909752"
        id="path851-0"
        style="fill:#ffffff;stroke-width:0.315952;stop-color:#000000"
-       inkscape:label="check:HCGSStormsGrotto" />
+       inkscape:label="check:HC_GS_Storms_Grotto" />
     <circle
        r="1"
        cy="26.586407"
        cx="64.882568"
        id="path851-9"
        style="fill:#ff0000;stroke-width:0.315952;stop-color:#000000"
-       inkscape:label="check:SongfromImpa" />
+       inkscape:label="check:Song_from_Impa" />
     <circle
        r="1"
        cy="24.054369"
        cx="62.667034"
        id="path851-7"
        style="fill:#000000;stroke-width:0.315952;stop-color:#000000"
-       inkscape:label="check:HCZeldasLetter" />
+       inkscape:label="check:HC_Zeldas_Letter" />
     <circle
        r="1"
        cy="115.20776"
        cx="51.589367"
        id="path851-76"
        style="fill:#000000;stroke-width:0.315952;stop-color:#000000"
-       inkscape:label="check:HCMalonEgg" />
+       inkscape:label="check:HC_Malon_Egg" />
     <circle
        r="39.015625"
        inkscape:label="OGC_Lava"
@@ -152,14 +152,14 @@
        id="path3634" />
     <circle
        r="1.625651"
-       inkscape:label="check:OGCGreatFairyReward"
+       inkscape:label="check:OGC_Great_Fairy_Reward"
        cy="65.821442"
        cx="247.32634"
        id="path851-6"
        style="fill:#000000;stroke-width:3.04053;stop-color:#000000" />
     <circle
        r="1.625651"
-       inkscape:label="check:OGCGS"
+       inkscape:label="check:OGC_GS"
        style="fill:#ffffff;stroke-width:3.04053;stop-color:#000000"
        id="path851-0-6"
        cx="210.47827"

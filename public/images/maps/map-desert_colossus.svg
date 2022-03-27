@@ -80,7 +80,7 @@
      d="m 68.632812,105.43164 c -3.209521,0.0447 -5.785818,2.46445 -5.785156,5.43359 8.57e-4,2.99985 2.629968,5.43136 5.873047,5.43165 3.243841,7.1e-4 5.874143,-2.4311 5.875,-5.43165 3.01e-4,-3.00131 -2.63034,-5.4343 -5.875,-5.43359 -0.0293,-2e-4 -0.05859,-2e-4 -0.08789,0 z"
      inkscape:label="Pool" />
   <circle
-     inkscape:label="check:SheikatColossus"
+     inkscape:label="check:Sheik_at_Colossus"
      r="2"
      cy="60.976387"
      cx="17.954447"
@@ -92,10 +92,10 @@
      cx="100.50906"
      cy="26.580908"
      r="2"
-     inkscape:label="check:ColossusGreatFairyReward" />
+     inkscape:label="check:Colossus_Great_Fairy_Reward" />
   <circle
      sodipodi:insensitive="true"
-     inkscape:label="check:ColossusFreestandingPoH"
+     inkscape:label="check:Colossus_Freestanding_PoH"
      r="2"
      cy="60.880985"
      cx="30.465694"
@@ -107,9 +107,9 @@
      cx="14.951759"
      cy="66.867592"
      r="2"
-     inkscape:label="check:ColossusGSBeanPatch" />
+     inkscape:label="check:Colossus_GS_Bean_Patch" />
   <circle
-     inkscape:label="check:ColossusGSHill"
+     inkscape:label="check:Colossus_GS_Hill"
      r="2"
      cy="50.669861"
      cx="83.895988"
@@ -121,5 +121,5 @@
      cx="60.637691"
      cy="113.38418"
      r="2"
-     inkscape:label="check:ColossusGSTree" />
+     inkscape:label="check:Colossus_GS_Tree" />
 </svg>

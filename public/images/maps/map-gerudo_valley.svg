@@ -82,35 +82,35 @@
        style="fill:#ce8000;fill-opacity:1;stroke-width:24.3;stop-color:#000000"
        id="rect6019" />
     <circle
-       inkscape:label="check:GVChest"
+       inkscape:label="check:GV_Chest"
        r="1"
        cy="103.3303"
        cx="63.451511"
        id="path6042"
        style="fill:#000000;fill-opacity:1;stroke-width:28.709;stop-color:#000000" />
     <circle
-       inkscape:label="check:GVCrateFreestandingPoH"
+       inkscape:label="check:GV_Crate_Freestanding_PoH"
        style="fill:#000000;fill-opacity:1;stroke-width:28.709;stop-color:#000000"
        id="path6042-7"
        cx="85.063156"
        cy="100.39561"
        r="1" />
     <circle
-       inkscape:label="check:GVWaterfallFreestandingPoH"
+       inkscape:label="check:GV_Waterfall_Freestanding_PoH"
        style="fill:#000000;fill-opacity:1;stroke-width:28.709;stop-color:#000000"
        id="path6042-4"
        cx="100.41973"
        cy="20.83164"
        r="1" />
     <circle
-       inkscape:label="check:GVGSBehindTent"
+       inkscape:label="check:GV_GS_Behind_Tent"
        style="fill:#ffffff;fill-opacity:1;stroke-width:28.709;stop-color:#000000"
        id="path6042-1"
        cx="69.706581"
        cy="51.786621"
        r="1" />
     <circle
-       inkscape:label="check:GVGSPillar"
+       inkscape:label="check:GV_GS_Pillar"
        style="fill:#ffffff;fill-opacity:1;stroke-width:28.709;stop-color:#000000"
        id="path6042-0"
        cx="67.046394"
@@ -124,7 +124,7 @@
        id="path6077"
        style="fill:#ce4100;fill-opacity:1;stroke-width:24.3;stop-color:#000000" />
     <circle
-       inkscape:label="check:GVGSSmallBridge"
+       inkscape:label="check:GV_GS_Small_Bridge"
        r="1"
        cy="71.821564"
        cx="139.88086"
@@ -136,6 +136,6 @@
        cx="85.15966"
        id="path6042-1-0"
        style="fill:#ffffff;fill-opacity:1;stroke-width:28.709;stop-color:#000000"
-       inkscape:label="check:GVGSBeanPatch" />
+       inkscape:label="check:GV_GS_Bean_Patch" />
   </g>
 </svg>

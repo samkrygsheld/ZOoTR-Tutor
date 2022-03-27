@@ -140,7 +140,7 @@
        style="fill:#b49365;fill-opacity:1;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-dashoffset:37.0394;stroke-opacity:1;stop-color:#000000"
        id="rect1414" />
     <circle
-       inkscape:label="check:DMTFreestandingPoH"
+       inkscape:label="check:DMT_Freestanding_PoH"
        r="1.5"
        cy="119.07418"
        cx="35.207439"
@@ -148,14 +148,14 @@
        style="fill:#000000;stroke-width:0.574636" />
     <circle
        r="1.5"
-       inkscape:label="check:DMTChest"
+       inkscape:label="check:DMT_Chest"
        cy="134.1937"
        cx="62.760456"
        id="path4290-9"
        style="fill:#000000;stroke-width:0.574636" />
     <circle
        r="1.5"
-       inkscape:label="check:DMTStormsGrottoChest"
+       inkscape:label="check:DMT_Storms_Grotto_Chest"
        cy="111.46562"
        cx="71.969971"
        id="path4290-9-1"
@@ -166,9 +166,9 @@
        id="circle843"
        cx="25.430935"
        cy="184.53625"
-       inkscape:label="check:DMTGSNearKak" />
+       inkscape:label="check:DMT_GS_Near_Kak" />
     <circle
-       inkscape:label="check:DMTGSBeanPatch"
+       inkscape:label="check:DMT_GS_Bean_Patch"
        cy="124.39381"
        cx="33.178101"
        id="circle843-8"
@@ -180,9 +180,9 @@
        id="circle843-8-7"
        cx="44.051704"
        cy="125.69865"
-       inkscape:label="check:DMTGSAboveDodongosCavern" />
+       inkscape:label="check:DMT_GS_Above_Dodongos_Cavern" />
     <circle
-       inkscape:label="check:DMTGSFallingRocksPath"
+       inkscape:label="check:DMT_GS_Falling_Rocks_Path"
        cy="59.152168"
        cx="79.282188"
        id="circle843-8-7-4"
@@ -193,11 +193,11 @@
        id="path4290-9-1-6"
        cx="66.668808"
        cy="23.48674"
-       inkscape:label="check:DMTGreatFairyReward"
+       inkscape:label="check:DMT_Great_Fairy_Reward"
        r="1.5" />
     <circle
        r="1.5"
-       inkscape:label="check:DMTBiggoron"
+       inkscape:label="check:DMT_Biggoron"
        cy="32.185631"
        cx="85.371407"
        id="path4290-9-1-6-1"

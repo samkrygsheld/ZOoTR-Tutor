@@ -102,28 +102,28 @@
        style="fill:#999999;stroke-width:3.4;stop-color:#000000"
        id="rect1510" />
     <circle
-       inkscape:label="check:HFGSCowGrotto"
+       inkscape:label="check:HF_GS_Cow_Grotto"
        r="1"
        cy="84.509987"
        cx="25.771425"
        id="path1451"
        style="fill:#ffffff;stroke-width:3.80382;stop-color:#000000" />
     <circle
-       inkscape:label="check:HFGSNearKakGrotto"
+       inkscape:label="check:HF_GS_Near_Kak_Grotto"
        style="fill:#ffffff;stroke-width:3.80382;stop-color:#000000"
        id="path1451-9"
        cx="132.28735"
        cy="10.726054"
        r="1" />
     <circle
-       inkscape:label="check:HFOcarinaofTimeItem"
+       inkscape:label="check:HF_Ocarina_of_Time_Item"
        style="fill:#000000;stroke-width:3.80382;stop-color:#000000"
        id="path1451-8"
        cx="111.85677"
        cy="20.685963"
        r="1" />
     <circle
-       inkscape:label="check:SongfromOcarinaofTime"
+       inkscape:label="check:Song_from_Ocarina_of_Time"
        style="fill:#ff0000;stroke-width:3.80382;stop-color:#000000"
        id="path1451-7"
        cx="113.64445"
@@ -136,9 +136,9 @@
        cx="90.915428"
        id="path1451-8-4"
        style="fill:#000000;stroke-width:3.80382;stop-color:#000000"
-       inkscape:label="check:HFMarketGrottoChest" />
+       inkscape:label="check:HF_Market_Grotto_Chest" />
     <circle
-       inkscape:label="check:HFTektiteGrottoFreestandingPoH"
+       inkscape:label="check:HF_Tektite_Grotto_Freestanding_PoH"
        style="fill:#000000;stroke-width:3.80382;stop-color:#000000"
        id="path1451-8-4-9"
        cx="61.035702"
@@ -150,16 +150,16 @@
        cx="63.589527"
        cy="153.74011"
        r="1"
-       inkscape:label="check:HFDekuScrubGrotto" />
+       inkscape:label="check:HF_Deku_Scrub_Grotto" />
     <circle
-       inkscape:label="check:HFOpenGrottoChest"
+       inkscape:label="check:HF_Open_Grotto_Chest"
        r="1"
        cy="154.50627"
        cx="75.592491"
        id="path1451-2-9"
        style="fill:#000000;stroke-width:3.80382;stop-color:#000000" />
     <circle
-       inkscape:label="check:HFSoutheastGrottoChest"
+       inkscape:label="check:HF_Southeast_Grotto_Chest"
        r="1"
        cy="141.99254"
        cx="108.5368"

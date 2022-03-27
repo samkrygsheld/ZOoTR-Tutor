@@ -100,41 +100,41 @@
        cx="112.02236"
        cy="154.65257"
        r="2.5"
-       inkscape:label="check:DMCWallFreestandingPoH" />
+       inkscape:label="check:DMC_Wall_Freestanding_PoH" />
     <circle
        style="fill:#000000;stroke-width:0.117502"
        id="path1141-5"
        cx="45.438354"
        cy="149.99925"
        r="2.5"
-       inkscape:label="check:DMCGreatFairyReward" />
+       inkscape:label="check:DMC_Great_Fairy_Reward" />
     <circle
        style="fill:#000000;stroke-width:0.117502"
        id="path1141-7"
        cx="109.98654"
        cy="180.6226"
        r="2.5"
-       inkscape:label="check:DMCUpperGrottoChest" />
+       inkscape:label="check:DMC_Upper_Grotto_Chest" />
     <circle
        style="fill:#000000;stroke-width:0.117502"
        id="path1141-6"
        cx="78.465508"
        cy="108.49279"
        r="2.5"
-       inkscape:label="check:DMCVolcanoFreestandingPoH" />
+       inkscape:label="check:DMC_Volcano_Freestanding_PoH" />
     <circle
        style="fill:#ffffff;stroke-width:0.117502"
        id="path1141-3-3"
        cx="68.413589"
        cy="186.36392"
        r="2.5"
-       inkscape:label="check:DMCGSCrate" />
+       inkscape:label="check:DMC_GS_Crate" />
     <circle
        style="fill:#ffffff;stroke-width:0.117502"
        id="path1141-3-5"
        cx="101.60923"
        cy="99.489166"
        r="2.5"
-       inkscape:label="check:DMCGSBeanPatch" />
+       inkscape:label="check:DMC_GS_Bean_Patch" />
   </g>
 </svg>

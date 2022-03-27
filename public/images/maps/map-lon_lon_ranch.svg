@@ -101,48 +101,48 @@
        cx="20.723988"
        cy="148.94658"
        r="1.5"
-       inkscape:label="check:LLRFreestandingPoH" />
+       inkscape:label="check:LLR_Freestanding_PoH" />
     <circle
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.328661;stroke-miterlimit:1.7"
        id="path2804-1"
        cx="15.165379"
        cy="128.89008"
        r="1.5"
-       inkscape:label="check:LLRGSBackWall" />
+       inkscape:label="check:LLR_GS_Back_Wall" />
     <circle
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.328661;stroke-miterlimit:1.7"
        id="path2804-8"
        cx="89.197495"
        cy="120.84818"
        r="1.5"
-       inkscape:label="check:LLRGSRainShed" />
+       inkscape:label="check:LLR_GS_Rain_Shed" />
     <circle
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.328661;stroke-miterlimit:1.7"
        id="path2804-7"
        cx="102.75846"
        cy="52.562382"
        r="1.5"
-       inkscape:label="check:LLRGSTree" />
+       inkscape:label="check:LLR_GS_Tree" />
     <circle
        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.328661;stroke-miterlimit:1.7"
        id="path2804-9"
        cx="93.673332"
        cy="36.44669"
        r="1.5"
-       inkscape:label="check:LLRGSHouseWindow" />
+       inkscape:label="check:LLR_GS_House_Window" />
     <circle
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.328661;stroke-miterlimit:1.7"
        id="path2804-2"
        cx="99.681122"
        cy="25.62903"
        r="1.5"
-       inkscape:label="check:LLRTalonsChickens" />
+       inkscape:label="check:LLR_Talons_Chickens" />
     <circle
        style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.328661;stroke-miterlimit:1.7"
        id="path2804-0"
        cx="71.138016"
        cy="91.115837"
        r="1.5"
-       inkscape:label="check:SongfromMalon" />
+       inkscape:label="check:Song_from_Malon" />
   </g>
 </svg>

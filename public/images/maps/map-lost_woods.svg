@@ -540,14 +540,14 @@
        cx="306.31982"
        cy="337.13748"
        r="1.5"
-       inkscape:label="check:LWOcarinaMemoryGame" />
+       inkscape:label="check:LW_Ocarina_Memory_Game" />
     <circle
        style="fill:#000000;stroke-width:0.565585;stroke-miterlimit:1.7"
        id="path3384-9-7"
        cx="330.41846"
        cy="295.46634"
        r="1.5"
-       inkscape:label="check:LWTargetinWoods" />
+       inkscape:label="check:LW_Target_in_Woods" />
     <path
        d="m 319.67969,342.19727 a 4.594563,4.594563 0 0 0 -4.58789,4.59375 4.594563,4.594563 0 0 0 0.0137,0.3457 2.9237275,2.9237275 0 0 0 -0.80274,-0.11328 2.9237275,2.9237275 0 0 0 -2.92382,2.92383 2.9237275,2.9237275 0 0 0 2.92382,2.92382 2.9237275,2.9237275 0 0 0 2.84375,-2.25 4.594563,4.594563 0 0 0 2.53907,0.76563 4.594563,4.594563 0 0 0 4.5957,-4.5957 4.594563,4.594563 0 0 0 -4.5957,-4.59375 4.594563,4.594563 0 0 0 -0.006,0 z"
        style="opacity:1;fill:#665736;fill-opacity:1;stroke:none;stroke-width:6.897;stop-color:#000000"
@@ -607,28 +607,28 @@
        cx="71.152634"
        cy="471.11871"
        r="1.5"
-       inkscape:label="check:LWGiftfromSaria" />
+       inkscape:label="check:LW_Gift_from_Saria" />
     <circle
        style="fill:#000000;stroke-width:0.565585;stroke-miterlimit:1.7"
        id="path3384-8"
        cx="96.537163"
        cy="308.17633"
        r="1.5"
-       inkscape:label="check:LWSkullKid" />
+       inkscape:label="check:LW_Skull_Kid" />
     <circle
        style="fill:#ffffff;stroke-width:0.565585;stroke-miterlimit:1.7"
        id="path3384-3"
        cx="71.022537"
        cy="401.01001"
        r="1.5"
-       inkscape:label="check:LWGSBeanPatchNearBridge" />
+       inkscape:label="check:LW_GS_Bean_Patch_Near_Bridge" />
     <circle
        style="fill:#000000;stroke-width:0.565585;stroke-miterlimit:1.7"
        id="path3384-2"
        cx="81.430191"
        cy="517.8432"
        r="1.5"
-       inkscape:label="check:LWDekuScrubNearBridge" />
+       inkscape:label="check:LW_Deku_Scrub_Near_Bridge" />
     <rect
        transform="scale(-1)"
        style="fill:url(#linearGradient4439);fill-opacity:1;stroke-width:7.17632;stop-color:#000000"
@@ -644,35 +644,35 @@
        cx="285.06311"
        cy="209.8755"
        r="1.5"
-       inkscape:label="check:LWNearShortcutsGrottoChest" />
+       inkscape:label="check:LW_Near_Shortcuts_Grotto_Chest" />
     <circle
        style="fill:#000000;stroke-width:0.565585;stroke-miterlimit:1.7"
        id="path3384-9-6"
        cx="178.65292"
        cy="105.4508"
        r="1.5"
-       inkscape:label="check:DekuTheaterSkullMask" />
+       inkscape:label="check:Deku_Theater_Skull_Mask" />
     <circle
        style="fill:#000000;stroke-width:0.565585;stroke-miterlimit:1.7"
        id="path3384-9-6-1"
        cx="182.65292"
        cy="109.4508"
        r="1.5"
-       inkscape:label="check:DekuTheaterMaskofTruth" />
+       inkscape:label="check:Deku_Theater_Mask_of_Truth" />
     <circle
        style="fill:#000000;stroke-width:0.565585;stroke-miterlimit:1.7"
        id="path3384-9-6-1-9"
        cx="261.39294"
        cy="49.011169"
        r="1.5"
-       inkscape:label="check:LWDekuScrubGrottoFront" />
+       inkscape:label="check:LW_Deku_Scrub_Grotto_Front" />
     <circle
        style="fill:#ffffff;stroke-width:0.565585;stroke-miterlimit:1.7"
        id="path3384-9-6-1-2"
        cx="255.14198"
        cy="125.43162"
        r="1.5"
-       inkscape:label="check:LWGSBeanPatchNearTheater" />
+       inkscape:label="check:LW_GS_Bean_Patch_Near_Theater" />
     <path
        style="fill:#50601a;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 248.89453,112.63281 44.42969,14.90821 h -28.15229 z"
@@ -683,6 +683,6 @@
        cx="267.40729"
        cy="123.23585"
        r="1.5"
-       inkscape:label="check:LWGSAboveTheater" />
+       inkscape:label="check:LW_GS_Above_Theater" />
   </g>
 </svg>

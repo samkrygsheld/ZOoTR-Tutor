@@ -144,41 +144,41 @@
        cx="119.83112"
        cy="166.4926"
        r="1"
-       inkscape:label="check:ZFGreatFairyReward" />
+       inkscape:label="check:ZF_Great_Fairy_Reward" />
     <circle
        style="fill:#000000;stroke-width:0.300236;stroke-miterlimit:1.7"
        id="path851-35"
        cx="139.57053"
        cy="81.145653"
        r="1"
-       inkscape:label="check:ZFIcebergFreestandingPoH" />
+       inkscape:label="check:ZF_Iceberg_Freestanding_PoH" />
     <circle
        style="fill:#ffffff;stroke-width:0.300236;stroke-miterlimit:1.7"
        id="path851-35-2"
        cx="53.406872"
        cy="144.23161"
        r="1"
-       inkscape:label="check:ZFGSAbovetheLog" />
+       inkscape:label="check:ZF_GS_Above_the_Log" />
     <circle
        style="fill:#000000;stroke-width:0.300236;stroke-miterlimit:1.7"
        id="path851-35-6"
        cx="109.2289"
        cy="78.998009"
        r="1"
-       inkscape:label="check:ZFBottomFreestandingPoH" />
+       inkscape:label="check:ZF_Bottom_Freestanding_PoH" />
     <circle
        style="fill:#ffffff;stroke-width:0.300236;stroke-miterlimit:1.7"
        id="path851-3"
        cx="140.54054"
        cy="135.44159"
        r="1"
-       inkscape:label="check:ZFGSHiddenCave" />
+       inkscape:label="check:ZF_GS_Hidden_Cave" />
     <circle
        style="fill:#ffffff;stroke-width:0.300236;stroke-miterlimit:1.7"
        id="path851-35-2-9"
        cx="115.06084"
        cy="155.17262"
        r="1"
-       inkscape:label="check:ZFGSTree" />
+       inkscape:label="check:ZF_GS_Tree" />
   </g>
 </svg>

@@ -193,70 +193,70 @@
        style="display:inline;opacity:1;fill:#ff1919;fill-opacity:1;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-dashoffset:37.0394;stop-color:#000000"
        id="rect3418" />
     <circle
-       inkscape:label="check:GCMazeLeftChest"
+       inkscape:label="check:GC_Maze_Left_Chest"
        r="1"
        cy="21.263027"
        cx="9.7064943"
        id="path6774"
        style="fill:#000000;stroke-width:19.1877;stop-color:#000000" />
     <circle
-       inkscape:label="check:GCMazeCenterChest"
+       inkscape:label="check:GC_Maze_Center_Chest"
        style="fill:#000000;stroke-width:19.1877;stop-color:#000000"
        id="path6774-3"
        cx="19.787811"
        cy="20.896248"
        r="1" />
     <circle
-       inkscape:label="check:GCMazeRightChest"
+       inkscape:label="check:GC_Maze_Right_Chest"
        r="1"
        cy="20.896248"
        cx="25.787811"
        id="path6774-3-4"
        style="fill:#000000;stroke-width:19.1877;stop-color:#000000" />
     <circle
-       inkscape:label="check:GCGSBoulderMaze"
+       inkscape:label="check:GC_GS_Boulder_Maze"
        r="1"
        cy="18.996593"
        cx="30.869127"
        id="path6774-3-7"
        style="fill:#ffffff;stroke-width:19.1877;stop-color:#000000" />
     <circle
-       inkscape:label="check:GCGSCenterPlatform"
+       inkscape:label="check:GC_GS_Center_Platform"
        r="1"
        cy="99.415276"
        cx="92.924492"
        id="path6774-3-3"
        style="fill:#ffffff;stroke-width:19.1877;stop-color:#000000" />
     <circle
-       inkscape:label="check:GCDaruniasJoy"
+       inkscape:label="check:GC_Darunias_Joy"
        r="1"
        cy="11.714587"
        cx="95.457359"
        id="path6774-3-9"
        style="fill:#000000;stroke-width:19.1877;stop-color:#000000" />
     <circle
-       inkscape:label="check:GCPotFreestandingPoH"
+       inkscape:label="check:GC_Pot_Freestanding_PoH"
        r="1"
        cy="87.700745"
        cx="91.658051"
        id="path6774-3-45"
        style="fill:#000000;stroke-width:19.1877;stop-color:#000000" />
     <circle
-       inkscape:label="check:GCRollingGoronasChild"
+       inkscape:label="check:GC_Rolling_Goron_as_Child"
        r="1"
        cy="48.124622"
        cx="80.576736"
        id="path6774-3-48"
        style="fill:#000000;stroke-width:19.1877;stop-color:#000000" />
     <circle
-       inkscape:label="check:GCRollingGoronasAdult"
+       inkscape:label="check:GC_Rolling_Goron_as_Adult"
        r="1"
        cy="118.41182"
        cx="66.645943"
        id="path6774-3-5"
        style="fill:#000000;stroke-width:19.1877;stop-color:#000000" />
     <circle
-       inkscape:label="check:GCMedigoron"
+       inkscape:label="check:GC_Medigoron"
        r="1"
        cy="159.57098"
        cx="50.182274"

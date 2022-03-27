@@ -86,168 +86,168 @@
        style="fill:#5e5e5e;fill-opacity:1;stroke:none;stroke-width:1.1724;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
        d="m 4197.6094,2656.6797 v 335.7851 h -129.6231 -61.5625 v 62.0176 88.2774 h 61.5625 v -88.2774 h 129.6231 63.6914 v -62.0176 -335.7851 z m 296.3066,437.1289 v 208.0723 h -64.1992 -62.8164 v 62.9257 128.2012 h 17.8769 v 17.3848 h -18.4375 v 46.373 h 62.5762 v -46.373 h -18.9961 v -17.3848 h 19.7969 v -128.2012 h 64.1992 v 208.5977 h 320.0059 v -221.6875 h 8.3261 v 28.4941 h 102.2461 v -94.4218 H 4822.248 v 30.1699 h -8.3261 v -222.1504 z m -496.3262,199.2441 v 63.1348 h 63.1348 v -63.1348 z m -0.5586,111.7422 v 103.9199 h 63.6934 v -103.9199 z m -0.5585,168.1739 v 128.5039 h 64.2519 v -128.5039 z m 337.4628,25.1406 v 126.8281 h 126.8262 v -126.8281 z m -176.2753,167.8926 v 123.1972 h 128.2246 V 3766.002 Z m 175.1562,0.2792 v 129.0645 h 129.0625 v -129.0645 z m -384.3945,1.6778 v 92.7461 h 145.2656 v -92.7461 z" />
     <circle
-       inkscape:label="check:ShadowTempleGSTripleGiantPot"
+       inkscape:label="check:Shadow_Temple_GS_Triple_Giant_Pot"
        r="15"
        cy="1840.8066"
        cx="170.61304"
        id="path835"
        style="fill:#ffffff;stroke-width:2.85254;stop-color:#000000" />
     <circle
-       inkscape:label="check:ShadowTempleSpikeWallsLeftChest"
+       inkscape:label="check:Shadow_Temple_Spike_Walls_Left_Chest"
        style="fill:#000000;stroke-width:2.85254;stop-color:#000000"
        id="path835-4"
        cx="657.11005"
        cy="1422.2498"
        r="15" />
     <circle
-       inkscape:label="check:ShadowTempleBossKeyChest"
+       inkscape:label="check:Shadow_Temple_Boss_Key_Chest"
        r="15"
        cy="1422.2498"
        cx="937.11005"
        id="path835-4-6"
        style="fill:#000000;stroke-width:2.85254;stop-color:#000000" />
     <circle
-       inkscape:label="check:ShadowTempleInvisibleFloormasterChest"
+       inkscape:label="check:Shadow_Temple_Invisible_Floormaster_Chest"
        r="15"
        cy="2331.7947"
        cx="797.75476"
        id="path835-4-61"
        style="fill:#000000;stroke-width:2.85254;stop-color:#000000" />
     <circle
-       inkscape:label="check:BongoBongo"
+       inkscape:label="check:Bongo_Bongo"
        r="15"
        cy="2915.6128"
        cx="1403.421"
        id="path835-4-65"
        style="fill:#000000;stroke-width:2.85254;stop-color:#000000" />
     <circle
-       inkscape:label="check:ShadowTempleBongoBongoHeart"
+       inkscape:label="check:Shadow_Temple_Bongo_Bongo_Heart"
        style="fill:#000000;stroke-width:2.85254;stop-color:#000000"
        id="path835-4-65-4"
        cx="1443.421"
        cy="2955.6128"
        r="15" />
     <circle
-       inkscape:label="check:ShadowTempleGSNearShip"
+       inkscape:label="check:Shadow_Temple_GS_Near_Ship"
        style="fill:#ffffff;stroke-width:2.85254;stop-color:#000000"
        id="path835-4-65-0"
        cx="4098.2148"
        cy="1865.5671"
        r="15" />
     <circle
-       inkscape:label="check:ShadowTempleAfterWindEnemyChest"
+       inkscape:label="check:Shadow_Temple_After_Wind_Enemy_Chest"
        style="fill:#000000;stroke-width:2.85254;stop-color:#000000"
        id="path835-4-65-5"
        cx="4279.1074"
        cy="2005.3724"
        r="15" />
     <circle
-       inkscape:label="check:ShadowTempleAfterWindHiddenChest"
+       inkscape:label="check:Shadow_Temple_After_Wind_Hidden_Chest"
        style="fill:#000000;stroke-width:2.85254;stop-color:#000000"
        id="path835-4-65-44"
        cx="4349.3809"
        cy="2180.7834"
        r="15" />
     <circle
-       inkscape:label="check:ShadowTempleWindHintChest"
+       inkscape:label="check:Shadow_Temple_Wind_Hint_Chest"
        style="fill:#000000;stroke-width:2.85254;stop-color:#000000"
        id="path835-4-65-6"
        cx="4552.4956"
        cy="2477.8757"
        r="15" />
     <circle
-       inkscape:label="check:ShadowTempleFreestandingKey"
+       inkscape:label="check:Shadow_Temple_Freestanding_Key"
        style="fill:#000000;stroke-width:2.85254;stop-color:#000000"
        id="path835-4-65-07"
        cx="3115.1379"
        cy="2911.2915"
        r="15" />
     <circle
-       inkscape:label="check:ShadowTempleGSSingleGiantPot"
+       inkscape:label="check:Shadow_Temple_GS_Single_Giant_Pot"
        r="15"
        cy="2911.2915"
        cx="3051.1379"
        id="path835-4-65-07-7"
        style="fill:#ffffff;stroke-width:2.85254;stop-color:#000000" />
     <circle
-       inkscape:label="check:ShadowTempleFallingSpikesSwitchChest"
+       inkscape:label="check:Shadow_Temple_Falling_Spikes_Switch_Chest"
        r="15"
        cy="3940.4231"
        cx="2969.0569"
        id="path835-4-65-07-3"
        style="fill:#000000;stroke-width:2.85254;stop-color:#000000" />
     <circle
-       inkscape:label="check:ShadowTempleFallingSpikesLowerChest"
+       inkscape:label="check:Shadow_Temple_Falling_Spikes_Lower_Chest"
        r="15"
        cy="3942.0034"
        cx="2709.8914"
        id="path835-4-65-07-4"
        style="fill:#000000;stroke-width:2.85254;stop-color:#000000" />
     <circle
-       inkscape:label="check:ShadowTempleFallingSpikesUpperChest"
+       inkscape:label="check:Shadow_Temple_Falling_Spikes_Upper_Chest"
        r="15"
        cy="4103.1919"
        cx="2622.9761"
        id="path835-4-65-07-0"
        style="fill:#000000;stroke-width:2.85254;stop-color:#000000" />
     <circle
-       inkscape:label="check:ShadowTempleGSFallingSpikesRoom"
+       inkscape:label="check:Shadow_Temple_GS_Falling_Spikes_Room"
        r="15"
        cy="4100.0312"
        cx="2818.9307"
        id="path835-4-65-07-2"
        style="fill:#ffffff;stroke-width:2.85254;stop-color:#000000" />
     <circle
-       inkscape:label="check:ShadowTempleInvisibleBladesVisibleChest"
+       inkscape:label="check:Shadow_Temple_Invisible_Blades_Visible_Chest"
        r="15"
        cy="3302.7808"
        cx="4902.5273"
        id="path835-4-65-07-22"
        style="fill:#000000;stroke-width:2.85254;stop-color:#000000" />
     <circle
-       inkscape:label="check:ShadowTempleInvisibleBladesInvisibleChest"
+       inkscape:label="check:Shadow_Temple_Invisible_Blades_Invisible_Chest"
        style="fill:#000000;stroke-width:2.85254;stop-color:#000000"
        id="path835-4-65-07-22-8"
        cx="4902.5273"
        cy="3362.7808"
        r="15" />
     <circle
-       inkscape:label="check:ShadowTempleGSLikeLikeRoom"
+       inkscape:label="check:Shadow_Temple_GS_Like_Like_Room"
        style="fill:#ffffff;stroke-width:2.85254;stop-color:#000000"
        id="path835-4-65-07-22-7"
        cx="4911.2188"
        cy="3332.4358"
        r="15" />
     <circle
-       inkscape:label="check:ShadowTempleCompassChest"
+       inkscape:label="check:Shadow_Temple_Compass_Chest"
        style="fill:#000000;stroke-width:2.85254;stop-color:#000000"
        id="path835-4-65-07-22-1"
        cx="3866.291"
        cy="1016.4026"
        r="15" />
     <circle
-       inkscape:label="check:ShadowTempleEarlySilverRupeeChest"
+       inkscape:label="check:Shadow_Temple_Early_Silver_Rupee_Chest"
        style="fill:#000000;stroke-width:2.85254;stop-color:#000000"
        id="path835-4-65-07-22-3"
        cx="4121.2988"
        cy="353.39066"
        r="15" />
     <circle
-       inkscape:label="check:ShadowTempleMapChest"
+       inkscape:label="check:Shadow_Temple_Map_Chest"
        style="fill:#000000;stroke-width:2.85254;stop-color:#000000"
        id="path835-4-65-07-22-5"
        cx="2202.4446"
        cy="262.55737"
        r="15" />
     <circle
-       inkscape:label="check:ShadowTempleHoverBootsChest"
+       inkscape:label="check:Shadow_Temple_Hover_Boots_Chest"
        style="fill:#000000;stroke-width:2.85254;stop-color:#000000"
        id="path835-4-65-07-22-73"
        cx="1423.6031"
        cy="506.47794"
        r="15" />
     <circle
-       inkscape:label="check:ShadowTempleInvisibleSpikesChest"
+       inkscape:label="check:Shadow_Temple_Invisible_Spikes_Chest"
        r="15"
        cy="2895.0691"
        cx="3517.4136"

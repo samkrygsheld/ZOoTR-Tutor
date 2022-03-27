@@ -92,105 +92,105 @@
        style="fill:#484848;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 1761.6738,1196.3828 -486.709,281.002 v 553.8437 l 424.5196,248.8164 h 22.5781 v 40.3926 h 25.3477 v 17.8906 h -95.4219 v 93.9317 l 64.6074,64.8554 v 207.9903 l 87.1602,-0.062 0.057,-207.9278 h 0.01 l 63.8632,-63.8613 v -94.9258 h -94.4277 v -17.8906 h 24.8477 v -40.3926 h 22.7558 l 423.6602,-244.5996 v -560.293 z" />
     <circle
-       inkscape:label="check:GanonsCastleForestTrialChest"
+       inkscape:label="check:Ganons_Castle_Forest_Trial_Chest"
        r="12.5"
        cy="2410.3459"
        cx="2135.3284"
        id="path2467"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000" />
     <circle
-       inkscape:label="check:GanonsCastleSpiritTrialCrystalSwitchChest"
+       inkscape:label="check:Ganons_Castle_Spirit_Trial_Crystal_Switch_Chest"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
        id="path2467-7"
        cx="1129.6534"
        cy="2312.981"
        r="12.5" />
     <circle
-       inkscape:label="check:GanonsCastleSpiritTrialInvisibleChest"
+       inkscape:label="check:Ganons_Castle_Spirit_Trial_Invisible_Chest"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
        id="path2467-3"
        cx="1054.1113"
        cy="2450.1497"
        r="12.5" />
     <circle
-       inkscape:label="check:GanonsCastleLightTrialLullabyChest"
+       inkscape:label="check:Ganons_Castle_Light_Trial_Lullaby_Chest"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
        id="path2467-5"
        cx="924.89441"
        cy="1722.5593"
        r="12.5" />
     <circle
-       inkscape:label="check:GanonsCastleLightTrialInvisibleEnemiesChest"
+       inkscape:label="check:Ganons_Castle_Light_Trial_Invisible_Enemies_Chest"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
        id="path2467-79"
        cx="1111.7618"
        cy="1756.3184"
        r="12.5" />
     <circle
-       inkscape:label="check:GanonsCastleLightTrialThirdLeftChest"
+       inkscape:label="check:Ganons_Castle_Light_Trial_Third_Left_Chest"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
        id="path2467-4"
        cx="1052.0631"
        cy="1812.0171"
        r="12.5" />
     <circle
-       inkscape:label="check:GanonsCastleLightTrialSecondLeftChest"
+       inkscape:label="check:Ganons_Castle_Light_Trial_Second_Left_Chest"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
        id="path2467-2"
        cx="1111.7618"
        cy="1829.9087"
        r="12.5" />
     <circle
-       inkscape:label="check:GanonsCastleLightTrialFirstLeftChest"
+       inkscape:label="check:Ganons_Castle_Light_Trial_First_Left_Chest"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
        id="path2467-6"
        cx="1173.3884"
        cy="1812.0171"
        r="12.5" />
     <circle
-       inkscape:label="check:GanonsCastleLightTrialFirstRightChest"
+       inkscape:label="check:Ganons_Castle_Light_Trial_First_Right_Chest"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
        id="path2467-65"
        cx="1173.3884"
        cy="1712.6195"
        r="12.5" />
     <circle
-       inkscape:label="check:GanonsCastleLightTrialSecondRightChest"
+       inkscape:label="check:Ganons_Castle_Light_Trial_Second_Right_Chest"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
        id="path2467-0"
        cx="1111.7618"
        cy="1676.8364"
        r="12.5" />
     <circle
-       inkscape:label="check:GanonsCastleLightTrialThirdRightChest"
+       inkscape:label="check:Ganons_Castle_Light_Trial_Third_Right_Chest"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
        id="path2467-1"
        cx="1052.0631"
        cy="1712.6195"
        r="12.5" />
     <circle
-       inkscape:label="check:GanonsCastleShadowTrialFrontChest"
+       inkscape:label="check:Ganons_Castle_Shadow_Trial_Front_Chest"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
        id="path2467-8"
        cx="1982.1885"
        cy="1088.316"
        r="12.5" />
     <circle
-       inkscape:label="check:GanonsCastleShadowTrialGoldenGauntletsChest"
+       inkscape:label="check:Ganons_Castle_Shadow_Trial_Golden_Gauntlets_Chest"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
        id="path2467-18"
        cx="2456.5017"
        cy="647.73944"
        r="12.5" />
     <circle
-       inkscape:label="check:GanonsCastleWaterTrialLeftChest"
+       inkscape:label="check:Ganons_Castle_Water_Trial_Left_Chest"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
        id="path2467-32"
        cx="2583.0142"
        cy="1679.519"
        r="12.5" />
     <circle
-       inkscape:label="check:GanonsCastleWaterTrialRightChest"
+       inkscape:label="check:Ganons_Castle_Water_Trial_Right_Chest"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
        id="path2467-9"
        cx="2583.0142"
@@ -202,6 +202,6 @@
        cx="1759.7434"
        id="path2467-3-4"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       inkscape:label="check:GanonsTowerBossKeyChest" />
+       inkscape:label="check:Ganons_Tower_Boss_Key_Chest" />
   </g>
 </svg>
