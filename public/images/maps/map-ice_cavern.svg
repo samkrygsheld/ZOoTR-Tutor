@@ -1,121 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   id="svg833"
-   viewBox="0 0 1459.4529 2325.877"
-   sodipodi:docname="map-ice_cavern.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
-  <metadata
-     id="metadata839">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs837" />
-  <sodipodi:namedview
-     inkscape:document-rotation="0"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
-     id="namedview835"
-     showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:zoom="0.49468376"
-     inkscape:cx="693.47757"
-     inkscape:cy="1074.5666"
-     inkscape:window-x="892"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g841" />
-  <g
-     inkscape:groupmode="layer"
-     inkscape:label="Image"
-     id="g841"
-     transform="translate(-10.107422,-21.076172)">
-    <path
-       inkscape:label="Main"
-       id="rect845"
-       style="fill:#b3b3b3;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       d="M 1064.5312,21.076172 A 213.26756,213.26756 0 0 0 851.26367,234.34375 213.26756,213.26756 0 0 0 1041.0684,446.31641 v 101.0039 h 185.7207 V 909.67188 H 1176.25 c 0,-53.56958 -53.5684,-49.52735 -53.5684,-49.52735 h -81.1328 A 167.78397,167.78397 0 0 0 928.87695,816.68359 167.78397,167.78397 0 0 0 765.33398,946.98438 H 709.85352 V 703.27148 H 500.29492 V 613.2168 H 402.7832 V 466.45898 H 315.35352 V 613.2168 H 72.900391 V 834.37109 H 10.107422 v 62.66602 H 72.900391 V 1040.6113 H 213.06641 c 17.00238,45.8527 34.73599,101.812 32.54492,130.8438 -4.04299,53.5696 -86.92474,90.9674 -102.08594,166.7734 -12.29342,61.4671 69.7681,114.9529 101.25586,132.9903 l -60.36328,55.9609 181.41406,195.6816 75.18555,-69.7051 c 67.77399,98.919 168.16604,114.9624 222.0332,115.7305 v 16.0918 h 112.19141 v 90.9668 77.8281 h 248.56051 c 1.2431,46.3957 -8.0575,140.4942 -104.0234,140.4942 -127.35409,0 -123.31055,252.6855 -123.31055,252.6855 h 56.60156 c 0,0 -13.13923,-195.0742 110.17188,-195.0742 123.31111,0 115.22461,-198.1055 115.22461,-198.1055 v -77.8281 H 853.07031 v -90.9668 H 979.41406 V 1468.6152 H 857.11328 v -109.1601 h -120.2793 v -71.7637 h 232.47266 v -68.7305 -71.6543 a 167.78397,167.78397 0 0 0 94.68556,-63.3671 h 28.666 v 134.123 59.5625 h 84.0527 a 149.08514,123.3111 19.292234 0 0 105.6172,125.9473 149.08514,123.3111 19.292234 0 0 181.4531,-67.1309 149.08514,123.3111 19.292234 0 0 -99.9726,-165.6426 149.08514,123.3111 19.292234 0 0 -171.9922,47.2637 h -37.7793 v -197.2598 h -61.3594 a 167.78397,167.78397 0 0 0 3.9825,-36.3359 167.78397,167.78397 0 0 0 -18.0469,-75.69727 h 38.789 c 15.944,0 20.1719,5.11711 20.1719,23.31055 v 26 h 137.9883 v -39.99219 c 57.6487,-0.89218 104.1074,-47.89476 104.1074,-105.75586 l 0.4278,-27.1875 c 0.5563,-35.46957 -18.6761,-62.8108 -18.7422,-76.15039 -0.066,-13.33958 18.7422,-48.68201 18.7422,-76.69336 v -35.8789 c 0,-58.4187 -47.3587,-105.77536 -105.7774,-105.7754 -1.206,0 -2.368,0.0279 -3.5117,0.0703 h -146.3535 v -51.6992 A 213.26756,213.26756 0 0 0 1277.7988,234.34375 213.26756,213.26756 0 0 0 1064.5312,21.076172 Z M 500.29492,789.75 h 134.51367 v 157.23438 76.47462 h 130.87696 a 167.78397,167.78397 0 0 0 138.93359,127.0293 v 68.4726 H 671.13672 v 68.7305 134.4297 h 65.69726 50.53711 v 46.4941 H 663.05078 v 231.2793 c -120.14475,-3.5468 -161.57675,-64.2142 -174.08984,-91.1836 l 72.55273,-67.2636 -181.41406,-195.6817 -74.8457,69.3887 c -30.3443,-14.2462 -77.57799,-43.0377 -70.75977,-81.9785 9.05967,-51.7425 28.30061,-37.399 64.6875,-127.3555 19.76161,-48.855 7.9152,-114.9631 -7.0293,-165.209 h 208.14258 z" />
-    <circle
-       inkscape:label="check:Ice_Cavern_Iron_Boots_Chest"
-       r="15"
-       cy="1556.9702"
-       cx="396.75443"
-       id="path831"
-       style="fill:#000000;stroke-width:2.5485;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Sheik_in_Ice_Cavern"
-       style="fill:#ff0000;stroke-width:2.5485;stop-color:#000000"
-       id="path831-2"
-       cx="360.75443"
-       cy="1522.9702"
-       r="15" />
-    <circle
-       inkscape:label="check:Ice_Cavern_GS_Push_Block_Room"
-       r="15"
-       cy="924.46442"
-       cx="478.95447"
-       id="path831-2-0"
-       style="fill:#ffffff;stroke-width:2.5485;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Ice_Cavern_GS_Spinning_Scythe_Room"
-       r="15"
-       cy="1084.5585"
-       cx="827.73096"
-       id="path831-2-6"
-       style="fill:#ffffff;stroke-width:2.5485;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Ice_Cavern_Freestanding_PoH"
-       r="15"
-       cy="1189.4994"
-       cx="1358.4436"
-       id="path831-2-5"
-       style="fill:#000000;stroke-width:2.5485;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Ice_Cavern_Compass_Chest"
-       r="15"
-       cy="1383.5627"
-       cx="1299.8203"
-       id="path831-2-7"
-       style="fill:#000000;stroke-width:2.5485;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Ice_Cavern_GS_Heart_Piece_Room"
-       r="15"
-       cy="1227.9078"
-       cx="1396.8519"
-       id="path831-2-2"
-       style="fill:#ffffff;stroke-width:2.5485;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Ice_Cavern_Map_Chest"
-       r="15"
-       cy="87.785454"
-       cx="960.20935"
-       id="path831-2-27"
-       style="fill:#000000;stroke-width:2.5485;stop-color:#000000" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="svg833" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" sodipodi:docname="map-ice_cavern.svg" version="1.1" viewBox="0 0 1459.4529 2325.877" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+ <metadata id="metadata839">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>
+     image/svg+xml
+    </dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs id="defs837"/>
+ <sodipodi:namedview bordercolor="#666666" borderopacity="1" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" gridtolerance="10" guidetolerance="10" id="namedview835" inkscape:current-layer="g841" inkscape:cx="693.47757" inkscape:cy="1074.5666" inkscape:document-rotation="0" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="705" inkscape:window-maximized="1" inkscape:window-width="1366" inkscape:window-x="892" inkscape:window-y="-8" inkscape:zoom="0.49468376" objecttolerance="10" pagecolor="#ffffff" showgrid="false"/>
+ <g id="Image" inkscape:groupmode="layer" inkscape:label="Image" transform="translate(-10.107422,-21.076172)">
+  <path d="M 1064.5312,21.076172 A 213.26756,213.26756 0 0 0 851.26367,234.34375 213.26756,213.26756 0 0 0 1041.0684,446.31641 v 101.0039 h 185.7207 V 909.67188 H 1176.25 c 0,-53.56958 -53.5684,-49.52735 -53.5684,-49.52735 h -81.1328 A 167.78397,167.78397 0 0 0 928.87695,816.68359 167.78397,167.78397 0 0 0 765.33398,946.98438 H 709.85352 V 703.27148 H 500.29492 V 613.2168 H 402.7832 V 466.45898 H 315.35352 V 613.2168 H 72.900391 V 834.37109 H 10.107422 v 62.66602 H 72.900391 V 1040.6113 H 213.06641 c 17.00238,45.8527 34.73599,101.812 32.54492,130.8438 -4.04299,53.5696 -86.92474,90.9674 -102.08594,166.7734 -12.29342,61.4671 69.7681,114.9529 101.25586,132.9903 l -60.36328,55.9609 181.41406,195.6816 75.18555,-69.7051 c 67.77399,98.919 168.16604,114.9624 222.0332,115.7305 v 16.0918 h 112.19141 v 90.9668 77.8281 h 248.56051 c 1.2431,46.3957 -8.0575,140.4942 -104.0234,140.4942 -127.35409,0 -123.31055,252.6855 -123.31055,252.6855 h 56.60156 c 0,0 -13.13923,-195.0742 110.17188,-195.0742 123.31111,0 115.22461,-198.1055 115.22461,-198.1055 v -77.8281 H 853.07031 v -90.9668 H 979.41406 V 1468.6152 H 857.11328 v -109.1601 h -120.2793 v -71.7637 h 232.47266 v -68.7305 -71.6543 a 167.78397,167.78397 0 0 0 94.68556,-63.3671 h 28.666 v 134.123 59.5625 h 84.0527 a 149.08514,123.3111 19.292234 0 0 105.6172,125.9473 149.08514,123.3111 19.292234 0 0 181.4531,-67.1309 149.08514,123.3111 19.292234 0 0 -99.9726,-165.6426 149.08514,123.3111 19.292234 0 0 -171.9922,47.2637 h -37.7793 v -197.2598 h -61.3594 a 167.78397,167.78397 0 0 0 3.9825,-36.3359 167.78397,167.78397 0 0 0 -18.0469,-75.69727 h 38.789 c 15.944,0 20.1719,5.11711 20.1719,23.31055 v 26 h 137.9883 v -39.99219 c 57.6487,-0.89218 104.1074,-47.89476 104.1074,-105.75586 l 0.4278,-27.1875 c 0.5563,-35.46957 -18.6761,-62.8108 -18.7422,-76.15039 -0.066,-13.33958 18.7422,-48.68201 18.7422,-76.69336 v -35.8789 c 0,-58.4187 -47.3587,-105.77536 -105.7774,-105.7754 -1.206,0 -2.368,0.0279 -3.5117,0.0703 h -146.3535 v -51.6992 A 213.26756,213.26756 0 0 0 1277.7988,234.34375 213.26756,213.26756 0 0 0 1064.5312,21.076172 Z M 500.29492,789.75 h 134.51367 v 157.23438 76.47462 h 130.87696 a 167.78397,167.78397 0 0 0 138.93359,127.0293 v 68.4726 H 671.13672 v 68.7305 134.4297 h 65.69726 50.53711 v 46.4941 H 663.05078 v 231.2793 c -120.14475,-3.5468 -161.57675,-64.2142 -174.08984,-91.1836 l 72.55273,-67.2636 -181.41406,-195.6817 -74.8457,69.3887 c -30.3443,-14.2462 -77.57799,-43.0377 -70.75977,-81.9785 9.05967,-51.7425 28.30061,-37.399 64.6875,-127.3555 19.76161,-48.855 7.9152,-114.9631 -7.0293,-165.209 h 208.14258 z" id="Main" inkscape:label="Main" style="fill:#b3b3b3;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"/>
+  <circle cx="396.75443" cy="1556.9702" id="check:Ice_Cavern_Iron_Boots_Chest" inkscape:label="check:Ice_Cavern_Iron_Boots_Chest" r="15" style="fill:#000000;stroke-width:2.5485;stop-color:#000000"/>
+  <circle cx="360.75443" cy="1522.9702" id="check:Sheik_in_Ice_Cavern" inkscape:label="check:Sheik_in_Ice_Cavern" r="15" style="fill:#ff0000;stroke-width:2.5485;stop-color:#000000"/>
+  <circle cx="478.95447" cy="924.46442" id="check:Ice_Cavern_GS_Push_Block_Room" inkscape:label="check:Ice_Cavern_GS_Push_Block_Room" r="15" style="fill:#ffffff;stroke-width:2.5485;stop-color:#000000"/>
+  <circle cx="827.73096" cy="1084.5585" id="check:Ice_Cavern_GS_Spinning_Scythe_Room" inkscape:label="check:Ice_Cavern_GS_Spinning_Scythe_Room" r="15" style="fill:#ffffff;stroke-width:2.5485;stop-color:#000000"/>
+  <circle cx="1358.4436" cy="1189.4994" id="check:Ice_Cavern_Freestanding_PoH" inkscape:label="check:Ice_Cavern_Freestanding_PoH" r="15" style="fill:#000000;stroke-width:2.5485;stop-color:#000000"/>
+  <circle cx="1299.8203" cy="1383.5627" id="check:Ice_Cavern_Compass_Chest" inkscape:label="check:Ice_Cavern_Compass_Chest" r="15" style="fill:#000000;stroke-width:2.5485;stop-color:#000000"/>
+  <circle cx="1396.8519" cy="1227.9078" id="check:Ice_Cavern_GS_Heart_Piece_Room" inkscape:label="check:Ice_Cavern_GS_Heart_Piece_Room" r="15" style="fill:#ffffff;stroke-width:2.5485;stop-color:#000000"/>
+  <circle cx="960.20935" cy="87.785454" id="check:Ice_Cavern_Map_Chest" inkscape:label="check:Ice_Cavern_Map_Chest" r="15" style="fill:#000000;stroke-width:2.5485;stop-color:#000000"/>
+ </g>
 </svg>

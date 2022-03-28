@@ -1,200 +1,43 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   inkscape:version="1.1.2 (0a00cf5, 2022-02-04)"
-   sodipodi:docname="map-zoras_domain.svg"
-   viewBox="0 0 117.76953 167.50757"
-   id="svg4357"
-   version="1.1"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <metadata
-     id="metadata4363">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs4361">
-    <linearGradient
-       id="linearGradient5207"
-       inkscape:collect="always">
-      <stop
-         id="stop5203"
-         offset="0"
-         style="stop-color:#a19c7d;stop-opacity:1" />
-      <stop
-         id="stop5205"
-         offset="1"
-         style="stop-color:#c8c5b3;stop-opacity:1" />
-    </linearGradient>
-    <filter
-       height="1.5430039"
-       y="-0.27150193"
-       width="1.5651673"
-       x="-0.28258364"
-       id="filter5195"
-       style="color-interpolation-filters:sRGB"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur5197"
-         stdDeviation="1.0662002"
-         inkscape:collect="always" />
-    </filter>
-    <linearGradient
-       gradientUnits="userSpaceOnUse"
-       y2="176.7562"
-       x2="92.805336"
-       y1="152.55421"
-       x1="76.214386"
-       id="linearGradient5209"
-       xlink:href="#linearGradient5207"
-       inkscape:collect="always" />
-    <linearGradient
-       y2="162.78644"
-       x2="114.65463"
-       y1="149.35335"
-       x1="120.00708"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient5263"
-       xlink:href="#linearGradient5207"
-       inkscape:collect="always" />
-  </defs>
-  <sodipodi:namedview
-     inkscape:current-layer="g4365"
-     inkscape:window-maximized="0"
-     inkscape:window-y="25"
-     inkscape:window-x="-1"
-     inkscape:cy="61.285656"
-     inkscape:cx="70.719223"
-     inkscape:zoom="7.685322"
-     fit-margin-bottom="0"
-     fit-margin-right="0"
-     fit-margin-left="0"
-     fit-margin-top="0"
-     showgrid="false"
-     id="namedview4359"
-     inkscape:window-height="743"
-     inkscape:window-width="1017"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
-     borderopacity="1"
-     bordercolor="#666666"
-     pagecolor="#ffffff"
-     inkscape:pagecheckerboard="0" />
-  <g
-     transform="translate(-16.560547,-13.654297)"
-     id="g4365"
-     inkscape:label="Image"
-     inkscape:groupmode="layer">
-    <path
-       inkscape:label="Main Water"
-       id="path4983"
-       d="m 126.60223,153.10037 c 0,0 16.19331,-33.85873 -13.98513,-43.05948 l -7.36059,-5.52044 H 41.95539 c 0,0 -19.137546,1.47212 -19.505576,34.96282 l 26.498141,26.86617 59.252785,-1.10409 z"
-       style="fill:#29818a;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       inkscape:label="Throne Water"
-       d="m 65.140625,13.654297 v 19.798828 h 31.878906 c 0.322358,0.09887 0.981536,0.256248 2.023438,0.982422 1.269291,0.884661 1.833981,0.985352 1.833981,3.470703 V 62.197266 H 88.326172 V 95.320312 H 134.33008 V 62.197266 H 120.67773 V 37.90625 c 0,-9.2916 -5.5093,-16.367163 -10.3125,-19.714844 -4.80319,-3.347681 -9.67968,-4.322265 -9.67968,-4.322265 l -1.015628,-0.214844 z"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#29818a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:19.8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
-       id="path4934" />
-    <rect
-       inkscape:label="Stairs"
-       y="95.09874"
-       x="103.78439"
-       height="48.525333"
-       width="11.408922"
-       id="rect4938"
-       style="opacity:0.999;fill:#a7a38d;fill-opacity:1;stroke-width:17.9182;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
-    <path
-       inkscape:label="Lake Shortcut"
-       sodipodi:nodetypes="czcscc"
-       id="path5201"
-       d="m 74.947949,173.73619 c 0,0 -11.830848,-4.9855 -11.646834,-12.53916 0.184015,-7.55367 10.488848,-12.329 26.130112,-12.329 0,0 1.472119,23.5539 4.232342,26.86617 2.760223,3.31227 11.463471,4.44793 11.463471,4.44793 0,0 -18.479947,4.68809 -30.179091,-6.44594 z"
-       style="fill:url(#linearGradient5209);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       inkscape:label="Fish Landing"
-       sodipodi:nodetypes="cccccc"
-       id="path5245"
-       d="m 105.12704,180.18213 c 0,0 11.90642,-0.58362 21.47519,-27.08176 0,0 -4.41636,-5.52044 -16.74535,-5.88847 l -6.99257,4.23234 -1.81287,14.55295 z"
-       style="fill:url(#linearGradient5263);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       inkscape:label="Entrance Path"
-       sodipodi:nodetypes="scccccsccccccs"
-       d="m 22.677734,137.0918 c -3.640952,-0.0532 -6.117187,0.55078 -6.117187,0.55078 v 14.72265 h 14.353515 c 4.048328,2.20818 13.617188,18.76954 13.617188,18.76954 h 44.716797 c 8.704181,14.41247 6.725595,8.87635 16.004153,8.87635 7.34517,0 -9.197106,-23.78325 -9.197106,-23.78325 0,0 4.186236,-5.22614 13.826426,-4.975 l 5.31184,-7.62787 h -11.4082 c -8.424627,0 -21.743895,4.48814 -20.978539,16.83594 H 49.683594 C 44.338373,140.5123 30.687829,137.20885 22.677734,137.0918 Z"
-       style="opacity:1;fill:#c8c5b3;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="path4940" />
-    <path
-       inkscape:label="Rocks"
-       d="m 72.134766,115.19336 c 1.472119,9.9368 6.624121,13.61665 9.568359,12.14453 2.944238,-1.47212 1.470703,-9.93555 1.470703,-9.93555 0,0 -3.310437,-2.20898 -11.039062,-2.20898 z m -32.962891,3.3125 a 9.0167284,9.0167284 0 0 0 -8.994141,9.01562 9.0167284,9.0167284 0 0 0 9.017578,9.01758 9.0167284,9.0167284 0 0 0 9.015626,-9.01758 9.0167284,9.0167284 0 0 0 -9.015626,-9.01562 9.0167284,9.0167284 0 0 0 -0.02344,0 z"
-       style="fill:#c8c5b3;fill-opacity:1;stroke-width:19.8;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
-       id="path4942" />
-    <ellipse
-       inkscape:label="Waterfall"
-       ry="4.7124538"
-       rx="4.5276518"
-       cy="103.79093"
-       cx="68.918198"
-       id="path4985"
-       style="fill:#8bd5dd;fill-opacity:1;stroke:none;stroke-width:4.72011;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter5195);stop-color:#000000" />
-    <path
-       inkscape:label="Minigame"
-       sodipodi:nodetypes="ccsssccsssccccc"
-       id="path4952"
-       d="m 77.287109,71.849609 0.203125,0.0059 c 0,0 -2.882156,-0.200226 -6.066406,0.976562 -1.592125,0.588394 -3.407708,1.57575 -4.884766,3.341797 -1.477057,1.766047 -2.417968,4.303613 -2.417968,7 v 21.459052 h 9.40039 V 83.173828 c 0,-0.799896 0.118445,-0.837144 0.228516,-0.96875 0.110071,-0.131606 0.409548,-0.362971 0.933594,-0.55664 1.048092,-0.387339 2.398437,-0.402344 2.398437,-0.402344 l 0.101563,0.0039 h 13.351562 v -9.400391 z"
-       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#29818a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:9.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1" />
-    <path
-       d="m 88.326172,62.197266 v 8.464843 h 12.146488 v -8.464843 z m 32.351558,0 v 8.464843 h 4.82032 V 85.75 h -12.10547 v -8.720703 h -7.80664 V 85.75 h -7.689456 v 9.570312 H 134.33008 V 85.75 70.662109 62.197266 h -8.83203 z"
-       inkscape:label="Throne Paths"
-       style="fill:#c8c5b3;fill-opacity:1;stroke-width:9.4;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
-       id="rect4954" />
-    <circle
-       inkscape:label="Shop"
-       r="8.3275623"
-       cy="159.26463"
-       cx="102.27287"
-       id="path5220"
-       style="opacity:1;fill:#a19c7d;fill-opacity:1;stroke:none;stroke-width:9.4;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" />
-    <circle
-       style="fill:#000000;stroke-width:0.402194;stroke-miterlimit:1.7"
-       id="path884"
-       cx="71.148628"
-       cy="99.858528"
-       r="1.5"
-       inkscape:label="check:ZD_Diving_Minigame" />
-    <circle
-       style="fill:#000000;stroke-width:0.402194;stroke-miterlimit:1.7"
-       id="path884-3"
-       cx="68.86805"
-       cy="104.73701"
-       r="1.5"
-       inkscape:label="check:ZD_Chest" />
-    <circle
-       style="fill:#ffffff;stroke-width:0.402194;stroke-miterlimit:1.7"
-       id="path884-3-7"
-       cx="76.935371"
-       cy="106.16831"
-       r="1.5"
-       inkscape:label="check:ZD_GS_Frozen_Waterfall" />
-    <circle
-       style="fill:#000000;stroke-width:0.402194;stroke-miterlimit:1.7"
-       id="path884-3-6"
-       cx="109.59504"
-       cy="66.612389"
-       r="1.5"
-       inkscape:label="check:ZD_King_Zora_Thawed" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="svg4357" inkscape:version="1.1.2 (0a00cf5, 2022-02-04)" sodipodi:docname="map-zoras_domain.svg" version="1.1" viewBox="0 0 117.76953 167.50757" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <metadata id="metadata4363">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>
+     image/svg+xml
+    </dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs id="defs4361">
+  <linearGradient id="linearGradient5207" inkscape:collect="always">
+   <stop id="stop5203" offset="0" style="stop-color:#a19c7d;stop-opacity:1"/>
+   <stop id="stop5205" offset="1" style="stop-color:#c8c5b3;stop-opacity:1"/>
+  </linearGradient>
+  <filter height="1.5430039" id="filter5195" inkscape:collect="always" style="color-interpolation-filters:sRGB" width="1.5651673" x="-0.28258364" y="-0.27150193">
+   <feGaussianBlur id="feGaussianBlur5197" inkscape:collect="always" stdDeviation="1.0662002"/>
+  </filter>
+  <linearGradient gradientUnits="userSpaceOnUse" id="linearGradient5209" inkscape:collect="always" x1="76.214386" x2="92.805336" xlink:href="#linearGradient5207" y1="152.55421" y2="176.7562"/>
+  <linearGradient gradientUnits="userSpaceOnUse" id="linearGradient5263" inkscape:collect="always" x1="120.00708" x2="114.65463" xlink:href="#linearGradient5207" y1="149.35335" y2="162.78644"/>
+ </defs>
+ <sodipodi:namedview bordercolor="#666666" borderopacity="1" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" gridtolerance="10" guidetolerance="10" id="namedview4359" inkscape:current-layer="g4365" inkscape:cx="70.719223" inkscape:cy="61.285656" inkscape:pagecheckerboard="0" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="743" inkscape:window-maximized="0" inkscape:window-width="1017" inkscape:window-x="-1" inkscape:window-y="25" inkscape:zoom="7.685322" objecttolerance="10" pagecolor="#ffffff" showgrid="false"/>
+ <g id="Image" inkscape:groupmode="layer" inkscape:label="Image" transform="translate(-16.560547,-13.654297)">
+  <path d="m 126.60223,153.10037 c 0,0 16.19331,-33.85873 -13.98513,-43.05948 l -7.36059,-5.52044 H 41.95539 c 0,0 -19.137546,1.47212 -19.505576,34.96282 l 26.498141,26.86617 59.252785,-1.10409 z" id="Main_Water" inkscape:label="Main Water" style="fill:#29818a;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <path d="m 65.140625,13.654297 v 19.798828 h 31.878906 c 0.322358,0.09887 0.981536,0.256248 2.023438,0.982422 1.269291,0.884661 1.833981,0.985352 1.833981,3.470703 V 62.197266 H 88.326172 V 95.320312 H 134.33008 V 62.197266 H 120.67773 V 37.90625 c 0,-9.2916 -5.5093,-16.367163 -10.3125,-19.714844 -4.80319,-3.347681 -9.67968,-4.322265 -9.67968,-4.322265 l -1.015628,-0.214844 z" id="Throne_Water" inkscape:label="Throne Water" style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#29818a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:19.8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"/>
+  <rect height="48.525333" id="Stairs" inkscape:label="Stairs" style="opacity:0.999;fill:#a7a38d;fill-opacity:1;stroke-width:17.9182;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000" width="11.408922" x="103.78439" y="95.09874"/>
+  <path d="m 74.947949,173.73619 c 0,0 -11.830848,-4.9855 -11.646834,-12.53916 0.184015,-7.55367 10.488848,-12.329 26.130112,-12.329 0,0 1.472119,23.5539 4.232342,26.86617 2.760223,3.31227 11.463471,4.44793 11.463471,4.44793 0,0 -18.479947,4.68809 -30.179091,-6.44594 z" id="Lake_Shortcut" inkscape:label="Lake Shortcut" sodipodi:nodetypes="czcscc" style="fill:url(#linearGradient5209);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <path d="m 105.12704,180.18213 c 0,0 11.90642,-0.58362 21.47519,-27.08176 0,0 -4.41636,-5.52044 -16.74535,-5.88847 l -6.99257,4.23234 -1.81287,14.55295 z" id="Fish_Landing" inkscape:label="Fish Landing" sodipodi:nodetypes="cccccc" style="fill:url(#linearGradient5263);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <path d="m 22.677734,137.0918 c -3.640952,-0.0532 -6.117187,0.55078 -6.117187,0.55078 v 14.72265 h 14.353515 c 4.048328,2.20818 13.617188,18.76954 13.617188,18.76954 h 44.716797 c 8.704181,14.41247 6.725595,8.87635 16.004153,8.87635 7.34517,0 -9.197106,-23.78325 -9.197106,-23.78325 0,0 4.186236,-5.22614 13.826426,-4.975 l 5.31184,-7.62787 h -11.4082 c -8.424627,0 -21.743895,4.48814 -20.978539,16.83594 H 49.683594 C 44.338373,140.5123 30.687829,137.20885 22.677734,137.0918 Z" id="Entrance_Path" inkscape:label="Entrance Path" sodipodi:nodetypes="scccccsccccccs" style="opacity:1;fill:#c8c5b3;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <path d="m 72.134766,115.19336 c 1.472119,9.9368 6.624121,13.61665 9.568359,12.14453 2.944238,-1.47212 1.470703,-9.93555 1.470703,-9.93555 0,0 -3.310437,-2.20898 -11.039062,-2.20898 z m -32.962891,3.3125 a 9.0167284,9.0167284 0 0 0 -8.994141,9.01562 9.0167284,9.0167284 0 0 0 9.017578,9.01758 9.0167284,9.0167284 0 0 0 9.015626,-9.01758 9.0167284,9.0167284 0 0 0 -9.015626,-9.01562 9.0167284,9.0167284 0 0 0 -0.02344,0 z" id="Rocks" inkscape:label="Rocks" style="fill:#c8c5b3;fill-opacity:1;stroke-width:19.8;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"/>
+  <ellipse cx="68.918198" cy="103.79093" id="Waterfall" inkscape:label="Waterfall" rx="4.5276518" ry="4.7124538" style="fill:#8bd5dd;fill-opacity:1;stroke:none;stroke-width:4.72011;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter5195);stop-color:#000000"/>
+  <path d="m 77.287109,71.849609 0.203125,0.0059 c 0,0 -2.882156,-0.200226 -6.066406,0.976562 -1.592125,0.588394 -3.407708,1.57575 -4.884766,3.341797 -1.477057,1.766047 -2.417968,4.303613 -2.417968,7 v 21.459052 h 9.40039 V 83.173828 c 0,-0.799896 0.118445,-0.837144 0.228516,-0.96875 0.110071,-0.131606 0.409548,-0.362971 0.933594,-0.55664 1.048092,-0.387339 2.398437,-0.402344 2.398437,-0.402344 l 0.101563,0.0039 h 13.351562 v -9.400391 z" id="Minigame" inkscape:label="Minigame" sodipodi:nodetypes="ccsssccsssccccc" style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#29818a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:9.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"/>
+  <path d="m 88.326172,62.197266 v 8.464843 h 12.146488 v -8.464843 z m 32.351558,0 v 8.464843 h 4.82032 V 85.75 h -12.10547 v -8.720703 h -7.80664 V 85.75 h -7.689456 v 9.570312 H 134.33008 V 85.75 70.662109 62.197266 h -8.83203 z" id="Throne_Paths" inkscape:label="Throne Paths" style="fill:#c8c5b3;fill-opacity:1;stroke-width:9.4;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"/>
+  <circle cx="102.27287" cy="159.26463" id="Shop" inkscape:label="Shop" r="8.3275623" style="opacity:1;fill:#a19c7d;fill-opacity:1;stroke:none;stroke-width:9.4;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"/>
+  <circle cx="71.148628" cy="99.858528" id="check:ZD_Diving_Minigame" inkscape:label="check:ZD_Diving_Minigame" r="1.5" style="fill:#000000;stroke-width:0.402194;stroke-miterlimit:1.7"/>
+  <circle cx="68.86805" cy="104.73701" id="check:ZD_Chest" inkscape:label="check:ZD_Chest" r="1.5" style="fill:#000000;stroke-width:0.402194;stroke-miterlimit:1.7"/>
+  <circle cx="76.935371" cy="106.16831" id="check:ZD_GS_Frozen_Waterfall" inkscape:label="check:ZD_GS_Frozen_Waterfall" r="1.5" style="fill:#ffffff;stroke-width:0.402194;stroke-miterlimit:1.7"/>
+  <circle cx="109.59504" cy="66.612389" id="check:ZD_King_Zora_Thawed" inkscape:label="check:ZD_King_Zora_Thawed" r="1.5" style="fill:#000000;stroke-width:0.402194;stroke-miterlimit:1.7"/>
+ </g>
 </svg>

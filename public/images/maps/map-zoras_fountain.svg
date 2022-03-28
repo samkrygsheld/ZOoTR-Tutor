@@ -1,184 +1,38 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   inkscape:version="1.1.2 (0a00cf5, 2022-02-04)"
-   sodipodi:docname="map-zoras_fountain.svg"
-   viewBox="0 0 143.45899 152.46659"
-   id="svg5265"
-   version="1.1"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <metadata
-     id="metadata5271">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs5269">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient5208">
-      <stop
-         style="stop-color:#636363;stop-opacity:1"
-         offset="0"
-         id="stop5204" />
-      <stop
-         style="stop-color:#111111;stop-opacity:1"
-         offset="1"
-         id="stop5206" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient5208"
-       id="linearGradient5210"
-       x1="124.96791"
-       y1="113.37781"
-       x2="121.35803"
-       y2="132.17236"
-       gradientUnits="userSpaceOnUse" />
-  </defs>
-  <sodipodi:namedview
-     inkscape:current-layer="g5273"
-     inkscape:window-maximized="0"
-     inkscape:window-y="25"
-     inkscape:window-x="-1"
-     inkscape:cy="68.432832"
-     inkscape:cx="18.933985"
-     inkscape:zoom="3.6970558"
-     fit-margin-bottom="0"
-     fit-margin-right="0"
-     fit-margin-left="0"
-     fit-margin-top="0"
-     inkscape:document-rotation="0"
-     showgrid="false"
-     id="namedview5267"
-     inkscape:window-height="743"
-     inkscape:window-width="1011"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
-     borderopacity="1"
-     bordercolor="#666666"
-     pagecolor="#ffffff"
-     inkscape:pagecheckerboard="0" />
-  <g
-     transform="translate(-14.361328,-21.09787)"
-     id="g5273"
-     inkscape:label="Image"
-     inkscape:groupmode="layer">
-    <path
-       id="path1028"
-       style="fill:url(#linearGradient5210);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 125.51562,103.03516 -2.98242,11.63867 8.3418,7.79883 -26.03711,20.4375 1.83399,3.69726 3.92773,0.38477 31.12695,-21.36914 v -7.43164 z"
-       transform="translate(14.361328,21.09787)" />
-    <rect
-       inkscape:label="Cavern entrance"
-       y="21.09787"
-       x="89.801186"
-       height="18.393015"
-       width="30.294376"
-       id="rect880"
-       style="opacity:1;fill:#524e46;fill-opacity:1;stroke:none;stroke-width:6.897;stop-color:#000000" />
-    <path
-       inkscape:label="Water"
-       sodipodi:nodetypes="cccccccccccccccccccc"
-       d="M 126.32812,27.095703 79.826172,30.392578 50.128906,69.988281 14.361328,75.126953 v 26.228517 c 11.271484,1.17187 0,0 11.271484,1.17187 v 14.64649 h 14.646485 v -13.4668 l 5.933594,0.53906 4.685547,18.42188 3.294921,48.33398 38.447266,2.5625 17.210935,-6.95703 18.67383,1.83203 11.35156,-44.30664 17.94336,-19.4082 -0.73242,-36.250001 -5.49219,-25.632812 z"
-       style="opacity:1;fill:#0d7474;fill-opacity:1;stroke-width:9.4;stop-color:#000000"
-       id="rect5838" />
-    <rect
-       inkscape:label="Platform-Jabu"
-       y="73.2342"
-       x="49.799255"
-       height="19.040892"
-       width="20.139404"
-       id="rect5846"
-       style="fill:#818181;fill-opacity:1;stroke-width:9.4;stop-color:#000000" />
-    <path
-       inkscape:label="Rock"
-       id="path5852"
-       d="m 65.766188,94.50653 41.945362,24.85651 -12.687176,7.76766 -19.41915,-10.09796 z"
-       style="fill:#4c4c4c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       inkscape:label="Log"
-       d="m 69.853516,120.89648 -17.308594,20.43164 2.626953,2.22461 9.958984,-11.7539 h 5.908203 v -1.91211 H 66.75 l 5.730469,-6.76367 z"
-       style="fill:#705820;fill-opacity:1;stroke-width:6.897;stop-color:#000000"
-       id="rect851" />
-    <path
-       inkscape:label="Platform-Fairy"
-       d="m 133.74219,148.07422 -22.84375,3.39844 -1.04688,15.13476 18.67383,1.83203 z"
-       style="fill:#4c4c4c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="path858" />
-    <path
-       inkscape:label="Ice"
-       d="m 139.57053,87.366819 -5.38769,-3.110583 0,-6.221166 5.38769,-3.110584 5.38768,3.110583 0,6.221167 z"
-       inkscape:randomized="0"
-       inkscape:rounded="0"
-       inkscape:flatsided="true"
-       sodipodi:arg2="2.0943951"
-       sodipodi:arg1="1.5707963"
-       sodipodi:r2="5.3876886"
-       sodipodi:r1="6.2211666"
-       sodipodi:cy="81.145653"
-       sodipodi:cx="139.57053"
-       sodipodi:sides="6"
-       id="path876"
-       style="opacity:1;fill:#c5ebeb;fill-opacity:1;stroke:none;stroke-width:6.897;stop-color:#000000"
-       sodipodi:type="star" />
-    <circle
-       style="fill:#000000;stroke-width:0.300236;stroke-miterlimit:1.7"
-       id="path851"
-       cx="119.83112"
-       cy="166.4926"
-       r="1"
-       inkscape:label="check:ZF_Great_Fairy_Reward" />
-    <circle
-       style="fill:#000000;stroke-width:0.300236;stroke-miterlimit:1.7"
-       id="path851-35"
-       cx="139.57053"
-       cy="81.145653"
-       r="1"
-       inkscape:label="check:ZF_Iceberg_Freestanding_PoH" />
-    <circle
-       style="fill:#ffffff;stroke-width:0.300236;stroke-miterlimit:1.7"
-       id="path851-35-2"
-       cx="53.406872"
-       cy="144.23161"
-       r="1"
-       inkscape:label="check:ZF_GS_Above_the_Log" />
-    <circle
-       style="fill:#000000;stroke-width:0.300236;stroke-miterlimit:1.7"
-       id="path851-35-6"
-       cx="109.2289"
-       cy="78.998009"
-       r="1"
-       inkscape:label="check:ZF_Bottom_Freestanding_PoH" />
-    <circle
-       style="fill:#ffffff;stroke-width:0.300236;stroke-miterlimit:1.7"
-       id="path851-3"
-       cx="140.54054"
-       cy="135.44159"
-       r="1"
-       inkscape:label="check:ZF_GS_Hidden_Cave" />
-    <circle
-       style="fill:#ffffff;stroke-width:0.300236;stroke-miterlimit:1.7"
-       id="path851-35-2-9"
-       cx="115.06084"
-       cy="155.17262"
-       r="1"
-       inkscape:label="check:ZF_GS_Tree" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="svg5265" inkscape:version="1.1.2 (0a00cf5, 2022-02-04)" sodipodi:docname="map-zoras_fountain.svg" version="1.1" viewBox="0 0 143.45899 152.46659" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <metadata id="metadata5271">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>
+     image/svg+xml
+    </dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs id="defs5269">
+  <linearGradient id="linearGradient5208" inkscape:collect="always">
+   <stop id="stop5204" offset="0" style="stop-color:#636363;stop-opacity:1"/>
+   <stop id="stop5206" offset="1" style="stop-color:#111111;stop-opacity:1"/>
+  </linearGradient>
+  <linearGradient gradientUnits="userSpaceOnUse" id="linearGradient5210" inkscape:collect="always" x1="124.96791" x2="121.35803" xlink:href="#linearGradient5208" y1="113.37781" y2="132.17236"/>
+ </defs>
+ <sodipodi:namedview bordercolor="#666666" borderopacity="1" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" gridtolerance="10" guidetolerance="10" id="namedview5267" inkscape:current-layer="g5273" inkscape:cx="18.933985" inkscape:cy="68.432832" inkscape:document-rotation="0" inkscape:pagecheckerboard="0" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="743" inkscape:window-maximized="0" inkscape:window-width="1011" inkscape:window-x="-1" inkscape:window-y="25" inkscape:zoom="3.6970558" objecttolerance="10" pagecolor="#ffffff" showgrid="false"/>
+ <g id="Image" inkscape:groupmode="layer" inkscape:label="Image" transform="translate(-14.361328,-21.09787)">
+  <path d="m 125.51562,103.03516 -2.98242,11.63867 8.3418,7.79883 -26.03711,20.4375 1.83399,3.69726 3.92773,0.38477 31.12695,-21.36914 v -7.43164 z" id="path1028" style="fill:url(#linearGradient5210);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" transform="translate(14.361328,21.09787)"/>
+  <rect height="18.393015" id="Cavern_entrance" inkscape:label="Cavern entrance" style="opacity:1;fill:#524e46;fill-opacity:1;stroke:none;stroke-width:6.897;stop-color:#000000" width="30.294376" x="89.801186" y="21.09787"/>
+  <path d="M 126.32812,27.095703 79.826172,30.392578 50.128906,69.988281 14.361328,75.126953 v 26.228517 c 11.271484,1.17187 0,0 11.271484,1.17187 v 14.64649 h 14.646485 v -13.4668 l 5.933594,0.53906 4.685547,18.42188 3.294921,48.33398 38.447266,2.5625 17.210935,-6.95703 18.67383,1.83203 11.35156,-44.30664 17.94336,-19.4082 -0.73242,-36.250001 -5.49219,-25.632812 z" id="Water" inkscape:label="Water" sodipodi:nodetypes="cccccccccccccccccccc" style="opacity:1;fill:#0d7474;fill-opacity:1;stroke-width:9.4;stop-color:#000000"/>
+  <rect height="19.040892" id="Platform-Jabu" inkscape:label="Platform-Jabu" style="fill:#818181;fill-opacity:1;stroke-width:9.4;stop-color:#000000" width="20.139404" x="49.799255" y="73.2342"/>
+  <path d="m 65.766188,94.50653 41.945362,24.85651 -12.687176,7.76766 -19.41915,-10.09796 z" id="Rock" inkscape:label="Rock" style="fill:#4c4c4c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <path d="m 69.853516,120.89648 -17.308594,20.43164 2.626953,2.22461 9.958984,-11.7539 h 5.908203 v -1.91211 H 66.75 l 5.730469,-6.76367 z" id="Log" inkscape:label="Log" style="fill:#705820;fill-opacity:1;stroke-width:6.897;stop-color:#000000"/>
+  <path d="m 133.74219,148.07422 -22.84375,3.39844 -1.04688,15.13476 18.67383,1.83203 z" id="Platform-Fairy" inkscape:label="Platform-Fairy" style="fill:#4c4c4c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <path d="m 139.57053,87.366819 -5.38769,-3.110583 0,-6.221166 5.38769,-3.110584 5.38768,3.110583 0,6.221167 z" id="Ice" inkscape:flatsided="true" inkscape:label="Ice" inkscape:randomized="0" inkscape:rounded="0" sodipodi:arg1="1.5707963" sodipodi:arg2="2.0943951" sodipodi:cx="139.57053" sodipodi:cy="81.145653" sodipodi:r1="6.2211666" sodipodi:r2="5.3876886" sodipodi:sides="6" sodipodi:type="star" style="opacity:1;fill:#c5ebeb;fill-opacity:1;stroke:none;stroke-width:6.897;stop-color:#000000"/>
+  <circle cx="119.83112" cy="166.4926" id="check:ZF_Great_Fairy_Reward" inkscape:label="check:ZF_Great_Fairy_Reward" r="1" style="fill:#000000;stroke-width:0.300236;stroke-miterlimit:1.7"/>
+  <circle cx="139.57053" cy="81.145653" id="check:ZF_Iceberg_Freestanding_PoH" inkscape:label="check:ZF_Iceberg_Freestanding_PoH" r="1" style="fill:#000000;stroke-width:0.300236;stroke-miterlimit:1.7"/>
+  <circle cx="53.406872" cy="144.23161" id="check:ZF_GS_Above_the_Log" inkscape:label="check:ZF_GS_Above_the_Log" r="1" style="fill:#ffffff;stroke-width:0.300236;stroke-miterlimit:1.7"/>
+  <circle cx="109.2289" cy="78.998009" id="check:ZF_Bottom_Freestanding_PoH" inkscape:label="check:ZF_Bottom_Freestanding_PoH" r="1" style="fill:#000000;stroke-width:0.300236;stroke-miterlimit:1.7"/>
+  <circle cx="140.54054" cy="135.44159" id="check:ZF_GS_Hidden_Cave" inkscape:label="check:ZF_GS_Hidden_Cave" r="1" style="fill:#ffffff;stroke-width:0.300236;stroke-miterlimit:1.7"/>
+  <circle cx="115.06084" cy="155.17262" id="check:ZF_GS_Tree" inkscape:label="check:ZF_GS_Tree" r="1" style="fill:#ffffff;stroke-width:0.300236;stroke-miterlimit:1.7"/>
+ </g>
 </svg>

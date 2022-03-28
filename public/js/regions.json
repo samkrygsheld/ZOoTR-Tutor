@@ -11,7 +11,7 @@
     {
         "region": "lake_hylia",
         "subregions": {
-            "water_temple": []
+            "lake_hylia": [ "water_temple" ]
         }
     },
     {
