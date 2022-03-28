@@ -97,7 +97,7 @@
      fit-margin-right="0"
      fit-margin-bottom="0" />
   <g
-     id="GoronCity"
+     id="g842"
      inkscape:label="Image"
      inkscape:groupmode="layer"
      transform="translate(-14.040553,-13.917969)">
@@ -108,18 +108,18 @@
        x="94.193062"
        height="19.633947"
        width="5.991394"
-       id="NearGoronCity"
+       id="rect9279"
        style="fill:#564429;fill-opacity:1;stroke:none" />
     <path
        sodipodi:nodetypes="sccccccss"
        inkscape:label="NearGoronCity"
        d="m 72.117188,82.818359 c -14.80214,-0.121518 -25.570192,15.651665 -24.376954,39.626951 -3.214497,1.38204 -6.765438,2.21939 -9.029296,0.64453 l -1.958985,14.78711 13.478516,1 c 1.28968,5.24179 2.939269,10.99345 5.306473,16.66998 l 13.115098,2.96236 c 0,0 29.211155,-71.955517 6.594054,-75.435071 -1.060177,-0.163104 -2.104638,-0.247451 -3.128906,-0.25586 z"
        style="fill:url(#linearGradient956);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="Trail" />
+       id="path1409" />
     <path
        inkscape:label="Trail"
        sodipodi:nodetypes="cscccccsssssssccccsc"
-       id="TrailUpper"
+       id="path1407"
        d="M 55.672862,155.27509 C 56.977695,143.5316 81.769517,60.892193 88.29368,40.884758 94.817844,20.877323 78.289963,19.572491 78.289963,19.572491 v -5.654275 h -8.263941 v 6.524163 c -13.918215,0.434944 -8.698884,22.617101 -6.524163,30.446097 2.174721,7.828996 -17.39777,83.074354 -19.137547,100.907064 -1.739777,17.83271 -7.394052,17.83271 -8.698884,15.22305 -1.304833,-2.60967 8.698884,-53.49814 2.174721,-53.49814 -13.048327,0 -22.617101,36.97026 -23.052045,44.79925 -0.434944,7.829 3.04461,10.43866 3.04461,14.78811 0,4.34944 -0.869889,5.65427 -2.609666,13.04832 -1.739777,7.39406 -3.044609,26.09666 7.394052,27.40149 14.788104,0.43495 15.223049,5.65428 15.223049,5.65428 h 11.30855 C 49.583643,206.16357 28.70632,199.63941 28.70632,199.63941 c 0,0 -4.349443,-24.35688 -0.869889,-47.84387 0,0 -2.174721,46.97398 9.568773,44.36431 11.743495,-2.60966 28.271376,0 31.315985,-37.84015 z"
        style="fill:#79603a;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
@@ -127,31 +127,31 @@
        d="m 55.986328,0 v 6.5234375 c -13.918215,0.434944 -8.700112,22.6182695 -6.52539,30.4472655 1.718252,6.18571 -10.111261,54.362116 -16.021485,83.144527 -0.344388,1.67715 -0.666605,3.2797 -0.966797,4.8125 -0.08945,0.45563 -0.172573,0.89598 -0.257812,1.33789 -0.129112,0.67144 -0.278015,1.40611 -0.396485,2.04297 h 0.01367 c -0.733675,3.93643 -1.284659,7.28105 -1.507812,9.56836 -0.09973,1.02228 -0.215938,1.97097 -0.339844,2.87891 l 11.648437,0.60156 c 0.249439,-2.24493 1.373828,-7.12635 3.052735,-13.63281 C 51.766852,100.25638 68.975732,43.153201 74.253906,26.966797 80.77807,6.9593618 64.25,5.6542969 64.25,5.6542969 V 0 Z"
        inkscape:label="TrailUpper"
        style="fill:url(#linearGradient965);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="AboveCavern" />
+       id="path1407-5" />
     <path
        transform="translate(14.040553,13.917969)"
        d="m 23.798828,99.601562 c -4.271789,0 -8.15881,3.994488 -11.486328,9.599608 h 13.673828 c 0.131182,-5.66204 -0.387994,-9.599608 -2.1875,-9.599608 z"
        inkscape:label="AboveCavern"
        style="fill:#9a794b;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="Biggoron" />
+       id="path1407-6" />
     <path
        inkscape:label="Biggoron"
        d="m 70.025391,13.917969 v 6.52539 c -7.587247,0.237102 -9.47081,6.941714 -9.277344,14.25586 l 27.724609,5.585937 C 94.464739,20.862233 78.289062,19.572266 78.289062,19.572266 v -5.654297 z"
        style="fill:#b49365;fill-opacity:1;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-dashoffset:37.0394;stroke-opacity:1;stop-color:#000000"
-       id="check:DMT_Freestanding_PoH" />
+       id="rect1414" />
     <circle
        inkscape:label="check:DMT_Freestanding_PoH"
        r="1.5"
        cy="119.07418"
        cx="35.207439"
-       id="check:DMT_Chest"
+       id="path4290"
        style="fill:#000000;stroke-width:0.574636" />
     <circle
        r="1.5"
        inkscape:label="check:DMT_Chest"
        cy="134.1937"
        cx="62.760456"
-       id="check:DMT_Storms_Grotto_Chest"
+       id="path4290-9"
        style="fill:#000000;stroke-width:0.574636" />
     <circle
        r="1.5"
@@ -163,7 +163,7 @@
     <circle
        r="1.5"
        style="fill:#ffffff;stroke-width:0.574636"
-       id="check:DMT_GS_Bean_Patch"
+       id="circle843"
        cx="25.430935"
        cy="184.53625"
        inkscape:label="check:DMT_GS_Near_Kak" />
@@ -177,7 +177,7 @@
     <circle
        r="1.5"
        style="fill:#ffffff;stroke-width:0.574636"
-       id="check:DMT_GS_Falling_Rocks_Path"
+       id="circle843-8-7"
        cx="44.051704"
        cy="125.69865"
        inkscape:label="check:DMT_GS_Above_Dodongos_Cavern" />
@@ -190,7 +190,7 @@
        r="1.5" />
     <circle
        style="fill:#000000;stroke-width:0.574636"
-       id="check:DMT_Biggoron"
+       id="path4290-9-1-6"
        cx="66.668808"
        cy="23.48674"
        inkscape:label="check:DMT_Great_Fairy_Reward"

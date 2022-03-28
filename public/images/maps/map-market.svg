@@ -14,7 +14,7 @@
   <defs
      id="defs944" />
   <sodipodi:namedview
-     id="Image"
+     id="namedview942"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
@@ -41,69 +41,69 @@
      id="g946"
      transform="translate(-108.28125,-129.08008)">
     <path
-       id="Main"
+       id="rect2420-1-2-0"
        style="fill:#564429"
        d="m 468.11719,129.08008 v 89.12109 h -17.72461 v 4.00586 h -21.94922 v -3.82422 h -43.85938 v 3.93555 h -20.18554 v -9.37695 h -9.13867 v 9.37695 h -21.61329 v -44.21289 h -12.01367 v 40.35547 h -13.6875 v -9.4043 h -9.13867 v 9.4043 H 270.5918 v -4 h -19.36719 v 4.84179 h -22.30078 v -6.36132 h -98.45899 -22.18359 v 21.90039 88.85937 22.07031 h 37.00781 v 9.36524 h 9.13867 v -9.36524 h 15.32032 v 9.41993 h 9.13867 v -9.41993 h 50.25195 v -6.30664 h 21.89649 v 5.90821 h 19.67968 v -5.90821 h 3.67969 v 9.39454 h 9.13867 v -9.39454 h 38.63477 v 48.9375 h -12.39453 v 121.10547 h 36.00976 v -38.55078 h 9.94922 v -9.13867 h -9.94922 v -73.41602 h -12.21289 v -57.17382 h 64.64258 v 5.90625 h 10.19141 v -19.68946 h -28.51368 v -10.82226 h 9.69336 v -9.13867 h -9.69336 v -27.19336 h 9.69336 v -9.13868 h -9.69336 v -10.85742 h 30.58985 v -14.12109 h 17.96289 v -3.51758 h 21.94922 v 3.69336 h 52.24609 72.74805 V 129.08008 Z M 228.92383,229.99414 h 22.30078 v 4 h 27.80859 v 40.5332 h -9.40625 v 9.13868 h 9.40625 v 40.06054 h -27.99804 v 5.56446 h -21.89649 v -5.58985 H 130.46484 V 234.8418 h 98.45899 z"
        inkscape:label="Main" />
     <circle
        style="fill:#000000;stroke-width:0.194566"
-       id="check:Market_Lost_Dog"
+       id="path2700-6-2"
        cx="149.85878"
        cy="350.7157"
        r="1.5"
        inkscape:label="check:Market_Lost_Dog" />
     <circle
        style="fill:#000000;stroke-width:0.194566"
-       id="check:Market_Treasure_Chest_Game_Reward"
+       id="path2700-6-2-1"
        cx="278.9646"
        cy="344.3045"
        r="1.5"
        inkscape:label="check:Market_Treasure_Chest_Game_Reward" />
     <circle
        style="fill:#000000;stroke-width:0.194566"
-       id="check:Market_Shooting_Gallery_Reward"
+       id="path2700-6-2-1-8"
        cx="303.37601"
        cy="213.82498"
        r="1.5"
        inkscape:label="check:Market_Shooting_Gallery_Reward" />
     <circle
        style="fill:#000000;stroke-width:0.194566"
-       id="check:Market_10_Big_Poes"
+       id="path2700-7"
        cx="348.98846"
        cy="464.38821"
        r="1.5"
        inkscape:label="check:Market_10_Big_Poes" />
     <circle
        style="fill:#ffffff;stroke-width:0.194566"
-       id="check:Market_GS_Guard_House"
+       id="path2700-6-9"
        cx="352.98846"
        cy="468.38821"
        r="1.5"
        inkscape:label="check:Market_GS_Guard_House" />
     <circle
        style="fill:#000000;stroke-width:0.194566"
-       id="check:Market_Bombchu_Bowling_First_Prize"
+       id="path2700"
        cx="272.31897"
        cy="277.18127"
        r="1.5"
        inkscape:label="check:Market_Bombchu_Bowling_First_Prize" />
     <circle
        style="fill:#000000;stroke-width:0.194566"
-       id="check:Market_Bombchu_Bowling_Second_Prize"
+       id="path2700-6"
        cx="276.31897"
        cy="281.18127"
        r="1.5"
        inkscape:label="check:Market_Bombchu_Bowling_Second_Prize" />
     <circle
        style="fill:#ff0000;stroke-width:0.194566"
-       id="check:Sheik_at_Temple"
+       id="path2700-2"
        cx="557.79022"
        cy="144.41185"
        r="1.5"
        inkscape:label="check:Sheik_at_Temple" />
     <circle
        style="fill:#000000;stroke-width:0.194566"
-       id="check:ToT_Light_Arrow"
+       id="path2700-6-0"
        cx="561.79022"
        cy="148.41185"
        r="1.5"
