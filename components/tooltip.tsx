@@ -14,21 +14,18 @@ const tooltipStyle = css`
   pointer-events: none;
   font-size: 25px;
 `;
-export default forwardRef<HTMLDivElement, { dynamicText?: (e: MouseEvent) => string, text?: string, children?: ReactNode, pos: {x: number, y: number}, show?: boolean }>(
+export default forwardRef<HTMLDivElement, { dynamicText?: (e: MouseEvent) => string, text?: string, pos: {x: number, y: number}, show?: boolean }>(
   function Tooltip(props, ref): JSX.Element {
     return (
-      <>
-        <div ref={ref}
-          css={tooltipStyle}
-          style={{
-            transform: `translate(${props.pos.x}px, ${props.pos.y}px)`,
-            opacity: `${ props.show === false ? 0 : 1 }`,
-          }}
-        >
-          { props.text }
-        </div>
-        { props.children }
-      </>
+      <div ref={ref}
+        css={tooltipStyle}
+        style={{
+          transform: `translate(${props.pos.x}px, ${props.pos.y}px)`,
+          opacity: `${ props.show === false ? 0 : 1 }`,
+        }}
+      >
+        { props.text }
+      </div>
     );
 
   }

@@ -5,6 +5,7 @@ import { titleize, useDynamicSVGImport } from '../shared/utils';
 import CheckRow from './check-row';
 import Tooltip from './tooltip';
 import MouseTooltip from './mouse-tooltip';
+import Arrow from './arrow';
 
 const headerStyle = css`
   margin-top: 10px;
@@ -18,6 +19,8 @@ export default function Checks({currentMap, switchMap, checks}: { currentMap: st
   // if (!loading) {
   //   console.log(error, loading, SvgImage);
   // }
+  const [showArrow, setShowArrow] = useState(false);
+  const [checkRowPos, setCheckRowPos] = useState({x: 0, y: 0});
   const [checkTooltipPos, setCheckTooltipPos] = useState({x: 0, y: 0});
   const [checkTooltipText, setCheckTooltipText] = useState('test');
   const svgRef = useRef<SVGSVGElement>(null);
@@ -50,19 +53,25 @@ export default function Checks({currentMap, switchMap, checks}: { currentMap: st
           {checks.map((check) => {
             return (
               <CheckRow
-                onHover={() => {
+                onHover={(e) => {
+                  const rowRect = (e.target as HTMLElement).getBoundingClientRect();
+                  console.log(e.target, rowRect);
                   // console.log(`looking for: `)
                   const checkEle = svgRef.current?.querySelector(`#check\\:${check.check.spoiler.replaceAll(' ', '_')}`);
                   // const checkEle = svgRef.current?.querySelector('#path3054-5-5');
                   if (!checkEle) {
+                    setShowArrow(false);
                     return;
                   }
+                  setCheckRowPos({x: rowRect.right + window.scrollX, y: rowRect.top + rowRect.height / 2 + window.scrollY});
+                  setShowArrow(true);
                   const rect = checkEle.getBoundingClientRect();
                   setCheckTooltipText(check.check.description);
                   setCheckTooltipPos({ x: rect.x + window.scrollX, y: rect.y + window.scrollY});
                 }}
                 onUnHover={() => {
                   setCheckTooltipText('');
+                  setShowArrow(false);
                 }}
                 key={check.check.spoiler}
                 checkState={check}
@@ -71,7 +80,9 @@ export default function Checks({currentMap, switchMap, checks}: { currentMap: st
           })}
         </ul>
       </div>
+      { svgRef.current ? <Arrow mapBounds={svgRef.current.getBoundingClientRect()} start={checkRowPos} end={checkTooltipPos} show={showArrow}></Arrow> : null }
       <div
+        id='checksMapWrapper'
         css={css`
           flex: 1;
           background-color: white;
