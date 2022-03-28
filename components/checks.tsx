@@ -22,7 +22,7 @@ export default function Checks({currentMap, switchMap, checks}: { currentMap: st
   const [showArrow, setShowArrow] = useState(false);
   const [checkRowPos, setCheckRowPos] = useState({x: 0, y: 0});
   const [checkTooltipPos, setCheckTooltipPos] = useState({x: 0, y: 0});
-  const [checkTooltipText, setCheckTooltipText] = useState('test');
+  const [checkTooltipText, setCheckTooltipText] = useState('');
   const svgRef = useRef<SVGSVGElement>(null);
 
   return (
@@ -55,10 +55,7 @@ export default function Checks({currentMap, switchMap, checks}: { currentMap: st
               <CheckRow
                 onHover={(e) => {
                   const rowRect = (e.target as HTMLElement).getBoundingClientRect();
-                  console.log(e.target, rowRect);
-                  // console.log(`looking for: `)
                   const checkEle = svgRef.current?.querySelector(`#check\\:${check.check.spoiler.replaceAll(' ', '_')}`);
-                  // const checkEle = svgRef.current?.querySelector('#path3054-5-5');
                   if (!checkEle) {
                     setShowArrow(false);
                     return;
