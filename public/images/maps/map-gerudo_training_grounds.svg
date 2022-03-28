@@ -1,314 +1,59 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="map-gerudo_training_grounds.svg"
-   viewBox="0 0 1842.5078 1744.0511"
-   id="svg1935"
-   version="1.1">
-  <metadata
-     id="metadata1941">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs1939" />
-  <sodipodi:namedview
-     fit-margin-bottom="0"
-     fit-margin-right="0"
-     fit-margin-left="0"
-     fit-margin-top="0"
-     inkscape:current-layer="g1943"
-     inkscape:window-maximized="1"
-     inkscape:window-y="-8"
-     inkscape:window-x="892"
-     inkscape:cy="956.69394"
-     inkscape:cx="544.65712"
-     inkscape:zoom="0.61778804"
-     showgrid="false"
-     id="namedview1937"
-     inkscape:window-height="705"
-     inkscape:window-width="1366"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
-     borderopacity="1"
-     bordercolor="#666666"
-     pagecolor="#ffffff"
-     inkscape:document-rotation="0" />
-  <g
-     transform="translate(-27.470703,-51.506024)"
-     id="Lava"
-     inkscape:label="Image"
-     inkscape:groupmode="layer">
-    <path
-       sodipodi:nodetypes="cccccccccccccccccccccccccc"
-       d="m 666.89453,398.83594 v 65.72461 h -48.55859 v 260.60742 h 48.55859 v 53.41601 h 288.125 v -53.41601 h 43.70508 v -98.51172 h 90.05269 v -79.26172 h -90.05269 v -82.83398 h -43.70508 v -65.72461 z m 636.77927,404.94306 -48.0722,48.93194 v 385.72266 l 48.0722,50.4394 h 243.7969 l 48.0723,-50.4394 V 852.71094 L 1547.4707,803.779 Z"
-       inkscape:label="Lava"
-       style="display:inline;fill:#aa0000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="FireDonut" />
-    <path
-       d="M 811.76758,330.87891 A 251.70445,251.70445 0 0 0 562.49414,547.68164 h -25.11523 v 79.83398 h 26.72851 a 251.70445,251.70445 0 0 0 206.38281,203.36524 v 31.06445 h 80.9336 V 831.14453 A 251.70445,251.70445 0 0 0 1063.4707,582.58398 251.70445,251.70445 0 0 0 811.76758,330.87891 Z m 0,74.46289 A 177.24124,177.24124 0 0 1 989.00977,582.58398 177.24124,177.24124 0 0 1 811.76758,759.82617 177.24124,177.24124 0 0 1 634.52539,582.58398 177.24124,177.24124 0 0 1 811.76758,405.3418 Z m 45.69531,82.60937 -147.75195,53.125 53.12304,147.75195 147.75196,-53.125 z m 229.31441,59.44336 v 79.26172 h 80.4063 v -27.75586 h 26.8984 v -22.89062 h -26.8984 v -28.61524 z"
-       inkscape:label="FireDonut"
-       style="display:inline;opacity:1;fill:#808080;fill-opacity:1;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="Lobby" />
-    <path
-       inkscape:label="Lobby"
-       d="m 806.92773,1241.0098 v 21.1543 h -34.81835 l 12.56835,97.9531 -231.24609,231.2461 h -48.80859 l -48.96485,-12.3418 v 35.4062 h -19.57422 v 22.8907 h 19.57422 v 35.9902 l 46.53711,-12.5449 h 49.77344 l 49.37109,36.8242 h 193.02735 v 90.6465 h 48.55859 v -90.6465 H 1037.168 l 48.9648,-37.6328 h 49.7754 l 46.1309,11.7344 v -33.5879 h 21.0429 v -25.0879 h -21.0429 v -33.9922 l -44.918,11.3301 h -51.7969 l -230.66209,-230.6621 11.33008,-97.5254 H 831.25 v -21.1543 z"
-       style="fill:#808080;fill-opacity:1;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="Dinolfos" />
-    <path
-       inkscape:label="Dinolfos"
-       d="m 1429.293,1437.3867 v 28.4278 h -65.8594 l -82.0234,82.0234 v 37.2519 h -82.375 v 80.9356 h 82.375 v 40.6445 l 79.9218,79.9219 h 159.8438 l 81.3164,-81.3145 v -159.0351 l -81.3399,-80.4277 h -67.9843 v -28.4278 z"
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="LavaPlatforms" />
-    <path
-       sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccc"
-       inkscape:label="LavaPlatforms"
-       d="M 1393.6816,733.26172 V 803.7793 H 1377.5 l 8.584,30.90429 41.4922,18.59961 39.7734,-12.87695 7.7266,-36.62725 -16.6465,3e-4 v -70.51758 z m -324.9316,318.03318 0.4297,64.9551 186.4219,-0.2852 v 59.8028 l 32.0488,2.289 30.6172,-25.4668 1.4316,-36.9121 v -64.3828 z m 526.793,15.1661 -31.1914,7.4394 -18.8848,32.0488 18.8848,33.1914 31.1914,7.4414 16.3086,-10.5879 v -17.8925 h 22.2031 v -23.4707 h -22.2031 v -17.8692 z m -158.1563,174.2558 -23.4707,16.5918 -8.1972,31.5644 v 159.4395 l 71.7304,0.8086 V 1288.873 l -7.6894,-31.5644 z"
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.02718;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="LavaPillars" />
-    <path
-       inkscape:label="LavaPillars"
-       d="m 1478.2227,915.94922 -27.1836,12.87695 v 23.17774 l 22.6054,21.17382 24.0371,-18.59961 -4.58,-29.47265 z m -184.9922,11.30273 -13.3067,11.73243 1.2891,29.32812 30.1875,12.73438 21.4609,-28.47071 -14.4511,-24.75195 z m 130.1953,75.31645 -22.8653,1.6191 -18.2089,24.0781 19.4238,25.8985 26.5058,-6.6778 9.1055,-30.7539 z m 44.1074,116.9492 -21.4473,19.6269 16.795,25.293 29.7421,-3.4414 8.9024,-14.3652 -11.3301,-25.6954 z m -81.1348,48.9648 -27.3164,5.666 -11.33,28.5293 28.125,20.0313 24.0781,-14.9727 1.2129,-22.6621 z"
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="ToiletBowl" />
-    <path
-       inkscape:label="ToiletBowl"
-       d="m 1676.5469,1009.2461 v 72.8398 h -48.5606 v 48.5606 h 48.5606 v 72.0312 h 193.4316 v -193.4316 z"
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="TotemHeads" />
-    <path
-       inkscape:label="TotemHeads"
-       d="m 1298.1797,458.49023 v 96.91602 h -113.541 v 63.81055 h 113.541 v 96.64453 h 116.1406 v 21.04101 h 25.0899 v -21.04101 h 116.1386 v -257.3711 z"
-       style="display:inline;fill:#808080;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="SilverBlock" />
-    <path
-       inkscape:label="SilverBlock"
-       d="m 193.43359,263.82617 v 28.61328 h -28.04297 v 214.60938 h 80.1211 V 292.43945 h -27.46875 v -28.61328 z"
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="Wolfos" />
-    <path
-       inkscape:label="Wolfos"
-       d="m 177.41016,502.4707 v 13.07813 h -44.27344 v 240.77929 h 48.2793 v 57.18165 h 11.44531 v 19.45703 h 23.75 v -19.45703 h 12.01758 v -57.18165 h 51.40234 l 95.09766,-94.69335 V 515.54883 H 280.03125 234.06641 V 502.4707 Z"
-       style="fill:#808080;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="rect2570" />
-    <path
-       id="BoulderRupees"
-       d="m 168.25301,275.84337 h 74.68374 l 13.16265,-27.75602 -1.71687,-28.61446 7.43976,-15.73795 -7.15361,-18.02711 v -33.76506 l 18.88554,-49.21687 -6.58133,-17.168671 -18.02711,-7.439759 -16.02409,7.153614 -61.23494,-33.76506 -20.88856,4.578313 -8.87048,27.756025 10.30121,45.496988 -7.43976,16.59639 18.31325,58.08734 -11.44578,43.49398 z"
-       style="display:inline;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:label="LikeLike" />
-    <path
-       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccc"
-       d="m 317.66602,825.12109 v 152.92188 h -81.0254 v -79.83594 h -8.01171 V 831.25 h -48.64453 v 66.95703 H 90.994141 v -72.9668 H 27.470703 v 492.45527 h 63.523438 v -80.6916 h 82.123049 v 201.9199 h 19.50586 v 21.3262 h 23.0664 v -21.3262 h 20.95117 v -121.2285 h 81.0254 l 64.34179,2e-4 V 825.12109 Z M 90.994141,946.2793 h 82.123049 v 81.2656 H 90.994141 Z m 145.646479,80.1211 h 81.0254 v 81.2656 h -81.0254 z m -145.646479,48.3594 h 82.123049 v 113.8847 H 90.994141 Z m 145.646479,81.2636 h 81.0254 v 113.3145 h -81.0254 z"
-       inkscape:label="BoulderRupees"
-       style="display:inline;fill:#808080;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="Stalfos" />
-    <path
-       inkscape:label="Stalfos"
-       id="CenterMaze"
-       d="m 131.62651,1457.0482 h 144.78915 l 96.43073,96.4307 h 66.09939 v 144.503 h -62.9518 l -97.57531,97.5753 h -145.0753 l -98.004515,-98.0045 v -144.9322 z"
-       style="display:inline;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       inkscape:label="CenterMaze"
-       id="rect4982"
-       style="opacity:1;fill:#808080;fill-opacity:1;stroke-width:24.3;stop-color:#000000"
-       d="m 560.84375,856.51758 v 58 h 72.0957 v 72.02539 H 811.65039 V 922.51758 H 685.03516 v -66 z m 132.19141,0 v 58 h 134.63867 v 72.02539 h 57.08594 v -72.02539 h 64.0957 v -58 z m 265.82031,0 V 1050.7227 H 1008.373 V 914.51758 h 11.4454 V 1059.2051 H 892.3125 v 49.0449 h 120.6504 v 64.9434 h 64.0859 V 856.51758 Z M 560.84375,930.54297 V 1042.7109 H 753.13281 V 995.77148 H 624.93945 v -65.22851 z m 331.46875,0 v 120.66213 h 56.54297 V 930.54297 Z m -130.02344,64.56641 v 114.00002 h 114 V 995.10938 Z m -201.44531,63.62502 v 185.4218 h 57.22852 v -138.4941 h 135.06054 v -46.9277 z m 73.25195,58.375 v 127.0468 h 112.16992 v -127.0468 z m 128.19336,0 v 127.0468 h 114 v -127.0468 z m 130.02344,0 v 72.1074 54.9394 h 184.7363 v -54.9394 h -72.0976 v -72.1074 z" />
-    <path
-       id="check:Gerudo_Training_Grounds_Maze_Path_First_Chest"
-       style="fill:#1a1a1a;fill-opacity:1;stroke-width:24.3;stop-color:#000000"
-       d="m 560.84375,914.51758 v 16.02539 h 64.0957 v -16.02539 z m 323.91602,0 v 16.02539 h 64.0957 v -16.02539 z m -73.10938,7.92773 v 64.09766 h 16.02344 v -64.09766 z m 64.63867,72.66407 v 56.09572 h 16.02344 v -56.09572 z m -187.2539,47.60152 v 16.0235 h 64.09765 v -16.0235 z m 57.23046,74.3985 v 64.0957 h 16.02344 v -64.0957 z m 130.02344,0 v 64.0957 h 16.02344 v -64.0957 z m 136.66214,56.084 v 16.0234 h 64.0976 v -16.0234 z m -394.87893,6.8671 v 64.0957 h 16.02343 v -64.0957 z"
-       inkscape:label="CenterMazeDoors" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Maze_Path_First_Chest"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000"
-       id="check:Gerudo_Training_Grounds_Maze_Path_Second_Chest"
-       cx="583.01208"
-       cy="1075.1807"
-       r="5" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Maze_Path_Second_Chest"
-       r="5"
-       cy="882.46985"
-       cx="665"
-       id="check:Gerudo_Training_Grounds_Maze_Path_Third_Chest"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Maze_Path_Third_Chest"
-       r="5"
-       cy="889.3374"
-       cx="722.22888"
-       id="check:Gerudo_Training_Grounds_Maze_Right_Central_Chest"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Maze_Right_Central_Chest"
-       r="5"
-       cy="1083.9156"
-       cx="916.80725"
-       id="check:Gerudo_Training_Grounds_Maze_Right_Side_Chest"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Maze_Right_Side_Chest"
-       r="5"
-       cy="1019.8192"
-       cx="979.75903"
-       id="check:Gerudo_Training_Grounds_Maze_Path_Final_Chest"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Maze_Path_Final_Chest"
-       r="5"
-       cy="1051.8674"
-       cx="818.37347"
-       id="check:Gerudo_Training_Grounds_Freestanding_Key"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Freestanding_Key"
-       r="5"
-       cy="1083.9156"
-       cx="1268.1927"
-       id="check:Gerudo_Training_Grounds_Underwater_Silver_Rupee_Chest"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Underwater_Silver_Rupee_Chest"
-       r="5"
-       cy="1057.5903"
-       cx="1726.024"
-       id="check:Gerudo_Training_Grounds_Beamos_Chest"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Beamos_Chest"
-       r="5"
-       cy="1625.755"
-       cx="1441.9316"
-       id="check:Gerudo_Training_Grounds_Lobby_Right_Chest"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Lobby_Right_Chest"
-       r="5"
-       cy="1544.0361"
-       cx="912.22894"
-       id="check:Gerudo_Training_Grounds_Lobby_Left_Chest"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Lobby_Left_Chest"
-       r="5"
-       cy="1544.0361"
-       cx="730.24097"
-       id="check:Gerudo_Training_Grounds_Stalfos_Chest"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Stalfos_Chest"
-       r="5"
-       cy="1498.2531"
-       cx="165.96385"
-       id="check:Gerudo_Training_Grounds_Heavy_Block_First_Chest"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Heavy_Block_First_Chest"
-       r="5"
-       cy="202.59036"
-       cx="240.36145"
-       id="check:Gerudo_Training_Grounds_Heavy_Block_Second_Chest"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Heavy_Block_Second_Chest"
-       r="5"
-       cy="151.08434"
-       cx="169.39758"
-       id="check:Gerudo_Training_Grounds_Heavy_Block_Third_Chest"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Heavy_Block_Third_Chest"
-       r="5"
-       cy="104.15662"
-       cx="249.51807"
-       id="check:Gerudo_Training_Grounds_Heavy_Block_Fourth_Chest"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Heavy_Block_Fourth_Chest"
-       r="5"
-       cy="69.819275"
-       cx="168.25301"
-       id="check:Gerudo_Training_Grounds_Before_Heavy_Block_Chest"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Before_Heavy_Block_Chest"
-       r="5"
-       cy="540.24097"
-       cx="290.7229"
-       id="check:Gerudo_Training_Grounds_Eye_Statue_Chest"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Eye_Statue_Chest"
-       r="5"
-       cy="572.28918"
-       cx="873.31323"
-       id="check:Gerudo_Training_Grounds_Hammer_Room_Switch_Chest"
-       style="display:inline;fill:#000000;fill-opacity:1;stroke-width:26.5381;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Hammer_Room_Switch_Chest"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000"
-       id="check:Gerudo_Training_Grounds_Hammer_Room_Clear_Chest"
-       cx="1429.2928"
-       cy="587.5802"
-       r="5" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Hammer_Room_Clear_Chest"
-       style="fill:#000000;stroke-width:26.5381;stop-color:#000000"
-       id="FlameWalls"
-       cx="1429.2928"
-       cy="474.27271"
-       r="5" />
-    <path
-       inkscape:label="FlameWalls"
-       transform="translate(27.470703,51.506024)"
-       d="m 105.28516,846.41602 a 2.8614457,24.036144 0 0 0 -2.84571,24.03515 2.8614457,24.036144 0 0 0 2.86133,24.03711 2.8614457,24.036144 0 0 0 2.86133,-24.03711 2.8614457,24.036144 0 0 0 -2.86133,-24.03515 2.8614457,24.036144 0 0 0 -0.0156,0 z m 71.83789,76.11328 a 31.189758,2.8614457 0 0 0 -31.18946,2.86132 31.189758,2.8614457 0 0 0 31.18946,2.86329 31.189758,2.8614457 0 0 0 31.18945,-2.86329 31.189758,2.8614457 0 0 0 -31.18945,-2.86132 z m 72.3789,295.3027 a 2.8614457,24.036144 0 0 0 -2.8457,24.0352 2.8614457,24.036144 0 0 0 2.86133,24.0371 2.8614457,24.036144 0 0 0 2.86133,-24.0371 2.8614457,24.036144 0 0 0 -2.86133,-24.0352 2.8614457,24.036144 0 0 0 -0.0156,0 z"
-       style="opacity:1;fill:#ff7f2a;fill-opacity:1;stroke:none;stroke-width:24.3;stop-color:#000000"
-       id="path5407" />
-    <path
-       id="FireDonutUpstairs"
-       style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       d="m 362.54492,563.13281 v 48.64453 H 520.49609 V 599.1875 h 26.32618 v -23.46484 h -26.32618 v -12.58985 z"
-       inkscape:label="UpstairsWolfos" />
-    <path
-       sodipodi:nodetypes="ccccccccccccccccccc"
-       d="m 564.05273,537.95117 c -0.58298,3.23301 -1.10261,6.47712 -1.55859,9.73047 h -25.11523 v 79.83398 h 26.72851 c 18.96902,104.5573 101.55747,185.93821 206.38281,203.36524 v 31.06445 h 80.9336 v -30.80078 c 3.10975,-0.49647 6.2099,-1.05125 9.29883,-1.66406 v -41.25781 c -14.76488,3.55943 -29.91745,5.51031 -45.10157,5.76367 -3.53812,0.0343 -7.07757,-6.7e-4 -10.61328,-0.13867 -30.97012,-1.0909 -61.64669,-9.36943 -88.99609,-23.93164 -26.29434,-13.90115 -49.42095,-33.68708 -67.36914,-57.39258 -18.30753,-24.06747 -31.12567,-52.26029 -37.32617,-81.85156 -6.3566,-30.07889 -5.79302,-61.57974 1.55468,-91.42774 0.10553,-0.43194 0.21777,-0.86176 0.32618,-1.29297 z"
-       inkscape:label="FireDonutUpstairs"
-       style="display:inline;opacity:1;fill:#b3b3b3;fill-opacity:1;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       id="path2508-2" />
-    <path
-       id="check:Gerudo_Training_Grounds_Near_Scarecrow_Chest"
-       style="display:inline;fill:#b3b3b3;fill-opacity:1;stroke-width:24.3;stop-color:#000000"
-       d="m 800.11728,860.45013 v 12.1387 h -43.7031 V 1104.87 h 127.875 V 872.58883 h -59.8906 v -12.1387 z m -93.8828,254.94137 v 128.6856 h 50.1797 127.875 v -128.6856 h -127.875 z"
-       inkscape:label="UpstairsCage" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Near_Scarecrow_Chest"
-       r="5"
-       cy="1051.4539"
-       cx="820.35144"
-       id="check:Gerudo_Training_Grounds_Hidden_Ceiling_Chest"
-       style="display:inline;fill:#000000;stroke-width:26.5381;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Gerudo_Training_Grounds_Hidden_Ceiling_Chest"
-       r="5"
-       cy="1196.3254"
-       cx="835.72888"
-       id="path4043-3-4"
-       style="display:inline;fill:#000000;stroke-width:26.5381;stop-color:#000000" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="svg1935" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" sodipodi:docname="map-gerudo_training_grounds.svg" version="1.1" viewBox="0 0 1842.5078 1744.0511" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+ <metadata id="metadata1941">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>
+     image/svg+xml
+    </dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs id="defs1939"/>
+ <sodipodi:namedview bordercolor="#666666" borderopacity="1" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" gridtolerance="10" guidetolerance="10" id="namedview1937" inkscape:current-layer="g1943" inkscape:cx="544.65712" inkscape:cy="956.69394" inkscape:document-rotation="0" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="705" inkscape:window-maximized="1" inkscape:window-width="1366" inkscape:window-x="892" inkscape:window-y="-8" inkscape:zoom="0.61778804" objecttolerance="10" pagecolor="#ffffff" showgrid="false"/>
+ <g id="Image" inkscape:groupmode="layer" inkscape:label="Image" transform="translate(-27.470703,-51.506024)">
+  <path d="m 666.89453,398.83594 v 65.72461 h -48.55859 v 260.60742 h 48.55859 v 53.41601 h 288.125 v -53.41601 h 43.70508 v -98.51172 h 90.05269 v -79.26172 h -90.05269 v -82.83398 h -43.70508 v -65.72461 z m 636.77927,404.94306 -48.0722,48.93194 v 385.72266 l 48.0722,50.4394 h 243.7969 l 48.0723,-50.4394 V 852.71094 L 1547.4707,803.779 Z" id="Lava" inkscape:label="Lava" sodipodi:nodetypes="cccccccccccccccccccccccccc" style="display:inline;fill:#aa0000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <path d="M 811.76758,330.87891 A 251.70445,251.70445 0 0 0 562.49414,547.68164 h -25.11523 v 79.83398 h 26.72851 a 251.70445,251.70445 0 0 0 206.38281,203.36524 v 31.06445 h 80.9336 V 831.14453 A 251.70445,251.70445 0 0 0 1063.4707,582.58398 251.70445,251.70445 0 0 0 811.76758,330.87891 Z m 0,74.46289 A 177.24124,177.24124 0 0 1 989.00977,582.58398 177.24124,177.24124 0 0 1 811.76758,759.82617 177.24124,177.24124 0 0 1 634.52539,582.58398 177.24124,177.24124 0 0 1 811.76758,405.3418 Z m 45.69531,82.60937 -147.75195,53.125 53.12304,147.75195 147.75196,-53.125 z m 229.31441,59.44336 v 79.26172 h 80.4063 v -27.75586 h 26.8984 v -22.89062 h -26.8984 v -28.61524 z" id="FireDonut" inkscape:label="FireDonut" style="display:inline;opacity:1;fill:#808080;fill-opacity:1;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"/>
+  <path d="m 806.92773,1241.0098 v 21.1543 h -34.81835 l 12.56835,97.9531 -231.24609,231.2461 h -48.80859 l -48.96485,-12.3418 v 35.4062 h -19.57422 v 22.8907 h 19.57422 v 35.9902 l 46.53711,-12.5449 h 49.77344 l 49.37109,36.8242 h 193.02735 v 90.6465 h 48.55859 v -90.6465 H 1037.168 l 48.9648,-37.6328 h 49.7754 l 46.1309,11.7344 v -33.5879 h 21.0429 v -25.0879 h -21.0429 v -33.9922 l -44.918,11.3301 h -51.7969 l -230.66209,-230.6621 11.33008,-97.5254 H 831.25 v -21.1543 z" id="Lobby" inkscape:label="Lobby" style="fill:#808080;fill-opacity:1;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"/>
+  <path d="m 1429.293,1437.3867 v 28.4278 h -65.8594 l -82.0234,82.0234 v 37.2519 h -82.375 v 80.9356 h 82.375 v 40.6445 l 79.9218,79.9219 h 159.8438 l 81.3164,-81.3145 v -159.0351 l -81.3399,-80.4277 h -67.9843 v -28.4278 z" id="Dinolfos" inkscape:label="Dinolfos" style="fill:#808080;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"/>
+  <path d="M 1393.6816,733.26172 V 803.7793 H 1377.5 l 8.584,30.90429 41.4922,18.59961 39.7734,-12.87695 7.7266,-36.62725 -16.6465,3e-4 v -70.51758 z m -324.9316,318.03318 0.4297,64.9551 186.4219,-0.2852 v 59.8028 l 32.0488,2.289 30.6172,-25.4668 1.4316,-36.9121 v -64.3828 z m 526.793,15.1661 -31.1914,7.4394 -18.8848,32.0488 18.8848,33.1914 31.1914,7.4414 16.3086,-10.5879 v -17.8925 h 22.2031 v -23.4707 h -22.2031 v -17.8692 z m -158.1563,174.2558 -23.4707,16.5918 -8.1972,31.5644 v 159.4395 l 71.7304,0.8086 V 1288.873 l -7.6894,-31.5644 z" id="LavaPlatforms" inkscape:label="LavaPlatforms" sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccc" style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.02718;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"/>
+  <path d="m 1478.2227,915.94922 -27.1836,12.87695 v 23.17774 l 22.6054,21.17382 24.0371,-18.59961 -4.58,-29.47265 z m -184.9922,11.30273 -13.3067,11.73243 1.2891,29.32812 30.1875,12.73438 21.4609,-28.47071 -14.4511,-24.75195 z m 130.1953,75.31645 -22.8653,1.6191 -18.2089,24.0781 19.4238,25.8985 26.5058,-6.6778 9.1055,-30.7539 z m 44.1074,116.9492 -21.4473,19.6269 16.795,25.293 29.7421,-3.4414 8.9024,-14.3652 -11.3301,-25.6954 z m -81.1348,48.9648 -27.3164,5.666 -11.33,28.5293 28.125,20.0313 24.0781,-14.9727 1.2129,-22.6621 z" id="LavaPillars" inkscape:label="LavaPillars" style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <path d="m 1676.5469,1009.2461 v 72.8398 h -48.5606 v 48.5606 h 48.5606 v 72.0312 h 193.4316 v -193.4316 z" id="ToiletBowl" inkscape:label="ToiletBowl" style="fill:#808080;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"/>
+  <path d="m 1298.1797,458.49023 v 96.91602 h -113.541 v 63.81055 h 113.541 v 96.64453 h 116.1406 v 21.04101 h 25.0899 v -21.04101 h 116.1386 v -257.3711 z" id="TotemHeads" inkscape:label="TotemHeads" style="display:inline;fill:#808080;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"/>
+  <path d="m 193.43359,263.82617 v 28.61328 h -28.04297 v 214.60938 h 80.1211 V 292.43945 h -27.46875 v -28.61328 z" id="SilverBlock" inkscape:label="SilverBlock" style="fill:#808080;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"/>
+  <path d="m 177.41016,502.4707 v 13.07813 h -44.27344 v 240.77929 h 48.2793 v 57.18165 h 11.44531 v 19.45703 h 23.75 v -19.45703 h 12.01758 v -57.18165 h 51.40234 l 95.09766,-94.69335 V 515.54883 H 280.03125 234.06641 V 502.4707 Z" id="Wolfos" inkscape:label="Wolfos" style="fill:#808080;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"/>
+  <path d="m 168.25301,275.84337 h 74.68374 l 13.16265,-27.75602 -1.71687,-28.61446 7.43976,-15.73795 -7.15361,-18.02711 v -33.76506 l 18.88554,-49.21687 -6.58133,-17.168671 -18.02711,-7.439759 -16.02409,7.153614 -61.23494,-33.76506 -20.88856,4.578313 -8.87048,27.756025 10.30121,45.496988 -7.43976,16.59639 18.31325,58.08734 -11.44578,43.49398 z" id="LikeLike" inkscape:label="LikeLike" style="display:inline;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <path d="m 317.66602,825.12109 v 152.92188 h -81.0254 v -79.83594 h -8.01171 V 831.25 h -48.64453 v 66.95703 H 90.994141 v -72.9668 H 27.470703 v 492.45527 h 63.523438 v -80.6916 h 82.123049 v 201.9199 h 19.50586 v 21.3262 h 23.0664 v -21.3262 h 20.95117 v -121.2285 h 81.0254 l 64.34179,2e-4 V 825.12109 Z M 90.994141,946.2793 h 82.123049 v 81.2656 H 90.994141 Z m 145.646479,80.1211 h 81.0254 v 81.2656 h -81.0254 z m -145.646479,48.3594 h 82.123049 v 113.8847 H 90.994141 Z m 145.646479,81.2636 h 81.0254 v 113.3145 h -81.0254 z" id="BoulderRupees" inkscape:label="BoulderRupees" sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccc" style="display:inline;fill:#808080;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"/>
+  <path d="m 131.62651,1457.0482 h 144.78915 l 96.43073,96.4307 h 66.09939 v 144.503 h -62.9518 l -97.57531,97.5753 h -145.0753 l -98.004515,-98.0045 v -144.9322 z" id="Stalfos" inkscape:label="Stalfos" style="display:inline;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <path d="m 560.84375,856.51758 v 58 h 72.0957 v 72.02539 H 811.65039 V 922.51758 H 685.03516 v -66 z m 132.19141,0 v 58 h 134.63867 v 72.02539 h 57.08594 v -72.02539 h 64.0957 v -58 z m 265.82031,0 V 1050.7227 H 1008.373 V 914.51758 h 11.4454 V 1059.2051 H 892.3125 v 49.0449 h 120.6504 v 64.9434 h 64.0859 V 856.51758 Z M 560.84375,930.54297 V 1042.7109 H 753.13281 V 995.77148 H 624.93945 v -65.22851 z m 331.46875,0 v 120.66213 h 56.54297 V 930.54297 Z m -130.02344,64.56641 v 114.00002 h 114 V 995.10938 Z m -201.44531,63.62502 v 185.4218 h 57.22852 v -138.4941 h 135.06054 v -46.9277 z m 73.25195,58.375 v 127.0468 h 112.16992 v -127.0468 z m 128.19336,0 v 127.0468 h 114 v -127.0468 z m 130.02344,0 v 72.1074 54.9394 h 184.7363 v -54.9394 h -72.0976 v -72.1074 z" id="CenterMaze" inkscape:label="CenterMaze" style="opacity:1;fill:#808080;fill-opacity:1;stroke-width:24.3;stop-color:#000000"/>
+  <path d="m 560.84375,914.51758 v 16.02539 h 64.0957 v -16.02539 z m 323.91602,0 v 16.02539 h 64.0957 v -16.02539 z m -73.10938,7.92773 v 64.09766 h 16.02344 v -64.09766 z m 64.63867,72.66407 v 56.09572 h 16.02344 v -56.09572 z m -187.2539,47.60152 v 16.0235 h 64.09765 v -16.0235 z m 57.23046,74.3985 v 64.0957 h 16.02344 v -64.0957 z m 130.02344,0 v 64.0957 h 16.02344 v -64.0957 z m 136.66214,56.084 v 16.0234 h 64.0976 v -16.0234 z m -394.87893,6.8671 v 64.0957 h 16.02343 v -64.0957 z" id="CenterMazeDoors" inkscape:label="CenterMazeDoors" style="fill:#1a1a1a;fill-opacity:1;stroke-width:24.3;stop-color:#000000"/>
+  <circle cx="583.01208" cy="1075.1807" id="check:Gerudo_Training_Grounds_Maze_Path_First_Chest" inkscape:label="check:Gerudo_Training_Grounds_Maze_Path_First_Chest" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="665" cy="882.46985" id="check:Gerudo_Training_Grounds_Maze_Path_Second_Chest" inkscape:label="check:Gerudo_Training_Grounds_Maze_Path_Second_Chest" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="722.22888" cy="889.3374" id="check:Gerudo_Training_Grounds_Maze_Path_Third_Chest" inkscape:label="check:Gerudo_Training_Grounds_Maze_Path_Third_Chest" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="916.80725" cy="1083.9156" id="check:Gerudo_Training_Grounds_Maze_Right_Central_Chest" inkscape:label="check:Gerudo_Training_Grounds_Maze_Right_Central_Chest" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="979.75903" cy="1019.8192" id="check:Gerudo_Training_Grounds_Maze_Right_Side_Chest" inkscape:label="check:Gerudo_Training_Grounds_Maze_Right_Side_Chest" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="818.37347" cy="1051.8674" id="check:Gerudo_Training_Grounds_Maze_Path_Final_Chest" inkscape:label="check:Gerudo_Training_Grounds_Maze_Path_Final_Chest" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="1268.1927" cy="1083.9156" id="check:Gerudo_Training_Grounds_Freestanding_Key" inkscape:label="check:Gerudo_Training_Grounds_Freestanding_Key" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="1726.024" cy="1057.5903" id="check:Gerudo_Training_Grounds_Underwater_Silver_Rupee_Chest" inkscape:label="check:Gerudo_Training_Grounds_Underwater_Silver_Rupee_Chest" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="1441.9316" cy="1625.755" id="check:Gerudo_Training_Grounds_Beamos_Chest" inkscape:label="check:Gerudo_Training_Grounds_Beamos_Chest" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="912.22894" cy="1544.0361" id="check:Gerudo_Training_Grounds_Lobby_Right_Chest" inkscape:label="check:Gerudo_Training_Grounds_Lobby_Right_Chest" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="730.24097" cy="1544.0361" id="check:Gerudo_Training_Grounds_Lobby_Left_Chest" inkscape:label="check:Gerudo_Training_Grounds_Lobby_Left_Chest" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="165.96385" cy="1498.2531" id="check:Gerudo_Training_Grounds_Stalfos_Chest" inkscape:label="check:Gerudo_Training_Grounds_Stalfos_Chest" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="240.36145" cy="202.59036" id="check:Gerudo_Training_Grounds_Heavy_Block_First_Chest" inkscape:label="check:Gerudo_Training_Grounds_Heavy_Block_First_Chest" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="169.39758" cy="151.08434" id="check:Gerudo_Training_Grounds_Heavy_Block_Second_Chest" inkscape:label="check:Gerudo_Training_Grounds_Heavy_Block_Second_Chest" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="249.51807" cy="104.15662" id="check:Gerudo_Training_Grounds_Heavy_Block_Third_Chest" inkscape:label="check:Gerudo_Training_Grounds_Heavy_Block_Third_Chest" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="168.25301" cy="69.819275" id="check:Gerudo_Training_Grounds_Heavy_Block_Fourth_Chest" inkscape:label="check:Gerudo_Training_Grounds_Heavy_Block_Fourth_Chest" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="290.7229" cy="540.24097" id="check:Gerudo_Training_Grounds_Before_Heavy_Block_Chest" inkscape:label="check:Gerudo_Training_Grounds_Before_Heavy_Block_Chest" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="873.31323" cy="572.28918" id="check:Gerudo_Training_Grounds_Eye_Statue_Chest" inkscape:label="check:Gerudo_Training_Grounds_Eye_Statue_Chest" r="5" style="display:inline;fill:#000000;fill-opacity:1;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="1429.2928" cy="587.5802" id="check:Gerudo_Training_Grounds_Hammer_Room_Switch_Chest" inkscape:label="check:Gerudo_Training_Grounds_Hammer_Room_Switch_Chest" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="1429.2928" cy="474.27271" id="check:Gerudo_Training_Grounds_Hammer_Room_Clear_Chest" inkscape:label="check:Gerudo_Training_Grounds_Hammer_Room_Clear_Chest" r="5" style="fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <path d="m 105.28516,846.41602 a 2.8614457,24.036144 0 0 0 -2.84571,24.03515 2.8614457,24.036144 0 0 0 2.86133,24.03711 2.8614457,24.036144 0 0 0 2.86133,-24.03711 2.8614457,24.036144 0 0 0 -2.86133,-24.03515 2.8614457,24.036144 0 0 0 -0.0156,0 z m 71.83789,76.11328 a 31.189758,2.8614457 0 0 0 -31.18946,2.86132 31.189758,2.8614457 0 0 0 31.18946,2.86329 31.189758,2.8614457 0 0 0 31.18945,-2.86329 31.189758,2.8614457 0 0 0 -31.18945,-2.86132 z m 72.3789,295.3027 a 2.8614457,24.036144 0 0 0 -2.8457,24.0352 2.8614457,24.036144 0 0 0 2.86133,24.0371 2.8614457,24.036144 0 0 0 2.86133,-24.0371 2.8614457,24.036144 0 0 0 -2.86133,-24.0352 2.8614457,24.036144 0 0 0 -0.0156,0 z" id="FlameWalls" inkscape:label="FlameWalls" style="opacity:1;fill:#ff7f2a;fill-opacity:1;stroke:none;stroke-width:24.3;stop-color:#000000" transform="translate(27.470703,51.506024)"/>
+  <path d="m 362.54492,563.13281 v 48.64453 H 520.49609 V 599.1875 h 26.32618 v -23.46484 h -26.32618 v -12.58985 z" id="UpstairsWolfos" inkscape:label="UpstairsWolfos" style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"/>
+  <path d="m 564.05273,537.95117 c -0.58298,3.23301 -1.10261,6.47712 -1.55859,9.73047 h -25.11523 v 79.83398 h 26.72851 c 18.96902,104.5573 101.55747,185.93821 206.38281,203.36524 v 31.06445 h 80.9336 v -30.80078 c 3.10975,-0.49647 6.2099,-1.05125 9.29883,-1.66406 v -41.25781 c -14.76488,3.55943 -29.91745,5.51031 -45.10157,5.76367 -3.53812,0.0343 -7.07757,-6.7e-4 -10.61328,-0.13867 -30.97012,-1.0909 -61.64669,-9.36943 -88.99609,-23.93164 -26.29434,-13.90115 -49.42095,-33.68708 -67.36914,-57.39258 -18.30753,-24.06747 -31.12567,-52.26029 -37.32617,-81.85156 -6.3566,-30.07889 -5.79302,-61.57974 1.55468,-91.42774 0.10553,-0.43194 0.21777,-0.86176 0.32618,-1.29297 z" id="FireDonutUpstairs" inkscape:label="FireDonutUpstairs" sodipodi:nodetypes="ccccccccccccccccccc" style="display:inline;opacity:1;fill:#b3b3b3;fill-opacity:1;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"/>
+  <path d="m 800.11728,860.45013 v 12.1387 h -43.7031 V 1104.87 h 127.875 V 872.58883 h -59.8906 v -12.1387 z m -93.8828,254.94137 v 128.6856 h 50.1797 127.875 v -128.6856 h -127.875 z" id="UpstairsCage" inkscape:label="UpstairsCage" style="display:inline;fill:#b3b3b3;fill-opacity:1;stroke-width:24.3;stop-color:#000000"/>
+  <circle cx="820.35144" cy="1051.4539" id="check:Gerudo_Training_Grounds_Near_Scarecrow_Chest" inkscape:label="check:Gerudo_Training_Grounds_Near_Scarecrow_Chest" r="5" style="display:inline;fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+  <circle cx="835.72888" cy="1196.3254" id="check:Gerudo_Training_Grounds_Hidden_Ceiling_Chest" inkscape:label="check:Gerudo_Training_Grounds_Hidden_Ceiling_Chest" r="5" style="display:inline;fill:#000000;stroke-width:26.5381;stop-color:#000000"/>
+ </g>
 </svg>

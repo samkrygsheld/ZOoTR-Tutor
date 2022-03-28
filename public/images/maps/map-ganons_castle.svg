@@ -1,207 +1,41 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   id="svg1296"
-   viewBox="0 0 1792.6875 2439.7148"
-   sodipodi:docname="map-ganons_castle.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
-  <metadata
-     id="metadata1302">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs1300" />
-  <sodipodi:namedview
-     inkscape:document-rotation="0"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
-     id="Image"
-     showgrid="false"
-     inkscape:zoom="0.35569614"
-     inkscape:cx="813.96959"
-     inkscape:cy="1663.3274"
-     inkscape:window-x="892"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g1304"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
-  <g
-     inkscape:groupmode="layer"
-     inkscape:label="Image"
-     id="Light"
-     transform="translate(-865.25586,-265.39062)">
-    <path
-       inkscape:label="Light"
-       id="Spirit"
-       style="fill:#b3b300;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1056.5957,1645.5273 -55.1641,55.6622 v 43.2382 h -17.39449 v -19.8789 h -16.89844 v -22.8613 h -83.49414 v 22.3633 h -18.38867 v 62.6211 h 118.2832 v -18.3887 h 17.89254 v 43.7344 l 56.6563,55.166 h 109.3359 l 56.1602,-57.1543 v -42.7402 h 82.998 v -22.8614 h -82.998 v -42.2441 l -57.1524,-56.6563 z" />
-    <path
-       inkscape:label="Spirit"
-       id="Shadow"
-       style="fill:#ff690e;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1405.4824,2130.0898 -134.3672,233.2676 -14.5976,-8.4277 14.5625,-25.2207 -130.8242,-75.5313 -55.4414,96.0274 41.5312,23.9785 -6.6016,11.4355 -41.8398,-24.1562 -54.9199,95.1269 131.7929,76.1192 5.7539,-9.9668 41.1934,23.7832 -5.998,10.3906 19.8554,74.1016 60.5645,34.9668 71.5058,-19.1582 37.1446,-64.3379 -18.7168,-69.8535 -64.0196,-36.9629 -69.2929,18.5683 -6.9317,12.0059 -42.2148,-24.375 6.6934,-11.5957 -42.7383,-24.6758 41.3144,-71.5605 42.1973,24.3632 15.4199,-26.7089 14.8613,8.582 -14.9863,26.0176 207.4004,120.041 159.5039,-276.2676 -92.2578,-53.2656 13.4805,-23.3477 -20.3711,-11.7617 -13.4805,23.3477 z" />
-    <path
-       inkscape:label="Shadow"
-       id="Water"
-       style="fill:#58328e;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 2547.5605,265.39062 -40.121,68.70118 20.5527,11.86718 c -8.6436,30.18901 -38.9438,24.83162 -52.7442,42.68555 -12.3955,16.03644 -3.4782,34.04415 7.2071,73.55469 l 21.8672,-7.45508 c 0,0 -17.3948,-49.94786 -4.2246,-59.39062 18.7429,-13.43833 38.1986,-6.98374 48.9101,-37.26172 l 69.1563,39.92773 39.7793,-68.89844 z m -171.3886,150.74219 -21.6309,5.79688 -11.7578,20.36328 5.7324,21.39648 c 0,0 -15.1567,26.83728 -20.375,46.7168 -5.2184,19.87952 -31.5602,35.53497 -38.2695,43.23828 -6.7093,7.70331 -20.6236,29.81869 -2.9805,52.43164 17.643,22.61295 37.795,26.85712 65.9864,27.09571 l 125.1816,71.86718 35.8066,-62.01953 -18.5039,-10.68359 c 17.5623,-12.12999 50.0238,-40.99149 31.8223,-79.4375 -24.3524,-51.43825 -17.8906,-60.38282 -17.8906,-60.38282 l -22.1172,5.4668 c 0,0 -0.4965,5.71451 2.9824,24.35156 3.479,18.63705 19.3824,28.82517 19.6309,52.1836 0.216,20.30886 -17.4184,31.22772 -39.1739,43.53125 l -81.9902,-47.33789 -23.9961,41.92578 c -14.6774,-0.2435 -37.5665,-1.79497 -47.1738,-8.79688 -14.6611,-10.68524 -18.8867,-28.57659 -6.959,-37.02539 11.9277,-8.44879 33.5477,-24.85001 38.5176,-41.99609 4.9698,-17.14609 11.4612,-38.13396 19.8945,-48.76172 l 22.4336,-6.01172 11.6543,-20.18554 -5.7813,-21.57813 z m 218.3066,87.33985 -19.5976,33.85351 34.707,20.03906 19.5586,-33.87695 z m -342.7558,209.35937 -71.9336,124.5918 165.9843,96.3125 72.1426,-124.95313 z m -267.7286,355.37887 -11.7382,3.1446 -10.2715,16.3027 3.7187,13.8789 16.1973,9.3496 12.5742,-3.3691 9.9414,-17.2188 -3.2637,-12.1816 z m 295.8477,96.8184 -13.5137,3.6211 -9.5058,15.6719 3.0332,11.3203 17.4179,10.0547 12.9493,-3.4688 9.2597,-16.041 -3.1113,-11.6152 z m -259.4336,61.8125 -34.5312,9.2539 -30.9239,53.5605 45.836,26.4629 -10.3262,17.8848 18.7148,12.2031 11.2364,-19.4629 46.4941,26.8438 31.3379,-54.2774 -8.7246,-32.5664 z" />
-    <path
-       inkscape:label="Water"
-       id="Fire"
-       style="fill:#0000ff;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       d="m 2452.3867,1612.4766 -81.2578,81.2578 v 18.3886 l -14.9082,5.4668 -10.9355,-8.4492 h -84.4864 v 35.7832 h -22.8613 v 23.8555 h 22.8613 v 35.7832 h 84.4864 l 11.9296,-8.9453 13.8829,7.4551 v 14.4433 l 82.0351,82.0352 h 96.4766 l 95.9824,-95.9824 v -96.5391 l -94.5527,-94.5527 z" />
-    <path
-       inkscape:label="Fire"
-       d="m 1410.3334,1056.0889 a 126.51247,126.51247 0 0 0 -126.4082,126.5117 126.51247,126.51247 0 0 0 126.5117,126.5137 126.51247,126.51247 0 0 0 126.5117,-126.5137 126.51247,126.51247 0 0 0 -126.5117,-126.5117 126.51247,126.51247 0 0 0 -0.1035,0 z m 0.5136,28.0312 c 5.5401,0.036 11.0779,0.5305 16.5352,1.4863 15.8189,2.7221 30.91,9.443 43.5723,19.295 l -138.2051,138.205 c -2.7909,-3.5798 -5.3437,-7.345 -7.6074,-11.2812 -10.5542,-18.1589 -14.9764,-39.7713 -12.5176,-60.6211 2.5778,-22.7348 13.4409,-44.4115 30.084,-60.1074 17.5619,-16.7314 41.5139,-26.5481 65.7656,-26.9649 0.7913,-0.014 1.5816,-0.017 2.373,-0.012 z m 77.291,37.9629 c 8.3607,10.7493 14.4835,23.2388 17.8028,36.4512 4.653,18.3456 3.815,38.0215 -2.3125,55.9238 -6.8,20.0151 -20.259,37.6911 -37.7598,49.5488 -13.4576,9.1804 -29.223,14.939 -45.4336,16.5664 -18.252,1.8846 -37.0083,-1.4713 -53.4609,-9.5996 -6.038,-2.9512 -11.7452,-6.5542 -17.041,-10.6855 z"
-       style="fill:#ff0000;stroke-width:3.4;stop-color:#000000"
-       id="Forest" />
-    <path
-       inkscape:label="Forest"
-       style="fill:#006600;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1989.0573,2177.4203 10.2442,17.7435 -15.4777,8.9361 42.2253,73.1364 -27.0544,15.6199 -23.7611,88.6776 61.3514,106.2636 75.5465,20.2426 44.9934,77.9308 52.3153,-30.2043 71.724,-41.4098 -46.1052,-79.8565 19.8339,-74.0212 -61.7935,-107.0295 -88.036,-23.5892 -25.8181,14.9061 -40.6607,-70.4264 -16.1387,9.3176 -11.6062,-20.1025 z"
-       id="Lobby" />
-    <path
-       inkscape:label="Lobby"
-       id="check:Ganons_Castle_Forest_Trial_Chest"
-       style="fill:#484848;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1761.6738,1196.3828 -486.709,281.002 v 553.8437 l 424.5196,248.8164 h 22.5781 v 40.3926 h 25.3477 v 17.8906 h -95.4219 v 93.9317 l 64.6074,64.8554 v 207.9903 l 87.1602,-0.062 0.057,-207.9278 h 0.01 l 63.8632,-63.8613 v -94.9258 h -94.4277 v -17.8906 h 24.8477 v -40.3926 h 22.7558 l 423.6602,-244.5996 v -560.293 z" />
-    <circle
-       inkscape:label="check:Ganons_Castle_Forest_Trial_Chest"
-       r="12.5"
-       cy="2410.3459"
-       cx="2135.3284"
-       id="check:Ganons_Castle_Spirit_Trial_Crystal_Switch_Chest"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Ganons_Castle_Spirit_Trial_Crystal_Switch_Chest"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       id="check:Ganons_Castle_Spirit_Trial_Invisible_Chest"
-       cx="1129.6534"
-       cy="2312.981"
-       r="12.5" />
-    <circle
-       inkscape:label="check:Ganons_Castle_Spirit_Trial_Invisible_Chest"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       id="check:Ganons_Castle_Light_Trial_Lullaby_Chest"
-       cx="1054.1113"
-       cy="2450.1497"
-       r="12.5" />
-    <circle
-       inkscape:label="check:Ganons_Castle_Light_Trial_Lullaby_Chest"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       id="check:Ganons_Castle_Light_Trial_Invisible_Enemies_Chest"
-       cx="924.89441"
-       cy="1722.5593"
-       r="12.5" />
-    <circle
-       inkscape:label="check:Ganons_Castle_Light_Trial_Invisible_Enemies_Chest"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       id="check:Ganons_Castle_Light_Trial_Third_Left_Chest"
-       cx="1111.7618"
-       cy="1756.3184"
-       r="12.5" />
-    <circle
-       inkscape:label="check:Ganons_Castle_Light_Trial_Third_Left_Chest"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       id="check:Ganons_Castle_Light_Trial_Second_Left_Chest"
-       cx="1052.0631"
-       cy="1812.0171"
-       r="12.5" />
-    <circle
-       inkscape:label="check:Ganons_Castle_Light_Trial_Second_Left_Chest"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       id="check:Ganons_Castle_Light_Trial_First_Left_Chest"
-       cx="1111.7618"
-       cy="1829.9087"
-       r="12.5" />
-    <circle
-       inkscape:label="check:Ganons_Castle_Light_Trial_First_Left_Chest"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       id="check:Ganons_Castle_Light_Trial_First_Right_Chest"
-       cx="1173.3884"
-       cy="1812.0171"
-       r="12.5" />
-    <circle
-       inkscape:label="check:Ganons_Castle_Light_Trial_First_Right_Chest"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       id="check:Ganons_Castle_Light_Trial_Second_Right_Chest"
-       cx="1173.3884"
-       cy="1712.6195"
-       r="12.5" />
-    <circle
-       inkscape:label="check:Ganons_Castle_Light_Trial_Second_Right_Chest"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       id="check:Ganons_Castle_Light_Trial_Third_Right_Chest"
-       cx="1111.7618"
-       cy="1676.8364"
-       r="12.5" />
-    <circle
-       inkscape:label="check:Ganons_Castle_Light_Trial_Third_Right_Chest"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       id="check:Ganons_Castle_Shadow_Trial_Front_Chest"
-       cx="1052.0631"
-       cy="1712.6195"
-       r="12.5" />
-    <circle
-       inkscape:label="check:Ganons_Castle_Shadow_Trial_Front_Chest"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       id="check:Ganons_Castle_Shadow_Trial_Golden_Gauntlets_Chest"
-       cx="1982.1885"
-       cy="1088.316"
-       r="12.5" />
-    <circle
-       inkscape:label="check:Ganons_Castle_Shadow_Trial_Golden_Gauntlets_Chest"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       id="check:Ganons_Castle_Water_Trial_Left_Chest"
-       cx="2456.5017"
-       cy="647.73944"
-       r="12.5" />
-    <circle
-       inkscape:label="check:Ganons_Castle_Water_Trial_Left_Chest"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       id="check:Ganons_Castle_Water_Trial_Right_Chest"
-       cx="2583.0142"
-       cy="1679.519"
-       r="12.5" />
-    <circle
-       inkscape:label="check:Ganons_Castle_Water_Trial_Right_Chest"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       id="path2467-9"
-       cx="2583.0142"
-       cy="1828.5226"
-       r="12.5" />
-    <circle
-       r="12.5"
-       cy="1749.8037"
-       cx="1759.7434"
-       id="check:Ganons_Tower_Boss_Key_Chest"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       inkscape:label="check:Ganons_Tower_Boss_Key_Chest" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="svg1296" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" sodipodi:docname="map-ganons_castle.svg" version="1.1" viewBox="0 0 1792.6875 2439.7148" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+ <metadata id="metadata1302">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>
+     image/svg+xml
+    </dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs id="defs1300"/>
+ <sodipodi:namedview bordercolor="#666666" borderopacity="1" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" gridtolerance="10" guidetolerance="10" id="namedview1298" inkscape:current-layer="g1304" inkscape:cx="813.96959" inkscape:cy="1663.3274" inkscape:document-rotation="0" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="705" inkscape:window-maximized="1" inkscape:window-width="1366" inkscape:window-x="892" inkscape:window-y="-8" inkscape:zoom="0.35569614" objecttolerance="10" pagecolor="#ffffff" showgrid="false"/>
+ <g id="Image" inkscape:groupmode="layer" inkscape:label="Image" transform="translate(-865.25586,-265.39062)">
+  <path d="m 1056.5957,1645.5273 -55.1641,55.6622 v 43.2382 h -17.39449 v -19.8789 h -16.89844 v -22.8613 h -83.49414 v 22.3633 h -18.38867 v 62.6211 h 118.2832 v -18.3887 h 17.89254 v 43.7344 l 56.6563,55.166 h 109.3359 l 56.1602,-57.1543 v -42.7402 h 82.998 v -22.8614 h -82.998 v -42.2441 l -57.1524,-56.6563 z" id="Light" inkscape:label="Light" style="fill:#b3b300;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <path d="m 1405.4824,2130.0898 -134.3672,233.2676 -14.5976,-8.4277 14.5625,-25.2207 -130.8242,-75.5313 -55.4414,96.0274 41.5312,23.9785 -6.6016,11.4355 -41.8398,-24.1562 -54.9199,95.1269 131.7929,76.1192 5.7539,-9.9668 41.1934,23.7832 -5.998,10.3906 19.8554,74.1016 60.5645,34.9668 71.5058,-19.1582 37.1446,-64.3379 -18.7168,-69.8535 -64.0196,-36.9629 -69.2929,18.5683 -6.9317,12.0059 -42.2148,-24.375 6.6934,-11.5957 -42.7383,-24.6758 41.3144,-71.5605 42.1973,24.3632 15.4199,-26.7089 14.8613,8.582 -14.9863,26.0176 207.4004,120.041 159.5039,-276.2676 -92.2578,-53.2656 13.4805,-23.3477 -20.3711,-11.7617 -13.4805,23.3477 z" id="Spirit" inkscape:label="Spirit" style="fill:#ff690e;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <path d="m 2547.5605,265.39062 -40.121,68.70118 20.5527,11.86718 c -8.6436,30.18901 -38.9438,24.83162 -52.7442,42.68555 -12.3955,16.03644 -3.4782,34.04415 7.2071,73.55469 l 21.8672,-7.45508 c 0,0 -17.3948,-49.94786 -4.2246,-59.39062 18.7429,-13.43833 38.1986,-6.98374 48.9101,-37.26172 l 69.1563,39.92773 39.7793,-68.89844 z m -171.3886,150.74219 -21.6309,5.79688 -11.7578,20.36328 5.7324,21.39648 c 0,0 -15.1567,26.83728 -20.375,46.7168 -5.2184,19.87952 -31.5602,35.53497 -38.2695,43.23828 -6.7093,7.70331 -20.6236,29.81869 -2.9805,52.43164 17.643,22.61295 37.795,26.85712 65.9864,27.09571 l 125.1816,71.86718 35.8066,-62.01953 -18.5039,-10.68359 c 17.5623,-12.12999 50.0238,-40.99149 31.8223,-79.4375 -24.3524,-51.43825 -17.8906,-60.38282 -17.8906,-60.38282 l -22.1172,5.4668 c 0,0 -0.4965,5.71451 2.9824,24.35156 3.479,18.63705 19.3824,28.82517 19.6309,52.1836 0.216,20.30886 -17.4184,31.22772 -39.1739,43.53125 l -81.9902,-47.33789 -23.9961,41.92578 c -14.6774,-0.2435 -37.5665,-1.79497 -47.1738,-8.79688 -14.6611,-10.68524 -18.8867,-28.57659 -6.959,-37.02539 11.9277,-8.44879 33.5477,-24.85001 38.5176,-41.99609 4.9698,-17.14609 11.4612,-38.13396 19.8945,-48.76172 l 22.4336,-6.01172 11.6543,-20.18554 -5.7813,-21.57813 z m 218.3066,87.33985 -19.5976,33.85351 34.707,20.03906 19.5586,-33.87695 z m -342.7558,209.35937 -71.9336,124.5918 165.9843,96.3125 72.1426,-124.95313 z m -267.7286,355.37887 -11.7382,3.1446 -10.2715,16.3027 3.7187,13.8789 16.1973,9.3496 12.5742,-3.3691 9.9414,-17.2188 -3.2637,-12.1816 z m 295.8477,96.8184 -13.5137,3.6211 -9.5058,15.6719 3.0332,11.3203 17.4179,10.0547 12.9493,-3.4688 9.2597,-16.041 -3.1113,-11.6152 z m -259.4336,61.8125 -34.5312,9.2539 -30.9239,53.5605 45.836,26.4629 -10.3262,17.8848 18.7148,12.2031 11.2364,-19.4629 46.4941,26.8438 31.3379,-54.2774 -8.7246,-32.5664 z" id="Shadow" inkscape:label="Shadow" style="fill:#58328e;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <path d="m 2452.3867,1612.4766 -81.2578,81.2578 v 18.3886 l -14.9082,5.4668 -10.9355,-8.4492 h -84.4864 v 35.7832 h -22.8613 v 23.8555 h 22.8613 v 35.7832 h 84.4864 l 11.9296,-8.9453 13.8829,7.4551 v 14.4433 l 82.0351,82.0352 h 96.4766 l 95.9824,-95.9824 v -96.5391 l -94.5527,-94.5527 z" id="Water" inkscape:label="Water" style="fill:#0000ff;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"/>
+  <path d="m 1410.3334,1056.0889 a 126.51247,126.51247 0 0 0 -126.4082,126.5117 126.51247,126.51247 0 0 0 126.5117,126.5137 126.51247,126.51247 0 0 0 126.5117,-126.5137 126.51247,126.51247 0 0 0 -126.5117,-126.5117 126.51247,126.51247 0 0 0 -0.1035,0 z m 0.5136,28.0312 c 5.5401,0.036 11.0779,0.5305 16.5352,1.4863 15.8189,2.7221 30.91,9.443 43.5723,19.295 l -138.2051,138.205 c -2.7909,-3.5798 -5.3437,-7.345 -7.6074,-11.2812 -10.5542,-18.1589 -14.9764,-39.7713 -12.5176,-60.6211 2.5778,-22.7348 13.4409,-44.4115 30.084,-60.1074 17.5619,-16.7314 41.5139,-26.5481 65.7656,-26.9649 0.7913,-0.014 1.5816,-0.017 2.373,-0.012 z m 77.291,37.9629 c 8.3607,10.7493 14.4835,23.2388 17.8028,36.4512 4.653,18.3456 3.815,38.0215 -2.3125,55.9238 -6.8,20.0151 -20.259,37.6911 -37.7598,49.5488 -13.4576,9.1804 -29.223,14.939 -45.4336,16.5664 -18.252,1.8846 -37.0083,-1.4713 -53.4609,-9.5996 -6.038,-2.9512 -11.7452,-6.5542 -17.041,-10.6855 z" id="Fire" inkscape:label="Fire" style="fill:#ff0000;stroke-width:3.4;stop-color:#000000"/>
+  <path d="m 1989.0573,2177.4203 10.2442,17.7435 -15.4777,8.9361 42.2253,73.1364 -27.0544,15.6199 -23.7611,88.6776 61.3514,106.2636 75.5465,20.2426 44.9934,77.9308 52.3153,-30.2043 71.724,-41.4098 -46.1052,-79.8565 19.8339,-74.0212 -61.7935,-107.0295 -88.036,-23.5892 -25.8181,14.9061 -40.6607,-70.4264 -16.1387,9.3176 -11.6062,-20.1025 z" id="Forest" inkscape:label="Forest" style="fill:#006600;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <path d="m 1761.6738,1196.3828 -486.709,281.002 v 553.8437 l 424.5196,248.8164 h 22.5781 v 40.3926 h 25.3477 v 17.8906 h -95.4219 v 93.9317 l 64.6074,64.8554 v 207.9903 l 87.1602,-0.062 0.057,-207.9278 h 0.01 l 63.8632,-63.8613 v -94.9258 h -94.4277 v -17.8906 h 24.8477 v -40.3926 h 22.7558 l 423.6602,-244.5996 v -560.293 z" id="Lobby" inkscape:label="Lobby" style="fill:#484848;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <circle cx="2135.3284" cy="2410.3459" id="check:Ganons_Castle_Forest_Trial_Chest" inkscape:label="check:Ganons_Castle_Forest_Trial_Chest" r="12.5" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"/>
+  <circle cx="1129.6534" cy="2312.981" id="check:Ganons_Castle_Spirit_Trial_Crystal_Switch_Chest" inkscape:label="check:Ganons_Castle_Spirit_Trial_Crystal_Switch_Chest" r="12.5" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"/>
+  <circle cx="1054.1113" cy="2450.1497" id="check:Ganons_Castle_Spirit_Trial_Invisible_Chest" inkscape:label="check:Ganons_Castle_Spirit_Trial_Invisible_Chest" r="12.5" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"/>
+  <circle cx="924.89441" cy="1722.5593" id="check:Ganons_Castle_Light_Trial_Lullaby_Chest" inkscape:label="check:Ganons_Castle_Light_Trial_Lullaby_Chest" r="12.5" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"/>
+  <circle cx="1111.7618" cy="1756.3184" id="check:Ganons_Castle_Light_Trial_Invisible_Enemies_Chest" inkscape:label="check:Ganons_Castle_Light_Trial_Invisible_Enemies_Chest" r="12.5" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"/>
+  <circle cx="1052.0631" cy="1812.0171" id="check:Ganons_Castle_Light_Trial_Third_Left_Chest" inkscape:label="check:Ganons_Castle_Light_Trial_Third_Left_Chest" r="12.5" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"/>
+  <circle cx="1111.7618" cy="1829.9087" id="check:Ganons_Castle_Light_Trial_Second_Left_Chest" inkscape:label="check:Ganons_Castle_Light_Trial_Second_Left_Chest" r="12.5" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"/>
+  <circle cx="1173.3884" cy="1812.0171" id="check:Ganons_Castle_Light_Trial_First_Left_Chest" inkscape:label="check:Ganons_Castle_Light_Trial_First_Left_Chest" r="12.5" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"/>
+  <circle cx="1173.3884" cy="1712.6195" id="check:Ganons_Castle_Light_Trial_First_Right_Chest" inkscape:label="check:Ganons_Castle_Light_Trial_First_Right_Chest" r="12.5" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"/>
+  <circle cx="1111.7618" cy="1676.8364" id="check:Ganons_Castle_Light_Trial_Second_Right_Chest" inkscape:label="check:Ganons_Castle_Light_Trial_Second_Right_Chest" r="12.5" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"/>
+  <circle cx="1052.0631" cy="1712.6195" id="check:Ganons_Castle_Light_Trial_Third_Right_Chest" inkscape:label="check:Ganons_Castle_Light_Trial_Third_Right_Chest" r="12.5" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"/>
+  <circle cx="1982.1885" cy="1088.316" id="check:Ganons_Castle_Shadow_Trial_Front_Chest" inkscape:label="check:Ganons_Castle_Shadow_Trial_Front_Chest" r="12.5" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"/>
+  <circle cx="2456.5017" cy="647.73944" id="check:Ganons_Castle_Shadow_Trial_Golden_Gauntlets_Chest" inkscape:label="check:Ganons_Castle_Shadow_Trial_Golden_Gauntlets_Chest" r="12.5" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"/>
+  <circle cx="2583.0142" cy="1679.519" id="check:Ganons_Castle_Water_Trial_Left_Chest" inkscape:label="check:Ganons_Castle_Water_Trial_Left_Chest" r="12.5" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"/>
+  <circle cx="2583.0142" cy="1828.5226" id="check:Ganons_Castle_Water_Trial_Right_Chest" inkscape:label="check:Ganons_Castle_Water_Trial_Right_Chest" r="12.5" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"/>
+  <circle cx="1759.7434" cy="1749.8037" id="check:Ganons_Tower_Boss_Key_Chest" inkscape:label="check:Ganons_Tower_Boss_Key_Chest" r="12.5" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:21.6085;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"/>
+ </g>
 </svg>

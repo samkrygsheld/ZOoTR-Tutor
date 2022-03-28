@@ -1,141 +1,30 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="map-gerudo_valley.svg"
-   viewBox="0 0 154.35352 148.43123"
-   id="svg1073"
-   version="1.1">
-  <metadata
-     id="metadata1079">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs1077" />
-  <sodipodi:namedview
-     inkscape:current-layer="g1081"
-     inkscape:window-maximized="1"
-     inkscape:window-y="-8"
-     inkscape:window-x="892"
-     inkscape:cy="51.946093"
-     inkscape:cx="100.66711"
-     inkscape:zoom="2.923913"
-     showgrid="false"
-     id="namedview1075"
-     inkscape:window-height="705"
-     inkscape:window-width="1366"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
-     borderopacity="1"
-     bordercolor="#666666"
-     pagecolor="#ffffff"
-     inkscape:document-rotation="0"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
-  <g
-     id="Water"
-     inkscape:label="Image"
-     inkscape:groupmode="layer"
-     transform="translate(-12.996094,-15.390335)">
-    <path
-       inkscape:label="Water"
-       transform="translate(12.996094,15.390335)"
-       d="M 72.164062,0 C 59.167779,37.278811 66.350491,111.49484 90.291016,148.43164 H 108.07422 C 85.159724,96.446511 94.395067,38.988847 99.867188,0 Z m 43.070318,51.148438 -5.92383,17.533203 18.68359,6.375 8.46484,-16.203125 -18.13867,-7.498047 z"
-       style="fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="Bank" />
-    <path
-       inkscape:label="Bank"
-       style="fill:#ce8000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 85.159851,15.39034 c 0,0 7.252297,1.253588 4.446093,26.67658 C 86.79974,67.489912 90.687635,91.880025 80.371747,89.734208 77.208178,61.903353 78.661709,34.029745 85.159851,15.39034 Z"
-       id="Main"
-       sodipodi:nodetypes="czcc" />
-    <path
-       inkscape:label="Main"
-       transform="translate(12.996094,15.390335)"
-       sodipodi:nodetypes="cccscccccccssccccccsccccccc"
-       d="m 0,31.123047 v 19.835937 c 4.788104,22.914499 41.041016,18.46875 41.041016,18.46875 0,0 0.171715,21.717552 15.220042,21.717552 8.581484,0 13.109117,-1.116417 16.39411,-1.357574 l 2.100129,-2.729596 0.04808,-4.439632 -2.516972,-2.9006 3.981169,-13.844837 V 57.376953 L 73.775391,38.988281 C 70.862366,37.03167 65.531433,35.446784 58.484375,35.226562 35.176463,34.49819 31.465302,50.958352 21.205078,51.984375 10.944855,53.010397 10.944238,32.491077 0,31.123047 Z m 94.863281,5.722656 c 0,0 -7.738554,18.379547 -1.208984,48.367188 16.856183,0.20556 17.150923,-3.244328 21.750003,-22.355469 l 15.57226,6.488281 -2.98242,5.710938 c 12.57546,1.451014 16.92772,16.203125 16.92774,16.203125 h 9.43164 V 78.199219 C 145.40559,59.336028 136.45898,58.853516 136.45898,58.853516 l -3.3457,6.40625 -16.59766,-6.917969 c 0.54197,-2.175072 1.12081,-4.458062 1.80469,-6.986328 0,0 -7.73771,-11.607737 -23.457029,-14.509766 z"
-       style="fill:#ffc86e;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="Ledge" />
-    <path
-       inkscape:label="Ledge"
-       transform="translate(12.996094,15.390335)"
-       d="m 70.486328,79.710938 c -0.270998,0.0029 -0.537619,0.01672 -0.802734,0.0332 v 10.386718 c 1.105491,-0.15095 2.094949,-0.279461 2.970703,-0.34375 l 2.101562,-2.728515 0.04687,-4.439453 -2.445312,-2.81836 c -0.637564,-0.06737 -1.261848,-0.09641 -1.871094,-0.08984 z"
-       style="fill:#ce8000;fill-opacity:1;stroke-width:24.3;stop-color:#000000"
-       id="check:GV_Chest" />
-    <circle
-       inkscape:label="check:GV_Chest"
-       r="1"
-       cy="103.3303"
-       cx="63.451511"
-       id="check:GV_Crate_Freestanding_PoH"
-       style="fill:#000000;fill-opacity:1;stroke-width:28.709;stop-color:#000000" />
-    <circle
-       inkscape:label="check:GV_Crate_Freestanding_PoH"
-       style="fill:#000000;fill-opacity:1;stroke-width:28.709;stop-color:#000000"
-       id="check:GV_Waterfall_Freestanding_PoH"
-       cx="85.063156"
-       cy="100.39561"
-       r="1" />
-    <circle
-       inkscape:label="check:GV_Waterfall_Freestanding_PoH"
-       style="fill:#000000;fill-opacity:1;stroke-width:28.709;stop-color:#000000"
-       id="check:GV_GS_Behind_Tent"
-       cx="100.41973"
-       cy="20.83164"
-       r="1" />
-    <circle
-       inkscape:label="check:GV_GS_Behind_Tent"
-       style="fill:#ffffff;fill-opacity:1;stroke-width:28.709;stop-color:#000000"
-       id="check:GV_GS_Pillar"
-       cx="69.706581"
-       cy="51.786621"
-       r="1" />
-    <circle
-       inkscape:label="check:GV_GS_Pillar"
-       style="fill:#ffffff;fill-opacity:1;stroke-width:28.709;stop-color:#000000"
-       id="Rock"
-       cx="67.046394"
-       cy="92.898705"
-       r="1" />
-    <circle
-       inkscape:label="Rock"
-       r="3.6879957"
-       cy="88.968872"
-       cx="64.688492"
-       id="check:GV_GS_Small_Bridge"
-       style="fill:#ce4100;fill-opacity:1;stroke-width:24.3;stop-color:#000000" />
-    <circle
-       inkscape:label="check:GV_GS_Small_Bridge"
-       r="1"
-       cy="71.821564"
-       cx="139.88086"
-       id="path6042-1-7"
-       style="fill:#ffffff;fill-opacity:1;stroke-width:28.709;stop-color:#000000" />
-    <circle
-       r="1"
-       cy="50.95911"
-       cx="85.15966"
-       id="check:GV_GS_Bean_Patch"
-       style="fill:#ffffff;fill-opacity:1;stroke-width:28.709;stop-color:#000000"
-       inkscape:label="check:GV_GS_Bean_Patch" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="svg1073" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" sodipodi:docname="map-gerudo_valley.svg" version="1.1" viewBox="0 0 154.35352 148.43123" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+ <metadata id="metadata1079">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>
+     image/svg+xml
+    </dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs id="defs1077"/>
+ <sodipodi:namedview bordercolor="#666666" borderopacity="1" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" gridtolerance="10" guidetolerance="10" id="namedview1075" inkscape:current-layer="g1081" inkscape:cx="100.66711" inkscape:cy="51.946093" inkscape:document-rotation="0" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="705" inkscape:window-maximized="1" inkscape:window-width="1366" inkscape:window-x="892" inkscape:window-y="-8" inkscape:zoom="2.923913" objecttolerance="10" pagecolor="#ffffff" showgrid="false"/>
+ <g id="Image" inkscape:groupmode="layer" inkscape:label="Image" transform="translate(-12.996094,-15.390335)">
+  <path d="M 72.164062,0 C 59.167779,37.278811 66.350491,111.49484 90.291016,148.43164 H 108.07422 C 85.159724,96.446511 94.395067,38.988847 99.867188,0 Z m 43.070318,51.148438 -5.92383,17.533203 18.68359,6.375 8.46484,-16.203125 -18.13867,-7.498047 z" id="Water" inkscape:label="Water" style="fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" transform="translate(12.996094,15.390335)"/>
+  <path d="m 85.159851,15.39034 c 0,0 7.252297,1.253588 4.446093,26.67658 C 86.79974,67.489912 90.687635,91.880025 80.371747,89.734208 77.208178,61.903353 78.661709,34.029745 85.159851,15.39034 Z" id="Bank" inkscape:label="Bank" sodipodi:nodetypes="czcc" style="fill:#ce8000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <path d="m 0,31.123047 v 19.835937 c 4.788104,22.914499 41.041016,18.46875 41.041016,18.46875 0,0 0.171715,21.717552 15.220042,21.717552 8.581484,0 13.109117,-1.116417 16.39411,-1.357574 l 2.100129,-2.729596 0.04808,-4.439632 -2.516972,-2.9006 3.981169,-13.844837 V 57.376953 L 73.775391,38.988281 C 70.862366,37.03167 65.531433,35.446784 58.484375,35.226562 35.176463,34.49819 31.465302,50.958352 21.205078,51.984375 10.944855,53.010397 10.944238,32.491077 0,31.123047 Z m 94.863281,5.722656 c 0,0 -7.738554,18.379547 -1.208984,48.367188 16.856183,0.20556 17.150923,-3.244328 21.750003,-22.355469 l 15.57226,6.488281 -2.98242,5.710938 c 12.57546,1.451014 16.92772,16.203125 16.92774,16.203125 h 9.43164 V 78.199219 C 145.40559,59.336028 136.45898,58.853516 136.45898,58.853516 l -3.3457,6.40625 -16.59766,-6.917969 c 0.54197,-2.175072 1.12081,-4.458062 1.80469,-6.986328 0,0 -7.73771,-11.607737 -23.457029,-14.509766 z" id="Main" inkscape:label="Main" sodipodi:nodetypes="cccscccccccssccccccsccccccc" style="fill:#ffc86e;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" transform="translate(12.996094,15.390335)"/>
+  <path d="m 70.486328,79.710938 c -0.270998,0.0029 -0.537619,0.01672 -0.802734,0.0332 v 10.386718 c 1.105491,-0.15095 2.094949,-0.279461 2.970703,-0.34375 l 2.101562,-2.728515 0.04687,-4.439453 -2.445312,-2.81836 c -0.637564,-0.06737 -1.261848,-0.09641 -1.871094,-0.08984 z" id="Ledge" inkscape:label="Ledge" style="fill:#ce8000;fill-opacity:1;stroke-width:24.3;stop-color:#000000" transform="translate(12.996094,15.390335)"/>
+  <circle cx="63.451511" cy="103.3303" id="check:GV_Chest" inkscape:label="check:GV_Chest" r="1" style="fill:#000000;fill-opacity:1;stroke-width:28.709;stop-color:#000000"/>
+  <circle cx="85.063156" cy="100.39561" id="check:GV_Crate_Freestanding_PoH" inkscape:label="check:GV_Crate_Freestanding_PoH" r="1" style="fill:#000000;fill-opacity:1;stroke-width:28.709;stop-color:#000000"/>
+  <circle cx="100.41973" cy="20.83164" id="check:GV_Waterfall_Freestanding_PoH" inkscape:label="check:GV_Waterfall_Freestanding_PoH" r="1" style="fill:#000000;fill-opacity:1;stroke-width:28.709;stop-color:#000000"/>
+  <circle cx="69.706581" cy="51.786621" id="check:GV_GS_Behind_Tent" inkscape:label="check:GV_GS_Behind_Tent" r="1" style="fill:#ffffff;fill-opacity:1;stroke-width:28.709;stop-color:#000000"/>
+  <circle cx="67.046394" cy="92.898705" id="check:GV_GS_Pillar" inkscape:label="check:GV_GS_Pillar" r="1" style="fill:#ffffff;fill-opacity:1;stroke-width:28.709;stop-color:#000000"/>
+  <circle cx="64.688492" cy="88.968872" id="Rock" inkscape:label="Rock" r="3.6879957" style="fill:#ce4100;fill-opacity:1;stroke-width:24.3;stop-color:#000000"/>
+  <circle cx="139.88086" cy="71.821564" id="check:GV_GS_Small_Bridge" inkscape:label="check:GV_GS_Small_Bridge" r="1" style="fill:#ffffff;fill-opacity:1;stroke-width:28.709;stop-color:#000000"/>
+  <circle cx="85.15966" cy="50.95911" id="check:GV_GS_Bean_Patch" inkscape:label="check:GV_GS_Bean_Patch" r="1" style="fill:#ffffff;fill-opacity:1;stroke-width:28.709;stop-color:#000000"/>
+ </g>
 </svg>

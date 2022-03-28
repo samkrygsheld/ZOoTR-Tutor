@@ -1,232 +1,44 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   id="svg833"
-   viewBox="0 0 2942.2656 4296.416"
-   sodipodi:docname="map-fire_temple.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
-  <metadata
-     id="metadata839">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs837" />
-  <sodipodi:namedview
-     fit-margin-bottom="0"
-     fit-margin-right="0"
-     fit-margin-left="0"
-     fit-margin-top="0"
-     inkscape:document-rotation="0"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
-     id="Image"
-     showgrid="false"
-     inkscape:zoom="0.19585253"
-     inkscape:cx="1366.3033"
-     inkscape:cy="3217.26"
-     inkscape:window-x="892"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g841" />
-  <g
-     transform="translate(-21.699219,-25.689453)"
-     inkscape:groupmode="layer"
-     inkscape:label="Image"
-     id="1F">
-    <path
-       inkscape:label="1F"
-       id="check:Volvagia"
-       style="fill:#4b0000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1928.4062,2659.9648 v 11.2832 h -77.1718 v 135.8418 h 77.1718 v 11.7325 h 211.209 v 17.1504 h -6.7695 l -32.041,64.0839 -235.5801,214.3672 -52.3496,-32.4922 -110.5703,308.2383 v 37.1543 h -16.0879 v -28.084 h -16.5938 v -303.7988 h -35.7402 v -17.2324 h 108.5 v -196.5762 h -13.4043 v -75.3125 h -134.666 v 75.3125 h -59.9941 v 45.3145 h -17.2325 v -82.9707 h -19.7851 v -18.5098 l -60.6328,-60.6309 h -112.3301 l -59.9941,59.9942 v 18.5078 h -20.4239 v 144.2422 h 19.7852 v 20.4219 l 61.2715,60.6328 h 75.6172 v 15.3183 h -19.4532 v 314.6504 l -16.4082,-0.3105 v 29.7851 h -16.2461 V 3239.4355 L 1227.5371,3118.4863 H 930.58203 v 271.6836 h -23.46875 v 25.2715 h -17.78906 l -0.0254,-28.7344 -22.04492,-0.9336 L 759.5,3129.9062 454.42383,3004.8125 149.34766,3132.459 21.699219,3438.8125 l 131.476561,308.9043 302.52344,123.8184 307.63086,-126.3711 114.88086,-206.7871 0.74023,-47.9747 10.43945,-0.6464 -0.0234,-27.3789 h 17.74609 v 24.371 h 23.46875 v 274.3907 h 37.9082 v 86.6504 h 52.35154 v -87.5528 h 206.6953 l 120.9492,-120.9492 v -188.6426 h 16.2461 v 397.9141 h 24.0684 v 23.6152 h 112.3281 v 102.7559 h 49.1445 v -102.1172 h 111.6914 v -24.8926 h 24.252 v -398.2578 h 16.0879 v 37.5371 l 90.7129,294.6992 h 49.6426 l 87.1015,171.043 170.5918,-8.5742 32.4922,97.0293 h 8.1231 v 38.8105 2.709 h -20.7598 v 239.1895 h 64.9883 V 4082.916 h -19.8262 v -40.6172 h 187.709 l 136.2929,-151.6367 -39.2617,-37.459 152.9903,-213.4648 v -189.0938 h 15.5781 v 115.8145 l 88.7148,81.6933 256.5703,-31.2734 v -350.3906 l -271.25,-12.7656 -74.0351,54.8886 v 118.1133 h -15.5781 v -8.5742 l -64.9883,-27.9805 -28.8828,-117.3379 -86.1973,-123.205 h 27.9805 v -72.209 h -73.1114 l -172.3964,-177.3614 -32.9454,-64.0839 h -6.3183 v -17.1504 h 34.2988 v -95.2246 h 143.9649 v -63.6329 H 2200.541 Z m -411.3203,291.8731 h 17.2325 v 126.3711 h 75.3105 v 17.2324 h -145.5176 v 245.7207 h 141.6895 v 33.1875 h -163.3887 v -290.3965 h -17.8711 v -15.3183 h 11.4883 l 62.2285,-62.2266 v -18.1914 h 18.8281 z" />
-    <circle
-       inkscape:label="check:Volvagia"
-       r="15"
-       cy="3461.7883"
-       cx="479.95294"
-       id="check:Fire_Temple_Volvagia_Heart"
-       style="fill:#000000;stroke-width:0.908983;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Fire_Temple_Volvagia_Heart"
-       r="15"
-       cy="3420.9412"
-       cx="444.21176"
-       id="check:Fire_Temple_Boss_Key_Chest"
-       style="fill:#000000;stroke-width:0.908983;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Fire_Temple_Boss_Key_Chest"
-       r="15"
-       cy="3292.6885"
-       cx="1422.4993"
-       id="check:Fire_Temple_GS_Boss_Key_Loop"
-       style="fill:#000000;stroke-width:0.908983;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Fire_Temple_GS_Boss_Key_Loop"
-       r="15"
-       cy="2823.3359"
-       cx="1657.1755"
-       id="check:Fire_Temple_Near_Boss_Chest"
-       style="fill:#ffffff;stroke-width:0.908983;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Fire_Temple_Near_Boss_Chest"
-       r="15"
-       cy="3816.1973"
-       cx="996.47156"
-       id="check:Fire_Temple_Big_Lava_Room_Blocked_Door_Chest"
-       style="fill:#000000;stroke-width:0.908983;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Fire_Temple_Big_Lava_Room_Blocked_Door_Chest"
-       r="15"
-       cy="4285.5498"
-       cx="2148.1904"
-       id="path840-2-2-7-14"
-       style="fill:#000000;stroke-width:0.908983;stop-color:#000000" />
-    <circle
-       style="fill:#000000;stroke-width:0.908983;stop-color:#000000"
-       id="check:Fire_Temple_GS_Song_of_Time_Room"
-       cx="1382.8"
-       cy="2924.7764"
-       r="15"
-       inkscape:label="check:Fire_Temple_Flare_Dancer_Chest" />
-    <circle
-       inkscape:label="check:Fire_Temple_GS_Song_of_Time_Room"
-       r="15"
-       cy="2736.6863"
-       cx="1877.4102"
-       id="check:Fire_Temple_Big_Lava_Room_Lower_Open_Door_Chest"
-       style="fill:#ffffff;stroke-width:0.908983;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Fire_Temple_Big_Lava_Room_Lower_Open_Door_Chest"
-       r="15"
-       cy="2686.1406"
-       cx="2299.8274"
-       id="2F"
-       style="fill:#000000;stroke-width:0.908983;stop-color:#000000" />
-    <path
-       inkscape:label="2F"
-       id="check:Fire_Temple_Boulder_Maze_Shortcut_Chest"
-       style="fill:#740000;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       d="m 2381.5137,2277.7129 v 321.7773 h 40.164 v 296.9571 h 323.1328 v -290.5332 h 58.3184 v -27.4434 h 16.9141 v 36.0605 h 112.6484 v -96.6933 H 2820.043 v 37.0176 h -16.9141 v -27.7617 h -60.7793 l -63.3574,-40.8477 -141.3692,43.4004 -37.3359,-82.6524 -53.7871,6.8731 v -176.1543 z" />
-    <circle
-       inkscape:label="check:Fire_Temple_Boulder_Maze_Shortcut_Chest"
-       style="fill:#000000;stroke-width:0.908983;stop-color:#000000"
-       id="3F"
-       cx="2646.4263"
-       cy="2556.166"
-       r="15" />
-    <path
-       inkscape:label="3F"
-       id="check:Fire_Temple_Highest_Goron_Chest"
-       style="fill:#ad0000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1885.082,1212.6445 v 65.4375 h 159.7598 v 78.5274 h 20.3086 v 18.0527 h -11.7324 v 111.4707 h -88.0039 v 217.0762 h -25.2735 v -215.7227 h -111.4707 l -322.2285,320.4239 v 225.5078 h -16.4805 v -22.6582 h -346.5625 v 22.3379 h -16.8339 v -222.5039 l -189.36723,-189.3672 17.98046,-17.9825 16.2461,16.2481 165.40237,-165.4024 -47.8379,-47.8378 -165.1758,165.1757 13.76367,13.7657 -18.20508,18.205 -117.74804,-117.7461 H 484.89844 l -204.39453,204.3946 v 68.6113 l 64.46289,64.4609 -64.78125,64.7813 5.42383,5.4238 -12.20508,12.207 -33.18946,-33.1874 -111.92968,-0.4004 -80.417972,80.4179 v 144.8789 l 80.099612,80.0996 h 113.28711 l 78.98047,-78.9824 v -145.9961 l -30.23633,-30.2363 11.88672,-11.8867 5.74414,5.7441 66.05859,-66.0566 64.14258,64.1426 h 65.73828 l 91.26758,-91.2676 h 38.29297 v 25.5293 h -27.44336 l -81.05664,80.4179 v 78.502 l 80.09961,80.0977 h 28.40039 v 25.2109 H 592.2832 l -45.3164,-45.3145 -222.28516,222.2852 161.6543,161.6523 H 805.8125 l 320.752,-320.7519 v -72.7598 h 17.1523 v 20.4239 h 346.2441 v -21.3809 h 16.4805 v 72.5234 l 321.7774,321.7774 h 192.705 v -338.0254 h -11.7343 v -24.8203 h 20.3085 l 78.9786,-78.9785 v -80.3301 l -80.1075,-80.1074 h -31.8164 v -25.1231 l 41.2481,-0.1016 96.3047,96.3047 v 96.4844 l -96.2207,96.2207 v 403.3867 h 63.8242 v -65.0996 h 47.8672 l 56.164,-56.166 v 63.8242 h 66.377 v -63.8242 h 37.5488 v -105.416 l 161.3652,-161.3652 v -318.9024 l -152.7011,-152.7012 v -105.1543 h -40.166 v -64.0839 h -65.4375 v 64.0839 l -63.1817,-63.1816 v -114.1797 h -60.0234 v -17.1484 h 19.8574 v -78.5274 c 0,-42.8735 -27.0801,-65.4375 -72.209,-65.4375 z m 55.0586,515.3848 h 25.2735 v 95.6758 l 7.2207,-0.018 v 25.0645 h -23.92 l -79.541,79.5429 v 52.9141 h -26.0625 v -62.2793 l 97.0293,-97.0293 z m -1281.4824,94.7715 h 35.74219 l 95.73438,95.7344 v 38.2949 h -23.61329 v -26.8067 l -81.375,-81.375 H 658.6582 Z m 107.54297,158.9199 h 23.9336 v 32.5508 l -98.28711,98.2871 h -34.46485 v -24.252 h 28.72071 l 80.09765,-80.0996 z m 1076.91013,22.957 h 26.0625 v 4.0606 l 79.0899,79.4297 h 36.1054 v 24.8203 h -43.7773 l -97.4805,-97.4805 z" />
-    <circle
-       inkscape:label="check:Fire_Temple_Highest_Goron_Chest"
-       style="fill:#000000;stroke-width:0.908983;stop-color:#000000"
-       id="check:Fire_Temple_GS_Boulder_Maze"
-       cx="714.82355"
-       cy="2011.7177"
-       r="15" />
-    <circle
-       inkscape:label="check:Fire_Temple_GS_Boulder_Maze"
-       r="15"
-       cy="1511.3412"
-       cx="2246.5884"
-       id="check:Fire_Temple_Boulder_Maze_Lower_Chest"
-       style="fill:#ffffff;stroke-width:0.908983;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Fire_Temple_Boulder_Maze_Lower_Chest"
-       r="15"
-       cy="2440.6118"
-       cx="2256.8"
-       id="check:Fire_Temple_Boulder_Maze_Upper_Chest"
-       style="fill:#000000;stroke-width:0.908983;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Fire_Temple_Boulder_Maze_Upper_Chest"
-       r="15"
-       cy="2491.6707"
-       cx="2083.2"
-       id="check:Fire_Temple_Map_Chest"
-       style="fill:#000000;stroke-width:0.908983;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Fire_Temple_Map_Chest"
-       r="15"
-       cy="1848.3295"
-       cx="1884.0707"
-       id="check:Fire_Temple_Boulder_Maze_Side_Room_Chest"
-       style="fill:#000000;stroke-width:0.908983;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Fire_Temple_Boulder_Maze_Side_Room_Chest"
-       r="15"
-       cy="1245.8353"
-       cx="1935.1295"
-       id="check:Fire_Temple_Compass_Chest"
-       style="fill:#000000;stroke-width:0.908983;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Fire_Temple_Compass_Chest"
-       r="15"
-       cy="1455.1765"
-       cx="1092.6588"
-       id="4F"
-       style="fill:#000000;stroke-width:0.908983;stop-color:#000000" />
-    <path
-       inkscape:label="4F"
-       id="check:Fire_Temple_GS_Scarecrow_Climb"
-       style="display:inline;fill:#d30000;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       d="m 540.43164,802.63867 -147.34961,147.34961 24.5957,24.5957 -12.41015,12.41016 -26.85156,-26.85156 -102.44532,102.44532 136.51758,136.5176 103.12305,-103.1231 -91.83985,-91.8379 11.50782,-11.96091 36.78125,36.78121 68.14648,-68.14644 249.79492,249.79494 11.50782,-11.5078 41.06835,41.0683 19.40626,-19.4062 11.50781,11.5078 -67.69531,67.6953 54.83398,54.834 105.37695,-106.7324 -53.70312,-53.7051 -22.56641,22.5644 -12.86133,-12.8613 20.08203,-20.084 -40.16406,-40.166 12.41016,-12.4101 z m 1312.36526,153.4375 v 190.19333 h 176.1523 V 956.07617 Z M 148.47852,1265.4473 v 230.6132 h 210.75586 v -230.6132 z" />
-    <circle
-       inkscape:label="check:Fire_Temple_GS_Scarecrow_Climb"
-       r="15"
-       cy="991.67072"
-       cx="2008.447"
-       id="5F"
-       style="fill:#ffffff;stroke-width:0.908983;stop-color:#000000" />
-    <path
-       inkscape:label="5F"
-       d="m 1861.0938,25.689453 -241.1719,241.171877 -1.3574,241.17383 240.6152,240.61523 h 240.6152 L 2340.7285,507.7168 V 265.50586 L 2100.9102,25.689453 Z M 518.24609,26.328125 276.75391,267.82031 275.7168,505.48242 516.33203,746.09766 H 756.94727 L 999.1582,503.88672 V 266.7832 L 758.70312,26.328125 Z"
-       style="display:inline;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="check:Fire_Temple_Megaton_Hammer_Chest" />
-    <circle
-       inkscape:label="check:Fire_Temple_Megaton_Hammer_Chest"
-       r="15"
-       cy="540.90582"
-       cx="489.84708"
-       id="check:Fire_Temple_Scarecrow_Chest"
-       style="fill:#000000;stroke-width:0.908983;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Fire_Temple_Scarecrow_Chest"
-       style="fill:#000000;stroke-width:0.908983;stop-color:#000000"
-       id="check:Fire_Temple_GS_Scarecrow_Top"
-       cx="2149.5767"
-       cy="219.55293"
-       r="15" />
-    <circle
-       inkscape:label="check:Fire_Temple_GS_Scarecrow_Top"
-       r="15"
-       style="fill:#ffffff;stroke-width:0.908983;stop-color:#000000"
-       id="path840-33"
-       cx="2083.2"
-       cy="285.92941" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="svg833" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" sodipodi:docname="map-fire_temple.svg" version="1.1" viewBox="0 0 2942.2656 4296.416" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+ <metadata id="metadata839">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>
+     image/svg+xml
+    </dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs id="defs837"/>
+ <sodipodi:namedview bordercolor="#666666" borderopacity="1" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" gridtolerance="10" guidetolerance="10" id="namedview835" inkscape:current-layer="g841" inkscape:cx="1366.3033" inkscape:cy="3217.26" inkscape:document-rotation="0" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="705" inkscape:window-maximized="1" inkscape:window-width="1366" inkscape:window-x="892" inkscape:window-y="-8" inkscape:zoom="0.19585253" objecttolerance="10" pagecolor="#ffffff" showgrid="false"/>
+ <g id="Image" inkscape:groupmode="layer" inkscape:label="Image" transform="translate(-21.699219,-25.689453)">
+  <path d="m 1928.4062,2659.9648 v 11.2832 h -77.1718 v 135.8418 h 77.1718 v 11.7325 h 211.209 v 17.1504 h -6.7695 l -32.041,64.0839 -235.5801,214.3672 -52.3496,-32.4922 -110.5703,308.2383 v 37.1543 h -16.0879 v -28.084 h -16.5938 v -303.7988 h -35.7402 v -17.2324 h 108.5 v -196.5762 h -13.4043 v -75.3125 h -134.666 v 75.3125 h -59.9941 v 45.3145 h -17.2325 v -82.9707 h -19.7851 v -18.5098 l -60.6328,-60.6309 h -112.3301 l -59.9941,59.9942 v 18.5078 h -20.4239 v 144.2422 h 19.7852 v 20.4219 l 61.2715,60.6328 h 75.6172 v 15.3183 h -19.4532 v 314.6504 l -16.4082,-0.3105 v 29.7851 h -16.2461 V 3239.4355 L 1227.5371,3118.4863 H 930.58203 v 271.6836 h -23.46875 v 25.2715 h -17.78906 l -0.0254,-28.7344 -22.04492,-0.9336 L 759.5,3129.9062 454.42383,3004.8125 149.34766,3132.459 21.699219,3438.8125 l 131.476561,308.9043 302.52344,123.8184 307.63086,-126.3711 114.88086,-206.7871 0.74023,-47.9747 10.43945,-0.6464 -0.0234,-27.3789 h 17.74609 v 24.371 h 23.46875 v 274.3907 h 37.9082 v 86.6504 h 52.35154 v -87.5528 h 206.6953 l 120.9492,-120.9492 v -188.6426 h 16.2461 v 397.9141 h 24.0684 v 23.6152 h 112.3281 v 102.7559 h 49.1445 v -102.1172 h 111.6914 v -24.8926 h 24.252 v -398.2578 h 16.0879 v 37.5371 l 90.7129,294.6992 h 49.6426 l 87.1015,171.043 170.5918,-8.5742 32.4922,97.0293 h 8.1231 v 38.8105 2.709 h -20.7598 v 239.1895 h 64.9883 V 4082.916 h -19.8262 v -40.6172 h 187.709 l 136.2929,-151.6367 -39.2617,-37.459 152.9903,-213.4648 v -189.0938 h 15.5781 v 115.8145 l 88.7148,81.6933 256.5703,-31.2734 v -350.3906 l -271.25,-12.7656 -74.0351,54.8886 v 118.1133 h -15.5781 v -8.5742 l -64.9883,-27.9805 -28.8828,-117.3379 -86.1973,-123.205 h 27.9805 v -72.209 h -73.1114 l -172.3964,-177.3614 -32.9454,-64.0839 h -6.3183 v -17.1504 h 34.2988 v -95.2246 h 143.9649 v -63.6329 H 2200.541 Z m -411.3203,291.8731 h 17.2325 v 126.3711 h 75.3105 v 17.2324 h -145.5176 v 245.7207 h 141.6895 v 33.1875 h -163.3887 v -290.3965 h -17.8711 v -15.3183 h 11.4883 l 62.2285,-62.2266 v -18.1914 h 18.8281 z" id="1F" inkscape:label="1F" style="fill:#4b0000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <circle cx="479.95294" cy="3461.7883" id="check:Volvagia" inkscape:label="check:Volvagia" r="15" style="fill:#000000;stroke-width:0.908983;stop-color:#000000"/>
+  <circle cx="444.21176" cy="3420.9412" id="check:Fire_Temple_Volvagia_Heart" inkscape:label="check:Fire_Temple_Volvagia_Heart" r="15" style="fill:#000000;stroke-width:0.908983;stop-color:#000000"/>
+  <circle cx="1422.4993" cy="3292.6885" id="check:Fire_Temple_Boss_Key_Chest" inkscape:label="check:Fire_Temple_Boss_Key_Chest" r="15" style="fill:#000000;stroke-width:0.908983;stop-color:#000000"/>
+  <circle cx="1657.1755" cy="2823.3359" id="check:Fire_Temple_GS_Boss_Key_Loop" inkscape:label="check:Fire_Temple_GS_Boss_Key_Loop" r="15" style="fill:#ffffff;stroke-width:0.908983;stop-color:#000000"/>
+  <circle cx="996.47156" cy="3816.1973" id="check:Fire_Temple_Near_Boss_Chest" inkscape:label="check:Fire_Temple_Near_Boss_Chest" r="15" style="fill:#000000;stroke-width:0.908983;stop-color:#000000"/>
+  <circle cx="2148.1904" cy="4285.5498" id="check:Fire_Temple_Big_Lava_Room_Blocked_Door_Chest" inkscape:label="check:Fire_Temple_Big_Lava_Room_Blocked_Door_Chest" r="15" style="fill:#000000;stroke-width:0.908983;stop-color:#000000"/>
+  <circle cx="1382.8" cy="2924.7764" id="check:Fire_Temple_Flare_Dancer_Chest" inkscape:label="check:Fire_Temple_Flare_Dancer_Chest" r="15" style="fill:#000000;stroke-width:0.908983;stop-color:#000000"/>
+  <circle cx="1877.4102" cy="2736.6863" id="check:Fire_Temple_GS_Song_of_Time_Room" inkscape:label="check:Fire_Temple_GS_Song_of_Time_Room" r="15" style="fill:#ffffff;stroke-width:0.908983;stop-color:#000000"/>
+  <circle cx="2299.8274" cy="2686.1406" id="check:Fire_Temple_Big_Lava_Room_Lower_Open_Door_Chest" inkscape:label="check:Fire_Temple_Big_Lava_Room_Lower_Open_Door_Chest" r="15" style="fill:#000000;stroke-width:0.908983;stop-color:#000000"/>
+  <path d="m 2381.5137,2277.7129 v 321.7773 h 40.164 v 296.9571 h 323.1328 v -290.5332 h 58.3184 v -27.4434 h 16.9141 v 36.0605 h 112.6484 v -96.6933 H 2820.043 v 37.0176 h -16.9141 v -27.7617 h -60.7793 l -63.3574,-40.8477 -141.3692,43.4004 -37.3359,-82.6524 -53.7871,6.8731 v -176.1543 z" id="2F" inkscape:label="2F" style="fill:#740000;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"/>
+  <circle cx="2646.4263" cy="2556.166" id="check:Fire_Temple_Boulder_Maze_Shortcut_Chest" inkscape:label="check:Fire_Temple_Boulder_Maze_Shortcut_Chest" r="15" style="fill:#000000;stroke-width:0.908983;stop-color:#000000"/>
+  <path d="m 1885.082,1212.6445 v 65.4375 h 159.7598 v 78.5274 h 20.3086 v 18.0527 h -11.7324 v 111.4707 h -88.0039 v 217.0762 h -25.2735 v -215.7227 h -111.4707 l -322.2285,320.4239 v 225.5078 h -16.4805 v -22.6582 h -346.5625 v 22.3379 h -16.8339 v -222.5039 l -189.36723,-189.3672 17.98046,-17.9825 16.2461,16.2481 165.40237,-165.4024 -47.8379,-47.8378 -165.1758,165.1757 13.76367,13.7657 -18.20508,18.205 -117.74804,-117.7461 H 484.89844 l -204.39453,204.3946 v 68.6113 l 64.46289,64.4609 -64.78125,64.7813 5.42383,5.4238 -12.20508,12.207 -33.18946,-33.1874 -111.92968,-0.4004 -80.417972,80.4179 v 144.8789 l 80.099612,80.0996 h 113.28711 l 78.98047,-78.9824 v -145.9961 l -30.23633,-30.2363 11.88672,-11.8867 5.74414,5.7441 66.05859,-66.0566 64.14258,64.1426 h 65.73828 l 91.26758,-91.2676 h 38.29297 v 25.5293 h -27.44336 l -81.05664,80.4179 v 78.502 l 80.09961,80.0977 h 28.40039 v 25.2109 H 592.2832 l -45.3164,-45.3145 -222.28516,222.2852 161.6543,161.6523 H 805.8125 l 320.752,-320.7519 v -72.7598 h 17.1523 v 20.4239 h 346.2441 v -21.3809 h 16.4805 v 72.5234 l 321.7774,321.7774 h 192.705 v -338.0254 h -11.7343 v -24.8203 h 20.3085 l 78.9786,-78.9785 v -80.3301 l -80.1075,-80.1074 h -31.8164 v -25.1231 l 41.2481,-0.1016 96.3047,96.3047 v 96.4844 l -96.2207,96.2207 v 403.3867 h 63.8242 v -65.0996 h 47.8672 l 56.164,-56.166 v 63.8242 h 66.377 v -63.8242 h 37.5488 v -105.416 l 161.3652,-161.3652 v -318.9024 l -152.7011,-152.7012 v -105.1543 h -40.166 v -64.0839 h -65.4375 v 64.0839 l -63.1817,-63.1816 v -114.1797 h -60.0234 v -17.1484 h 19.8574 v -78.5274 c 0,-42.8735 -27.0801,-65.4375 -72.209,-65.4375 z m 55.0586,515.3848 h 25.2735 v 95.6758 l 7.2207,-0.018 v 25.0645 h -23.92 l -79.541,79.5429 v 52.9141 h -26.0625 v -62.2793 l 97.0293,-97.0293 z m -1281.4824,94.7715 h 35.74219 l 95.73438,95.7344 v 38.2949 h -23.61329 v -26.8067 l -81.375,-81.375 H 658.6582 Z m 107.54297,158.9199 h 23.9336 v 32.5508 l -98.28711,98.2871 h -34.46485 v -24.252 h 28.72071 l 80.09765,-80.0996 z m 1076.91013,22.957 h 26.0625 v 4.0606 l 79.0899,79.4297 h 36.1054 v 24.8203 h -43.7773 l -97.4805,-97.4805 z" id="3F" inkscape:label="3F" style="fill:#ad0000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <circle cx="714.82355" cy="2011.7177" id="check:Fire_Temple_Highest_Goron_Chest" inkscape:label="check:Fire_Temple_Highest_Goron_Chest" r="15" style="fill:#000000;stroke-width:0.908983;stop-color:#000000"/>
+  <circle cx="2246.5884" cy="1511.3412" id="check:Fire_Temple_GS_Boulder_Maze" inkscape:label="check:Fire_Temple_GS_Boulder_Maze" r="15" style="fill:#ffffff;stroke-width:0.908983;stop-color:#000000"/>
+  <circle cx="2256.8" cy="2440.6118" id="check:Fire_Temple_Boulder_Maze_Lower_Chest" inkscape:label="check:Fire_Temple_Boulder_Maze_Lower_Chest" r="15" style="fill:#000000;stroke-width:0.908983;stop-color:#000000"/>
+  <circle cx="2083.2" cy="2491.6707" id="check:Fire_Temple_Boulder_Maze_Upper_Chest" inkscape:label="check:Fire_Temple_Boulder_Maze_Upper_Chest" r="15" style="fill:#000000;stroke-width:0.908983;stop-color:#000000"/>
+  <circle cx="1884.0707" cy="1848.3295" id="check:Fire_Temple_Map_Chest" inkscape:label="check:Fire_Temple_Map_Chest" r="15" style="fill:#000000;stroke-width:0.908983;stop-color:#000000"/>
+  <circle cx="1935.1295" cy="1245.8353" id="check:Fire_Temple_Boulder_Maze_Side_Room_Chest" inkscape:label="check:Fire_Temple_Boulder_Maze_Side_Room_Chest" r="15" style="fill:#000000;stroke-width:0.908983;stop-color:#000000"/>
+  <circle cx="1092.6588" cy="1455.1765" id="check:Fire_Temple_Compass_Chest" inkscape:label="check:Fire_Temple_Compass_Chest" r="15" style="fill:#000000;stroke-width:0.908983;stop-color:#000000"/>
+  <path d="m 540.43164,802.63867 -147.34961,147.34961 24.5957,24.5957 -12.41015,12.41016 -26.85156,-26.85156 -102.44532,102.44532 136.51758,136.5176 103.12305,-103.1231 -91.83985,-91.8379 11.50782,-11.96091 36.78125,36.78121 68.14648,-68.14644 249.79492,249.79494 11.50782,-11.5078 41.06835,41.0683 19.40626,-19.4062 11.50781,11.5078 -67.69531,67.6953 54.83398,54.834 105.37695,-106.7324 -53.70312,-53.7051 -22.56641,22.5644 -12.86133,-12.8613 20.08203,-20.084 -40.16406,-40.166 12.41016,-12.4101 z m 1312.36526,153.4375 v 190.19333 h 176.1523 V 956.07617 Z M 148.47852,1265.4473 v 230.6132 h 210.75586 v -230.6132 z" id="4F" inkscape:label="4F" style="display:inline;fill:#d30000;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"/>
+  <circle cx="2008.447" cy="991.67072" id="check:Fire_Temple_GS_Scarecrow_Climb" inkscape:label="check:Fire_Temple_GS_Scarecrow_Climb" r="15" style="fill:#ffffff;stroke-width:0.908983;stop-color:#000000"/>
+  <path d="m 1861.0938,25.689453 -241.1719,241.171877 -1.3574,241.17383 240.6152,240.61523 h 240.6152 L 2340.7285,507.7168 V 265.50586 L 2100.9102,25.689453 Z M 518.24609,26.328125 276.75391,267.82031 275.7168,505.48242 516.33203,746.09766 H 756.94727 L 999.1582,503.88672 V 266.7832 L 758.70312,26.328125 Z" id="5F" inkscape:label="5F" style="display:inline;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <circle cx="489.84708" cy="540.90582" id="check:Fire_Temple_Megaton_Hammer_Chest" inkscape:label="check:Fire_Temple_Megaton_Hammer_Chest" r="15" style="fill:#000000;stroke-width:0.908983;stop-color:#000000"/>
+  <circle cx="2149.5767" cy="219.55293" id="check:Fire_Temple_Scarecrow_Chest" inkscape:label="check:Fire_Temple_Scarecrow_Chest" r="15" style="fill:#000000;stroke-width:0.908983;stop-color:#000000"/>
+  <circle cx="2083.2" cy="285.92941" id="check:Fire_Temple_GS_Scarecrow_Top" inkscape:label="check:Fire_Temple_GS_Scarecrow_Top" r="15" style="fill:#ffffff;stroke-width:0.908983;stop-color:#000000"/>
+ </g>
 </svg>

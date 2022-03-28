@@ -9,7 +9,7 @@
         }
     },
     {
-        "region": "lake",
+        "region": "lake_hylia",
         "subregions": {
             "lake_hylia": [ "water_temple" ]
         }

@@ -1,140 +1,30 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   version="1.1"
-   id="svg1676"
-   viewBox="0 0 159.95483 178.67201"
-   sodipodi:docname="map-death_mountain_crater.svg"
-   inkscape:version="1.1.2 (0a00cf5, 2022-02-04)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <metadata
-     id="metadata1682">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs1680" />
-  <sodipodi:namedview
-     fit-margin-bottom="0"
-     fit-margin-right="0"
-     fit-margin-left="0"
-     fit-margin-top="0"
-     inkscape:document-rotation="0"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="926"
-     inkscape:window-height="743"
-     id="Image"
-     showgrid="false"
-     inkscape:zoom="1.7136191"
-     inkscape:cx="65.358749"
-     inkscape:cy="98.038123"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="g1684"
-     inkscape:pagecheckerboard="0" />
-  <g
-     transform="translate(-19.394531,-20.632812)"
-     inkscape:groupmode="layer"
-     inkscape:label="Image"
-     id="g1684">
-    <path
-       style="opacity:0.998;fill:#ff2d2d;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 108.54221,51.936862 c 24.26435,0.145032 60.69026,14.589006 60.69026,14.589006 0,0 26.26021,16.339687 -5.8356,95.120322 0,0 -12.25477,9.92052 -46.68482,12.25476 0,0 -95.120321,-7.58628 -78.780634,-78.78063 6.419162,-44.350579 46.346441,-43.32849 70.610794,-43.183458 z"
-       id="Lava"
-       sodipodi:nodetypes="zccccz"
-       inkscape:label="Lava" />
-    <path
-       id="Lower"
-       style="fill:#8e3500;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:label="Lower"
-       d="M 20.529297,56.25 C 14.730018,56.34577 9.078125,58.59375 9.078125,58.59375 v 14.855469 c 3.713755,1.650558 4.951172,7.427734 4.951172,7.427734 H 0 v 11.552735 c 0,0 18.073158,-1.930388 19.806641,4.539062 2.198869,0.36648 10.204664,12.22232 12.052734,14.99414 l -6.441406,7.0957 c 1.111668,1.60347 2.309908,3.13292 3.580078,4.5918 l -14.001953,9.72461 3.660156,5.26953 14.888672,-10.3418 c 0.721843,0.66376 1.454218,1.31557 2.205078,1.94532 L 49.103516,115.53906 32.597656,99.857422 c 0,0 1.650362,-9.903629 -2.888672,-16.50586 C 37.794137,60.566125 29.005166,56.110032 20.529297,56.25 Z m 31.689453,69.65625 c -2.671981,-0.0571 -4.895106,1.26242 -4.353516,6.13672 l -5.777343,2.47656 10.111328,13.7207 15.472656,-10.41992 -7.839844,-9.49023 c 0,0 -4.177876,-2.35039 -7.613281,-2.42383 z"
-       transform="translate(19.394531,20.632812)" />
-    <path
-       id="Upper"
-       style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:#8e3500;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-       inkscape:label="Upper"
-       d="m 67.867188,122.95117 c -2.598881,0.10166 -5.365896,1.5491 -8.035157,5.37891 0,0 -13.204715,-7.42837 -11.966797,3.71289 l -5.777343,2.47656 11.554687,15.67969 v 8.66601 l -22.283203,11.9668 7.222656,7.2207 17.949219,-8.04687 c 0,0 9.490292,-5.36432 18.568359,0 9.078066,5.36431 14.855469,8.66601 14.855469,8.66602 l 28.884762,-14.44141 v -16.09375 c 0,0 -1.65078,-3.71289 -7.42773,-3.71289 0,-0.82528 -1.23884,-7.01546 -5.36523,-8.66602 v -4.53906 H 80.050781 c 0,0 -5.542011,-8.52738 -12.183593,-8.26758 z m 79.628902,5.75 c -4.04378,-0.0227 -19.78438,2.8789 -10.5,14.48438 l 0.41211,9.07812 h 15.26758 v -12.3789 c 0,0 -2.06323,-10.72994 -4.53906,-11.14258 -0.15474,-0.0258 -0.37104,-0.0395 -0.64063,-0.041 z"
-       transform="translate(19.394531,20.632812)" />
-    <path
-       id="NearFireTemple"
-       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#8f3400;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-       d="m 103.98438,20.632812 v 5.775391 h -3.30079 v 12.792969 h 3.30079 v 12.708984 c -0.0564,-1.81e-4 -0.10755,1.61e-4 -0.16407,0 -1.76397,-0.005 -3.59272,0.0053 -5.457029,0.0332 -0.01697,2.381173 0.539344,8.103138 5.621099,13.371094 v 18.130859 c -5.058863,2.384146 -5.570318,3.001954 -5.570318,3.001954 H 61.896484 v 4.746093 h 23.314454 v 4.951172 c 0,0 0.617451,14.648982 14.853512,16.505862 h 24.14063 l 12.17187,-13.824221 c 0,0 2.47554,-10.314453 -18.77539,-10.314453 0,0 0.17555,-5.007784 -3.30078,-5.695313 V 64.771484 l 7.57813,-11.632812 c -2.57715,-0.401652 -5.11227,-0.710015 -7.57813,-0.917969 V 39.201172 h 3.30078 V 26.408203 h -3.30078 v -5.775391 z"
-       inkscape:label="NearFireTemple" />
-    <path
-       id="Volcanoes"
-       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#540000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-       d="M 115.55469,70.986328 A 17.360918,15.172566 0 0 0 98.193359,86.158203 17.360918,15.172566 0 0 0 115.55469,101.33203 17.360918,15.172566 0 0 0 132.91406,86.158203 17.360918,15.172566 0 0 0 115.55469,70.986328 Z M 59.53125,74.195312 A 22.321178,14.151336 0 0 0 37.210938,88.347656 22.321178,14.151336 0 0 0 59.53125,102.49805 22.321178,14.151336 0 0 0 81.853516,88.347656 22.321178,14.151336 0 0 0 59.53125,74.195312 Z"
-       transform="translate(19.394531,20.632812)"
-       inkscape:label="Volcanoes" />
-    <rect
-       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#a32a01;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-       id="Bridge"
-       width="32.118885"
-       height="4.672297"
-       x="125.44238"
-       y="156.39034"
-       inkscape:label="Bridge" />
-    <circle
-       style="fill:#000000;stroke-width:0.117502"
-       id="check:DMC_Wall_Freestanding_PoH"
-       cx="112.02236"
-       cy="154.65257"
-       r="2.5"
-       inkscape:label="check:DMC_Wall_Freestanding_PoH" />
-    <circle
-       style="fill:#000000;stroke-width:0.117502"
-       id="check:DMC_Great_Fairy_Reward"
-       cx="45.438354"
-       cy="149.99925"
-       r="2.5"
-       inkscape:label="check:DMC_Great_Fairy_Reward" />
-    <circle
-       style="fill:#000000;stroke-width:0.117502"
-       id="check:DMC_Upper_Grotto_Chest"
-       cx="109.98654"
-       cy="180.6226"
-       r="2.5"
-       inkscape:label="check:DMC_Upper_Grotto_Chest" />
-    <circle
-       style="fill:#000000;stroke-width:0.117502"
-       id="check:DMC_Volcano_Freestanding_PoH"
-       cx="78.465508"
-       cy="108.49279"
-       r="2.5"
-       inkscape:label="check:DMC_Volcano_Freestanding_PoH" />
-    <circle
-       style="fill:#ffffff;stroke-width:0.117502"
-       id="check:DMC_GS_Crate"
-       cx="68.413589"
-       cy="186.36392"
-       r="2.5"
-       inkscape:label="check:DMC_GS_Crate" />
-    <circle
-       style="fill:#ffffff;stroke-width:0.117502"
-       id="check:DMC_GS_Bean_Patch"
-       cx="101.60923"
-       cy="99.489166"
-       r="2.5"
-       inkscape:label="check:DMC_GS_Bean_Patch" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="svg1676" inkscape:version="1.1.2 (0a00cf5, 2022-02-04)" sodipodi:docname="map-death_mountain_crater.svg" version="1.1" viewBox="0 0 159.95483 178.67201" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+ <metadata id="metadata1682">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>
+     image/svg+xml
+    </dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs id="defs1680"/>
+ <sodipodi:namedview bordercolor="#666666" borderopacity="1" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" gridtolerance="10" guidetolerance="10" id="namedview1678" inkscape:current-layer="g1684" inkscape:cx="65.358749" inkscape:cy="98.038123" inkscape:document-rotation="0" inkscape:pagecheckerboard="0" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="743" inkscape:window-maximized="0" inkscape:window-width="926" inkscape:window-x="0" inkscape:window-y="25" inkscape:zoom="1.7136191" objecttolerance="10" pagecolor="#ffffff" showgrid="false"/>
+ <g id="Image" inkscape:groupmode="layer" inkscape:label="Image" transform="translate(-19.394531,-20.632812)">
+  <path d="m 108.54221,51.936862 c 24.26435,0.145032 60.69026,14.589006 60.69026,14.589006 0,0 26.26021,16.339687 -5.8356,95.120322 0,0 -12.25477,9.92052 -46.68482,12.25476 0,0 -95.120321,-7.58628 -78.780634,-78.78063 6.419162,-44.350579 46.346441,-43.32849 70.610794,-43.183458 z" id="Lava" inkscape:label="Lava" sodipodi:nodetypes="zccccz" style="opacity:0.998;fill:#ff2d2d;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <path d="M 20.529297,56.25 C 14.730018,56.34577 9.078125,58.59375 9.078125,58.59375 v 14.855469 c 3.713755,1.650558 4.951172,7.427734 4.951172,7.427734 H 0 v 11.552735 c 0,0 18.073158,-1.930388 19.806641,4.539062 2.198869,0.36648 10.204664,12.22232 12.052734,14.99414 l -6.441406,7.0957 c 1.111668,1.60347 2.309908,3.13292 3.580078,4.5918 l -14.001953,9.72461 3.660156,5.26953 14.888672,-10.3418 c 0.721843,0.66376 1.454218,1.31557 2.205078,1.94532 L 49.103516,115.53906 32.597656,99.857422 c 0,0 1.650362,-9.903629 -2.888672,-16.50586 C 37.794137,60.566125 29.005166,56.110032 20.529297,56.25 Z m 31.689453,69.65625 c -2.671981,-0.0571 -4.895106,1.26242 -4.353516,6.13672 l -5.777343,2.47656 10.111328,13.7207 15.472656,-10.41992 -7.839844,-9.49023 c 0,0 -4.177876,-2.35039 -7.613281,-2.42383 z" id="Lower" inkscape:label="Lower" style="fill:#8e3500;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" transform="translate(19.394531,20.632812)"/>
+  <path d="m 67.867188,122.95117 c -2.598881,0.10166 -5.365896,1.5491 -8.035157,5.37891 0,0 -13.204715,-7.42837 -11.966797,3.71289 l -5.777343,2.47656 11.554687,15.67969 v 8.66601 l -22.283203,11.9668 7.222656,7.2207 17.949219,-8.04687 c 0,0 9.490292,-5.36432 18.568359,0 9.078066,5.36431 14.855469,8.66601 14.855469,8.66602 l 28.884762,-14.44141 v -16.09375 c 0,0 -1.65078,-3.71289 -7.42773,-3.71289 0,-0.82528 -1.23884,-7.01546 -5.36523,-8.66602 v -4.53906 H 80.050781 c 0,0 -5.542011,-8.52738 -12.183593,-8.26758 z m 79.628902,5.75 c -4.04378,-0.0227 -19.78438,2.8789 -10.5,14.48438 l 0.41211,9.07812 h 15.26758 v -12.3789 c 0,0 -2.06323,-10.72994 -4.53906,-11.14258 -0.15474,-0.0258 -0.37104,-0.0395 -0.64063,-0.041 z" id="Upper" inkscape:label="Upper" style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:#8e3500;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" transform="translate(19.394531,20.632812)"/>
+  <path d="m 103.98438,20.632812 v 5.775391 h -3.30079 v 12.792969 h 3.30079 v 12.708984 c -0.0564,-1.81e-4 -0.10755,1.61e-4 -0.16407,0 -1.76397,-0.005 -3.59272,0.0053 -5.457029,0.0332 -0.01697,2.381173 0.539344,8.103138 5.621099,13.371094 v 18.130859 c -5.058863,2.384146 -5.570318,3.001954 -5.570318,3.001954 H 61.896484 v 4.746093 h 23.314454 v 4.951172 c 0,0 0.617451,14.648982 14.853512,16.505862 h 24.14063 l 12.17187,-13.824221 c 0,0 2.47554,-10.314453 -18.77539,-10.314453 0,0 0.17555,-5.007784 -3.30078,-5.695313 V 64.771484 l 7.57813,-11.632812 c -2.57715,-0.401652 -5.11227,-0.710015 -7.57813,-0.917969 V 39.201172 h 3.30078 V 26.408203 h -3.30078 v -5.775391 z" id="NearFireTemple" inkscape:label="NearFireTemple" style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#8f3400;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"/>
+  <path d="M 115.55469,70.986328 A 17.360918,15.172566 0 0 0 98.193359,86.158203 17.360918,15.172566 0 0 0 115.55469,101.33203 17.360918,15.172566 0 0 0 132.91406,86.158203 17.360918,15.172566 0 0 0 115.55469,70.986328 Z M 59.53125,74.195312 A 22.321178,14.151336 0 0 0 37.210938,88.347656 22.321178,14.151336 0 0 0 59.53125,102.49805 22.321178,14.151336 0 0 0 81.853516,88.347656 22.321178,14.151336 0 0 0 59.53125,74.195312 Z" id="Volcanoes" inkscape:label="Volcanoes" style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#540000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" transform="translate(19.394531,20.632812)"/>
+  <rect height="4.672297" id="Bridge" inkscape:label="Bridge" style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#a32a01;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1" width="32.118885" x="125.44238" y="156.39034"/>
+  <circle cx="112.02236" cy="154.65257" id="check:DMC_Wall_Freestanding_PoH" inkscape:label="check:DMC_Wall_Freestanding_PoH" r="2.5" style="fill:#000000;stroke-width:0.117502"/>
+  <circle cx="45.438354" cy="149.99925" id="check:DMC_Great_Fairy_Reward" inkscape:label="check:DMC_Great_Fairy_Reward" r="2.5" style="fill:#000000;stroke-width:0.117502"/>
+  <circle cx="109.98654" cy="180.6226" id="check:DMC_Upper_Grotto_Chest" inkscape:label="check:DMC_Upper_Grotto_Chest" r="2.5" style="fill:#000000;stroke-width:0.117502"/>
+  <circle cx="78.465508" cy="108.49279" id="check:DMC_Volcano_Freestanding_PoH" inkscape:label="check:DMC_Volcano_Freestanding_PoH" r="2.5" style="fill:#000000;stroke-width:0.117502"/>
+  <circle cx="68.413589" cy="186.36392" id="check:DMC_GS_Crate" inkscape:label="check:DMC_GS_Crate" r="2.5" style="fill:#ffffff;stroke-width:0.117502"/>
+  <circle cx="101.60923" cy="99.489166" id="check:DMC_GS_Bean_Patch" inkscape:label="check:DMC_GS_Bean_Patch" r="2.5" style="fill:#ffffff;stroke-width:0.117502"/>
+ </g>
 </svg>

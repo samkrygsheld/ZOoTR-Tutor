@@ -1,12 +1,12 @@
 import { css } from '@emotion/react';
-import { useEffect, useState } from 'react';
+import { SyntheticEvent, useEffect, useState } from 'react';
 import { CheckState } from '../shared/models';
 import { StorageService } from '../shared/storage.service';
 
 function colorFromState(checkState: CheckState) {
   return checkState.checked ? 'grey' : checkState.check.completable ? 'green' : 'red';
 }
-export default function CheckRow({ checkState }: { checkState: CheckState }): JSX.Element {
+export default function CheckRow({ checkState, onHover, onUnHover }: { checkState: CheckState, onHover: (e: SyntheticEvent) => void, onUnHover: () => void }): JSX.Element {
   const $storage = StorageService.Instance;
   const [color, setColor] = useState(colorFromState(checkState));
   // Updates color when needed
@@ -31,7 +31,7 @@ export default function CheckRow({ checkState }: { checkState: CheckState }): JS
       $storage.saveData.checks[checkState.check.spoiler] = checkState.checked;
       $storage.saveState();
       setColor(colorFromState(checkState));
-    }}>
+    }} onMouseEnter={onHover} onMouseLeave={onUnHover}>
       <span css={css`
         flex-grow: 1;
         text-align: left;

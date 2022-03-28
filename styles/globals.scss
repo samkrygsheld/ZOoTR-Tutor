@@ -33,26 +33,28 @@ body {
   background-image: linear-gradient(var(--light-brown), #503512);
 }
 
-svg * {
-  cursor: pointer;
-  stroke: black;
-  stroke-width: 3;
-}
-svg *.floor {
-  cursor: unset;
-}
-svg:not(.overlay) {
-  paint-order: stroke;
-}
-svg:not(.overlay) *:not(.floor):hover {
-  /* filter: brightness(115%); */
-  stroke: #ccc;
-}
-svg.overlay {
-  fill: transparent;
-}
-svg.overlay *:hover {
-  fill: rgba(255, 255, 255, 0.5);
+#checksMapWrapper {
+  svg * {
+    cursor: pointer;
+    stroke: black;
+    stroke-width: 3;
+  }
+  svg *.floor {
+    cursor: unset;
+  }
+  svg:not(.overlay) {
+    paint-order: stroke;
+  }
+  svg:not(.overlay) *:not(.floor):hover {
+    /* filter: brightness(115%); */
+    stroke: #ccc;
+  }
+  svg.overlay {
+    fill: transparent;
+  }
+  svg.overlay *:hover {
+    fill: rgba(255, 255, 255, 0.5);
+  }
 }
 
 

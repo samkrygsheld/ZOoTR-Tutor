@@ -17,6 +17,7 @@ import { CheckState, Item as ItemModel, ItemState, Song } from '../shared/models
 import regions from '../public/js/regions.json';
 import { ChecksService, ChecksState } from '../shared/checks.service';
 import { runTests } from '../tests/tests';
+import Checks from '../components/checks';
 
 const noteStyle = css`
   display: inline-block;
@@ -157,10 +158,6 @@ export default function Home(): JSX.Element {
   const [checks, setChecks] = useState<CheckState[]>([]);
   const [doneInit, setDoneInit] = useState(false);
   const [itemStates] = useState([] as ItemState[]);
-  const { error, loading, SvgImage } = useDynamicSVGImport(`map-${currentMap}`);
-  if (!loading) {
-    console.log(error, loading, SvgImage);
-  }
 
   useEffect(() => {
     main();
@@ -218,7 +215,9 @@ export default function Home(): JSX.Element {
       if (currentMap === 'overworld') {
         return;
       }
+      console.log('switching to parent:', currentMap);
       const parent = findParent(regions, currentMap);
+      console.log('found parent:', parent);
       setMap(parent as any);
       // if (regions.some((region) => region.region === currentMap)) {
       //   setMap('overworld');
@@ -313,66 +312,7 @@ export default function Home(): JSX.Element {
           onClick={revalidateChecks}
         >Revalidate Checks</button>
       </div>
-      <div id='checksWrapper'>
-        <div
-          id='checks'
-          css={css`
-            background: rgba(0, 0, 0, 1);
-            padding-top: 5px;
-            display: flex;
-            flex-direction: column;
-            flex: 0 0 350px;
-            padding-left: 10px;
-          `}
-        >
-          <h1 css={headerStyle}>Checks</h1>
-          <ul
-            css={css`
-              overflow-y: auto;
-              flex: 1;
-              flex-basis: 0;
-              margin-left: -10px;
-              & > li:first-of-type {
-                border-top: 1px solid var(--light-brown);
-              }
-            `}
-          >
-            {checks.map((check) => {
-              return (
-                <CheckRow
-                  key={check.check.spoiler}
-                  checkState={check}
-                ></CheckRow>
-              );
-            })}
-          </ul>
-        </div>
-        <div
-          css={css`
-            flex: 1;
-            background-color: white;
-          `}
-        >
-          <span>{currentMap}</span>
-          <ToolTip
-            dynamicText={(e) => {
-              const ele = e.target as HTMLElement;
-              return ele.nodeName === 'path' || ele.nodeName === 'ellipse'
-                ? titleize(ele.id.replaceAll('_', ' '))
-                : '';
-            }}
-          >
-            {/* {currentMap == 'desert' ? (
-              <MapSvgDesert onClick={switchMap} onContextMenu={switchMap} />
-            ) : currentMap == 'desert_colossus' ? (
-              <MapSvgDesertColossus onClick={switchMap} onContextMenu={switchMap} />
-            ) : (
-              <MapSvg onClick={switchMap} onContextMenu={switchMap} />
-            )} */}
-            { SvgImage ? (<SvgImage onClick={switchMap} onContextMenu={switchMap}></SvgImage>) : null }
-          </ToolTip>
-        </div>
-      </div>
+      <Checks currentMap={currentMap} switchMap={switchMap} checks={checks}></Checks>
       <button id='toggleMap'>Toggle Map</button>
     </div>
   );

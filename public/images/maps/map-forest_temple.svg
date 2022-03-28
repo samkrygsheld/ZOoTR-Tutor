@@ -1,220 +1,42 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   id="svg988"
-   viewBox="0 0 2588.9258 3053.3418"
-   sodipodi:docname="map-forest_temple.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
-  <metadata
-     id="metadata994">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs992" />
-  <sodipodi:namedview
-     inkscape:document-rotation="0"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
-     id="Image"
-     showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:zoom="0.25"
-     inkscape:cx="1273.85"
-     inkscape:cy="1257.0615"
-     inkscape:window-x="892"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g996" />
-  <g
-     inkscape:groupmode="layer"
-     inkscape:label="Image"
-     id="B2"
-     transform="translate(-365.57422,-244.6582)">
-    <path
-       inkscape:label="B2"
-       id="check:Phantom_Ganon"
-       style="fill:#004d00;fill-opacity:1;stroke:none;stroke-width:1.13127;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       d="m 2533.5,1226 -100.5,174 102,173 h 75 v 82 h -33.5 v 268.5 h 33.5 v 65.7676 h -40.373 l -30.3184,30.3183 -35.6211,-35.6211 17.3242,-17.3242 -79.3711,-79.373 -67.707,67.7051 79.1973,79.1972 17.1464,-17.1484 35.4766,35.8301 -29.7539,30.2089 v 41.6192 h -49.916 v 46.668 H 2476 V 2212 l 30,30 -36.25,36.25 -17,-17 -79.25,79.25 68,68 79,-79 -17.5,-17.5 36,-36 29.25,29.25 h 41.3281 v 45.8809 h -24.0429 v 117.2031 h 97.2285 v -117.2031 h -24.043 V 2305.25 H 2699.5 l 28.875,-28.875 L 2764,2312 2798.25,2277.75 2762.5,2242 2792,2212.5 V 2171 h 50 v 24 h 112.5 v -95 H 2842 v 24.5 h -50 v -42 l -29.75,-29.75 35.2188,-35.2188 -33.5645,-33.5664 -35.002,35.002 -29.6992,-29.6992 H 2658 V 1923.5 h 33.5 V 1655 H 2658 v -82 h 76 l 100.5,-172 -102,-175 z" />
-    <circle
-       inkscape:label="check:Phantom_Ganon"
-       style="fill:#000000;stroke-width:2.83333;stop-color:#000000"
-       id="check:Forest_Temple_Phantom_Ganon_Heart"
-       cx="2649.5742"
-       cy="1404.6582"
-       r="10" />
-    <circle
-       inkscape:label="check:Forest_Temple_Phantom_Ganon_Heart"
-       style="fill:#000000;stroke-width:2.83333;stop-color:#000000"
-       id="check:Forest_Temple_GS_Basement"
-       cx="2617.5742"
-       cy="1376.6582"
-       r="10" />
-    <circle
-       inkscape:label="check:Forest_Temple_GS_Basement"
-       style="fill:#ffffff;stroke-width:2.83333;stop-color:#000000"
-       id="check:Forest_Temple_Basement_Chest"
-       cx="2441.5742"
-       cy="2300.6582"
-       r="10" />
-    <circle
-       inkscape:label="check:Forest_Temple_Basement_Chest"
-       r="10"
-       cy="2350.6582"
-       cx="2431.5742"
-       id="B1"
-       style="fill:#000000;stroke-width:2.83333;stop-color:#000000" />
-    <path
-       inkscape:label="B1"
-       id="check:Forest_Temple_Well_Chest"
-       style="fill:#008000;fill-opacity:1;stroke:none;stroke-width:1.26333;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       d="m 1450.0508,2638.2148 v 47.377 h 48.3086 v 64.3457 h 985 v -64.3457 h 47.375 v -47.377 h -47.375 -985 z" />
-    <circle
-       inkscape:label="check:Forest_Temple_Well_Chest"
-       style="fill:#000000;stroke-width:2.83333;stop-color:#000000"
-       id="1F"
-       cx="1549.5742"
-       cy="2708.6582"
-       r="10" />
-    <path
-       inkscape:label="1F"
-       id="check:Forest_Temple_GS_First_Room"
-       style="fill:#00b200;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1332.1895,1413.8594 -21.92,8.8398 -59.0449,59.043 -9.5449,22.6269 v 51.6192 l 7.7773,21.5664 59.9278,59.9277 23.1582,8.6621 h 12.0215 v 16.9707 h -24.043 v 182.0801 h 24.3965 v 17.6777 h -122.6836 v 110.3086 h 55.5078 V 1996.5 H 1223 l -51.3027,51.3027 -99.0157,-99.0156 -18.6972,18.6973 L 1042,1955.5 l 13.25,-13.25 -17.625,-17.625 151.1621,-151.1602 v -129 H 788.28711 v 72.5 h -107 V 1750 H 660 v -16.5 h 11.5 V 1628 H 698 V 1430.5 H 502 V 1628 h 122 v 105.5 h 12 v 16.5 h -21 v 63.75 h 66.28711 v 66.125 H 614.75 V 1944 h 66.53711 v 66.625 H 615 V 2031 h -16.5 v -44.25 H 453.75 v 186.5 H 598.5 V 2054.625 H 615 v 20.25 h 66.28711 v 32.0898 h 11.14648 v 17.3614 H 680.76758 V 2190.5 H 654.5 v 48.791 h -49.18555 v -48 H 365.64648 v 46.586 h 55.08204 v 49.2597 h -55.1543 v 95.459 h 47.37695 v 49.8516 h -47.02344 v 47.0234 h 173.59571 v -8.1328 h 50.27539 v 20.7383 h 112.74219 47.73046 v -47.5137 h -47.73046 v -49.3594 H 750.625 v -98.166 h 17.64648 v 19.7988 h 8.48438 v 5.6563 h 207.18359 v -5.6563 h 9.54493 v -19.0918 h 18.03122 v 28.6368 H 1067.75 V 2423 L 1222,2577 h 95.3398 v 48.1348 h 27.5782 v 16.9707 h -23.336 v 239.3554 H 1336 V 2913.5 h -113.75 v 301.75 H 1325 V 3298 h 64.5 v -82.75 h 101.75 V 2913.5 H 1378 v -32.0391 h 14.293 v -239.3554 h -23.6875 v -16.9707 h 28.2832 V 2577 H 1493 l 154,-154 v -96.2656 h 55.7129 v -28.2832 H 1720 v 18.2988 h 9 v 5 h 208.25 v -5 h 10 V 2298 H 1964 v 103 h 28.5 v 29.5 h 237 V 2401 h 28.5 v -229.5 h -28.5 v -29 h -106 V 2125 H 2191 V 1449.5488 H 2031 V 1473.5 h -76 v 48 178.5 h 12 v 17.5 h -40 V 1645 h -400.5 v 129 l 151,151 -17,17 12.75,12.75 -12.6914,12.6914 -19.0098,-19.0078 -99.5586,99.5566 L 1490.5,1996.5 h -53.3047 v -23.3184 h 54.8008 V 1862.873 H 1368.252 v -17.6777 h 25.1015 v -182.0801 h -24.041 v -16.9707 h 14.4961 l 21.9199,-9.1914 58.8672,-58.8672 8.3086,-17.5019 v -61.5176 l -8.4863,-17.3242 -58.5137,-58.5137 -21.7422,-9.3691 z M 2003,1521.5 h 28 V 2125 h 68 v 17.5 h -106.5 v 29 H 1964 v 104.75 h -16.75 v -20 h -10 v -5 H 1729 v 5 h -9 v 18.5117 h -17.2871 v -27.5762 H 1647 V 2153 l -50.916,-50.916 99.5586,-99.5567 -20.834,-20.8359 12.4414,-12.4414 13.25,13.25 17.25,-17.25 18.25,18.25 v 256 h 166.5 v -132 H 2018 v -390 h -27.5 V 1700 h 12.5 z m -1005.625,443.375 17.375,17.375 11.25,-11.25 12.2344,12.2344 -19.1172,19.1152 99.0156,99.0176 -50.3828,50.3828 v 95.4355 h -56.2344 v 27.9297 h -18.03122 v -18.3847 h -9.54493 v -5.3028 H 776.75586 v 5.3028 h -8.48438 v 19.4472 H 750.625 V 2190.5 h -22.12891 v -66.1738 h -12.01953 v -17.3614 h 96.31055 v 132 h 166.5 v -256 z m -545.17969,273.002 h 25.88086 v 21.291 48 h 111.72266 v 36.5371 h -47.09375 v -8.8379 h -82.37891 v -47.7305 h -8.13086 z m 90.50977,136.5878 h 47.09375 v 65.7618 h -50.27539 v -7.7793 h -79.19727 v -49.8516 h 82.37891 z" />
-    <circle
-       inkscape:label="check:Forest_Temple_GS_First_Room"
-       style="fill:#ffffff;stroke-width:2.83333;stop-color:#000000"
-       id="check:Forest_Temple_GS_Raised_Island_Courtyard"
-       cx="1473.5742"
-       cy="3132.6582"
-       r="10" />
-    <circle
-       inkscape:label="check:Forest_Temple_GS_Raised_Island_Courtyard"
-       r="10"
-       cy="1744.6582"
-       cx="1909.5742"
-       id="check:Forest_Temple_Raised_Island_Courtyard_Chest"
-       style="fill:#ffffff;stroke-width:2.83333;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Forest_Temple_Raised_Island_Courtyard_Chest"
-       r="10"
-       cy="1824.6582"
-       cx="1965.5742"
-       id="check:Forest_Temple_Falling_Ceiling_Room_Chest"
-       style="fill:#000000;stroke-width:2.83333;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Forest_Temple_Falling_Ceiling_Room_Chest"
-       r="10"
-       cy="1996.6582"
-       cx="2109.5742"
-       id="check:Forest_Temple_GS_Lobby"
-       style="fill:#000000;stroke-width:2.83333;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Forest_Temple_GS_Lobby"
-       r="10"
-       cy="1912.6582"
-       cx="1477.5742"
-       id="check:Forest_Temple_Floormaster_Chest"
-       style="fill:#ffffff;stroke-width:2.83333;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Forest_Temple_Floormaster_Chest"
-       r="10"
-       cy="2080.6582"
-       cx="477.57422"
-       id="check:Forest_Temple_GS_Level_Island_Courtyard"
-       style="fill:#000000;stroke-width:2.83333;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Forest_Temple_GS_Level_Island_Courtyard"
-       r="10"
-       cy="1660.6582"
-       cx="877.57422"
-       id="check:Forest_Temple_First_Stalfos_Chest"
-       style="fill:#ffffff;stroke-width:2.83333;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Forest_Temple_First_Stalfos_Chest"
-       r="10"
-       cy="1532.6582"
-       cx="1357.5742"
-       id="check:Forest_Temple_First_Room_Chest"
-       style="fill:#000000;stroke-width:2.83333;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Forest_Temple_First_Room_Chest"
-       r="10"
-       cy="3100.6582"
-       cx="1241.5742"
-       id="check:Forest_Temple_Eye_Switch_Chest"
-       style="fill:#000000;stroke-width:2.83333;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Forest_Temple_Eye_Switch_Chest"
-       r="10"
-       cy="2340.6582"
-       cx="617.57422"
-       id="2F"
-       style="fill:#000000;stroke-width:2.83333;stop-color:#000000" />
-    <path
-       inkscape:label="2F"
-       id="check:Forest_Temple_Boss_Key_Chest"
-       style="fill:#00e500;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"
-       d="m 1322.2891,244.6582 -21.92,9.90039 -77.7812,77.78125 -26.8711,9.19336 h -31.1113 v 36.23828 H 1147.5 V 342 247 H 962 v 95 H 747 v 35.77148 H 730.5 V 370.5 H 700 V 292 H 501.5 v 195 h 79 v 49.69336 H 548.00781 V 985 h 40.30469 v 17.459 H 373 V 1404 H 757 V 1002.459 H 614.47656 V 985 h 38.89063 V 536.69336 H 619.5 V 487 H 700 v -77 h 30.5 v -6.5957 H 747 V 437.5 h 215 185.5 v -34.0957 h 17.1055 v 34.29492 h 32.5254 l 25.457,9.89844 77.7812,77.7832 21.2129,9.19141 H 1393 l 21.9199,-9.19141 78.1367,-78.13672 9.545,-20.85937 V 403.4043 H 1519.75 V 438.25 h 185.5 261 v -34.8457 h 17.5391 v 6.71679 h 32.1718 V 487.9043 H 2094 v 49.49609 h -33.4902 v 446.89258 h 41.0117 v 16.54293 h -180.0742 v 385.8008 h 384.4277 v -385.8008 h -177.4844 v -16.54293 h 38.1856 V 537.40039 H 2134 V 487.9043 h 78.5371 V 356.02734 h 47.377 v -32.8789 h -47.377 v -31.11328 h -196.5762 v 78.13476 h -32.1718 v 7.60156 H 1966.25 V 342.75 h -261 v -95 h -185.5 v 95 35.02148 h -17.1484 v -25.63281 l -9.8985,-19.09179 -77.4297,-77.42774 -21.5664,-10.96094 z m 324.916,211.60157 v 47.73046 h -16.6172 v 28.28516 l 20.0644,20.0625 h 51.7071 l 19.7558,-19.75391 v -28.24023 h -16.3964 v -48.08398 z m -87.0625,90.24609 -34.0293,0.0879 v 24.74805 h -64.5235 v 12.02148 h -15.9101 V 555.43164 H 1268.9023 V 583.5 H 1253 V 571 h -65.25 v 47.75 H 1253 V 607 h 15.9023 v 68.99414 h 176.7774 v -68.94336 h 15.9101 v 12.02149 h 64.5235 v 9.60156 h 32.3496 l 17.1484,-17.14844 v -49.55273 z" />
-    <circle
-       inkscape:label="check:Forest_Temple_Boss_Key_Chest"
-       r="10"
-       cy="336.6582"
-       cx="669.57422"
-       id="check:Forest_Temple_Red_Poe_Chest"
-       style="fill:#000000;stroke-width:2.83333;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Forest_Temple_Red_Poe_Chest"
-       r="10"
-       cy="292.6582"
-       cx="1129.5742"
-       id="check:Forest_Temple_Map_Chest"
-       style="fill:#000000;stroke-width:2.83333;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Forest_Temple_Map_Chest"
-       r="10"
-       cy="612.6582"
-       cx="1353.5742"
-       id="check:Forest_Temple_Bow_Chest"
-       style="fill:#000000;stroke-width:2.83333;stop-color:#000000" />
-    <circle
-       inkscape:label="check:Forest_Temple_Bow_Chest"
-       style="fill:#000000;stroke-width:2.83333;stop-color:#000000"
-       id="check:Forest_Temple_Blue_Poe_Chest"
-       cx="1357.5742"
-       cy="384.6582"
-       r="10" />
-    <circle
-       inkscape:label="check:Forest_Temple_Blue_Poe_Chest"
-       style="fill:#000000;stroke-width:2.83333;stop-color:#000000"
-       id="path1671-8-10-3"
-       cx="1539.5742"
-       cy="292.6582"
-       r="10" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="svg988" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" sodipodi:docname="map-forest_temple.svg" version="1.1" viewBox="0 0 2588.9258 3053.3418" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+ <metadata id="metadata994">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>
+     image/svg+xml
+    </dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs id="defs992"/>
+ <sodipodi:namedview bordercolor="#666666" borderopacity="1" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" gridtolerance="10" guidetolerance="10" id="namedview990" inkscape:current-layer="g996" inkscape:cx="1273.85" inkscape:cy="1257.0615" inkscape:document-rotation="0" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="705" inkscape:window-maximized="1" inkscape:window-width="1366" inkscape:window-x="892" inkscape:window-y="-8" inkscape:zoom="0.25" objecttolerance="10" pagecolor="#ffffff" showgrid="false"/>
+ <g id="Image" inkscape:groupmode="layer" inkscape:label="Image" transform="translate(-365.57422,-244.6582)">
+  <path d="m 2533.5,1226 -100.5,174 102,173 h 75 v 82 h -33.5 v 268.5 h 33.5 v 65.7676 h -40.373 l -30.3184,30.3183 -35.6211,-35.6211 17.3242,-17.3242 -79.3711,-79.373 -67.707,67.7051 79.1973,79.1972 17.1464,-17.1484 35.4766,35.8301 -29.7539,30.2089 v 41.6192 h -49.916 v 46.668 H 2476 V 2212 l 30,30 -36.25,36.25 -17,-17 -79.25,79.25 68,68 79,-79 -17.5,-17.5 36,-36 29.25,29.25 h 41.3281 v 45.8809 h -24.0429 v 117.2031 h 97.2285 v -117.2031 h -24.043 V 2305.25 H 2699.5 l 28.875,-28.875 L 2764,2312 2798.25,2277.75 2762.5,2242 2792,2212.5 V 2171 h 50 v 24 h 112.5 v -95 H 2842 v 24.5 h -50 v -42 l -29.75,-29.75 35.2188,-35.2188 -33.5645,-33.5664 -35.002,35.002 -29.6992,-29.6992 H 2658 V 1923.5 h 33.5 V 1655 H 2658 v -82 h 76 l 100.5,-172 -102,-175 z" id="B2" inkscape:label="B2" style="fill:#004d00;fill-opacity:1;stroke:none;stroke-width:1.13127;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"/>
+  <circle cx="2649.5742" cy="1404.6582" id="check:Phantom_Ganon" inkscape:label="check:Phantom_Ganon" r="10" style="fill:#000000;stroke-width:2.83333;stop-color:#000000"/>
+  <circle cx="2617.5742" cy="1376.6582" id="check:Forest_Temple_Phantom_Ganon_Heart" inkscape:label="check:Forest_Temple_Phantom_Ganon_Heart" r="10" style="fill:#000000;stroke-width:2.83333;stop-color:#000000"/>
+  <circle cx="2441.5742" cy="2300.6582" id="check:Forest_Temple_GS_Basement" inkscape:label="check:Forest_Temple_GS_Basement" r="10" style="fill:#ffffff;stroke-width:2.83333;stop-color:#000000"/>
+  <circle cx="2431.5742" cy="2350.6582" id="check:Forest_Temple_Basement_Chest" inkscape:label="check:Forest_Temple_Basement_Chest" r="10" style="fill:#000000;stroke-width:2.83333;stop-color:#000000"/>
+  <path d="m 1450.0508,2638.2148 v 47.377 h 48.3086 v 64.3457 h 985 v -64.3457 h 47.375 v -47.377 h -47.375 -985 z" id="B1" inkscape:label="B1" style="fill:#008000;fill-opacity:1;stroke:none;stroke-width:1.26333;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"/>
+  <circle cx="1549.5742" cy="2708.6582" id="check:Forest_Temple_Well_Chest" inkscape:label="check:Forest_Temple_Well_Chest" r="10" style="fill:#000000;stroke-width:2.83333;stop-color:#000000"/>
+  <path d="m 1332.1895,1413.8594 -21.92,8.8398 -59.0449,59.043 -9.5449,22.6269 v 51.6192 l 7.7773,21.5664 59.9278,59.9277 23.1582,8.6621 h 12.0215 v 16.9707 h -24.043 v 182.0801 h 24.3965 v 17.6777 h -122.6836 v 110.3086 h 55.5078 V 1996.5 H 1223 l -51.3027,51.3027 -99.0157,-99.0156 -18.6972,18.6973 L 1042,1955.5 l 13.25,-13.25 -17.625,-17.625 151.1621,-151.1602 v -129 H 788.28711 v 72.5 h -107 V 1750 H 660 v -16.5 h 11.5 V 1628 H 698 V 1430.5 H 502 V 1628 h 122 v 105.5 h 12 v 16.5 h -21 v 63.75 h 66.28711 v 66.125 H 614.75 V 1944 h 66.53711 v 66.625 H 615 V 2031 h -16.5 v -44.25 H 453.75 v 186.5 H 598.5 V 2054.625 H 615 v 20.25 h 66.28711 v 32.0898 h 11.14648 v 17.3614 H 680.76758 V 2190.5 H 654.5 v 48.791 h -49.18555 v -48 H 365.64648 v 46.586 h 55.08204 v 49.2597 h -55.1543 v 95.459 h 47.37695 v 49.8516 h -47.02344 v 47.0234 h 173.59571 v -8.1328 h 50.27539 v 20.7383 h 112.74219 47.73046 v -47.5137 h -47.73046 v -49.3594 H 750.625 v -98.166 h 17.64648 v 19.7988 h 8.48438 v 5.6563 h 207.18359 v -5.6563 h 9.54493 v -19.0918 h 18.03122 v 28.6368 H 1067.75 V 2423 L 1222,2577 h 95.3398 v 48.1348 h 27.5782 v 16.9707 h -23.336 v 239.3554 H 1336 V 2913.5 h -113.75 v 301.75 H 1325 V 3298 h 64.5 v -82.75 h 101.75 V 2913.5 H 1378 v -32.0391 h 14.293 v -239.3554 h -23.6875 v -16.9707 h 28.2832 V 2577 H 1493 l 154,-154 v -96.2656 h 55.7129 v -28.2832 H 1720 v 18.2988 h 9 v 5 h 208.25 v -5 h 10 V 2298 H 1964 v 103 h 28.5 v 29.5 h 237 V 2401 h 28.5 v -229.5 h -28.5 v -29 h -106 V 2125 H 2191 V 1449.5488 H 2031 V 1473.5 h -76 v 48 178.5 h 12 v 17.5 h -40 V 1645 h -400.5 v 129 l 151,151 -17,17 12.75,12.75 -12.6914,12.6914 -19.0098,-19.0078 -99.5586,99.5566 L 1490.5,1996.5 h -53.3047 v -23.3184 h 54.8008 V 1862.873 H 1368.252 v -17.6777 h 25.1015 v -182.0801 h -24.041 v -16.9707 h 14.4961 l 21.9199,-9.1914 58.8672,-58.8672 8.3086,-17.5019 v -61.5176 l -8.4863,-17.3242 -58.5137,-58.5137 -21.7422,-9.3691 z M 2003,1521.5 h 28 V 2125 h 68 v 17.5 h -106.5 v 29 H 1964 v 104.75 h -16.75 v -20 h -10 v -5 H 1729 v 5 h -9 v 18.5117 h -17.2871 v -27.5762 H 1647 V 2153 l -50.916,-50.916 99.5586,-99.5567 -20.834,-20.8359 12.4414,-12.4414 13.25,13.25 17.25,-17.25 18.25,18.25 v 256 h 166.5 v -132 H 2018 v -390 h -27.5 V 1700 h 12.5 z m -1005.625,443.375 17.375,17.375 11.25,-11.25 12.2344,12.2344 -19.1172,19.1152 99.0156,99.0176 -50.3828,50.3828 v 95.4355 h -56.2344 v 27.9297 h -18.03122 v -18.3847 h -9.54493 v -5.3028 H 776.75586 v 5.3028 h -8.48438 v 19.4472 H 750.625 V 2190.5 h -22.12891 v -66.1738 h -12.01953 v -17.3614 h 96.31055 v 132 h 166.5 v -256 z m -545.17969,273.002 h 25.88086 v 21.291 48 h 111.72266 v 36.5371 h -47.09375 v -8.8379 h -82.37891 v -47.7305 h -8.13086 z m 90.50977,136.5878 h 47.09375 v 65.7618 h -50.27539 v -7.7793 h -79.19727 v -49.8516 h 82.37891 z" id="1F" inkscape:label="1F" style="fill:#00b200;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/>
+  <circle cx="1473.5742" cy="3132.6582" id="check:Forest_Temple_GS_First_Room" inkscape:label="check:Forest_Temple_GS_First_Room" r="10" style="fill:#ffffff;stroke-width:2.83333;stop-color:#000000"/>
+  <circle cx="1909.5742" cy="1744.6582" id="check:Forest_Temple_GS_Raised_Island_Courtyard" inkscape:label="check:Forest_Temple_GS_Raised_Island_Courtyard" r="10" style="fill:#ffffff;stroke-width:2.83333;stop-color:#000000"/>
+  <circle cx="1965.5742" cy="1824.6582" id="check:Forest_Temple_Raised_Island_Courtyard_Chest" inkscape:label="check:Forest_Temple_Raised_Island_Courtyard_Chest" r="10" style="fill:#000000;stroke-width:2.83333;stop-color:#000000"/>
+  <circle cx="2109.5742" cy="1996.6582" id="check:Forest_Temple_Falling_Ceiling_Room_Chest" inkscape:label="check:Forest_Temple_Falling_Ceiling_Room_Chest" r="10" style="fill:#000000;stroke-width:2.83333;stop-color:#000000"/>
+  <circle cx="1477.5742" cy="1912.6582" id="check:Forest_Temple_GS_Lobby" inkscape:label="check:Forest_Temple_GS_Lobby" r="10" style="fill:#ffffff;stroke-width:2.83333;stop-color:#000000"/>
+  <circle cx="477.57422" cy="2080.6582" id="check:Forest_Temple_Floormaster_Chest" inkscape:label="check:Forest_Temple_Floormaster_Chest" r="10" style="fill:#000000;stroke-width:2.83333;stop-color:#000000"/>
+  <circle cx="877.57422" cy="1660.6582" id="check:Forest_Temple_GS_Level_Island_Courtyard" inkscape:label="check:Forest_Temple_GS_Level_Island_Courtyard" r="10" style="fill:#ffffff;stroke-width:2.83333;stop-color:#000000"/>
+  <circle cx="1357.5742" cy="1532.6582" id="check:Forest_Temple_First_Stalfos_Chest" inkscape:label="check:Forest_Temple_First_Stalfos_Chest" r="10" style="fill:#000000;stroke-width:2.83333;stop-color:#000000"/>
+  <circle cx="1241.5742" cy="3100.6582" id="check:Forest_Temple_First_Room_Chest" inkscape:label="check:Forest_Temple_First_Room_Chest" r="10" style="fill:#000000;stroke-width:2.83333;stop-color:#000000"/>
+  <circle cx="617.57422" cy="2340.6582" id="check:Forest_Temple_Eye_Switch_Chest" inkscape:label="check:Forest_Temple_Eye_Switch_Chest" r="10" style="fill:#000000;stroke-width:2.83333;stop-color:#000000"/>
+  <path d="m 1322.2891,244.6582 -21.92,9.90039 -77.7812,77.78125 -26.8711,9.19336 h -31.1113 v 36.23828 H 1147.5 V 342 247 H 962 v 95 H 747 v 35.77148 H 730.5 V 370.5 H 700 V 292 H 501.5 v 195 h 79 v 49.69336 H 548.00781 V 985 h 40.30469 v 17.459 H 373 V 1404 H 757 V 1002.459 H 614.47656 V 985 h 38.89063 V 536.69336 H 619.5 V 487 H 700 v -77 h 30.5 v -6.5957 H 747 V 437.5 h 215 185.5 v -34.0957 h 17.1055 v 34.29492 h 32.5254 l 25.457,9.89844 77.7812,77.7832 21.2129,9.19141 H 1393 l 21.9199,-9.19141 78.1367,-78.13672 9.545,-20.85937 V 403.4043 H 1519.75 V 438.25 h 185.5 261 v -34.8457 h 17.5391 v 6.71679 h 32.1718 V 487.9043 H 2094 v 49.49609 h -33.4902 v 446.89258 h 41.0117 v 16.54293 h -180.0742 v 385.8008 h 384.4277 v -385.8008 h -177.4844 v -16.54293 h 38.1856 V 537.40039 H 2134 V 487.9043 h 78.5371 V 356.02734 h 47.377 v -32.8789 h -47.377 v -31.11328 h -196.5762 v 78.13476 h -32.1718 v 7.60156 H 1966.25 V 342.75 h -261 v -95 h -185.5 v 95 35.02148 h -17.1484 v -25.63281 l -9.8985,-19.09179 -77.4297,-77.42774 -21.5664,-10.96094 z m 324.916,211.60157 v 47.73046 h -16.6172 v 28.28516 l 20.0644,20.0625 h 51.7071 l 19.7558,-19.75391 v -28.24023 h -16.3964 v -48.08398 z m -87.0625,90.24609 -34.0293,0.0879 v 24.74805 h -64.5235 v 12.02148 h -15.9101 V 555.43164 H 1268.9023 V 583.5 H 1253 V 571 h -65.25 v 47.75 H 1253 V 607 h 15.9023 v 68.99414 h 176.7774 v -68.94336 h 15.9101 v 12.02149 h 64.5235 v 9.60156 h 32.3496 l 17.1484,-17.14844 v -49.55273 z" id="2F" inkscape:label="2F" style="fill:#00e500;fill-opacity:1;stroke:none;stroke-linecap:round;stroke-linejoin:bevel;stop-color:#000000"/>
+  <circle cx="669.57422" cy="336.6582" id="check:Forest_Temple_Boss_Key_Chest" inkscape:label="check:Forest_Temple_Boss_Key_Chest" r="10" style="fill:#000000;stroke-width:2.83333;stop-color:#000000"/>
+  <circle cx="1129.5742" cy="292.6582" id="check:Forest_Temple_Red_Poe_Chest" inkscape:label="check:Forest_Temple_Red_Poe_Chest" r="10" style="fill:#000000;stroke-width:2.83333;stop-color:#000000"/>
+  <circle cx="1353.5742" cy="612.6582" id="check:Forest_Temple_Map_Chest" inkscape:label="check:Forest_Temple_Map_Chest" r="10" style="fill:#000000;stroke-width:2.83333;stop-color:#000000"/>
+  <circle cx="1357.5742" cy="384.6582" id="check:Forest_Temple_Bow_Chest" inkscape:label="check:Forest_Temple_Bow_Chest" r="10" style="fill:#000000;stroke-width:2.83333;stop-color:#000000"/>
+  <circle cx="1539.5742" cy="292.6582" id="check:Forest_Temple_Blue_Poe_Chest" inkscape:label="check:Forest_Temple_Blue_Poe_Chest" r="10" style="fill:#000000;stroke-width:2.83333;stop-color:#000000"/>
+ </g>
 </svg>

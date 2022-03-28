@@ -8,6 +8,7 @@ module.exports = withPWA({
       use: {
         loader: '@svgr/webpack',
         options: {
+          ref: true,
           svgoConfig: {
             plugins: [
               {
